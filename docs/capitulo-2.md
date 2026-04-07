@@ -720,7 +720,7 @@ Los clientes de microempresas se convierten en un validador externo clave para E
 
 **Segmento 2: Clientes Finales**
 <p align="center">
-  <img src="images/User_Jorney_segmento2.png" alt="user_persona_andrea" width="500"/>
+  <img src="images/journey_mapin_segmento2.png" alt="user_persona_andrea" width="500"/>
 </p>
 
 ### 2.3.4. Empathy Mapping
