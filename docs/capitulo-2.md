@@ -572,126 +572,103 @@ Esta sección presenta el estudio cualitativo basado en entrevistas semiestructu
 
 ### 2.2.3. Análisis de entrevistas
 
-En esta fase se realizaron 6 entrevistas semiestructuradas dirigidas a dos segmentos clave del ecosistema del proyecto: dueños de microempresas (minimarkets y puestos de mercado) y clientes finales de dichos establecimientos. El propósito fue profundizar en sus experiencias, frustraciones y expectativas en torno a la gestión de inventarios, la transparencia en el pesaje de productos y la eficiencia en la atención mediante canales digitales. El análisis permitió identificar patrones de respuesta con lectura porcentual, ofreciendo una visión más objetiva de los datos cualitativos obtenidos en los distritos de Magdalena del Mar y San Martín de Porres
+Se realizaron 6 entrevistas semiestructuradas distribuidas en dos segmentos objetivos: 3 comerciantes dueños de minimarkets o puestos de mercado, y 3 clientes finales que realizan compras en negocios locales. El propósito fue identificar patrones comunes en sus experiencias, frustraciones y expectativas en torno a la gestión de inventario, medios de pago y atención digital. A partir de los resúmenes obtenidos, se extrajeron características objetivas y subjetivas de cada perfil, las cuales se presentan con respaldo estadístico expresado en porcentajes sobre el total de entrevistados por segmento.
 
----
-#### Segmento objetivo #1: Dueños de microempresas
+#### Segmento objetivo #1: Comerciantes (Dueños de Minimarkets/Mercados)
 
 **Hallazgos**
-- El 67% de los entrevistados identificó la falta de tiempo como su principal obstáculo para capacitarse y crecer, lo que evidencia la necesidad de soluciones de aprendizaje cortas y adaptables a su ritmo diario.
-- Los tres perfiles gestionan sus finanzas con herramientas básicas como Excel o cuadernos, sin acceso a software especializado, lo que refleja una brecha tecnológica en la administración del negocio.
-- No existe consenso en el formato de aprendizaje preferido: el 33% prefiere notificaciones móviles, el 33% videos o sesiones Zoom y el 33% plataformas web, lo que indica que Entreprenly debe ser accesible desde múltiples canales.
-- El 67% señaló el incremento de ventas, la captación de clientes y la gestión financiera como sus principales áreas de interés, definiendo claramente el foco de contenido que debe ofrecer la plataforma.
-- El 100% condicionó su recomendación del programa a obtener resultados tangibles y medibles, principalmente un aumento real en ventas y mayor orden en sus finanzas.
+- El 100% de los comerciantes reportó enfrentar descuadres entre el stock físico y el registrado, ya sea por errores manuales al anotar entradas, por no contar con sistema alguno, o por no poder verificar con exactitud las unidades disponibles.
+- El 100% identificó el desorden en el cierre de caja como un problema recurrente, manifestado principalmente en la dificultad de separar y conciliar los ingresos en efectivo con los pagos por Yape, Plin o terminal POS.
+- El 67% mezcla el dinero de ventas con gastos operativos o compras a proveedores sin un registro formal, lo que genera pérdida de trazabilidad financiera al cierre del día.
+- El 67% atiende pedidos por WhatsApp de forma manual, delegando esta tarea en familiares o atendiendo entre cliente y cliente, lo que genera errores y demoras.
+- El 100% validó positivamente el uso de una balanza inteligente para automatizar el control de inventario, siendo el 67% entusiasta sin condiciones y el 33% restante favorable bajo la condición de que el sistema sea simple de configurar.
+- El 33% utiliza Excel como herramienta de control; el 67% restante depende de la memoria o la inspección visual diaria, sin ningún registro sistemático.
 
-**Obstáculos identificados por los dueños de microempresas**
-
-<p align="center">
-  <img src="images/graf_obstaculos_identificados.png" alt="Obstáculos identificados por los dueños de microempresas" width="500"/>
-</p>
-
-El gráfico muestra que la falta de tiempo concentra el mayor porcentaje con un 67%, siendo el obstáculo más frecuente entre los entrevistados. Los demás factores (desconocimiento de procesos, miedo a la inversión y mezcla de capital personal con el del negocio) se distribuyen de manera igualitaria con un 33% cada uno, lo que indica que, si bien el tiempo es la barrera dominante, existen otras dificultades complementarias que también deben atenderse.
-
-**Formato de aprendizaje preferido**
+**Problemas operativos identificados**
 
 <p align="center">
-  <img src="images/graf_formato_preferido.png" alt="Formato de aprendizaje preferido" width="500"/>
+  <img src="images/graf_problemasOperativos.png" alt="graf_problemasOperativos" width="500"/>
 </p>
 
-La distribución equitativa del 33% en los tres formatos refleja que no existe un canal único que concentre la preferencia del segmento. Esto representa tanto un reto como una oportunidad para Entreprenly: diseñar una plataforma que funcione correctamente en todos los canales desde su primera versión.
+El descuadre de stock y el desorden en caja concentran el mayor porcentaje con un 100% cada uno, lo que los posiciona como los problemas más críticos y compartidos por la totalidad del segmento. La mezcla de medios de pago sin registro y la atención manual de WhatsApp, presentes en el 67% de los casos, complementan un panorama donde la falta de control operativo afecta tanto el inventario como la conciliación financiera y la atención al cliente.
+**Método de control de inventario actual**
 
-**Áreas de mayor interés**
 
 <p align="center">
-  <img src="images/graf_area_interes.png" alt="Áreas de mayor interés" width="500"/>
+  <img src="images/graf_metodoControl.png" alt="graf_metodoControl" width="500"/>
 </p>
 
-Las tres áreas con mayor porcentaje (ventas, captación de clientes y gestión financiera) fueron mencionadas por el 67% de los entrevistados, lo que las convierte en el núcleo temático prioritario de Entreprenly. La atracción de clientes calificados y las herramientas de productividad, con un 33%, representan necesidades secundarias pero igualmente presentes en el segmento.
+El 67% del segmento no cuenta con ninguna herramienta de registro estructurada y depende de la memoria o la revisión visual para controlar su inventario. Solo el 33% utiliza Excel, aunque con limitaciones reconocidas. Este dato indica que Entreprenly no compite con sistemas digitales existentes en estos perfiles, sino que se posiciona como la primera solución formal de gestión, lo que reduce la resistencia al cambio y facilita la adopción desde cero.
+
+
+**Aceptación de balanza inteligente para inventario**
+
+<p align="center">
+  <img src="images/graf_aceptacionBalanza.png" alt="graf_aceptacionBalanza" width="500"/>
+</p>
+
+El 100% del segmento aceptó positivamente la propuesta de inventario automatizado por peso. El 67% lo hizo sin reservas, mientras que el 33% restante condicionó su aceptación a que el sistema sea sencillo de configurar y operar. La ausencia total de rechazo valida directamente una de las funcionalidades centrales de Entreprenly y confirma que el segmento percibe valor real en reemplazar el conteo manual por una solución basada en sensores.
+
+
+**Interés en automatización de pedidos por WhatsApp**
+
+<p align="center">
+  <img src="images/graf_interesAutomatizacion.png" alt="graf_interes_automatizacion" width="500"/>
+</p>
+
+La totalidad del segmento mostró interés en automatizar la atención de pedidos por WhatsApp. El 67% lo valoró como una prioridad que reduciría la carga operativa del personal, mientras que el 33% restante lo consideró una mejora útil para agilizar el despacho. La unanimidad en este punto confirma que el canal conversacional es percibido como una solución real a un problema cotidiano, y no como una funcionalidad opcional o de baja relevancia para el negocio.
 
 **Conclusiones**
-Los dueños de microempresas enfrentan una combinación crítica de escasez de tiempo y falta de orientación práctica para innovar en sus negocios. Esta realidad valida directamente la propuesta de Entreprenly: una plataforma de microaprendizaje basada en actividades diarias breves que se adaptan al ritmo real del emprendedor. Al enfocarse en las áreas de mayor impacto (ventas, clientes y finanzas) y ofrecer resultados medibles desde las primeras semanas, Entreprenly se posiciona como una herramienta concreta y no como una capacitación teórica más. La diversidad de formatos preferidos refuerza la necesidad de que la plataforma sea multiplataforma desde su lanzamiento.
-
----
+Los comerciantes entrevistados operan con herramientas insuficientes o inexistentes para el control de su negocio. La dependencia de la memoria, la mezcla de fondos y la gestión manual de WhatsApp generan pérdidas económicas y decisiones tardías. La totalidad del segmento validó positivamente las funcionalidades centrales de Entreprenly, lo que confirma que existe una necesidad real y una disposición clara hacia la digitalización, siempre que la solución sea práctica y fácil de adoptar desde el primer día.
 
 
-#### Segmento objetivo #2: Capacitadores de emprendedores
+#### Segmento objetivo #2: Clientes finales
 
 **Hallazgos**
-- El 75% de los capacitadores validó totalmente el sistema de actividades diarias breves, reconociendo que este formato transforma el conocimiento en hábitos reales y se adapta al ritmo del emprendedor.
-- El 25% restante también lo validó, pero condicionó su efectividad a que el contenido sea dinámico y que exista un sistema activo de seguimiento para evitar el abandono.
-- El 100% coincidió en que el SMS o la notificación móvil es el canal más efectivo para llegar al microempresario, por su simplicidad y alta tasa de respuesta.
-- El 50% advirtió que la sobrecarga cognitiva y la monotonía del contenido son los principales riesgos de abandono, seguidos por la falta de acompañamiento continuo.
-- El 100% propuso el aumento de ventas como la métrica principal para medir el éxito del programa, seguido por la mejora en la organización financiera con un 50%.
-- El 25% señaló que Entreprenly no sería apropiado para emprendedores en etapa de ideación muy temprana, sino para negocios con operaciones mínimas en curso.
+- El 100% ha tenido al menos una experiencia negativa en la que pagó por un producto agotado, lo que generó pérdida de confianza en el negocio.
+- El 100% afirmó que un sistema con validación de stock por sensor de peso les brindaría mayor seguridad al comprar desde su celular.
+- El 100% señaló la demora en la respuesta por WhatsApp como una de sus principales frustraciones.
+- El 67% prefiere billeteras digitales como medio de pago principal; el 33% combina tarjeta con billetera digital. Ninguno prioriza el efectivo.
+- El 67% dejaría de ir presencialmente al mercado si pudiera comprar de forma rápida y segura por WhatsApp.
+- El 33% restante lo haría bajo la condición de recibir confirmaciones automáticas confiables.
+- El 67% considera indispensable recibir confirmación automática del sistema al pagar por adelantado.
 
-**Validación del sistema de microlearning**
+**Medio de pago preferido**
 
 <p align="center">
-  <img src="images/graf_validacion_microlearning.png" alt="Validación del sistema de microlearning" width="500"/>
+  <img src="images/graf_metodoPreferido.png" alt="graf_metodoPreferido" width="500"/>
 </p>
 
 El gráfico evidencia un alto nivel de aceptación del modelo: el 75% de los capacitadores lo valida de forma total, mientras que el 25% restante lo apoya bajo condiciones específicas de diseño. Ningún entrevistado rechazó la propuesta, lo que representa un respaldo experto sólido para Entreprenly.
 
-**Riesgos advertidos por los capacitadores**
+
+**Principales frustraciones al comprar en minimarkets locales**
 
 <p align="center">
-  <img src="images/graf_riesgos.png" alt="Riesgos advertidos por los capacitadores" width="500"/>
+  <img src="images/graf_principalesFrustaciones.png" alt="Principales frustraciones al comprar en minimarkets locales" width="500"/>
 </p>
 
 La sobrecarga cognitiva y la falta de seguimiento lideran los riesgos con un 50% cada uno, seguidos por la baja alfabetización digital y la inaplicabilidad en etapas de ideación con un 25%. Estos datos orientan directamente las decisiones de diseño: el contenido debe ser variado, progresivo y acompañado de un sistema de recordatorios que sostenga la continuidad del usuario.
 
-**Métricas de éxito propuestas**
+**Confianza ante stock validado por sensor de peso**
 
 <p align="center">
-  <img src="images/graf_metricas_exito.png" alt="Métricas de éxito propuestas" width="500"/>
+  <img src="images/graf_seguridadSensor.png" alt="graf_seguridadSensor" width="500"/>
 </p>
 
 El aumento de ventas fue mencionado por el 100% de los capacitadores como la métrica más relevante para evaluar el impacto del programa. La organización financiera y la constancia de participación aparecen con un 50%, mientras que la generación de nuevos contactos o clientes fue señalada por el 25%. Esta jerarquía define el orden de prioridad para los indicadores de éxito de Entreprenly.
 
+
+**Disposición a reemplazar la compra presencial por canal digital**
+<p align="center">
+  <img src="images/graf_compraDigital.png" alt="graf_compraDigital" width="500"/>
+</p>
+
+El 67% del segmento afirmó que dejaría de ir presencialmente al mercado si pudiera realizar compras de forma ágil y segura por WhatsApp. El 33% restante estaría dispuesto a hacerlo bajo la condición de recibir confirmaciones automáticas confiables, condición que Entreprenly está diseñada para cumplir. La ausencia total de rechazo evidencia que el canal conversacional tiene un potencial real de desplazar la visita presencial para compras de rutina en este perfil de consumidor.
+
 **Conclusiones**
+Los clientes finales entrevistados representan un perfil digital, exigente y con experiencias previas de frustración en el comercio local. Su principal barrera no es la tecnología, sino la falta de confianza en el stock disponible, en el proceso de pago y en la respuesta oportuna del negocio. Entreprenly responde directamente a estas tres barreras mediante la validación de stock por sensor, la confirmación automática de cobros y el chatbot de WhatsApp. Esto posiciona a la plataforma no solo como una herramienta de eficiencia operativa para el comerciante, sino también como un mecanismo de fidelización del consumidor final.
 
-Los capacitadores representan una fuente de validación experta que respalda con solidez la propuesta de Entreprenly. Su experiencia directa formando microempresarios les permite identificar no solo las ventajas del microaprendizaje, sino también sus riesgos más reales: la monotonía y la falta de seguimiento. Estas alertas deben incorporarse al diseño del producto desde etapas tempranas, asegurando variedad en los contenidos y un sistema de recordatorios que mantenga activo al usuario. Adicionalmente, la coincidencia total en el aumento de ventas como métrica de éxito alinea la propuesta de valor de Entreprenly con las expectativas tanto de los expertos como de los propios microempresarios.
-
----
-
-#### Segmento objetivo #3: Clientes de microempresas
-
-**Hallazgos**
-- El 100% de los entrevistados afirmó que saber que un negocio está en un programa de capacitación activo les genera mayor confianza, interpretándolo como una señal de compromiso con la calidad y el cliente.
-- Las principales frustraciones identificadas fueron la publicidad engañosa en redes sociales, la falta de presencia digital y la lentitud en las respuestas por WhatsApp, cada una mencionada por el 33% de los entrevistados.
-- El 67% señaló que los cambios más esperados tras una capacitación serían la puntualidad en las entregas, una comunicación más clara y una atención más amable por parte del personal.
-- Los clientes asocian el profesionalismo de un negocio local con aspectos concretos y visibles: orden, rapidez en la respuesta y coherencia entre lo que se muestra en redes y lo que se entrega.
-- Se observa que la percepción del cliente sobre el negocio puede superar incluso a tiendas grandes si el precio es razonable y el servicio es eficiente y cercano.
-
-**Principales frustraciones con microempresas**
-
-<p align="center">
-  <img src="images/graf_frustaciones.png" alt="Principales frustraciones con microempresas" width="500"/>
-</p>
-
-La distribución igualitaria del 33% entre las tres frustraciones (publicidad engañosa, falta de presencia digital y respuesta lenta por WhatsApp) indica que no existe un único problema dominante, sino tres puntos de fricción de igual peso que afectan la experiencia del cliente. Cada uno de estos problemas tiene solución directa a través de la capacitación en marketing, comunicación digital y atención al cliente que ofrece Entreprenly.
-
-**Cambios esperados tras la capacitación**
-
-<p align="center">
-  <img src="images/graf_cambios.png" alt="Cambios esperados tras la capacitación" width="500"/>
-</p>
-
-La puntualidad en entregas, la comunicación clara y la atención amable concentran el 67% de las expectativas, posicionándose como los cambios más valorados por el cliente. La mejora en logística y seguimiento de envíos aparece con un 33%, completando un panorama donde la experiencia de compra (desde el primer contacto hasta la entrega) es el eje central de lo que el consumidor espera mejorar.
-
-**¿La capacitación genera mayor confianza como cliente?**
-
-<p align="center">
-  <img src="images/graf_confianza.png" alt="Confianza del cliente en negocios capacitados" width="500"/>
-</p>
-
-El **100%** de los entrevistados respondió que saber que un negocio está en un programa de capacitación activo les genera mayor confianza y lo interpretan como señal de compromiso con la calidad.
-
-
-**Conclusiones** 
-Los clientes de microempresas se convierten en un validador externo clave para Entreprenly. Su disposición a confiar más en negocios que se capacitan activamente demuestra que la plataforma no solo impacta al microempresario internamente, sino que también mejora su imagen y competitividad frente al consumidor. Al trabajar aspectos como la comunicación, la organización y la atención al cliente, Entreprenly permite que el emprendedor resuelva de forma directa las principales fricciones que hoy alejan a sus clientes. Esto convierte a la plataforma en un puente entre el crecimiento del negocio y la fidelización del mercado, fortaleciendo la relación entre microempresa y consumidor local.
-
----
 ## 2.3. Needfinding
 
 ### 2.3.1. User Personas
