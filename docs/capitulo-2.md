@@ -715,7 +715,7 @@ Los clientes de microempresas se convierten en un validador externo clave para E
 
 **Segmento 1: Comerciantes (Dueños de Minimarkets/Mercados)**
 <p align="center">
-  <img src="images/User_Jorney_segmento1.png" alt="user_persona_valentina" width="500"/>
+  <img src="images/journey_mapin_segmento1.png" alt="user_persona_valentina" width="500"/>
 </p>
 
 **Segmento 2: Clientes Finales**
