@@ -486,7 +486,7 @@ Esta sección presenta el estudio cualitativo basado en entrevistas semiestructu
 
 ### 2.2.3. Análisis de entrevistas
 
-En esta fase se realizaron 10 entrevistas semiestructuradas dirigidas a tres segmentos clave del ecosistema de Entreprenly: dueños de microempresas, capacitadores de emprendedores y clientes de microempresas. El propósito fue profundizar en sus experiencias, frustraciones y expectativas en torno a la capacitación, la gestión empresarial y la confianza en el comercio local. El análisis permitió identificar patrones de respuesta con lectura porcentual, ofreciendo una visión más objetiva de los datos obtenidos.
+En esta fase se realizaron 6 entrevistas semiestructuradas dirigidas a dos segmentos clave del ecosistema del proyecto: dueños de microempresas (minimarkets y puestos de mercado) y clientes finales de dichos establecimientos. El propósito fue profundizar en sus experiencias, frustraciones y expectativas en torno a la gestión de inventarios, la transparencia en el pesaje de productos y la eficiencia en la atención mediante canales digitales. El análisis permitió identificar patrones de respuesta con lectura porcentual, ofreciendo una visión más objetiva de los datos cualitativos obtenidos en los distritos de Magdalena del Mar y San Martín de Porres
 
 ---
 #### Segmento objetivo #1: Dueños de microempresas
