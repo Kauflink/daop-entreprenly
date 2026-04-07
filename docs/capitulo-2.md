@@ -11,14 +11,10 @@
 *Contenido por agregar.*
 
 ## 2.2. Entrevistas
-<p style="text-align: justify;">
-  Esta sección presenta el estudio cualitativo basado en entrevistas semiestructuradas a dueños de microempresas, expertos en capacitación y clientes potenciales, diseñado para explorar en profundidad las barreras de tiempo, la falta de disciplina en la formación y los criterios de confianza en la gestión de negocios locales. El protocolo incluyó temas sobre hábitos de aprendizaje, uso de herramientas digitales para la operatividad diaria, percepción del microaprendizaje y expectativas de profesionalización. La información fue tratada con consentimiento informado y anonimización, y analizada mediante codificación temática, generando insumos directos para los artefactos de needfinding, la elaboración de los User Personas y la priorización de requisitos funcionales del MVP.
-</p>
+Esta sección presenta el estudio cualitativo basado en entrevistas semiestructuradas orientadas a validar una solución tecnológica que integra <b>Inteligencia Artificial (Chatbots), Internet de las Cosas (Sensores de peso) y automatización de pagos</b>. El estudio exploró las deficiencias actuales en el control de inventarios, la falta de transparencia en el pesaje de productos y la fricción en la atención al cliente vía WhatsApp. Participaron dueños de negocios con hasta 40 años de experiencia, expertos en procesos operativos y clientes finales, permitiendo identificar que la "inercia operativa" y el desorden financiero son las principales barreras para la digitalización de la microempresa local.
 
 ### 2.2.1. Diseño de entrevistas
-<p style="text-align: justify;">
 "Antes de iniciar la entrevista, se brinda un saludo cordial y una breve presentación del entrevistador, explicando que el propósito de la conversación es conocer los desafíos y experiencias de los emprendedores en su gestión diaria. Se aclara que la información recopilada será utilizada únicamente con fines académicos para el desarrollo del proyecto y se mantendrá en estricta confidencialidad. Como primer paso, se solicita al entrevistado brindar su nombre completo, edad y lugar de residencia para fines de registro. Asimismo, se señala que la entrevista tendrá una duración aproximada de 5 a 10 minutos y se desarrollará de manera abierta, por lo que se le invita a responder con total libertad y basándose en ejemplos de su experiencia real, destacando que no existen respuestas correctas o incorrectas."
-</p>
 
 **Preguntas introductorias**
 -   ¿Cuál es su nombre?
@@ -85,7 +81,7 @@
 
   <!-- Imagen de la captura de pantalla -->
   <div style="background-color: #1a6b6b; padding: 12px 16px 16px;">
-    <img src="images/Catherine.png" alt="Captura de entrevista" style="width: 100%; border-radius: 3px; display: block;">
+    <img src="images/sofia_lopez.png" alt="Captura de entrevista" style="width: 100%; border-radius: 3px; display: block;">
   </div>
 
   <!-- Datos en dos columnas -->
@@ -130,8 +126,8 @@
   <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
     <tr>
       <td style="padding: 10px 14px; border: 1px solid #cfd8dc; line-height: 1.6;">
-        Rosmery es una joven emprendedora de 21 años residente en San Martín de Porres, dedicada a la importación y venta de merchandising de K-pop (álbumes, <u>fotocards</u>, etc.). Su negocio se gestiona principalmente vía <strong>WhatsApp</strong> y redes sociales, utilizando herramientas básicas como <strong>Excel</strong> y <strong>libretas</strong> para sus finanzas.
-        Durante la entrevista, identificó que sus mayores obstáculos son la <strong>falta de tiempo</strong> por sus estudios universitarios, la dificultad para saber por dónde empezar a innovar y el miedo a realizar malas inversiones. Se mostró muy interesada en una solución de aprendizaje basada en <strong>micro-actividades prácticas</strong> (20 a 30 minutos diarios), prefiriendo el formato de <strong>notificaciones/mensajes al celular</strong> por su inmediatez. Las áreas donde busca mayor impacto son el <strong>incremento de ventas, captación de clientes y gestión financiera</strong>. Finalmente, condicionó su recomendación del programa a la obtención de resultados tangibles, como un aumento real en sus ventas y una gestión más ordenada de su negocio.
+        María es una joven de 23 años que prefiere métodos de pago digitales como Yape y Plin. Su principal molestia al comprar en minimarkets locales es la lentitud en la respuesta y la incertidumbre sobre el stock real, habiendo tenido experiencias negativas donde pagó por productos agotados. Esta falta de transparencia ha quebrado su confianza en varios negocios locales.
+        Muestra un alto interés en soluciones tecnológicas: validaría con entusiasmo un sistema que use sensores de peso reales para confirmar el stock desde su celular y valora críticamente la recepción inmediata de comprobantes de pago virtuales. Afirma que dejaría de ir presencialmente a los mercados si pudiera comprar de forma segura y rápida (en tres clics) vía WhatsApp, siempre que el sistema le brinde confirmaciones automáticas e inmediatas.
       </td>
     </tr>
   </table>
@@ -153,17 +149,17 @@
 
   <!-- Imagen de la captura de pantalla -->
   <div style="background-color: #1a6b6b; padding: 12px 16px 16px;">
-    <img src="images/Romi.png" alt="Captura de entrevista" style="width: 100%; border-radius: 3px; display: block;">
+    <img src="images/curay.png" alt="Captura de entrevista" style="width: 100%; border-radius: 3px; display: block;">
   </div>
 
   <!-- Datos en dos columnas -->
   <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc; width: 50%;">
-        <strong>Entrevistado:</strong> Shirley Romy Becerra Pinchi
+        <strong>Entrevistado:</strong> Sebastián Curay
       </td>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc; width: 50%;">
-        <strong>Género:</strong> Femenino
+        <strong>Género:</strong> Masculino
       </td>
     </tr>
     <tr>
@@ -171,7 +167,7 @@
         <strong>Entrevistador(a):</strong> Fernando Flores
       </td>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
-        <strong>Edad:</strong> 33
+        <strong>Edad:</strong> 19
       </td>
     </tr>
     <tr>
@@ -179,7 +175,7 @@
         <strong>Duración:</strong> 6:35
       </td>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
-        <strong>Lugar de Residencia:</strong> Tarapoto - San Martin
+        <strong>Lugar de Residencia:</strong> San Martín de Porres, Lima
       </td>
     </tr>
   </table>
@@ -198,8 +194,8 @@
   <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
     <tr>
       <td style="padding: 10px 14px; border: 1px solid #cfd8dc; line-height: 1.6;">
-        Shirley es una Licenciada en Administración de 33 años que lidera un emprendimiento de productos <strong>"Kawaii/Aesthetic"</strong> (papelería y accesorios en tendencia), motivada por los gustos de su hija. Actualmente, divide su tiempo equitativamente entre su hogar y su negocio, el cual gestiona principalmente a través de <strong>WhatsApp Estados y Facebook.</strong> Aunque posee conocimientos administrativos, utiliza <strong>Excel</strong> para su inventario y finanzas, enfrentando el reto de separar el capital del negocio de los gastos familiares y el pago de préstamos.
-        En la entrevista, destacó que su principal obstáculo es el <strong>financiamiento para innovar</strong> y la gestión del tiempo como madre. Valora la capacitación constante, pero prefiere formatos <strong>visuales y auditivos (videos o Zoom)</strong> por encima del texto, buscando una interacción más fluida. Está dispuesta a invertir en un programa si es <strong>accesible y directo</strong>, enfocándose especialmente en reforzar sus conocimientos en <strong>finanzas aplicadas</strong> y estrategias actualizadas que no vio durante su formación universitaria.
+        Sebastián es un estudiante de 19 años que prioriza la rapidez y los pagos digitales (Tarjeta y Yape/Plin) por encima del efectivo. Su mayor frustración es la incertidumbre del stock y la demora en la atención vía WhatsApp, habiendo experimentado varias veces el pagar por productos que finalmente estaban agotados, lo que ha erosionado su confianza en los negocios locales.
+        Debido a su carga académica, valora enormemente la posibilidad de realizar compras en "tres clics" para ahorrar tiempo. No cuenta con herramientas en casa para validar el peso de lo que recibe, por lo que un sistema con sensores de peso reales que valide el stock digitalmente le brindaría la seguridad que actualmente le falta. Además, considera indispensable recibir una confirmación automática e inmediata tras el pago para mitigar la sensación de riesgo al pagar por adelantado.
       </td>
     </tr>
   </table>
@@ -221,17 +217,17 @@
 
   <!-- Imagen de la captura de pantalla -->
   <div style="background-color: #1a6b6b; padding: 12px 16px 16px;">
-    <img src="images/Flavio.png" alt="Captura de entrevista" style="width: 100%; border-radius: 3px; display: block;">
+    <img src="images/cat.png" alt="Captura de entrevista" style="width: 100%; border-radius: 3px; display: block;">
   </div>
 
   <!-- Datos en dos columnas -->
   <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc; width: 50%;">
-        <strong>Entrevistado:</strong> Flavio Mosquisa Quispe
+        <strong>Entrevistada:</strong> Rosmery Villa
       </td>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc; width: 50%;">
-        <strong>Género:</strong> Masculino
+        <strong>Género:</strong> Femenino
       </td>
     </tr>
     <tr>
@@ -247,7 +243,7 @@
         <strong>Duración:</strong> 6:35
       </td>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
-        <strong>Lugar de Residencia:</strong> San Miguel
+        <strong>Lugar de Residencia:</strong> an Martín de Porres, Lima
       </td>
     </tr>
   </table>
@@ -266,8 +262,8 @@
   <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
     <tr>
       <td style="padding: 10px 14px; border: 1px solid #cfd8dc; line-height: 1.6;">
-        Flavio es un joven de 21 años que lidera un negocio de <strong>diseño gráfico y branding</strong>, enfocado en crear identidades visuales para empresas. A diferencia de los perfiles anteriores, su trabajo es netamente creativo y digital. Actualmente gestiona sus finanzas mediante <strong>Excel y recibos por honorarios</strong>, adaptando sus presupuestos de forma estratégica según las necesidades y el bolsillo de cada cliente.
-        Durante la entrevista, identificó que su mayor obstáculo es el <strong>desconocimiento sobre cómo integrar nuevos procesos</strong> de manera eficiente, cayendo muchas veces en la experimentación por ensayo y error. Se destaca por su alta disposición al aprendizaje, pudiendo dedicar entre <strong>6 y 12 horas</strong> a su formación si el beneficio es claro. Prefiere trabajar mediante una <strong>plataforma web</strong> debido a que su entorno natural de trabajo es la PC/Laptop. Su interés principal radica en la <strong>atracción de clientes calificados</strong> (filtrar clientes que valoren su trabajo) y en herramientas técnicas que aceleren su productividad. Finalmente, afirmó que recomendaría el programa si este le ayuda a alcanzar objetivos concretos que "desearía haber sabido antes".
+        Rosmery es una joven de 21 años que utiliza casi exclusivamente billeteras digitales (Yape) y tarjetas, evitando el uso de efectivo. Identifica la demora en la respuesta y la falta de stock actualizado como los principales motivos para abandonar una compra. Ha tenido experiencias negativas pagando por productos que luego resultan estar agotados, lo que genera una pérdida total de confianza en el negocio.
+        Se define como alguien que no sabe "escoger productos" en el mercado físico, por lo que prefiere una solución digital de "tres clics" que pueda usar incluso mientras viaja en el bus. Valida con entusiasmo la implementación de sensores de peso reales en los estantes, ya que desconfía de las balanzas tradicionales de los mercados. Aunque no le da importancia al comprobante físico, exige una confirmación automática del sistema al pagar por adelantado para evitar la sensación de inseguridad e insatisfacción.
       </td>
     </tr>
   </table>
@@ -290,25 +286,25 @@
 
   <!-- Imagen de la captura de pantalla -->
   <div style="background-color: #1a6b6b; padding: 12px 16px 16px;">
-    <img src="images/Maricarmen.png" alt="Captura de entrevista" style="width: 100%; border-radius: 3px; display: block;">
+    <img src="images/abuelito.png" alt="Captura de entrevista" style="width: 100%; border-radius: 3px; display: block;">
   </div>
 
   <!-- Datos en dos columnas -->
   <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc; width: 50%;">
-        <strong>Entrevistado:</strong> Maricarmen Lopez
+        <strong>Entrevistado:</strong> Hercilio Carrasco Herrera
       </td>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc; width: 50%;">
-        <strong>Género:</strong> Femenino
+        <strong>Género:</strong> Masculino
       </td>
     </tr>
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
-        <strong>Entrevistador(a):</strong> Elynor Palma
+        <strong>Entrevistador(a):</strong> Fernando Flores
       </td>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
-        <strong>Edad:</strong> 30
+        <strong>Edad:</strong> 62
       </td>
     </tr>
     <tr>
@@ -316,7 +312,7 @@
         <strong>Duración:</strong> 6:35
       </td>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
-        <strong>Lugar de Residencia:</strong> Miraflores
+        <strong>Lugar de Residencia:</strong> Magdalena del Mar, Lima
       </td>
     </tr>
   </table>
@@ -335,8 +331,8 @@
   <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
     <tr>
       <td style="padding: 10px 14px; border: 1px solid #cfd8dc; line-height: 1.6;">
-        Maricarmen es una especialista en gestión de negocios y marketing con experiencia capacitando a microempresarios y negocios familiares. Según su perspectiva, el mayor obstáculo de los emprendedores no es la falta de conocimiento, sino la <strong>falta de aplicación práctica</strong> debido a la escasez de tiempo y disciplina.
-        Valida totalmente un sistema de <strong>actividades diarias</strong> breves, ya que permitiría que el aprendizaje sea continuo y se adapte al ritmo real del negocio. Destaca que la herramienta podría funcionar como un complemento perfecto para dejar "tareas diarias" tras sus sesiones teóricas. Sin embargo, advierte sobre riesgos como la baja <strong>alfabetización digital</strong> y la posible desmotivación si no existe un seguimiento constante. Sugiere que el éxito del programa se mida a través del <strong>aumento de ventas</strong> y la <strong>mejora en la organización financiera </strong>de los usuarios.
+        Herilio es un comerciante con cuatro décadas de trayectoria que actualmente utiliza Excel para su control de productos, aunque admite tener dificultades con el descuadre de stock (errores manuales al comprar o registrar). Su mayor "punto de dolor" es el desorden financiero: mezcla el dinero de las ventas con los pagos a proveedores y no logra cuadrar el efectivo con los vouchers de tarjetas y billeteras digitales como Yape o Plin.
+        Valida con entusiasmo la implementación de balanzas inteligentes para inventario automático y un chatbot con IA que gestione los pedidos de WhatsApp, funciones que actualmente delega en su hijo. Considera que un sistema que automatice el arqueo de caja y permita ventas 24/7 sin errores de stock sería una solución "bacán" que le ahorraría tiempo, dinero y reduciría la carga operativa de su personal.
       </td>
     </tr>
   </table>
@@ -359,14 +355,14 @@
 
   <!-- Imagen de la captura de pantalla -->
   <div style="background-color: #1a6b6b; padding: 12px 16px 16px;">
-    <img src="images/Stephany.png" alt="Captura de entrevista" style="width: 100%; border-radius: 3px; display: block;">
+    <img src="images/abuelita.png" alt="Captura de entrevista" style="width: 100%; border-radius: 3px; display: block;">
   </div>
 
   <!-- Datos en dos columnas -->
   <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc; width: 50%;">
-        <strong>Entrevistado:</strong> Stephany Morales
+        <strong>Entrevistado:</strong> María Encarnación Velázquez
       </td>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc; width: 50%;">
         <strong>Género:</strong> Femenino
@@ -374,10 +370,10 @@
     </tr>
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
-        <strong>Entrevistador(a):</strong> Elynor Palma
+        <strong>Entrevistador(a):</strong> Fernando Flores
       </td>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
-        <strong>Edad:</strong> 27
+        <strong>Edad:</strong> 60
       </td>
     </tr>
     <tr>
@@ -385,7 +381,7 @@
         <strong>Duración:</strong> 6:35
       </td>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
-        <strong>Lugar de Residencia:</strong> Los Olivos
+        <strong>Lugar de Residencia:</strong> Magdalena del Mar, Lima
       </td>
     </tr>
   </table>
@@ -404,8 +400,8 @@
   <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
     <tr>
       <td style="padding: 10px 14px; border: 1px solid #cfd8dc; line-height: 1.6;">
-        Stefanie es una especialista en formación de emprendedores con enfoque en <strong>crecimiento de negocios, marketing y networking</strong>. Trabaja principalmente con microempresarios que buscan profesionalizar sus ventas. Identifica que el principal obstáculo para el éxito es la falta de <strong>constancia y organización</strong>, ya que los emprendedores suelen perderse en las "urgencias" diarias de su empresa.
-        Valida con entusiasmo un sistema de actividades diarias breves porque transforma el conocimiento en <strong>hábitos</strong>. Propone que la herramienta no solo sea individual, sino que fomente una <strong>comunidad</strong> mediante retos semanales y retroalimentación grupal. Advierte que el mayor riesgo es la <strong>sobrecarga cognitiva</strong> y la pérdida de motivación si las tareas se vuelven repetitivas. Para ella, el programa debe centrarse en resultados tangibles y medibles, como el contacto con nuevos clientes y el registro de ventas, utilizando el <strong>SMS</strong> como un canal práctico y de alta tasa de respuesta.
+        María gestiona su negocio basándose principalmente en la memoria y la inspección visual diaria. Admite que este método genera errores, como enviar pedidos equivocados o duplicados a los clientes, lo que deriva en pérdidas económicas (ej. kilos de fruta regalados para no quedar mal con el cliente). Existe una falta de consenso administrativo con su esposo: mientras ella busca un cierre de caja formal, él prefiere la inmediatez de usar el dinero de Yape/Tarjeta directamente para nuevas compras sin registrar.
+        Muestra una apertura total hacia la tecnología para "hacer descansar al cerebro". Valida que una balanza inteligente le permitiría cobrar hasta los céntimos exactos (evitando el redondeo a favor del cliente que merman su ganancia). Además, ve en el chatbot y la impresión automática de vouchers una solución para no "perder tiempo pensando" y evitar errores de despacho, asegurando que su volumen de ventas subiría al ofrecer una atención mucho más rápida.
       </td>
     </tr>
   </table>
@@ -427,81 +423,14 @@
 
   <!-- Imagen de la captura de pantalla -->
   <div style="background-color: #1a6b6b; padding: 12px 16px 16px;">
-    <img src="images/Gabriela.png" alt="Captura de entrevista" style="width: 100%; border-radius: 3px; display: block;">
+    <img src="images/luis.png" alt="Captura de entrevista" style="width: 100%; border-radius: 3px; display: block;">
   </div>
 
   <!-- Datos en dos columnas -->
   <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc; width: 50%;">
-        <strong>Entrevistado:</strong> Gabriela Saguma
-      </td>
-      <td style="padding: 7px 14px; border: 1px solid #cfd8dc; width: 50%;">
-        <strong>Género:</strong> Femenino
-      </td>
-    </tr>
-    <tr>
-      <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
-        <strong>Entrevistador(a):</strong> Elynor Palma
-      </td>
-      <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
-        <strong>Edad:</strong> 21
-      </td>
-    </tr>
-    <tr>
-      <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
-        <strong>Duración:</strong> 6:35
-      </td>
-      <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
-        <strong>Lugar de Residencia:</strong> Los Olivos
-      </td>
-    </tr>
-  </table>
-
-  <!-- Link -->
-  <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
-    <tr>
-      <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
-        <strong>Link de la entrevista:</strong>
-        <a href="https://youtu.be/J-kTxRbFjtU" style="color: #1a6b6b;">https://youtu.be/J-kTxRbFjtU</a>
-      </td>
-    </tr>
-  </table>
-
-  <!-- Descripción -->
-  <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
-    <tr>
-      <td style="padding: 10px 14px; border: 1px solid #cfd8dc; line-height: 1.6;">
-        Gabriela es especialista en <strong>gestión operativa y escalabilidad de negocios</strong>. Su enfoque se centra en ayudar a microempresarios a profesionalizar sus procesos para competir en mercados exigentes. Define el problema principal de los emprendedores como <strong>"inercia operativa"</strong>: el quedar atrapados en la ejecución táctica del día a día, lo que hace que el aprendizaje pierda prioridad frente a las urgencias.
-        Valida el sistema de actividades diarias bajo la metodología de <strong>microlearning</strong>, explicando que fragmentar conceptos complejos reduce la "resistencia cognitiva". Propone usar la herramienta como un <strong>"diario de implementación"</strong> con auditorías rápidas y listas de verificación de seguridad o costos. Destaca el uso de <strong>SMS</strong> como una estrategia de <strong>inclusión tecnológica necesaria</strong> para sectores con baja conectividad, asegurando que el conocimiento llegue a todos los estratos. Recomienda el programa para negocios con una estructura mínima, pero sugiere cautela en etapas de "ideación" muy tempranas.
-      </td>
-    </tr>
-  </table>
-
-</div>
-
-</div>
-
----
--   Cuarta entrevista:
-<div align="center">
-<div style="font-family: 'Segoe UI', sans-serif; max-width: 680px; margin: 24px auto; border: 1.5px solid #b0bec5; border-radius: 4px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.12);">
-
-  <!-- Encabezado -->
-  <div style="background-color: #1a6b6b; color: white; padding: 10px 16px; font-weight: 700; font-size: 1.1em; letter-spacing: 0.05em;">
-  
-  </div>
-
-  <!-- Imagen de la captura de pantalla -->
-  <div style="background-color: #1a6b6b; padding: 12px 16px 16px;">
-    <img src="images/Carlos.png" alt="Captura de entrevista" style="width: 100%; border-radius: 3px; display: block;">
-  </div>
-
-  <!-- Datos en dos columnas -->
-  <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
-    <tr>
-      <td style="padding: 7px 14px; border: 1px solid #cfd8dc; width: 50%;">
-        <strong>Entrevistado:</strong> Sebastian Fernandez
+        <strong>Entrevistado:</strong> Luis Vargas
       </td>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc; width: 50%;">
         <strong>Género:</strong> Masculino
@@ -509,10 +438,10 @@
     </tr>
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
-        <strong>Entrevistador(a):</strong> Elynor Palma
+        <strong>Entrevistador(a):</strong> Fernando Flores
       </td>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
-        <strong>Edad:</strong> 30
+        <strong>Edad:</strong> 54
       </td>
     </tr>
     <tr>
@@ -520,7 +449,7 @@
         <strong>Duración:</strong> 6:35
       </td>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
-        <strong>Lugar de Residencia:</strong> Callao
+        <strong>Lugar de Residencia:</strong> Magdalena del Mar, Lima
       </td>
     </tr>
   </table>
@@ -539,8 +468,8 @@
   <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
     <tr>
       <td style="padding: 10px 14px; border: 1px solid #cfd8dc; line-height: 1.6;">
-        Sebastián es un especialista en <strong>gestión empresarial y administración de pequeños negocios</strong>, enfocado en emprendedores en etapas iniciales. Identifica que el mayor obstáculo no es la falta de comprensión, sino la <strong>falta de acompañamiento y disciplina</strong> para aplicar lo aprendido de manera sostenida. Define el olvido de los conceptos post-capacitación como un problema de falta de "hábitos reales".
-        Valida el sistema de actividades diarias como una herramienta de <strong>flexibilidad</strong> y <strong>continuidad</strong>, que rompe con la limitación de las clases tradicionales al acompañar al emprendedor en su "proceso diario". Propone que la herramienta se use como una <strong>extensión práctica obligatoria</strong> después de las sesiones teóricas. Advierte que el contenido debe ser extremadamente dinámico para evitar la desmotivación. Coincide en que el <strong>SMS</strong> es una vía efectiva por su simplicidad y alcance directo, permitiendo medir el éxito a través de la constancia de participación y el incremento en las ventas de los estudiantes.
+       Luis es un comerciante de 54 años que confía plenamente en su memoria para el control de inventarios. Al trabajar con fruta selecta, asegura que no tiene pérdidas económicas por calidad, aunque reconoce que actualmente no puede saber con exactitud si el stock físico coincide con lo que debería haber. Aunque no siente dificultad para revisar sus movimientos en Yape o Plin, admite que el proceso es manual.
+        Valida que un sistema de inventario por peso le ahorraría mucho tiempo, evitando el conteo unidad por unidad. Además, ve con buenos ojos la automatización de pedidos por WhatsApp, señalando que una impresión automática de comprobantes haría el despacho "mucho más rápido". Finalmente, coincide en que un sistema que funcione 24/7 mediante un bot aumentaría significativamente su volumen de ventas al eliminar la fricción de la atención manual.
       </td>
     </tr>
   </table>
@@ -550,6 +479,7 @@
 </div>
 
 ---
+
 
 
 
