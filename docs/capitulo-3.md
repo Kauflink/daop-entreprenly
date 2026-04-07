@@ -4,13 +4,9 @@
 
 *Contenido por agregar.*
 
----
-
 ## 3.2. Impact Mapping
 
 *Contenido por agregar.*
-
----
 
 ## 3.3. Product Backlog
 

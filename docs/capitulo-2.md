@@ -10,8 +10,6 @@
 
 *Contenido por agregar.*
 
----
-
 ## 2.2. Entrevistas
 
 ### 2.2.1. Diseño de entrevistas
@@ -25,8 +23,6 @@
 ### 2.2.3. Análisis de entrevistas
 
 *Contenido por agregar.*
-
----
 
 ## 2.3. Needfinding
 
@@ -46,13 +42,9 @@
 
 *Contenido por agregar.*
 
----
-
 ## 2.4. Big Picture Event Storming
 
 *Contenido por agregar.*
-
----
 
 ## 2.5. Ubiquitous Language
 

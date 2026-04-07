@@ -18,8 +18,6 @@
 
 *Contenido por agregar.*
 
----
-
 ## 5.2. Landing Page, Services & Applications Implementation
 
 ### 5.2.1. Sprint 1
@@ -56,8 +54,6 @@
 
 *Contenido por agregar.*
 
----
-
 ## 5.3. Validation Interviews
 
 ### 5.3.1. Diseño de Entrevistas
@@ -71,8 +67,6 @@
 ### 5.3.3. Evaluaciones según heurísticas
 
 *Contenido por agregar.*
-
----
 
 ## 5.4. Video About-the-Product
 

@@ -10,8 +10,6 @@
 
 *Contenido por agregar.*
 
----
-
 ## 1.2. Solution Profile
 
 ### 1.2.1. Antecedentes y problemática
@@ -37,8 +35,6 @@
 #### 1.2.2.4. Lean UX Canvas
 
 *Contenido por agregar.*
-
----
 
 ## 1.3. Segmentos objetivo
 
