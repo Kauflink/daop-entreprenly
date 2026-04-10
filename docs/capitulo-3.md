@@ -1119,6 +1119,258 @@ Y no permitir la creación del lote<br><br>
 
 <br><br>
 
+----
+
+<table>
+<tr>
+<th>User Story</th>
+<th>25</th>
+<th>Epic ID</th>
+<th>01</th>
+</tr>
+<tr>
+<td><strong>Title</strong></td>
+<td colspan="3">Selección y Registro de Ítems</td>
+</tr>
+<tr>
+<td><strong>Description</strong></td>
+<td colspan="3">
+<strong>Como</strong> cajero, <strong>quiero</strong> buscar y seleccionar productos del inventario, <strong>para</strong> agregarlos al detalle del Ticket de Venta.
+</td>
+</tr>
+<tr>
+<td><strong>Acceptance Criteria</strong></td>
+<td colspan="3">
+
+<strong>Scenario 1: Selección de producto existente</strong><br>
+<strong>Dado</strong> que el cajero se encuentra en la interfaz de ventas,<br>
+<strong>Cuando</strong> ingresa el  nombre del producto en el buscador,<br>
+<strong>Y</strong> haya ingresado la cantidad <br>
+<strong>Y</strong> presiona la tecla enter para confirmar,<br>
+<strong>Entonces</strong> el sistema añade el producto con su información base al detalle de la venta.<br><br>
+
+<strong>Scenario 2: Intento de agregar producto no registrado</strong><br>
+<strong>Dado</strong> que el cajero se encuentra en la interfaz de ventas,<br>
+<strong>Cuando</strong> ingresa un código que no existe en la base de datos,<br>
+<strong>Y</strong> el sistema termina de realizar la búsqueda sin coincidencias,<br>
+<strong>Entonces</strong> el sistema muestra un mensaje de error indicando "Producto no encontrado".<br><br>
+
+</td>
+</tr>
+</table>
+
+<br><br>
+
+----
+
+<table>
+<tr>
+<th>User Story</th>
+<th>26</th>
+<th>Epic ID</th>
+<th>01</th>
+</tr>
+<tr>
+<td><strong>Title</strong></td>
+<td colspan="3">Registro de Productos por Peso (IoT)</td>
+</tr>
+<tr>
+<td><strong>Description</strong></td>
+<td colspan="3">
+<strong>Como</strong> cajero, <strong>quiero</strong> registrar el peso de los productos en el sistema (ya sea por captura automática o ingreso manual), <strong>para</strong> agilizar el proceso de cobro y asegurar que la venta no se detenga por fallas técnicas
+
+</td>
+</tr>
+<tr>
+<td><strong>Acceptance Criteria</strong></td>
+<td colspan="3">
+
+<strong>Scenario 1: Selección de producto existente</strong><br>
+<strong>Dado</strong> que el sistema cuenta con una balanza IoT configurada y conectada,<br>
+<strong>Cuando</strong> se selecciona un producto que se vende por peso,<br>
+<strong>Y</strong> el sistema recibe la lectura del peso directamente del hardware, <br>
+<strong>Entonces</strong> el sistema carga el valor automáticamente en el detalle de la venta<br><br>
+
+<strong>Scenario 2: Registro manual en ausencia o falla de balanza</strong><br>
+<strong>Dado</strong> que el establecimiento no cuenta con balanza IoT o el dispositivo está desconectado,<br>
+<strong>Cuando</strong> el cajero selecciona un producto que se vende por peso,<br>
+<strong>Y</strong> el sistema detecta que no hay respuesta del hardware o se elige la opción "Ingreso Manual",<br>
+<strong>Entonces</strong> el sistema habilita un teclado numérico para que el cajero digite el peso observado físicamente.
+<br><br>
+
+</td>
+</tr>
+</table>
+
+<br><br>
+
+----
+
+<table>
+<tr>
+<th>User Story</th>
+<th>27</th>
+<th>Epic ID</th>
+<th>01</th>
+</tr>
+<tr>
+<td><strong>Title</strong></td>
+<td colspan="3">Gestión del Detalle del Ticket de Venta</td>
+</tr>
+<tr>
+<td><strong>Description</strong></td>
+<td colspan="3">
+<strong>Como</strong> cajero, <strong>quiero</strong> visualizar el desglose de productos (nombre, cantidad, precio unitario y subtotal), <strong>para</strong> verificar que la información de la venta sea correcta antes del pago.
+
+</td>
+</tr>
+<tr>
+<td><strong>Acceptance Criteria</strong></td>
+<td colspan="3">
+
+<strong>Scenario 1: Actualización del detalle y monto total</strong><br>
+<strong>Dado</strong> que se han añadido productos al ticket de venta,<br>
+<strong>Cuando</strong> el sistema procesa cada ítem de la lista,<br>
+<strong>Y</strong> multiplica el precio unitario por la cantidad o peso ingresado, <br>
+<strong>Entonces</strong> el sistema muestra el subtotal por producto y el monto total acumulado de la venta.<br><br>
+
+
+<br><br>
+
+</td>
+</tr>
+</table>
+
+<br><br>
+
+----
+
+<table>
+<tr>
+<th>User Story</th>
+<th>28</th>
+<th>Epic ID</th>
+<th>01</th>
+</tr>
+<tr>
+<td><strong>Title</strong></td>
+<td colspan="3">Selección de Método de Pago</td>
+</tr>
+<tr>
+<td><strong>Description</strong></td>
+<td colspan="3">
+<strong>Como</strong> cajero, <strong>quiero</strong> elegir el medio de pago utilizado por el cliente, <strong>para</strong> registrar correctamente el ingreso de dinero.
+
+</td>
+</tr>
+<tr>
+<td><strong>Acceptance Criteria</strong></td>
+<td colspan="3">
+
+<strong>Scenario 1: Método de pago confirmado</strong><br>
+<strong>Dado</strong> que el total de la venta ha sido calculado y revisado,
+<strong>Cuando</strong> el cajero selecciona el medio de pago (Efectivo, Tarjeta o Digital),
+<strong>Y</strong> confirma que el monto recibido es correcto,
+<strong>Entonces</strong> el sistema habilita la opción para procesar el cierre de la transacción.
+
+
+
+<br><br>
+
+</td>
+</tr>
+</table>
+
+<br><br>
+
+----
+
+<table>
+<tr>
+<th>User Story</th>
+<th>29</th>
+<th>Epic ID</th>
+<th>01</th>
+</tr>
+<tr>
+<td><strong>Title</strong></td>
+<td colspan="3">Actualización de Totales por Medio de Pago</td>
+</tr>
+<tr>
+<td><strong>Description</strong></td>
+<td colspan="3">
+<strong>Como</strong> comerciante, <strong>quiero</strong> que el sistema acumule los ingresos de forma separada según el método de pago, <strong>para</strong> facilitar el arqueo de caja.
+
+</td>
+</tr>
+<tr>
+<td><strong>Acceptance Criteria</strong></td>
+<td colspan="3">
+
+<strong>Scenario 1: Actualización del detalle y monto total
+</strong><br>
+<strong>Dado</strong> que el total de la venta ha sido calculado y revisado,<br>
+<strong>Cuando</strong> el cajero selecciona el medio de pago (Efectivo, Tarjeta o Digital),<br>
+<strong>Y</strong> confirma que el monto recibido es correcto,<br>
+<strong>Entonces</strong> el sistema habilita la opción para procesar el cierre de la transacción.<br>
+
+
+<br><br>
+
+</td>
+</tr>
+</table>
+
+<br><br>
+
+----
+
+<table>
+<tr>
+<th>User Story</th>
+<th>30</th>
+<th>Epic ID</th>
+<th>01</th>
+</tr>
+<tr>
+<td><strong>Title</strong></td>
+<td colspan="3">Finalización de Venta, Registro y Emisión de Comprobante
+
+</td>
+</tr>
+<tr>
+<td><strong>Description</strong></td>
+<td colspan="3">
+<strong>Como</strong> cajero, <strong>quiero</strong> procesar el pago y finalizar la venta con un solo paso, <strong>para</strong> registrar la transacción en el sistema y entregarle su boleta al cliente de forma inmediata.
+
+</td>
+</tr>
+<tr>
+<td><strong>Acceptance Criteria</strong></td>
+<td colspan="3">
+
+<strong>Scenario 1: Procesamiento de cierre de venta (Ruta Feliz)
+</strong><br>
+<strong>Dado</strong> que el detalle del ticket de venta está completo y el método de pago ha sido seleccionado,<br>
+<strong>Cuando</strong> el cajero presiona el botón "Finalizar Venta y Emitir Boleta",<br>
+<strong>Y</strong> el sistema valida que los datos de la transacción son correctos,<br>
+<strong>Y</strong> registra la información en PostgreSQL actualizando los saldos y el stock,<br>
+<strong>Entonces</strong> el sistema genera el comprobante de pago final y limpia la pantalla para una nueva venta.<br>
+
+<strong>Scenario 1: Procesamiento de cierre de venta (Ruta Feliz)
+</strong><br>
+<strong>Dado</strong> que el total de la venta ha sido calculado y revisado,<br>
+<strong>Cuando</strong> el cajero selecciona el medio de pago (Efectivo, Tarjeta o Digital),<br>
+<strong>Y</strong> confirma que el monto recibido es correcto,<br>
+<strong>Entonces</strong> el sistema habilita la opción para procesar el cierre de la transacción.<br>
+
+<br><br>
+
+</td>
+</tr>
+</table>
+
+<br><br>
 ## 3.2. Impact Mapping
 
 _Contenido por agregar._
