@@ -201,14 +201,38 @@
     <td align="center">28</td>
     <td align="center">Selección de Método de Pago</td>
   </tr>
-  <tr>
-    <td align="center">29</td>
-    <td align="center">Clasificación Automática de Ingresos por Medio de Pago</td>
-  </tr>
+
   <tr>
     <td align="center">30</td>
     <td align="center">Finalización de Venta, Registro y Emisión de Comprobante</td>
   </tr>
+</table>
+<br> </br>
+
+<table>
+  <tr>
+    <th>Epic-05</th>
+    <th>Gestion de Ventas</th>
+  </tr>
+
+  <tr>
+    <td colspan="2">
+      <strong>Descripción:</strong>
+      <br></br>
+      Como comerciante, quiero que el sistema centralice y clasifique los ingresos según el medio de pago en tiempo real, para realizar el arqueo de caja al final del día de manera exacta y sin errores manuales.
+    </td>
+  </tr>
+
+  <tr>
+    <td align="center">29</td>
+    <td align="center">Clasificación Automática de Ingresos por Medio de Pago</td>
+  </tr>
+
+  <tr>
+    <td align="center">31</td>
+    <td align="center">Registro de Productos por Peso (IoT)</td>
+  </tr>
+  
 </table>
 <br> </br>
 
@@ -1401,7 +1425,7 @@ Y no permitir la creación del lote<br><br>
 <strong>Y</strong> registra la información en PostgreSQL actualizando los saldos y el stock,<br>
 <strong>Entonces</strong> el sistema genera el comprobante de pago final y limpia la pantalla para una nueva venta.<br>
 
-<strong>Scenario 1: Procesamiento de cierre de venta (Ruta Feliz)
+<strong>Scenario 2: Procesamiento de cierre de venta (Ruta Feliz)
 </strong><br>
 <strong>Dado</strong> que el total de la venta ha sido calculado y revisado,<br>
 <strong>Cuando</strong> el cajero selecciona el medio de pago (Efectivo, Tarjeta o Digital),<br>
@@ -1415,6 +1439,46 @@ Y no permitir la creación del lote<br><br>
 </table>
 
 <br><br>
+
+<table>
+<tr>
+<th>User Story</th>
+<th>31</th>
+<th>Epic ID</th>
+<th>01</th>
+</tr>
+<tr>
+<td><strong>Title</strong></td>
+<td colspan="3">Consulta de Resumen de Caja Diario
+
+</td>
+</tr>
+<tr>
+<td><strong>Description</strong></td>
+<td colspan="3">
+<strong>Como</strong> cajero, <strong>quiero</strong> procesar el pago y finalizar la venta con un solo paso, <strong>para</strong> registrar la transacción en el sistema y entregarle su boleta al cliente de forma inmediata.
+
+</td>
+</tr>
+<tr>
+<td><strong>Acceptance Criteria</strong></td>
+<td colspan="3">
+
+<strong>Scenario 1: Visualización detallada de ingresos
+</strong><br>
+<strong>Dado</strong> que el comerciante accede a la sección de "Cierre de Caja" o "Reportes",
+<strong>Cuando</strong> el sistema consulta los saldos acumulados en la base de datos,
+<strong>Y</strong> desglosa los totales por: Efectivo, Tarjeta y Yape/Plin,
+<strong>Entonces</strong> el sistema muestra el monto total general y la suma independiente de cada categoría para el arqueo final.
+
+<br><br>
+
+</td>
+</tr>
+</table>
+
+<br><br>
+
 ## 3.2. Impact Mapping
 
 _Contenido por agregar._
