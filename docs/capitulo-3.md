@@ -211,7 +211,7 @@
 
 <table>
   <tr>
-    <th>Epic-05</th>
+    <th>Epic-06</th>
     <th>Gestion de Ventas</th>
   </tr>
 
@@ -238,7 +238,7 @@
 
 <table>
   <tr>
-    <th>Epic-06</th>
+    <th>Epic-07</th>
     <th>Conversación y Catálogo</th>
   </tr>
   <tr>
@@ -265,7 +265,7 @@
 
 <table>
   <tr>
-    <th>Epic-07</th>
+    <th>Epic-08</th>
     <th>Gestión de Pedido y Stock</th>
   </tr>
   <tr>
@@ -296,7 +296,7 @@
 
 <table>
   <tr>
-    <th>Epic-08</th>
+    <th>Epic-09</th>
     <th>Pago Digital P2P</th>
   </tr>
   <tr>
@@ -327,7 +327,7 @@
 
 <table>
   <tr>
-    <th>Epic-09</th>
+    <th>Epic-10</th>
     <th>Confirmación, Venta y Comprobante</th>
   </tr>
   <tr>
@@ -354,7 +354,7 @@
 
 <table>
   <tr>
-    <th>Epic-10</th>
+    <th>Epic-11</th>
     <th>Flujos Alternativos y Restricciones</th>
   </tr>
   <tr>
@@ -382,7 +382,7 @@
 
 <table>
   <tr>
-    <th>Epic-11</th>
+    <th>Epic-12</th>
     <th>Technical Stories – RESTful API</th>
   </tr>
   <tr>
