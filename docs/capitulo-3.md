@@ -174,7 +174,7 @@
 <table>
   <tr>
     <th>Epic-05</th>
-    <th>Gestion de Ventas</th>
+    <th>Control de Ingresos y Arqueo de Caja</th>
   </tr>
 
   <tr>
@@ -230,7 +230,7 @@
 
   <tr>
     <td align="center">31</td>
-    <td align="center">Registro de Productos por Peso (IoT)</td>
+    <td align="center">Consulta de Resumen de Caja Diario</td>
   </tr>
   
 </table>
