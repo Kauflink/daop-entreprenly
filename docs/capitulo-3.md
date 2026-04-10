@@ -1151,7 +1151,7 @@ Y no permitir la creación del lote<br><br>
 
 <strong>Scenario 2: Intento de agregar producto no registrado</strong><br>
 <strong>Dado</strong> que el cajero se encuentra en la interfaz de ventas,<br>
-<strong>Cuando</strong> ingresa un código que no existe en la base de datos,<br>
+<strong>Cuando</strong> ingresa un nombre de un producto que no existe en la base de datos,<br>
 <strong>Y</strong> el sistema termina de realizar la búsqueda sin coincidencias,<br>
 <strong>Entonces</strong> el sistema muestra un mensaje de error indicando "Producto no encontrado".<br><br>
 
@@ -1185,16 +1185,16 @@ Y no permitir la creación del lote<br><br>
 <td><strong>Acceptance Criteria</strong></td>
 <td colspan="3">
 
-<strong>Scenario 1: Selección de producto existente</strong><br>
+<strong>Scenario 1: Captura automática mediante balanza conectada (Ruta Principal)</strong><br>
 <strong>Dado</strong> que el sistema cuenta con una balanza IoT configurada y conectada,<br>
 <strong>Cuando</strong> se selecciona un producto que se vende por peso,<br>
 <strong>Y</strong> el sistema recibe la lectura del peso directamente del hardware, <br>
 <strong>Entonces</strong> el sistema carga el valor automáticamente en el detalle de la venta<br><br>
 
-<strong>Scenario 2: Registro manual en ausencia o falla de balanza</strong><br>
+<strong>Scenario 2: Registro manual en ausencia o falla de balanza (Ruta Alternativa)</strong><br>
 <strong>Dado</strong> que el establecimiento no cuenta con balanza IoT o el dispositivo está desconectado,<br>
 <strong>Cuando</strong> el cajero selecciona un producto que se vende por peso,<br>
-<strong>Y</strong> el sistema detecta que no hay respuesta del hardware o se elige la opción "Ingreso Manual",<br>
+<strong>Y</strong> el sistema detecta que no hay respuesta del hardware elige la opción "Ingreso Manual",<br>
 <strong>Entonces</strong> el sistema habilita un teclado numérico para que el cajero digite el peso observado físicamente.
 <br><br>
 
@@ -1259,7 +1259,7 @@ Y no permitir la creación del lote<br><br>
 <tr>
 <td><strong>Description</strong></td>
 <td colspan="3">
-<strong>Como</strong> cajero, <strong>quiero</strong> elegir el medio de pago utilizado por el cliente, <strong>para</strong> registrar correctamente el ingreso de dinero.
+<strong>Como</strong> cajero, <strong>quiero</strong> elegir cómo está pagando el cliente (Efectivo, Tarjeta/Yape/Plin), <strong>para</strong> que el monto de la venta se registre en la categoría correcta de ingresos.
 
 </td>
 </tr>
@@ -1267,13 +1267,17 @@ Y no permitir la creación del lote<br><br>
 <td><strong>Acceptance Criteria</strong></td>
 <td colspan="3">
 
-<strong>Scenario 1: Método de pago confirmado</strong><br>
-<strong>Dado</strong> que el total de la venta ha sido calculado y revisado,
-<strong>Cuando</strong> el cajero selecciona el medio de pago (Efectivo, Tarjeta o Digital),
-<strong>Y</strong> confirma que el monto recibido es correcto,
-<strong>Entonces</strong> el sistema habilita la opción para procesar el cierre de la transacción.
+<strong>Scenario 1: Selección de método de pago exitosa</strong><br>
+<strong>Dado</strong> que el ticket de venta tiene el monto total calculado,
+<strong>Cuando</strong> el cajero hace clic sobre el ícono de "Efectivo", "Tarjeta/Yape/Plin",
+<strong>Y</strong> el sistema marca la opción seleccionada como activa,
+<strong>Entonces</strong> el sistema habilita el botón para emitir la boleta y finalizar la venta.
 
-
+<strong>Scenario 1: Omisión del método de pago</strong><br>
+<strong>Dado</strong> que el cajero terminó de enlistar los productos,
+<strong>Cuando</strong> intenta finalizar la venta sin haber seleccionado ninguna opción de pago,
+<strong>Y</strong> el sistema detecta que no hay un método asignado para esta transacción,
+<strong>Entonces</strong> el sistema muestra un mensaje indicando "Por favor, seleccione un método de pago" y no permite generar la boleta.
 
 <br><br>
 
@@ -1294,12 +1298,12 @@ Y no permitir la creación del lote<br><br>
 </tr>
 <tr>
 <td><strong>Title</strong></td>
-<td colspan="3">Actualización de Totales por Medio de Pago</td>
+<td colspan="3">Clasificación Automática de Ingresos por Medio de Pago</td>
 </tr>
 <tr>
 <td><strong>Description</strong></td>
 <td colspan="3">
-<strong>Como</strong> comerciante, <strong>quiero</strong> que el sistema acumule los ingresos de forma separada según el método de pago, <strong>para</strong> facilitar el arqueo de caja.
+<strong>Como</strong> comerciante, <strong>quiero</strong> que cada venta finalizada sume su monto al acumulado del método de pago correspondiente, <strong>para</strong> tener visibilidad inmediata de cuánto dinero hay en efectivo y cuánto en digital (Yape/Plin/Tarjeta).
 
 </td>
 </tr>
@@ -1307,12 +1311,12 @@ Y no permitir la creación del lote<br><br>
 <td><strong>Acceptance Criteria</strong></td>
 <td colspan="3">
 
-<strong>Scenario 1: Actualización del detalle y monto total
+<strong>Scenario 1: Actualización de acumulados tras venta
 </strong><br>
-<strong>Dado</strong> que el total de la venta ha sido calculado y revisado,<br>
-<strong>Cuando</strong> el cajero selecciona el medio de pago (Efectivo, Tarjeta o Digital),<br>
-<strong>Y</strong> confirma que el monto recibido es correcto,<br>
-<strong>Entonces</strong> el sistema habilita la opción para procesar el cierre de la transacción.<br>
+<strong>Dado</strong> que el sistema ha registrado una venta exitosamente,
+<strong>Cuando</strong> el proceso de guardado en PostgreSQL detecta el medio de pago utilizado (ej. Yape),
+<strong>Y</strong> localiza la cuenta acumulativa de dicho método en el sistema,
+<strong>Entonces</strong> el sistema suma el monto de la venta al total acumulado de ese medio de pago de forma inmediata.
 
 
 <br><br>
@@ -1353,7 +1357,6 @@ Y no permitir la creación del lote<br><br>
 </strong><br>
 <strong>Dado</strong> que el detalle del ticket de venta está completo y el método de pago ha sido seleccionado,<br>
 <strong>Cuando</strong> el cajero presiona el botón "Finalizar Venta y Emitir Boleta",<br>
-<strong>Y</strong> el sistema valida que los datos de la transacción son correctos,<br>
 <strong>Y</strong> registra la información en PostgreSQL actualizando los saldos y el stock,<br>
 <strong>Entonces</strong> el sistema genera el comprobante de pago final y limpia la pantalla para una nueva venta.<br>
 
