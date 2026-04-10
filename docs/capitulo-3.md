@@ -171,6 +171,47 @@
 </table>
 <br> </br>
 
+<table>
+  <tr>
+    <th>Epic-05</th>
+    <th>Gestion de Ventas</th>
+  </tr>
+
+  <tr>
+    <td colspan="2">
+      <strong>Descripción:</strong>
+      <br></br>
+      Como cajero o comerciante quiero contar con un módulo de ventas integrado con dispositivos IoT y persistencia en base de datos, para procesar transacciones de manera rápida, emitir comprobantes legales y mantener el inventario sincronizado automáticamente.
+    </td>
+  </tr>
+
+  <tr>
+    <td align="center">25</td>
+    <td align="center">Selección y Registro de Ítems</td>
+  </tr>
+  <tr>
+    <td align="center">26</td>
+    <td align="center">Registro de Productos por Peso (IoT)</td>
+  </tr>
+  <tr>
+    <td align="center">27</td>
+    <td align="center">Gestión del Detalle del Ticket de Venta</td>
+  </tr>
+  <tr>
+    <td align="center">28</td>
+    <td align="center">Selección de Método de Pago</td>
+  </tr>
+  <tr>
+    <td align="center">29</td>
+    <td align="center">Clasificación Automática de Ingresos por Medio de Pago</td>
+  </tr>
+  <tr>
+    <td align="center">30</td>
+    <td align="center">Finalización de Venta, Registro y Emisión de Comprobante</td>
+  </tr>
+</table>
+<br> </br>
+
 <!-- US-->
 <table>
 <tr>
