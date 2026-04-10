@@ -4,7 +4,31 @@
 
 ### 1.1.1. Descripción de la Startup
 
-*Contenido por agregar.*
+Kauflink es una startup tecnológica fundada por estudiantes de Ingeniería de Software, con el propósito de digitalizar la gestión operativa de pequeños y medianos negocios de retail en Latinoamérica. Nos enfocamos en emprendedores que operan minimarkets, tiendas de barrio y puestos de mercado —de carnes, frutas, verduras, abarrotes, entre otros— negocios que, pese a su relevancia económica y social, aún dependen de procesos manuales poco eficientes para administrar su día a día.
+ 
+Identificamos que la mayoría de estos comerciantes no cuenta con herramientas tecnológicas accesibles y adaptadas a su realidad, lo que genera pérdidas por productos vencidos, desabastecimiento no detectado y ventas sin ningún tipo de trazabilidad. Ante esta problemática, Kauflink nace con la misión de cerrar esa brecha tecnológica, ofreciendo soluciones simples, asequibles e intuitivas que permitan a estos negocios operar con mayor control, eficiencia y rentabilidad.
+ 
+<table border="1" cellpadding="10" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+  <tr>
+    <td style="width: 15%; font-weight: bold;">Misión</td>
+    <td>Brindar herramientas tecnológicas accesibles e intuitivas que permitan a los pequeños y medianos comerciantes de retail gestionar su negocio con mayor eficiencia, control y rentabilidad, impulsando su transformación digital de forma progresiva.</td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold;">Visión</td>
+    <td>Ser el aliado tecnológico de referencia para el comercio minorista informal y semiformal en Latinoamérica, contribuyendo al crecimiento sostenible de miles de emprendedores a través de la innovación y la inclusión digital.</td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold; vertical-align: top;">Valores</td>
+    <td>
+      <ul>
+        <li><strong>Accesibilidad:</strong> Desarrollamos soluciones pensadas para todos, sin importar el nivel tecnológico del usuario.</li>
+        <li><strong>Innovación:</strong> Buscamos constantemente nuevas formas de resolver problemas reales con tecnología.</li>
+        <li><strong>Compromiso:</strong> Nos involucramos con el éxito de cada comerciante que confía en nuestra plataforma.</li>
+        <li><strong>Transparencia:</strong> Actuamos con honestidad y responsabilidad frente a nuestros usuarios y aliados.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
 
 ### 1.1.2. Perfiles de integrantes del equipo
 
