@@ -1366,7 +1366,7 @@ Y no permitir la creación del lote<br><br>
 <th>User Story</th>
 <th>25</th>
 <th>Epic ID</th>
-<th>01</th>
+<th>06</th>
 </tr>
 <tr>
 <td><strong>Title</strong></td>
@@ -1404,7 +1404,7 @@ Y no permitir la creación del lote<br><br>
 <th>User Story</th>
 <th>26</th>
 <th>Epic ID</th>
-<th>01</th>
+<th>06</th>
 </tr>
 <tr>
 <td><strong>Title</strong></td>
@@ -1443,7 +1443,7 @@ Y no permitir la creación del lote<br><br>
 <th>User Story</th>
 <th>27</th>
 <th>Epic ID</th>
-<th>01</th>
+<th>06</th>
 </tr>
 <tr>
 <td><strong>Title</strong></td>
@@ -1475,7 +1475,7 @@ Y no permitir la creación del lote<br><br>
 <th>User Story</th>
 <th>28</th>
 <th>Epic ID</th>
-<th>01</th>
+<th>06</th>
 </tr>
 <tr>
 <td><strong>Title</strong></td>
@@ -1515,7 +1515,7 @@ Y no permitir la creación del lote<br><br>
 <th>User Story</th>
 <th>29</th>
 <th>Epic ID</th>
-<th>01</th>
+<th>07</th>
 </tr>
 <tr>
 <td><strong>Title</strong></td>
@@ -1548,7 +1548,7 @@ Y no permitir la creación del lote<br><br>
 <th>User Story</th>
 <th>30</th>
 <th>Epic ID</th>
-<th>01</th>
+<th>06</th>
 </tr>
 <tr>
 <td><strong>Title</strong></td>
@@ -1590,7 +1590,7 @@ Y no permitir la creación del lote<br><br>
 <th>User Story</th>
 <th>31</th>
 <th>Epic ID</th>
-<th>01</th>
+<th>07</th>
 </tr>
 <tr>
 <td><strong>Title</strong></td>
