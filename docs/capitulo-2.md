@@ -768,7 +768,15 @@ La principal coincidencia entre ambos segmentos es que los dos otorgan alta impo
 
 ## 2.4. Big Picture Event Storming
 
-*Contenido por agregar.*
+El equipo realizó una sesión colaborativa virtual de Big Picture Event Storming utilizando **Miro**, con el objetivo de explorar el dominio del negocio de Entreprenly a alto nivel e identificar los eventos significativos que ocurren en la operación de un minimarket o puesto de mercado. La sesión tuvo una duración aproximada de 10 horas y contó con la participación de todos los miembros del equipo.
+
+**Paso 1: Generación de Domain Events**
+
+En esta primera etapa, cada miembro propuso de forma individual los eventos de dominio relevantes para el sistema, redactándolos en tiempo pasado y representándolos con post-its de color naranja. Se buscó cubrir los flujos del comerciante y del cliente final sin filtrar ni debatir, generando el mayor volumen posible de eventos. Los eventos identificados abarcaron los procesos de registro de productos, control de inventario por peso (IoT), ventas presenciales, pedidos por WhatsApp, conciliación de caja y gestión de alertas operativas.
+
+<div align="center">
+![phase1](docs/images/Entreprenly_Phase1.svg "Entreprenly Fase 1")
+</div>
 
 ## 2.5. Ubiquitous Language
 
