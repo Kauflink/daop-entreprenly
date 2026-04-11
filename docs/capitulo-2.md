@@ -808,7 +808,9 @@ Finalmente, el equipo identificó los actores y sistemas externos que desencaden
   <img src="./images/chatbot.svg" alt="chatbot" width="800">
 
   <img src="./images/inicion_sesion.svg" alt="inicion_sesion" width="800">
-</div>
+</div>`
+
+Como resultado de la sesión, el equipo consolidó una visión compartida del dominio operativo de Entreprenly, identificando siete flujos principales: inicio de sesión, proceso de suscripción, configuración de suscripción, venta presencial, gestión de inventario, chatbot de pedidos por WhatsApp y gestión de perfil y configuración. Esta base sirvió como punto de partida para la definición del Ubiquitous Language y el posterior Design-Level Event Storming.
 
 ## 2.5. Ubiquitous Language
 
