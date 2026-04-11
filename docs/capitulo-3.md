@@ -3,6 +3,7 @@
 ## 3.1. User Stories
 
 <!-- Epics-->
+<div align="center">
 <table>
   <tr>
     <th>Epic-01</th>
@@ -54,7 +55,6 @@
     <td align="center">Creación de lotes</td>
   </tr>
 </table>
-<br> </br>
 
 <table>
   <tr>
@@ -95,7 +95,6 @@
     <td align="center">Alerta de caducación de Lote</td>
   </tr>
 </table>
-<br> </br>
 
 <table>
   <tr>
@@ -132,7 +131,6 @@
     <td align="center">Activar suscripción</td>
   </tr>
 </table>
-<br> </br>
 
 <table>
   <tr>
@@ -169,7 +167,6 @@
     <td align="center">Cancelar suscripción</td>
   </tr>
 </table>
-<br> </br>
 
 <table>
   <tr>
@@ -207,7 +204,6 @@
     <td align="center">Finalización de Venta, Registro y Emisión de Comprobante</td>
   </tr>
 </table>
-<br> </br>
 
 <table>
   <tr>
@@ -234,7 +230,6 @@
   </tr>
   
 </table>
-<br> </br>
 
 <table>
   <tr>
@@ -261,7 +256,6 @@
     <td align="center">Catálogo sincronizado con inventario real</td>
   </tr>
 </table>
-<br></br>
 
 <table>
   <tr>
@@ -292,7 +286,6 @@
     <td align="center">Validar stock antes del pago</td>
   </tr>
 </table>
-<br></br>
 
 <table>
   <tr>
@@ -323,7 +316,6 @@
     <td align="center">Notificar estado del pago al cliente</td>
   </tr>
 </table>
-<br></br>
 
 <table>
   <tr>
@@ -350,7 +342,6 @@
     <td align="center">Emitir comprobante al cliente</td>
   </tr>
 </table>
-<br></br>
 
 <table>
   <tr>
@@ -377,8 +368,6 @@
     <td align="center">Rechazar pago fraudulento o incorrecto</td>
   </tr>
 </table>
-<br></br>
-
 
 <table>
   <tr>
@@ -405,7 +394,6 @@
     <td align="center">API: validar y registrar pago</td>
   </tr>
 </table>
-<br></br>
 
 <!-- US-->
 <table>
@@ -445,8 +433,6 @@ Entonces el sistema mostrará mensajes de error
 </tr>
 </table>
 
-<br></br>
-
 <table>
 <tr>
 <th>User Story</th>
@@ -484,8 +470,6 @@ Entonces el sistema mostrará mensajes de error y no guardará los cambios
 </td>
 </tr>
 </table>
-
-<br></br>
 
 <table>
 <tr>
@@ -526,8 +510,6 @@ Entonces saldrá un mensaje de error por campo inválido
 </tr>
 </table>
 
-<br><br>
-
 <table>
 <tr>
 <th>User Story</th>
@@ -564,8 +546,6 @@ Entonces saldrá un mensaje de error de no haber seleccionado un lote
 </td>
 </tr>
 </table>
-
-<br><br>
 
 <table>
 <tr>
@@ -604,8 +584,6 @@ Entonces el sistema mostrará mensajes de error<br><br>
 </tr>
 </table>
 
-<br><br>
-
 <table>
 <tr>
 <th>User Story</th>
@@ -642,8 +620,6 @@ Entonces los detalles saldrá un mensaje de error<br><br>
 </td>
 </tr>
 </table>
-
-<br><br>
 
 <table>
 <tr>
@@ -682,8 +658,6 @@ Entonces se debe mostrar una alerta indicando los lotes agotados<br><br>
 </tr>
 </table>
 
-<br><br>
-
 <table>
 <tr>
 <th>User Story</th>
@@ -721,8 +695,6 @@ Entonces se mostrarán los detalles del lote sin alertas<br><br>
 </tr>
 </table>
 
-<br><br>
-
 <table>
 <tr>
 <th>User Story</th>
@@ -758,8 +730,6 @@ Entonces no se debe mostrar el banner de alertas<br><br>
 </td>
 </tr>
 </table>
-
-<br><br>
 
 <table>
 <tr>
@@ -798,8 +768,6 @@ Y los campos faltantes deben mostrarse como vacíos("-")<br><br>
 </td>
 </tr>
 </table>
-
-<br><br>
 
 <table>
 <tr>
@@ -840,8 +808,6 @@ Y el stock debe mostrarse como 0<br><br>
 </tr>
 </table>
 
-<br><br>
-
 <table>
 <tr>
 <th>User Story</th>
@@ -880,8 +846,6 @@ Entonces se debe mostrar una alerta indicando los lotes vencidos<br><br>
 </tr>
 </table>
 
-<br><br>
-
 <table>
 <tr>
 <th>User Story</th>
@@ -916,8 +880,6 @@ Entonces el sistema debe filtrar y mostrar los productos que pertenecen a esa ca
 </td>
 </tr>
 </table>
-
-<br><br>
 
 <table>
 <tr>
@@ -957,8 +919,6 @@ Y mostrará un mensaje indicando que debe seleccionar un plan<br><br>
 </tr>
 </table>
 
-<br><br>
-
 <table>
 <tr>
 <th>User Story</th>
@@ -995,8 +955,6 @@ Y mostrará un mensaje solicitando seleccionar un plan primero<br><br>
 </td>
 </tr>
 </table>
-
-<br><br>
 
 <table>
 <tr>
@@ -1037,8 +995,6 @@ Y mostrará un mensaje indicando que existen datos inválidos<br><br>
 </tr>
 </table>
 
-<br><br>
-
 <table>
 <tr>
 <th>User Story</th>
@@ -1076,8 +1032,6 @@ Y mostrará un mensaje indicando el motivo del error<br><br>
 </tr>
 </table>
 
-<br><br>
-
 <table>
 <tr>
 <th>User Story</th>
@@ -1114,8 +1068,6 @@ Y el usuario no podrá acceder a las funcionalidades premium<br><br>
 </td>
 </tr>
 </table>
-
-<br><br>
 
 <table>
 <tr>
@@ -1155,8 +1107,6 @@ Y se indicará que no existe una suscripción disponible<br><br>
 </tr>
 </table>
 
-<br><br>
-
 <table>
 <tr>
 <th>User Story</th>
@@ -1191,8 +1141,6 @@ Entonces el sistema mostrará el estado correspondiente<br><br>
 </td>
 </tr>
 </table>
-
-<br><br>
 
 <table>
 <tr>
@@ -1231,8 +1179,6 @@ Y mostrará un mensaje indicando que la renovación no puede realizarse<br><br>
 </tr>
 </table>
 
-<br><br>
-
 <table>
 <tr>
 <th>User Story</th>
@@ -1269,8 +1215,6 @@ Y la suscripción continuará sin cambios<br><br>
 </td>
 </tr>
 </table>
-
-<br><br>
 
 <table>
 <tr>
@@ -1310,8 +1254,6 @@ Y el acceso permanecerá habilitado hasta el final del periodo<br><br>
 </td>
 </tr>
 </table>
-
-<br><br>
 
 <table>
 <tr>
@@ -1353,10 +1295,6 @@ Y no permitir la creación del lote<br><br>
 </tr>
 </table>
 
-<br><br>
-
-----
-
 <table>
 <tr>
 <th>User Story</th>
@@ -1394,10 +1332,6 @@ Y no permitir la creación del lote<br><br>
 </td>
 </tr>
 </table>
-
-<br><br>
-
-----
 
 <table>
 <tr>
@@ -1438,10 +1372,6 @@ Y no permitir la creación del lote<br><br>
 </tr>
 </table>
 
-<br><br>
-
-----
-
 <table>
 <tr>
 <th>User Story</th>
@@ -1468,18 +1398,11 @@ Y no permitir la creación del lote<br><br>
 <strong>Dado</strong> que se han añadido productos al ticket de venta,<br>
 <strong>Cuando</strong> el sistema procesa cada ítem de la lista,<br>
 <strong>Y</strong> multiplica el precio unitario por la cantidad o peso ingresado, <br>
-<strong>Entonces</strong> el sistema muestra el subtotal por producto y el monto total acumulado de la venta.<br><br>
-
-
-<br><br>
+<strong>Entonces</strong> el sistema muestra el subtotal por producto y el monto total acumulado de la venta.
 
 </td>
 </tr>
 </table>
-
-<br><br>
-
-----
 
 <table>
 <tr>
@@ -1521,10 +1444,6 @@ Y no permitir la creación del lote<br><br>
 </tr>
 </table>
 
-<br><br>
-
-----
-
 <table>
 <tr>
 <th>User Story</th>
@@ -1554,16 +1473,9 @@ Y no permitir la creación del lote<br><br>
 <strong>Y</strong> localiza la cuenta acumulativa de dicho método en el sistema,
 <strong>Entonces</strong> el sistema suma el monto de la venta al total acumulado de ese medio de pago de forma inmediata.
 
-
-<br><br>
-
 </td>
 </tr>
 </table>
-
-<br><br>
-
-----
 
 <table>
 <tr>
@@ -1603,13 +1515,9 @@ Y no permitir la creación del lote<br><br>
 <strong>Y</strong> confirma que el monto recibido es correcto,<br>
 <strong>Entonces</strong> el sistema habilita la opción para procesar el cierre de la transacción.<br>
 
-<br><br>
-
 </td>
 </tr>
 </table>
-
-<br><br>
 
 <table>
 <tr>
@@ -1642,14 +1550,9 @@ Y no permitir la creación del lote<br><br>
 <strong>Y</strong> desglosa los totales por: Efectivo, Tarjeta y Yape/Plin,
 <strong>Entonces</strong> el sistema muestra el monto total general y la suma independiente de cada categoría para el arqueo final.
 
-<br><br>
-
 </td>
 </tr>
 </table>
-
-<br><br>
-
 
 <table>
   <tr>
@@ -1682,7 +1585,6 @@ Y no permitir la creación del lote<br><br>
     </td>
   </tr>
 </table>
-<br></br>
 
 <table>
   <tr>
@@ -1715,7 +1617,6 @@ Y no permitir la creación del lote<br><br>
     </td>
   </tr>
 </table>
-<br></br>
 
 <table>
   <tr>
@@ -1748,7 +1649,6 @@ Y no permitir la creación del lote<br><br>
     </td>
   </tr>
 </table>
-<br></br>
 
 <table>
   <tr>
@@ -1784,7 +1684,6 @@ Y no permitir la creación del lote<br><br>
     </td>
   </tr>
 </table>
-<br></br>
 
 <table>
   <tr>
@@ -1817,7 +1716,6 @@ Y no permitir la creación del lote<br><br>
     </td>
   </tr>
 </table>
-<br></br>
 
 <table>
   <tr>
@@ -1850,7 +1748,6 @@ Y no permitir la creación del lote<br><br>
     </td>
   </tr>
 </table>
-<br></br>
 
 <table>
   <tr>
@@ -1883,7 +1780,6 @@ Y no permitir la creación del lote<br><br>
     </td>
   </tr>
 </table>
-<br></br>
 
 <table>
   <tr>
@@ -1916,7 +1812,6 @@ Y no permitir la creación del lote<br><br>
     </td>
   </tr>
 </table>
-<br></br>
 
 <table>
   <tr>
@@ -1949,7 +1844,6 @@ Y no permitir la creación del lote<br><br>
     </td>
   </tr>
 </table>
-<br></br>
 
 <table>
   <tr>
@@ -1986,7 +1880,6 @@ Y no permitir la creación del lote<br><br>
     </td>
   </tr>
 </table>
-<br></br>
 
 <table>
   <tr>
@@ -2019,7 +1912,6 @@ Y no permitir la creación del lote<br><br>
     </td>
   </tr>
 </table>
-<br></br>
 
 <table>
   <tr>
@@ -2052,7 +1944,6 @@ Y no permitir la creación del lote<br><br>
     </td>
   </tr>
 </table>
-<br></br>
 
 <table>
   <tr>
@@ -2085,7 +1976,6 @@ Y no permitir la creación del lote<br><br>
     </td>
   </tr>
 </table>
-<br></br>
 
 <table>
   <tr>
@@ -2118,7 +2008,6 @@ Y no permitir la creación del lote<br><br>
     </td>
   </tr>
 </table>
-<br></br>
 
 <table>
   <tr>
@@ -2151,7 +2040,6 @@ Y no permitir la creación del lote<br><br>
     </td>
   </tr>
 </table>
-<br></br>
 
 <table>
   <tr>
@@ -2184,7 +2072,6 @@ Y no permitir la creación del lote<br><br>
     </td>
   </tr>
 </table>
-<br></br>
 
 <table>
   <tr>
@@ -2217,7 +2104,6 @@ Y no permitir la creación del lote<br><br>
     </td>
   </tr>
 </table>
-<br></br>
 
 <table>
   <tr>
@@ -2250,8 +2136,6 @@ Y no permitir la creación del lote<br><br>
     </td>
   </tr>
 </table>
-<br></br>
-
 
 <table>
   <tr>
@@ -2288,7 +2172,6 @@ Y no permitir la creación del lote<br><br>
     </td>
   </tr>
 </table>
-<br></br>
 
 <table>
   <tr>
@@ -2325,7 +2208,7 @@ Y no permitir la creación del lote<br><br>
     </td>
   </tr>
 </table>
-<br></br>
+</div>
 
 ## 3.2. Impact Mapping
 
