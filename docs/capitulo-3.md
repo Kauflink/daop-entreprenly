@@ -13,7 +13,6 @@
   <tr>
     <td colspan="2" >
       <strong >Descripción:</strong>
-       <br></br>
       Como usuario quiero gestionar mi inventario(lotes y productos) para visualizar los datos con mayor claridad.
     </td>
   </tr>
@@ -67,7 +66,6 @@
   <tr>
     <td colspan="2">
       <strong>Descripción:</strong>
-      <br></br>
       Como usuario quiero que el sistema me notifique el estado de mis lotes para organizarme mejor.
     </td>
   </tr>
@@ -105,7 +103,6 @@
   <tr>
     <td colspan="2">
       <strong>Descripción:</strong>
-      <br></br>
       Como usuario quiero completar el proceso de suscripción para acceder a las funcionalidades de la plataforma según el plan elegido.
     </td>
   </tr>
@@ -141,7 +138,6 @@
   <tr>
     <td colspan="2">
       <strong>Descripción:</strong>
-      <br></br>
       Como usuario quiero visualizar y gestionar la configuración de mi suscripción para consultar su estado, renovarla o cancelarla según mis necesidades.
     </td>
   </tr>
@@ -177,7 +173,6 @@
   <tr>
     <td colspan="2">
       <strong>Descripción:</strong>
-      <br></br>
       Como cajero o comerciante quiero contar con un módulo de ventas integrado con dispositivos IoT y persistencia en base de datos, para procesar transacciones de manera rápida, emitir comprobantes legales y mantener el inventario sincronizado automáticamente.
     </td>
   </tr>
@@ -214,7 +209,6 @@
   <tr>
     <td colspan="2">
       <strong>Descripción:</strong>
-      <br></br>
       Como comerciante, quiero que el sistema centralice y clasifique los ingresos según el medio de pago en tiempo real, para realizar el arqueo de caja al final del día de manera exacta y sin errores manuales.
     </td>
   </tr>
@@ -239,7 +233,6 @@
   <tr>
     <td colspan="2">
       <strong>Descripción:</strong>
-      <br></br>
       Como cliente potencial, quiero  una interacción fluida con el chatbot de WhatsApp y visualizar un catálogo de productos actualizado en tiempo real, para poder conocer la oferta disponible y comenzar mi proceso de compra de manera inmediata.
     </td>
   </tr>
@@ -265,7 +258,6 @@
   <tr>
     <td colspan="2">
       <strong>Descripción:</strong>
-      <br></br>
       Como cliente, quiero seleccionar productos, indicar cantidades y registrar mi ubicación de entrega, para que el sistema genere un pedido consolidado y verifique automáticamente la disponibilidad física antes de proceder al pago.
     </td>
   </tr>
@@ -295,7 +287,6 @@
   <tr>
     <td colspan="2">
       <strong>Descripción:</strong>
-      <br></br>
       Como cliente y comerciante, queremos gestionar el envío y la validación de comprobantes de pago digitales (Yape/Plin) a través de WhatsApp y el dashboard, para garantizar una transacción segura y confirmada antes de finalizar la venta.
     </td>
   </tr>
@@ -325,7 +316,6 @@
   <tr>
     <td colspan="2">
       <strong>Descripción:</strong>
-      <br></br>
       Como dueño de negocio, quiero que el sistema confirme el pedido tras la validación del pago, descuente el stock y emita un comprobante digital, para mantener el control financiero y brindar un respaldo legal de la compra al cliente.
     </td>
   </tr>
@@ -351,7 +341,6 @@
   <tr>
     <td colspan="2">
       <strong>Descripción:</strong>
-      <br></br>
       Como sistema de gestión, quiero manejar escenarios de excepción como falta de stock, tiempos de espera agotados y rechazos de pago, para proteger la integridad del inventario y evitar pérdidas económicas.
     </td>
   </tr>
@@ -377,7 +366,6 @@
   <tr>
     <td colspan="2">
       <strong>Descripción:</strong>
-      <br></br>
       Como equipo de desarrollo, queremos implementar una arquitectura de servicios RESTful segura y escalable, para que todos los componentes de la plataforma (chatbot, dashboard, inventario) intercambien datos de manera consistente.
     </td>
   </tr>
