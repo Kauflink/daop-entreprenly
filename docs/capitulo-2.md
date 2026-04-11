@@ -803,7 +803,7 @@ Finalmente, el equipo identificó los actores y sistemas externos que desencaden
 
   <img src="./images/gestion_de_inventario.svg" alt="gestion_de_inventario" width="800">
 
-  <img src="./images/perfil_configuracion.svg" alt="perfil_configuracion" width="800">
+  <img src="./images/perfil_config.svg" alt="perfil_configuracion" width="800">
 
   <img src="./images/chatbot.svg" alt="chatbot" width="800">
 
