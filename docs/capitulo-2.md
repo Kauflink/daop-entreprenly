@@ -780,9 +780,9 @@ En esta primera etapa, cada miembro propuso de forma individual los eventos de d
 
 ---
 
-**Paso 2: Ordenamiento cronológico**`
+**Paso 2: Ordenamiento cronológico**
 
-Una vez generados los eventos, el equipo los organizó cronológicamente de izquierda a derecha. Al tratarse de un sistema multicanal, los flujos del comerciante y del cliente final, así como los flujos presencial y conversacional, ocurren de forma paralela, por lo que se utilizaron swimlanes verticales para representar cada proceso de forma independiente. Durante esta etapa surgieron discusiones sobre el orden de ciertos eventos clave, como si la confirmación del terminal POS precede o es simultánea al registro de la venta en el sistema, lo que permitió alinear al equipo sobre el comportamiento esperado de la plataforma.
+Una vez generados los eventos, el equipo los organizó cronológicamente de izquierda a derecha. Al tratarse de un sistema multicanal, los flujos del comerciante y del cliente final, así como los flujos presencial y conversacional, ocurren de forma paralela, por lo que se utilizaron swimlanes verticales para representar cada proceso de forma independiente. Durante esta etapa surgieron discusiones sobre el orden de ciertos eventos clave, como si el registro de una venta precede o es simultáneo a la actualización del stock en el sistema, lo que permitió alinear al equipo sobre el comportamiento esperado de la plataforma.
 
 <div align="center">
   <img src="./images/Entreprenly_Phase2.svg" alt="Entreprenly Fase 2" width="800">
