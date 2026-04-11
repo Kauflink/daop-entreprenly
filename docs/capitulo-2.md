@@ -775,7 +775,39 @@ El equipo realizó una sesión colaborativa virtual de Big Picture Event Stormin
 En esta primera etapa, cada miembro propuso de forma individual los eventos de dominio relevantes para el sistema, redactándolos en tiempo pasado y representándolos con post-its de color naranja. Se buscó cubrir los flujos del comerciante y del cliente final sin filtrar ni debatir, generando el mayor volumen posible de eventos. Los eventos identificados abarcaron los procesos de registro de productos, control de inventario por peso (IoT), ventas presenciales, pedidos por WhatsApp, conciliación de caja y gestión de alertas operativas.
 
 <div align="center">
-![phase1](docs/images/Entreprenly_Phase1.svg "Entreprenly Fase 1")
+  <img src="./images/Entreprenly_Phase1.svg" alt="Entreprenly Fase 1" width="800">
+</div>
+
+---
+
+**Paso 2: Ordenamiento cronológico**`
+
+Una vez generados los eventos, el equipo los organizó cronológicamente de izquierda a derecha. Al tratarse de un sistema multicanal, los flujos del comerciante y del cliente final, así como los flujos presencial y conversacional, ocurren de forma paralela, por lo que se utilizaron swimlanes verticales para representar cada proceso de forma independiente. Durante esta etapa surgieron discusiones sobre el orden de ciertos eventos clave, como si la confirmación del terminal POS precede o es simultánea al registro de la venta en el sistema, lo que permitió alinear al equipo sobre el comportamiento esperado de la plataforma.
+
+<div align="center">
+  <img src="./images/Entreprenly_Phase2.svg" alt="Entreprenly Fase 2" width="800">
+</div>
+
+---
+
+**Paso 3: Identificación de Actores y Sistemas Externos**
+
+Finalmente, el equipo identificó los actores y sistemas externos que desencadenan o responden a los eventos del dominio. Los actores identificados fueron el Merchant (dueño o cajero del negocio) y el Customer (cliente final que realiza pedidos por WhatsApp). Como sistemas externos se identificaron la Balanza Inteligente IoT (que envía lecturas de peso en tiempo real), la API de WhatsApp (canal de pedidos conversacionales), el Terminal POS físico (que confirma los cobros electrónicos) y las billeteras digitales Yape/Plin (medios de pago del cliente). Estos fueron colocados junto a los eventos que desencadenan o a los que responden dentro del flujo del negocio.
+
+<div align="center">
+  <img src="./images/proceso_de_suscripcion.svg" alt="proceso_de_suscripcion" width="800">
+
+  <img src="./images/configuracion_de_suscripcion.svg" alt="configuracion_de_suscripcion" width="800">
+
+  <img src="./images/venta.svg" alt="venta" width="800">
+
+  <img src="./images/gestion_de_inventario.svg" alt="gestion_de_inventario" width="800">
+
+  <img src="./images/perfil_configuracion.svg" alt="perfil_configuracion" width="800">
+
+  <img src="./images/chatbot.svg" alt="chatbot" width="800">
+
+  <img src="./images/inicion_sesion.svg" alt="inicion_sesion" width="800">
 </div>
 
 ## 2.5. Ubiquitous Language
