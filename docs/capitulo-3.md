@@ -1392,7 +1392,7 @@ Como cajero, quiero ingresar el número de unidades de un producto seleccionado,
 
 <strong>Scenario 1: Confirmación de cantidad unitaria </strong><br>
 Dado que el modal "Registrar Cantidad" está abierto,<br>
-Cuando el cajero ingresa un número entero en el teclado numérico,<br>
+Cuando el cajero ingresa el número entero "3" en el teclado numérico,<br>
 Y presiona el botón "Confirmar cantidad",<br>
 Entonces el sistema calcula el subtotal y añade el ítem al detalle de la venta.<br><br>
 
