@@ -1,4 +1,4 @@
-# Capítulo III: Requirements Specification
+﻿# Capítulo III: Requirements Specification
 
 ## 3.1. User Stories
 
@@ -7,19 +7,19 @@
 <table>
   <tr>
     <th>Epic-01</th>
-    <th>Gestión de Inventario</th>
+    <th>Gestión de inventario</th>
   </tr>
 
   <tr>
     <td colspan="2" >
       <strong >Descripción:</strong>
-      Como usuario quiero gestionar mi inventario(lotes y productos) para visualizar los datos con mayor claridad.
+      Como usuario quiero gestionar mi inventario (lotes y productos) para visualizar los datos con mayor claridad.
     </td>
   </tr>
 
   <tr>
     <td align="center">1</td>
-    <td align="center">Agregar Productos</td>
+    <td align="center">Agregación de Productos</td>
   </tr>
   <tr>
     <td align="center">2</td>
@@ -27,27 +27,27 @@
   </tr>
   <tr>
     <td align="center">3</td>
-    <td align="center">Agregar Lotes</td>
+    <td align="center">Agregación de Lotes</td>
   </tr>
   <tr>
     <td align="center">4</td>
-    <td align="center">Eliminar Lotes</td>
+    <td align="center">Eliminación de Lotes</td>
   </tr>
   <tr>
     <td align="center">10</td>
-    <td align="center">Visualizar detalles de Producto</td>
+    <td align="center">Visualización de detalles de Producto</td>
   </tr>
   <tr>
     <td align="center">5</td>
-    <td align="center">Editar Productos</td>
+    <td align="center">Edición de Productos</td>
   </tr>
   <tr>
     <td align="center">6</td>
-    <td align="center">Visualizar detalles de Lotes</td>
+    <td align="center">Visualización de detalles de Lotes</td>
   </tr>
   <tr>
     <td align="center">12</td>
-    <td align="center">Buscar Productos</td>
+    <td align="center">Buscador de Productos</td>
   </tr>
   <tr>
     <td align="center">23</td>
@@ -59,7 +59,7 @@
   <tr>
     <th>Epic-02</th>
     <th>
-      Notificaciones de Inventario
+      Notificaciones de inventario
     </th>
   </tr>
 
@@ -72,7 +72,7 @@
 
   <tr>
     <td align="center">7</td>
-    <td align="center">Detectar Stock Agotado</td>
+    <td align="center">Detección de Stock Agotado</td>
   </tr>
   <tr>
     <td align="center">8</td>
@@ -81,12 +81,12 @@
   
   <tr>
     <td align="center">9</td>
-    <td align="center">Visualizar Dashboard de Lotes</td>
+    <td align="center">Dashboard de Lotes</td>
   </tr>
 
   <tr>
     <td align="center">11</td>
-    <td align="center">Mostrar Alerta de caducación de Lotes</td>
+    <td align="center">Alerta de caducación de Lote</td>
   </tr>
 </table>
 <br><br>
@@ -163,60 +163,65 @@
 <table>
   <tr>
     <th>Epic-05</th>
-    <th>Control de Ingresos y Arqueo de Caja</th>
+    <th>Gestión de Transacciones y Operaciones de Venta</th>
   </tr>
 
   <tr>
     <td colspan="2">
       <strong>Descripción:</strong>
-      Como cajero o comerciante quiero contar con un módulo de ventas integrado con dispositivos IoT y persistencia en base de datos, para procesar transacciones de manera rápida, emitir comprobantes legales y mantener el inventario sincronizado automáticamente.
+      Como comerciante, quiero gestionar el proceso completo de registro de ventas, desde la selección de productos hasta la emisión del comprobante, para asegurar una operación ágil y sin errores.
     </td>
   </tr>
 
   <tr>
     <td align="center">24</td>
-    <td align="center">Selección y Registro de Ítems</td>
+    <td align="center">Buscar productos en el inventario y validar su tipo de medida</td>
   </tr>
   <tr>
     <td align="center">25</td>
-    <td align="center">Registro de Productos por Peso (IoT)</td>
+    <td align="center">Registrar la cantidad de unidades en el Ticket de Venta</td>
   </tr>
   <tr>
     <td align="center">26</td>
-    <td align="center">Gestión del Detalle del Ticket de Venta</td>
+    <td align="center">Capturar el peso mediante balanza IoT o ingreso manual</td>
   </tr>
   <tr>
     <td align="center">27</td>
-    <td align="center">Selección de Método de Pago</td>
+    <td align="center">Gestionar el desglose y cálculo del Ticket de Venta</td>
+  </tr>
+
+  <tr>
+    <td align="center">28</td>
+    <td align="center">Seleccionar el método de pago para la transacción</td>
   </tr>
 
   <tr>
     <td align="center">29</td>
-    <td align="center">Finalización de Venta, Registro y Emisión de Comprobante</td>
+    <td align="center">Finalizar la venta, registrar la transacción y emitir el comprobante</td>
   </tr>
 </table>
 <br><br>
 <table>
   <tr>
     <th>Epic-06</th>
-    <th>Gestion de Ventas</th>
+    <th>Control de Ingresos y Monitoreo de Caja</th>
   </tr>
 
   <tr>
     <td colspan="2">
       <strong>Descripción:</strong>
-      Como comerciante, quiero que el sistema centralice y clasifique los ingresos según el medio de pago en tiempo real, para realizar el arqueo de caja al final del día de manera exacta y sin errores manuales.
+      Como dueño del negocio, quiero supervisar los flujos de dinero entrante en tiempo real, para tener visibilidad total sobre la liquidez y los métodos de pago utilizados durante el día.
     </td>
   </tr>
 
   <tr>
-    <td align="center">28</td>
-    <td align="center">Clasificación Automática de Ingresos por Medio de Pago</td>
+    <td align="center">30</td>
+    <td align="center">Clasificar automáticamente los ingresos según el medio de pago</td>
   </tr>
 
   <tr>
-    <td align="center">30</td>
-    <td align="center">Consulta de Resumen de Caja Diario</td>
+    <td align="center">31</td>
+    <td align="center">Monitorear el Resumen de Caja en tiempo real dentro del panel de ventas</td>
   </tr>
   
 </table>
@@ -224,7 +229,7 @@
 <table>
   <tr>
     <th>Epic-07</th>
-    <th>Conversación y Catálogo</th>
+    <th>Conversación y catálogo</th>
   </tr>
   <tr>
     <td colspan="2">
@@ -233,23 +238,23 @@
     </td>
   </tr>
   <tr>
-    <td align="center">31</td>
+    <td align="center">32</td>
     <td align="center">Iniciar conversación con chatbot</td>
   </tr>
   <tr>
-    <td align="center">32</td>
+    <td align="center">33</td>
     <td align="center">Recibir catálogo de productos</td>
   </tr>
   <tr>
-    <td align="center">33</td>
-    <td align="center">Catálogo sincronizado con inventario real</td>
+    <td align="center">34</td>
+    <td align="center">Sincronizar catálogo con inventario real</td>
   </tr>
 </table>
 <br><br>
 <table>
   <tr>
     <th>Epic-08</th>
-    <th>Gestión de Pedido y Stock</th>
+    <th>Gestión de pedido y stock</th>
   </tr>
   <tr>
     <td colspan="2">
@@ -258,19 +263,19 @@
     </td>
   </tr>
   <tr>
-    <td align="center">34</td>
+    <td align="center">35</td>
     <td align="center">Seleccionar productos y cantidades</td>
   </tr>
   <tr>
-    <td align="center">35</td>
+    <td align="center">36</td>
     <td align="center">Registrar dirección de delivery</td>
   </tr>
   <tr>
-    <td align="center">36</td>
+    <td align="center">37</td>
     <td align="center">Generar pedido consolidado</td>
   </tr>
   <tr>
-    <td align="center">37</td>
+    <td align="center">38</td>
     <td align="center">Validar stock antes del pago</td>
   </tr>
 </table>
@@ -278,7 +283,7 @@
 <table>
   <tr>
     <th>Epic-09</th>
-    <th>Pago Digital P2P</th>
+    <th>Pago digital P2P</th>
   </tr>
   <tr>
     <td colspan="2">
@@ -287,19 +292,19 @@
     </td>
   </tr>
   <tr>
-    <td align="center">38</td>
+    <td align="center">39</td>
     <td align="center">Recibir instrucciones de pago</td>
   </tr>
   <tr>
-    <td align="center">39</td>
+    <td align="center">40</td>
     <td align="center">Reportar pago digital realizado</td>
   </tr>
   <tr>
-    <td align="center">40</td>
+    <td align="center">41</td>
     <td align="center">Validar pago desde el dashboard</td>
   </tr>
   <tr>
-    <td align="center">41</td>
+    <td align="center">42</td>
     <td align="center">Notificar estado del pago al cliente</td>
   </tr>
 </table>
@@ -307,7 +312,7 @@
 <table>
   <tr>
     <th>Epic-10</th>
-    <th>Confirmación, Venta y Comprobante</th>
+    <th>Confirmación, venta y comprobante</th>
   </tr>
   <tr>
     <td colspan="2">
@@ -316,15 +321,15 @@
     </td>
   </tr>
   <tr>
-    <td align="center">42</td>
+    <td align="center">43</td>
     <td align="center">Confirmar pedido y descontar stock</td>
   </tr>
   <tr>
-    <td align="center">43</td>
+    <td align="center">44</td>
     <td align="center">Registrar venta en el sistema</td>
   </tr>
   <tr>
-    <td align="center">44</td>
+    <td align="center">45</td>
     <td align="center">Emitir comprobante al cliente</td>
   </tr>
 </table>
@@ -332,7 +337,7 @@
 <table>
   <tr>
     <th>Epic-11</th>
-    <th>Flujos Alternativos y Restricciones</th>
+    <th>Flujos alternativos y restricciones</th>
   </tr>
   <tr>
     <td colspan="2">
@@ -341,15 +346,15 @@
     </td>
   </tr>
   <tr>
-    <td align="center">45</td>
+    <td align="center">46</td>
     <td align="center">Manejar stock insuficiente</td>
   </tr>
   <tr>
-    <td align="center">46</td>
+    <td align="center">47</td>
     <td align="center">Cancelar pedido por timeout de pago</td>
   </tr>
   <tr>
-    <td align="center">47</td>
+    <td align="center">48</td>
     <td align="center">Rechazar pago fraudulento o incorrecto</td>
   </tr>
 </table>
@@ -366,15 +371,15 @@
     </td>
   </tr>
   <tr>
-    <td align="center">48</td>
+    <td align="center">49</td>
     <td align="center">API: obtener catálogo de productos</td>
   </tr>
   <tr>
-    <td align="center">49</td>
+    <td align="center">50</td>
     <td align="center">API: crear y actualizar pedido</td>
   </tr>
   <tr>
-    <td align="center">50</td>
+    <td align="center">51</td>
     <td align="center">API: validar y registrar pago</td>
   </tr>
 </table>
@@ -382,7 +387,7 @@
 <table>
   <tr>
     <th>Epic-13</th>
-    <th>Inicio de Sesión y Registro</th>
+    <th>Inicio de sesión y registro</th>
   </tr>
   <tr>
     <td colspan="2">
@@ -391,35 +396,35 @@
     </td>
   </tr>
   <tr>
-    <td align="center">51</td>
-    <td align="center">Registro de cuenta con email</td>
-  </tr>
-  <tr>
     <td align="center">52</td>
-    <td align="center">Verificación de email</td>
+    <td align="center">Registrar cuenta con email</td>
   </tr>
   <tr>
     <td align="center">53</td>
-    <td align="center">Inicio de sesión con credenciales</td>
+    <td align="center">Verificar email</td>
   </tr>
   <tr>
     <td align="center">54</td>
-    <td align="center">Inicio de sesión con Google OAuth</td>
+    <td align="center">Iniciar sesión con credenciales</td>
   </tr>
   <tr>
     <td align="center">55</td>
-    <td align="center">Recuperación de contraseña</td>
+    <td align="center">Iniciar sesión con Google OAuth</td>
   </tr>
   <tr>
     <td align="center">56</td>
-    <td align="center">Cierre de sesión</td>
+    <td align="center">Recuperar contraseña</td>
+  </tr>
+  <tr>
+    <td align="center">57</td>
+    <td align="center">Cerrar sesión</td>
   </tr>
 </table>
 <br><br>
 <table>
   <tr>
     <th>Epic-14</th>
-    <th>Perfil y Configuración</th>
+    <th>Perfil y configuración</th>
   </tr>
   <tr>
     <td colspan="2">
@@ -428,37 +433,39 @@
     </td>
   </tr>
   <tr>
-    <td align="center">57</td>
+    <td align="center">58</td>
     <td align="center">Visualizar perfil actual</td>
   </tr>
   <tr>
-    <td align="center">58</td>
+    <td align="center">59</td>
     <td align="center">Actualizar nombre y biografía</td>
   </tr>
   <tr>
-    <td align="center">59</td>
+    <td align="center">60</td>
     <td align="center">Subir foto de perfil</td>
   </tr>
   <tr>
-    <td align="center">60</td>
+    <td align="center">61</td>
     <td align="center">Cambiar email con re-verificación</td>
   </tr>
   <tr>
-    <td align="center">61</td>
+    <td align="center">62</td>
     <td align="center">Cambiar contraseña</td>
   </tr>
   <tr>
-    <td align="center">62</td>
+    <td align="center">63</td>
     <td align="center">Configurar preferencias de idioma, zona horaria y tema</td>
   </tr>
   <tr>
-    <td align="center">63</td>
+    <td align="center">64</td>
     <td align="center">Configurar notificaciones</td>
   </tr>
 </table>
 
 <!-- US-->
+
 <br><br>
+
 <table>
 <tr>
 <th>User Story</th>
@@ -468,7 +475,7 @@
 </tr>
 <tr>
 <td><strong>Title</strong></td>
-<td colspan="3">Agregar Productos</td>
+<td colspan="3">Agregación de Productos</td>
 </tr>
 <tr>
 <td><strong>Description</strong></td>
@@ -543,7 +550,7 @@ Entonces el sistema mostrará mensajes de error y no guardará los cambios
 </tr>
 <tr>
 <td><strong>Title</strong></td>
-<td colspan="3">Agregar Lotes</td>
+<td colspan="3">Agregación de Lotes</td>
 </tr>
 <tr>
 <td><strong>Description</strong></td>
@@ -582,7 +589,7 @@ Entonces saldrá un mensaje de error por campo inválido
 </tr>
 <tr>
 <td><strong>Title</strong></td>
-<td colspan="3">Eliminar Lotes</td>
+<td colspan="3">Eliminación de Lotes</td>
 </tr>
 <tr>
 <td><strong>Description</strong></td>
@@ -619,7 +626,7 @@ Entonces saldrá un mensaje de error de no haber seleccionado un lote
 </tr>
 <tr>
 <td><strong>Title</strong></td>
-<td colspan="3">Editar Productos</td>
+<td colspan="3">Edición de Productos</td>
 </tr>
 <tr>
 <td><strong>Description</strong></td>
@@ -656,7 +663,7 @@ Entonces el sistema mostrará mensajes de error<br><br>
 </tr>
 <tr>
 <td><strong>Title</strong></td>
-<td colspan="3">Visualizar detalles de Lotes</td>
+<td colspan="3">Visualización de detalles de Lotes</td>
 </tr>
 <tr>
 <td><strong>Description</strong></td>
@@ -693,7 +700,7 @@ Entonces los detalles saldrá un mensaje de error<br><br>
 </tr>
 <tr>
 <td><strong>Title</strong></td>
-<td colspan="3">Detectar Stock Agotado</td>
+<td colspan="3">Detección de Stock Agotado</td>
 </tr>
 <tr>
 <td><strong>Description</strong></td>
@@ -767,7 +774,7 @@ Entonces se mostrarán los detalles del lote sin alertas<br><br>
 </tr>
 <tr>
 <td><strong>Title</strong></td>
-<td colspan="3">Visualizar Dashboard de Lotes</td>
+<td colspan="3">Dashboard de Lotes</td>
 </tr>
 <tr>
 <td><strong>Description</strong></td>
@@ -803,7 +810,7 @@ Entonces no se debe mostrar el banner de alertas<br><br>
 </tr>
 <tr>
 <td><strong>Title</strong></td>
-<td colspan="3">Visualizar detalles de Producto</td>
+<td colspan="3">Visualización de detalles de Producto</td>
 </tr>
 <tr>
 <td><strong>Description</strong></td>
@@ -841,7 +848,7 @@ Y los campos faltantes deben mostrarse como vacíos("-")<br><br>
 </tr>
 <tr>
 <td><strong>Title</strong></td>
-<td colspan="3">Mostrar Alerta de caducación de Lotes</td>
+<td colspan="3">Alerta de caducación de Lote</td>
 </tr>
 <tr>
 <td><strong>Description</strong></td>
@@ -879,7 +886,7 @@ Entonces se debe mostrar una alerta indicando los lotes vencidos<br><br>
 </tr>
 <tr>
 <td><strong>Title</strong></td>
-<td colspan="3">Buscar Productos</td>
+<td colspan="3">Buscador de Productos</td>
 </tr>
 <tr>
 <td><strong>Description</strong></td>
@@ -1324,34 +1331,38 @@ Y no permitir la creación del lote<br><br>
 <th>User Story</th>
 <th>24</th>
 <th>Epic ID</th>
-<th>06</th>
+<th>05</th>
 </tr>
 <tr>
 <td><strong>Title</strong></td>
-<td colspan="3">Selección y Registro de Ítems</td>
+<td colspan="3">Buscar productos en el inventario y validar su tipo de medida.</td>
 </tr>
 <tr>
 <td><strong>Description</strong></td>
 <td colspan="3">
-<strong>Como</strong> cajero, <strong>quiero</strong> buscar y seleccionar productos del inventario, <strong>para</strong> agregarlos al detalle del Ticket de Venta.
+Como cajero, quiero buscar productos del inventario para que el sistema valide si son por cantidad o peso, para abrir la interfaz de ingreso correspondiente.
 </td>
 </tr>
 <tr>
 <td><strong>Acceptance Criteria</strong></td>
 <td colspan="3">
 
-<strong>Scenario 1: Selección de producto existente</strong><br>
-<strong>Dado</strong> que el cajero se encuentra en la interfaz de ventas,<br>
-<strong>Cuando</strong> ingresa el  nombre del producto en el buscador,<br>
-<strong>Y</strong> haya ingresado la cantidad <br>
-<strong>Y</strong> presiona la tecla enter para confirmar,<br>
-<strong>Entonces</strong> el sistema añade el producto con su información base al detalle de la venta.<br><br>
+<strong>Scenario 1: Búsqueda y validación de producto por peso</strong><br>
+Dado que el cajero ingresa “Manzana” en el buscador,<br>
+Cuando selecciona el producto de la lista,<br>
+Y el sistema verifica que el producto está registrado con medida en "Kg",<br>
+Entonces el sistema despliega el modal "Registrar Peso".<br><br>
 
-<strong>Scenario 2: Intento de agregar producto no registrado</strong><br>
-<strong>Dado</strong> que el cajero se encuentra en la interfaz de ventas,<br>
-<strong>Cuando</strong> ingresa un nombre de un producto que no existe en la base de datos,<br>
-<strong>Y</strong> el sistema termina de realizar la búsqueda sin coincidencias,<br>
-<strong>Entonces</strong> el sistema muestra un mensaje de error indicando "Producto no encontrado".<br><br>
+<strong>Scenario 2: Búsqueda y validación de producto por cantidad</strong><br>
+Dado que el cajero realiza una búsqueda,<br>
+Cuando selecciona “Coca Cola” del inventario,<br>
+Y el sistema verifica que el producto está registrado por unidades,<br>
+Entonces el sistema despliega el modal "Registrar Cantidad".<br><br>
+
+<strong>Scenario 3: Producto no encontrado</strong><br>
+Dado que el término ingresado no coincide con el inventario,<br>
+Cuando se ejecuta la búsqueda,<br>
+Entonces el sistema muestra un mensaje indicando "Producto no encontrado".<br>
 
 </td>
 </tr>
@@ -1362,16 +1373,16 @@ Y no permitir la creación del lote<br><br>
 <th>User Story</th>
 <th>25</th>
 <th>Epic ID</th>
-<th>06</th>
+<th>05</th>
 </tr>
 <tr>
 <td><strong>Title</strong></td>
-<td colspan="3">Registro de Productos por Peso (IoT)</td>
+<td colspan="3">Registrar la cantidad de unidades en el Ticket de Venta.</td>
 </tr>
 <tr>
 <td><strong>Description</strong></td>
 <td colspan="3">
-<strong>Como</strong> cajero, <strong>quiero</strong> registrar el peso de los productos en el sistema (ya sea por captura automática o ingreso manual), <strong>para</strong> agilizar el proceso de cobro y asegurar que la venta no se detenga por fallas técnicas
+Como cajero, quiero ingresar el número de unidades de un producto seleccionado, para añadirlo al detalle de la venta.
 
 </td>
 </tr>
@@ -1379,18 +1390,17 @@ Y no permitir la creación del lote<br><br>
 <td><strong>Acceptance Criteria</strong></td>
 <td colspan="3">
 
-<strong>Scenario 1: Captura automática mediante balanza conectada (Ruta Principal)</strong><br>
-<strong>Dado</strong> que el sistema cuenta con una balanza IoT configurada y conectada,<br>
-<strong>Cuando</strong> se selecciona un producto que se vende por peso,<br>
-<strong>Y</strong> el sistema recibe la lectura del peso directamente del hardware, <br>
-<strong>Entonces</strong> el sistema carga el valor automáticamente en el detalle de la venta<br><br>
+<strong>Scenario 1: Confirmación de cantidad unitaria </strong><br>
+Dado que el modal "Registrar Cantidad" está abierto,<br>
+Cuando el cajero ingresa un número entero en el teclado numérico,<br>
+Y presiona el botón "Confirmar cantidad",<br>
+Entonces el sistema calcula el subtotal y añade el ítem al detalle de la venta.<br><br>
 
-<strong>Scenario 2: Registro manual en ausencia o falla de balanza (Ruta Alternativa)</strong><br>
-<strong>Dado</strong> que el establecimiento no cuenta con balanza IoT o el dispositivo está desconectado,<br>
-<strong>Cuando</strong> el cajero selecciona un producto que se vende por peso,<br>
-<strong>Y</strong> el sistema detecta que no hay respuesta del hardware elige la opción "Ingreso Manual",<br>
-<strong>Entonces</strong> el sistema habilita un teclado numérico para que el cajero digite el peso observado físicamente.
-<br><br>
+<strong>Scenario 2: Validación de stock insuficiente</strong><br>
+Dado que el cajero ha ingresado una cantidad en el modal,<br>
+Cuando el sistema verifica que la cantidad solicitada es mayor al stock disponible en el inventario,<br>
+Y el usuario intenta confirmar la acción,<br>
+Entonces el sistema muestra una alerta indicando "Stock insuficiente" y no permite añadir el producto al ticket.<br>
 
 </td>
 </tr>
@@ -1401,16 +1411,16 @@ Y no permitir la creación del lote<br><br>
 <th>User Story</th>
 <th>26</th>
 <th>Epic ID</th>
-<th>06</th>
+<th>05</th>
 </tr>
 <tr>
 <td><strong>Title</strong></td>
-<td colspan="3">Gestión del Detalle del Ticket de Venta</td>
+<td colspan="3">Capturar el peso mediante balanza IoT o ingreso manual.</td>
 </tr>
 <tr>
 <td><strong>Description</strong></td>
 <td colspan="3">
-<strong>Como</strong> cajero, <strong>quiero</strong> visualizar el desglose de productos (nombre, cantidad, precio unitario y subtotal), <strong>para</strong> verificar que la información de la venta sea correcta antes del pago.
+Como cajero, quiero obtener el peso del producto automáticamente o por teclado, para procesar la venta de productos al granel.
 
 </td>
 </tr>
@@ -1418,11 +1428,20 @@ Y no permitir la creación del lote<br><br>
 <td><strong>Acceptance Criteria</strong></td>
 <td colspan="3">
 
-<strong>Scenario 1: Actualización del detalle y monto total</strong><br>
-<strong>Dado</strong> que se han añadido productos al ticket de venta,<br>
-<strong>Cuando</strong> el sistema procesa cada ítem de la lista,<br>
-<strong>Y</strong> multiplica el precio unitario por la cantidad o peso ingresado, <br>
-<strong>Entonces</strong> el sistema muestra el subtotal por producto y el monto total acumulado de la venta.
+<strong>Scenario 1: Captura automática</strong><br>
+Dado que el modal "Registrar Peso" está abierto,<br>
+Cuando el sistema detecta una balanza IoT conectada,<br>
+Y el cajero coloca el producto sobre la balanza física,<br>
+Y el hardware envía la lectura de peso al sistema,<br>
+Entonces el valor se carga automáticamente en el campo de peso.<br><br>
+
+<strong>Scenario 2: Registro de peso manual</strong><br>
+Dado que el sistema no detecta una balanza,<br>
+Y el modal "Registrar Peso" está abierto,<br>
+Cuando el cajero digita el peso observado físicamente en el teclado decimal,<br>
+Y presiona el botón "Confirmar Peso",<br>
+Entonces el sistema registra el dato y añade el producto al ticket de venta.<br><br>
+
 
 </td>
 </tr>
@@ -1433,16 +1452,16 @@ Y no permitir la creación del lote<br><br>
 <th>User Story</th>
 <th>27</th>
 <th>Epic ID</th>
-<th>06</th>
+<th>05</th>
 </tr>
 <tr>
 <td><strong>Title</strong></td>
-<td colspan="3">Selección de Método de Pago</td>
+<td colspan="3">Gestionar el desglose y cálculo del Ticket de Venta.</td>
 </tr>
 <tr>
 <td><strong>Description</strong></td>
 <td colspan="3">
-<strong>Como</strong> cajero, <strong>quiero</strong> elegir cómo está pagando el cliente (Efectivo, Tarjeta/Yape/Plin), <strong>para</strong> que el monto de la venta se registre en la categoría correcta de ingresos.
+Como cajero, quiero visualizar el desglose de productos (nombre, cantidad/peso, precio unitario y subtotal), para verificar que la información sea correcta antes de proceder al pago.
 
 </td>
 </tr>
@@ -1450,17 +1469,19 @@ Y no permitir la creación del lote<br><br>
 <td><strong>Acceptance Criteria</strong></td>
 <td colspan="3">
 
-<strong>Scenario 1: Selección de método de pago exitosa</strong><br>
-<strong>Dado</strong> que el ticket de venta tiene el monto total calculado,
-<strong>Cuando</strong> el cajero hace clic sobre el ícono de "Efectivo", "Tarjeta/Yape/Plin",
-<strong>Y</strong> el sistema marca la opción seleccionada como activa,
-<strong>Entonces</strong> el sistema habilita el botón para emitir la boleta y finalizar la venta.
+<strong>Scenario 1: Actualización del detalle y monto total</strong><br>
+Dado que se han añadido productos (por unidad o peso) al ticket de venta,<br>
+Cuando el sistema procesa cada ítem de la lista,<br>
+Y calcula automáticamente el subtotal multiplicando el precio por la cantidad o peso,<br>
+Y suma todos los subtotales de la lista,<br>
+Entonces el sistema muestra el desglose detallado y el monto total acumulado de la venta en la interfaz.<br><br>
 
-<strong>Scenario 1: Omisión del método de pago</strong><br>
-<strong>Dado</strong> que el cajero terminó de enlistar los productos,
-<strong>Cuando</strong> intenta finalizar la venta sin haber seleccionado ninguna opción de pago,
-<strong>Y</strong> el sistema detecta que no hay un método asignado para esta transacción,
-<strong>Entonces</strong> el sistema muestra un mensaje indicando "Por favor, seleccione un método de pago" y no permite generar la boleta.
+
+<strong>Scenario 2: Edición o eliminación de un ítem del detalle</strong><br>
+Dado que un producto ya se encuentra registrado en el detalle de la venta,<br>
+Cuando el cajero selecciona la opción de eliminar,<br>
+Y el sistema confirma la acción del usuario,<br>
+Entonces el sistema actualiza la lista del detalle y recalcula el monto total de la venta inmediatamente.<br><br>
 
 <br><br>
 
@@ -1473,16 +1494,16 @@ Y no permitir la creación del lote<br><br>
 <th>User Story</th>
 <th>28</th>
 <th>Epic ID</th>
-<th>07</th>
+<th>05</th>
 </tr>
 <tr>
 <td><strong>Title</strong></td>
-<td colspan="3">Clasificación Automática de Ingresos por Medio de Pago</td>
+<td colspan="3">Seleccionar el método de pago para la transacción.</td>
 </tr>
 <tr>
 <td><strong>Description</strong></td>
 <td colspan="3">
-<strong>Como</strong> comerciante, <strong>quiero</strong> que cada venta finalizada sume su monto al acumulado del método de pago correspondiente, <strong>para</strong> tener visibilidad inmediata de cuánto dinero hay en efectivo y cuánto en digital (Yape/Plin/Tarjeta).
+Como cajero, quiero elegir el medio por el cual está pagando el cliente (Efectivo o Tarjeta/Yape/Plin), para que el ingreso se registre en la categoría contable correcta.
 
 </td>
 </tr>
@@ -1490,12 +1511,18 @@ Y no permitir la creación del lote<br><br>
 <td><strong>Acceptance Criteria</strong></td>
 <td colspan="3">
 
-<strong>Scenario 1: Actualización de acumulados tras venta
-</strong><br>
-<strong>Dado</strong> que el sistema ha registrado una venta exitosamente,
-<strong>Cuando</strong> el proceso de guardado en PostgreSQL detecta el medio de pago utilizado (ej. Yape),
-<strong>Y</strong> localiza la cuenta acumulativa de dicho método en el sistema,
-<strong>Entonces</strong> el sistema suma el monto de la venta al total acumulado de ese medio de pago de forma inmediata.
+<strong>Scenario 1: Selección de método de pago exitosa</strong><br>
+Dado que el ticket de venta tiene el monto total calculado,<br>
+Cuando el cajero hace clic sobre el ícono de "Efectivo" o "Tarjeta Yape/Plin",<br>
+Y el sistema marca visualmente la opción seleccionada como activa,<br>
+Y registra la categoría del método de pago internamente,<br>
+Entonces el sistema habilita el botón "Finalizar Venta y Emitir Boleta".<br><br>
+
+<strong>Scenario 2: Intento de finalización sin método de pago</strong><br>
+Dado que el cajero ha terminado de agregar productos al ticket,<br>
+Cuando intenta presionar el botón de finalizar la venta sin haber marcado una opción de pago,<br>
+Y el sistema valida que no hay un método asignado para la transacción actual,<br>
+Entonces el sistema muestra un mensaje de advertencia indicando "Por favor, seleccione un método de pago" y bloquea la emisión de la boleta.<br><br>
 
 </td>
 </tr>
@@ -1506,18 +1533,18 @@ Y no permitir la creación del lote<br><br>
 <th>User Story</th>
 <th>29</th>
 <th>Epic ID</th>
-<th>06</th>
+<th>05</th>
 </tr>
 <tr>
 <td><strong>Title</strong></td>
-<td colspan="3">Finalización de Venta, Registro y Emisión de Comprobante
+<td colspan="3">Finalizar la venta y emitir el comprobante de pago.
 
 </td>
 </tr>
 <tr>
 <td><strong>Description</strong></td>
 <td colspan="3">
-<strong>Como</strong> cajero, <strong>quiero</strong> procesar el pago y finalizar la venta con un solo paso, <strong>para</strong> registrar la transacción en el sistema y entregarle su boleta al cliente de forma inmediata.
+Como cajero, quiero procesar el pago y finalizar la venta en un solo paso, para entregar el comprobante al cliente de forma inmediata.
 
 </td>
 </tr>
@@ -1525,19 +1552,19 @@ Y no permitir la creación del lote<br><br>
 <td><strong>Acceptance Criteria</strong></td>
 <td colspan="3">
 
-<strong>Scenario 1: Procesamiento de cierre de venta (Ruta Feliz)
-</strong><br>
-<strong>Dado</strong> que el detalle del ticket de venta está completo y el método de pago ha sido seleccionado,<br>
-<strong>Cuando</strong> el cajero presiona el botón "Finalizar Venta y Emitir Boleta",<br>
-<strong>Y</strong> registra la información en PostgreSQL actualizando los saldos y el stock,<br>
-<strong>Entonces</strong> el sistema genera el comprobante de pago final y limpia la pantalla para una nueva venta.<br>
+<strong>Scenario 1: Procesamiento exitoso del cierre de venta</strong><br>
+Dado que el ticket de venta tiene productos añadidos y el método de pago ha sido seleccionado,<br>
+Cuando el cajero presiona el botón "Finalizar Venta y Emitir Boleta",<br>
 
-<strong>Scenario 2: Procesamiento de cierre de venta (Ruta Feliz)
-</strong><br>
-<strong>Dado</strong> que el total de la venta ha sido calculado y revisado,<br>
-<strong>Cuando</strong> el cajero selecciona el medio de pago (Efectivo, Tarjeta o Digital),<br>
-<strong>Y</strong> confirma que el monto recibido es correcto,<br>
-<strong>Entonces</strong> el sistema habilita la opción para procesar el cierre de la transacción.<br>
+Y el sistema registra la información en la base de datos actualizando saldos y stock,<br>
+Entonces el sistema genera el comprobante de pago, muestra un mensaje de éxito y limpia la interfaz para una nueva venta.<br><br>
+
+<strong>Scenario 2: Bloqueo de finalización por datos incompletos</strong><br>
+Dado que el cajero se encuentra en la pantalla de ventas,<br>
+Cuando intenta presionar el botón de finalizar venta sin productos en el ticket o sin método de pago,<br>
+Y el sistema detecta la ausencia de estos datos obligatorios,<br>
+Entonces el sistema muestra dos mensaje “No hay productos en el ticket” y “Por favor, seleccione un método de pago” manteniendo la interfaz de venta activa hasta que se completen los campos requeridos.<br>
+
 
 </td>
 </tr>
@@ -1548,18 +1575,18 @@ Y no permitir la creación del lote<br><br>
 <th>User Story</th>
 <th>30</th>
 <th>Epic ID</th>
-<th>07</th>
+<th>06</th>
 </tr>
 <tr>
 <td><strong>Title</strong></td>
-<td colspan="3">Consulta de Resumen de Caja Diario
+<td colspan="3">Clasificar automáticamente los ingresos según el medio de pago.
 
 </td>
 </tr>
 <tr>
 <td><strong>Description</strong></td>
 <td colspan="3">
-<strong>Como</strong> cajero, <strong>quiero</strong> procesar el pago y finalizar la venta con un solo paso, <strong>para</strong> registrar la transacción en el sistema y entregarle su boleta al cliente de forma inmediata.
+Como comerciante, quiero que cada venta finalizada sume su monto al acumulado del método correspondiente, para tener visibilidad inmediata de cuánto dinero hay en efectivo y cuánto en digital.
 
 </td>
 </tr>
@@ -1567,21 +1594,72 @@ Y no permitir la creación del lote<br><br>
 <td><strong>Acceptance Criteria</strong></td>
 <td colspan="3">
 
-<strong>Scenario 1: Visualización detallada de ingresos
-</strong><br>
-<strong>Dado</strong> que el comerciante accede a la sección de "Cierre de Caja" o "Reportes",
-<strong>Cuando</strong> el sistema consulta los saldos acumulados en la base de datos,
-<strong>Y</strong> desglosa los totales por: Efectivo, Tarjeta y Yape/Plin,
-<strong>Entonces</strong> el sistema muestra el monto total general y la suma independiente de cada categoría para el arqueo final.
+<strong>Scenario 1: Actualización del acumulado por método de pago</strong><br>
+Dado que se ha finalizado una venta exitosamente,<br>
+Cuando el sistema procesa el registro de la transacción,<br>
+Y detecta el método de pago utilizado (Efectivo o Tarjeta/Digital),<br>
+Y suma el monto de la venta al saldo anterior de esa categoría,<br>
+Entonces el sistema actualiza visualmente el "Resumen de Caja" con los nuevos montos acumulados.<br><br>
+
+
+<strong>Scenario 2: Visualización del total general de ingresos</strong><br>
+Dado que los saldos por categoría (Efectivo y Digital) han sido actualizados,<br>
+Cuando el comerciante visualiza el panel de "Resumen de Caja",<br>
+Y el sistema suma ambos acumulados de forma automática,<br>
+Entonces el sistema muestra el "Total del Día" como la suma consolidada de todos los medios de pago.<br><br>
 
 </td>
 </tr>
 </table>
+
+<br><br>
+<table>
+<tr>
+<th>User Story</th>
+<th>31</th>
+<th>Epic ID</th>
+<th>06</th>
+</tr>
+<tr>
+<td><strong>Title</strong></td>
+<td colspan="3">Monitorear el Resumen de Caja en tiempo real dentro del panel de ventas.
+
+</td>
+</tr>
+<tr>
+<td><strong>Description</strong></td>
+<td colspan="3">
+Como cajero, quiero visualizar de forma centralizada los ingresos acumulados por método de pago, para tener un control inmediato de los saldos del día sin salir de la interfaz principal.
+
+</td>
+</tr>
+<tr>
+<td><strong>Acceptance Criteria</strong></td>
+<td colspan="3">
+
+<strong>Scenario 1: Visualización dinámica de ingresos operativos</strong><br>
+Dado que el cajero se encuentra en la sección de "Ventas",<br>
+Cuando finaliza transacciones de forma sucesiva,<br>
+Y el sistema procesa los nuevos montos registrados,<br>
+Entonces el sistema actualiza automáticamente los contadores de "Efectivo", "Tarjeta Yape/Plin" y el "Total del Día" en la parte inferior de la pantalla.<br><br>
+
+
+<strong>Scenario 2: Persistencia de saldos al cambiar de sección</strong><br>
+Dado que el cajero tiene un saldo acumulado en el Resumen de Caja,<br>
+Cuando navega hacia otra sección (ej. "Productos" o "Lotes") y regresa nuevamente a "Ventas",<br>
+Y el sistema recupera los datos almacenados en la sesión,<br>
+Entonces el sistema muestra los saldos actualizados tal como estaban antes de salir de la pestaña, evitando que la información se pierda o se reinicie.<br><br>
+
+
+</td>
+</tr>
+</table>
+
 <br><br>
 <table>
   <tr>
     <th>User Story</th>
-    <th>31</th>
+    <th>32</th>
     <th>Epic ID</th>
     <th>07</th>
   </tr>
@@ -1614,7 +1692,7 @@ Y no permitir la creación del lote<br><br>
 <table>
   <tr>
     <th>User Story</th>
-    <th>32</th>
+    <th>33</th>
     <th>Epic ID</th>
     <th>07</th>
   </tr>
@@ -1647,13 +1725,13 @@ Y no permitir la creación del lote<br><br>
 <table>
   <tr>
     <th>User Story</th>
-    <th>33</th>
+    <th>34</th>
     <th>Epic ID</th>
     <th>07</th>
   </tr>
   <tr>
     <td><strong>Title</strong></td>
-    <td colspan="3">Catálogo sincronizado con inventario real</td>
+    <td colspan="3">Sincronizar catálogo con inventario real</td>
   </tr>
   <tr>
     <td><strong>Description</strong></td>
@@ -1679,7 +1757,7 @@ Y no permitir la creación del lote<br><br>
 <table>
   <tr>
     <th>User Story</th>
-    <th>34</th>
+    <th>35</th>
     <th>Epic ID</th>
     <th>08</th>
   </tr>
@@ -1716,7 +1794,7 @@ Y no permitir la creación del lote<br><br>
 <table>
   <tr>
     <th>User Story</th>
-    <th>35</th>
+    <th>36</th>
     <th>Epic ID</th>
     <th>08</th>
   </tr>
@@ -1749,7 +1827,7 @@ Y no permitir la creación del lote<br><br>
 <table>
   <tr>
     <th>User Story</th>
-    <th>36</th>
+    <th>37</th>
     <th>Epic ID</th>
     <th>08</th>
   </tr>
@@ -1782,7 +1860,7 @@ Y no permitir la creación del lote<br><br>
 <table>
   <tr>
     <th>User Story</th>
-    <th>37</th>
+    <th>38</th>
     <th>Epic ID</th>
     <th>08</th>
   </tr>
@@ -1814,7 +1892,7 @@ Y no permitir la creación del lote<br><br>
 <table>
   <tr>
     <th>User Story</th>
-    <th>38</th>
+    <th>39</th>
     <th>Epic ID</th>
     <th>09</th>
   </tr>
@@ -1846,7 +1924,7 @@ Y no permitir la creación del lote<br><br>
 <table>
   <tr>
     <th>User Story</th>
-    <th>39</th>
+    <th>40</th>
     <th>Epic ID</th>
     <th>09</th>
   </tr>
@@ -1878,7 +1956,7 @@ Y no permitir la creación del lote<br><br>
 <table>
   <tr>
     <th>User Story</th>
-    <th>40</th>
+    <th>41</th>
     <th>Epic ID</th>
     <th>09</th>
   </tr>
@@ -1914,7 +1992,7 @@ Y no permitir la creación del lote<br><br>
 <table>
   <tr>
     <th>User Story</th>
-    <th>41</th>
+    <th>42</th>
     <th>Epic ID</th>
     <th>09</th>
   </tr>
@@ -1946,7 +2024,7 @@ Y no permitir la creación del lote<br><br>
 <table>
   <tr>
     <th>User Story</th>
-    <th>42</th>
+    <th>43</th>
     <th>Epic ID</th>
     <th>10</th>
   </tr>
@@ -1978,7 +2056,7 @@ Y no permitir la creación del lote<br><br>
 <table>
   <tr>
     <th>User Story</th>
-    <th>43</th>
+    <th>44</th>
     <th>Epic ID</th>
     <th>10</th>
   </tr>
@@ -2010,7 +2088,7 @@ Y no permitir la creación del lote<br><br>
 <table>
   <tr>
     <th>User Story</th>
-    <th>44</th>
+    <th>45</th>
     <th>Epic ID</th>
     <th>10</th>
   </tr>
@@ -2042,7 +2120,7 @@ Y no permitir la creación del lote<br><br>
 <table>
   <tr>
     <th>User Story</th>
-    <th>45</th>
+    <th>46</th>
     <th>Epic ID</th>
     <th>11</th>
   </tr>
@@ -2074,7 +2152,7 @@ Y no permitir la creación del lote<br><br>
 <table>
   <tr>
     <th>User Story</th>
-    <th>46</th>
+    <th>47</th>
     <th>Epic ID</th>
     <th>11</th>
   </tr>
@@ -2106,7 +2184,7 @@ Y no permitir la creación del lote<br><br>
 <table>
   <tr>
     <th>User Story</th>
-    <th>47</th>
+    <th>48</th>
     <th>Epic ID</th>
     <th>11</th>
   </tr>
@@ -2139,7 +2217,7 @@ Y no permitir la creación del lote<br><br>
 <table>
   <tr>
     <th>User Story</th>
-    <th>48</th>
+    <th>49</th>
     <th>Epic ID</th>
     <th>12</th>
   </tr>
@@ -2172,7 +2250,7 @@ Y no permitir la creación del lote<br><br>
 <table>
   <tr>
     <th>User Story</th>
-    <th>49</th>
+    <th>50</th>
     <th>Epic ID</th>
     <th>12</th>
   </tr>
@@ -2208,7 +2286,7 @@ Y no permitir la creación del lote<br><br>
 <table>
   <tr>
     <th>User Story</th>
-    <th>50</th>
+    <th>51</th>
     <th>Epic ID</th>
     <th>12</th>
   </tr>
@@ -2246,13 +2324,13 @@ Y no permitir la creación del lote<br><br>
 <table>
   <tr>
     <th>User Story</th>
-    <th>51</th>
+    <th>52</th>
     <th>Epic ID</th>
     <th>13</th>
   </tr>
   <tr>
     <td><strong>Title</strong></td>
-    <td colspan="3">Registro de cuenta con email</td>
+    <td colspan="3">Registrar cuenta con email</td>
   </tr>
   <tr>
     <td><strong>Description</strong></td>
@@ -2283,13 +2361,13 @@ Y no permitir la creación del lote<br><br>
 <table>
   <tr>
     <th>User Story</th>
-    <th>52</th>
+    <th>53</th>
     <th>Epic ID</th>
     <th>13</th>
   </tr>
   <tr>
     <td><strong>Title</strong></td>
-    <td colspan="3">Verificación de email</td>
+    <td colspan="3">Verificar email</td>
   </tr>
   <tr>
     <td><strong>Description</strong></td>
@@ -2320,13 +2398,13 @@ Y no permitir la creación del lote<br><br>
 <table>
   <tr>
     <th>User Story</th>
-    <th>53</th>
+    <th>54</th>
     <th>Epic ID</th>
     <th>13</th>
   </tr>
   <tr>
     <td><strong>Title</strong></td>
-    <td colspan="3">Inicio de sesión con credenciales</td>
+    <td colspan="3">Iniciar sesión con credenciales</td>
   </tr>
   <tr>
     <td><strong>Description</strong></td>
@@ -2356,13 +2434,13 @@ Y no permitir la creación del lote<br><br>
 <table>
   <tr>
     <th>User Story</th>
-    <th>54</th>
+    <th>55</th>
     <th>Epic ID</th>
     <th>13</th>
   </tr>
   <tr>
     <td><strong>Title</strong></td>
-    <td colspan="3">Inicio de sesión con Google OAuth</td>
+    <td colspan="3">Iniciar sesión con Google OAuth</td>
   </tr>
   <tr>
     <td><strong>Description</strong></td>
@@ -2392,13 +2470,13 @@ Y no permitir la creación del lote<br><br>
 <table>
   <tr>
     <th>User Story</th>
-    <th>55</th>
+    <th>56</th>
     <th>Epic ID</th>
     <th>13</th>
   </tr>
   <tr>
     <td><strong>Title</strong></td>
-    <td colspan="3">Recuperación de contraseña</td>
+    <td colspan="3">Recuperar contraseña</td>
   </tr>
   <tr>
     <td><strong>Description</strong></td>
@@ -2429,13 +2507,13 @@ Y no permitir la creación del lote<br><br>
 <table>
   <tr>
     <th>User Story</th>
-    <th>56</th>
+    <th>57</th>
     <th>Epic ID</th>
     <th>13</th>
   </tr>
   <tr>
     <td><strong>Title</strong></td>
-    <td colspan="3">Cierre de sesión</td>
+    <td colspan="3">Cerrar sesión</td>
   </tr>
   <tr>
     <td><strong>Description</strong></td>
@@ -2462,7 +2540,7 @@ Y no permitir la creación del lote<br><br>
 <table>
   <tr>
     <th>User Story</th>
-    <th>57</th>
+    <th>58</th>
     <th>Epic ID</th>
     <th>14</th>
   </tr>
@@ -2494,7 +2572,7 @@ Y no permitir la creación del lote<br><br>
 <table>
   <tr>
     <th>User Story</th>
-    <th>58</th>
+    <th>59</th>
     <th>Epic ID</th>
     <th>14</th>
   </tr>
@@ -2527,7 +2605,7 @@ Y no permitir la creación del lote<br><br>
 <table>
   <tr>
     <th>User Story</th>
-    <th>59</th>
+    <th>60</th>
     <th>Epic ID</th>
     <th>14</th>
   </tr>
@@ -2563,7 +2641,7 @@ Y no permitir la creación del lote<br><br>
 <table>
   <tr>
     <th>User Story</th>
-    <th>60</th>
+    <th>61</th>
     <th>Epic ID</th>
     <th>14</th>
   </tr>
@@ -2601,7 +2679,7 @@ Y no permitir la creación del lote<br><br>
 <table>
   <tr>
     <th>User Story</th>
-    <th>61</th>
+    <th>62</th>
     <th>Epic ID</th>
     <th>14</th>
   </tr>
@@ -2637,7 +2715,7 @@ Y no permitir la creación del lote<br><br>
 <table>
   <tr>
     <th>User Story</th>
-    <th>62</th>
+    <th>63</th>
     <th>Epic ID</th>
     <th>14</th>
   </tr>
@@ -2675,7 +2753,7 @@ Y no permitir la creación del lote<br><br>
 <table>
   <tr>
     <th>User Story</th>
-    <th>63</th>
+    <th>64</th>
     <th>Epic ID</th>
     <th>14</th>
   </tr>
