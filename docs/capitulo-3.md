@@ -19,39 +19,39 @@
 
   <tr>
     <td align="center">1</td>
-    <td align="center">Agregación de Productos</td>
+    <td align="center">Agregar Productos</td>
   </tr>
   <tr>
     <td align="center">2</td>
-    <td align="center">Edición de lotes</td>
+    <td align="center">Editar lotes</td>
   </tr>
   <tr>
     <td align="center">3</td>
-    <td align="center">Agregación de Lotes</td>
+    <td align="center">Agregar Lotes</td>
   </tr>
   <tr>
     <td align="center">4</td>
-    <td align="center">Eliminación de Lotes</td>
+    <td align="center">Eliminar Lotes</td>
   </tr>
   <tr>
     <td align="center">10</td>
-    <td align="center">Visualización de detalles de Producto</td>
+    <td align="center">Visualizar detalles de Producto</td>
   </tr>
   <tr>
     <td align="center">5</td>
-    <td align="center">Edición de Productos</td>
+    <td align="center">Editar Productos</td>
   </tr>
   <tr>
     <td align="center">6</td>
-    <td align="center">Visualización de detalles de Lotes</td>
+    <td align="center">Visualizar detalles de Lotes</td>
   </tr>
   <tr>
     <td align="center">12</td>
-    <td align="center">Buscador de Productos</td>
+    <td align="center">Buscar Productos</td>
   </tr>
   <tr>
     <td align="center">23</td>
-    <td align="center">Creación de lotes</td>
+    <td align="center">Crear lotes</td>
   </tr>
 </table>
 <br><br>
@@ -72,7 +72,7 @@
 
   <tr>
     <td align="center">7</td>
-    <td align="center">Detección de Stock Agotado</td>
+    <td align="center">Detectar Stock Agotado</td>
   </tr>
   <tr>
     <td align="center">8</td>
@@ -81,12 +81,12 @@
   
   <tr>
     <td align="center">9</td>
-    <td align="center">Dashboard de Lotes</td>
+    <td align="center">Visualizar Dashboard de Lotes</td>
   </tr>
 
   <tr>
     <td align="center">11</td>
-    <td align="center">Alerta de caducación de Lote</td>
+    <td align="center">Mostrar Alerta de caducación de Lotes</td>
   </tr>
 </table>
 <br><br>
@@ -468,7 +468,7 @@
 </tr>
 <tr>
 <td><strong>Title</strong></td>
-<td colspan="3">Agregación de Productos</td>
+<td colspan="3">Agregar Productos</td>
 </tr>
 <tr>
 <td><strong>Description</strong></td>
@@ -505,7 +505,7 @@ Entonces el sistema mostrará mensajes de error
 </tr>
 <tr>
 <td><strong>Title</strong></td>
-<td colspan="3">Edición de lotes</td>
+<td colspan="3">Editar lotes</td>
 </tr>
 <tr>
 <td><strong>Description</strong></td>
@@ -543,7 +543,7 @@ Entonces el sistema mostrará mensajes de error y no guardará los cambios
 </tr>
 <tr>
 <td><strong>Title</strong></td>
-<td colspan="3">Agregación de Lotes</td>
+<td colspan="3">Agregar Lotes</td>
 </tr>
 <tr>
 <td><strong>Description</strong></td>
@@ -582,7 +582,7 @@ Entonces saldrá un mensaje de error por campo inválido
 </tr>
 <tr>
 <td><strong>Title</strong></td>
-<td colspan="3">Eliminación de Lotes</td>
+<td colspan="3">Eliminar Lotes</td>
 </tr>
 <tr>
 <td><strong>Description</strong></td>
@@ -619,7 +619,7 @@ Entonces saldrá un mensaje de error de no haber seleccionado un lote
 </tr>
 <tr>
 <td><strong>Title</strong></td>
-<td colspan="3">Edición de Productos</td>
+<td colspan="3">Editar Productos</td>
 </tr>
 <tr>
 <td><strong>Description</strong></td>
@@ -656,7 +656,7 @@ Entonces el sistema mostrará mensajes de error<br><br>
 </tr>
 <tr>
 <td><strong>Title</strong></td>
-<td colspan="3">Visualización de detalles de Lotes</td>
+<td colspan="3">Visualizar detalles de Lotes</td>
 </tr>
 <tr>
 <td><strong>Description</strong></td>
@@ -693,7 +693,7 @@ Entonces los detalles saldrá un mensaje de error<br><br>
 </tr>
 <tr>
 <td><strong>Title</strong></td>
-<td colspan="3">Detección de Stock Agotado</td>
+<td colspan="3">Detectar Stock Agotado</td>
 </tr>
 <tr>
 <td><strong>Description</strong></td>
@@ -767,7 +767,7 @@ Entonces se mostrarán los detalles del lote sin alertas<br><br>
 </tr>
 <tr>
 <td><strong>Title</strong></td>
-<td colspan="3">Dashboard de Lotes</td>
+<td colspan="3">Visualizar Dashboard de Lotes</td>
 </tr>
 <tr>
 <td><strong>Description</strong></td>
@@ -803,7 +803,7 @@ Entonces no se debe mostrar el banner de alertas<br><br>
 </tr>
 <tr>
 <td><strong>Title</strong></td>
-<td colspan="3">Visualización de detalles de Producto</td>
+<td colspan="3">Visualizar detalles de Producto</td>
 </tr>
 <tr>
 <td><strong>Description</strong></td>
@@ -841,7 +841,7 @@ Y los campos faltantes deben mostrarse como vacíos("-")<br><br>
 </tr>
 <tr>
 <td><strong>Title</strong></td>
-<td colspan="3">Alerta de caducación de Lote</td>
+<td colspan="3">Mostrar Alerta de caducación de Lotes</td>
 </tr>
 <tr>
 <td><strong>Description</strong></td>
@@ -879,7 +879,7 @@ Entonces se debe mostrar una alerta indicando los lotes vencidos<br><br>
 </tr>
 <tr>
 <td><strong>Title</strong></td>
-<td colspan="3">Buscador de Productos</td>
+<td colspan="3">Buscar Productos</td>
 </tr>
 <tr>
 <td><strong>Description</strong></td>
@@ -1288,7 +1288,7 @@ Y el acceso permanecerá habilitado hasta el final del periodo<br><br>
 </tr>
 <tr>
 <td><strong>Title</strong></td>
-<td colspan="3">Creación de lotes</td>
+<td colspan="3">Crear lotes</td>
 </tr>
 <tr>
 <td><strong>Description</strong></td>
