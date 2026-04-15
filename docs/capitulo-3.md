@@ -98,7 +98,7 @@
   <tr>
     <td>US-06</td>
     <td>Visualizar detalles de lotes</td>
-    <td>Como usuario quiero visualizar los detalles de los lotes para poder gestionar mejor el inventario.</td>
+    <td>Como usuario quiero visualizar los detalles de los lotes para gestionar mejor el inventario.</td>
     <td>
       <strong>Scenario 1: Detalles de lote mostrados correctamente</strong><br>
       Dado que el usuario está en la sección de lotes y selecciona un lote existente, cuando presione "Ver Detalles", entonces los detalles se mostrarán exitosamente.<br><br>
@@ -205,7 +205,7 @@
   <tr>
     <td>US-11</td>
     <td>Recibir alerta de caducidad de lote</td>
-    <td>Como usuario quiero ser notificado cuando un lote esté próximo a vencer o ya haya vencido para poder tomar acciones como priorizar su uso o descartarlo.</td>
+    <td>Como usuario quiero ser notificado cuando un lote esté próximo a vencer o ya haya vencido para tomar acciones como priorizar su uso o descartarlo.</td>
     <td>
       <strong>Scenario 1: Alerta de lote próximo a vencer</strong><br>
       Dado que uno o más lotes tienen fecha de caducidad dentro del rango próximo definido, cuando el usuario accede al dashboard de lotes, entonces se muestra una alerta indicando los lotes próximos a vencer.<br><br>
@@ -763,7 +763,7 @@
   <tr>
     <td>US-46</td>
     <td>Manejar stock insuficiente en pedido</td>
-    <td>Como cliente, quiero ser notificado cuando un producto no tiene stock suficiente para poder ajustar mi pedido antes de proceder al pago.</td>
+    <td>Como cliente, quiero ser notificado cuando un producto no tiene stock suficiente para ajustar mi pedido antes de proceder al pago.</td>
     <td>
       <strong>Scenario 1: Bot notifica al cliente sobre stock insuficiente</strong><br>
       Dado que el cliente solicita una cantidad mayor al stock disponible, cuando el sistema valida el inventario, entonces el bot informa qué producto no tiene stock suficiente y ofrece ajustar la cantidad o eliminarlo del pedido.<br><br>
@@ -791,7 +791,7 @@
   <tr>
     <td>US-48</td>
     <td>Rechazar comprobante de pago inválido</td>
-    <td>Como comerciante, quiero poder rechazar un comprobante de pago cuando sea incorrecto o sospechoso para proteger el negocio de transacciones fraudulentas.</td>
+    <td>Como comerciante, quiero rechazar un comprobante de pago cuando sea incorrecto o sospechoso para proteger el negocio de transacciones fraudulentas.</td>
     <td>
       <strong>Scenario 1: Sistema revierte el estado del pedido al rechazar el comprobante</strong><br>
       Dado que el comerciante identifica un comprobante sospechoso o incorrecto, cuando lo rechaza indicando el motivo, entonces el sistema devuelve el pedido al estado "esperando pago" y el bot notifica al cliente.<br><br>
@@ -860,7 +860,7 @@
   <tr>
     <td><strong>Epic-14</strong></td>
     <td><strong>Inicio de sesión y registro</strong></td>
-    <td>Como usuario quiero poder registrarme, verificar mi cuenta, iniciar sesión y recuperar mi contraseña para acceder de forma segura a la plataforma.</td>
+    <td>Como usuario quiero registrarme, verificar mi cuenta, iniciar sesión y recuperar mi contraseña para acceder de forma segura a la plataforma.</td>
     <td></td>
     <td></td>
   </tr>
