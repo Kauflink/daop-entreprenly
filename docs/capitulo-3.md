@@ -1083,4 +1083,469 @@ _Contenido por agregar._
 
 ## 3.3. Product Backlog
 
-_Contenido por agregar._
+<table>
+  <thead>
+    <tr>
+      <th># Orden</th>
+      <th>User Story Id</th>
+      <th>Título</th>
+      <th>Descripción</th>
+      <th>Story Points (1/2/3/5/8)</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>1</td>
+    <td>US-24</td>
+    <td>Buscar productos en el inventario y validar su tipo de medida</td>
+    <td>Como cajero, quiero buscar productos del inventario para que el sistema valide si son por cantidad o peso y abrir la interfaz de ingreso correspondiente.</td>
+    <td>5</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>US-25</td>
+    <td>Registrar la cantidad de unidades en el Ticket de Venta</td>
+    <td>Como cajero, quiero ingresar el número de unidades de un producto seleccionado para añadirlo al detalle de la venta.</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>US-26</td>
+    <td>Capturar el peso mediante balanza IoT o ingreso manual</td>
+    <td>Como cajero, quiero obtener el peso del producto automáticamente o por teclado para procesar la venta de productos al granel.</td>
+    <td>8</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>US-27</td>
+    <td>Gestionar el desglose y cálculo del Ticket de Venta</td>
+    <td>Como cajero, quiero visualizar el desglose de productos (nombre, cantidad/peso, precio unitario y subtotal) para verificar que la información sea correcta antes de proceder al pago.</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>US-28</td>
+    <td>Seleccionar el método de pago para la transacción</td>
+    <td>Como cajero, quiero elegir el medio por el cual está pagando el cliente (Efectivo o Tarjeta/Yape/Plin) para que el ingreso se registre en la categoría contable correcta.</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>US-29</td>
+    <td>Finalizar la venta y emitir el comprobante de pago</td>
+    <td>Como cajero, quiero procesar el pago y finalizar la venta en un solo paso para entregar el comprobante al cliente de forma inmediata.</td>
+    <td>5</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>US-30</td>
+    <td>Clasificar automáticamente los ingresos según el medio de pago</td>
+    <td>Como comerciante, quiero que cada venta finalizada sume su monto al acumulado del método correspondiente para tener visibilidad inmediata de cuánto dinero hay en efectivo y cuánto en digital.</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>US-31</td>
+    <td>Monitorear el Resumen de Caja en tiempo real dentro del panel de ventas</td>
+    <td>Como cajero, quiero visualizar de forma centralizada los ingresos acumulados por método de pago para tener un control inmediato de los saldos del día sin salir de la interfaz principal.</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>US-43</td>
+    <td>Confirmar pedido y descontar stock</td>
+    <td>Como sistema, quiero confirmar el pedido automáticamente al aprobar el pago para actualizar el inventario en tiempo real y reflejar el consumo de stock.</td>
+    <td>5</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>US-44</td>
+    <td>Registrar venta en el sistema</td>
+    <td>Como comerciante, quiero que cada pedido confirmado quede registrado como venta en el sistema para mantener un control financiero preciso y trazable.</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td>US-45</td>
+    <td>Emitir comprobante digital al cliente</td>
+    <td>Como cliente, quiero recibir un comprobante de mi compra a través del chatbot para tener un respaldo de la transacción realizada.</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>12</td>
+    <td>US-36</td>
+    <td>Responder consulta de producto disponible</td>
+    <td>Como sistema, quiero que el chatbot responda automáticamente al cliente con la información del producto solicitado cuando este existe en el inventario para iniciar el proceso de pedido sin intervención del comerciante.</td>
+    <td>5</td>
+  </tr>
+  <tr>
+    <td>13</td>
+    <td>US-37</td>
+    <td>Sugerir alternativas ante producto no disponible</td>
+    <td>Como sistema, quiero que el chatbot informe al cliente cuando un producto no está disponible y le sugiera otros productos del inventario para evitar que la conversación quede sin respuesta útil.</td>
+    <td>5</td>
+  </tr>
+  <tr>
+    <td>14</td>
+    <td>US-38</td>
+    <td>Confirmar pedido con el cliente</td>
+    <td>Como sistema, quiero que el chatbot presente un resumen del pedido al cliente y solicite confirmación antes de proceder al pago para asegurar que los productos y cantidades sean correctos.</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>15</td>
+    <td>US-39</td>
+    <td>Recibir instrucciones de pago por WhatsApp</td>
+    <td>Como cliente, quiero recibir las instrucciones de pago a través del chatbot para saber cómo realizar la transferencia y completar mi pedido.</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>16</td>
+    <td>US-40</td>
+    <td>Reportar comprobante de pago digital</td>
+    <td>Como cliente, quiero enviar el comprobante de mi pago al chatbot para que el comerciante pueda verificarlo y confirmar mi pedido.</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>17</td>
+    <td>US-41</td>
+    <td>Validar comprobante de pago desde el dashboard</td>
+    <td>Como comerciante, quiero revisar el comprobante reportado por el cliente y aprobarlo o rechazarlo desde el dashboard para confirmar que el dinero fue recibido correctamente.</td>
+    <td>5</td>
+  </tr>
+  <tr>
+    <td>18</td>
+    <td>US-42</td>
+    <td>Notificar resultado de validación al cliente</td>
+    <td>Como cliente, quiero recibir una notificación sobre el resultado de la validación de mi pago para saber si mi pedido fue confirmado o si debo realizar alguna acción adicional.</td>
+    <td>2</td>
+  </tr>
+
+  <tr>
+    <td>19</td>
+    <td>US-01</td>
+    <td>Agregar productos</td>
+    <td>Como usuario quiero agregar productos para gestionar mi inventario de manera eficiente.</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>20</td>
+    <td>US-05</td>
+    <td>Editar productos</td>
+    <td>Como usuario quiero editar productos para actualizar los datos en el inventario.</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>21</td>
+    <td>US-10</td>
+    <td>Visualizar detalles de producto</td>
+    <td>Como usuario quiero visualizar la información detallada de cada producto en el listado para conocer rápidamente sus características, stock disponible y precio sin necesidad de ingresar a otra pantalla.</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>22</td>
+    <td>US-12</td>
+    <td>Buscar productos</td>
+    <td>Como usuario quiero tener un buscador de productos para perder menos tiempo buscando en el inventario.</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>23</td>
+    <td>US-23</td>
+    <td>Crear lotes</td>
+    <td>Como usuario quiero crear lotes de productos para controlar mejor el stock y la caducidad en el inventario.</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>24</td>
+    <td>US-03</td>
+    <td>Agregar lotes</td>
+    <td>Como usuario quiero agregar lotes para gestionar correctamente las cantidades y fechas de vencimiento.</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>25</td>
+    <td>US-02</td>
+    <td>Editar lotes</td>
+    <td>Como usuario quiero editar los lotes para actualizar los datos del inventario.</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>26</td>
+    <td>US-04</td>
+    <td>Eliminar lotes</td>
+    <td>Como usuario quiero eliminar lotes para deshacerme de los lotes que no me sirvan.</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>27</td>
+    <td>US-06</td>
+    <td>Visualizar detalles de lotes</td>
+    <td>Como usuario quiero visualizar los detalles de los lotes para gestionar mejor el inventario.</td>
+    <td>2</td>
+  </tr>
+
+  <tr>
+    <td>28</td>
+    <td>US-09</td>
+    <td>Visualizar dashboard de lotes</td>
+    <td>Como usuario quiero visualizar un dashboard de lotes con indicadores y alertas para conocer rápidamente el estado de mi inventario al ingresar al módulo de lotes.</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>29</td>
+    <td>US-07</td>
+    <td>Detectar stock agotado</td>
+    <td>Como usuario quiero ser notificado cuando tengo bajo/nada de stock.</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>30</td>
+    <td>US-08</td>
+    <td>Mostrar alertas de estado al visualizar detalles</td>
+    <td>Como usuario quiero visualizar alertas de estado al ver el detalle de un lote para identificar rápidamente si tiene stock bajo, está agotado o próximo a vencer.</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>31</td>
+    <td>US-11</td>
+    <td>Recibir alerta de caducidad de lote</td>
+    <td>Como usuario quiero ser notificado cuando un lote esté próximo a vencer o ya haya vencido para tomar acciones como priorizar su uso o descartarlo.</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>32</td>
+    <td>US-32</td>
+    <td>Vincular cuenta de WhatsApp Business mediante código QR</td>
+    <td>Como comerciante, quiero conectar mi cuenta de WhatsApp Business escaneando un código QR para activar el chatbot de atención a clientes desde el dashboard.</td>
+    <td>5</td>
+  </tr>
+  <tr>
+    <td>33</td>
+    <td>US-33</td>
+    <td>Consultar estado de vinculación del chatbot</td>
+    <td>Como comerciante, quiero conocer el estado de conexión de mi WhatsApp Business para saber si el chatbot se encuentra activo o requiere reconexión.</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>34</td>
+    <td>US-34</td>
+    <td>Visualizar conversaciones de clientes en el dashboard</td>
+    <td>Como comerciante, quiero ver los chats que el bot ha tenido con mis clientes dentro del dashboard para tener visibilidad de todas las conversaciones activas sin usar WhatsApp directamente.</td>
+    <td>5</td>
+  </tr>
+  <tr>
+    <td>35</td>
+    <td>US-35</td>
+    <td>Responder mensajes de clientes desde el dashboard</td>
+    <td>Como comerciante, quiero enviar mensajes a mis clientes directamente desde el dashboard para gestionar conversaciones sin necesitar abrir WhatsApp.</td>
+    <td>3</td>
+  </tr>
+
+  <tr>
+    <td>36</td>
+    <td>US-46</td>
+    <td>Manejar stock insuficiente en pedido</td>
+    <td>Como cliente, quiero ser notificado cuando un producto no tiene stock suficiente para ajustar mi pedido antes de proceder al pago.</td>
+    <td>5</td>
+  </tr>
+  <tr>
+    <td>37</td>
+    <td>US-47</td>
+    <td>Cancelar pedido por expiración de tiempo de pago</td>
+    <td>Como sistema, quiero cancelar automáticamente un pedido cuando el cliente no reporta el comprobante de pago en el tiempo establecido para liberar el stock reservado.</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>38</td>
+    <td>US-48</td>
+    <td>Rechazar comprobante de pago inválido</td>
+    <td>Como comerciante, quiero rechazar un comprobante de pago cuando sea incorrecto o sospechoso para proteger el negocio de transacciones fraudulentas.</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>39</td>
+    <td>US-50</td>
+    <td>Gestionar ciclo de vida de pedidos mediante API</td>
+    <td>Como developer, quiero endpoints para crear y actualizar pedidos para que el chatbot y el dashboard intercambien información del pedido de forma automática y consistente.</td>
+    <td>5</td>
+  </tr>
+  <tr>
+    <td>40</td>
+    <td>US-51</td>
+    <td>Validar y registrar pagos mediante API</td>
+    <td>Como developer, quiero un endpoint para aprobar o rechazar pagos desde el dashboard para que el sistema actualice el inventario y notifique al cliente de forma automática.</td>
+    <td>5</td>
+  </tr>
+  <tr>
+    <td>41</td>
+    <td>US-49</td>
+    <td>Conocer propuesta de valor en landing page</td>
+    <td>Como visitante, quiero entender qué hace Entreprenly y cómo puede beneficiar a mi negocio para decidir si me interesa adquirirlo.</td>
+    <td>3</td>
+  </tr>
+
+  <tr>
+    <td>42</td>
+    <td>US-13</td>
+    <td>Seleccionar plan de suscripción</td>
+    <td>Como usuario quiero seleccionar un plan de suscripción para definir el tipo de acceso y beneficios que tendré dentro de la plataforma.</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>43</td>
+    <td>US-14</td>
+    <td>Iniciar proceso de suscripción</td>
+    <td>Como usuario quiero iniciar el proceso de suscripción para comenzar formalmente la contratación del plan previamente elegido.</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>44</td>
+    <td>US-15</td>
+    <td>Registrar datos de facturación</td>
+    <td>Como usuario quiero ingresar mis datos de facturación para que el sistema pueda procesar el cobro correspondiente a la suscripción.</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>45</td>
+    <td>US-16</td>
+    <td>Procesar cobro de suscripción</td>
+    <td>Como usuario quiero que el sistema procese el cobro de la suscripción para validar el pago del plan seleccionado.</td>
+    <td>5</td>
+  </tr>
+  <tr>
+    <td>46</td>
+    <td>US-17</td>
+    <td>Activar suscripción</td>
+    <td>Como usuario quiero que mi suscripción sea activada una vez confirmado el cobro para acceder a las funcionalidades de la plataforma según el plan contratado.</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>47</td>
+    <td>US-18</td>
+    <td>Visualizar panel de suscripción</td>
+    <td>Como usuario quiero visualizar el panel de suscripción para consultar de forma clara la información general relacionada con mi plan actual.</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>48</td>
+    <td>US-19</td>
+    <td>Consultar estado de suscripción</td>
+    <td>Como usuario quiero consultar el estado de mi suscripción para saber si se encuentra activa, vencida o cancelada.</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>49</td>
+    <td>US-20</td>
+    <td>Renovar suscripción</td>
+    <td>Como usuario quiero renovar mi suscripción para extender la vigencia de mi acceso a la plataforma.</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>50</td>
+    <td>US-21</td>
+    <td>Solicitar cancelación de suscripción</td>
+    <td>Como usuario quiero solicitar la cancelación de mi suscripción para detener su continuidad al finalizar el periodo vigente.</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>51</td>
+    <td>US-22</td>
+    <td>Cancelar suscripción</td>
+    <td>Como sistema quiero cancelar la suscripción al finalizar su periodo vigente para retirar el acceso del usuario a las funcionalidades premium.</td>
+    <td>3</td>
+  </tr>
+
+  <tr>
+    <td>52</td>
+    <td>US-52</td>
+    <td>Registrar cuenta con email</td>
+    <td>Como usuario anónimo, quiero registrarme con mi email y contraseña para crear una cuenta en Entreprenly.</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>53</td>
+    <td>US-53</td>
+    <td>Verificar email</td>
+    <td>Como usuario registrado, quiero verificar mi email mediante el enlace enviado a mi correo para activar mi cuenta.</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>54</td>
+    <td>US-54</td>
+    <td>Iniciar sesión con credenciales</td>
+    <td>Como usuario registrado, quiero iniciar sesión con mi email y contraseña para acceder al dashboard de Entreprenly.</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>55</td>
+    <td>US-55</td>
+    <td>Iniciar sesión con Google OAuth</td>
+    <td>Como usuario anónimo, quiero iniciar sesión con mi cuenta de Google para acceder a Entreprenly sin necesidad de crear credenciales nuevas.</td>
+    <td>5</td>
+  </tr>
+  <tr>
+    <td>56</td>
+    <td>US-56</td>
+    <td>Recuperar contraseña</td>
+    <td>Como usuario registrado, quiero recuperar el acceso a mi cuenta mediante un enlace enviado a mi email para restablecer mi contraseña.</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>57</td>
+    <td>US-57</td>
+    <td>Cerrar sesión</td>
+    <td>Como usuario autenticado, quiero cerrar mi sesión para que el sistema revoque mi token y me redirija a la pantalla de login.</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>58</td>
+    <td>US-58</td>
+    <td>Visualizar perfil actual</td>
+    <td>Como usuario autenticado, quiero visualizar mi perfil actual para revisar mis datos registrados en la plataforma.</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>59</td>
+    <td>US-59</td>
+    <td>Actualizar nombre y biografía</td>
+    <td>Como usuario autenticado, quiero actualizar mi nombre y biografía para mantener mi perfil al día.</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>60</td>
+    <td>US-60</td>
+    <td>Subir foto de perfil</td>
+    <td>Como usuario autenticado, quiero subir una foto de perfil para personalizar mi cuenta en la plataforma.</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>61</td>
+    <td>US-61</td>
+    <td>Cambiar email con re-verificación</td>
+    <td>Como usuario autenticado, quiero cambiar mi email y verificarlo para mantener mis datos de contacto actualizados.</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>62</td>
+    <td>US-62</td>
+    <td>Cambiar contraseña</td>
+    <td>Como usuario autenticado, quiero cambiar mi contraseña para mantener la seguridad de mi cuenta.</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>63</td>
+    <td>US-63</td>
+    <td>Configurar preferencias de idioma, zona horaria y tema</td>
+    <td>Como usuario autenticado, quiero configurar mi idioma, zona horaria y tema visual para adaptar la plataforma a mis preferencias.</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>64</td>
+    <td>US-64</td>
+    <td>Configurar notificaciones</td>
+    <td>Como usuario autenticado, quiero configurar mis preferencias de notificación para recibir solo los avisos que me sean relevantes.</td>
+    <td>2</td>
+  </tr>
+  </tbody>
+</table>
