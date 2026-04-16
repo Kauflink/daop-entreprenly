@@ -219,7 +219,7 @@
   <tr>
     <td><strong>Epic-03</strong></td>
     <td><strong>Proceso de suscripción</strong></td>
-    <td>Como usuario quiero completar el proceso de suscripción para acceder a las funcionalidades de la plataforma según el plan elegido.</td>
+    <td>Como usuario con cuenta creada y Plan Free asignado por defecto, quiero iniciar la suscripción al Plan Control para habilitar las funcionalidades premium desde la landing o desde la sección "Suscripción" del dashboard.</td>
     <td></td>
     <td></td>
   </tr>
@@ -228,12 +228,12 @@
   <tr>
     <td>US-13</td>
     <td>Seleccionar plan de suscripción</td>
-    <td>Como usuario quiero seleccionar un plan de suscripción para definir el tipo de acceso y beneficios que tendré dentro de la plataforma.</td>
+    <td>Como usuario con Plan Free, quiero presionar el botón "Elegir plan" en la tarjeta del Plan Control para definir el plan que deseo contratar y continuar con el proceso de suscripción.</td>
     <td>
       <strong>Scenario 1: Selección de plan realizada correctamente</strong><br>
-      Dado que el usuario visualiza los planes disponibles, cuando selecciona uno, entonces el sistema registra el plan y permite continuar con el proceso.<br><br>
+      Dado que el usuario visualiza los planes disponibles en la landing o en la sección "Suscripción", cuando presiona el botón "Elegir plan" de la tarjeta "Plan Control", entonces el sistema registra el plan seleccionado, resalta visualmente la tarjeta y habilita el botón "Continuar con la suscripción".<br><br>
       <strong>Scenario 2: Intento de continuar sin seleccionar un plan</strong><br>
-      Dado que el usuario no selecciona ningún plan, cuando intenta continuar, entonces el sistema no permite avanzar y muestra un mensaje indicando que debe seleccionar un plan.
+      Dado que el usuario no ha presionado el botón "Elegir plan" en ninguna tarjeta, cuando intenta hacer clic en "Continuar con la suscripción", entonces el sistema no permite avanzar y muestra un mensaje indicando que debe seleccionar un plan primero.
     </td>
     <td>Epic-03</td>
   </tr>
@@ -242,12 +242,12 @@
   <tr>
     <td>US-14</td>
     <td>Iniciar proceso de suscripción</td>
-    <td>Como usuario quiero iniciar el proceso de suscripción para comenzar formalmente la contratación del plan previamente elegido.</td>
+    <td>Como usuario con un plan seleccionado, quiero presionar el botón "Continuar con la suscripción" para abrir el formulario de facturación y comenzar formalmente la contratación del plan elegido.</td>
     <td>
       <strong>Scenario 1: Proceso de suscripción iniciado correctamente</strong><br>
-      Dado que el usuario ya seleccionó un plan, cuando presiona la opción para iniciar la suscripción, entonces el sistema registra el inicio y habilita el formulario de facturación.<br><br>
+      Dado que el usuario ya seleccionó el Plan Control, cuando presiona el botón "Continuar con la suscripción", entonces el sistema registra el inicio del proceso y lo redirige al formulario de facturación.<br><br>
       <strong>Scenario 2: Intento sin plan seleccionado</strong><br>
-      Dado que el usuario no ha seleccionado un plan, cuando intenta iniciar el proceso, entonces el sistema no permite iniciar y muestra un mensaje solicitando seleccionar un plan primero.
+      Dado que el usuario no ha seleccionado un plan, cuando presiona el botón "Continuar con la suscripción", entonces el sistema no permite iniciar el proceso y muestra un mensaje solicitando seleccionar un plan primero.
     </td>
     <td>Epic-03</td>
   </tr>
@@ -256,12 +256,12 @@
   <tr>
     <td>US-15</td>
     <td>Registrar datos de facturación</td>
-    <td>Como usuario quiero ingresar mis datos de facturación para que el sistema pueda procesar el cobro correspondiente a la suscripción.</td>
+    <td>Como usuario, quiero completar el formulario de facturación y presionar el botón "Continuar al pago" para que el sistema pueda preparar el cobro correspondiente a la suscripción.</td>
     <td>
       <strong>Scenario 1: Datos de facturación registrados correctamente</strong><br>
-      Dado que el usuario completa correctamente los datos de facturación, cuando confirma el formulario, entonces el sistema registra los datos y permite continuar al paso de cobro.<br><br>
+      Dado que el usuario completa correctamente los campos obligatorios del formulario de facturación y presiona el botón "Continuar al pago", cuando el sistema valida la información, entonces registra los datos y habilita el resumen previo al cobro.<br><br>
       <strong>Scenario 2: Datos de facturación inválidos</strong><br>
-      Dado que el usuario completa incorrectamente los datos, cuando intenta confirmar, entonces el sistema no registra los datos y muestra un mensaje de datos inválidos.
+      Dado que el usuario ingresa datos incompletos o inválidos en el formulario, cuando presiona el botón "Continuar al pago", entonces el sistema no registra la información, resalta los campos con error y muestra un mensaje de validación.
     </td>
     <td>Epic-03</td>
   </tr>
@@ -270,12 +270,12 @@
   <tr>
     <td>US-16</td>
     <td>Procesar cobro de suscripción</td>
-    <td>Como usuario quiero que el sistema procese el cobro de la suscripción para validar el pago del plan seleccionado.</td>
+    <td>Como usuario, quiero revisar el resumen de cobro y presionar el botón "Pagar y activar suscripción" para validar el pago del Plan Control seleccionado.</td>
     <td>
       <strong>Scenario 1: Cobro procesado exitosamente</strong><br>
-      Dado que el usuario ha registrado correctamente sus datos de facturación, cuando el sistema procesa el cobro, entonces el cobro es procesado exitosamente y se permite activar la suscripción.<br><br>
+      Dado que el usuario ya registró correctamente sus datos de facturación, cuando presiona el botón "Pagar y activar suscripción" y el cobro es aprobado, entonces el sistema registra el pago exitoso y habilita la activación de la suscripción.<br><br>
       <strong>Scenario 2: Error durante el procesamiento del cobro</strong><br>
-      Dado que el usuario ha iniciado el proceso de pago, cuando ocurre un error (tarjeta rechazada, datos inválidos), entonces el sistema no activa la suscripción y muestra el motivo del error.
+      Dado que el usuario presionó el botón "Pagar y activar suscripción", cuando ocurre un error durante el cobro (tarjeta rechazada o datos inválidos), entonces el sistema no activa la suscripción y muestra el motivo del error dentro de la misma vista.
     </td>
     <td>Epic-03</td>
   </tr>
@@ -284,12 +284,12 @@
   <tr>
     <td>US-17</td>
     <td>Activar suscripción</td>
-    <td>Como usuario quiero que mi suscripción sea activada una vez confirmado el cobro para acceder a las funcionalidades de la plataforma según el plan contratado.</td>
+    <td>Como usuario, quiero que al confirmarse el pago el sistema active automáticamente el Plan Control y me redirija al panel de suscripción para acceder a las funcionalidades premium.</td>
     <td>
       <strong>Scenario 1: Activación de suscripción exitosa</strong><br>
-      Dado que el cobro fue procesado correctamente, cuando el sistema confirma el pago, entonces la suscripción se activa y el usuario obtiene acceso a las funcionalidades correspondientes.<br><br>
+      Dado que el cobro fue procesado correctamente, cuando el sistema confirma el pago, entonces activa el Plan Control, actualiza el estado de la suscripción a "Activa" y redirige al usuario al panel de suscripción con acceso a funcionalidades premium.<br><br>
       <strong>Scenario 2: Suscripción no activada por pago no confirmado</strong><br>
-      Dado que el cobro no fue confirmado, cuando el sistema intenta activar la suscripción, entonces permanece en estado pendiente y el usuario no accede a funcionalidades premium.
+      Dado que el cobro no fue confirmado, cuando el sistema intenta activar la suscripción, entonces el Plan Control no se activa, la cuenta permanece en Plan Free y el usuario no accede a funcionalidades premium.
     </td>
     <td>Epic-03</td>
   </tr>
@@ -298,7 +298,7 @@
   <tr>
     <td><strong>Epic-04</strong></td>
     <td><strong>Configuración de suscripción</strong></td>
-    <td>Como usuario quiero visualizar y gestionar la configuración de mi suscripción para consultar su estado, renovarla o cancelarla según mis necesidades.</td>
+    <td>Como usuario, quiero visualizar y gestionar mi plan actual desde la sección "Suscripción" del dashboard para consultar su estado, renovarlo o cancelarlo según mis necesidades.</td>
     <td></td>
     <td></td>
   </tr>
@@ -307,12 +307,12 @@
   <tr>
     <td>US-18</td>
     <td>Visualizar panel de suscripción</td>
-    <td>Como usuario quiero visualizar el panel de suscripción para consultar de forma clara la información general relacionada con mi plan actual.</td>
+    <td>Como usuario, quiero hacer clic en la opción lateral "Suscripción" para ver un panel con el plan actual, estado, fecha de renovación, facturación y acciones disponibles.</td>
     <td>
       <strong>Scenario 1: Panel de suscripción mostrado correctamente</strong><br>
-      Dado que el usuario accede a la sección de suscripción, cuando el sistema carga la vista, entonces se muestra el panel con los datos generales de la suscripción.<br><br>
-      <strong>Scenario 2: Usuario sin suscripción registrada</strong><br>
-      Dado que el usuario no tiene una suscripción activa, cuando carga la vista, entonces el panel indica que no existe una suscripción disponible.
+      Dado que el usuario presiona la opción lateral "Suscripción" dentro del dashboard, cuando el sistema carga la vista, entonces se muestra el panel con los datos generales del plan actual y las acciones relacionadas.<br><br>
+      <strong>Scenario 2: Usuario con Plan Free por defecto</strong><br>
+      Dado que el usuario solo tiene el Plan Free asignado por defecto, cuando carga la vista de "Suscripción", entonces el panel muestra el estado del Plan Free y la opción para actualizar al Plan Control.
     </td>
     <td>Epic-04</td>
   </tr>
@@ -321,12 +321,12 @@
   <tr>
     <td>US-19</td>
     <td>Consultar estado de suscripción</td>
-    <td>Como usuario quiero consultar el estado de mi suscripción para saber si se encuentra activa, vencida o cancelada.</td>
+    <td>Como usuario, quiero ver una etiqueta de estado en el panel de suscripción para saber si mi plan se encuentra en estado "Activa", "Cancelación programada", "Cancelada" o "Plan Free".</td>
     <td>
       <strong>Scenario 1: Estado activa mostrado correctamente</strong><br>
-      Dado que el usuario tiene una suscripción vigente, cuando consulta el estado, entonces el sistema muestra que la suscripción se encuentra activa.<br><br>
-      <strong>Scenario 2: Estado vencida o cancelada mostrado correctamente</strong><br>
-      Dado que el usuario tiene una suscripción vencida o cancelada, cuando consulta el estado, entonces el sistema muestra el estado correspondiente.
+      Dado que el usuario tiene una suscripción vigente de pago, cuando ingresa al panel de "Suscripción", entonces el sistema muestra una etiqueta visible con el estado "Activa".<br><br>
+      <strong>Scenario 2: Estado no activa mostrado correctamente</strong><br>
+      Dado que el usuario tiene una suscripción cancelada, con cancelación programada o solo el Plan Free, cuando ingresa al panel de "Suscripción", entonces el sistema muestra la etiqueta correspondiente al estado real del plan.
     </td>
     <td>Epic-04</td>
   </tr>
@@ -335,12 +335,12 @@
   <tr>
     <td>US-20</td>
     <td>Renovar suscripción</td>
-    <td>Como usuario quiero renovar mi suscripción para extender la vigencia de mi acceso a la plataforma.</td>
+    <td>Como usuario con una suscripción de pago activa o próxima a vencer, quiero presionar el botón "Renovar suscripción" para extender la vigencia de mi acceso a la plataforma.</td>
     <td>
       <strong>Scenario 1: Renovación realizada correctamente</strong><br>
-      Dado que el usuario tiene una suscripción activa o próxima a vencer, cuando selecciona la opción de renovar, entonces el sistema registra la renovación y actualiza la nueva fecha de vencimiento.<br><br>
+      Dado que el usuario tiene una suscripción activa o próxima a vencer, cuando presiona el botón "Renovar suscripción" y confirma la acción, entonces el sistema registra la renovación y actualiza la nueva fecha de vencimiento en el panel.<br><br>
       <strong>Scenario 2: Renovación no permitida</strong><br>
-      Dado que el usuario no cuenta con una suscripción válida para renovación, cuando intenta renovar, entonces el sistema muestra un mensaje indicando que la renovación no puede realizarse.
+      Dado que el usuario se encuentra en Plan Free o no cuenta con una suscripción renovable, cuando presiona el botón "Renovar suscripción", entonces el sistema muestra un mensaje indicando que primero debe contratar o reactivar un plan de pago.
     </td>
     <td>Epic-04</td>
   </tr>
@@ -349,12 +349,12 @@
   <tr>
     <td>US-21</td>
     <td>Solicitar cancelación de suscripción</td>
-    <td>Como usuario quiero solicitar la cancelación de mi suscripción para detener su continuidad al finalizar el periodo vigente.</td>
+    <td>Como usuario con una suscripción de pago activa, quiero presionar el botón "Solicitar cancelación" y luego "Confirmar cancelación" para detener la renovación automática al finalizar el periodo vigente.</td>
     <td>
       <strong>Scenario 1: Solicitud de cancelación registrada correctamente</strong><br>
-      Dado que el usuario tiene una suscripción activa, cuando solicita la cancelación, entonces el sistema registra la solicitud y mantiene el acceso hasta la fecha de vencimiento.<br><br>
+      Dado que el usuario tiene una suscripción activa, cuando presiona el botón "Solicitar cancelación" y confirma la acción, entonces el sistema registra la solicitud y mantiene el acceso hasta la fecha de vencimiento.<br><br>
       <strong>Scenario 2: Usuario cancela la operación antes de confirmar</strong><br>
-      Dado que el usuario inició el proceso de cancelación, cuando decide no confirmar, entonces el sistema no registra la cancelación y la suscripción continúa sin cambios.
+      Dado que el usuario inició el proceso de cancelación, cuando presiona el botón "Volver" o cierra el modal antes de confirmar, entonces el sistema no registra la cancelación y la suscripción continúa sin cambios.
     </td>
     <td>Epic-04</td>
   </tr>
@@ -363,12 +363,12 @@
   <tr>
     <td>US-22</td>
     <td>Cancelar suscripción</td>
-    <td>Como sistema quiero cancelar la suscripción al finalizar su periodo vigente para retirar el acceso del usuario a las funcionalidades premium.</td>
+    <td>Como sistema, quiero cancelar la suscripción de pago al finalizar su periodo vigente para retirar el acceso premium y devolver la cuenta del usuario al Plan Free.</td>
     <td>
       <strong>Scenario 1: Cancelación ejecutada correctamente</strong><br>
-      Dado que existe una solicitud de cancelación registrada y la fecha de vencimiento ha sido alcanzada, cuando el sistema procesa el fin del periodo, entonces la suscripción es cancelada y el acceso premium es retirado.<br><br>
+      Dado que existe una solicitud de cancelación registrada y la fecha de vencimiento ha sido alcanzada, cuando el sistema procesa el fin del periodo, entonces la suscripción de pago es cancelada, el acceso premium es retirado y la cuenta vuelve automáticamente al Plan Free.<br><br>
       <strong>Scenario 2: Suscripción aún dentro del periodo vigente</strong><br>
-      Dado que la fecha de vencimiento aún no ha llegado, cuando el sistema verifica el estado, entonces la suscripción continúa activa hasta el final del periodo.
+      Dado que la fecha de vencimiento aún no ha llegado, cuando el sistema verifica el estado, entonces la suscripción continúa activa, mantiene acceso premium y conserva el estado "Cancelación programada" hasta el final del periodo.
     </td>
     <td>Epic-04</td>
   </tr>
@@ -869,10 +869,10 @@
   <tr>
     <td>US-52</td>
     <td>Registrar cuenta con email</td>
-    <td>Como usuario anónimo, quiero registrarme con mi email y contraseña para crear una cuenta en Entreprenly.</td>
+    <td>Como usuario anónimo, quiero registrarme con mi email y contraseña para crear una cuenta en Entreprenly y obtener automáticamente el Plan Free.</td>
     <td>
       <strong>Scenario 1: Registro exitoso</strong><br>
-      Dado que el usuario ingresa un email no registrado y una contraseña válida, cuando envía el formulario, entonces el sistema crea la cuenta, envía un email de verificación y muestra un mensaje de confirmación.<br><br>
+      Dado que el usuario ingresa un email no registrado y una contraseña válida, cuando envía el formulario, entonces el sistema crea la cuenta, asigna automáticamente el Plan Free, envía un email de verificación y muestra un mensaje de confirmación.<br><br>
       <strong>Scenario 2: Email ya registrado</strong><br>
       Dado que el usuario ingresa un email que ya existe, cuando envía el formulario, entonces el sistema muestra un mensaje de error indicando que el email ya está en uso.<br><br>
       <strong>Scenario 3: Datos inválidos</strong><br>
@@ -1389,70 +1389,70 @@ _Contenido por agregar._
     <td>42</td>
     <td>US-13</td>
     <td>Seleccionar plan de suscripción</td>
-    <td>Como usuario quiero seleccionar un plan de suscripción para definir el tipo de acceso y beneficios que tendré dentro de la plataforma.</td>
+    <td>Como usuario con Plan Free, quiero presionar el botón "Elegir plan" en la tarjeta del Plan Control para definir el plan que deseo contratar y continuar con el proceso de suscripción.</td>
     <td>2</td>
   </tr>
   <tr>
     <td>43</td>
     <td>US-14</td>
     <td>Iniciar proceso de suscripción</td>
-    <td>Como usuario quiero iniciar el proceso de suscripción para comenzar formalmente la contratación del plan previamente elegido.</td>
+    <td>Como usuario con un plan seleccionado, quiero presionar el botón "Continuar con la suscripción" para abrir el formulario de facturación y comenzar formalmente la contratación del plan elegido.</td>
     <td>2</td>
   </tr>
   <tr>
     <td>44</td>
     <td>US-15</td>
     <td>Registrar datos de facturación</td>
-    <td>Como usuario quiero ingresar mis datos de facturación para que el sistema pueda procesar el cobro correspondiente a la suscripción.</td>
+    <td>Como usuario, quiero completar el formulario de facturación y presionar el botón "Continuar al pago" para que el sistema pueda preparar el cobro correspondiente a la suscripción.</td>
     <td>3</td>
   </tr>
   <tr>
     <td>45</td>
     <td>US-16</td>
     <td>Procesar cobro de suscripción</td>
-    <td>Como usuario quiero que el sistema procese el cobro de la suscripción para validar el pago del plan seleccionado.</td>
+    <td>Como usuario, quiero revisar el resumen de cobro y presionar el botón "Pagar y activar suscripción" para validar el pago del Plan Control seleccionado.</td>
     <td>5</td>
   </tr>
   <tr>
     <td>46</td>
     <td>US-17</td>
     <td>Activar suscripción</td>
-    <td>Como usuario quiero que mi suscripción sea activada una vez confirmado el cobro para acceder a las funcionalidades de la plataforma según el plan contratado.</td>
+    <td>Como usuario, quiero que al confirmarse el pago el sistema active automáticamente el Plan Control y me redirija al panel de suscripción para acceder a las funcionalidades premium.</td>
     <td>3</td>
   </tr>
   <tr>
     <td>47</td>
     <td>US-18</td>
     <td>Visualizar panel de suscripción</td>
-    <td>Como usuario quiero visualizar el panel de suscripción para consultar de forma clara la información general relacionada con mi plan actual.</td>
+    <td>Como usuario, quiero hacer clic en la opción lateral "Suscripción" para ver un panel con el plan actual, estado, fecha de renovación, facturación y acciones disponibles.</td>
     <td>2</td>
   </tr>
   <tr>
     <td>48</td>
     <td>US-19</td>
     <td>Consultar estado de suscripción</td>
-    <td>Como usuario quiero consultar el estado de mi suscripción para saber si se encuentra activa, vencida o cancelada.</td>
+    <td>Como usuario, quiero ver una etiqueta de estado en el panel de suscripción para saber si mi plan se encuentra en estado "Activa", "Cancelación programada", "Cancelada" o "Plan Free".</td>
     <td>1</td>
   </tr>
   <tr>
     <td>49</td>
     <td>US-20</td>
     <td>Renovar suscripción</td>
-    <td>Como usuario quiero renovar mi suscripción para extender la vigencia de mi acceso a la plataforma.</td>
+    <td>Como usuario con una suscripción de pago activa o próxima a vencer, quiero presionar el botón "Renovar suscripción" para extender la vigencia de mi acceso a la plataforma.</td>
     <td>3</td>
   </tr>
   <tr>
     <td>50</td>
     <td>US-21</td>
     <td>Solicitar cancelación de suscripción</td>
-    <td>Como usuario quiero solicitar la cancelación de mi suscripción para detener su continuidad al finalizar el periodo vigente.</td>
+    <td>Como usuario con una suscripción de pago activa, quiero presionar el botón "Solicitar cancelación" y luego "Confirmar cancelación" para detener la renovación automática al finalizar el periodo vigente.</td>
     <td>2</td>
   </tr>
   <tr>
     <td>51</td>
     <td>US-22</td>
     <td>Cancelar suscripción</td>
-    <td>Como sistema quiero cancelar la suscripción al finalizar su periodo vigente para retirar el acceso del usuario a las funcionalidades premium.</td>
+    <td>Como sistema, quiero cancelar la suscripción de pago al finalizar su periodo vigente para retirar el acceso premium y devolver la cuenta del usuario al Plan Free.</td>
     <td>3</td>
   </tr>
 
@@ -1460,7 +1460,7 @@ _Contenido por agregar._
     <td>52</td>
     <td>US-52</td>
     <td>Registrar cuenta con email</td>
-    <td>Como usuario anónimo, quiero registrarme con mi email y contraseña para crear una cuenta en Entreprenly.</td>
+    <td>Como usuario anónimo, quiero registrarme con mi email y contraseña para crear una cuenta en Entreprenly y obtener automáticamente el Plan Free.</td>
     <td>3</td>
   </tr>
   <tr>
