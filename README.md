@@ -8,6 +8,8 @@
 
 <small>Facultad de Ingeniería &nbsp;·&nbsp; Ingeniería de Software &nbsp;·&nbsp; 5to Ciclo</small>
 
+Desarrollo de Aplicaciones Open Source
+
 <small>NRC: 11990 &nbsp;·&nbsp; Profesor: Juan Antonio Flores Moroco</small>
 
 ### Informe del Trabajo Final
