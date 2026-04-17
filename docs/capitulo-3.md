@@ -636,7 +636,12 @@
       <strong>Scenario 1: Bot envía resumen y solicita confirmación</strong><br>
       Dado que el cliente indicó todos los productos y su dirección de entrega, cuando indica que no desea agregar más, entonces el sistema genera un resumen con productos, cantidades, total y dirección, y solicita confirmación.<br><br>
       <strong>Scenario 2: Sistema registra pedido tras confirmación del cliente</strong><br>
-      Dado que el bot envió el resumen y el cliente confirma que el pedido es correcto, entonces el sistema registra el pedido con estado pendiente y envía las instrucciones de pago.
+      Dado que el bot envió el resumen y el cliente confirma que el pedido es correcto, entonces el sistema registra el pedido con estado pendiente y envía las instrucciones de pago.<br><br>
+      <strong>Scenario 3: Solicitar dirección de entrega al cliente</strong><br>
+      Dado que el cliente confirmó los productos de su pedido,<br>
+      Cuando el chatbot verifica que aún no se registró una dirección de entrega,<br>
+      Entonces solicita al cliente que indique su dirección antes de continuar<br>
+      Y no genera el resumen del pedido hasta que el cliente la proporcione.
     </td>
     <td>Epic-09</td>
   </tr>
