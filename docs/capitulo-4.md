@@ -23,22 +23,22 @@ Esta sección define los lineamientos de estilo que aseguran una identidad visua
   <tbody>
     <tr>
       <td><strong>#F38313</strong></td>
-      <td><div style="background-color:#F38313;width:60px;height:30px;border-radius:4px;"></div></td>
+      <td><img src="images/_F38313.png" alt="#F38313" width="60" height="40" style="border-radius:4px;display:block;"></td>
       <td>Es un tono vibrante y enérgico que comunica dinamismo y acción. Se utiliza como color de acento principal para botones de llamada a la acción (CTA) y elementos críticos de la marca, asegurando una alta visibilidad.</td>
     </tr>
     <tr>
       <td><strong>#FCE0D4</strong></td>
-      <td><div style="background-color:#FCE0D4;width:60px;height:30px;border-radius:4px;border:1px solid #ccc;"></div></td>
+      <td><img src="images/_FCE0D4.png" alt="#FCE0D4" width="60" height="40" style="border-radius:4px;display:block;border:1px solid #ccc;"></td>
       <td>Tono melocotón claro que aporta calidez y cercanía. Se emplea en fondos de tarjetas y estados de selección suave, proporcionando un contraste armonioso con el naranja principal sin saturar la interfaz.</td>
     </tr>
     <tr>
       <td><strong>#0C0F12</strong></td>
-      <td><div style="background-color:#0C0F12;width:60px;height:30px;border-radius:4px;"></div></td>
+      <td><img src="images/_0C0F12.png" alt="#0C0F12" width="60" height="40" style="border-radius:4px;display:block;"></td>
       <td>Color sólido y profundo utilizado para la tipografía principal y encabezados. Garantiza el cumplimiento de las normas de accesibilidad (WCAG) al ofrecer un contraste máximo sobre fondos claros.</td>
     </tr>
     <tr>
       <td><strong>#F6F4F4</strong></td>
-      <td><div style="background-color:#F6F4F4;width:60px;height:30px;border-radius:4px;border:1px solid #ccc;"></div></td>
+      <td><img src="images/_F6F4F4.png" alt="#F6F4F4" width="60" height="40" style="border-radius:4px;display:block;border:1px solid #ccc;"></td>
       <td>Un tono blanco con una mínima calidez que sirve como lienzo principal para la aplicación, evitando el deslumbramiento y proporcionando una sensación de orden y amplitud.</td>
     </tr>
   </tbody>
@@ -57,47 +57,47 @@ Esta sección define los lineamientos de estilo que aseguran una identidad visua
   <tbody>
     <tr>
       <td><strong>#7679DE</strong></td>
-      <td><div style="background-color:#7679DE;width:60px;height:30px;border-radius:4px;"></div></td>
+      <td><img src="images/_7679DE.png" alt="#7679DE" width="60" height="40" style="border-radius:4px;display:block;"></td>
       <td>Representa la vertiente tecnológica del proyecto. Es un tono azulado con matices lavanda que transmite confianza y modernidad, ideal para enlaces, iconos de navegación y elementos interactivos web.</td>
     </tr>
     <tr>
       <td><strong>#C2CDFC</strong></td>
-      <td><div style="background-color:#C2CDFC;width:60px;height:30px;border-radius:4px;border:1px solid #ccc;"></div></td>
+      <td><img src="images/_C2CDFC.png" alt="#C2CDFC" width="60" height="40" style="border-radius:4px;display:block;border:1px solid #ccc;"></td>
       <td>Variante clara y relajada del azul principal. Se utiliza para resaltar componentes secundarios y áreas de información técnica, manteniendo una estética limpia y profesional.</td>
     </tr>
     <tr>
       <td><strong>#C9C9C9</strong></td>
-      <td><div style="background-color:#C9C9C9;width:60px;height:30px;border-radius:4px;"></div></td>
+      <td><img src="images/_C9C9C9.png" alt="#C9C9C9" width="60" height="40" style="border-radius:4px;display:block;"></td>
       <td>Tono neutro destinado a bordes, divisores y estados inactivos. Su función es estructurar la interfaz de manera sutil sin distraer al usuario de las tareas principales.</td>
     </tr>
     <tr>
       <td><strong>#666666</strong></td>
-      <td><div style="background-color:#666666;width:60px;height:30px;border-radius:4px;"></div></td>
+      <td><img src="images/_666666.png" alt="#666666" width="60" height="40" style="border-radius:4px;display:block;"></td>
       <td>Tono neutro destinado a bordes, divisores y estados inactivos. Su función es estructurar la interfaz de manera sutil sin distraer al usuario de las tareas principales.</td>
     </tr>
     <tr>
       <td><strong>#F1F1F1</strong></td>
-      <td><div style="background-color:#F1F1F1;width:60px;height:30px;border-radius:4px;border:1px solid #ccc;"></div></td>
+      <td><img src="images/_F1F1F1.png" alt="#F1F1F1" width="60" height="40" style="border-radius:4px;display:block;border:1px solid #ccc;"></td>
       <td>Gris muy claro utilizado en fondos de secciones y contenedores de datos (como tablas de productos) para separar visualmente diferentes bloques de contenido.</td>
     </tr>
     <tr>
       <td><strong>#FD4444</strong></td>
-      <td><div style="background-color:#FD4444;width:60px;height:30px;border-radius:4px;"></div></td>
+      <td><img src="images/_FD4444.png" alt="#FD4444" width="60" height="40" style="border-radius:4px;display:block;"></td>
       <td>Color de alta intensidad para estados de alerta. Comunica urgencia y se reserva exclusivamente para mensajes de error, eliminación de registros o indicadores de stock crítico.</td>
     </tr>
     <tr>
       <td><strong>#70D399</strong></td>
-      <td><div style="background-color:#70D399;width:60px;height:30px;border-radius:4px;"></div></td>
+      <td><img src="images/_70D399.png" alt="#70D399" width="60" height="40" style="border-radius:4px;display:block;"></td>
       <td>Tono orgánico que representa éxito y crecimiento. Se utiliza en notificaciones de confirmación, transacciones finalizadas y estados positivos del inventario.</td>
     </tr>
     <tr>
       <td><strong>#FFF7E1</strong></td>
-      <td><div style="background-color:#FFF7E1;width:60px;height:30px;border-radius:4px;border:1px solid #ccc;"></div></td>
+      <td><img src="images/_FFF7E1.png" alt="#FFF7E1" width="60" height="40" style="border-radius:4px;display:block;border:1px solid #ccc;"></td>
       <td>Tono suave y luminoso similar al <em>Lemon Chiffon</em>, que comunica amabilidad y optimismo. Se recomienda como fondo para banners informativos o etiquetas de ayuda, cuidando el contraste con textos oscuros.</td>
     </tr>
     <tr>
       <td><strong>#C79D08</strong></td>
-      <td><div style="background-color:#C79D08;width:60px;height:30px;border-radius:4px;"></div></td>
+      <td><img src="images/_C79D08.png" alt="#C79D08" width="60" height="40" style="border-radius:4px;display:block;"></td>
       <td>Color mostaza oscuro utilizado para advertencias preventivas que requieren atención moderada sin llegar a ser una alerta de error.</td>
     </tr>
   </tbody>
@@ -110,8 +110,9 @@ Esta sección define los lineamientos de estilo que aseguran una identidad visua
 Hemos seleccionado cuidadosamente estas tipografías para Entreprenly, buscando un equilibrio armónico entre claridad, profesionalismo y modernidad que refuerce nuestros valores de eficiencia, gestión inteligente y apoyo al micro-emprendedor. La combinación de Reddit Sans para títulos y Roboto para textos técnicos potencia la legibilidad en web y móvil, proyecta una identidad tecnológica y accesible, y acompaña con coherencia los flujos clave de inventario, ventas y soporte, asegurando una experiencia consistente, robusta y fácil de usar en toda la plataforma.
 
 <p align="center">
-  <img src="images/Jerarquia_Tipografica.png" alt="user_persona_andrea" width="500"/>
+  <img src="images/Jerarquia_Tipografica.png" alt="Jerarquia_Tipografica" width="500"/>
 </p>
+
 
 - Reddit Sans fue elegida para los títulos por su estilo contemporáneo y geométrico, aportando una presencia clara y profesional que resalta el carácter innovador y eficiente de Entreprenly.
 
@@ -146,8 +147,9 @@ El diseño visual de **Entreprenly** se ha desarrollado para proyectar una image
 - **Identidad Cromática:** La paleta se limita estrictamente a los tonos **Naranja (#F38313)**, **Negro (#0C0F12)** y **Blanco (#F6F4F4)**. Esta combinación ha sido elegida para representar un **nivel señorial y de prestigio**; el naranja aporta la energía de la innovación, mientras que el negro otorga la seriedad y autoridad necesaria en un entorno de gestión de negocios.
 
 - **Naming y Tipografía:** El nombre **"Entreprenly"** establece una relación directa con el ámbito empresarial y el emprendimiento moderno. Se presenta en una tipografía clara y robusta que garantiza legibilidad, transmitiendo una imagen de software confiable y de alta gama.
+
 <p align="center">
-  <img src="images/entrepenly.png" alt="user_persona_andrea" width="500"/>
+  <img src="images/entrepenly.png" alt="entrepenly.png" width="500"/>
 </p>
 
 ---
@@ -162,13 +164,44 @@ Esta sección establece los estándares visuales y de interacción que rigen la 
 
 La interfaz web de Entreprenly se articula en tres zonas funcionales: un encabezado fijo (Header), un área de contenido central (Body) y un pie de página informativo (Footer). Esta distribución garantiza orientación permanente del usuario, acceso inmediato a las acciones prioritarias y coherencia estructural entre el Landing Page y la Web Application.
 
-| **Ubicación** | **Contenido** |
-| --- | --- |
-| **Parte superior fija (sticky)** | **Logotipo Entreprenly:** posicionado a la izquierda; enlace directo al Dashboard principal. **Menú principal:** enlaces a Inicio, Productos, Lotes, Ventas, Pedidos, Suscripción, Chatbot, Ayuda. |
+<table>
+  <thead>
+    <tr>
+      <th><strong>Ubicación</strong></th>
+      <th><strong>Contenido</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Parte superior fija (sticky)</strong></td>
+      <td>
+        <strong>Logotipo Entreprenly:</strong> posicionado a la izquierda; enlace directo al Dashboard principal.<br>
+        <strong>Búsqueda global:</strong> campo centralizado con autocompletado por nombre de producto, categoría o módulo de microlearning.<br>
+        <strong>Menú principal:</strong> enlaces a Inicio, Productos, Lotes, Ventas, Pedidos, Suscripción, Chatbot, Ayuda.
+      </td>
+    </tr>
+  </tbody>
+</table>
 
-| **Ubicación** | **Contenido** |
-| --- | --- |
-| **Zona central de mayor ancho** | **Dashboard de indicadores:** KPIs de ventas diarias, stock crítico y lotes próximos a vencer en tarjetas de resumen. **Catálogo de productos:** grilla de tarjetas con imagen, nombre, stock, precio y acceso rápido a edición.  **Panel lateral de filtros:** categoría, estado de stock, tipo de medición, rango de fechas. **Espaciado entre bloques:** separación de 16–32 px entre secciones para evitar saturación visual. |
+<table>
+  <thead>
+    <tr>
+      <th><strong>Ubicación</strong></th>
+      <th><strong>Contenido</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Zona central de mayor ancho</strong></td>
+      <td>
+        <strong>Dashboard de indicadores:</strong> KPIs de ventas diarias, stock crítico y lotes próximos a vencer en tarjetas de resumen.<br>
+        <strong>Catálogo de productos:</strong> grilla de tarjetas con imagen, nombre, stock, precio y acceso rápido a edición.<br>
+        <strong>Panel lateral de filtros:</strong> categoría, estado de stock, tipo de medición, rango de fechas.<br>
+        <strong>Espaciado entre bloques:</strong> separación de 16–32 px entre secciones para evitar saturación visual.
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
@@ -176,15 +209,60 @@ La interfaz web de Entreprenly se articula en tres zonas funcionales: un encabez
 
 En la interfaz web de escritorio, la jerarquía tipográfica de Entreprenly se aplica con valores de tamaño fijos para resoluciones de escritorio (≥ 1025 px). Reddit Sans lidera las jerarquías de título por su carácter contemporáneo y profesional; Roboto asegura la máxima legibilidad en cuerpos de texto extensos, tablas de datos y microcopy operativo.
 
-| **Uso** | **Fuente** | **Tamaño / Peso** | **Responsive (clamp)** |
-| --- | --- | --- | --- |
-| **Título H1** | Reddit Sans | 40 px / Semibold | clamp(28px, 2.5vw + 12px, 40px) |
-| **Título H2** | Reddit Sans | 32 px / Semibold | clamp(22px, 2vw + 10px, 32px) |
-| **Título H3 / Botón** | Reddit Sans | 24 px / Bold | clamp(18px, 1.5vw + 8px, 24px) |
-| **Subtítulo / Énfasis** | Reddit Sans | 20 px / Bold | clamp(17px, 1.2vw + 7px, 20px) |
-| **Cuerpo de texto** | Roboto | 16 px / Regular · lh 1.55 | clamp(15px, 0.6vw + 12px, 16px) |
-| **Texto de apoyo** | Roboto | 15 px / Regular · lh 1.50 | clamp(14px, 0.5vw + 11px, 15px) |
-| **Microcopy / Badge** | Reddit Sans | 10 px / Bold · uppercase | Fijo — no escala |
+<table>
+  <thead>
+    <tr>
+      <th><strong>Uso</strong></th>
+      <th><strong>Fuente</strong></th>
+      <th><strong>Tamaño / Peso</strong></th>
+      <th><strong>Responsive (clamp)</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Título H1</strong></td>
+      <td>Reddit Sans</td>
+      <td>40 px / Semibold</td>
+      <td>clamp(28px, 2.5vw + 12px, 40px)</td>
+    </tr>
+    <tr>
+      <td><strong>Título H2</strong></td>
+      <td>Reddit Sans</td>
+      <td>32 px / Semibold</td>
+      <td>clamp(22px, 2vw + 10px, 32px)</td>
+    </tr>
+    <tr>
+      <td><strong>Título H3 / Botón</strong></td>
+      <td>Reddit Sans</td>
+      <td>24 px / Bold</td>
+      <td>clamp(18px, 1.5vw + 8px, 24px)</td>
+    </tr>
+    <tr>
+      <td><strong>Subtítulo / Énfasis</strong></td>
+      <td>Reddit Sans</td>
+      <td>20 px / Bold</td>
+      <td>clamp(17px, 1.2vw + 7px, 20px)</td>
+    </tr>
+    <tr>
+      <td><strong>Cuerpo de texto</strong></td>
+      <td>Roboto</td>
+      <td>16 px / Regular · lh 1.55</td>
+      <td>clamp(15px, 0.6vw + 12px, 16px)</td>
+    </tr>
+    <tr>
+      <td><strong>Texto de apoyo</strong></td>
+      <td>Roboto</td>
+      <td>15 px / Regular · lh 1.50</td>
+      <td>clamp(14px, 0.5vw + 11px, 15px)</td>
+    </tr>
+    <tr>
+      <td><strong>Microcopy / Badge</strong></td>
+      <td>Reddit Sans</td>
+      <td>10 px / Bold · uppercase</td>
+      <td>Fijo — no escala</td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
@@ -203,22 +281,22 @@ La aplicación cromática en la interfaz web de Entreprenly sigue una distribuci
   <tbody>
     <tr>
       <td><strong>Botón CTA principal, ícono activo, borde de enfoque</strong></td>
-      <td><div style="background-color:#F38313;width:60px;height:28px;border-radius:4px;margin-bottom:4px;"></div><code>#F38313</code></td>
+      <td><img src="images/_F38313.png" alt="#F38313" width="60" height="36" style="border-radius:4px;display:block;margin-bottom:4px;"><code>#F38313</code></td>
       <td>Naranja principal de Entreprenly: concentra la llamada a la acción en botones 'Registrar venta', 'Agregar producto' y 'Guardar lote'. Garantiza contraste ≥ 4.5:1 sobre fondo blanco.</td>
     </tr>
     <tr>
       <td><strong>Fondo de tarjeta seleccionada, hover suave, chip de categoría</strong></td>
-      <td><div style="background-color:#FCE0D4;width:60px;height:28px;border-radius:4px;margin-bottom:4px;border:1px solid #ccc;"></div><code>#FCE0D4</code></td>
+      <td><img src="images/_FCE0D4.png" alt="#FCE0D4" width="60" height="36" style="border-radius:4px;display:block;margin-bottom:4px;border:1px solid #ccc;"><code>#FCE0D4</code></td>
       <td>Naranja tenue: estado de selección activa en tarjetas de producto y microlearning. Comunica proximidad sin la intensidad del naranja primario.</td>
     </tr>
     <tr>
       <td><strong>Tipografía principal, fondo de sidebar, elementos de autoridad</strong></td>
-      <td><div style="background-color:#0C0F12;width:60px;height:28px;border-radius:4px;margin-bottom:4px;"></div><code>#0C0F12</code></td>
+      <td><img src="images/_0C0F12.png" alt="#0C0F12" width="60" height="36" style="border-radius:4px;display:block;margin-bottom:4px;"><code>#0C0F12</code></td>
       <td>Negro profundo de Entreprenly: utilizado en la barra lateral de navegación, encabezados de módulo y texto principal. Máximo contraste sobre fondos claros; transmite seriedad y profesionalismo.</td>
     </tr>
     <tr>
       <td><strong>Fondo general de la aplicación, superficies de tarjeta</strong></td>
-      <td><div style="background-color:#F6F4F4;width:60px;height:28px;border-radius:4px;margin-bottom:4px;border:1px solid #ccc;"></div><code>#F6F4F4</code></td>
+      <td><img src="images/_F6F4F4.png" alt="#F6F4F4" width="60" height="36" style="border-radius:4px;display:block;margin-bottom:4px;border:1px solid #ccc;"><code>#F6F4F4</code></td>
       <td>Blanco cálido: lienzo principal de la interfaz. Evita el deslumbramiento de un blanco puro y proporciona una sensación de amplitud y orden en el dashboard.</td>
     </tr>
   </tbody>
@@ -235,17 +313,17 @@ La aplicación cromática en la interfaz web de Entreprenly sigue una distribuci
   <tbody>
     <tr>
       <td><strong>Fondos de sección, contenedores de tabla</strong></td>
-      <td><div style="background-color:#F1F1F1;width:60px;height:28px;border-radius:4px;margin-bottom:4px;border:1px solid #ccc;"></div><code>#F1F1F1</code></td>
+      <td><img src="images/_F1F1F1.png" alt="#F1F1F1" width="60" height="36" style="border-radius:4px;display:block;margin-bottom:4px;border:1px solid #ccc;"><code>#F1F1F1</code></td>
       <td>Gris claro: fondo alternado en tablas de lotes y ventas. Separa bloques de contenido sin introducir ruido visual.</td>
     </tr>
     <tr>
       <td><strong>Bordes de tarjeta, divisores, líneas de tabla</strong></td>
-      <td><div style="background-color:#C9C9C9;width:60px;height:28px;border-radius:4px;margin-bottom:4px;"></div><code>#C9C9C9</code></td>
+      <td><img src="images/_C9C9C9.png" alt="#C9C9C9" width="60" height="36" style="border-radius:4px;display:block;margin-bottom:4px;"><code>#C9C9C9</code></td>
       <td>Gris de estructura: delimita tarjetas, campos de formulario y filas de tabla con sutileza. No compite con los elementos de acción.</td>
     </tr>
     <tr>
       <td><strong>Texto secundario, metadatos, placeholders</strong></td>
-      <td><div style="background-color:#666666;width:60px;height:28px;border-radius:4px;margin-bottom:4px;"></div><code>#666666</code></td>
+      <td><img src="images/_666666.png" alt="#666666" width="60" height="36" style="border-radius:4px;display:block;margin-bottom:4px;"><code>#666666</code></td>
       <td>Gris medio: fechas de vencimiento, nombres de marca en catálogo, descripciones breves. Cumple el mínimo de contraste 4.5:1 sobre #F6F4F4.</td>
     </tr>
   </tbody>
@@ -262,22 +340,22 @@ La aplicación cromática en la interfaz web de Entreprenly sigue una distribuci
   <tbody>
     <tr>
       <td><strong>Error, stock crítico, alerta de eliminación</strong></td>
-      <td><div style="background-color:#FD4444;width:60px;height:28px;border-radius:4px;margin-bottom:4px;"></div><code>#FD4444</code></td>
+      <td><img src="images/_FD4444.png" alt="#FD4444" width="60" height="36" style="border-radius:4px;display:block;margin-bottom:4px;"><code>#FD4444</code></td>
       <td>Rojo de alerta: exclusivo para mensajes de error en formularios, indicadores de stock en cero y confirmación de eliminación de registros.</td>
     </tr>
     <tr>
       <td><strong>Éxito, venta confirmada, stock saludable</strong></td>
-      <td><div style="background-color:#70D399;width:60px;height:28px;border-radius:4px;margin-bottom:4px;"></div><code>#70D399</code></td>
+      <td><img src="images/_70D399.png" alt="#70D399" width="60" height="36" style="border-radius:4px;display:block;margin-bottom:4px;"><code>#70D399</code></td>
       <td>Verde de confirmación: notificaciones de venta registrada, lote creado y módulo de microlearning completado.</td>
     </tr>
     <tr>
       <td><strong>Advertencia, lote próximo a vencer</strong></td>
-      <td><div style="background-color:#C79D08;width:60px;height:28px;border-radius:4px;margin-bottom:4px;"></div><code>#C79D08</code></td>
+      <td><img src="images/_C79D08.png" alt="#C79D08" width="60" height="36" style="border-radius:4px;display:block;margin-bottom:4px;"><code>#C79D08</code></td>
       <td>Amarillo-mostaza: alertas de vencimiento próximo y situaciones que requieren atención moderada sin llegar al nivel de error crítico.</td>
     </tr>
     <tr>
       <td><strong>Información, enlaces, estados focus</strong></td>
-      <td><div style="background-color:#7679DE;width:60px;height:28px;border-radius:4px;margin-bottom:4px;"></div><code>#7679DE</code></td>
+      <td><img src="images/_7679DE.png" alt="#7679DE" width="60" height="36" style="border-radius:4px;display:block;margin-bottom:4px;"><code>#7679DE</code></td>
       <td>Azul-lavanda: hipervínculos, indicadores de focus en inputs y botones secundarios de naturaleza informativa.</td>
     </tr>
   </tbody>
@@ -289,13 +367,36 @@ La aplicación cromática en la interfaz web de Entreprenly sigue una distribuci
 
 La iconografía de Entreprenly en la interfaz web sigue un estilo de trazo lineal (outline) coherente con la tipografía Reddit Sans. Los íconos apoyan visualmente cada acción del micro-emprendedor: registrar ventas, gestionar lotes, acceder a módulos de aprendizaje y navegar entre secciones.
 
-| **Aspecto** | **Especificación** |
-| --- | --- |
-| **Estilo** | Trazo lineal (outline), esquinas levemente redondeadas, peso de trazo uniforme de 1.5 px. Familia recomendada: Material Symbols Outlined o equivalente de trazo abierto. |
-| **Tamaños** | Base de 24 px en navegación y botones; 20 px en campos de formulario; 16 px en microcopy; 32 px en encabezados de módulo y KPIs del dashboard. |
-| **Color según estado** | #F38313 en acciones primarias activas; #0C0F12 en navegación general; #666666 en estados inactivos; #FD4444 en alerta; #70D399 en confirmación; #C79D08 en advertencia. |
-| **Accesibilidad** | Cada ícono interactivo debe incluir aria-label descriptivo o texto visible acompañante. Ningún estado o acción puede depender exclusivamente del ícono sin etiqueta. |
-| **Espaciado ícono–texto** | Separación fija de 8 px entre el ícono y su etiqueta de texto en botones y ítems de menú, conforme al ritmo 8-pt del sistema general. |
+<table>
+  <thead>
+    <tr>
+      <th><strong>Aspecto</strong></th>
+      <th><strong>Especificación</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Estilo</strong></td>
+      <td>Trazo lineal (outline), esquinas levemente redondeadas, peso de trazo uniforme de 1.5 px. Familia recomendada: Material Symbols Outlined o equivalente de trazo abierto.</td>
+    </tr>
+    <tr>
+      <td><strong>Tamaños</strong></td>
+      <td>Base de 24 px en navegación y botones; 20 px en campos de formulario; 16 px en microcopy; 32 px en encabezados de módulo y KPIs del dashboard.</td>
+    </tr>
+    <tr>
+      <td><strong>Color según estado</strong></td>
+      <td>#F38313 en acciones primarias activas; #0C0F12 en navegación general; #666666 en estados inactivos; #FD4444 en alerta; #70D399 en confirmación; #C79D08 en advertencia.</td>
+    </tr>
+    <tr>
+      <td><strong>Accesibilidad</strong></td>
+      <td>Cada ícono interactivo debe incluir aria-label descriptivo o texto visible acompañante. Ningún estado o acción puede depender exclusivamente del ícono sin etiqueta.</td>
+    </tr>
+    <tr>
+      <td><strong>Espaciado ícono–texto</strong></td>
+      <td>Separación fija de 8 px entre el ícono y su etiqueta de texto en botones y ítems de menú, conforme al ritmo 8-pt del sistema general.</td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
@@ -313,7 +414,7 @@ Los siguientes componentes conforman el vocabulario visual interactivo de la int
   </thead>
   <tbody>
     <tr>
-      <td colspan="3" style="background-color:#0C0F12;color:#ffffff;font-weight:bold;text-align:center;padding:8px 12px;">BOTONES</td>
+      <td colspan="3" style="background-color:#0C0F12;color:#ffffff;font-weight:bold;text-align:center;padding:8px 12px;letter-spacing:0.05em;">BOTONES</td>
     </tr>
     <tr>
       <td><strong>Botón primario (CTA)</strong></td>
@@ -331,7 +432,7 @@ Los siguientes componentes conforman el vocabulario visual interactivo de la int
       <td>Requiere confirmación modal antes de ejecutar. Hover: #C73535. Solo visible en acciones de eliminación.</td>
     </tr>
     <tr>
-      <td colspan="3" style="background-color:#0C0F12;color:#ffffff;font-weight:bold;text-align:center;padding:8px 12px;">FORMULARIOS E INPUTS</td>
+      <td colspan="3" style="background-color:#0C0F12;color:#ffffff;font-weight:bold;text-align:center;padding:8px 12px;letter-spacing:0.05em;">FORMULARIOS E INPUTS</td>
     </tr>
     <tr>
       <td><strong>Campo de texto (Input)</strong></td>
@@ -344,7 +445,7 @@ Los siguientes componentes conforman el vocabulario visual interactivo de la int
       <td>Abierto: fondo #F6F4F4 · sombra 0 4px 12px rgba(12,15,18,0.12). Ítem hover: fondo #FCE0D4.</td>
     </tr>
     <tr>
-      <td colspan="3" style="background-color:#0C0F12;color:#ffffff;font-weight:bold;text-align:center;padding:8px 12px;">TARJETAS</td>
+      <td colspan="3" style="background-color:#0C0F12;color:#ffffff;font-weight:bold;text-align:center;padding:8px 12px;letter-spacing:0.05em;">TARJETAS</td>
     </tr>
     <tr>
       <td><strong>Tarjeta de producto / lote</strong></td>
@@ -357,7 +458,7 @@ Los siguientes componentes conforman el vocabulario visual interactivo de la int
       <td>Estado crítico: borde izquierdo 4 px #FD4444. Estado advertencia: borde izquierdo 4 px #C79D08. Estado positivo: borde izquierdo 4 px #70D399.</td>
     </tr>
     <tr>
-      <td colspan="3" style="background-color:#0C0F12;color:#ffffff;font-weight:bold;text-align:center;padding:8px 12px;">NAVEGACIÓN</td>
+      <td colspan="3" style="background-color:#0C0F12;color:#ffffff;font-weight:bold;text-align:center;padding:8px 12px;letter-spacing:0.05em;">NAVEGACIÓN</td>
     </tr>
     <tr>
       <td><strong>Sidebar de navegación</strong></td>
@@ -366,11 +467,11 @@ Los siguientes componentes conforman el vocabulario visual interactivo de la int
     </tr>
     <tr>
       <td><strong>Breadcrumb</strong></td>
-      <td>Roboto 14 px Regular #666666 · separador '/' en #C9C9C9 · último ítem #0C0F12 Bold.</td>
+      <td>Roboto 14 px Regular #666666 · último ítem #0C0F12 Bold.</td>
       <td>Máximo 4 niveles visibles. El nivel activo no es enlace. Separación 8 px entre ítems.</td>
     </tr>
     <tr>
-      <td colspan="3" style="background-color:#0C0F12;color:#ffffff;font-weight:bold;text-align:center;padding:8px 12px;">NOTIFICACIONES Y ALERTAS</td>
+      <td colspan="3" style="background-color:#0C0F12;color:#ffffff;font-weight:bold;text-align:center;padding:8px 12px;letter-spacing:0.05em;">NOTIFICACIONES Y ALERTAS</td>
     </tr>
     <tr>
       <td><strong>Toast / Snackbar</strong></td>
@@ -395,21 +496,81 @@ Entreprenly adopta un enfoque de diseño responsivo que asegura una experiencia 
 
 ***Tabla XX. Breakpoints & Grid — Sistema de cuadrícula responsiva***
 
-| **Dispositivo** | **Ancho** | **Columnas** | **Gutter** | **Especificaciones** |
-| --- | --- | --- | --- | --- |
-| **Mobile** | ≤ 640 px | 4 | 16 px | Header compacto con menú hamburguesa. Sidebar colapsado. CTA de acción fijo en parte inferior. Tablas de datos con scroll horizontal. |
-| **Tablet** | 641–1024 px | 8 | 20 px | Sidebar colapsable en overlay. Grilla de productos en 2–3 columnas. Filtros en panel desplegable lateral. |
-| **Desktop** | ≥ 1025 px | 12 | 24 px | Max-width de contenedor: 1280 px, centrado. Sidebar visible y fijo. Grilla de productos en 3–4 columnas. Dashboard KPI en fila de 4 tarjetas. |
+<table>
+  <thead>
+    <tr>
+      <th><strong>Dispositivo</strong></th>
+      <th><strong>Ancho</strong></th>
+      <th><strong>Columnas</strong></th>
+      <th><strong>Gutter</strong></th>
+      <th><strong>Especificaciones</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Mobile</strong></td>
+      <td>≤ 640 px</td>
+      <td>4</td>
+      <td>16 px</td>
+      <td>Header compacto con menú hamburguesa. Sidebar colapsado. CTA de acción fijo en parte inferior. Tablas de datos con scroll horizontal.</td>
+    </tr>
+    <tr>
+      <td><strong>Tablet</strong></td>
+      <td>641–1024 px</td>
+      <td>8</td>
+      <td>20 px</td>
+      <td>Sidebar colapsable en overlay. Grilla de productos en 2–3 columnas. Filtros en panel desplegable lateral.</td>
+    </tr>
+    <tr>
+      <td><strong>Desktop</strong></td>
+      <td>≥ 1025 px</td>
+      <td>12</td>
+      <td>24 px</td>
+      <td>Max-width de contenedor: 1280 px, centrado. Sidebar visible y fijo. Grilla de productos en 3–4 columnas. Dashboard KPI en fila de 4 tarjetas.</td>
+    </tr>
+  </tbody>
+</table>
 
+***Tabla XX. Requisitos de rendimiento e interacción web***
 
-
-| **Requisito** | **Valor recomendado / Especificación** |
-| --- | --- |
-| **Objetivos táctiles mínimos** | 48 × 48 px en todos los breakpoints inferiores a 1025 px. |
-| **Separación entre controles** | Mínimo 16 px entre botones, campos y elementos interactivos adyacentes. |
-| **Indicador de focus visible** | Outline de 2–3 px en #F38313 para elementos nativos; en #7679DE para campos de formulario. |
+<table>
+  <thead>
+    <tr>
+      <th><strong>Requisito</strong></th>
+      <th><strong>Valor recomendado / Especificación</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Objetivos táctiles mínimos</strong></td>
+      <td>48 × 48 px en todos los breakpoints inferiores a 1025 px.</td>
+    </tr>
+    <tr>
+      <td><strong>Separación entre controles</strong></td>
+      <td>Mínimo 16 px entre botones, campos y elementos interactivos adyacentes.</td>
+    </tr>
+    <tr>
+      <td><strong>Indicador de focus visible</strong></td>
+      <td>Outline de 2–3 px en #F38313 para elementos nativos; en #7679DE para campos de formulario.</td>
+    </tr>
+  </tbody>
+</table>
 
 Los estándares aquí establecidos constituyen la referencia normativa para la implementación del Landing Page y la Web Application de Entreprenly. Cualquier componente nuevo que se incorpore al sistema deberá respetar las especificaciones de color, tipografía, espaciado e interacción definidas en esta sección, asegurando la coherencia visual y funcional de la plataforma en cada entrega del ciclo de vida del proyecto.
+
+---
+
+## 4.2. Information Architecture.
+
+### 4.2.1. Organization Systems.
+
+### 4.2.2. Labeling Systems.
+
+### 4.2.3. SEO Tags and Meta Tags
+
+### 4.2.4. Searching Systems.
+
+### 4.2.5. Navigation Systems.
 
 ---
 
@@ -508,3 +669,6 @@ Los estándares aquí establecidos constituyen la referencia normativa para la i
 ### 4.8.1. Database Diagrams
 
 *Contenido por agregar.*
+
+
+
