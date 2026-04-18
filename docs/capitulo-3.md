@@ -499,7 +499,7 @@
     <td>Monitorear el Resumen de Caja en tiempo real dentro del panel de ventas</td>
     <td>Como cajero, quiero visualizar de forma centralizada los ingresos acumulados por método de pago para tener un control inmediato de los saldos del día sin salir de la interfaz principal.</td>
     <td>
-      <strong>Scenario 1: Visualización dinámica de ingresos operativos</strong><br>
+    <strong>Scenario 1: Visualización dinámica de ingresos operativos</strong><br>
       Dado que el cajero finaliza transacciones de forma sucesiva, cuando el sistema procesa los nuevos montos, entonces actualiza automáticamente los contadores de "Efectivo", "Tarjeta/Yape/Plin" y "Total del Día".<br><br>
       <strong>Scenario 2: Persistencia de saldos al cambiar de sección</strong><br>
       Dado que el cajero tiene un saldo acumulado y navega a otra sección, cuando regresa a "Ventas", entonces el sistema muestra los saldos actualizados tal como estaban antes de salir.
@@ -526,6 +526,15 @@
       Dado que el comerciante no tiene ninguna cuenta vinculada, cuando accede a la sección de chatbot, entonces el sistema genera y muestra un código QR válido para iniciar la vinculación.<br><br>
       <strong>Scenario 2: Vinculación exitosa tras escaneo</strong><br>
       Dado que el comerciante escanea el código QR desde su WhatsApp Business, cuando el sistema confirma la conexión, entonces registra la vinculación, activa el chatbot y habilita la visualización de conversaciones.
+      <br><br>
+     <strong>Scenario 3: Vinculación fallida por código QR expirado</strong><br>
+      Dado que el comerciante está en el proceso de vinculación de WhatsApp Business,<br>
+      Cuando el código QR expira sin haber sido escaneado<br>
+      Y el sistema detecta que la sesión no fue establecida en el tiempo límite,<br>
+      Entonces el sistema descarta el código expirado<br>
+      Y muestra un mensaje indicando que el código expiró<br>
+      Y genera un nuevo código QR automáticamente para que el comerciante reintente la vinculación.
+      <br><br>
     </td>
     <td>Epic-07</td>
   </tr>
@@ -627,7 +636,12 @@
       <strong>Scenario 1: Bot envía resumen y solicita confirmación</strong><br>
       Dado que el cliente indicó todos los productos y su dirección de entrega, cuando indica que no desea agregar más, entonces el sistema genera un resumen con productos, cantidades, total y dirección, y solicita confirmación.<br><br>
       <strong>Scenario 2: Sistema registra pedido tras confirmación del cliente</strong><br>
-      Dado que el bot envió el resumen y el cliente confirma que el pedido es correcto, entonces el sistema registra el pedido con estado pendiente y envía las instrucciones de pago.
+      Dado que el bot envió el resumen y el cliente confirma que el pedido es correcto, entonces el sistema registra el pedido con estado pendiente y envía las instrucciones de pago.<br><br>
+      <strong>Scenario 3: Solicitar dirección de entrega al cliente</strong><br>
+      Dado que el cliente confirmó los productos de su pedido,<br>
+      Cuando el chatbot verifica que aún no se registró una dirección de entrega,<br>
+      Entonces solicita al cliente que indique su dirección antes de continuar<br>
+      Y no genera el resumen del pedido hasta que el cliente la proporcione.
     </td>
     <td>Epic-09</td>
   </tr>
