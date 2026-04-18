@@ -451,7 +451,7 @@ Los siguientes componentes conforman el vocabulario visual interactivo de la int
     </tr>
     <tr>
       <td><strong>Selector / Dropdown</strong></td>
-      <td>Mismo estilo que Input · ícono chevron 16 px #666666 a la derecha.</td>
+      <td>Mismo estilo que Input<br> ícono chevron 16 px #666666 a la derecha.</td>
       <td><strong>Abierto:</strong> fondo #F6F4F4 · sombra 0 4px 12px rgba(12,15,18,0.12).<br><strong>Ítem hover:</strong> fondo #FCE0D4.</td>
     </tr>
     <tr>
