@@ -665,10 +665,61 @@ Los estándares aquí establecidos constituyen la referencia normativa para la i
 *Contenido por agregar.*
 
 ## 4.8. Database Design
+El diseño de base de datos de Entreprenly está implementado en MySQL 8.0 y organizado en seis categorías. El esquema aplica normalización hasta la Tercera Forma Normal (3FN), eliminando redundancias y garantizando la integridad referencial en toda la operación del negocio.
+
+El sistema distingue dos actores con responsabilidades distintas: los **Comerciantes**, quienes administran el negocio y tienen suscripción activa, y los **Clientes**, cuyos datos se registran únicamente para boletas y pedidos por WhatsApp, sin acceso al sistema.
+
+Los productos se clasifican en tipo `unidad` (precio por unidad) y tipo `peso`o (precio por kilogramo), lo que determina cómo se interpreta el `stock_total` en cada caso.
+
+La balanza IoT se integra mediante `LecturasBalanza`, que registra cada pesaje y se vincula a una venta al confirmar la transacción, descontando el stock automáticamente.
+
+El arqueo de caja diario se gestiona en `ResumenDiario`, cuyo campo `total_general` es una columna calculada con `GENERATED ALWAYS AS` para evitar inconsistencias.
+
+Los pagos digitales (Yape y Plin) operan bajo un modelo P2P con validación manual del comerciante desde el dashboard.
+
+El chatbot de WhatsApp se integra mediante `ConexionesWhatsApp`, que persiste la sesión del número vinculado por QR, y `Conversaciones`, que registra cada mensaje del chat.
 
 ### 4.8.1. Database Diagrams
 
-*Contenido por agregar.*
+<div align="center">
+
+![Database Diagram Entreprenly](images/Entreprendly_database_diagram.svg)
+</div>
+
+El esquema se organiza en las siguientes tablas por categoría:
+
+**Identidad y Acceso:** 
+- `Comerciantes` (datos de acceso y rol).
+- `PreferenciasComercio` (idioma, tema y notificaciones).
+- `SesionesActivas` (JWTs activos para revocación de sesiones).
+- `TokensVerificacion` (tokens de un solo uso para verificar email y recuperar contraseña). 
+- `Clientes` (datos para boletas).
+
+**Suscripciones:** 
+- `Suscripciones` (plan y ciclo de vida: pendiente → activa → cancelada → vencida).
+- `BoletoSuscripcion` (datos del cobro, guarda solo los últimos 4 dígitos de la tarjeta por seguridad).
+
+**Inventario:** 
+- `Categorias` (tabla de referencia normalizada).
+- `Productos` (catálogo con tipo unidad o peso, precio y stock). 
+- `Lotes` (trazabilidad por fecha de vencimiento para productos perecederos).
+
+**Ventas e IoT:** 
+- `LecturasBalanza` (pesajes con snapshot histórico de precio).
+- `Ventas` (encabezado de transacción presencial). 
+- `DetalleVenta` (líneas de cada venta). 
+- `ResumenDiario` (cierre de caja con total_general calculado automáticamente).
+
+**Chatbot WhatsApp:** 
+- `ConexionesWhatsApp` (sesión delnúmero vinculado por QR, relación 1:1 con el comerciante).
+- `Conversaciones` (historial de mensajes entre bot, cliente y comerciante).
+
+**Pedidos y Pagos:** 
+- `Pedidos` (ciclo pendiente → esperando_pago → confirmado → completado). 
+- `DetallePedido` (líneas del pedido).
+- `Pagos` (validación manual del comprobante Yape/Plin, relación 1:1 con el pedido).
+
+La normalización aplicada se resume en tres puntos. La **1FN** se cumple con valores atómicos en todas las columnas usando ENUM para campos de valores controlados. La **2FN** se cumple con claves primarias simples en todas las tablas. La **3FN** se evidencia en la separación de `PreferenciasComercio`, `BoletoSuscripcion` y `Categorias` para eliminar dependencias transitivas, la eliminación del campo `subtotal` en los detalles por ser valor derivado, y la separación de `Clientes` y `Comerciantes` por pertenecer a entidades de negocio distintas.
 
 
 
