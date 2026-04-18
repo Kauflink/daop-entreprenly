@@ -504,7 +504,7 @@ Entreprenly adopta un enfoque de diseño responsivo que asegura una experiencia 
 
 **Principio general:** La plataforma es completamente responsiva. Toda funcionalidad disponible en escritorio debe ser accesible y operable en tableta y móvil. Los objetivos táctiles mínimos son de 48 × 48 px, y la separación entre controles interactivos no será inferior a 16 px en ningún breakpoint.
 
-***Tabla XX. Breakpoints & Grid — Sistema de cuadrícula responsiva***
+
 
 <table>
   <thead>
@@ -541,7 +541,7 @@ Entreprenly adopta un enfoque de diseño responsivo que asegura una experiencia 
   </tbody>
 </table>
 
-***Tabla XX. Requisitos de rendimiento e interacción web***
+
 
 <table>
   <thead>
