@@ -469,7 +469,6 @@
       Dado que el ticket de venta tiene productos añadidos y el método de pago ha sido seleccionado,ncuando el cajero presiona el botón "Finalizar Venta y Emitir Boleta", y el sistema valida que los datos de la transacción son correctos, y el sistema registra la información en la base de datos actualizando saldos y stock, entonces el sistema genera el comprobante de pago, muestra un mensaje de éxito y limpia la interfaz para una nueva venta.<br><br>
       <strong>Scenario 2: Bloqueo de finalización por datos incompletos</strong><br>
       Dado que el cajero se encuentra en la pantalla de ventas, cuando intenta presionar el botón de finalizar venta sin productos en el ticket o sin método de pago, y el sistema detecta la ausencia de estos datos obligatorios, entonces el sistema muestra un mensaje “No hay productos en el ticket” manteniendo la interfaz de venta activa hasta que se complete el campo  requerido.
-
     </td>
     <td>Epic-05</td>
   </tr>
@@ -508,7 +507,6 @@
       Dado que el cajero se encuentra en la sección de "Ventas", cuando finaliza transacciones de forma sucesiva, y el sistema procesa los nuevos montos registrados, entonces el sistema actualiza automáticamente los contadores de "Efectivo", "Tarjeta Yape/Plin" y el "Total del Día" en la parte inferior de la pantalla.<br><br>
       <strong>Scenario 2: Persistencia de saldos al cambiar de sección</strong><br>
       Dado que el cajero tiene un saldo acumulado en el Resumen de Caja, cuando navega hacia otra sección (ej. "Productos" o "Lotes") y regresa nuevamente a "Ventas", y el sistema recupera los datos almacenados en la sesión, entonces el sistema muestra los saldos actualizados tal como estaban antes de salir de la pestaña, evitando que la información se pierda o se reinicie.
-
     </td>
     <td>Epic-06</td>
   </tr>
