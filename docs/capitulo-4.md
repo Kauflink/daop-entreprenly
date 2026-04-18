@@ -568,22 +568,6 @@ Entreprenly adopta un enfoque de diseño responsivo que asegura una experiencia 
 
 Los estándares aquí establecidos constituyen la referencia normativa para la implementación del Landing Page y la Web Application de Entreprenly. Cualquier componente nuevo que se incorpore al sistema deberá respetar las especificaciones de color, tipografía, espaciado e interacción definidas en esta sección, asegurando la coherencia visual y funcional de la plataforma en cada entrega del ciclo de vida del proyecto.
 
----
-
-## 4.2. Information Architecture.
-
-### 4.2.1. Organization Systems.
-
-### 4.2.2. Labeling Systems.
-
-### 4.2.3. SEO Tags and Meta Tags
-
-### 4.2.4. Searching Systems.
-
-### 4.2.5. Navigation Systems.
-
----
-
 ## 4.2. Information Architecture.
 
 ### 4.2.1. Organization Systems.
