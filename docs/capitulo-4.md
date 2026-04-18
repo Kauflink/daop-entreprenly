@@ -185,7 +185,7 @@ La interfaz web de Entreprenly se articula en tres zonas funcionales: un encabez
     <tr>
       <td><strong>Parte superior fija (sticky)</strong></td>
       <td>
-        <strong>Logotipo Entreprenly:</strong> posicionado a la izquierda; enlace directo al Dashboard principal.<br>
+        <strong> Logotipo Entreprenly:</strong> posicionado a la izquierda; enlace directo al Dashboard principal.<br>
         <strong>Búsqueda global:</strong> campo centralizado con autocompletado por nombre de producto, categoría o módulo de microlearning.<br>
         <strong>Menú principal:</strong> enlaces a Inicio, Productos, Lotes, Ventas, Pedidos, Suscripción, Chatbot, Ayuda.
       </td>
@@ -292,22 +292,22 @@ La aplicación cromática en la interfaz web de Entreprenly sigue una distribuci
     <tr>
       <td><strong>Botón CTA principal, ícono activo, borde de enfoque</strong></td>
       <td><img src="images/_F38313.png" alt="#F38313" width="60" height="36" style="border-radius:4px;display:block;margin-bottom:4px;"><code>#F38313</code></td>
-      <td>Naranja principal de Entreprenly: concentra la llamada a la acción en botones 'Registrar venta', 'Agregar producto' y 'Guardar lote'. Garantiza contraste ≥ 4.5:1 sobre fondo blanco.</td>
+      <td><strong>Naranja principal de Entreprenly:</strong> concentra la llamada a la acción en botones 'Registrar venta', 'Agregar producto' y 'Guardar lote'. Garantiza contraste ≥ 4.5:1 sobre fondo blanco.</td>
     </tr>
     <tr>
       <td><strong>Fondo de tarjeta seleccionada, hover suave, chip de categoría</strong></td>
       <td><img src="images/_FCE0D4.png" alt="#FCE0D4" width="60" height="36" style="border-radius:4px;display:block;margin-bottom:4px;border:1px solid #ccc;"><code>#FCE0D4</code></td>
-      <td>Naranja tenue: estado de selección activa en tarjetas de producto y microlearning. Comunica proximidad sin la intensidad del naranja primario.</td>
+      <td><strong>Naranja tenue:</strong> estado de selección activa en tarjetas de producto y microlearning. Comunica proximidad sin la intensidad del naranja primario.</td>
     </tr>
     <tr>
       <td><strong>Tipografía principal, fondo de sidebar, elementos de autoridad</strong></td>
       <td><img src="images/_0C0F12.png" alt="#0C0F12" width="60" height="36" style="border-radius:4px;display:block;margin-bottom:4px;"><code>#0C0F12</code></td>
-      <td>Negro profundo de Entreprenly: utilizado en la barra lateral de navegación, encabezados de módulo y texto principal. Máximo contraste sobre fondos claros; transmite seriedad y profesionalismo.</td>
+      <td><strong>Negro profundo de Entreprenly:</strong> utilizado en la barra lateral de navegación, encabezados de módulo y texto principal. Máximo contraste sobre fondos claros; transmite seriedad y profesionalismo.</td>
     </tr>
     <tr>
       <td><strong>Fondo general de la aplicación, superficies de tarjeta</strong></td>
       <td><img src="images/_F6F4F4.png" alt="#F6F4F4" width="60" height="36" style="border-radius:4px;display:block;margin-bottom:4px;border:1px solid #ccc;"><code>#F6F4F4</code></td>
-      <td>Blanco cálido: lienzo principal de la interfaz. Evita el deslumbramiento de un blanco puro y proporciona una sensación de amplitud y orden en el dashboard.</td>
+      <td><strong>Blanco cálido:</strong> lienzo principal de la interfaz. Evita el deslumbramiento de un blanco puro y proporciona una sensación de amplitud y orden en el dashboard.</td>
     </tr>
   </tbody>
 </table>
@@ -324,17 +324,17 @@ La aplicación cromática en la interfaz web de Entreprenly sigue una distribuci
     <tr>
       <td><strong>Fondos de sección, contenedores de tabla</strong></td>
       <td><img src="images/_F1F1F1.png" alt="#F1F1F1" width="60" height="36" style="border-radius:4px;display:block;margin-bottom:4px;border:1px solid #ccc;"><code>#F1F1F1</code></td>
-      <td>Gris claro: fondo alternado en tablas de lotes y ventas. Separa bloques de contenido sin introducir ruido visual.</td>
+      <td><strong>Gris claro:</strong> fondo alternado en tablas de lotes y ventas. Separa bloques de contenido sin introducir ruido visual.</td>
     </tr>
     <tr>
       <td><strong>Bordes de tarjeta, divisores, líneas de tabla</strong></td>
       <td><img src="images/_C9C9C9.png" alt="#C9C9C9" width="60" height="36" style="border-radius:4px;display:block;margin-bottom:4px;"><code>#C9C9C9</code></td>
-      <td>Gris de estructura: delimita tarjetas, campos de formulario y filas de tabla con sutileza. No compite con los elementos de acción.</td>
+      <td><strong>Gris de estructura:</strong> delimita tarjetas, campos de formulario y filas de tabla con sutileza. No compite con los elementos de acción.</td>
     </tr>
     <tr>
       <td><strong>Texto secundario, metadatos, placeholders</strong></td>
       <td><img src="images/_666666.png" alt="#666666" width="60" height="36" style="border-radius:4px;display:block;margin-bottom:4px;"><code>#666666</code></td>
-      <td>Gris medio: fechas de vencimiento, nombres de marca en catálogo, descripciones breves. Cumple el mínimo de contraste 4.5:1 sobre #F6F4F4.</td>
+      <td><strong>Gris medio:</strong> fechas de vencimiento, nombres de marca en catálogo, descripciones breves. Cumple el mínimo de contraste 4.5:1 sobre #F6F4F4.</td>
     </tr>
   </tbody>
 </table>
@@ -351,22 +351,22 @@ La aplicación cromática en la interfaz web de Entreprenly sigue una distribuci
     <tr>
       <td><strong>Error, stock crítico, alerta de eliminación</strong></td>
       <td><img src="images/_FD4444.png" alt="#FD4444" width="60" height="36" style="border-radius:4px;display:block;margin-bottom:4px;"><code>#FD4444</code></td>
-      <td>Rojo de alerta: exclusivo para mensajes de error en formularios, indicadores de stock en cero y confirmación de eliminación de registros.</td>
+      <td><strong>Rojo de alerta:</strong> exclusivo para mensajes de error en formularios, indicadores de stock en cero y confirmación de eliminación de registros.</td>
     </tr>
     <tr>
       <td><strong>Éxito, venta confirmada, stock saludable</strong></td>
       <td><img src="images/_70D399.png" alt="#70D399" width="60" height="36" style="border-radius:4px;display:block;margin-bottom:4px;"><code>#70D399</code></td>
-      <td>Verde de confirmación: notificaciones de venta registrada, lote creado y módulo de microlearning completado.</td>
+      <td><strong>Verde de confirmación:</strong> notificaciones de venta registrada, lote creado y módulo de microlearning completado.</td>
     </tr>
     <tr>
       <td><strong>Advertencia, lote próximo a vencer</strong></td>
       <td><img src="images/_C79D08.png" alt="#C79D08" width="60" height="36" style="border-radius:4px;display:block;margin-bottom:4px;"><code>#C79D08</code></td>
-      <td>Amarillo-mostaza: alertas de vencimiento próximo y situaciones que requieren atención moderada sin llegar al nivel de error crítico.</td>
+      <td><strong>Amarillo-mostaza:</strong> alertas de vencimiento próximo y situaciones que requieren atención moderada sin llegar al nivel de error crítico.</td>
     </tr>
     <tr>
       <td><strong>Información, enlaces, estados focus</strong></td>
       <td><img src="images/_7679DE.png" alt="#7679DE" width="60" height="36" style="border-radius:4px;display:block;margin-bottom:4px;"><code>#7679DE</code></td>
-      <td>Azul-lavanda: hipervínculos, indicadores de focus en inputs y botones secundarios de naturaleza informativa.</td>
+      <td><strong>Azul-lavanda:</strong> hipervínculos, indicadores de focus en inputs y botones secundarios de naturaleza informativa.</td>
     </tr>
   </tbody>
 </table>
@@ -428,56 +428,56 @@ Los siguientes componentes conforman el vocabulario visual interactivo de la int
     </tr>
     <tr>
       <td><strong>Botón primario (CTA)</strong></td>
-      <td>Fondo #F38313 · texto #F6F4F4 · Reddit Sans 24 px Bold · border-radius 8 px · padding 12 px 24 px.</td>
-      <td>Hover: fondo oscurecido al 8% (#D97210). Focus: outline 3 px #7679DE. Disabled: fondo #C9C9C9 · texto #666666 · no interactivo.</td>
+      <td> Fondo #F38313<br>  texto #F6F4F4 <br> Reddit Sans 24 px Bold <br> border-radius 8 px <br> padding 12 px 24 px.</td>
+      <td><strong>Hover:</strong> fondo oscurecido al 8% (#D97210). <br> <strong>Focus:</strong> outline 3 px #7679DE.<br> <strong>Disabled:</strong> fondo #C9C9C9 · texto #666666 · no interactivo.</td>
     </tr>
     <tr>
       <td><strong>Botón secundario</strong></td>
-      <td>Borde 1.5 px #F38313 · fondo transparente · texto #F38313 · Reddit Sans 20 px Bold · border-radius 8 px.</td>
-      <td>Hover: fondo #FCE0D4 (naranja tenue). Focus: outline 3 px #7679DE. Disabled: borde y texto #C9C9C9.</td>
+      <td>Borde 1.5 px #F38313 <br> fondo transparente <br> texto #F38313 <br> Reddit Sans 20 px Bold <br> border-radius 8 px.</td>
+      <td><strong>Hover:</strong> fondo #FCE0D4 (naranja tenue). <br> <strong>Focus:</strong> outline 3 px #7679DE. <br> <strong>Disabled:</strong> borde y texto #C9C9C9.</td>
     </tr>
     <tr>
       <td><strong>Botón destructivo</strong></td>
-      <td>Fondo #FD4444 · texto #F6F4F4 · Reddit Sans 20 px Bold · border-radius 8 px.</td>
-      <td>Requiere confirmación modal antes de ejecutar. Hover: #C73535. Solo visible en acciones de eliminación.</td>
+      <td>Fondo #FD4444 <br> texto #F6F4F4 <br> Reddit Sans 20 px Bold <br> border-radius 8 px.</td>
+      <td>Requiere confirmación modal antes de ejecutar.<br> <strong>Hover:</strong> #C73535. Solo visible en acciones de eliminación.</td>
     </tr>
     <tr>
       <td colspan="3" style="background-color:#0C0F12;color:#ffffff;font-weight:bold;text-align:center;padding:8px 12px;letter-spacing:0.05em;">FORMULARIOS E INPUTS</td>
     </tr>
     <tr>
       <td><strong>Campo de texto (Input)</strong></td>
-      <td>Borde 1 px #C9C9C9 · fondo #F6F4F4 · Roboto 16 px Regular · border-radius 6 px · padding 10 px 16 px.</td>
-      <td>Focus: borde 2 px #F38313 + glow sutil rgba(243,131,19,0.15). Error: borde #FD4444 + mensaje Roboto 13 px bajo el campo. Éxito: borde #70D399.</td>
+      <td>Borde 1 px #C9C9C9 <br> fondo #F6F4F4 <br> Roboto 16 px Regular <br> border-radius 6 px <br> padding 10 px 16 px.</td>
+      <td><strong>Focus:</strong> borde 2 px #F38313 + glow sutil rgba(243,131,19,0.15).<br> <strong>Error:</strong> borde #FD4444 + mensaje Roboto 13 px bajo el campo. <br> <strong>Éxito:</strong> borde #70D399.</td>
     </tr>
     <tr>
       <td><strong>Selector / Dropdown</strong></td>
       <td>Mismo estilo que Input · ícono chevron 16 px #666666 a la derecha.</td>
-      <td>Abierto: fondo #F6F4F4 · sombra 0 4px 12px rgba(12,15,18,0.12). Ítem hover: fondo #FCE0D4.</td>
+      <td><strong>Abierto:</strong> fondo #F6F4F4 · sombra 0 4px 12px rgba(12,15,18,0.12).<br><strong>Ítem hover:</strong> fondo #FCE0D4.</td>
     </tr>
     <tr>
       <td colspan="3" style="background-color:#0C0F12;color:#ffffff;font-weight:bold;text-align:center;padding:8px 12px;letter-spacing:0.05em;">TARJETAS</td>
     </tr>
     <tr>
       <td><strong>Tarjeta de producto / lote</strong></td>
-      <td>Fondo #F6F4F4 · borde 1 px #C9C9C9 · border-radius 12 px · sombra 0 2px 8px rgba(12,15,18,0.06) · padding 16 px.</td>
-      <td>Hover: sombra 0 4px 16px rgba(12,15,18,0.12) + borde superior 3 px #F38313. Badge de estado en esquina superior derecha (verde/rojo/amarillo).</td>
+      <td>Fondo #F6F4F4 <br> borde 1 px #C9C9C9 <br> border-radius 12 px <br> sombra 0 2px 8px rgba(12,15,18,0.06) <br> padding 16 px.</td><br>
+      <td><strong>Hover:</strong> sombra 0 4px 16px rgba(12,15,18,0.12) + borde superior 3 px #F38313. Badge de estado en esquina superior derecha (verde/rojo/amarillo).</td>
     </tr>
     <tr>
       <td><strong>Tarjeta KPI (dashboard)</strong></td>
-      <td>Fondo #F6F4F4 · cifra en Reddit Sans 32 px Bold #0C0F12 · etiqueta Roboto 14 px #666666 · ícono 32 px #F38313.</td>
-      <td>Estado crítico: borde izquierdo 4 px #FD4444. Estado advertencia: borde izquierdo 4 px #C79D08. Estado positivo: borde izquierdo 4 px #70D399.</td>
+      <td>Fondo #F6F4F4 <br> cifra en Reddit Sans 32 px Bold #0C0F12 <br> etiqueta Roboto 14 px #666666 <br> ícono 32 px #F38313.</td>
+      <td><strong>Estado crítico:</strong> borde izquierdo 4 px #FD4444. <br><strong>Estado advertencia:</strong> borde izquierdo 4 px #C79D08. <strong><br>Estado positivo:</strong> borde izquierdo 4 px #70D399.</td>
     </tr>
     <tr>
       <td colspan="3" style="background-color:#0C0F12;color:#ffffff;font-weight:bold;text-align:center;padding:8px 12px;letter-spacing:0.05em;">NAVEGACIÓN</td>
     </tr>
     <tr>
       <td><strong>Sidebar de navegación</strong></td>
-      <td>Fondo #0C0F12 · ancho fijo 220 px · ítems Roboto 15 px Medium #F6F4F4 · ícono 20 px por ítem · padding ítem 12 px 16 px.</td>
-      <td>Ítem activo: fondo #F38313 · texto #0C0F12 Bold · borde-radius 8 px. Hover: fondo rgba(243,131,19,0.15).</td>
+      <td>Fondo #0C0F12 <br>ancho fijo 220 px <br> ítems Roboto 15 px Medium #F6F4F4 <br> ícono 20 px por ítem <br> padding ítem 12 px 16 px.</td>
+      <td><strong>Ítem activo:</strong> fondo #F38313 · texto #0C0F12 Bold · borde-radius 8 px. <br><strong>Hover:</strong> fondo rgba(243,131,19,0.15).</td>
     </tr>
     <tr>
       <td><strong>Breadcrumb</strong></td>
-      <td>Roboto 14 px Regular #666666 · último ítem #0C0F12 Bold.</td>
+      <td>Roboto 14 px Regular #666666 <br> último ítem #0C0F12 Bold.</td>
       <td>Máximo 4 niveles visibles. El nivel activo no es enlace. Separación 8 px entre ítems.</td>
     </tr>
     <tr>
@@ -485,12 +485,12 @@ Los siguientes componentes conforman el vocabulario visual interactivo de la int
     </tr>
     <tr>
       <td><strong>Toast / Snackbar</strong></td>
-      <td>Fondo según estado: #70D399 (éxito), #FD4444 (error), #C79D08 (advertencia) · texto #F6F4F4 Roboto 15 px · border-radius 8 px · padding 12 px 20 px.</td>
-      <td>Posición: esquina inferior derecha. Duración: 3–5 s con opción de cierre manual. Ícono 20 px a la izquierda del texto.</td>
+      <td>Fondo según estado: #70D399 (éxito), #FD4444 (error), #C79D08 (advertencia) <br> texto #F6F4F4 Roboto 15 px <br> border-radius 8 px <br> padding 12 px 20 px.</td>
+      <td><strong>Posición:</strong> esquina inferior derecha. <br><strong>Duración:</strong> 3–5 s con opción de cierre manual. <br><strong>Ícono:</strong> 20 px a la izquierda del texto.</td>
     </tr>
     <tr>
       <td><strong>Banner de alerta inline</strong></td>
-      <td>Fondo #FFF7E1 · borde izquierdo 4 px #C79D08 · texto Roboto 14 px #473723 · border-radius 4 px · padding 12 px 16 px.</td>
+      <td>Fondo #FFF7E1 <br> borde izquierdo 4 px #C79D08 <br> texto Roboto 14 px #473723 <br> border-radius 4 px <br> padding 12 px 16 px.</td>
       <td>Usado en alertas de lote próximo a vencer. Ícono de advertencia 20 px #C79D08 a la izquierda.</td>
     </tr>
   </tbody>
