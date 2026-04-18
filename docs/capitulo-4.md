@@ -24,17 +24,20 @@ Esta sección define los lineamientos de estilo que aseguran una identidad visua
     <tr>
       <td><strong>#F38313</strong></td>
       <td><img src="images/_F38313.png" alt="#F38313" width="60" height="40" style="border-radius:4px;display:block;"></td>
-      <td>Es un tono vibrante y enérgico que comunica dinamismo y acción. Se utiliza como color de acento principal para botones de llamada a la acción (CTA) y elementos críticos de la marca, asegurando una alta visibilidad.</td>
+      <td>Es un tono vibrante y enérgico que comunica dinamismo y acción. <br>
+      Se utiliza como color de acento principal para botones de llamada a la acción (CTA) y elementos críticos de la marca, asegurando una alta visibilidad.</td>
     </tr>
     <tr>
       <td><strong>#FCE0D4</strong></td>
       <td><img src="images/_FCE0D4.png" alt="#FCE0D4" width="60" height="40" style="border-radius:4px;display:block;border:1px solid #ccc;"></td>
-      <td>Tono melocotón claro que aporta calidez y cercanía. Se emplea en fondos de tarjetas y estados de selección suave, proporcionando un contraste armonioso con el naranja principal sin saturar la interfaz.</td>
+      <td>Tono melocotón claro que aporta calidez y cercanía.
+      <br> Se emplea en fondos de tarjetas y estados de selección suave, proporcionando un contraste armonioso con el naranja principal sin saturar la interfaz.</td>
     </tr>
     <tr>
       <td><strong>#0C0F12</strong></td>
       <td><img src="images/_0C0F12.png" alt="#0C0F12" width="60" height="40" style="border-radius:4px;display:block;"></td>
-      <td>Color sólido y profundo utilizado para la tipografía principal y encabezados. Garantiza el cumplimiento de las normas de accesibilidad (WCAG) al ofrecer un contraste máximo sobre fondos claros.</td>
+      <td>Color sólido y profundo utilizado para la tipografía principal y encabezados.
+      <br> Garantiza el cumplimiento de las normas de accesibilidad (WCAG) al ofrecer un contraste máximo sobre fondos claros.</td>
     </tr>
     <tr>
       <td><strong>#F6F4F4</strong></td>
@@ -58,22 +61,26 @@ Esta sección define los lineamientos de estilo que aseguran una identidad visua
     <tr>
       <td><strong>#7679DE</strong></td>
       <td><img src="images/_7679DE.png" alt="#7679DE" width="60" height="40" style="border-radius:4px;display:block;"></td>
-      <td>Representa la vertiente tecnológica del proyecto. Es un tono azulado con matices lavanda que transmite confianza y modernidad, ideal para enlaces, iconos de navegación y elementos interactivos web.</td>
+      <td>Representa la vertiente tecnológica del proyecto.
+      <br> Es un tono azulado con matices lavanda que transmite confianza y modernidad, ideal para enlaces, iconos de navegación y elementos interactivos web.</td>
     </tr>
     <tr>
       <td><strong>#C2CDFC</strong></td>
       <td><img src="images/_C2CDFC.png" alt="#C2CDFC" width="60" height="40" style="border-radius:4px;display:block;border:1px solid #ccc;"></td>
-      <td>Variante clara y relajada del azul principal. Se utiliza para resaltar componentes secundarios y áreas de información técnica, manteniendo una estética limpia y profesional.</td>
+      <td>Variante clara y relajada del azul principal.
+      <br> Se utiliza para resaltar componentes secundarios y áreas de información técnica, manteniendo una estética limpia y profesional.</td>
     </tr>
     <tr>
       <td><strong>#C9C9C9</strong></td>
       <td><img src="images/_C9C9C9.png" alt="#C9C9C9" width="60" height="40" style="border-radius:4px;display:block;"></td>
-      <td>Tono neutro destinado a bordes, divisores y estados inactivos. Su función es estructurar la interfaz de manera sutil sin distraer al usuario de las tareas principales.</td>
+      <td>Tono neutro destinado a bordes, divisores y estados inactivos. 
+      <br> Su función es estructurar la interfaz de manera sutil sin distraer al usuario de las tareas principales.</td>
     </tr>
     <tr>
       <td><strong>#666666</strong></td>
       <td><img src="images/_666666.png" alt="#666666" width="60" height="40" style="border-radius:4px;display:block;"></td>
-      <td>Tono neutro destinado a bordes, divisores y estados inactivos. Su función es estructurar la interfaz de manera sutil sin distraer al usuario de las tareas principales.</td>
+      <td>Tono neutro destinado a bordes, divisores y estados inactivos.<br> 
+      Su función es estructurar la interfaz de manera sutil sin distraer al usuario de las tareas principales.</td>
     </tr>
     <tr>
       <td><strong>#F1F1F1</strong></td>
@@ -83,17 +90,20 @@ Esta sección define los lineamientos de estilo que aseguran una identidad visua
     <tr>
       <td><strong>#FD4444</strong></td>
       <td><img src="images/_FD4444.png" alt="#FD4444" width="60" height="40" style="border-radius:4px;display:block;"></td>
-      <td>Color de alta intensidad para estados de alerta. Comunica urgencia y se reserva exclusivamente para mensajes de error, eliminación de registros o indicadores de stock crítico.</td>
+      <td>Color de alta intensidad para estados de alerta. 
+      <br>Comunica urgencia y se reserva exclusivamente para mensajes de error, eliminación de registros o indicadores de stock crítico.</td>
     </tr>
     <tr>
       <td><strong>#70D399</strong></td>
       <td><img src="images/_70D399.png" alt="#70D399" width="60" height="40" style="border-radius:4px;display:block;"></td>
-      <td>Tono orgánico que representa éxito y crecimiento. Se utiliza en notificaciones de confirmación, transacciones finalizadas y estados positivos del inventario.</td>
+      <td>Tono orgánico que representa éxito y crecimiento. <br>
+      Se utiliza en notificaciones de confirmación, transacciones finalizadas y estados positivos del inventario.</td>
     </tr>
     <tr>
       <td><strong>#FFF7E1</strong></td>
       <td><img src="images/_FFF7E1.png" alt="#FFF7E1" width="60" height="40" style="border-radius:4px;display:block;border:1px solid #ccc;"></td>
-      <td>Tono suave y luminoso similar al <em>Lemon Chiffon</em>, que comunica amabilidad y optimismo. Se recomienda como fondo para banners informativos o etiquetas de ayuda, cuidando el contraste con textos oscuros.</td>
+      <td>Tono suave y luminoso similar al <em>Lemon Chiffon</em>, que comunica amabilidad y optimismo. <br>
+      Se recomienda como fondo para banners informativos o etiquetas de ayuda, cuidando el contraste con textos oscuros.</td>
     </tr>
     <tr>
       <td><strong>#C79D08</strong></td>
