@@ -386,14 +386,15 @@
   <tr>
     <td>US-24</td>
     <td>Buscar productos en el inventario y validar su tipo de medida</td>
-    <td>Como cajero, quiero buscar productos del inventario para que el sistema valide si son por cantidad o peso y abrir la interfaz de ingreso correspondiente.</td>
+    <td>Como cajero, quiero buscar productos del inventario para que el sistema valide si son por cantidad o peso, para abrir la interfaz de ingreso correspondiente.</td>
     <td>
       <strong>Scenario 1: Búsqueda y validación de producto por peso</strong><br>
-      Dado que el cajero ingresa un producto medido en Kg, cuando lo selecciona, entonces el sistema despliega el modal "Registrar Peso".<br><br>
+     Dado que el cajero ingresa “Manzana” en el buscador, cuando selecciona el producto de la lista,y el sistema verifica que el producto está registrado con medida en "Kg", entonces el sistema despliega el modal "Registrar Peso".<br><br>
       <strong>Scenario 2: Búsqueda y validación de producto por cantidad</strong><br>
-      Dado que el cajero selecciona un producto registrado por unidades, entonces el sistema despliega el modal "Registrar Cantidad".<br><br>
+      Dado que el cajero realiza una búsqueda, cuando selecciona “Coca Cola” del inventario, y el sistema verifica que el producto está registrado por unidades, entonces el sistema despliega el modal "Registrar Cantidad".<br><br>
+<br><br>
       <strong>Scenario 3: Producto no encontrado</strong><br>
-      Dado que el término ingresado no coincide con el inventario, cuando se ejecuta la búsqueda, entonces el sistema muestra "Producto no encontrado".
+      Dado que el término ingresado no coincide con el inventario, cuando se ejecuta la búsqueda, entonces el sistema muestra un mensaje indicando "Producto no encontrado".<br><br>
     </td>
     <td>Epic-05</td>
   </tr>
@@ -402,12 +403,12 @@
   <tr>
     <td>US-25</td>
     <td>Registrar la cantidad de unidades en el Ticket de Venta</td>
-    <td>Como cajero, quiero ingresar el número de unidades de un producto seleccionado para añadirlo al detalle de la venta.</td>
+    <td>Como cajero, quiero ingresar el número de unidades de un producto seleccionado, para añadirlo al detalle de la venta.</td>
     <td>
       <strong>Scenario 1: Confirmación de cantidad unitaria</strong><br>
-      Dado que el modal "Registrar Cantidad" está abierto, cuando el cajero ingresa un número entero y presiona "Confirmar cantidad", entonces el sistema calcula el subtotal y añade el ítem al detalle.<br><br>
+      Dado que el modal "Registrar Cantidad" está abierto, cuando el cajero ingresa el número entero “3” en el teclado numérico, y presiona el botón "Confirmar cantidad", entonces el sistema calcula el subtotal y añade el ítem al detalle de la venta.<br><br>
       <strong>Scenario 2: Validación de stock insuficiente por cantidad</strong><br>
-      Dado que la cantidad solicitada es mayor al stock disponible, cuando el usuario intenta confirmar, entonces el sistema muestra "Stock insuficiente" y no permite añadir el producto al ticket.
+      Dado que el cajero ha ingresado una cantidad en el modal, Cuando el sistema verifica que la cantidad solicitada es mayor al stock disponible en el inventario, Y el usuario intenta confirmar la acción, Entonces el sistema muestra una alerta indicando "Stock insuficiente" y no permite añadir el producto al ticket.
     </td>
     <td>Epic-05</td>
   </tr>
@@ -419,11 +420,12 @@
     <td>Como cajero, quiero obtener el peso del producto automáticamente o por teclado para procesar la venta de productos al granel.</td>
     <td>
       <strong>Scenario 1: Captura automática</strong><br>
-      Dado que el sistema detecta una balanza IoT conectada, cuando el cajero coloca el producto y el hardware envía la lectura, entonces el valor se carga automáticamente en el campo de peso.<br><br>
+      Dado que el modal "Registrar Peso" está abierto, cuando el sistema detecta una balanza IoT conectada, y el cajero coloca el producto sobre la balanza física, y el hardware envía la lectura de peso al sistema, entonces el valor se carga automáticamente en el campo de peso.<br><br>
       <strong>Scenario 2: Registro de peso manual</strong><br>
-      Dado que el sistema no detecta una balanza, cuando el cajero digita el peso y presiona "Confirmar Peso", entonces el sistema registra el dato y añade el producto al ticket.<br><br>
+      Dado que el sistema no detecta una balanza, y el modal "Registrar Peso" está abierto, cuando el cajero digita el peso “2” observado físicamente en el teclado decimal, y presiona el botón "Confirmar Peso", entonces el sistema registra el dato y añade el producto al ticket de venta.
+<br><br>
       <strong>Scenario 3: Validación de stock insuficiente por peso</strong><br>
-      Dado que el peso solicitado es mayor al stock disponible, cuando el usuario intenta confirmar, entonces el sistema muestra "Stock insuficiente" y no permite añadir el producto.
+      Dado que el cajero ha ingresado el peso en el modal, cuando el sistema verifica que el peso solicitado es mayor al stock disponible en el inventario, y el usuario intenta confirmar la acción, entonces el sistema muestra una alerta indicando "Stock insuficiente" y no permite añadir el producto al ticket.
     </td>
     <td>Epic-05</td>
   </tr>
@@ -435,9 +437,10 @@
     <td>Como cajero, quiero visualizar el desglose de productos (nombre, cantidad/peso, precio unitario y subtotal) para verificar que la información sea correcta antes de proceder al pago.</td>
     <td>
       <strong>Scenario 1: Actualización del detalle y monto total</strong><br>
-      Dado que se han añadido productos al ticket, cuando el sistema procesa cada ítem, entonces muestra el desglose detallado y el monto total acumulado.<br><br>
+      Dado que se han añadido productos (por unidad o peso) al ticket de venta, cuando el sistema procesa cada ítem de la lista, y calcula automáticamente el subtotal multiplicando el precio por la cantidad o peso, y suma todos los subtotales de la lista, entonces el sistema muestra el desglose detallado y el monto total acumulado de la venta en la interfaz.
+<br><br>
       <strong>Scenario 2: Edición o eliminación de un ítem del detalle</strong><br>
-      Dado que un producto ya está registrado en el detalle, cuando el cajero selecciona eliminarlo y el sistema confirma la acción, entonces actualiza la lista y recalcula el monto total inmediatamente.
+      Dado que un producto ya se encuentra registrado en el detalle de la venta, cuando el cajero selecciona la opción de eliminar, y el sistema confirma la acción del usuario, entonces el sistema actualiza la lista del detalle y recalcula el monto total de la venta inmediatamente.<br><br>
     </td>
     <td>Epic-05</td>
   </tr>
@@ -446,12 +449,12 @@
   <tr>
     <td>US-28</td>
     <td>Seleccionar el método de pago para la transacción</td>
-    <td>Como cajero, quiero elegir el medio por el cual está pagando el cliente (Efectivo o Tarjeta/Yape/Plin) para que el ingreso se registre en la categoría contable correcta.</td>
+    <td>Como cajero, quiero elegir el medio por el cual está pagando el cliente (Efectivo o Tarjeta/Yape/Plin), para que el ingreso se registre en la categoría contable correcta.</td>
     <td>
       <strong>Scenario 1: Selección de método de pago exitosa</strong><br>
-      Dado que el ticket tiene el monto calculado, cuando el cajero hace clic sobre "Efectivo" o "Tarjeta/Yape/Plin", entonces el sistema habilita el botón "Finalizar Venta y Emitir Boleta".<br><br>
+      Dado que el ticket de venta tiene el monto total calculado, cuando el cajero hace clic sobre el ícono de "Efectivo" o "Tarjeta Yape/Plin", y el sistema marca visualmente la opción seleccionada como activa, y registra la categoría del método de pago internamente, entonces el sistema habilita el botón "Finalizar Venta y Emitir Boleta".<br><br>
       <strong>Scenario 2: Intento de finalización sin método de pago</strong><br>
-      Dado que el cajero no ha marcado una opción de pago, cuando intenta finalizar la venta, entonces el sistema muestra "Por favor, seleccione un método de pago" y bloquea la emisión de la boleta.
+      Dado que el cajero ha terminado de agregar productos al ticket, cuando intenta presionar el botón de finalizar la venta sin haber marcado una opción de pago, y el sistema valida que no hay un método asignado para la transacción actual, entonces el sistema muestra un mensaje de advertencia indicando "Por favor, seleccione un método de pago" y bloquea la emisión de la boleta.
     </td>
     <td>Epic-05</td>
   </tr>
@@ -460,12 +463,13 @@
   <tr>
     <td>US-29</td>
     <td>Finalizar la venta y emitir el comprobante de pago</td>
-    <td>Como cajero, quiero procesar el pago y finalizar la venta en un solo paso para entregar el comprobante al cliente de forma inmediata.</td>
+    <td>Como cajero, quiero procesar el pago y finalizar la venta en un solo paso, para registrar la transacción en el sistema y entregar el comprobante al cliente de forma inmediata.</td>
     <td>
       <strong>Scenario 1: Procesamiento exitoso del cierre de venta</strong><br>
-      Dado que el ticket tiene productos y método de pago seleccionado, cuando el cajero presiona "Finalizar Venta y Emitir Boleta", entonces el sistema registra la información, genera el comprobante y limpia la interfaz para una nueva venta.<br><br>
+      Dado que el ticket de venta tiene productos añadidos y el método de pago ha sido seleccionado,ncuando el cajero presiona el botón "Finalizar Venta y Emitir Boleta", y el sistema valida que los datos de la transacción son correctos, y el sistema registra la información en la base de datos actualizando saldos y stock, entonces el sistema genera el comprobante de pago, muestra un mensaje de éxito y limpia la interfaz para una nueva venta.<br><br>
       <strong>Scenario 2: Bloqueo de finalización por datos incompletos</strong><br>
-      Dado que no hay productos en el ticket o falta el método de pago, cuando el cajero intenta finalizar, entonces el sistema muestra "No hay productos en el ticket" y mantiene la interfaz activa.
+      Dado que el cajero se encuentra en la pantalla de ventas, cuando intenta presionar el botón de finalizar venta sin productos en el ticket o sin método de pago, y el sistema detecta la ausencia de estos datos obligatorios, entonces el sistema muestra un mensaje “No hay productos en el ticket” manteniendo la interfaz de venta activa hasta que se complete el campo  requerido.
+
     </td>
     <td>Epic-05</td>
   </tr>
@@ -483,12 +487,13 @@
   <tr>
     <td>US-30</td>
     <td>Clasificar automáticamente los ingresos según el medio de pago</td>
-    <td>Como comerciante, quiero que cada venta finalizada sume su monto al acumulado del método correspondiente para tener visibilidad inmediata de cuánto dinero hay en efectivo y cuánto en digital.</td>
+    <td>Como comerciante, quiero que cada venta finalizada sume su monto al acumulado del método correspondiente, para tener visibilidad inmediata de cuánto dinero hay en efectivo y cuánto en digital.</td>
     <td>
       <strong>Scenario 1: Actualización del acumulado por método de pago</strong><br>
-      Dado que se ha finalizado una venta, cuando el sistema detecta el método de pago utilizado, entonces actualiza visualmente el "Resumen de Caja" con los nuevos montos acumulados.<br><br>
+      Dado que se ha finalizado una venta exitosamente, cuando el sistema procesa el registro de la transacción, y detecta el método de pago utilizado (Efectivo o Tarjeta/Digital), y suma el monto de la venta al saldo anterior de esa categoría, entonces el sistema actualiza visualmente el "Resumen de Caja" con los nuevos montos acumulados.
+<br><br>
       <strong>Scenario 2: Visualización del total general de ingresos</strong><br>
-      Dado que los saldos por categoría han sido actualizados, cuando el comerciante visualiza el "Resumen de Caja", entonces el sistema muestra el "Total del Día" como la suma consolidada de todos los medios de pago.
+      Dado que los saldos por categoría (Efectivo y Digital) han sido actualizados, cuando el comerciante visualiza el panel de "Resumen de Caja", y el sistema suma ambos acumulados de forma automática, entonces el sistema muestra el "Total del Día" como la suma consolidada de todos los medios de pago.
     </td>
     <td>Epic-06</td>
   </tr>
@@ -497,12 +502,13 @@
   <tr>
     <td>US-31</td>
     <td>Monitorear el Resumen de Caja en tiempo real dentro del panel de ventas</td>
-    <td>Como cajero, quiero visualizar de forma centralizada los ingresos acumulados por método de pago para tener un control inmediato de los saldos del día sin salir de la interfaz principal.</td>
+    <td>Como cajero, quiero visualizar de forma centralizada los ingresos acumulados por método de pago, para tener un control inmediato de los saldos del día sin salir de la interfaz principal.</td>
     <td>
     <strong>Scenario 1: Visualización dinámica de ingresos operativos</strong><br>
-      Dado que el cajero finaliza transacciones de forma sucesiva, cuando el sistema procesa los nuevos montos, entonces actualiza automáticamente los contadores de "Efectivo", "Tarjeta/Yape/Plin" y "Total del Día".<br><br>
+      Dado que el cajero se encuentra en la sección de "Ventas", cuando finaliza transacciones de forma sucesiva, y el sistema procesa los nuevos montos registrados, entonces el sistema actualiza automáticamente los contadores de "Efectivo", "Tarjeta Yape/Plin" y el "Total del Día" en la parte inferior de la pantalla.<br><br>
       <strong>Scenario 2: Persistencia de saldos al cambiar de sección</strong><br>
-      Dado que el cajero tiene un saldo acumulado y navega a otra sección, cuando regresa a "Ventas", entonces el sistema muestra los saldos actualizados tal como estaban antes de salir.
+      Dado que el cajero tiene un saldo acumulado en el Resumen de Caja, cuando navega hacia otra sección (ej. "Productos" o "Lotes") y regresa nuevamente a "Ventas", y el sistema recupera los datos almacenados en la sesión, entonces el sistema muestra los saldos actualizados tal como estaban antes de salir de la pestaña, evitando que la información se pierda o se reinicie.
+
     </td>
     <td>Epic-06</td>
   </tr>
