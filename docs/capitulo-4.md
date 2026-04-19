@@ -684,6 +684,36 @@ La Landing Page no incorpora un buscador global porque su profundidad de conteni
 
 Este enfoque es suficiente para la versión actual porque la página funciona como una landing de presentación y conversión, no como un repositorio de contenidos. Si en el futuro se agregan artículos, documentación, casos de uso o centro de ayuda, se podría incorporar un buscador específico para recursos y preguntas frecuentes.
 
+### 4.2.5. Navigation Systems
+
+El sistema de navegación se basa en una combinación de enlaces internos, CTAs de conversión y accesos transaccionales. La navegación principal está ubicada en el header y se mantiene enfocada en las secciones más importantes para la toma de decisión.
+
+| Elemento de navegación | Destino           | Función                                              |
+| ---------------------- | ----------------- | ---------------------------------------------------- |
+| Logo de Entreprenly    | `#top`            | Retorna al inicio de la landing.                     |
+| Cómo funciona          | `#como-funciona`  | Explica el proceso de adopción del sistema.          |
+| Beneficios             | `#beneficios`     | Presenta beneficios operativos para el comerciante.  |
+| Planes                 | `#planes`         | Muestra las opciones comerciales disponibles.        |
+| FAQ                    | `#faq`            | Resuelve dudas frecuentes.                           |
+| Iniciar sesión         | `./login.html`    | Lleva al acceso de usuarios registrados.             |
+| Comenzar ahora         | `./register.html` | Lleva al registro de nueva cuenta.                   |
+| Ver planes             | `#planes`         | Desplaza al usuario a la sección comercial.          |
+| Da el siguiente paso   | `./register.html` | Refuerza el cierre de conversión desde el CTA final. |
+
+La navegación responsive conserva los mismos destinos en dispositivos móviles mediante un menú desplegable. Esto permite mantener consistencia entre escritorio y móvil sin duplicar rutas ni cambiar el significado de las etiquetas.
+
+Los flujos principales de navegación son los siguientes:
+
+| Flujo                                           | Recorrido esperado                                                                               |
+| ----------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| Visitante nuevo que quiere entender la solución | Hero section → Problem section → Main features section → How it works section → Benefits section |
+| Visitante que evalúa precio                     | Hero section → Ver planes → Planes section → Comenzar ahora                                      |
+| Visitante con dudas                             | Header → FAQ → Resolver dudas → Planes o Registro                                                |
+| Usuario que ya tiene cuenta                     | Header → Iniciar sesión                                                                          |
+| Usuario listo para registrarse                  | Hero section o Next step section → Comenzar ahora → Registro                                     |
+
+El footer complementa la navegación principal mediante dos grupos: **Explorar**, que repite enlaces informativos hacia secciones internas, y **Siguiente paso**, que agrupa acciones finales como registrarse, comparar planes, resolver dudas o volver al inicio.
+
 ## 4.3. Landing Page UI Design
 
 La Landing Page de Entreprenly está diseñada como el primer punto de contacto para comerciantes interesados en digitalizar su operación diaria. Su estructura prioriza una comunicación clara del problema, la propuesta de valor, los beneficios operativos y la conversión hacia el registro o la consulta de planes. El diseño mantiene una navegación lineal, secciones de lectura rápida y llamados a la acción visibles para reducir fricción en usuarios no técnicos.
