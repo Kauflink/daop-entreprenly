@@ -610,6 +610,66 @@ El sistema de etiquetado utiliza términos breves, directos y orientados a la ac
 
 También se emplean etiquetas de accesibilidad en elementos interactivos, como el botón de menú móvil, el logo de Entreprenly y los accesos a redes sociales. Esto permite que la navegación sea más clara tanto visualmente como para lectores de pantalla.
 
+### 4.2.3. SEO Tags and Meta Tags
+
+La Landing Page incluye metadatos orientados a indexación básica, compatibilidad móvil, carga de recursos visuales y reconocimiento de marca. Estos elementos ayudan a que la página sea interpretada correctamente por navegadores, buscadores y dispositivos móviles.
+
+**Título de la página:**
+
+```html
+<title>Entreprenly | Smart Retail para pequeños comercios</title>
+```
+
+**Codificación de caracteres:**
+
+```html
+<meta charset="UTF-8" />
+```
+
+**Configuración responsive:**
+
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+```
+
+**Descripción SEO:**
+
+```html
+<meta
+  name="description"
+  content="Entreprenly conecta WhatsApp, inventario validado y control financiero para pequenos comercios de alimentos frescos."
+/>
+```
+
+**Ícono de marca:**
+
+```html
+<link rel="icon" type="image/png" href="./assets/brand-icon.png" />
+```
+
+**Optimización de carga tipográfica:**
+
+```html
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+```
+
+Para una versión desplegada en producción, se recomienda complementar estos metadatos con etiquetas de autor, copyright y Open Graph para mejorar la presentación de la landing cuando sea compartida en redes sociales o aplicaciones de mensajería.
+
+```html
+<meta name="author" content="Kauflink" />
+<meta name="copyright" content="Entreprenly by Kauflink" />
+<meta
+  property="og:title"
+  content="Entreprenly | Smart Retail para pequeños comercios"
+/>
+<meta
+  property="og:description"
+  content="Controla inventario, pedidos por WhatsApp y caja diaria desde un solo ecosistema."
+/>
+<meta property="og:type" content="website" />
+```
+
 ## 4.3. Landing Page UI Design
 
 La Landing Page de Entreprenly está diseñada como el primer punto de contacto para comerciantes interesados en digitalizar su operación diaria. Su estructura prioriza una comunicación clara del problema, la propuesta de valor, los beneficios operativos y la conversión hacia el registro o la consulta de planes. El diseño mantiene una navegación lineal, secciones de lectura rápida y llamados a la acción visibles para reducir fricción en usuarios no técnicos.
