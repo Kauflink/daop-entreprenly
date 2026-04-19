@@ -588,6 +588,28 @@ Para la Landing Page se emplea una organización **jerárquica y secuencial**. E
 
 Además de esta estructura informativa, la landing contempla accesos transaccionales hacia **registro** e **inicio de sesión**. Estos flujos se mantienen separados de la narrativa principal para no interrumpir la lectura comercial, pero permanecen disponibles desde los CTAs y el header.
 
+### 4.2.2. Labeling Systems
+
+El sistema de etiquetado utiliza términos breves, directos y orientados a la acción. Las etiquetas evitan lenguaje técnico innecesario y priorizan conceptos familiares para el comerciante, como inventario, pedidos, caja, beneficios, planes y dudas frecuentes.
+
+| Etiqueta                 | Tipo                  | Uso dentro de la landing                                                            |
+| ------------------------ | --------------------- | ----------------------------------------------------------------------------------- |
+| **Cómo funciona**        | Navegación principal  | Lleva al usuario a la explicación paso a paso de adopción del sistema.              |
+| **Beneficios**           | Navegación principal  | Dirige a la sección donde se resumen los beneficios operativos para el comerciante. |
+| **Planes**               | Navegación principal  | Permite revisar la propuesta comercial y elegir entre Plan Free y Plan Control.     |
+| **FAQ**                  | Navegación principal  | Abre la sección de preguntas frecuentes para resolver dudas antes del registro.     |
+| **Iniciar sesión**       | Acción de acceso      | Permite que un usuario existente entre a su cuenta.                                 |
+| **Comenzar ahora**       | CTA principal         | Dirige al visitante hacia el flujo de registro.                                     |
+| **Ver planes**           | CTA secundario        | Lleva directamente a la sección de planes para comparar opciones.                   |
+| **Plan Free**            | Etiqueta comercial    | Identifica el plan gratuito para empezar con inventario básico.                     |
+| **Plan Control**         | Etiqueta comercial    | Identifica el plan de pago con mayor control operativo.                             |
+| **Comparativa breve**    | Encabezado de sección | Presenta la diferencia entre gestión manual, sistemas genéricos y Entreprenly.      |
+| **Da el siguiente paso** | CTA final             | Refuerza la conversión al final del recorrido de la landing.                        |
+| **Explorar**             | Footer                | Agrupa enlaces internos hacia secciones informativas.                               |
+| **Siguiente paso**       | Footer                | Agrupa acciones de conversión como registrarse, comparar planes o resolver dudas.   |
+
+También se emplean etiquetas de accesibilidad en elementos interactivos, como el botón de menú móvil, el logo de Entreprenly y los accesos a redes sociales. Esto permite que la navegación sea más clara tanto visualmente como para lectores de pantalla.
+
 ## 4.3. Landing Page UI Design
 
 La Landing Page de Entreprenly está diseñada como el primer punto de contacto para comerciantes interesados en digitalizar su operación diaria. Su estructura prioriza una comunicación clara del problema, la propuesta de valor, los beneficios operativos y la conversión hacia el registro o la consulta de planes. El diseño mantiene una navegación lineal, secciones de lectura rápida y llamados a la acción visibles para reducir fricción en usuarios no técnicos.
