@@ -672,7 +672,79 @@ Los wireframes de la Landing Page representan la distribución base de cada secc
 
 ### 4.3.2. Landing Page Mock-up
 
-*Contenido por agregar.*
+Los mockups de la Landing Page muestran la propuesta visual aplicada sobre la estructura validada en los wireframes. En esta versión se integran colores, tipografía, espaciado, jerarquía visual, componentes y estilo de marca para representar cómo se verá la página final antes de su implementación.
+
+- **Header (Navbar)**
+
+  <p align="center">
+    <img src="images/mockup-header-navbar.png" alt="Mockup Header Navbar" width="800"/>
+  </p>
+
+- **Hero section**
+
+  <p align="center">
+    <img src="images/mockup-hero-section.png" alt="Mockup Hero Section" width="800"/>
+  </p>
+
+- **Problem section**
+
+  <p align="center">
+    <img src="images/mockup-problem-section.png" alt="Mockup Problem Section" width="800"/>
+  </p>
+
+- **Main features section**
+
+  <p align="center">
+    <img src="images/mockup-main-features-section.png" alt="Mockup Main Features Section" width="800"/>
+  </p>
+
+- **How it works section**
+
+  <p align="center">
+    <img src="images/mockup-how-works-section.png" alt="Mockup How It Works Section" width="800"/>
+  </p>
+
+- **Merchant benefits section**
+
+  <p align="center">
+    <img src="images/mockup-merchant-benefits-section.png" alt="Mockup Merchant Benefits Section" width="800"/>
+  </p>
+
+- **Client trust section**
+
+  <p align="center">
+    <img src="images/mockup-client-trust-section.png" alt="Mockup Client Trust Section" width="800"/>
+  </p>
+
+- **Comparativa breve section**
+
+  <p align="center">
+    <img src="images/mockup-comparativa-breve-section.png" alt="Mockup Comparativa Breve Section" width="800"/>
+  </p>
+
+- **Planes section**
+
+  <p align="center">
+    <img src="images/mockup-planes-section.png" alt="Mockup Planes Section" width="800"/>
+  </p>
+
+- **FAQ section**
+
+  <p align="center">
+    <img src="images/mockup-faq-section.png" alt="Mockup FAQ Section" width="800"/>
+  </p>
+
+- **Next step section**
+
+  <p align="center">
+    <img src="images/mockup-next-step-section.png" alt="Mockup Next Step Section" width="800"/>
+  </p>
+
+- **Footer section**
+
+  <p align="center">
+    <img src="images/mockup-footer-section.png" alt="Mockup Footer Section" width="800"/>
+  </p>
 
 ## 4.4. Web Applications UX/UI Design
 
