@@ -106,8 +106,10 @@
     <td>
       <strong>Scenario 1: Detalles de lote mostrados correctamente</strong><br>
       Dado que el usuario está en la sección de lotes y selecciona un lote existente, cuando presione "Ver Detalles", entonces los detalles se mostrarán exitosamente.<br><br>
-      <strong>Scenario 2: Validación al visualizar detalles de lote</strong><br>
-      Dado que el usuario está en la sección de lotes y no selecciona un lote existente, cuando presione "Ver Detalles", entonces saldrá un mensaje de error.
+      <strong>Scenario 2: Error al recuperar los detalles del lote</strong><br>
+      Dado que el usuario visualiza la tarjeta de un producto con lotes existentes.
+      Cuando el usuario presiona "Ver Detalles" pero ocurre un error de comunicación con el servidor (timeout o error 500).
+      Entonces el sistema debe mostrar un mensaje de error indicando: "No se pudieron cargar los detalles en este momento. Inténtelo más tarde".
     </td>
     <td>Epic-01</td>
   </tr>
