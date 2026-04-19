@@ -1243,6 +1243,22 @@
     </td>
     <td>Epic-04</td>
   </tr>
+
+  <!-- US 73 -->
+  <tr>
+    <td>US-73</td>
+    <td>Descargar historial de suscripción</td>
+    <td>Como usuario, quiero presionar el botón "Descargar historial" dentro de "Actividad de la suscripción" para obtener un archivo con los eventos de mi plan, pagos, renovaciones, cambios y cancelaciones.</td>
+    <td>
+      <strong>Scenario 1: Historial descargado correctamente</strong><br>
+      Dado que existen eventos registrados en la actividad de la suscripción, cuando el usuario presiona el botón "Descargar historial", entonces el sistema genera y descarga un archivo con el historial de actividad visible para el usuario.<br><br>
+      <strong>Scenario 2: Historial sin actividad suficiente</strong><br>
+      Dado que la suscripción aún no tiene eventos relevantes registrados, cuando el usuario presiona "Descargar historial", entonces el sistema muestra un mensaje indicando que no hay actividad suficiente para descargar.<br><br>
+      <strong>Scenario 3: Error al generar descarga</strong><br>
+      Dado que ocurre un error al preparar el archivo, cuando el usuario intenta descargar el historial, entonces el sistema muestra un mensaje de error y mantiene disponible el botón para volver a intentarlo.
+    </td>
+    <td>Epic-04</td>
+  </tr>
   </tbody>
 </table>
 
