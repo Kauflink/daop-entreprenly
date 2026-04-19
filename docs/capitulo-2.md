@@ -11,63 +11,158 @@ El objetivo es diseñar una solución que resuelva el "caos multicanal" en peque
 
 ##### Competidores
 
----
+<div align="center">
+<table>
+  <thead>
+    <tr>
+      <th>Entreprenly</th>
+      <th>Odoo</th>
+      <th>Lightspeed Retail</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="images/entrepenly-icon-dark.png" width="200"></td>
+      <td><img src="images/Odoo.png" width="200"></td>
+      <td><img src="images/LightSpeedRetail.png" width="200"></td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
-|             |Entreprenly | Odoo | Lightspeed Retail |
-|-------|------|----------|-------|
-| |<img src="images/entrepenly-icon-dark.png" width="200"> | <img src="images/Odoo.png" width="200"> | <img src="images/LightSpeedRetail.png" width="200"> |
-
----
-
-##### Perfil
+**Perfil**
 
 ##### Overview 
-|             Entreprenly | Odoo | Lightspeed Retail |
-|-------------|----------|-------|
-|Plataforma web que centraliza pedidos de distintos canales de venta (WhatsApp + presencial) y automatiza el inventario en tiempo real mediante lógica digital y validación física con una balanza inteligente (IoT), permitiendo contrastar el stock registrado con el peso real disponible y detectar inconsistencias.|Sistema ERP integral que permite gestionar operaciones empresariales como ventas, inventario, contabilidad y CRM en múltiples sectores.|Sistema de punto de venta basado en la nube que permite gestionar ventas físicas, inventario y reportes en tiempo real para comercios minoristas.                         
-
----
+<table>
+  <thead>
+    <tr>
+      <th>Entreprenly</th>
+      <th>Odoo</th>
+      <th>Lightspeed Retail</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Plataforma web que centraliza pedidos de distintos canales de venta (WhatsApp + presencial) y automatiza el inventario en tiempo real mediante lógica digital y validación física con una balanza inteligente (IoT), permitiendo contrastar el stock registrado con el peso real disponible y detectar inconsistencias.</td>
+      <td>Sistema ERP integral que permite gestionar operaciones empresariales como ventas, inventario, contabilidad y CRM en múltiples sectores.</td>
+      <td>Sistema de punto de venta basado en la nube que permite gestionar ventas físicas, inventario y reportes en tiempo real para comercios minoristas.</td>
+    </tr>
+  </tbody>
+</table>                     
 
 ##### ¿Qué valor ofrece a los clientes? 
-|             Entreprenly | Odoo | Lightspeed Retail |
-|-----|------------------|-------|
-| Elimina el caos multicanal unificando pedidos de WhatsApp y ventas presenciales, reduce pérdidas por desconocimiento de stock y errores humanos mediante validación automática con una balanza inteligente (IoT), garantizando consistencia entre el inventario digital y el físico en todo momento. | Ofrece control total del negocio mediante integración de múltiples módulos empresariales, mejorando la planificación y gestión a escala.|Permite agilizar ventas en tienda física, mejorar el control de inventario y generar reportes comerciales de forma rápida.
-
----
+<table>
+  <thead>
+    <tr>
+      <th>Entreprenly</th>
+      <th>Odoo</th>
+      <th>Lightspeed Retail</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Elimina el caos multicanal unificando pedidos de WhatsApp y ventas presenciales, reduce pérdidas por desconocimiento de stock y errores humanos mediante validación automática con una balanza inteligente (IoT), garantizando consistencia entre el inventario digital y el físico en todo momento.</td>
+      <td>Ofrece control total del negocio mediante integración de múltiples módulos empresariales, mejorando la planificación y gestión a escala.</td>
+      <td>Permite agilizar ventas en tienda física, mejorar el control de inventario y generar reportes comerciales de forma rápida.</td>
+    </tr>
+  </tbody>
+</table>
 
 ##### Perfil de marketing 
-|             |Entreprenly | Odoo | Lightspeed Retail |
-|-------------|------------|----------|-------|
-|Mercado objetivo | Pequeños negocios de alimentos frescos: fruterías, minimarkets, dark stores y verdulerías con alta rotación de productos perecederos.|Empresas de todos los tamaños que buscan digitalizar su gestión integral de operaciones.|Comercios minoristas de cualquier rubro que requieren optimizar ventas en tienda física.
-|Estrategias de marketing/Ventaja competitiva/¿Qué valor ofrece a los clientes?  |Simplicidad de adopción, centralización multicanal y gestión automatizada de stock, con un modelo de costos accesible para microempresas.|Modularidad y escalabilidad empresarial con amplio ecosistema de integraciones.|Facilidad de uso y rapidez en procesos de venta en punto de venta físico.
-
----
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Entreprenly</th>
+      <th>Odoo</th>
+      <th>Lightspeed Retail</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mercado objetivo</td>
+      <td>Pequeños negocios de alimentos frescos: fruterías, minimarkets, dark stores y verdulerías con alta rotación de productos perecederos.</td>
+      <td>Empresas de todos los tamaños que buscan digitalizar su gestión integral de operaciones.</td>
+      <td>Comercios minoristas de cualquier rubro que requieren optimizar ventas en tienda física.</td>
+    </tr>
+    <tr>
+      <td>Estrategias de marketing / Ventaja competitiva / ¿Qué valor ofrece a los clientes?</td>
+      <td>Simplicidad de adopción, centralización multicanal y gestión automatizada de stock, con un modelo de costos accesible para microempresas.</td>
+      <td>Modularidad y escalabilidad empresarial con amplio ecosistema de integraciones.</td>
+      <td>Facilidad de uso y rapidez en procesos de venta en punto de venta físico.</td>
+    </tr>
+  </tbody>
+</table>
 
 ##### Perfil de producto 
-|             |Entreprenly | Odoo | Lightspeed Retail |
-|-------------|------------|----------|-------|
-|Productos & servicios| Dashboard tipo POS con módulo de inventario inteligente: centraliza pedidos de WhatsApp y ventas presenciales, controla stock en tiempo real y se integra con una balanza inteligente (IoT) que permite calcular el stock de productos por peso y validar automáticamente el inventario físico comparando el peso real con el esperado. El sistema gestiona productos bajo dos tipos: productos unitarios con precio fijo y productos por peso con precio por kilogramo, donde el stock se representa como el peso total disponible. Además, incorpora gestión por lotes para registrar fechas de caducidad y mejorar la trazabilidad de productos perecederos.|Suite de aplicaciones empresariales: ventas, inventario, contabilidad, CRM, recursos humanos y más, integrables por módulos.|Sistema POS con gestión de ventas, control de inventario, reportes comerciales y soporte para múltiples tiendas físicas.
-|Canales de distribución |Plataforma web accesible desde cualquier dispositivo con actualización de datos en tiempo real.|Plataforma web modular, aplicaciones móviles y herramientas empresariales integradas.|Aplicación web y dispositivos POS físicos conectados a la nube.
-
----
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Entreprenly</th>
+      <th>Odoo</th>
+      <th>Lightspeed Retail</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Productos &amp; servicios</td>
+      <td>Dashboard tipo POS con módulo de inventario inteligente: centraliza pedidos de WhatsApp y ventas presenciales, controla stock en tiempo real y se integra con una balanza inteligente (IoT) que permite calcular el stock de productos por peso y validar automáticamente el inventario físico comparando el peso real con el esperado. El sistema gestiona productos bajo dos tipos: productos unitarios con precio fijo y productos por peso con precio por kilogramo, donde el stock se representa como el peso total disponible. Además, incorpora gestión por lotes para registrar fechas de caducidad y mejorar la trazabilidad de productos perecederos.</td>
+      <td>Suite de aplicaciones empresariales: ventas, inventario, contabilidad, CRM, recursos humanos y más, integrables por módulos.</td>
+      <td>Sistema POS con gestión de ventas, control de inventario, reportes comerciales y soporte para múltiples tiendas físicas.</td>
+    </tr>
+    <tr>
+      <td>Canales de distribución</td>
+      <td>Plataforma web accesible desde cualquier dispositivo con actualización de datos en tiempo real.</td>
+      <td>Plataforma web modular, aplicaciones móviles y herramientas empresariales integradas.</td>
+      <td>Aplicación web y dispositivos POS físicos conectados a la nube.</td>
+    </tr>
+  </tbody>
+</table>
 
 ##### Análisis SWOT
-|             |Entreprenly | Odoo | Lightspeed Retail |
-|-------------|------------|----------|-------|
-|Fortalezas|Centralización multicanal (WhatsApp + presencial), enfoque en productos perecederos, modelo de costos accesible e integración con una balanza inteligente (IoT) que permite validar el inventario físico en tiempo real.|Sistema robusto, completo y altamente escalable con gran ecosistema de módulos y comunidad activa.|Facilidad de uso, agilidad en procesos de venta y control de inventario en punto de venta físico.|
-|Debilidades| Menor posicionamiento de marca frente a soluciones consolidadas y dependencia de correcta calibración de la balanza para asegurar precisión.|Elevada complejidad de implementación y costos altos para pequeños negocios; requiere consultoría especializada.|Limitado a ventas presenciales; sin automatización avanzada de inventario ni integración nativa de canales digitales como WhatsApp.|
-|Oportunidades|Creciente digitalización de mercados tradicionales en el Perú y accesibilidad de dispositivos IoT de bajo costo como balanzas inteligentes aplicadas al retail.|Expansión en mercados emergentes y demanda de digitalización empresarial a gran escala.|Adopción creciente de sistemas POS en el sector retail y apertura de nuevos locales físicos.
-|Amenazas|Costo inicial de implementación de una balanza inteligente (IoT) y resistencia al cambio tecnológico en pequeños comerciantes.|Nuevas soluciones más ligeras y accesibles dirigidas a pequeñas empresas.|Evolución hacia sistemas más integrados.|
-
----
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Entreprenly</th>
+      <th>Odoo</th>
+      <th>Lightspeed Retail</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Fortalezas</td>
+      <td>Centralización multicanal (WhatsApp + presencial), enfoque en productos perecederos, modelo de costos accesible e integración con una balanza inteligente (IoT) que permite validar el inventario físico en tiempo real.</td>
+      <td>Sistema robusto, completo y altamente escalable con gran ecosistema de módulos y comunidad activa.</td>
+      <td>Facilidad de uso, agilidad en procesos de venta y control de inventario en punto de venta físico.</td>
+    </tr>
+    <tr>
+      <td>Debilidades</td>
+      <td>Menor posicionamiento de marca frente a soluciones consolidadas y dependencia de correcta calibración de la balanza para asegurar precisión.</td>
+      <td>Elevada complejidad de implementación y costos altos para pequeños negocios; requiere consultoría especializada.</td>
+      <td>Limitado a ventas presenciales; sin automatización avanzada de inventario ni integración nativa de canales digitales como WhatsApp.</td>
+    </tr>
+    <tr>
+      <td>Oportunidades</td>
+      <td>Creciente digitalización de mercados tradicionales en el Perú y accesibilidad de dispositivos IoT de bajo costo como balanzas inteligentes aplicadas al retail.</td>
+      <td>Expansión en mercados emergentes y demanda de digitalización empresarial a gran escala.</td>
+      <td>Adopción creciente de sistemas POS en el sector retail y apertura de nuevos locales físicos.</td>
+    </tr>
+    <tr>
+      <td>Amenazas</td>
+      <td>Costo inicial de implementación de una balanza inteligente (IoT) y resistencia al cambio tecnológico en pequeños comerciantes.</td>
+      <td>Nuevas soluciones más ligeras y accesibles dirigidas a pequeñas empresas.</td>
+      <td>Evolución hacia sistemas más integrados.</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2.1.2. Estrategias y tácticas frente a competidores
 
 Tras evaluar el ecosistema actual, se definen los siguientes ejes estratégicos:
 
----
-
-#### Estrategias: 
+#### Estrategias
 
 #### Diferenciación de Producto: 
 - Resolución del caos multicanal: El problema central del segmento es la falta de sincronización entre los pedidos recibidos por WhatsApp y las ventas presenciales. Entreprenly lo resuelve unificando ambos flujos en un único panel de control.
@@ -90,9 +185,9 @@ Entreprenly valida el inventario digital mediante una balanza inteligente conect
 
 - Uso de canales de comunicación comunes para facilitar adopción.
 
-#### Tácticas: 
-
 ---
+
+#### Tácticas: 
 
 #### Lanzamiento de Productos Innovadores: 
 - Implementación inicial con balanza inteligente conectada al sistema.
@@ -164,8 +259,6 @@ Esta sección presenta el estudio cualitativo basado en entrevistas semiestructu
 9. ¿Le genera desconfianza pagar por adelantado en negocios locales si no recibe una confirmación automática del sistema?
 
 10. ¿Preferiría comprar en un minimarket que use esta tecnología sobre uno tradicional que no garantiza el stock ni acepta todos los medios de pago?
-
-
 
 ### 2.2.2. Registro de entrevistas
 
@@ -581,8 +674,6 @@ Esta sección presenta el estudio cualitativo basado en entrevistas semiestructu
 </div>
 
 </div>
-
----
 
 
 
