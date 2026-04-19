@@ -1033,7 +1033,7 @@
       <strong>Scenario 2: Formato de imagen no permitido</strong><br>
       Dado que el usuario intenta subir un archivo con formato no soportado, cuando el sistema valida el archivo, entonces muestra un mensaje de error indicando los formatos aceptados sin guardar el archivo.<br><br>
       <strong>Scenario 3: Tamaño de archivo excedido</strong><br>
-      Dado que el usuario intenta subir una imagen que supera el tamaño máximo, cuando el sistema valida el archivo, entonces muestra un mensaje de error indicando el límite de tamaño.
+      Dado que el usuario intenta subir una imagen que supera el tamaño máximo (5120 KB), cuando el sistema valida el archivo, entonces muestra un mensaje de error indicando el límite de tamaño.
     </td>
     <td>Epic-15</td>
   </tr>
