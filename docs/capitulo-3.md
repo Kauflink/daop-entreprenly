@@ -1227,6 +1227,22 @@
     </td>
     <td>Epic-04</td>
   </tr>
+
+  <!-- US 72 -->
+  <tr>
+    <td>US-72</td>
+    <td>Completar datos fiscales de suscripción</td>
+    <td>Como usuario con una cuenta registrada, quiero presionar el botón "Completar datos" dentro de "Método de pago y datos fiscales" para registrar mi RUC o DNI, razón social o nombre, dirección fiscal y correo de facturación.</td>
+    <td>
+      <strong>Scenario 1: Formulario de datos fiscales mostrado</strong><br>
+      Dado que el usuario se encuentra en la sección "Método de pago y datos fiscales", cuando presiona el botón "Completar datos", entonces el sistema muestra un formulario con los campos fiscales requeridos para la facturación de la suscripción.<br><br>
+      <strong>Scenario 2: Datos fiscales guardados correctamente</strong><br>
+      Dado que el usuario completa los campos fiscales obligatorios y presiona "Guardar datos fiscales", cuando el sistema valida la información, entonces registra los datos y actualiza la sección mostrando que la información fiscal está completa.<br><br>
+      <strong>Scenario 3: Datos fiscales incompletos o inválidos</strong><br>
+      Dado que el usuario deja campos obligatorios vacíos o ingresa un documento inválido, cuando presiona "Guardar datos fiscales", entonces el sistema no guarda la información, resalta los campos con error y muestra un mensaje de validación.
+    </td>
+    <td>Epic-04</td>
+  </tr>
   </tbody>
 </table>
 
