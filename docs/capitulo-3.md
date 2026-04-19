@@ -356,7 +356,9 @@
       <strong>Scenario 1: Solicitud de cancelación registrada correctamente</strong><br>
       Dado que el usuario tiene una suscripción activa, cuando presiona el botón "Solicitar cancelación" y confirma la acción, entonces el sistema registra la solicitud y mantiene el acceso hasta la fecha de vencimiento.<br><br>
       <strong>Scenario 2: Usuario cancela la operación antes de confirmar</strong><br>
-      Dado que el usuario inició el proceso de cancelación, cuando presiona el botón "Volver" o cierra el modal antes de confirmar, entonces el sistema no registra la cancelación y la suscripción continúa sin cambios.
+      Dado que el usuario inició el proceso de cancelación, cuando presiona el botón "Volver" o cierra el modal antes de confirmar, entonces el sistema no registra la cancelación y la suscripción continúa sin cambios.<br><br>
+      <strong>Scenario 3: Mantener plan vigente</strong><br>
+      Dado que el usuario visualiza el modal de confirmación para cancelar su suscripción, cuando presiona el botón "Mantener plan", entonces el sistema cierra el modal, no registra ninguna solicitud de cancelación y conserva el Plan Control activo con su fecha de renovación original.
     </td>
     <td>Epic-04</td>
   </tr>
@@ -1208,6 +1210,23 @@
       <td>Epic-16</td>
     </td>
   </tr>
+
+    <!-- US 71 -->
+
+  <tr>
+    <td>US-71</td>
+    <td>Agregar método de pago de suscripción</td>
+    <td>Como usuario con acceso al panel "Suscripción", quiero presionar el botón "Agregar método de pago" dentro de la sección "Método de pago y datos fiscales" para registrar un medio de cobro que pueda usarse en pagos y renovaciones del Plan Control.</td>
+    <td>
+      <strong>Scenario 1: Formulario de método de pago abierto</strong><br>
+      Dado que el usuario se encuentra en la sección "Método de pago y datos fiscales", cuando presiona el botón "Agregar método de pago", entonces el sistema muestra un formulario o modal para registrar los datos del medio de pago.<br><br>
+      <strong>Scenario 2: Método de pago registrado correctamente</strong><br>
+      Dado que el usuario completa los datos requeridos del método de pago y presiona "Guardar método de pago", cuando el sistema valida la información, entonces el método queda asociado a la suscripción y se muestra en el panel como método disponible para futuros cobros.<br><br>
+      <strong>Scenario 3: Método de pago inválido o cancelado</strong><br>
+      Dado que el usuario ingresa datos incompletos, inválidos o cierra el formulario antes de guardar, cuando el sistema valida la acción, entonces no registra cambios y mantiene el estado anterior del método de pago.
+    </td>
+    <td>Epic-04</td>
+  </tr>
   </tbody>
 </table>
 
@@ -1592,90 +1611,112 @@ _Contenido por agregar._
 
   <tr>
     <td>52</td>
+    <td>US-71</td>
+    <td>Agregar método de pago de suscripción</td>
+    <td>Como usuario con acceso al panel "Suscripción", quiero presionar el botón "Agregar método de pago" dentro de la sección "Método de pago y datos fiscales" para registrar un medio de cobro que pueda usarse en pagos y renovaciones del Plan Control.</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>53</td>
+    <td>US-72</td>
+    <td>Completar datos fiscales de suscripción</td>
+    <td>Como usuario con una cuenta registrada, quiero presionar el botón "Completar datos" dentro de "Método de pago y datos fiscales" para registrar mi RUC o DNI, razón social o nombre, dirección fiscal y correo de facturación.</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>54</td>
+    <td>US-73</td>
+    <td>Descargar historial de suscripción</td>
+    <td>Como usuario, quiero presionar el botón "Descargar historial" dentro de "Actividad de la suscripción" para obtener un archivo con los eventos de mi plan, pagos, renovaciones, cambios y cancelaciones.</td>
+    <td>2</td>
+  </tr>
+
+  <tr>
+    <td>55</td>
     <td>US-52</td>
     <td>Registrar cuenta con email</td>
     <td>Como usuario anónimo, quiero registrarme con mi email y contraseña para crear una cuenta en Entreprenly y obtener automáticamente el Plan Free.</td>
     <td>3</td>
   </tr>
   <tr>
-    <td>53</td>
+    <td>56</td>
     <td>US-53</td>
     <td>Verificar email</td>
     <td>Como usuario registrado, quiero verificar mi email mediante el enlace enviado a mi correo para activar mi cuenta.</td>
     <td>3</td>
   </tr>
   <tr>
-    <td>54</td>
+    <td>57</td>
     <td>US-54</td>
     <td>Iniciar sesión con credenciales</td>
     <td>Como usuario registrado, quiero iniciar sesión con mi email y contraseña para acceder al dashboard de Entreprenly.</td>
     <td>3</td>
   </tr>
   <tr>
-    <td>55</td>
+    <td>58</td>
     <td>US-55</td>
     <td>Iniciar sesión con Google OAuth</td>
     <td>Como usuario anónimo, quiero iniciar sesión con mi cuenta de Google para acceder a Entreprenly sin necesidad de crear credenciales nuevas.</td>
     <td>5</td>
   </tr>
   <tr>
-    <td>56</td>
+    <td>59</td>
     <td>US-56</td>
     <td>Recuperar contraseña</td>
     <td>Como usuario registrado, quiero recuperar el acceso a mi cuenta mediante un enlace enviado a mi email para restablecer mi contraseña.</td>
     <td>3</td>
   </tr>
   <tr>
-    <td>57</td>
+    <td>60</td>
     <td>US-57</td>
     <td>Cerrar sesión</td>
     <td>Como usuario autenticado, quiero cerrar mi sesión para que el sistema revoque mi token y me redirija a la pantalla de login.</td>
     <td>1</td>
   </tr>
   <tr>
-    <td>58</td>
+    <td>61</td>
     <td>US-58</td>
     <td>Visualizar perfil actual</td>
     <td>Como usuario autenticado, quiero visualizar mi perfil actual para revisar mis datos registrados en la plataforma.</td>
     <td>1</td>
   </tr>
   <tr>
-    <td>59</td>
+    <td>62</td>
     <td>US-59</td>
     <td>Actualizar nombre y biografía</td>
     <td>Como usuario autenticado, quiero actualizar mi nombre y biografía para mantener mi perfil al día.</td>
     <td>2</td>
   </tr>
   <tr>
-    <td>60</td>
+    <td>63</td>
     <td>US-60</td>
     <td>Subir foto de perfil</td>
     <td>Como usuario autenticado, quiero subir una foto de perfil para personalizar mi cuenta en la plataforma.</td>
     <td>3</td>
   </tr>
   <tr>
-    <td>61</td>
+    <td>64</td>
     <td>US-61</td>
     <td>Cambiar email con re-verificación</td>
     <td>Como usuario autenticado, quiero cambiar mi email y verificarlo para mantener mis datos de contacto actualizados.</td>
     <td>3</td>
   </tr>
   <tr>
-    <td>62</td>
+    <td>65</td>
     <td>US-62</td>
     <td>Cambiar contraseña</td>
     <td>Como usuario autenticado, quiero cambiar mi contraseña para mantener la seguridad de mi cuenta.</td>
     <td>3</td>
   </tr>
   <tr>
-    <td>63</td>
+    <td>66</td>
     <td>US-63</td>
     <td>Configurar preferencias de idioma, zona horaria y tema</td>
     <td>Como usuario autenticado, quiero configurar mi idioma, zona horaria y tema visual para adaptar la plataforma a mis preferencias.</td>
     <td>2</td>
   </tr>
   <tr>
-    <td>64</td>
+    <td>67</td>
     <td>US-64</td>
     <td>Configurar notificaciones</td>
     <td>Como usuario autenticado, quiero configurar mis preferencias de notificación para recibir solo los avisos que me sean relevantes.</td>
