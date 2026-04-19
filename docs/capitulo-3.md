@@ -60,8 +60,10 @@
     <td>
       <strong>Scenario 1: Agregar lote correctamente</strong><br>
       Dado que el usuario está en la sección de lotes y selecciona un lote existente, cuando ingrese una cantidad y fecha válida y presione "Agregar", entonces el nuevo lote se agregará exitosamente.<br><br>
-      <strong>Scenario 2: Validación al agregar lote</strong><br>
-      Dado que el usuario está en la sección de lotes, cuando ingrese los datos y presione "Agregar", entonces saldrá un mensaje de error por campo obligatorio.
+      <strong>Scenario 2: Intento de registro de lote con información incompleta</strong><br>
+      Dado que el usuario se encuentra en el formulario de Agregación de Lotes. 
+      Cuando intenta procesar la solicitud dejando uno o más campos obligatorios vacíos.
+      Entonces el sistema debe impedir el registro y resaltar cada campo omitido con el mensaje: "Este campo es obligatorio".
     </td>
     <td>Epic-01</td>
   </tr>
