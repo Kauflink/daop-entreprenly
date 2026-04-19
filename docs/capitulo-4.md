@@ -592,9 +592,83 @@ Los estándares aquí establecidos constituyen la referencia normativa para la i
 
 ## 4.3. Landing Page UI Design
 
+La Landing Page de Entreprenly está diseñada como el primer punto de contacto para comerciantes interesados en digitalizar su operación diaria. Su estructura prioriza una comunicación clara del problema, la propuesta de valor, los beneficios operativos y la conversión hacia el registro o la consulta de planes. El diseño mantiene una navegación lineal, secciones de lectura rápida y llamados a la acción visibles para reducir fricción en usuarios no técnicos.
+
 ### 4.3.1. Landing Page Wireframe
 
-*Contenido por agregar.*
+Los wireframes de la Landing Page representan la distribución base de cada sección antes de aplicar el acabado visual final. Estos esquemas permiten validar la jerarquía de información, el orden del contenido, la ubicación de los llamados a la acción y la consistencia del recorrido desde la presentación del producto hasta el siguiente paso comercial.
+
+- **Header (Navbar)**
+
+  <p align="center">
+    <img src="images/wireframe-header-navbar.png" alt="Wireframe Header Navbar" width="800"/>
+  </p>
+
+- **Hero section**
+
+  <p align="center">
+    <img src="images/wireframe-hero-section.png" alt="Wireframe Hero Section" width="800"/>
+  </p>
+
+- **Problem section**
+
+  <p align="center">
+    <img src="images/wireframe-problem-section.png" alt="Wireframe Problem Section" width="800"/>
+  </p>
+
+- **Main features section**
+
+  <p align="center">
+    <img src="images/wireframe-main-features-section.png" alt="Wireframe Main Features Section" width="800"/>
+  </p>
+
+- **How it works section**
+
+  <p align="center">
+    <img src="images/wireframe-how-works-section.png" alt="Wireframe How It Works Section" width="800"/>
+  </p>
+
+- **Merchant benefits section**
+
+  <p align="center">
+    <img src="images/wireframe-merchant-benefits-section.png" alt="Wireframe Merchant Benefits Section" width="800"/>
+  </p>
+
+- **Client trust section**
+
+  <p align="center">
+    <img src="images/wireframe-client-trust-section.png" alt="Wireframe Client Trust Section" width="800"/>
+  </p>
+
+- **Comparativa breve section**
+
+  <p align="center">
+    <img src="images/wireframe-comparativa-breve-section.png" alt="Wireframe Comparativa Breve Section" width="800"/>
+  </p>
+
+- **Planes section**
+
+  <p align="center">
+    <img src="images/wireframe-planes-section.png" alt="Wireframe Planes Section" width="800"/>
+  </p>
+
+- **FAQ section**
+
+  <p align="center">
+    <img src="images/wireframe-faq-section.png" alt="Wireframe FAQ Section" width="800"/>
+  </p>
+
+- **Next step section**
+
+  <p align="center">
+    <img src="images/wireframe-next-step-section.png" alt="Wireframe Next Step Section" width="800"/>
+  </p>
+
+- **Footer section**
+
+  <p align="center">
+    <img src="images/wireframe-footer-section.png" alt="Wireframe Footer Section" width="800"/>
+  </p>
 
 ### 4.3.2. Landing Page Mock-up
 
