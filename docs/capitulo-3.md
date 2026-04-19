@@ -1091,7 +1091,121 @@
     </td>
     <td>Epic-15</td>
   </tr>
+ <tr>
+    <td><strong>Epic-16</strong></td>
+    <td><strong>Panel de Inicio (Home)</strong></td>
+    <td>Como comerciante, quiero contar con un panel de inicio centralizado que me muestre un resumen visual del estado de mi negocio al ingresar a la plataforma, para tomar decisiones rápidas sin necesidad de navegar entre módulos.</td>
+    <td></td>
 
+  <!-- US 65 -->
+  <tr>
+    <td>US-65</td>
+    <td>Visualizar resumen de ventas del día</td>
+    <td>Como comerciante, quiero visualizar un resumen de las ventas del día en el panel de inicio para conocer el rendimiento de mi negocio sin ingresar al módulo de ventas.</td>
+    <td>
+      <strong>Scenario 1: Resumen de ventas cargado correctamente</strong><br>
+      Dado que el usuario activa o desactiva tipos de notificación disponibles,<br> 
+      Cuando guarda los cambios, <br> 
+      Entonces el sistema almacena las preferencias y las aplica en los envíos futuros.<br><br>
+      <strong>Scenario 2:  Sin ventas registradas en el día</strong><br>
+      Dado que el comerciante accede al panel de inicio,<br>
+      Y no se ha registrado ninguna venta en el día actual,<br>
+      Cuando el sistema carga la información,<br>
+      Entonces el resumen muestra cero en todos los indicadores<br>
+      Y se indica que aún no hay ventas registradas para el día.
+      <td>Epic-16</td>
+    </td>
+      <!-- US 66 -->
+    <tr>
+    <td>US-66</td>
+    <td>Visualizar estado del chatbot en el home</td>
+    <td>	Como comerciante, quiero visualizar el estado de conexión del chatbot y los chats activos desde el panel de inicio para saber si mi canal de ventas por WhatsApp está operativo sin ingresar al módulo de chatbot.</td>
+    <td>
+      <strong>Scenario 1: Chatbot conectado con actividad reciente </strong><br>
+      Dado que el comerciante accede al panel de inicio,<br>
+      Y el chatbot se encuentra vinculado y activo,<br>
+      Cuando el sistema carga la vista,<br>
+     Entonces se muestra el estado "Conectado", el número de conversaciones activas del día y el número de pedidos generados por el bot.<br><br>
+      <strong>Scenario 2:  Chatbot desconectado</strong><br>
+      Dado que el comerciante accede al panel de inicio,<br>
+      Y el chatbot no está vinculado o su sesión expiró,<br>
+      Cuando el sistema carga la vista,<br>
+      Entonces se muestra el estado "Desconectado" con una alerta visible<br>
+      Y un acceso directo para reconectar desde el mismo panel.
+      <td>Epic-16</td>
+    </td>
+    <!-- US 67 -->
+    <tr>
+    <td>US-67</td>
+    <td>Visualizar alertas de inventario en el home</td>
+    <td>Como comerciante, quiero ver las alertas críticas de inventario directamente en el panel de inicio para identificar rápidamente productos agotados o lotes próximos a vencer sin ingresar al módulo de lotes.</td>
+    <td>
+      <strong>Scenario 1: Alertas de inventario mostradas en el home</strong><br>
+      Dado que el comerciante accede al panel de inicio,<br>
+      Y existen productos sin stock o lotes próximos a vencer,<br>
+      Cuando el sistema carga la vista,<br>
+      Entonces se muestra una sección de alertas con el nombre del producto o lote afectado y el tipo de alerta correspondiente.<br><br>
+      <strong>Scenario 2:  Sin alertas activas de inventario</strong><br>
+      Dado que el comerciante accede al panel de inicio,<br>
+      Y no se ha registrado ninguna venta en el día actual,<br>
+      Cuando el sistema carga la información,
+      Entonces el resumen muestra cero en todos los indicadores<br>
+      Y se indica que aún no hay ventas registradas para el día.
+      <td>Epic-16</td>
+    </td>
+     <!-- US 68 -->
+    <tr>
+    <td>US-68</td>
+    <td>Visualizar pedidos recientes en el home</td>
+    <td>Como comerciante, quiero ver los pedidos más recientes con su estado actual en el panel de inicio para hacer seguimiento sin ingresar al módulo de pedidos.</td>
+    <td>
+      <strong>Scenario 1: Pedidos recientes mostrados correctamente</strong><br>
+      Dado que el comerciante accede al panel de inicio,<br>
+      Y existen productos sin stock o lotes próximos a vencer,<br>
+      Entonces se muestran los últimos cinco pedidos con número de pedido, nombre del cliente, monto total y estado actual.<br>
+      <strong>Scenario 2:  Sin pedidos registrados en el día</strong><br>
+      Dado que el comerciante accede al panel de inicio,<br>
+      Y no se ha registrado ningún pedido en el día actual,<br>
+      Cuando el sistema carga la vista,<br>
+      Entonces la sección de pedidos recientes muestra un mensaje indicando que aún no hay pedidos para el día.
+      <td>Epic-16</td>
+    </td>
+     <!-- US 69-->
+    <tr>
+    <td>US-69</td>
+    <td>Visualizar pedidos recientes en el home</td>
+    <td>Como comerciante, quiero ver los pedidos más recientes con su estado actual en el panel de inicio para hacer seguimiento sin ingresar al módulo de pedidos.</td>
+    <td>
+      <strong>Scenario 1: Pedidos recientes mostrados correctamente</strong><br>
+      Dado que el comerciante accede al panel de inicio,<br>
+      Y existen pedidos registrados en el día,<br>
+      Cuando el sistema carga la vista,<br>
+      Entonces se muestran los últimos cinco pedidos con número de pedido, nombre del cliente, monto total y estado actual.<br>
+      <strong>Scenario 2:  Sin pedidos registrados en el día</strong><br>
+      Dado que el comerciante accede al panel de inicio,<br>
+      Y no se ha registrado ningún pedido en el día actual,<br>
+      Cuando el sistema carga la vista,<br>
+      Entonces la sección de pedidos recientes muestra un mensaje indicando que aún no hay pedidos para el día.
+      <td>Epic-16</td>
+    </td>
+    <!-- US 70-->
+    <tr>
+    <td>US-70</td>
+    <td>Acceder a módulos desde accesos directos del home</td>
+    <td>	Como comerciante, quiero contar con accesos directos a los módulos principales desde el panel de inicio para navegar rápidamente a cualquier sección sin recorrer el menú lateral.</td>
+    <td>
+      <strong>Scenario 1: Acceso directo navega al módulo correcto</strong><br>
+      Dado que el comerciante se encuentra en el panel de inicio, <br>
+      Cuando presiona alguno de los accesos directos disponibles,<br>
+      Entonces el sistema lo redirige al módulo correspondiente sin pérdida de datos ni recargas innecesarias.
+      <strong>Scenario 2: Acceso directo con indicador de alerta activa</strong><br>
+      Dado que el comerciante se encuentra en el panel de inicio,<br>
+      Y un módulo tiene alertas o notificaciones pendientes,<br>
+      Cuando el sistema carga la vista,<br>
+      Entonces el acceso directo correspondiente muestra un indicador visual con el número de alertas o pendientes activos.
+      <td>Epic-16</td>
+    </td>
+  </tr>
   </tbody>
 </table>
 
