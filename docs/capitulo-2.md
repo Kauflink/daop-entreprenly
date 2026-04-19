@@ -11,7 +11,7 @@ El objetivo es diseñar una solución que resuelva el "caos multicanal" en peque
 
 ##### Competidores
 
-
+<div align="center">
 <table>
   <thead>
     <tr>
@@ -28,6 +28,7 @@ El objetivo es diseñar una solución que resuelva el "caos multicanal" en peque
     </tr>
   </tbody>
 </table>
+</div>
 
 **Perfil**
 
@@ -161,9 +162,7 @@ El objetivo es diseñar una solución que resuelva el "caos multicanal" en peque
 
 Tras evaluar el ecosistema actual, se definen los siguientes ejes estratégicos:
 
----
-
-#### Estrategias: 
+#### Estrategias
 
 #### Diferenciación de Producto: 
 - Resolución del caos multicanal: El problema central del segmento es la falta de sincronización entre los pedidos recibidos por WhatsApp y las ventas presenciales. Entreprenly lo resuelve unificando ambos flujos en un único panel de control.
@@ -186,9 +185,9 @@ Entreprenly valida el inventario digital mediante una balanza inteligente conect
 
 - Uso de canales de comunicación comunes para facilitar adopción.
 
-#### Tácticas: 
-
 ---
+
+#### Tácticas: 
 
 #### Lanzamiento de Productos Innovadores: 
 - Implementación inicial con balanza inteligente conectada al sistema.
@@ -260,8 +259,6 @@ Esta sección presenta el estudio cualitativo basado en entrevistas semiestructu
 9. ¿Le genera desconfianza pagar por adelantado en negocios locales si no recibe una confirmación automática del sistema?
 
 10. ¿Preferiría comprar en un minimarket que use esta tecnología sobre uno tradicional que no garantiza el stock ni acepta todos los medios de pago?
-
-
 
 ### 2.2.2. Registro de entrevistas
 
@@ -677,8 +674,6 @@ Esta sección presenta el estudio cualitativo basado en entrevistas semiestructu
 </div>
 
 </div>
-
----
 
 
 
