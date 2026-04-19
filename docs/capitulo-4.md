@@ -123,7 +123,6 @@ Hemos seleccionado cuidadosamente estas tipografías para Entreprenly, buscando 
   <img src="images/Jerarquia_Tipografica.png" alt="Jerarquia_Tipografica" width="500"/>
 </p>
 
-
 - Reddit Sans fue elegida para los títulos por su estilo contemporáneo y geométrico, aportando una presencia clara y profesional que resalta el carácter innovador y eficiente de Entreprenly.
 
 - Reddit Sans (Semibold - 40 px) asegura jerarquías nítidas en los encabezados principales (H1), permitiendo que el usuario identifique rápidamente la sección en la que se encuentra sin sacrificar legibilidad en dispositivos de escritorio.
@@ -504,8 +503,6 @@ Entreprenly adopta un enfoque de diseño responsivo que asegura una experiencia 
 
 **Principio general:** La plataforma es completamente responsiva. Toda funcionalidad disponible en escritorio debe ser accesible y operable en tableta y móvil. Los objetivos táctiles mínimos son de 48 × 48 px, y la separación entre controles interactivos no será inferior a 16 px en ningún breakpoint.
 
-
-
 <table>
   <thead>
     <tr>
@@ -541,8 +538,6 @@ Entreprenly adopta un enfoque de diseño responsivo que asegura una experiencia 
   </tbody>
 </table>
 
-
-
 <table>
   <thead>
     <tr>
@@ -570,25 +565,28 @@ Los estándares aquí establecidos constituyen la referencia normativa para la i
 
 ## 4.2. Information Architecture
 
+La arquitectura de información de Entreprenly organiza la Landing Page como un recorrido comercial claro para comerciantes de bodegas, minimarkets y puestos de mercado. El objetivo es que un usuario no técnico pueda entender rápidamente el problema que resuelve la solución, revisar sus funcionalidades principales, comparar el valor frente a alternativas manuales o genéricas, evaluar planes y avanzar hacia el registro o inicio de sesión.
+
 ### 4.2.1. Organization Systems
 
-*Contenido por agregar.*
+Para la Landing Page se emplea una organización **jerárquica y secuencial**. Es jerárquica porque el usuario puede acceder a secciones clave desde la barra de navegación principal, y es secuencial porque el contenido está ordenado como una narrativa de conversión: primero se presenta la propuesta de valor, luego el problema, después la solución, sus beneficios, la comparación, los planes y finalmente el llamado a la acción.
 
-### 4.2.2. Labeling Systems
+| Nivel       | Sección                   | Propósito dentro de la arquitectura                                                                             |
+| ----------- | ------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| Global      | Header (Navbar)           | Permite acceso rápido a las secciones principales y a la pantalla de inicio de sesión.                          |
+| Principal   | Hero section              | Presenta la propuesta de valor de Entreprenly y ofrece los primeros llamados a la acción.                       |
+| Contextual  | Problem section           | Explica los problemas operativos del comercio pequeño: pedidos dispersos, inventario manual y caja desordenada. |
+| Funcional   | Main features section     | Agrupa las funcionalidades principales: WhatsApp, inventario, balanza IoT y conciliación financiera.            |
+| Explicativo | How it works section      | Ordena el proceso de adopción en pasos simples para reducir la percepción de complejidad.                       |
+| Persuasivo  | Merchant benefits section | Resume los beneficios directos para el comerciante en términos de control, rapidez y reducción de errores.      |
+| Confianza   | Client trust section      | Explica cómo la solución también mejora la experiencia del cliente final.                                       |
+| Comparativo | Comparativa breve section | Contrasta la gestión manual, los sistemas genéricos y Entreprenly.                                              |
+| Comercial   | Planes section            | Presenta los planes disponibles y dirige al usuario hacia el registro.                                          |
+| Soporte     | FAQ section               | Resuelve dudas frecuentes antes de que el usuario tome una decisión.                                            |
+| Conversión  | Next step section         | Refuerza el llamado final para registrarse o revisar los planes.                                                |
+| Cierre      | Footer section            | Repite accesos clave, redes sociales, enlaces de exploración y datos de marca.                                  |
 
-*Contenido por agregar.*
-
-### 4.2.3. SEO Tags and Meta Tags
-
-*Contenido por agregar.*
-
-### 4.2.4. Searching Systems
-
-*Contenido por agregar.*
-
-### 4.2.5. Navigation Systems
-
-*Contenido por agregar.*
+Además de esta estructura informativa, la landing contempla accesos transaccionales hacia **registro** e **inicio de sesión**. Estos flujos se mantienen separados de la narrativa principal para no interrumpir la lectura comercial, pero permanecen disponibles desde los CTAs y el header.
 
 ## 4.3. Landing Page UI Design
 
@@ -750,49 +748,50 @@ Los mockups de la Landing Page muestran la propuesta visual aplicada sobre la es
 
 ### 4.4.1. Web Applications Wireframes
 
-*Contenido por agregar.*
+_Contenido por agregar._
 
 ### 4.4.2. Web Applications Wireflow Diagrams
 
-*Contenido por agregar.*
+_Contenido por agregar._
 
 ### 4.4.3. Web Applications Mock-ups
 
-*Contenido por agregar.*
+_Contenido por agregar._
 
 ### 4.4.4. Web Applications User Flow Diagrams
 
-*Contenido por agregar.*
+_Contenido por agregar._
 
 ## 4.5. Web Applications Prototyping
 
-*Contenido por agregar.*
+_Contenido por agregar._
 
 ## 4.6. Domain-Driven Software Architecture
 
 ### 4.6.1. Design-Level Event Storming
 
-*Contenido por agregar.*
+_Contenido por agregar._
 
 ### 4.6.2. Software Architecture Context Diagram
 
-*Contenido por agregar.*
+_Contenido por agregar._
 
 ### 4.6.3. Software Architecture Container Diagrams
 
-*Contenido por agregar.*
+_Contenido por agregar._
 
 ### 4.6.4. Software Architecture Components Diagrams
 
-*Contenido por agregar.*
+_Contenido por agregar._
 
 ## 4.7. Software Object-Oriented Design
 
 ### 4.7.1. Class Diagrams
 
-*Contenido por agregar.*
+_Contenido por agregar._
 
 ## 4.8. Database Design
+
 El diseño de base de datos de Entreprenly está implementado en MySQL 8.0 y organizado en seis categorías. El esquema aplica normalización hasta la Tercera Forma Normal (3FN), eliminando redundancias y garantizando la integridad referencial en toda la operación del negocio.
 
 El sistema distingue dos actores con responsabilidades distintas: los **Comerciantes**, quienes administran el negocio y tienen suscripción activa, y los **Clientes**, cuyos datos se registran únicamente para boletas y pedidos por WhatsApp, sin acceso al sistema.
@@ -812,42 +811,46 @@ El chatbot de WhatsApp se integra mediante `ConexionesWhatsApp`, que persiste la
 <div align="center">
 
 ![Database Diagram Entreprenly](images/Entreprendly_database_diagram.svg)
+
 </div>
 
 El esquema se organiza en las siguientes tablas por categoría:
 
-**Identidad y Acceso:** 
+**Identidad y Acceso:**
+
 - `Comerciantes` (datos de acceso y rol).
 - `PreferenciasComercio` (idioma, tema y notificaciones).
 - `SesionesActivas` (JWTs activos para revocación de sesiones).
-- `TokensVerificacion` (tokens de un solo uso para verificar email y recuperar contraseña). 
+- `TokensVerificacion` (tokens de un solo uso para verificar email y recuperar contraseña).
 - `Clientes` (datos para boletas).
 
-**Suscripciones:** 
+**Suscripciones:**
+
 - `Suscripciones` (plan y ciclo de vida: pendiente → activa → cancelada → vencida).
 - `BoletoSuscripcion` (datos del cobro, guarda solo los últimos 4 dígitos de la tarjeta por seguridad).
 
-**Inventario:** 
+**Inventario:**
+
 - `Categorias` (tabla de referencia normalizada).
-- `Productos` (catálogo con tipo unidad o peso, precio y stock). 
+- `Productos` (catálogo con tipo unidad o peso, precio y stock).
 - `Lotes` (trazabilidad por fecha de vencimiento para productos perecederos).
 
-**Ventas e IoT:** 
+**Ventas e IoT:**
+
 - `LecturasBalanza` (pesajes con snapshot histórico de precio).
-- `Ventas` (encabezado de transacción presencial). 
-- `DetalleVenta` (líneas de cada venta). 
+- `Ventas` (encabezado de transacción presencial).
+- `DetalleVenta` (líneas de cada venta).
 - `ResumenDiario` (cierre de caja con total_general calculado automáticamente).
 
-**Chatbot WhatsApp:** 
+**Chatbot WhatsApp:**
+
 - `ConexionesWhatsApp` (sesión delnúmero vinculado por QR, relación 1:1 con el comerciante).
 - `Conversaciones` (historial de mensajes entre bot, cliente y comerciante).
 
-**Pedidos y Pagos:** 
-- `Pedidos` (ciclo pendiente → esperando_pago → confirmado → completado). 
+**Pedidos y Pagos:**
+
+- `Pedidos` (ciclo pendiente → esperando_pago → confirmado → completado).
 - `DetallePedido` (líneas del pedido).
 - `Pagos` (validación manual del comprobante Yape/Plin, relación 1:1 con el pedido).
 
 La normalización aplicada se resume en tres puntos. La **1FN** se cumple con valores atómicos en todas las columnas usando ENUM para campos de valores controlados. La **2FN** se cumple con claves primarias simples en todas las tablas. La **3FN** se evidencia en la separación de `PreferenciasComercio`, `BoletoSuscripcion` y `Categorias` para eliminar dependencias transitivas, la eliminación del campo `subtotal` en los detalles por ser valor derivado, y la separación de `Clientes` y `Comerciantes` por pertenecer a entidades de negocio distintas.
-
-
-
