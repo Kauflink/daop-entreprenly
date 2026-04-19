@@ -61,7 +61,7 @@
       <strong>Scenario 1: Agregar lote correctamente</strong><br>
       Dado que el usuario está en la sección de lotes y selecciona un lote existente, cuando ingrese una cantidad y fecha válida y presione "Agregar", entonces el nuevo lote se agregará exitosamente.<br><br>
       <strong>Scenario 2: Validación al agregar lote</strong><br>
-      Dado que el usuario está en la sección de lotes, cuando ingrese datos inválidos y presione "Agregar", entonces saldrá un mensaje de error por campo inválido.
+      Dado que el usuario está en la sección de lotes, cuando ingrese los datos y presione "Agregar", entonces saldrá un mensaje de error por campo obligatorio.
     </td>
     <td>Epic-01</td>
   </tr>
@@ -89,7 +89,9 @@
       <strong>Scenario 1: Producto editado correctamente</strong><br>
       Dado que el usuario está en la sección de productos y selecciona un producto existente, cuando presione "Editar", entonces el producto se actualizará exitosamente.<br><br>
       <strong>Scenario 2: Validación al editar productos</strong><br>
-      Dado que el usuario está en la sección de productos y no selecciona un producto existente, cuando presione "Editar", entonces el sistema mostrará mensajes de error.
+      Dado que el usuario se encuentra en la lista de inventario y ha seleccionado un producto existente.
+      Cuando el usuario intenta cambiar el "Tipo de Producto" y presiona el botón de guardar. 
+      Entonces el sistema debe impedir la acción y mostrar un mensaje de error indicando: "Este campo no se puede modificar".
     </td>
     <td>Epic-01</td>
   </tr>
