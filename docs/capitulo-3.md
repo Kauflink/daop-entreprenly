@@ -1211,8 +1211,7 @@
     </td>
   </tr>
 
-    <!-- US 71 -->
-
+  <!-- US 71 -->
   <tr>
     <td>US-71</td>
     <td>Agregar método de pago de suscripción</td>
