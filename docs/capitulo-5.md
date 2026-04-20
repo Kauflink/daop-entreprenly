@@ -429,15 +429,55 @@ Los pasos para configurar y ejecutar el despliegue son los siguientes:
 
 #### 5.2.1.1. Sprint Planning 1
 
-*Contenido por agregar.*
+Para este primer Sprint, el equipo estableció como objetivo principal la implementación y despliegue de la primera versión del Landing Page de Entreprenly. La reunión de planificación se llevó a cabo de manera virtual, donde se definieron las User Stories a abordar, el Sprint Goal y la distribución de responsabilidades entre los miembros del equipo.
+
+| Sprint # | Sprint 1 |
+|---|---|
+| **Sprint Planning Background** | |
+| Date | 2026-04-13 |
+| Time | 07:00 PM |
+| Location | Reunión virtual vía Discord |
+| Prepared By | Camargo Briceño, Joseph Julius |
+| Attendees (to planning meeting) | Camargo Briceño, Joseph Julius / Chavez Carrasco, Lionel Abraham / Palma De Los Santos, Elynor Mikela / Peirano Brun, José Antonio / Flores Pinchi, José Fernando |
+| Sprint 1 – 1 Review Summary | Al ser el primer Sprint del proyecto, no existe un Sprint anterior que revisar. Se parte desde cero con el inicio del ciclo de vida del producto. |
+| Sprint 1 – 1 Retrospective Summary | Al ser el primer Sprint del proyecto, no existe retrospectiva previa. El equipo acordó mantener comunicación constante vía Discord y respetar los plazos de entrega de cada tarea. |
+| **Sprint Goal & User Stories** | |
+| Sprint 1 Goal | Our focus is on presenting Entreprenly's value proposition to potential users through a functional and deployed Landing Page. We believe it delivers a clear first impression of the product and motivates visitors from our target segments to explore the platform. This will be confirmed when the Landing Page is publicly accessible, includes all key sections (hero, features, pricing and call-to-action), and redirects visitors correctly toward the Web Application. |
+| Sprint 1 Velocity | 8 |
+| Sum of Story Points | 8 |
+ 
+---
 
 #### 5.2.1.2. Aspect Leaders and Collaborators
 
-*Contenido por agregar.*
+En este primer Sprint, el equipo organizó su trabajo en torno a cuatro aspectos principales: la configuración inicial del repositorio y entorno de despliegue, el desarrollo de la estructura base del Landing Page, la implementación de funcionalidades interactivas (cambio de tema e idioma, animaciones y CTAs), y la revisión y corrección del contenido textual. A continuación, se presenta la matriz de liderazgo y colaboración (LACX):
+ 
+| Team Member (Last Name, First Name) | GitHub Username | Configuración del Repositorio y CI/CD | Estructura Base del Landing Page | Funcionalidades Interactivas (Tema, Idioma, CTAs) | Corrección de Contenido |
+|---|---|---|---|---|---|
+| Camargo Briceño, Joseph Julius | Juyens | L | C | C | C |
+| Chavez Carrasco, Lionel Abraham | LioTG | C | L | L | C |
+| Palma De Los Santos, Elynor Mikela | elynorpalma | C | C | C | L |
+| Peirano Brun, José Antonio | DoomerGX | C | C | C | L |
+| Flores Pinchi, José Fernando | Ferdinant12-ops | C | L | C | L |
+ 
+---
 
 #### 5.2.1.3. Sprint Backlog 1
 
-*Contenido por agregar.*
+El objetivo principal de este Sprint fue implementar y desplegar la primera versión del Landing Page de Entreprenly, cubriendo la User Story US-49 del Product Backlog. A continuación se presenta el tablero del Sprint y el detalle de los Work-items asociados.
+
+| Sprint # | Sprint 1 |
+|---|---|
+ 
+| User Story | | Work-Item / Task | | | | |
+|---|---|---|---|---|---|---|
+| **Id** | **Title** | **Id** | **Title** | **Description** | **Estimation (Hours)** | **Assigned To** | **Status** |
+| US-49 | Conocer propuesta de valor en landing page | T-01 | Configuración inicial del repositorio | Crear el repositorio, inicializar el proyecto con HTML/CSS/Tailwind y configurar el `.gitignore` y `package.json`. | 2 | Camargo Briceño, Joseph Julius | Done |
+| US-49 | Conocer propuesta de valor en landing page | T-02 | Configurar pipeline de despliegue (GitHub Actions) | Crear y ajustar el workflow de GitHub Actions para despliegue automático en GitHub Pages con CNAME configurado. | 3 | Camargo Briceño, Joseph Julius | Done |
+| US-49 | Conocer propuesta de valor en landing page | T-03 | Desarrollar estructura base del Landing Page | Implementar las secciones principales del Landing Page: hero, funcionalidades, planes y footer. | 4 | Chavez Carrasco, Lionel Abraham / Flores Pinchi, José Fernando | Done |
+| US-49 | Conocer propuesta de valor en landing page | T-04 | Implementar controles de tema e idioma y mejoras de CTAs | Agregar switch de tema claro/oscuro, selector de idioma (ES/EN) y mejorar los call-to-action para cada segmento objetivo. | 3 | Chavez Carrasco, Lionel Abraham | Done |
+| US-49 | Conocer propuesta de valor en landing page | T-05 | Agregar animaciones de transición en hero | Implementar efectos de fade para cambio de tema y animaciones de movimiento en la sección hero. | 2 | Chavez Carrasco, Lionel Abraham | Done |
+| US-49 | Conocer propuesta de valor en landing page | T-06 | Revisión y corrección de contenido textual | Corregir ortografía, tildes y redacción en el contenido del Landing Page. | 2 | Palma De Los Santos, Elynor Mikela / Peirano Brun, José Antonio / Flores Pinchi, José Fernando | Done |
 
 #### 5.2.1.4. Development Evidence for Sprint Review
 
