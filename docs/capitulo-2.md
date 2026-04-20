@@ -886,19 +886,19 @@ Una vez generados los eventos, el equipo los organizó cronológicamente de izqu
 Finalmente, el equipo identificó los actores y sistemas externos que desencadenan o responden a los eventos del dominio. Los actores identificados fueron el Merchant (dueño o cajero del negocio) y el Customer (cliente final que realiza pedidos por WhatsApp). Como sistemas externos se identificaron la Balanza Inteligente IoT (que envía lecturas de peso en tiempo real), la API de WhatsApp (canal de pedidos conversacionales), el Terminal POS físico (que confirma los cobros electrónicos) y las billeteras digitales Yape/Plin (medios de pago del cliente). Estos fueron colocados junto a los eventos que desencadenan o a los que responden dentro del flujo del negocio.
 
 <div align="center">
-  <img src="./images/proceso_de_suscripcion.svg" alt="proceso_de_suscripcion" width="800">
+  <img src="./images/gestion_inventario.svg" alt="proceso_de_suscripcion" width="800">
 
-  <img src="./images/configuracion_de_suscripcion.svg" alt="configuracion_de_suscripcion" width="800">
+  <img src="./images/pagos.svg" alt="configuracion_de_suscripcion" width="800">
 
-  <img src="./images/venta.svg" alt="venta" width="800">
+  <img src="./images/ventas.svg" alt="venta" width="800">
 
-  <img src="./images/gestion_de_inventario.svg" alt="gestion_de_inventario" width="800">
+  <img src="./images/perfil_configuracion.svg" alt="gestion_de_inventario" width="800">
 
-  <img src="./images/perfil_config.svg" alt="perfil_configuracion" width="800">
+  <img src="./images/chatbot_whatsApp.svg" alt="perfil_configuracion" width="800">
 
-  <img src="./images/chatbot.svg" alt="chatbot" width="800">
+  <img src="./images/generación_autenticación_cuenta.svg" alt="chatbot" width="800">
 
-  <img src="./images/inicion_sesion.svg" alt="inicion_sesion" width="800">
+  <img src="./images/gestión_proceso_suscripción.svg" alt="inicion_sesion" width="800">
 </div>
 
 Como resultado de la sesión, el equipo consolidó una visión compartida del dominio operativo de Entreprenly, identificando siete flujos principales: inicio de sesión, proceso de suscripción, configuración de suscripción, venta presencial, gestión de inventario, chatbot de pedidos por WhatsApp y gestión de perfil y configuración. Esta base sirvió como punto de partida para la definición del Ubiquitous Language y el posterior Design-Level Event Storming.
