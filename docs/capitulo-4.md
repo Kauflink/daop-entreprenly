@@ -1217,7 +1217,9 @@ Dashboard → Clic "Ventas" → Módulo POS carga → Cajero escribe nombre del 
  
 *User Goal: El comerciante desea revisar los pedidos recibidos por WhatsApp y validar los pagos para confirmar las entregas de manera segura.*
  
-`[INSERTAR IMAGEN: User Flow Diagram - Validación de Pago]`
+<p align="center">
+    <img src="images/User_flow4.png" alt="User_flow4" width="800"/>
+  </p>
  
 *Ilustración N – Web Application User Flow Diagram: Validación de Pago de Pedido del Chatbot*
  
