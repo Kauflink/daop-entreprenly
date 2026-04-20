@@ -1248,7 +1248,7 @@
 
 ## 3.2. Impact Mapping
 
-_Contenido por agregar._
+![Impact Mapping](docs/images/Impact_Mapping.png "Impact Mapping")
 
 ## 3.3. Product Backlog
 
