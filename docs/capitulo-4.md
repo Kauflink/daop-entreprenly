@@ -894,21 +894,128 @@ _Contenido por agregar._
 
 ## 4.6. Domain-Driven Software Architecture
 
-### 4.6.1. Design-Level Event Storming
+En esta sección se elaboró el diseño de los Bounded Contexts (BC) y sus conexiones dentro del sistema.
 
-_Contenido por agregar._
+### 4.6.1. Design-Level Event Storming
+A continuación, se presentan los distintos Bounded Contexts identificados a partir del Event Storming, junto con sus respectivos diagramas y BC Canvas.
+
+Generación y Autenticación de Cuenta
+<p align="center"> <img src="images/Entreprenly - Generación y Autenticación de Cuenta.jpg" width="500"/> <img src="images/Canvas BC 6.jpg" width="500"/> 
+
+</p>
+
+En este Bounded Context se realiza la creación de cuentas y la gestión de inicios de sesión. El flujo inicia brindando la opción de registrarse como nuevo usuario o ingresar credenciales si ya posee una cuenta. Además, se ofrecen métodos alternativos de autenticación.
+
+Perfil y Configuración
+<p align="center"> <img src="images/Entreprenly - Perfil y Configuración.jpg" width="500"/> <img src="images/Canvas BC 2.jpg" width="500"/> </p>
+
+En este Bounded Context se gestiona la configuración del perfil del usuario, incluyendo cambios de zona horaria, idioma, preferencias de interfaz (como modo oscuro), contraseña y otras configuraciones.
+
+Gestión y Proceso de Suscripción
+<p align="center"> <img src="images/Entreprenly - Gestión y Proceso de suscripción.jpg" width="500"/> <img src="images/Canvas BC 7.jpg" width="500"/> </p>
+
+Este Bounded Context se encarga de la renovación, cambio y cancelación de planes de suscripción. Además, realiza las validaciones necesarias durante todo el proceso de suscripción.
+
+Gestión de Inventario
+<p align="center"> <img src="images/Entreprenly - Gestión de inventario.jpg" width="500"/> <img src="images/Canvas BC 1.jpg" width="500"/> </p>
+
+En este Bounded Context se realiza la creación y modificación de productos. También incluye la gestión de lotes (creación, modificación y eliminación), así como funcionalidades adicionales como alertas de caducidad y control de stock.
+
+Chatbot de WhatsApp
+<p align="center"> <img src="images/Entreprenly - Chatbot de WhatsApp.jpg" width="500"/> <img src="images/Canvas BC 5.jpg" width="500"/> </p>
+
+Este Bounded Context permite la venta a través de un chatbot de WhatsApp. Para ello, consume información del inventario con el fin de conocer la disponibilidad de productos.
+
+Pagos
+<p align="center"> <img src="images/Entreprenly - Pagos.jpg" width="500"/> <img src="images/Canvas BC 4.jpg" width="500"/> </p>
+
+En este Bounded Context se gestionan los pagos tanto de ventas presenciales como de aquellas realizadas a través de WhatsApp.
+
+Ventas
+<p align="center"> <img src="images/Entreprenly - Ventas.jpg" width="500"/> <img src="images/Canvas BC 3.jpg" width="500"/> </p>
+
+En este Bounded Context se realiza la gestión de ventas presenciales. Este proceso incluye la verificación de stock y la asignación de datos dependiendo del tipo de producto (por unidad o por peso).
+
+Unión de Bounded Contexts
+<p align="center"> <img src="images/Entreprenly - BC union.jpg" width="500"/> </p>
+
+Este diagrama muestra la integración y comunicación entre los diferentes Bounded Contexts, evidenciando las relaciones y dependencias dentro del sistema.
+ 
+A continuación, se presentan los principales flujos de interacción del sistema, los cuales permiten visualizar la secuencia de operaciones entre los distintos Bounded Contexts en escenarios clave del negocio.
+<p align="center"> <img src="images/Entreprenly - Flujo ChatbotBC.jpg" width="500"/></p>
+
+<p align="center"><img src="images/Entreprenly - Flujo Ventas.jpg" width="500"/></p>
+
+<p align="center"><img src="images/Entreprenly - Flujo Completo.jpg" width="500"/></p>
+
+<p align="center"><img src="images/Entreprenly - Flujo Gestion de inventario.jpg" width="500"/></p>
+
+<p align="center"><img src="images/Entreprenly - Flujo Pagos.jpg" width="500"/></p>
+
+<p align="center"><img src="images/Entreprenly - Flujo Gestion y Proceso de suscripcion.jpg" width="500"/></p>
+
+<p align="center"><img src="images/Entreprenly - Flujo Perfil y Configuracion.jpg" width="500"/></p>
 
 ### 4.6.2. Software Architecture Context Diagram
-
-_Contenido por agregar._
+<p align="center">A continuación, se presenta el System Context Diagram del sistema Entreprenly. En este diagrama se identifica al actor principal, denominado "Emprendedor", quien interactúa con la plataforma a través de la aplicación web. Asimismo, se muestran los sistemas externos que se integran con la solución, tales como servicios de autenticación, mensajería, almacenamiento y procesamiento de pagos.</p>
+<p align="center">
+<p align="center">
+<img src="images/structurizr-104049-EntreprenlySystemContext.png" width="500"/>
+</p>
 
 ### 4.6.3. Software Architecture Container Diagrams
-
-_Contenido por agregar._
+<p align="center">A continuación, se presenta el Container Diagram del sistema Entreprenly. Este diagrama describe la arquitectura interna a nivel de contenedores, mostrando los principales componentes desplegables, como la aplicación web, el API Gateway y los distintos Bounded Contexts implementados como servicios independientes. Además, se incluyen las bases de datos asociadas a cada contexto y los sistemas externos con los que interactúan, permitiendo visualizar la distribución de responsabilidades, la comunicación entre componentes y la estructura general del sistema</p>
+<p align="center">
+<img src="images/structurizr-104049-EntreprenlyContainer.png" width="500"/>
+</p>
 
 ### 4.6.4. Software Architecture Components Diagrams
+<p align="center">Generación y Autenticación de Cuenta BC</p> <p align="center"><img src="images/structurizr-104049-AuthComponent.png" width="500"/></p>
 
-_Contenido por agregar._
+Este Bounded Context es responsable de la gestión de identidad del usuario dentro del sistema, abarcando tanto el registro como la autenticación. Para ello, integra mecanismos de acceso alternativo mediante Google OAuth, así como un sistema externo de correo para la verificación y vinculación de cuentas.
+A nivel funcional, incluye queries orientados a la lectura de datos de sesión y credenciales, y commands destinados a la creación de cuentas, actualización de información y cambio de contraseña.
+Finalmente, toda la información relacionada con autenticación es persistida en una base de datos MySQL, garantizando la consistencia y seguridad de los datos.
+
+<p align="center">Perfil y Configuración BC</p> <p align="center"><img src="images/structurizr-104049-ProfileComponent.png" width="500"/></p>
+
+Este Bounded Context se encarga de la gestión de la información del perfil del usuario y sus preferencias de configuración, tales como zona horaria, idioma, tema de interfaz (UI), notificaciones y foto de perfil.
+Recibe información inicial del usuario desde el Bounded Context de Generación y Autenticación de Cuenta (inbound), lo que le permite construir y mantener el perfil completo.
+Define queries para la lectura de datos del usuario y commands para la actualización de configuraciones y almacenamiento de cambios realizados. Además, puede enviar información configurada hacia otros contextos (outbound), como el idioma del usuario.
+Toda esta información es almacenada en una base de datos MySQL.
+
+<p align="center">Gestión y Proceso de Suscripción BC</p> <p align="center"><img src="images/structurizr-104049-SubscriptionComponent.png" width="500"/></p>
+
+Este Bounded Context es responsable de la gestión del ciclo de vida de las suscripciones, incluyendo la creación, renovación, cancelación y cambio de plan.
+Recibe como entrada información del usuario y configuraciones provenientes del Bounded Context de Perfil y Configuración (inbound), lo que le permite adaptar el proceso de suscripción a las preferencias del usuario.
+Cuenta con commands que gestionan las operaciones sobre la suscripción y queries que permiten consultar el estado, datos de facturación y detalles asociados al usuario.
+La información de suscripciones es persistida en una base de datos MySQL, asegurando el control y seguimiento del estado de cada cuenta.
+
+<p align="center">Gestión de Inventario BC</p> <p align="center"><img src="images/structurizr-104049-InventoryComponent.png" width="500"/></p>
+
+Este Bounded Context se encarga de la administración del inventario, incluyendo la creación, actualización y eliminación de productos, así como la gestión de lotes asociados.
+Además, incorpora funcionalidades de monitoreo como alertas de stock y caducidad de productos. Para ello, utiliza queries que permiten obtener configuraciones relevantes, como el idioma del usuario desde el Bounded Context de Perfil y Configuración (inbound).
+Asimismo, expone información de productos hacia otros contextos (outbound), como Ventas y Chatbot.
+Incluye commands para la gestión de productos y operaciones relacionadas, y persiste toda la información en una base de datos MySQL.
+
+<p align="center">Pagos BC</p> <p align="center"><img src="images/structurizr-104049-PaymentComponent.png" width="500"/></p>
+
+Este Bounded Context es responsable de la gestión de los pagos asociados a las ventas, tanto presenciales como realizadas a través de otros canales como el chatbot.
+Incluye queries para la consulta de información de pagos y commands para la generación y envío de comprobantes. Además, se encarga de validar y confirmar transacciones mediante la integración con servicios externos.
+La información de pagos es almacenada en una base de datos MySQL, permitiendo el seguimiento y control de las transacciones realizadas.
+
+<p align="center">Ventas BC</p> <p align="center"><img src="images/structurizr-104049-SalesComponent.png" width="500"/></p>
+
+Este Bounded Context gestiona el proceso de venta presencial, desde la selección de productos hasta la generación del comprobante.
+Para ello, consume información del Bounded Context de Inventario (inbound) para validar disponibilidad de productos y stock, así como del Bounded Context de Pagos para verificar el estado de las transacciones.
+Incluye queries para la consulta de información relevante y commands para registrar las ventas realizadas.
+Toda la información generada es persistida en una base de datos MySQL.
+
+<p align="center">ChatBot BC</p> <p align="center"><img src="images/structurizr-104049-ChatbotComponent.png" width="500"/></p>
+
+Este Bounded Context permite la gestión de ventas a través de un canal conversacional basado en WhatsApp.
+Para su funcionamiento, consume información del Bounded Context de Inventario (inbound) para consultar disponibilidad de productos, así como del Bounded Context de Pagos para verificar y confirmar transacciones.
+Incluye queries para la obtención de información necesaria durante la interacción con el usuario y commands para la generación de pedidos y procesamiento de pagos.
+Además, se integra con servicios externos de mensajería (WhatsApp API) y persiste la información en una base de datos MySQL, permitiendo el seguimiento de las conversaciones y transacciones realizadas.
 
 ## 4.7. Software Object-Oriented Design
 
@@ -980,3 +1087,4 @@ El esquema se organiza en las siguientes tablas por categoría:
 - `Pagos` (validación manual del comprobante Yape/Plin, relación 1:1 con el pedido).
 
 La normalización aplicada se resume en tres puntos. La **1FN** se cumple con valores atómicos en todas las columnas usando ENUM para campos de valores controlados. La **2FN** se cumple con claves primarias simples en todas las tablas. La **3FN** se evidencia en la separación de `PreferenciasComercio`, `BoletoSuscripcion` y `Categorias` para eliminar dependencias transitivas, la eliminación del campo `subtotal` en los detalles por ser valor derivado, y la separación de `Clientes` y `Comerciantes` por pertenecer a entidades de negocio distintas.
+
