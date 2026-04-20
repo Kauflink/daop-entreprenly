@@ -1158,7 +1158,9 @@ Esta sección presenta los User Flow Diagrams de la aplicación web de Entrepren
  
 *User Goal: El comerciante desea tener su catálogo de productos completo y actualizado en el sistema.*
  
-`[INSERTAR IMAGEN: User Flow Diagram - Gestión de Inventario]`
+<p align="center">
+    <img src="images/User_flow1.png" alt="User_flow1" width="800"/>
+  </p>
  
 *Ilustración N – Web Application User Flow Diagram: Gestión de Inventario*
  
@@ -1174,7 +1176,10 @@ Dashboard → Clic "Productos" en Sidebar → Vista de productos → Clic "Agreg
  
 *User Goal: El comerciante desea crear lotes para productos perecederos y ser notificado de su vencimiento.*
  
-`[INSERTAR IMAGEN: User Flow Diagram - Gestión de Lotes]`
+ 
+<p align="center">
+    <img src="images/User_flow2.png" alt="User_flow2" width="800"/>
+  </p>
  
 *Ilustración N – Web Application User Flow Diagram: Gestión de Lotes*
  
@@ -1191,7 +1196,10 @@ Dashboard → Clic "Lotes" → Panel de resumen con contadores → Clic "Crear l
  
 *User Goal: El cajero desea registrar los productos comprados por un cliente, procesar el pago y emitir el comprobante.*
  
-`[INSERTAR IMAGEN: User Flow Diagram - Venta Presencial]`
+ 
+<p align="center">
+    <img src="images/User_flow3.png" alt="User_flow3" width="800"/>
+  </p>
  
 *Ilustración N – Web Application User Flow Diagram: Registro de Venta Presencial*
  
