@@ -55,8 +55,10 @@
     <td>
       <strong>Scenario 1: Agregar lote correctamente</strong><br>
       Dado que el usuario está en la sección de lotes y selecciona un lote existente, cuando ingrese una cantidad y fecha válida y presione "Agregar", entonces el nuevo lote se agregará exitosamente.<br><br>
-      <strong>Scenario 2: Validación al agregar lote</strong><br>
-      Dado que el usuario está en la sección de lotes, cuando ingrese datos inválidos y presione "Agregar", entonces saldrá un mensaje de error por campo obligatorio.
+      <strong>Scenario 2: Intento de registro de lote con información incompleta</strong><br>
+      Dado que el usuario se encuentra en el formulario de Agregación de Lotes. 
+      Cuando intenta procesar la solicitud dejando uno o más campos obligatorios vacíos.
+      Entonces el sistema debe impedir el registro y resaltar cada campo omitido con el mensaje: "Este campo es obligatorio".
     </td>
     <td>Epic-01</td>
   </tr>
@@ -94,8 +96,10 @@
     <td>
       <strong>Scenario 1: Detalles de lote mostrados correctamente</strong><br>
       Dado que el usuario está en la sección de lotes y selecciona un lote existente, cuando presione "Ver Detalles", entonces los detalles se mostrarán exitosamente.<br><br>
-      <strong>Scenario 2: Validación al visualizar detalles de lote</strong><br>
-      Dado que el usuario está en la sección de lotes y no selecciona un lote existente, cuando presione "Ver Detalles", entonces saldrá un mensaje de error.
+      <strong>Scenario 2: Error al recuperar los detalles del lote</strong><br>
+      Dado que el usuario visualiza la tarjeta de un producto con lotes existentes.
+      Cuando el usuario presiona "Ver Detalles" pero ocurre un error de comunicación con el servidor (timeout o error 500).
+      Entonces el sistema debe mostrar un mensaje de error indicando: "No se pudieron cargar los detalles en este momento. Inténtelo más tarde".
     </td>
     <td>Epic-01</td>
   </tr>
@@ -982,7 +986,7 @@
       <strong>Scenario 2: Formato de imagen no permitido</strong><br>
       Dado que el usuario intenta subir un archivo con formato no soportado, cuando el sistema valida el archivo, entonces muestra un mensaje de error indicando los formatos aceptados sin guardar el archivo.<br><br>
       <strong>Scenario 3: Tamaño de archivo excedido</strong><br>
-      Dado que el usuario intenta subir una imagen que supera el tamaño máximo, cuando el sistema valida el archivo, entonces muestra un mensaje de error indicando el límite de tamaño.
+      Dado que el usuario intenta subir una imagen que supera el tamaño máximo (5120 KB), cuando el sistema valida el archivo, entonces muestra un mensaje de error indicando el límite de tamaño.
     </td>
     <td>Epic-15</td>
   </tr>
@@ -1129,6 +1133,115 @@
       Dado que el comerciante se encuentra en el panel de inicio y un módulo tiene alertas o notificaciones pendientes, cuando el sistema carga la vista, entonces el acceso directo correspondiente muestra un indicador visual con el número de alertas o pendientes activos.
     </td>
     <td>Epic-16</td>
+  </tr>
+  <!-- Epic 17 -->
+  <tr>
+    <td><strong>Epic-17</strong></td>
+    <td><strong>Centro de Soporte y Ayuda</strong></td>
+    <td>Como comerciante, quiero contar con un centro de soporte accesible desde el botón de Ayuda para resolver mis dudas, reportar problemas y consultar guías de uso de la plataforma sin necesidad de contactar a un agente externo.</td>
+    <td></td>
+  </tr>
+
+  <!-- US 69 -->
+  <tr>
+    <td>US-74</td>
+    <td>Visualizar el centro de soporte</td>
+    <td>Como comerciante, quiero visualizar el centro de soporte al presionar el botón de Ayuda para acceder de forma rápida a las opciones de asistencia disponibles.</td>
+    <td>
+      <strong>Scenario 1: Centro de soporte cargado correctamente</strong><br>
+      Dado que el comerciante presiona el botón de Ayuda en el sidebar,<br>
+      Cuando el sistema carga la vista de soporte,<br>
+      Entonces se muestran las secciones: buscador de ayuda, artículos frecuentes, acceso directo a reportar problema y datos de contacto del soporte.<br><br>
+      <strong>Scenario 2: Centro de soporte sin artículos disponibles</strong><br>
+      Dado que el comerciante accede al centro de soporte,<br>
+      Y no existen artículos de ayuda configurados,<br>
+      Cuando el sistema carga la vista,<br>
+      Entonces se muestra un mensaje indicando que el contenido de ayuda no está disponible aún<br>
+      Y se mantiene visible la opción de reportar un problema.
+    </td>
+    <td>Epic-17</td>
+  </tr>
+
+  <!-- US 70 -->
+  <tr>
+    <td>US-75</td>
+    <td>Buscar artículo de ayuda</td>
+    <td>Como comerciante, quiero buscar artículos de ayuda por palabras clave para encontrar rápidamente la información que necesito sin revisar todas las categorías.</td>
+    <td>
+      <strong>Scenario 1: Búsqueda con resultados encontrados</strong><br>
+      Dado que el comerciante está en el centro de soporte,<br>
+      Cuando ingresa una palabra clave en el buscador y confirma la búsqueda,<br>
+      Entonces el sistema muestra los artículos que coinciden con el término ingresado.<br><br>
+      <strong>Scenario 2: Búsqueda sin resultados</strong><br>
+      Dado que el comerciante ingresa un término en el buscador,<br>
+      Y no existen artículos que coincidan con la búsqueda,<br>
+      Cuando el sistema procesa la consulta,<br>
+      Entonces se muestra un mensaje indicando que no se encontraron resultados<br>
+      Y se sugiere reformular la búsqueda o reportar el problema directamente.
+    </td>
+    <td>Epic-17</td>
+  </tr>
+
+  <!-- US 71 -->
+  <tr>
+    <td>US-76</td>
+    <td>Consultar artículo de ayuda</td>
+    <td>Como comerciante, quiero abrir y leer un artículo de ayuda para entender cómo usar una funcionalidad de la plataforma o resolver un problema específico.</td>
+    <td>
+      <strong>Scenario 1: Artículo cargado correctamente</strong><br>
+      Dado que el comerciante selecciona un artículo desde el listado o los resultados de búsqueda,<br>
+      Cuando el sistema carga el artículo,<br>
+      Entonces se muestra el título, el contenido detallado y las secciones relacionadas.<br><br>
+      <strong>Scenario 2: Artículo marcado como útil o no útil</strong><br>
+      Dado que el comerciante leyó el artículo de ayuda,<br>
+      Cuando selecciona la opción "¿Te fue útil este artículo?"<br>
+      Y elige "Sí" o "No",<br>
+      Entonces el sistema registra la respuesta<br>
+      Y si elige "No", muestra la opción de reportar el problema directamente.
+    </td>
+    <td>Epic-17</td>
+  </tr>
+
+  <!-- US 72 -->
+  <tr>
+    <td>US-77</td>
+    <td>Reportar un problema</td>
+    <td>Como comerciante, quiero reportar un problema o incidencia desde el centro de soporte para que el equipo de Entreprenly pueda revisarlo y darle seguimiento.</td>
+    <td>
+      <strong>Scenario 1: Reporte enviado correctamente</strong><br>
+      Dado que el comerciante está en el formulario de reporte de problema,<br>
+      Y completa los campos obligatorios: categoría, descripción y módulo afectado,<br>
+      Cuando presiona el botón "Enviar reporte",<br>
+      Entonces el sistema registra el reporte<br>
+      Y muestra una confirmación indicando que fue recibido.<br><br>
+      <strong>Scenario 2: Intento de envío con campos incompletos</strong><br>
+      Dado que el comerciante está en el formulario de reporte,<br>
+      Y deja campos obligatorios vacíos,<br>
+      Cuando presiona el botón "Enviar reporte",<br>
+      Entonces el sistema no registra el reporte<br>
+      Y muestra mensajes de error indicando los campos que deben completarse.
+    </td>
+    <td>Epic-17</td>
+  </tr>
+
+  <!-- US 73 -->
+  <tr>
+    <td>US-78</td>
+    <td>Confirmar envío del reporte</td>
+    <td>Como comerciante, quiero recibir una confirmación visual tras enviar un reporte para tener la certeza de que mi solicitud fue registrada correctamente.</td>
+    <td>
+      <strong>Scenario 1: Confirmación mostrada correctamente</strong><br>
+      Dado que el comerciante envió un reporte de problema exitosamente,<br>
+      Cuando el sistema procesa el envío,<br>
+      Entonces se muestra una pantalla de confirmación con el número de ticket generado, el mensaje "Tu reporte fue recibido" y la opción de volver al centro de soporte.<br><br>
+      <strong>Scenario 2: Error en el envío del reporte</strong><br>
+      Dado que el comerciante intentó enviar un reporte,<br>
+      Y ocurre un error en el sistema durante el procesamiento,<br>
+      Cuando el sistema detecta el fallo,<br>
+      Entonces no se genera el ticket<br>
+      Y se muestra un mensaje indicando que hubo un error y se invita a intentarlo nuevamente.
+    </td>
+    <td>Epic-17</td>
   </tr>
   </tbody>
 </table>

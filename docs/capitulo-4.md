@@ -123,7 +123,6 @@ Hemos seleccionado cuidadosamente estas tipografías para Entreprenly, buscando 
   <img src="images/Jerarquia_Tipografica.png" alt="Jerarquia_Tipografica" width="500"/>
 </p>
 
-
 - Reddit Sans fue elegida para los títulos por su estilo contemporáneo y geométrico, aportando una presencia clara y profesional que resalta el carácter innovador y eficiente de Entreprenly.
 
 - Reddit Sans (Semibold - 40 px) asegura jerarquías nítidas en los encabezados principales (H1), permitiendo que el usuario identifique rápidamente la sección en la que se encuentra sin sacrificar legibilidad en dispositivos de escritorio.
@@ -504,8 +503,6 @@ Entreprenly adopta un enfoque de diseño responsivo que asegura una experiencia 
 
 **Principio general:** La plataforma es completamente responsiva. Toda funcionalidad disponible en escritorio debe ser accesible y operable en tableta y móvil. Los objetivos táctiles mínimos son de 48 × 48 px, y la separación entre controles interactivos no será inferior a 16 px en ningún breakpoint.
 
-
-
 <table>
   <thead>
     <tr>
@@ -541,8 +538,6 @@ Entreprenly adopta un enfoque de diseño responsivo que asegura una experiencia 
   </tbody>
 </table>
 
-
-
 <table>
   <thead>
     <tr>
@@ -570,83 +565,359 @@ Los estándares aquí establecidos constituyen la referencia normativa para la i
 
 ## 4.2. Information Architecture
 
+La arquitectura de información de Entreprenly organiza la Landing Page como un recorrido comercial claro para comerciantes de bodegas, minimarkets y puestos de mercado. El objetivo es que un usuario no técnico pueda entender rápidamente el problema que resuelve la solución, revisar sus funcionalidades principales, comparar el valor frente a alternativas manuales o genéricas, evaluar planes y avanzar hacia el registro o inicio de sesión.
+
 ### 4.2.1. Organization Systems
 
-*Contenido por agregar.*
+Para la Landing Page se emplea una organización **jerárquica y secuencial**. Es jerárquica porque el usuario puede acceder a secciones clave desde la barra de navegación principal, y es secuencial porque el contenido está ordenado como una narrativa de conversión: primero se presenta la propuesta de valor, luego el problema, después la solución, sus beneficios, la comparación, los planes y finalmente el llamado a la acción.
+
+| Nivel       | Sección                   | Propósito dentro de la arquitectura                                                                             |
+| ----------- | ------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| Global      | Header (Navbar)           | Permite acceso rápido a las secciones principales y a la pantalla de inicio de sesión.                          |
+| Principal   | Hero section              | Presenta la propuesta de valor de Entreprenly y ofrece los primeros llamados a la acción.                       |
+| Contextual  | Problem section           | Explica los problemas operativos del comercio pequeño: pedidos dispersos, inventario manual y caja desordenada. |
+| Funcional   | Main features section     | Agrupa las funcionalidades principales: WhatsApp, inventario, balanza IoT y conciliación financiera.            |
+| Explicativo | How it works section      | Ordena el proceso de adopción en pasos simples para reducir la percepción de complejidad.                       |
+| Persuasivo  | Merchant benefits section | Resume los beneficios directos para el comerciante en términos de control, rapidez y reducción de errores.      |
+| Confianza   | Client trust section      | Explica cómo la solución también mejora la experiencia del cliente final.                                       |
+| Comparativo | Comparativa breve section | Contrasta la gestión manual, los sistemas genéricos y Entreprenly.                                              |
+| Comercial   | Planes section            | Presenta los planes disponibles y dirige al usuario hacia el registro.                                          |
+| Soporte     | FAQ section               | Resuelve dudas frecuentes antes de que el usuario tome una decisión.                                            |
+| Conversión  | Next step section         | Refuerza el llamado final para registrarse o revisar los planes.                                                |
+| Cierre      | Footer section            | Repite accesos clave, redes sociales, enlaces de exploración y datos de marca.                                  |
+
+Además de esta estructura informativa, la landing contempla accesos transaccionales hacia **registro** e **inicio de sesión**. Estos flujos se mantienen separados de la narrativa principal para no interrumpir la lectura comercial, pero permanecen disponibles desde los CTAs y el header.
 
 ### 4.2.2. Labeling Systems
 
-*Contenido por agregar.*
+El sistema de etiquetado utiliza términos breves, directos y orientados a la acción. Las etiquetas evitan lenguaje técnico innecesario y priorizan conceptos familiares para el comerciante, como inventario, pedidos, caja, beneficios, planes y dudas frecuentes.
+
+| Etiqueta                 | Tipo                  | Uso dentro de la landing                                                            |
+| ------------------------ | --------------------- | ----------------------------------------------------------------------------------- |
+| **Cómo funciona**        | Navegación principal  | Lleva al usuario a la explicación paso a paso de adopción del sistema.              |
+| **Beneficios**           | Navegación principal  | Dirige a la sección donde se resumen los beneficios operativos para el comerciante. |
+| **Planes**               | Navegación principal  | Permite revisar la propuesta comercial y elegir entre Plan Free y Plan Control.     |
+| **FAQ**                  | Navegación principal  | Abre la sección de preguntas frecuentes para resolver dudas antes del registro.     |
+| **Iniciar sesión**       | Acción de acceso      | Permite que un usuario existente entre a su cuenta.                                 |
+| **Comenzar ahora**       | CTA principal         | Dirige al visitante hacia el flujo de registro.                                     |
+| **Ver planes**           | CTA secundario        | Lleva directamente a la sección de planes para comparar opciones.                   |
+| **Plan Free**            | Etiqueta comercial    | Identifica el plan gratuito para empezar con inventario básico.                     |
+| **Plan Control**         | Etiqueta comercial    | Identifica el plan de pago con mayor control operativo.                             |
+| **Comparativa breve**    | Encabezado de sección | Presenta la diferencia entre gestión manual, sistemas genéricos y Entreprenly.      |
+| **Da el siguiente paso** | CTA final             | Refuerza la conversión al final del recorrido de la landing.                        |
+| **Explorar**             | Footer                | Agrupa enlaces internos hacia secciones informativas.                               |
+| **Siguiente paso**       | Footer                | Agrupa acciones de conversión como registrarse, comparar planes o resolver dudas.   |
+
+También se emplean etiquetas de accesibilidad en elementos interactivos, como el botón de menú móvil, el logo de Entreprenly y los accesos a redes sociales. Esto permite que la navegación sea más clara tanto visualmente como para lectores de pantalla.
 
 ### 4.2.3. SEO Tags and Meta Tags
 
-*Contenido por agregar.*
+La Landing Page incluye metadatos orientados a indexación básica, compatibilidad móvil, carga de recursos visuales y reconocimiento de marca. Estos elementos ayudan a que la página sea interpretada correctamente por navegadores, buscadores y dispositivos móviles.
+
+**Título de la página:**
+
+```html
+<title>Entreprenly | Smart Retail para pequeños comercios</title>
+```
+
+**Codificación de caracteres:**
+
+```html
+<meta charset="UTF-8" />
+```
+
+**Configuración responsive:**
+
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+```
+
+**Descripción SEO:**
+
+```html
+<meta
+  name="description"
+  content="Entreprenly conecta WhatsApp, inventario validado y control financiero para pequenos comercios de alimentos frescos."
+/>
+```
+
+**Ícono de marca:**
+
+```html
+<link rel="icon" type="image/png" href="./assets/brand-icon.png" />
+```
+
+**Optimización de carga tipográfica:**
+
+```html
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+```
+
+Para una versión desplegada en producción, se recomienda complementar estos metadatos con etiquetas de autor, copyright y Open Graph para mejorar la presentación de la landing cuando sea compartida en redes sociales o aplicaciones de mensajería.
+
+```html
+<meta name="author" content="Kauflink" />
+<meta name="copyright" content="Entreprenly by Kauflink" />
+<meta
+  property="og:title"
+  content="Entreprenly | Smart Retail para pequeños comercios"
+/>
+<meta
+  property="og:description"
+  content="Controla inventario, pedidos por WhatsApp y caja diaria desde un solo ecosistema."
+/>
+<meta property="og:type" content="website" />
+```
 
 ### 4.2.4. Searching Systems
 
-*Contenido por agregar.*
+La Landing Page no incorpora un buscador global porque su profundidad de contenido es baja y su objetivo principal es guiar al usuario hacia la conversión. En su lugar, utiliza un sistema de **descubrimiento dirigido**, donde la información se encuentra mediante navegación por secciones, CTAs y bloques comparativos.
+
+| Mecanismo                   | Funcionamiento                                                                                                     | Sección relacionada                    |
+| --------------------------- | ------------------------------------------------------------------------------------------------------------------ | -------------------------------------- |
+| Navegación por anchors      | Permite saltar directamente a secciones clave mediante enlaces internos.                                           | Cómo funciona, Beneficios, Planes, FAQ |
+| Comparación estructurada    | Ayuda al usuario a identificar rápidamente la diferencia entre métodos manuales, sistemas genéricos y Entreprenly. | Comparativa breve                      |
+| Tarjetas de funcionalidades | Agrupan información por temas para que el usuario encuentre rápido el valor principal de la solución.              | Main features section                  |
+| Acordeones de preguntas     | Permiten consultar dudas frecuentes sin abandonar la página ni cargar una vista adicional.                         | FAQ section                            |
+| CTAs contextuales           | Dirigen al usuario hacia registro o planes según el momento del recorrido.                                         | Hero, Planes, Next step                |
+
+Este enfoque es suficiente para la versión actual porque la página funciona como una landing de presentación y conversión, no como un repositorio de contenidos. Si en el futuro se agregan artículos, documentación, casos de uso o centro de ayuda, se podría incorporar un buscador específico para recursos y preguntas frecuentes.
 
 ### 4.2.5. Navigation Systems
 
-*Contenido por agregar.*
+El sistema de navegación se basa en una combinación de enlaces internos, CTAs de conversión y accesos transaccionales. La navegación principal está ubicada en el header y se mantiene enfocada en las secciones más importantes para la toma de decisión.
+
+| Elemento de navegación | Destino           | Función                                              |
+| ---------------------- | ----------------- | ---------------------------------------------------- |
+| Logo de Entreprenly    | `#top`            | Retorna al inicio de la landing.                     |
+| Cómo funciona          | `#como-funciona`  | Explica el proceso de adopción del sistema.          |
+| Beneficios             | `#beneficios`     | Presenta beneficios operativos para el comerciante.  |
+| Planes                 | `#planes`         | Muestra las opciones comerciales disponibles.        |
+| FAQ                    | `#faq`            | Resuelve dudas frecuentes.                           |
+| Iniciar sesión         | `./login.html`    | Lleva al acceso de usuarios registrados.             |
+| Comenzar ahora         | `./register.html` | Lleva al registro de nueva cuenta.                   |
+| Ver planes             | `#planes`         | Desplaza al usuario a la sección comercial.          |
+| Da el siguiente paso   | `./register.html` | Refuerza el cierre de conversión desde el CTA final. |
+
+La navegación responsive conserva los mismos destinos en dispositivos móviles mediante un menú desplegable. Esto permite mantener consistencia entre escritorio y móvil sin duplicar rutas ni cambiar el significado de las etiquetas.
+
+Los flujos principales de navegación son los siguientes:
+
+| Flujo                                           | Recorrido esperado                                                                               |
+| ----------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| Visitante nuevo que quiere entender la solución | Hero section → Problem section → Main features section → How it works section → Benefits section |
+| Visitante que evalúa precio                     | Hero section → Ver planes → Planes section → Comenzar ahora                                      |
+| Visitante con dudas                             | Header → FAQ → Resolver dudas → Planes o Registro                                                |
+| Usuario que ya tiene cuenta                     | Header → Iniciar sesión                                                                          |
+| Usuario listo para registrarse                  | Hero section o Next step section → Comenzar ahora → Registro                                     |
+
+El footer complementa la navegación principal mediante dos grupos: **Explorar**, que repite enlaces informativos hacia secciones internas, y **Siguiente paso**, que agrupa acciones finales como registrarse, comparar planes, resolver dudas o volver al inicio.
 
 ## 4.3. Landing Page UI Design
 
+La Landing Page de Entreprenly está diseñada como el primer punto de contacto para comerciantes interesados en digitalizar su operación diaria. Su estructura prioriza una comunicación clara del problema, la propuesta de valor, los beneficios operativos y la conversión hacia el registro o la consulta de planes. El diseño mantiene una navegación lineal, secciones de lectura rápida y llamados a la acción visibles para reducir fricción en usuarios no técnicos.
+
 ### 4.3.1. Landing Page Wireframe
 
-*Contenido por agregar.*
+Los wireframes de la Landing Page representan la distribución base de cada sección antes de aplicar el acabado visual final. Estos esquemas permiten validar la jerarquía de información, el orden del contenido, la ubicación de los llamados a la acción y la consistencia del recorrido desde la presentación del producto hasta el siguiente paso comercial.
+
+- **Header (Navbar)**
+
+  <p align="center">
+    <img src="images/wireframe-header-navbar.png" alt="Wireframe Header Navbar" width="800"/>
+  </p>
+
+- **Hero section**
+
+  <p align="center">
+    <img src="images/wireframe-hero-section.png" alt="Wireframe Hero Section" width="800"/>
+  </p>
+
+- **Problem section**
+
+  <p align="center">
+    <img src="images/wireframe-problem-section.png" alt="Wireframe Problem Section" width="800"/>
+  </p>
+
+- **Main features section**
+
+  <p align="center">
+    <img src="images/wireframe-main-features-section.png" alt="Wireframe Main Features Section" width="800"/>
+  </p>
+
+- **How it works section**
+
+  <p align="center">
+    <img src="images/wireframe-how-works-section.png" alt="Wireframe How It Works Section" width="800"/>
+  </p>
+
+- **Merchant benefits section**
+
+  <p align="center">
+    <img src="images/wireframe-merchant-benefits-section.png" alt="Wireframe Merchant Benefits Section" width="800"/>
+  </p>
+
+- **Client trust section**
+
+  <p align="center">
+    <img src="images/wireframe-client-trust-section.png" alt="Wireframe Client Trust Section" width="800"/>
+  </p>
+
+- **Comparativa breve section**
+
+  <p align="center">
+    <img src="images/wireframe-comparativa-breve-section.png" alt="Wireframe Comparativa Breve Section" width="800"/>
+  </p>
+
+- **Planes section**
+
+  <p align="center">
+    <img src="images/wireframe-planes-section.png" alt="Wireframe Planes Section" width="800"/>
+  </p>
+
+- **FAQ section**
+
+  <p align="center">
+    <img src="images/wireframe-faq-section.png" alt="Wireframe FAQ Section" width="800"/>
+  </p>
+
+- **Next step section**
+
+  <p align="center">
+    <img src="images/wireframe-next-step-section.png" alt="Wireframe Next Step Section" width="800"/>
+  </p>
+
+- **Footer section**
+
+  <p align="center">
+    <img src="images/wireframe-footer-section.png" alt="Wireframe Footer Section" width="800"/>
+  </p>
 
 ### 4.3.2. Landing Page Mock-up
 
-*Contenido por agregar.*
+Los mockups de la Landing Page muestran la propuesta visual aplicada sobre la estructura validada en los wireframes. En esta versión se integran colores, tipografía, espaciado, jerarquía visual, componentes y estilo de marca para representar cómo se verá la página final antes de su implementación.
+
+- **Header (Navbar)**
+
+  <p align="center">
+    <img src="images/mockup-header-navbar.png" alt="Mockup Header Navbar" width="800"/>
+  </p>
+
+- **Hero section**
+
+  <p align="center">
+    <img src="images/mockup-hero-section.png" alt="Mockup Hero Section" width="800"/>
+  </p>
+
+- **Problem section**
+
+  <p align="center">
+    <img src="images/mockup-problem-section.png" alt="Mockup Problem Section" width="800"/>
+  </p>
+
+- **Main features section**
+
+  <p align="center">
+    <img src="images/mockup-main-features-section.png" alt="Mockup Main Features Section" width="800"/>
+  </p>
+
+- **How it works section**
+
+  <p align="center">
+    <img src="images/mockup-how-works-section.png" alt="Mockup How It Works Section" width="800"/>
+  </p>
+
+- **Merchant benefits section**
+
+  <p align="center">
+    <img src="images/mockup-merchant-benefits-section.png" alt="Mockup Merchant Benefits Section" width="800"/>
+  </p>
+
+- **Client trust section**
+
+  <p align="center">
+    <img src="images/mockup-client-trust-section.png" alt="Mockup Client Trust Section" width="800"/>
+  </p>
+
+- **Comparativa breve section**
+
+  <p align="center">
+    <img src="images/mockup-comparativa-breve-section.png" alt="Mockup Comparativa Breve Section" width="800"/>
+  </p>
+
+- **Planes section**
+
+  <p align="center">
+    <img src="images/mockup-planes-section.png" alt="Mockup Planes Section" width="800"/>
+  </p>
+
+- **FAQ section**
+
+  <p align="center">
+    <img src="images/mockup-faq-section.png" alt="Mockup FAQ Section" width="800"/>
+  </p>
+
+- **Next step section**
+
+  <p align="center">
+    <img src="images/mockup-next-step-section.png" alt="Mockup Next Step Section" width="800"/>
+  </p>
+
+- **Footer section**
+
+  <p align="center">
+    <img src="images/mockup-footer-section.png" alt="Mockup Footer Section" width="800"/>
+  </p>
 
 ## 4.4. Web Applications UX/UI Design
 
 ### 4.4.1. Web Applications Wireframes
 
-*Contenido por agregar.*
+_Contenido por agregar._
 
 ### 4.4.2. Web Applications Wireflow Diagrams
 
-*Contenido por agregar.*
+_Contenido por agregar._
 
 ### 4.4.3. Web Applications Mock-ups
 
-*Contenido por agregar.*
+_Contenido por agregar._
 
 ### 4.4.4. Web Applications User Flow Diagrams
 
-*Contenido por agregar.*
+_Contenido por agregar._
 
 ## 4.5. Web Applications Prototyping
 
-*Contenido por agregar.*
+_Contenido por agregar._
 
 ## 4.6. Domain-Driven Software Architecture
 
 ### 4.6.1. Design-Level Event Storming
 
-*Contenido por agregar.*
+_Contenido por agregar._
 
 ### 4.6.2. Software Architecture Context Diagram
 
-*Contenido por agregar.*
+_Contenido por agregar._
 
 ### 4.6.3. Software Architecture Container Diagrams
 
-*Contenido por agregar.*
+_Contenido por agregar._
 
 ### 4.6.4. Software Architecture Components Diagrams
 
-*Contenido por agregar.*
+_Contenido por agregar._
 
 ## 4.7. Software Object-Oriented Design
 
 ### 4.7.1. Class Diagrams
 
-*Contenido por agregar.*
+_Contenido por agregar._
 
 ## 4.8. Database Design
+
 El diseño de base de datos de Entreprenly está implementado en MySQL 8.0 y organizado en seis categorías. El esquema aplica normalización hasta la Tercera Forma Normal (3FN), eliminando redundancias y garantizando la integridad referencial en toda la operación del negocio.
 
 El sistema distingue dos actores con responsabilidades distintas: los **Comerciantes**, quienes administran el negocio y tienen suscripción activa, y los **Clientes**, cuyos datos se registran únicamente para boletas y pedidos por WhatsApp, sin acceso al sistema.
@@ -666,42 +937,46 @@ El chatbot de WhatsApp se integra mediante `ConexionesWhatsApp`, que persiste la
 <div align="center">
 
 ![Database Diagram Entreprenly](images/Entreprendly_database_diagram.svg)
+
 </div>
 
 El esquema se organiza en las siguientes tablas por categoría:
 
-**Identidad y Acceso:** 
+**Identidad y Acceso:**
+
 - `Comerciantes` (datos de acceso y rol).
 - `PreferenciasComercio` (idioma, tema y notificaciones).
 - `SesionesActivas` (JWTs activos para revocación de sesiones).
-- `TokensVerificacion` (tokens de un solo uso para verificar email y recuperar contraseña). 
+- `TokensVerificacion` (tokens de un solo uso para verificar email y recuperar contraseña).
 - `Clientes` (datos para boletas).
 
-**Suscripciones:** 
+**Suscripciones:**
+
 - `Suscripciones` (plan y ciclo de vida: pendiente → activa → cancelada → vencida).
 - `BoletoSuscripcion` (datos del cobro, guarda solo los últimos 4 dígitos de la tarjeta por seguridad).
 
-**Inventario:** 
+**Inventario:**
+
 - `Categorias` (tabla de referencia normalizada).
-- `Productos` (catálogo con tipo unidad o peso, precio y stock). 
+- `Productos` (catálogo con tipo unidad o peso, precio y stock).
 - `Lotes` (trazabilidad por fecha de vencimiento para productos perecederos).
 
-**Ventas e IoT:** 
+**Ventas e IoT:**
+
 - `LecturasBalanza` (pesajes con snapshot histórico de precio).
-- `Ventas` (encabezado de transacción presencial). 
-- `DetalleVenta` (líneas de cada venta). 
+- `Ventas` (encabezado de transacción presencial).
+- `DetalleVenta` (líneas de cada venta).
 - `ResumenDiario` (cierre de caja con total_general calculado automáticamente).
 
-**Chatbot WhatsApp:** 
+**Chatbot WhatsApp:**
+
 - `ConexionesWhatsApp` (sesión delnúmero vinculado por QR, relación 1:1 con el comerciante).
 - `Conversaciones` (historial de mensajes entre bot, cliente y comerciante).
 
-**Pedidos y Pagos:** 
-- `Pedidos` (ciclo pendiente → esperando_pago → confirmado → completado). 
+**Pedidos y Pagos:**
+
+- `Pedidos` (ciclo pendiente → esperando_pago → confirmado → completado).
 - `DetallePedido` (líneas del pedido).
 - `Pagos` (validación manual del comprobante Yape/Plin, relación 1:1 con el pedido).
 
 La normalización aplicada se resume en tres puntos. La **1FN** se cumple con valores atómicos en todas las columnas usando ENUM para campos de valores controlados. La **2FN** se cumple con claves primarias simples en todas las tablas. La **3FN** se evidencia en la separación de `PreferenciasComercio`, `BoletoSuscripcion` y `Categorias` para eliminar dependencias transitivas, la eliminación del campo `subtotal` en los detalles por ser valor derivado, y la separación de `Clientes` y `Comerciantes` por pertenecer a entidades de negocio distintas.
-
-
-
