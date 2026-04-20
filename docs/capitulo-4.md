@@ -1236,8 +1236,11 @@ Dashboard → Clic "Pedidos" → Lista de pedidos → Selecciona pedido en estad
  
 *User Goal: El comerciante con Plan Free desea contratar el Plan Control para acceder a funcionalidades premium.*
  
-`[INSERTAR IMAGEN: User Flow Diagram - Suscripción]`
+ <p align="center">
+    <img src="images/UserFlow5.png" alt="User_flow5" width="800"/>
+  </p>
  
+
 *Ilustración N – Web Application User Flow Diagram: Suscripción al Plan Control*
  
 **Happy Path:**
