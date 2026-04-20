@@ -885,7 +885,9 @@ La estructura global de la aplicación se organiza en torno a tres zonas funcion
  
 #### Wireframes: Dashboard Principal
  
-`[INSERTAR IMAGEN: Wireframe - Dashboard Principal]`
+<p align="center">
+    <img src="images/Landing_Wireframe.png" alt="Landing_Wireframe" width="800"/>
+  </p>
  
 *Ilustración N – Web Application Wireframe: Dashboard Principal*
  
@@ -895,7 +897,9 @@ En el **nivel secundario**, el wireframe muestra una tabla resumen de las últim
  
 #### Wireframes: Módulo de Productos
  
-`[INSERTAR IMAGEN: Wireframe - Módulo de Productos]`
+<p align="center">
+    <img src="images/Productos_Wireframe.png" alt="Productos_Wireframe" width="800"/>
+  </p>
  
 *Ilustración N – Web Application Wireframe: Módulo de Productos*
  
@@ -907,7 +911,9 @@ En la parte superior derecha del área de contenido se ubica el botón primario 
  
 #### Wireframes: Módulo de Lotes
  
-`[INSERTAR IMAGEN: Wireframe - Módulo de Lotes]`
+<p align="center">
+    <img src="images/Lotes_Wireframe.png" alt="Lotes_Wireframe" width="800"/>
+  </p>
  
 *Ilustración N – Web Application Wireframe: Módulo de Lotes*
  
@@ -917,7 +923,9 @@ La tabla de lotes presenta las columnas: Producto asociado, Número de lote, Fec
  
 #### Wireframes: Módulo de Ventas
  
-`[INSERTAR IMAGEN: Wireframe - Módulo de Ventas POS]`
+<p align="center">
+    <img src="images/Ventas_Wireframe.png" alt="Ventas_Wireframe" width="800"/>
+  </p>
  
 *Ilustración N – Web Application Wireframe: Módulo de Ventas Presencial*
  
@@ -931,7 +939,9 @@ El **Resumen de Caja** (US-29, US-31) aparece como un bloque fijo en la parte in
  
 #### Wireframes: Módulo de Chatbot WhatsApp
  
-`[INSERTAR IMAGEN: Wireframe - Módulo de Chatbot]`
+<p align="center">
+    <img src="images/Chatbot_Wireframe.png" alt="ChatBot_Wireframe" width="800"/>
+  </p>
  
 *Ilustración N – Web Application Wireframe: Módulo de Chatbot WhatsApp*
  
@@ -941,7 +951,9 @@ En la parte superior del módulo, cuando la cuenta de WhatsApp Business no está
  
 #### Wireframes: Módulo de Pedidos del Chatbot
  
-`[INSERTAR IMAGEN: Wireframe - Módulo de Pedidos]`
+<p align="center">
+    <img src="images/Pedidos_Wireframe.png" alt="Pedidos_Wireframe" width="800"/>
+  </p>
  
 *Ilustración N – Web Application Wireframe: Panel de Pedidos del Chatbot*
  
@@ -951,7 +963,9 @@ El detalle de cada pedido se abre en un **panel lateral deslizante** que muestra
  
 #### Wireframes: Módulo de Suscripción
  
-`[INSERTAR IMAGEN: Wireframe - Módulo de Suscripción]`
+<p align="center">
+    <img src="images/Suscripcion_Wireframe.png" alt="Suscripcion_Wireframe" width="800"/>
+  </p>
  
 *Ilustración N – Web Application Wireframe: Módulo de Suscripción*
  
