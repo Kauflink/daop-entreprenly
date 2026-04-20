@@ -1080,7 +1080,9 @@ Esta sección presenta los mock-ups de alta fidelidad de la aplicación web de E
  
 #### Dashboard Principal
  
-`[INSERTAR IMAGEN: Mock-up - Dashboard Principal]`
+<p align="center">
+    <img src="images/landing.png" alt="landing" width="800"/>
+  </p>
  
 *Ilustración N – Web Application Mock-up: Dashboard Principal*
  
@@ -1088,7 +1090,9 @@ El dashboard aplica la paleta de colores primaria del proyecto sobre una superfi
  
 #### Módulo de Productos
  
-`[INSERTAR IMAGEN: Mock-up - Módulo de Productos]`
+<p align="center">
+    <img src="images/Productos.png" alt="Producto" width="800"/>
+  </p>
  
 *Ilustración N – Web Application Mock-up: Módulo de Productos*
  
@@ -1096,7 +1100,10 @@ La vista de inventario presenta la grilla de tarjetas de producto con tipografí
  
 #### Módulo de Lotes
  
-`[INSERTAR IMAGEN: Mock-up - Módulo de Lotes]`
+<p align="center">
+    <img src="images/lotes.png" alt="Lotes" width="800"/>
+  </p>
+ 
  
 *Ilustración N – Web Application Mock-up: Módulo de Lotes*
  
@@ -1104,7 +1111,9 @@ La vista de lotes presenta el panel de resumen en la parte superior con los tres
  
 #### Módulo de Ventas Presencial
  
-`[INSERTAR IMAGEN: Mock-up - Módulo de Ventas POS]`
+<p align="center">
+    <img src="images/ventas.png" alt="ventas" width="800"/>
+  </p>
  
 *Ilustración N – Web Application Mock-up: Módulo de Ventas Presencial*
  
@@ -1112,7 +1121,9 @@ El punto de venta presenta la distribución de dos columnas con la división vis
  
 #### Módulo de Chatbot WhatsApp
  
-`[INSERTAR IMAGEN: Mock-up - Módulo de Chatbot]`
+<p align="center">
+    <img src="images/chatbot.png" alt="chatbot" width="800"/>
+  </p>
  
 *Ilustración N – Web Application Mock-up: Módulo de Chatbot WhatsApp*
  
@@ -1120,7 +1131,9 @@ El módulo de chatbot aplica el patrón visual de las aplicaciones de mensajerí
  
 #### Módulo de Pedidos del Chatbot
  
-`[INSERTAR IMAGEN: Mock-up - Módulo de Pedidos]`
+<p align="center">
+    <img src="images/pedidos.png" alt="Pedidos" width="800"/>
+  </p>
  
 *Ilustración N – Web Application Mock-up: Panel de Pedidos del Chatbot*
  
@@ -1128,7 +1141,9 @@ El panel de pedidos presenta las filas de la tabla con los badges de estado usan
  
 #### Módulo de Suscripción
  
-`[INSERTAR IMAGEN: Mock-up - Módulo de Suscripción]`
+<p align="center">
+    <img src="images/suscripcion.png" alt="suscripcion" width="800"/>
+  </p>
  
 *Ilustración N – Web Application Mock-up: Módulo de Suscripción*
  
