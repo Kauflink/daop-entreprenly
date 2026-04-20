@@ -953,7 +953,9 @@ A continuación se describen los Wireflows principales del sistema, organizados 
  
 **Wireflow 1 – User Goal: Registrarse e iniciar sesión en Entreprenly**
  
-*User Persona: Don Lucho (comerciante dueño de minimarket)*
+<p align="center">
+    <img src="images/Wireflow1.png" alt="Wireflow1" width="800"/>
+  </p>
  
 **Descripción del flujo:** Don Lucho accede por primera vez a Entreprenly y necesita crear una cuenta para empezar a gestionar su negocio digitalmente.
  
@@ -969,7 +971,9 @@ A continuación se describen los Wireflows principales del sistema, organizados 
  
 **Wireflow 2 – User Goal: Registrar y gestionar el inventario de productos**
  
-*User Persona: Don Lucho (comerciante)*
+<p align="center">
+    <img src="images/Wireflow2.png" alt="Wireflow2" width="800"/>
+  </p>
  
 **Descripción del flujo:** Don Lucho necesita agregar los productos de su minimarket al sistema para poder controlar el stock y registrar ventas.
  
@@ -987,7 +991,9 @@ A continuación se describen los Wireflows principales del sistema, organizados 
  
 **Wireflow 3 – User Goal: Gestionar lotes y recibir alertas de vencimiento**
  
-*User Persona: Don Lucho (comerciante)*
+<p align="center">
+    <img src="images/Wireflow3.png" alt="Wireflow3" width="800"/>
+  </p>
  
 **Descripción del flujo:** Don Lucho necesita crear lotes para controlar las fechas de vencimiento de sus productos perecederos y ser notificado cuando alguno esté próximo a vencer.
  
@@ -1003,7 +1009,9 @@ A continuación se describen los Wireflows principales del sistema, organizados 
  
 **Wireflow 4 – User Goal: Registrar una venta presencial en el POS**
  
-*User Persona: Don Lucho (cajero en el mostrador)*
+<p align="center">
+    <img src="images/Wireflow4.png" alt="Wireflow4" width="800"/>
+  </p>
  
 **Descripción del flujo:** Don Lucho necesita atender a un cliente en el mostrador, registrar los productos comprados, seleccionar el método de pago y emitir el comprobante, todo sin interrumpir la atención al cliente.
  
@@ -1021,7 +1029,9 @@ A continuación se describen los Wireflows principales del sistema, organizados 
  
 **Wireflow 5 – User Goal: Configurar y vincular el chatbot de WhatsApp Business**
  
-*User Persona: Don Lucho (comerciante que recibe pedidos por WhatsApp)*
+<p align="center">
+    <img src="images/Wireflow5.png" alt="Wireflow5" width="800"/>
+  </p>
  
 **Descripción del flujo:** Don Lucho necesita conectar su número de WhatsApp Business al sistema para activar la atención automatizada de pedidos.
  
@@ -1035,7 +1045,9 @@ A continuación se describen los Wireflows principales del sistema, organizados 
  
 **Wireflow 6 – User Goal: Activar o gestionar la suscripción al Plan Control**
  
-*User Persona: Don Lucho (comerciante que desea desbloquear funcionalidades premium)*
+<p align="center">
+    <img src="images/Wireflow6.png" alt="Wireflow6" width="800"/>
+  </p>
  
 **Descripción del flujo:** Don Lucho, con el Plan Free asignado por defecto, decide contratar el Plan Control para acceder a funcionalidades avanzadas como el módulo de chatbot y la integración con balanza IoT.
  
