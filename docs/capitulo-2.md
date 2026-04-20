@@ -859,21 +859,96 @@ La principal coincidencia entre ambos segmentos es que los dos otorgan alta impo
 
 ## 2.4. Big Picture Event Storming
 
-El equipo realizó una sesión colaborativa virtual de Big Picture Event Storming utilizando **Miro**, con el objetivo de explorar el dominio del negocio de Entreprenly a alto nivel e identificar los eventos significativos que ocurren en la operación de un minimarket o puesto de mercado. La sesión tuvo una duración aproximada de 10 horas y contó con la participación de todos los miembros del equipo.
+El Big Picture Event Storming es una técnica de modelado colaborativo creada por Alberto Brandolini que permite a un equipo explorar y comprender el dominio de un negocio en pocas horas. A diferencia de las sesiones de análisis tradicionales, esta técnica se centra en identificar los Domain Events más significativos del negocio —es decir, los hechos relevantes que ocurren en el dominio— y organizarlos cronológicamente para construir una visión compartida del landscape del negocio. No se busca un diseño técnico detallado, sino una comprensión de alto nivel que exponga procesos clave, actores, sistemas externos y potenciales problemas u oportunidades.
+El equipo Kauflink realizó una sesión colaborativa de Big Picture Event Storming sobre el dominio de Entreprenly, la plataforma de gestión operativa para minimarkets, bodegas y puestos de mercado. El objetivo fue modelar el ciclo de vida completo de la operación diaria de un comercio minorista de alimentos frescos: desde la configuración de productos hasta el cierre financiero del turno. La sesión fue guiada siguiendo el Step-by-Step Guide disponible en https://bit.ly/bpes-guide, y se utilizó Miro como herramienta de tablero digital colaborativo..
 
-**Paso 1: Generación de Domain Events**
+**Proceso realizado por el equipo**
+
+A continuación se describe cada una de las etapas realizadas durante la sesión de Big Picture Event Storming, acompañadas de las capturas del tablero en Miro correspondientes a cada fase.
+
+
+**Paso 1: Preparación del espacio de trabajo**
+
+Antes de iniciar la sesión, el equipo preparó el tablero de Miro con el espacio de diseño necesario: un área de trabajo infinita con la leyenda de colores de sticky notes visible para todos los participantes, y una agenda visual de los pasos a seguir fijada en el lateral del tablero.
+
+Se definieron los colores de cada tipo de elemento según la convención del método:
+
+<table>
+  <thead>
+    <tr>
+      <th>Elemento</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="background-color:#FF9800; color:#000; font-weight:bold; text-align:center;">Domain Event</td>
+      <td>Hecho relevante que ocurrió en el dominio del negocio. Se redacta en tiempo pasado.</td>
+    </tr>
+    <tr>
+      <td style="background-color:#FFEB3B; color:#000; font-weight:bold; text-align:center;">Actor</td>
+      <td>Persona con un rol específico que desencadena o participa en un evento del dominio.</td>
+    </tr>
+    <tr>
+      <td style="background-color:#F48FB1; color:#000; font-weight:bold; text-align:center;">External System</td>
+      <td>Sistema externo que interactúa con la plataforma, enviando o recibiendo información.</td>
+    </tr>
+    <tr>
+      <td style="background-color:#F44336; color:#fff; font-weight:bold; text-align:center;">Hot Spot</td>
+      <td>Área de incertidumbre, conflicto o riesgo que requiere atención o resolución posterior.</td>
+    </tr>
+  </tbody>
+</table>
 
 En esta primera etapa, cada miembro propuso de forma individual los eventos de dominio relevantes para el sistema, redactándolos en tiempo pasado y representándolos con post-its de color naranja. Se buscó cubrir los flujos del comerciante y del cliente final sin filtrar ni debatir, generando el mayor volumen posible de eventos. Los eventos identificados abarcaron los procesos de registro de productos, control de inventario por peso (IoT), ventas presenciales, pedidos por WhatsApp, conciliación de caja y gestión de alertas operativas.
 
 <div align="center">
-  <img src="./images/Entreprenly_Phase1.svg" alt="Entreprenly Fase 1" width="800">
+  <img src="./images/paso1.png" alt="Paso 1" width="800">
 </div>
 
 ---
 
-**Paso 2: Ordenamiento cronológico**
+**Paso 2: Energizante colaborativo**
 
-Una vez generados los eventos, el equipo los organizó cronológicamente de izquierda a derecha. Al tratarse de un sistema multicanal, los flujos del comerciante y del cliente final, así como los flujos presencial y conversacional, ocurren de forma paralela, por lo que se utilizaron swimlanes verticales para representar cada proceso de forma independiente. Durante esta etapa surgieron discusiones sobre el orden de ciertos eventos clave, como si el registro de una venta precede o es simultáneo a la actualización del stock en el sistema, lo que permitió alinear al equipo sobre el comportamiento esperado de la plataforma.
+Para activar la participación y romper la dinámica habitual de reuniones, el equipo inició la sesión con una dinámica colaborativa breve. Dado que la sesión fue realizada de forma remota, se utilizó la dinámica de Collaborative Word Storm: cada participante escribió libremente en el tablero de Miro los primeros términos o situaciones del negocio que le venían a la mente al pensar en un comerciante de barrio peruano gestionando su negocio. Esto preparó a todos los integrantes para la fase de generación de eventos.
+
+**Paso 3: Presentación del objetivo y alcance**
+
+El equipo definió y comunicó a todos los participantes el objetivo, el alcance y los casos de uso que guiarían la sesión
+
+- **Objetivo:** Obtener una visión de alto nivel del dominio de negocio de Entreprenly, identificando los eventos más relevantes del ciclo de vida operativo de un minimarket o puesto de mercado.
+
+- **Alcance:** La operación diaria completa de un comercio minorista de alimentos frescos, desde la apertura del turno hasta el cierre de caja, incluyendo los canales de venta presencial y por WhatsApp, y la integración con balanzas inteligentes (IoT).
+
+- Casos de uso principales a explorar:
+  - Gestión de inventario de productos perecederos
+  - Registro de ventas presenciales con conciliación de pagos
+  - Atención de pedidos por WhatsApp con validación de stock
+  - Detección de descuadres entre stock físico y digital 
+
+Para arrancar la sesión, el facilitador colocó el primer Domain Event en el tablero como ejemplo: *Lote registrado*
+
+<div align="center">
+  <img src="./images/paso3.png" alt="Paso 3" width="800">
+</div>
+
+---
+
+**Paso 4: Generación de Domain Events**
+
+En esta fase, cada integrante del equipo generó de forma libre e independiente todos los Domain Events que consideró relevantes para el dominio de Entreprenly. Los eventos se redactaron en tiempo pasado y en inglés, siguiendo la convención del Ubiquitous Language del proyecto. No hubo restricciones ni orden; la idea fue plasmar el mayor número posible de eventos significativos del negocio.
+
+La fase duró aproximadamente 20 minutos, hasta que el ritmo de generación de nuevos eventos disminuyó notablemente.
+
+<div align="center">
+  <img src="./images/paso4.svg" alt="Paso 4" width="800">
+</div>
+
+---
+
+**Paso 5: Ordenamiento cronológico de Domain Events**
+
+Una vez generados todos los eventos, el equipo procedió a organizarlos cronológicamente de izquierda a derecha en el tablero, representando el flujo temporal de la operación del negocio. Esta etapa fue la más rica en discusión, ya que los distintos puntos de vista de los integrantes afloraron al intentar acordar el orden y la relación entre eventos.
 
 <div align="center">
   <img src="./images/Entreprenly_Phase2.svg" alt="Entreprenly Fase 2" width="800">
@@ -881,9 +956,9 @@ Una vez generados los eventos, el equipo los organizó cronológicamente de izqu
 
 ---
 
-**Paso 3: Identificación de Actores y Sistemas Externos**
+**Paso 6: Incorporación de Actores y Sistemas externos**
 
-Finalmente, el equipo identificó los actores y sistemas externos que desencadenan o responden a los eventos del dominio. Los actores identificados fueron el Merchant (dueño o cajero del negocio) y el Customer (cliente final que realiza pedidos por WhatsApp). Como sistemas externos se identificaron la Balanza Inteligente IoT (que envía lecturas de peso en tiempo real), la API de WhatsApp (canal de pedidos conversacionales), el Terminal POS físico (que confirma los cobros electrónicos) y las billeteras digitales Yape/Plin (medios de pago del cliente). Estos fueron colocados junto a los eventos que desencadenan o a los que responden dentro del flujo del negocio.
+Con los eventos ya ordenados, el equipo identificó y colocó los Actores (personas con un rol específico) y los Sistemas externos que desencadenan o responden a los eventos del dominio.
 
 <div align="center">
   <img src="./images/gestion_inventario.svg" alt="proceso_de_suscripcion" width="800">
