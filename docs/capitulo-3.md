@@ -1259,10 +1259,6 @@ A partir de este actor se derivaron cinco impactos esperados: que deje de gestio
 
 A continuación se presenta el Product Backlog de Entreprenly con todas las User Stories priorizadas según su valor para el negocio. Las User Stories de mayor impacto directo en la operación del comerciante y en la propuesta de valor central del producto se ubican en las primeras posiciones. Las historias relacionadas con autenticación, suscripción y perfil, si bien necesarias, se ubican en posiciones posteriores por tratarse de funcionalidades de soporte.
 
-## 3.3. Product Backlog
-
-A continuación se presenta el Product Backlog de Entreprenly con las 73 User Stories priorizadas según su valor para el negocio. Las User Stories de mayor impacto directo en la operación del comerciante y en la propuesta de valor central del producto se ubican en las primeras posiciones.
-
 <table>
   <thead>
     <tr>
