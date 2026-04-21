@@ -6,10 +6,6 @@
 
 En esta sección se detallan las herramientas, frameworks y plataformas utilizadas por el equipo para el desarrollo colaborativo durante todo el ciclo de vida del producto digital. Se han considerado actividades de Project Management, Requirements Management, UX/UI Design, Software Development, Documentation y Deployment.
 
-Para que el código funcione correctamente dentro de un archivo .md (como en GitHub o Notion), lo mejor es evitar las etiquetas <html> o <body> y usar directamente los fragmentos de las tablas. Los renderizadores de Markdown aplicarán automáticamente sus propios estilos para que se vea integrado.
-
-Aquí tienes el código limpio, dividido por secciones:
-
 **Project Management**
 
 <table>
@@ -424,80 +420,452 @@ Los pasos para configurar y ejecutar el despliegue son los siguientes:
 10. Validar el despliegue realizando una solicitud de prueba a un endpoint del API desde Swagger UI o desde Postman, confirmando que el servicio responde correctamente sobre HTTPS.
 
 ## 5.2. Landing Page, Services & Applications Implementation
-
-### 5.2.1. Sprint 1
-
-#### 5.2.1.1. Sprint Planning 1
-
-Para este primer Sprint, el equipo estableció como objetivo principal la implementación y despliegue de la primera versión del Landing Page de Entreprenly. La reunión de planificación se llevó a cabo de manera virtual, donde se definieron las User Stories a abordar, el Sprint Goal y la distribución de responsabilidades entre los miembros del equipo.
-
-| Sprint # | Sprint 1 |
-|---|---|
-| **Sprint Planning Background** | |
-| Date | 2026-04-13 |
-| Time | 07:00 PM |
-| Location | Reunión virtual vía Discord |
-| Prepared By | Camargo Briceño, Joseph Julius |
-| Attendees (to planning meeting) | Camargo Briceño, Joseph Julius / Chavez Carrasco, Lionel Abraham / Palma De Los Santos, Elynor Mikela / Peirano Brun, José Antonio / Flores Pinchi, José Fernando |
-| Sprint 1 – 1 Review Summary | Al ser el primer Sprint del proyecto, no existe un Sprint anterior que revisar. Se parte desde cero con el inicio del ciclo de vida del producto. |
-| Sprint 1 – 1 Retrospective Summary | Al ser el primer Sprint del proyecto, no existe retrospectiva previa. El equipo acordó mantener comunicación constante vía Discord y respetar los plazos de entrega de cada tarea. |
-| **Sprint Goal & User Stories** | |
-| Sprint 1 Goal | Our focus is on presenting Entreprenly's value proposition to potential users through a functional and deployed Landing Page. We believe it delivers a clear first impression of the product and motivates visitors from our target segments to explore the platform. This will be confirmed when the Landing Page is publicly accessible, includes all key sections (hero, features, pricing and call-to-action), and redirects visitors correctly toward the Web Application. |
-| Sprint 1 Velocity | 8 |
-| Sum of Story Points | 8 |
  
+### 5.2.1. Sprint 1
+ 
+#### 5.2.1.1. Sprint Planning 1
+ 
+Para este primer Sprint, el equipo estableció como objetivo principal la implementación y despliegue de la primera versión del Landing Page de Entreprenly. La reunión de planificación se llevó a cabo de manera virtual, donde se definieron las User Stories a abordar, el Sprint Goal y la distribución de responsabilidades entre los miembros del equipo.
+ 
+<table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+  <tbody>
+    <tr>
+      <td colspan="2"><strong>Sprint 1</strong></td>
+    </tr>
+    <tr>
+      <td colspan="2"><strong>Sprint Planning Background</strong></td>
+    </tr>
+    <tr>
+      <td><strong>Date</strong></td>
+      <td>2026-04-18</td>
+    </tr>
+    <tr>
+      <td><strong>Time</strong></td>
+      <td>09:00 AM</td>
+    </tr>
+    <tr>
+      <td><strong>Location</strong></td>
+      <td>Reunión virtual vía Discord</td>
+    </tr>
+    <tr>
+      <td><strong>Prepared By</strong></td>
+      <td>Camargo Briceño, Joseph Julius</td>
+    </tr>
+    <tr>
+      <td><strong>Attendees (to planning meeting)</strong></td>
+      <td>Camargo Briceño, Joseph Julius / Chavez Carrasco, Lionel Abraham / Palma De Los Santos, Elynor Mikela / Peirano Brun, José Antonio / Flores Pinchi, José Fernando</td>
+    </tr>
+    <tr>
+      <td><strong>Sprint 1 – 1 Review Summary</strong></td>
+      <td>Al ser el primer Sprint del proyecto, no existe un Sprint anterior que revisar. Se parte desde cero con el inicio del ciclo de vida del producto.</td>
+    </tr>
+    <tr>
+      <td><strong>Sprint 1 – 1 Retrospective Summary</strong></td>
+      <td>Al ser el primer Sprint del proyecto, no existe retrospectiva previa. El equipo acordó mantener comunicación constante vía Discord y respetar los plazos de entrega de cada tarea.</td>
+    </tr>
+    <tr>
+      <td colspan="2"><strong>Sprint Goal &amp; User Stories</strong></td>
+    </tr>
+    <tr>
+      <td><strong>Sprint 1 Goal</strong></td>
+      <td>Our focus is on presenting Entreprenly's value proposition to potential users through a functional and deployed Landing Page. We believe it delivers a clear first impression of the product and motivates visitors from our target segments to explore the platform. This will be confirmed when the Landing Page is publicly accessible, includes all key sections (hero, features, pricing and call-to-action), and redirects visitors correctly toward the Web Application.</td>
+    </tr>
+    <tr>
+      <td><strong>Sprint 1 Velocity</strong></td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td><strong>Sum of Story Points</strong></td>
+      <td>8</td>
+    </tr>
+  </tbody>
+</table>
+
 ---
-
+ 
 #### 5.2.1.2. Aspect Leaders and Collaborators
-
+ 
 En este primer Sprint, el equipo organizó su trabajo en torno a cuatro aspectos principales: la configuración inicial del repositorio y entorno de despliegue, el desarrollo de la estructura base del Landing Page, la implementación de funcionalidades interactivas (cambio de tema e idioma, animaciones y CTAs), y la revisión y corrección del contenido textual. A continuación, se presenta la matriz de liderazgo y colaboración (LACX):
  
-| Team Member (Last Name, First Name) | GitHub Username | Configuración del Repositorio y CI/CD | Estructura Base del Landing Page | Funcionalidades Interactivas (Tema, Idioma, CTAs) | Corrección de Contenido |
-|---|---|---|---|---|---|
-| Camargo Briceño, Joseph Julius | Juyens | L | C | C | C |
-| Chavez Carrasco, Lionel Abraham | LioTG | C | L | L | C |
-| Palma De Los Santos, Elynor Mikela | elynorpalma | C | C | C | L |
-| Peirano Brun, José Antonio | DoomerGX | C | C | C | L |
-| Flores Pinchi, José Fernando | Ferdinant12-ops | C | L | C | L |
+<table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+  <thead>
+    <tr>
+      <th>Team Member (Last Name, First Name)</th>
+      <th>GitHub Username</th>
+      <th>Configuración del Repositorio y CI/CD<br>Leader (L) / Collaborator (C)</th>
+      <th>Estructura Base del Landing Page<br>Leader (L) / Collaborator (C)</th>
+      <th>Funcionalidades Interactivas (Tema, Idioma, CTAs)<br>Leader (L) / Collaborator (C)</th>
+      <th>Corrección de Contenido<br>Leader (L) / Collaborator (C)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Camargo Briceño, Joseph Julius</td>
+      <td>Juyens</td>
+      <td>L</td>
+      <td>C</td>
+      <td>C</td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <td>Chavez Carrasco, Lionel Abraham</td>
+      <td>LioTG</td>
+      <td>C</td>
+      <td>L</td>
+      <td>L</td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <td>Palma De Los Santos, Elynor Mikela</td>
+      <td>elynorpalma</td>
+      <td>C</td>
+      <td>C</td>
+      <td>C</td>
+      <td>L</td>
+    </tr>
+    <tr>
+      <td>Peirano Brun, José Antonio</td>
+      <td>DoomerGX</td>
+      <td>C</td>
+      <td>C</td>
+      <td>C</td>
+      <td>L</td>
+    </tr>
+    <tr>
+      <td>Flores Pinchi, José Fernando</td>
+      <td>Ferdinant12-ops</td>
+      <td>C</td>
+      <td>L</td>
+      <td>C</td>
+      <td>L</td>
+    </tr>
+  </tbody>
+</table>
+
+---
+ 
+#### 5.2.1.3. Sprint Backlog 1
+ 
+El objetivo principal de este Sprint fue implementar y desplegar la primera versión del Landing Page de Entreprenly, cubriendo la User Story US-49 del Product Backlog. A continuación se presenta el tablero del Sprint y el detalle de los Work-items asociados.
+ 
+ 
+![Logo de la UPC](./images/sprint1.png "Universidad Peruana de Ciencias Aplicadas")
+ 
+<table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+  <thead>
+    <tr>
+      <th colspan="8">Sprint # Sprint 1</th>
+    </tr>
+    <tr>
+      <th colspan="2">User Story</th>
+      <th colspan="6">Work-Item / Task</th>
+    </tr>
+    <tr>
+      <th>Id</th>
+      <th>Title</th>
+      <th>Id</th>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Estimation (Hours)</th>
+      <th>Assigned To</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>US-49</td>
+      <td>Conocer propuesta de valor en landing page</td>
+      <td>T-01</td>
+      <td>Configuración inicial del repositorio</td>
+      <td>Crear el repositorio, inicializar el proyecto con HTML/CSS/Tailwind y configurar el <code>.gitignore</code> y <code>package.json</code>.</td>
+      <td>2</td>
+      <td>Camargo Briceño, Joseph Julius</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-49</td>
+      <td>Conocer propuesta de valor en landing page</td>
+      <td>T-02</td>
+      <td>Configurar pipeline de despliegue (GitHub Actions)</td>
+      <td>Crear y ajustar el workflow de GitHub Actions para despliegue automático en GitHub Pages con CNAME configurado.</td>
+      <td>3</td>
+      <td>Camargo Briceño, Joseph Julius</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-49</td>
+      <td>Conocer propuesta de valor en landing page</td>
+      <td>T-03</td>
+      <td>Desarrollar estructura base del Landing Page</td>
+      <td>Implementar las secciones principales del Landing Page: hero, funcionalidades, planes y footer.</td>
+      <td>4</td>
+      <td>Chavez Carrasco, Lionel Abraham / Flores Pinchi, José Fernando</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-49</td>
+      <td>Conocer propuesta de valor en landing page</td>
+      <td>T-04</td>
+      <td>Implementar controles de tema e idioma y mejoras de CTAs</td>
+      <td>Agregar switch de tema claro/oscuro, selector de idioma (ES/EN) y mejorar los call-to-action para cada segmento objetivo.</td>
+      <td>3</td>
+      <td>Chavez Carrasco, Lionel Abraham</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-49</td>
+      <td>Conocer propuesta de valor en landing page</td>
+      <td>T-05</td>
+      <td>Agregar animaciones de transición en hero</td>
+      <td>Implementar efectos de fade para cambio de tema y animaciones de movimiento en la sección hero.</td>
+      <td>2</td>
+      <td>Chavez Carrasco, Lionel Abraham</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-49</td>
+      <td>Conocer propuesta de valor en landing page</td>
+      <td>T-06</td>
+      <td>Revisión y corrección de contenido textual</td>
+      <td>Corregir ortografía, tildes y redacción en el contenido del Landing Page.</td>
+      <td>2</td>
+      <td>Palma De Los Santos, Elynor Mikela / Peirano Brun, José Antonio / Flores Pinchi, José Fernando</td>
+      <td>Done</td>
+    </tr>
+  </tbody>
+</table>
+
+---
+ 
+#### 5.2.1.4. Development Evidence for Sprint Review
+ 
+Durante el Sprint 1, el equipo se centró exclusivamente en el repositorio del Landing Page. Se realizaron un total de 20 commits distribuidos entre el 18 y el 20 de abril de 2026, cubriendo desde la configuración inicial del proyecto hasta correcciones de contenido y el despliegue automatizado mediante GitHub Actions. A continuación se presenta el registro de commits:
+ 
+<table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+  <thead>
+    <tr>
+      <th>Repository</th>
+      <th>Branch</th>
+      <th>Commit Id</th>
+      <th>Commit Message</th>
+      <th>Commit Message Body</th>
+      <th>Committed on (Date)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Kauflink/landing-entreprenly</td>
+      <td>main</td>
+      <td>d57dee9</td>
+      <td>Initial commit</td>
+      <td>Creación inicial del repositorio con estructura base del proyecto.</td>
+      <td>2026-04-18</td>
+    </tr>
+    <tr>
+      <td>Kauflink/landing-entreprenly</td>
+      <td>develop</td>
+      <td>86c305f</td>
+      <td>chore(config): initialize .gitignore for node and tailwind</td>
+      <td>Se agrega <code>.gitignore</code> configurado para excluir dependencias de Node y archivos compilados de Tailwind.</td>
+      <td>2026-04-18</td>
+    </tr>
+    <tr>
+      <td>Kauflink/landing-entreprenly</td>
+      <td>develop</td>
+      <td>568c339</td>
+      <td>docs: simplify README with essential information and update license to MIT</td>
+      <td>Se simplifica el README con instrucciones esenciales y se actualiza la licencia a MIT.</td>
+      <td>2026-04-18</td>
+    </tr>
+    <tr>
+      <td>Kauflink/landing-entreprenly</td>
+      <td>main</td>
+      <td>5088424</td>
+      <td>Merge pull request #1 from Kauflink/develop</td>
+      <td>Primera integración de la rama develop a main con la estructura base del proyecto.</td>
+      <td>2026-04-18</td>
+    </tr>
+    <tr>
+      <td>Kauflink/landing-entreprenly</td>
+      <td>main</td>
+      <td>003eb4f</td>
+      <td>Create CNAME</td>
+      <td>Se crea el archivo CNAME para la configuración del dominio personalizado en GitHub Pages.</td>
+      <td>2026-04-18</td>
+    </tr>
+    <tr>
+      <td>Kauflink/landing-entreprenly</td>
+      <td>main</td>
+      <td>9e82e20</td>
+      <td>Refactor GitHub Actions workflow for deployment</td>
+      <td>Se refactoriza el workflow de CI/CD para optimizar el proceso de despliegue automático.</td>
+      <td>2026-04-18</td>
+    </tr>
+    <tr>
+      <td>Kauflink/landing-entreprenly</td>
+      <td>main</td>
+      <td>bcc3513</td>
+      <td>Update Node.js version and clean install step</td>
+      <td>Se actualiza la versión de Node.js y se mejora el paso de instalación limpia en el pipeline.</td>
+      <td>2026-04-18</td>
+    </tr>
+    <tr>
+      <td>Kauflink/landing-entreprenly</td>
+      <td>main</td>
+      <td>ff3e7e6</td>
+      <td>Update GitHub Actions workflow for deployment</td>
+      <td>Se actualiza la configuración del workflow de despliegue.</td>
+      <td>2026-04-18</td>
+    </tr>
+    <tr>
+      <td>Kauflink/landing-entreprenly</td>
+      <td>main</td>
+      <td>14b3ed7</td>
+      <td>Upgrade GitHub Actions to version 4</td>
+      <td>Se actualiza GitHub Actions a la versión 4 para compatibilidad y mejoras de rendimiento.</td>
+      <td>2026-04-18</td>
+    </tr>
+    <tr>
+      <td>Kauflink/landing-entreprenly</td>
+      <td>develop</td>
+      <td>54554c9</td>
+      <td>feat: agregar controles de tema, idioma y mejorar CTAs de la landing</td>
+      <td>Se implementa el selector de idioma (ES/EN), el switch de tema claro/oscuro y se mejoran los call-to-action dirigidos a cada segmento objetivo.</td>
+      <td>2026-04-19</td>
+    </tr>
+    <tr>
+      <td>Kauflink/landing-entreprenly</td>
+      <td>main</td>
+      <td>32ab091</td>
+      <td>Merge pull request #2 from Kauflink/develop</td>
+      <td>Segunda integración con los controles de tema, idioma y CTAs mejorados.</td>
+      <td>2026-04-19</td>
+    </tr>
+    <tr>
+      <td>Kauflink/landing-entreprenly</td>
+      <td>develop</td>
+      <td>f9a1e00</td>
+      <td>feat: add theme fade and hero motion refinements</td>
+      <td>Se agregan transiciones de fade al cambio de tema y animaciones de movimiento en la sección hero.</td>
+      <td>2026-04-19</td>
+    </tr>
+    <tr>
+      <td>Kauflink/landing-entreprenly</td>
+      <td>main</td>
+      <td>9136aed</td>
+      <td>Merge pull request #3 from Kauflink/develop</td>
+      <td>Tercera integración con animaciones y refinamientos del hero.</td>
+      <td>2026-04-19</td>
+    </tr>
+    <tr>
+      <td>Kauflink/landing-entreprenly</td>
+      <td>develop</td>
+      <td>e740b59</td>
+      <td>fix: corrección de tildes</td>
+      <td>Se corrigen errores de acentuación en el contenido textual del Landing Page.</td>
+      <td>2026-04-19</td>
+    </tr>
+    <tr>
+      <td>Kauflink/landing-entreprenly</td>
+      <td>develop</td>
+      <td>55ee2fb</td>
+      <td>fix(landing_page): ortografia arreglada</td>
+      <td>Se corrigen errores ortográficos en los textos del Landing Page.</td>
+      <td>2026-04-19</td>
+    </tr>
+    <tr>
+      <td>Kauflink/landing-entreprenly</td>
+      <td>main</td>
+      <td>846f934</td>
+      <td>Merge pull request #4 from Kauflink/develop</td>
+      <td>Cuarta integración con correcciones ortográficas y de contenido.</td>
+      <td>2026-04-19</td>
+    </tr>
+    <tr>
+      <td>Kauflink/landing-entreprenly</td>
+      <td>develop</td>
+      <td>7e09505</td>
+      <td>app:Correccion</td>
+      <td>Correcciones generales en el contenido del Landing Page.</td>
+      <td>2026-04-19</td>
+    </tr>
+    <tr>
+      <td>Kauflink/landing-entreprenly</td>
+      <td>develop</td>
+      <td>3cbf2e2</td>
+      <td>app:CorreccionPalabras</td>
+      <td>Corrección de palabras en el contenido del Landing Page.</td>
+      <td>2026-04-19</td>
+    </tr>
+    <tr>
+      <td>Kauflink/landing-entreprenly</td>
+      <td>develop</td>
+      <td>8c4165b</td>
+      <td>app:CorreccionTilde</td>
+      <td>Corrección de tildes adicionales en el Landing Page.</td>
+      <td>2026-04-19</td>
+    </tr>
+    <tr>
+      <td>Kauflink/landing-entreprenly</td>
+      <td>main</td>
+      <td>7b8ccfc</td>
+      <td>Merge pull request #5 from Kauflink/develop</td>
+      <td>Quinta integración con las correcciones finales de contenido.</td>
+      <td>2026-04-20</td>
+    </tr>
+  </tbody>
+</table>
+
+---
+ 
+#### 5.2.1.5. Execution Evidence for Sprint Review
+ 
+Al término del Sprint 1, el equipo logró implementar y desplegar satisfactoriamente la primera versión del Landing Page de Entreprenly. La página se encuentra disponible públicamente a través de GitHub Pages con dominio personalizado configurado mediante el archivo CNAME. El Landing Page incluye las siguientes secciones:
+ 
+- **Hero:** Presentación principal del producto con headline, propuesta de valor y llamados a la acción (CTAs) diferenciados por segmento objetivo (comerciantes y clientes finales).
+- **Funcionalidades:** Descripción visual de las características principales de Entreprenly: gestión de inventario, chatbot de WhatsApp, balanza IoT y dashboard financiero.
+- **Planes:** Sección con los planes disponibles (Plan Free y Plan Control) con sus beneficios y botones de acción.
+- **Footer:** Información de contacto, términos y condiciones y enlaces relevantes.
+- **Controles de experiencia:** Selector de idioma (Español / Inglés) y switch de tema claro/oscuro, accesibles desde la barra de navegación.
+
+
+![landing_desplegado](./images/landing_desplegado.png "landing_desplegado")
  
 ---
-
-#### 5.2.1.3. Sprint Backlog 1
-
-El objetivo principal de este Sprint fue implementar y desplegar la primera versión del Landing Page de Entreprenly, cubriendo la User Story US-49 del Product Backlog. A continuación se presenta el tablero del Sprint y el detalle de los Work-items asociados.
-
-| Sprint # | Sprint 1 |
-|---|---|
  
-| User Story | | Work-Item / Task | | | | |
-|---|---|---|---|---|---|---|
-| **Id** | **Title** | **Id** | **Title** | **Description** | **Estimation (Hours)** | **Assigned To** | **Status** |
-| US-49 | Conocer propuesta de valor en landing page | T-01 | Configuración inicial del repositorio | Crear el repositorio, inicializar el proyecto con HTML/CSS/Tailwind y configurar el `.gitignore` y `package.json`. | 2 | Camargo Briceño, Joseph Julius | Done |
-| US-49 | Conocer propuesta de valor en landing page | T-02 | Configurar pipeline de despliegue (GitHub Actions) | Crear y ajustar el workflow de GitHub Actions para despliegue automático en GitHub Pages con CNAME configurado. | 3 | Camargo Briceño, Joseph Julius | Done |
-| US-49 | Conocer propuesta de valor en landing page | T-03 | Desarrollar estructura base del Landing Page | Implementar las secciones principales del Landing Page: hero, funcionalidades, planes y footer. | 4 | Chavez Carrasco, Lionel Abraham / Flores Pinchi, José Fernando | Done |
-| US-49 | Conocer propuesta de valor en landing page | T-04 | Implementar controles de tema e idioma y mejoras de CTAs | Agregar switch de tema claro/oscuro, selector de idioma (ES/EN) y mejorar los call-to-action para cada segmento objetivo. | 3 | Chavez Carrasco, Lionel Abraham | Done |
-| US-49 | Conocer propuesta de valor en landing page | T-05 | Agregar animaciones de transición en hero | Implementar efectos de fade para cambio de tema y animaciones de movimiento en la sección hero. | 2 | Chavez Carrasco, Lionel Abraham | Done |
-| US-49 | Conocer propuesta de valor en landing page | T-06 | Revisión y corrección de contenido textual | Corregir ortografía, tildes y redacción en el contenido del Landing Page. | 2 | Palma De Los Santos, Elynor Mikela / Peirano Brun, José Antonio / Flores Pinchi, José Fernando | Done |
-
-#### 5.2.1.4. Development Evidence for Sprint Review
-
-*Contenido por agregar.*
-
-#### 5.2.1.5. Execution Evidence for Sprint Review
-
-*Contenido por agregar.*
-
 #### 5.2.1.6. Services Documentation Evidence for Sprint Review
-
-*Contenido por agregar.*
-
+ 
+Durante el Sprint 1, el alcance de implementación se limitó exclusivamente al Landing Page estático. No se desarrollaron ni desplegaron Web Services (RESTful API) en esta iteración, por lo que no aplica documentación de endpoints para este Sprint. La documentación de servicios web se incorporará a partir del Sprint 3, conforme a lo planificado en el Product Backlog.
+ 
+---
+ 
 #### 5.2.1.7. Software Deployment Evidence for Sprint Review
-
-*Contenido por agregar.*
-
+ 
+Durante el Sprint 1, el equipo configuró y ejecutó el proceso de despliegue del Landing Page mediante GitHub Pages y un pipeline de integración continua con GitHub Actions. A continuación se describe el proceso realizado:
+ 
+1. **Creación del repositorio:** Se creó el repositorio público `landing-entreprenly` bajo la organización `Kauflink` en GitHub, aplicando GitFlow con las ramas `main` y `develop`.
+2. **Configuración del dominio personalizado:** Se añadió el archivo `CNAME` al repositorio con el dominio personalizado asignado al Landing Page.
+3. **Configuración del pipeline de CI/CD:** Se creó un workflow de GitHub Actions (`.github/workflows/`) que automatiza el proceso de build y despliegue. El workflow incluye los pasos de instalación de dependencias (`npm ci`), compilación de estilos con Tailwind CSS (`npm run build`) y despliegue automático a la rama `gh-pages` al fusionar cambios en `main`.
+4. **Ajustes iterativos del pipeline:** Se realizaron cuatro refinamientos del workflow durante el Sprint para resolver compatibilidades con la versión de Node.js y actualizar GitHub Actions a la versión 4.
+5. **Verificación del despliegue:** Se comprobó que el Landing Page quedó correctamente publicado y accesible desde la URL de GitHub Pages con el dominio configurado.
+*(Insertar aquí screenshots del workflow de GitHub Actions ejecutado exitosamente, la configuración de GitHub Pages en el repositorio y el Landing Page accesible en su URL de producción)*
+ 
+---
+ 
 #### 5.2.1.8. Team Collaboration Insights during Sprint
+ 
+Durante el Sprint 1, todos los miembros del equipo participaron activamente en la implementación del Landing Page, evidenciado a través de los commits registrados en el repositorio `landing-entreprenly`. El trabajo se distribuyó de manera colaborativa: Joseph Julius lideró la configuración del repositorio y el pipeline de despliegue; Lionel Abraham se encargó del desarrollo de funcionalidades interactivas y animaciones; Elynor Mikela, José Antonio y José Fernando contribuyeron con correcciones de contenido y en la estructura base de la página.
+ 
+El equipo aplicó GitFlow como estrategia de control de versiones, trabajando en la rama `develop` y realizando la integración a `main` mediante Pull Requests revisados y aprobados por otros miembros. Se realizaron un total de 5 Pull Requests durante el Sprint.
+ 
+![commits1](./images/commits1.png "commits1")
 
-*Contenido por agregar.*
+![commits2](./images/commits2.png "commits2")
+
+![commits3](./images/commits3.png "commits3")
+
+ 
+**URL del repositorio del Landing Page:** https://github.com/Kauflink/landing-entreprenly
 
 ## 5.3. Validation Interviews
 
