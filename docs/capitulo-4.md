@@ -889,7 +889,7 @@ La estructura global de la aplicación se organiza en torno a tres zonas funcion
     <img src="images/Landing_Wireframe.png" alt="Landing_Wireframe" width="800"/>
   </p>
  
-*Ilustración N – Web Application Wireframe: Dashboard Principal*
+*Ilustración – Web Application Wireframe: Dashboard Principal*
  
 El Dashboard es el centro neurálgico de la operación diaria del comerciante. Su wireframe adopta la estructura de tres zonas funcionales descritas anteriormente y organiza el contenido en dos niveles de lectura. En el **nivel superior**, una fila de cuatro tarjetas KPI (US-09) muestra en tiempo real los indicadores más críticos del negocio: "Ventas del día", "Stock crítico", "Lotes próximos a vencer" y "Total en caja". Cada tarjeta presenta una cifra principal de gran tamaño, una etiqueta descriptiva y un ícono de referencia. En la esquina superior de cada tarjeta se ubica un indicador de estado de color (verde, amarillo o rojo) para facilitar la lectura rápida sin necesidad de interpretar los números.
  
@@ -901,7 +901,7 @@ En el **nivel secundario**, el wireframe muestra una tabla resumen de las últim
     <img src="images/Productos_Wireframe.png" alt="Productos_Wireframe" width="800"/>
   </p>
  
-*Ilustración N – Web Application Wireframe: Módulo de Productos*
+*Ilustración – Web Application Wireframe: Módulo de Productos*
  
 La pantalla de gestión de productos (US-01, US-05, US-10, US-13) presenta un layout de **lista con panel de filtros**. El panel lateral izquierdo contiene los filtros de búsqueda: campo de texto libre para búsqueda por nombre (US-13), selector de categoría y selector de tipo de medida (Unidad / Peso). El área principal de contenido muestra los productos en una grilla de tarjetas de 3 columnas.
  
@@ -915,7 +915,7 @@ En la parte superior derecha del área de contenido se ubica el botón primario 
     <img src="images/Lotes_Wireframe.png" alt="Lotes_Wireframe" width="800"/>
   </p>
  
-*Ilustración N – Web Application Wireframe: Módulo de Lotes*
+*Ilustración – Web Application Wireframe: Módulo de Lotes*
  
 El wireframe del módulo de lotes (US-02, US-03, US-04, US-06, US-09, US-11, US-24) está organizado en torno a una **tabla principal con panel de resumen en la parte superior**. El panel de resumen (US-09) muestra tres contadores estilizados: "Lotes activos", "Próximos a vencer (7 días)" y "Lotes vencidos". Este panel actúa como semáforo de estado: si no existen condiciones críticas, muestra únicamente los contadores sin ningún banner de alerta; si existen lotes en estado crítico, aparece un **banner de alerta inline** (US-11) con borde izquierdo de 4 px en el color de estado correspondiente (amarillo para próximos a vencer, rojo para vencidos) y un listado con los nombres de los lotes afectados.
  
@@ -927,7 +927,7 @@ La tabla de lotes presenta las columnas: Producto asociado, Número de lote, Fec
     <img src="images/Ventas_Wireframe.png" alt="Ventas_Wireframe" width="800"/>
   </p>
  
-*Ilustración N – Web Application Wireframe: Módulo de Ventas Presencial*
+*Ilustración – Web Application Wireframe: Módulo de Ventas Presencial*
  
 El wireframe del punto de venta (US-25 al US-30) adopta la distribución clásica de los sistemas POS: **panel izquierdo de búsqueda de productos** (aproximadamente el 55% del ancho) y **panel derecho del ticket de venta en construcción** (45% restante).
  
@@ -943,7 +943,7 @@ El **Resumen de Caja** (US-29, US-31) aparece como un bloque fijo en la parte in
     <img src="images/Chatbot_Wireframe.png" alt="ChatBot_Wireframe" width="800"/>
   </p>
  
-*Ilustración N – Web Application Wireframe: Módulo de Chatbot WhatsApp*
+*Ilustración – Web Application Wireframe: Módulo de Chatbot WhatsApp*
  
 El wireframe del módulo de chatbot (US-32 al US-35) replica el patrón visual de las aplicaciones de mensajería, dividido en dos paneles. El **panel izquierdo** (35% del ancho) es la lista de conversaciones activas, ordenada cronológicamente con el último mensaje visible como preview. El **panel derecho** (65% del ancho) es la ventana de conversación activa con el historial de mensajes (burbujas diferenciadas para mensajes del bot y del cliente), el campo de redacción y el botón de envío.
  
@@ -955,7 +955,7 @@ En la parte superior del módulo, cuando la cuenta de WhatsApp Business no está
     <img src="images/Pedidos_Wireframe.png" alt="Pedidos_Wireframe" width="800"/>
   </p>
  
-*Ilustración N – Web Application Wireframe: Panel de Pedidos del Chatbot*
+*Ilustración – Web Application Wireframe: Panel de Pedidos del Chatbot*
  
 El wireframe del módulo de pedidos presenta una **tabla de gestión de pedidos** recibidos a través del chatbot. Las columnas incluyen: número de pedido, cliente (nombre/número WhatsApp), productos solicitados (resumen), total, método de pago, estado (badge con colores de estado: amarillo para "Pendiente de pago", naranja para "Esperando validación", verde para "Confirmado", gris para "Cancelado") y acciones disponibles según el estado del pedido.
  
@@ -967,7 +967,7 @@ El detalle de cada pedido se abre en un **panel lateral deslizante** que muestra
     <img src="images/Suscripcion_Wireframe.png" alt="Suscripcion_Wireframe" width="800"/>
   </p>
  
-*Ilustración N – Web Application Wireframe: Módulo de Suscripción*
+*Ilustración – Web Application Wireframe: Módulo de Suscripción*
  
 El wireframe de suscripción (US-14 al US-23) está dividido en dos estados claramente diferenciados. Cuando el usuario tiene el **Plan Free**, la pantalla muestra dos tarjetas comparativas de planes: "Plan Free" (sin borde activo, con listado de funcionalidades limitadas) y "Plan Control" (con borde destacado y badge "Recomendado"), y el botón "Elegir plan" (US-14). Al presionar "Continuar con la suscripción" (US-15), el wireframe muestra un formulario de facturación en dos pasos: datos personales/empresa y datos de pago.
  
@@ -1098,7 +1098,7 @@ Esta sección presenta los mock-ups de alta fidelidad de la aplicación web de E
     <img src="images/landing.png" alt="landing" width="800"/>
   </p>
  
-*Ilustración N – Web Application Mock-up: Dashboard Principal*
+*Ilustración – Web Application Mock-up: Dashboard Principal*
  
 El dashboard aplica la paleta de colores primaria del proyecto sobre una superficie clara (#FFFFFF), con tarjetas de resumen financiero que distinguen visualmente el efectivo en caja de los pagos digitales mediante color de acento. Las alertas de inventario se presentan con indicadores de estado de color, advertencia en amarillo para lotes próximos a vencer, crítico en rojo para stock agotado, para garantizar una lectura inmediata del estado operativo sin necesidad de navegar a módulos secundarios. El sidebar muestra los módulos activos con el ícono correspondiente y destaca con color de fondo el módulo actualmente seleccionado.
  
@@ -1108,7 +1108,7 @@ El dashboard aplica la paleta de colores primaria del proyecto sobre una superfi
     <img src="images/Productos.png" alt="Producto" width="800"/>
   </p>
  
-*Ilustración N – Web Application Mock-up: Módulo de Productos*
+*Ilustración – Web Application Mock-up: Módulo de Productos*
  
 La vista de inventario presenta la grilla de tarjetas de producto con tipografía de alto contraste sobre fondo claro. Los botones de acción primaria (Agregar producto) siguen el color de acción definido en el Design System. Los badges de tipo de medida ("UNIDAD" o "PESO") se presentan con colores diferenciados para facilitar la identificación rápida. El estado del stock se codifica visualmente con colores de estado consistentes en todo el sistema: verde para disponible, amarillo para bajo y rojo para agotado. El drawer lateral aplica el mismo sistema de componentes que el resto de la plataforma, con inputs en estado neutro, focus y error, y el botón "Guardar" en el color de acción primario.
  
@@ -1119,7 +1119,7 @@ La vista de inventario presenta la grilla de tarjetas de producto con tipografí
   </p>
  
  
-*Ilustración N – Web Application Mock-up: Módulo de Lotes*
+*Ilustración – Web Application Mock-up: Módulo de Lotes*
  
 La vista de lotes presenta el panel de resumen en la parte superior con los tres contadores estilizados en tarjetas de fondo claro. Cuando existen condiciones críticas, el banner de alerta aparece con borde izquierdo de 4 px en el color de estado (amarillo para próximos a vencer, rojo para vencidos) y contrasta visualmente sobre el fondo blanco de la página. La tabla de lotes aplica filas con fondo alternado para facilitar la lectura horizontal y los badges de estado (Vigente, Por vencer, Vencido) utilizan los colores de estado del sistema. El modal de creación de lote aplica el mismo sistema de inputs y validación que el drawer de productos.
  
@@ -1129,7 +1129,7 @@ La vista de lotes presenta el panel de resumen en la parte superior con los tres
     <img src="images/ventas.png" alt="ventas" width="800"/>
   </p>
  
-*Ilustración N – Web Application Mock-up: Módulo de Ventas Presencial*
+*Ilustración – Web Application Mock-up: Módulo de Ventas Presencial*
  
 El punto de venta presenta la distribución de dos columnas con la división visual claramente definida mediante una línea divisoria o diferencia de fondo. El catálogo de productos en el panel izquierdo usa cards compactas con imagen de referencia, nombre y precio visible. El indicador de peso de la balanza IoT se muestra en tiempo real con un componente destacado, un recuadro con borde del color de acento y el valor en tipografía grande, cuando el producto activo es de tipo "por peso". El ticket de venta en el panel derecho muestra los ítems en una lista limpia con subtotales alineados a la derecha. La selección del método de pago usa botones de toggle de ancho completo con iconografía de las plataformas (efectivo, Yape, Plin). El resumen de caja en la parte inferior del panel izquierdo muestra los tres contadores con iconografía diferenciada para efectivo y digital.
  
@@ -1139,7 +1139,7 @@ El punto de venta presenta la distribución de dos columnas con la división vis
     <img src="images/chatbot.png" alt="chatbot" width="800"/>
   </p>
  
-*Ilustración N – Web Application Mock-up: Módulo de Chatbot WhatsApp*
+*Ilustración – Web Application Mock-up: Módulo de Chatbot WhatsApp*
  
 El módulo de chatbot aplica el patrón visual de las aplicaciones de mensajería modernas. El panel izquierdo de conversaciones usa avatares de color generado por el número de WhatsApp del cliente, con el nombre, el preview del último mensaje y el timestamp relativo. El panel derecho de conversación presenta las burbujas diferenciadas: los mensajes del bot en el color secundario del sistema y los mensajes del cliente en fondo blanco con borde sutil. El estado de vinculación de la cuenta WhatsApp Business se muestra de forma prominente en el encabezado del módulo, con indicador de punto verde para "Conectado" y rojo para "Desconectado".
  
@@ -1149,7 +1149,7 @@ El módulo de chatbot aplica el patrón visual de las aplicaciones de mensajerí
     <img src="images/pedidos.png" alt="Pedidos" width="800"/>
   </p>
  
-*Ilustración N – Web Application Mock-up: Panel de Pedidos del Chatbot*
+*Ilustración – Web Application Mock-up: Panel de Pedidos del Chatbot*
  
 El panel de pedidos presenta las filas de la tabla con los badges de estado usando el sistema de colores del proyecto. El panel lateral de detalle del pedido aplica una distribución visual clara: en la parte superior, los datos del cliente y los productos solicitados en formato de lista compacta; en el área central, el visor del comprobante de pago cargado por el cliente con posibilidad de ampliar la imagen; y en la parte inferior fija, los botones de acción "Aprobar" (en color de éxito) y "Rechazar" (en color de error) con el campo de motivo que aparece al seleccionar "Rechazar". La alerta por pagos rechazados repetidos se muestra como un badge de advertencia junto al nombre del cliente, consistente con el sistema de alertas del resto de la plataforma.
  
@@ -1159,7 +1159,7 @@ El panel de pedidos presenta las filas de la tabla con los badges de estado usan
     <img src="images/suscripcion.png" alt="suscripcion" width="800"/>
   </p>
  
-*Ilustración N – Web Application Mock-up: Módulo de Suscripción*
+*Ilustración – Web Application Mock-up: Módulo de Suscripción*
  
 La vista de selección de plan presenta las dos tarjetas comparativas con una diferenciación visual clara: la tarjeta del Plan Control usa el color de acento del sistema como borde y el badge "Recomendado" en el color primario. La lista de funcionalidades usa íconos de check para las incluidas y íconos de bloqueo para las no disponibles en el plan inferior. El formulario de facturación sigue el mismo sistema de inputs y validación que el resto de la plataforma. El panel de gestión del plan activo presenta el estado de la suscripción con una etiqueta de badge verde "Activa", la fecha de próxima renovación y el historial de pagos en formato de tabla compacta.
 
@@ -1176,7 +1176,7 @@ Esta sección presenta los User Flow Diagrams de la aplicación web de Entrepren
     <img src="images/User_flow1.png" alt="User_flow1" width="800"/>
   </p>
  
-*Ilustración N – Web Application User Flow Diagram: Gestión de Inventario*
+*Ilustración – Web Application User Flow Diagram: Gestión de Inventario*
  
 **Happy Path:**
 Dashboard → Clic "Productos" en Sidebar → Vista de productos → Clic "Agregar producto" → Drawer lateral se despliega → Completa todos los campos → Clic "Guardar" → Toast de éxito "Producto registrado correctamente" → Drawer se cierra → Nuevo producto aparece en la grilla.
@@ -1195,7 +1195,7 @@ Dashboard → Clic "Productos" en Sidebar → Vista de productos → Clic "Agreg
     <img src="images/User_flow2.png" alt="User_flow2" width="800"/>
   </p>
  
-*Ilustración N – Web Application User Flow Diagram: Gestión de Lotes*
+*Ilustración – Web Application User Flow Diagram: Gestión de Lotes*
  
 **Happy Path:**
 Dashboard → Clic "Lotes" → Panel de resumen con contadores → Clic "Crear lote" → Modal de creación → Selecciona producto → Completa fecha de vencimiento y cantidad → Clic "Agregar" → Modal se cierra → Lote aparece en la tabla con badge "Activo".
@@ -1215,7 +1215,7 @@ Dashboard → Clic "Lotes" → Panel de resumen con contadores → Clic "Crear l
     <img src="images/User_flow3.png" alt="User_flow3" width="800"/>
   </p>
  
-*Ilustración N – Web Application User Flow Diagram: Registro de Venta Presencial*
+*Ilustración – Web Application User Flow Diagram: Registro de Venta Presencial*
  
 **Happy Path:**
 Dashboard → Clic "Ventas" → Módulo POS carga → Cajero escribe nombre del producto en buscador → Sistema muestra resultados → Cajero selecciona producto → Modal de cantidad/peso aparece → Ingresa valor → Clic "Confirmar" → Ítem aparece en el ticket con subtotal → Repite para más productos si es necesario → Cajero selecciona método de pago → Clic "Finalizar venta y emitir boleta" → Toast verde de éxito → Ticket se limpia → Resumen de caja se actualiza.
@@ -1235,7 +1235,7 @@ Dashboard → Clic "Ventas" → Módulo POS carga → Cajero escribe nombre del 
     <img src="images/User_flow4.png" alt="User_flow4" width="800"/>
   </p>
  
-*Ilustración N – Web Application User Flow Diagram: Validación de Pago de Pedido del Chatbot*
+*Ilustración – Web Application User Flow Diagram: Validación de Pago de Pedido del Chatbot*
  
 **Happy Path:**
 Dashboard → Clic "Pedidos" → Lista de pedidos → Selecciona pedido en estado "Esperando validación" → Panel lateral se despliega → Revisa detalle y comprobante de pago → Clic "Aprobar pago" → Modal de confirmación → Clic "Confirmar" → Pedido pasa a estado "Confirmado" → Stock se descuenta → Chatbot envía comprobante al cliente por WhatsApp → Toast de éxito.
@@ -1255,7 +1255,7 @@ Dashboard → Clic "Pedidos" → Lista de pedidos → Selecciona pedido en estad
   </p>
  
 
-*Ilustración N – Web Application User Flow Diagram: Suscripción al Plan Control*
+*Ilustración – Web Application User Flow Diagram: Suscripción al Plan Control*
  
 **Happy Path:**
 Dashboard → Clic "Suscripción" → Pantalla muestra comparativa de planes → Clic "Elegir plan" en tarjeta Plan Control → Tarjeta queda seleccionada → Clic "Continuar con la suscripción" → Formulario de facturación → Completa datos → Clic "Continuar al pago" → Resumen de cobro → Clic "Pagar y activar suscripción" → Pago aprobado → Plan Control activado → Panel de suscripción muestra estado "Activa".
@@ -1377,14 +1377,15 @@ A continuación, se presentan los principales flujos de interacción del sistema
 <p align="center"><img src="images/Entreprenly - Flujo Perfil y Configuracion.jpg" width="500"/></p>
 
 ### 4.6.2. Software Architecture Context Diagram
-<p align="center">A continuación, se presenta el System Context Diagram del sistema Entreprenly. En este diagrama se identifica al actor principal, denominado "Emprendedor", quien interactúa con la plataforma a través de la aplicación web. Asimismo, se muestran los sistemas externos que se integran con la solución, tales como servicios de autenticación, mensajería, almacenamiento y procesamiento de pagos.</p>
+A continuación, se presenta el System Context Diagram del sistema Entreprenly. En este diagrama se identifica al actor principal, denominado "Emprendedor", quien interactúa con la plataforma a través de la aplicación web. Asimismo, se muestran los sistemas externos que se integran con la solución, tales como servicios de autenticación, mensajería, almacenamiento y procesamiento de pagos
+
 <p align="center">
 <p align="center">
 <img src="images/structurizr-104049-EntreprenlySystemContext.png" width="500"/>
 </p>
 
 ### 4.6.3. Software Architecture Container Diagrams
-<p align="center">A continuación, se presenta el Container Diagram del sistema Entreprenly. Este diagrama describe la arquitectura interna a nivel de contenedores, mostrando los principales componentes desplegables, como la aplicación web, el API Gateway y los distintos Bounded Contexts implementados como servicios independientes. Además, se incluyen las bases de datos asociadas a cada contexto y los sistemas externos con los que interactúan, permitiendo visualizar la distribución de responsabilidades, la comunicación entre componentes y la estructura general del sistema</p>
+A continuación, se presenta el Container Diagram del sistema Entreprenly. Este diagrama describe la arquitectura interna a nivel de contenedores, mostrando los principales componentes desplegables, como la aplicación web, el API Gateway y los distintos Bounded Contexts implementados como servicios independientes. Además, se incluyen las bases de datos asociadas a cada contexto y los sistemas externos con los que interactúan, permitiendo visualizar la distribución de responsabilidades, la comunicación entre componentes y la estructura general del sistema
 <p align="center">
 <img src="images/structurizr-104049-EntreprenlyContainer.png" width="500"/>
 </p>
