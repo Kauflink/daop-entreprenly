@@ -984,6 +984,7 @@ Antes de iniciar la sesión, el equipo preparó el tablero de Miro con el espaci
 
 Se definieron los colores de cada tipo de elemento según la convención del método:
 
+<div align="center">
 <table>
   <thead>
     <tr>
@@ -993,23 +994,25 @@ Se definieron los colores de cada tipo de elemento según la convención del mé
   </thead>
   <tbody>
     <tr>
-      <td style="background-color:#FF9800; color:#000; font-weight:bold; text-align:center;">Domain Event</td>
+      <td font-weight:bold; text-align:center;">Domain Event</td>
       <td>Hecho relevante que ocurrió en el dominio del negocio. Se redacta en tiempo pasado.</td>
     </tr>
     <tr>
-      <td style="background-color:#FFEB3B; color:#000; font-weight:bold; text-align:center;">Actor</td>
+      <td font-weight:bold; text-align:center;">Actor</td>
       <td>Persona con un rol específico que desencadena o participa en un evento del dominio.</td>
     </tr>
     <tr>
-      <td style="background-color:#F48FB1; color:#000; font-weight:bold; text-align:center;">External System</td>
+      <td font-weight:bold; text-align:center;">External System</td>
       <td>Sistema externo que interactúa con la plataforma, enviando o recibiendo información.</td>
     </tr>
     <tr>
-      <td style="background-color:#F44336; color:#fff; font-weight:bold; text-align:center;">Hot Spot</td>
+      <td font-weight:bold; text-align:center;">Hot Spot</td>
       <td>Área de incertidumbre, conflicto o riesgo que requiere atención o resolución posterior.</td>
     </tr>
   </tbody>
 </table>
+</div>
+
 
 En esta primera etapa, cada miembro propuso de forma individual los eventos de dominio relevantes para el sistema, redactándolos en tiempo pasado y representándolos con post-its de color naranja. Se buscó cubrir los flujos del comerciante y del cliente final sin filtrar ni debatir, generando el mayor volumen posible de eventos. Los eventos identificados abarcaron los procesos de registro de productos, control de inventario por peso (IoT), ventas presenciales, pedidos por WhatsApp, conciliación de caja y gestión de alertas operativas.
 
