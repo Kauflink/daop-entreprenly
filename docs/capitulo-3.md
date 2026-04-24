@@ -1142,9 +1142,9 @@
     <td></td>
   </tr>
 
-  <!-- US 69 -->
+  <!-- US 71 -->
   <tr>
-    <td>US-74</td>
+    <td>US-71</td>
     <td>Visualizar el centro de soporte</td>
     <td>Como comerciante, quiero visualizar el centro de soporte al presionar el botón de Ayuda para acceder de forma rápida a las opciones de asistencia disponibles.</td>
     <td>
@@ -1162,9 +1162,9 @@
     <td>Epic-17</td>
   </tr>
 
-  <!-- US 70 -->
+  <!-- US 72 -->
   <tr>
-    <td>US-75</td>
+    <td>US-72</td>
     <td>Buscar artículo de ayuda</td>
     <td>Como comerciante, quiero buscar artículos de ayuda por palabras clave para encontrar rápidamente la información que necesito sin revisar todas las categorías.</td>
     <td>
@@ -1182,9 +1182,9 @@
     <td>Epic-17</td>
   </tr>
 
-  <!-- US 71 -->
+  <!-- US 73 -->
   <tr>
-    <td>US-76</td>
+    <td>US-73</td>
     <td>Consultar artículo de ayuda</td>
     <td>Como comerciante, quiero abrir y leer un artículo de ayuda para entender cómo usar una funcionalidad de la plataforma o resolver un problema específico.</td>
     <td>
@@ -1202,9 +1202,9 @@
     <td>Epic-17</td>
   </tr>
 
-  <!-- US 72 -->
+  <!-- US 74 -->
   <tr>
-    <td>US-77</td>
+    <td>US-74</td>
     <td>Reportar un problema</td>
     <td>Como comerciante, quiero reportar un problema o incidencia desde el centro de soporte para que el equipo de Entreprenly pueda revisarlo y darle seguimiento.</td>
     <td>
@@ -1224,9 +1224,9 @@
     <td>Epic-17</td>
   </tr>
 
-  <!-- US 73 -->
+  <!-- US 75 -->
   <tr>
-    <td>US-78</td>
+    <td>US-75</td>
     <td>Confirmar envío del reporte</td>
     <td>Como comerciante, quiero recibir una confirmación visual tras enviar un reporte para tener la certeza de que mi solicitud fue registrada correctamente.</td>
     <td>
