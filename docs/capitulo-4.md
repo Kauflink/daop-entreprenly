@@ -1352,7 +1352,7 @@ Pagos
 En este Bounded Context se gestionan los pagos tanto de ventas presenciales como de aquellas realizadas a través de WhatsApp.
 
 Ventas
-<p align="center"> <img src="images/Entreprenly - Ventas.jpg" width="500"/> <img src="images/Canvas BC 3.jpg" width="500"/> </p>
+<p align="center"> <img src="images/Entreprenly - VentaS.jpg" width="500"/> <img src="images/Canvas BC 3.jpg" width="500"/> </p>
 
 En este Bounded Context se realiza la gestión de ventas presenciales. Este proceso incluye la verificación de stock y la asignación de datos dependiendo del tipo de producto (por unidad o por peso).
 
