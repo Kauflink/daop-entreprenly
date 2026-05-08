@@ -1105,7 +1105,7 @@ El dashboard aplica la paleta de colores primaria del proyecto sobre una superfi
 #### Módulo de Productos
  
 <p align="center">
-    <img src="images/Productos.png" alt="Producto" width="800"/>
+    <img src="images/productos.png" alt="Producto" width="800"/>
   </p>
  
 *Ilustración – Web Application Mock-up: Módulo de Productos*
