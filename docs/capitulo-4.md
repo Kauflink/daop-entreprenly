@@ -1479,49 +1479,52 @@ El módulo de suscripciones fue ampliado con un catálogo de planes y funcionali
 ![Database Diagram Entreprenly](images/Entreprendly_database_diagram.png)
 
 </div>
-
 El esquema se organiza en las siguientes tablas por categoría:
+
 **Identidad y Acceso**
 
 - `Comerciantes` (datos de acceso, perfil y roles).
 - `PreferenciasComercio` (idioma, moneda, tema y notificaciones).
 - `SesionesActivas` (JWTs activos para control y revocación de sesiones).
 - `TokensVerificacion` (tokens de verificación y recuperación de contraseña).
-- `Clientes` (datos básicos para pedidos y comprobantes).
+- `Clientes` (datos básicos por comerciante para pedidos y comprobantes).
 
 **Suscripciones**
 
-- `Suscripciones` (plan contratado y ciclo de vida de la suscripción).
+- `PlanesDetalle` (catálogo de planes con precios, badge y estado activo).
+- `CaracteristicasPlan` (funcionalidades habilitadas por plan mediante FK a `PlanesDetalle`).
+- `Suscripciones` (plan contratado, ciclo de facturación y ciclo de vida de la suscripción).
 - `BoletoSuscripcion` (registro de cobros y últimos 4 dígitos de tarjeta).
-- `PlanesDetalle` (catálogo de planes, precios y recomendaciones).
-- `CaracteristicasPlan` (funcionalidades habilitadas por plan).
 - `MetodosPagoSuscripcion` (métodos de pago registrados por el comerciante).
 - `DatosFiscales` (información fiscal asociada al comerciante).
-- `ActividadSuscripcion` (historial de actividad y eventos de suscripción).
+- `ActividadSuscripcion` (historial de eventos con tipo de evento y metadata JSON para i18n).
 
 **Inventario**
 
-- `Categorias` (clasificación normalizada de productos).
+- `Categorias` (clasificación de productos por comerciante).
 - `Productos` (catálogo principal con control de stock y tipo de producto).
-- `Lotes` (trazabilidad, vencimiento y códigos QR de inventario).
+- `Lotes` (trazabilidad, vencimiento, fecha de entrada y códigos QR de inventario).
 
 **Ventas**
 
-- `LecturasBalanza` (pesajes realizados por la balanza inteligente).
+- `LecturasBalanza` (pesajes realizados por la balanza IoT).
 - `Ventas` (encabezado de transacciones presenciales).
-- `DetalleVenta` (detalle de productos vendidos).
-- `ResumenDiario` (arqueo y cierre diario de caja).
+- `DetalleVenta` (detalle de productos vendidos con precio snapshot).
+- `ResumenDiario` (arqueo y cierre diario de caja con conteo de ventas).
 
 **Chatbot WhatsApp**
 
-- `ConexionesWhatsApp` (sesión vinculada mediante QR).
-- `Conversaciones` (historial de mensajes del chatbot y clientes).
+- `ConexionesWhatsApp` (sesión vinculada mediante QR, nombre de negocio y timestamp de conexión).
+- `Conversaciones` (hilo de conversación por cliente con estado y timestamps).
+- `MensajesConversacion` (mensajes individuales dentro del hilo, incluyendo imágenes de comprobante).
 
 **Pedidos**
 
-- `Pedidos` (gestión del flujo de pedidos digitales).
-- `DetallePedido` (detalle de productos solicitados en cada pedido).
+- `Pedidos` (gestión del flujo de pedidos digitales con contador de rechazos y estado bloqueado).
+- `DetallePedido` (detalle de productos solicitados con precio snapshot).
+- `Pagos` (comprobantes de pago digital Yape/Plin con estado de validación).
 
+---
 
 La normalización aplicada se resume en tres puntos principales:
 
@@ -1529,4 +1532,4 @@ La normalización aplicada se resume en tres puntos principales:
 
 - **Segunda Forma Normal (2FN):** se garantiza utilizando claves primarias simples en todas las tablas.
 
-- **Tercera Forma Normal (3FN):** se evidencia en la separación de entidades como `PreferenciasComercio`, `Categorias`, `DatosFiscales` y `CaracteristicasPlan`, eliminando dependencias transitivas y evitando redundancia de información. Asimismo, los valores derivados como subtotales no se almacenan en tablas de detalle, ya que pueden calcularse dinámicamente a partir de `cantidad` y `precio_unit`.
+- **Tercera Forma Normal (3FN):** se evidencia en la separación de entidades como `PreferenciasComercio`, `Categorias`, `DatosFiscales` y `CaracteristicasPlan`, eliminando dependencias transitivas y evitando redundancia de información. Los valores derivados como subtotales no se almacenan en tablas de detalle, ya que pueden calcularse dinámicamente a partir de `cantidad` y `precio_unit`. Los totales almacenados en `Ventas`, `Pedidos` y `ResumenDiario` son snapshots contables para auditoría e historial, no datos normalizados puros.
