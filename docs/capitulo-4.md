@@ -1372,41 +1372,41 @@ A continuación, se presentan los principales flujos de interacción del sistema
 <p align="center"><img src="images/Entreprenly - Flujo Perfil y Configuracion.jpg" width="500"/></p>
 
 ### 4.6.2. Software Architecture Context Diagram
-A continuación, se presenta el System Context Diagram del sistema Entreprenly. En este diagrama se identifica al actor principal, denominado "Emprendedor", quien interactúa con la plataforma a través de la aplicación web. Asimismo, se muestran los sistemas externos que se integran con la solución, tales como servicios de autenticación, mensajería, almacenamiento y procesamiento de pagos
+A continuación, se presenta el System Context Diagram del sistema Entreprenly. En este diagrama se identifica al actor principal, denominado "Emprendedor", quien interactúa con la plataforma a través de la aplicación web. Asimismo, se muestran los sistemas externos que se integran con la solución, tales como servicios de autenticación, mensajería y almacenamiento.
 
 <p align="center">
 <p align="center">
-<img src="images/structurizr-109637-EntreprenlySystemContext.png" width="500"/>
+<img src="images/structurizr-104049-EntreprenlySystemContext.png" width="500"/>
 </p>
 
 ### 4.6.3. Software Architecture Container Diagrams
 A continuación, se presenta el Container Diagram del sistema Entreprenly. Este diagrama describe la arquitectura interna a nivel de contenedores, mostrando los principales componentes desplegables, como la aplicación web, el API Gateway y los distintos Bounded Contexts implementados como servicios independientes. Además, se incluyen las bases de datos asociadas a cada contexto y los sistemas externos con los que interactúan, permitiendo visualizar la distribución de responsabilidades, la comunicación entre componentes y la estructura general del sistema
 <p align="center">
-<img src="images/structurizr-109637-EntreprenlyContainer.png" width="500"/>
+<img src="images/structurizr-104049-EntreprenlyContainer.png" width="500"/>
 </p>
 
 ### 4.6.4. Software Architecture Components Diagrams
-<p align="center">Generación y Autenticación de Cuenta BC</p> <p align="center"><img src="images/structurizr-109637-AuthComponent.png" width="500"/></p>
+<p align="center">Generación y Autenticación de Cuenta BC</p> <p align="center"><img src="images/structurizr-104049-AuthComponent.png" width="500"/></p>
 
 Este Bounded Context es responsable de la gestión de identidad del usuario dentro del sistema, abarcando tanto el registro como la autenticación. Para ello, integra mecanismos de acceso alternativo mediante Google OAuth, así como un sistema externo de correo para la verificación y vinculación de cuentas.
 A nivel funcional, incluye queries orientados a la lectura de datos de sesión y credenciales, y commands destinados a la creación de cuentas, actualización de información y cambio de contraseña.
 Finalmente, toda la información relacionada con autenticación es persistida en una base de datos MySQL, garantizando la consistencia y seguridad de los datos.
 
-<p align="center">Perfil y Configuración BC</p> <p align="center"><img src="images/structurizr-109637-ProfileComponent.png" width="500"/></p>
+<p align="center">Perfil y Configuración BC</p> <p align="center"><img src="images/structurizr-104049-ProfileComponent.png" width="500"/></p>
 
 Este Bounded Context se encarga de la gestión de la información del perfil del usuario y sus preferencias de configuración, tales como zona horaria, idioma, tema de interfaz (UI), notificaciones y foto de perfil.
 Recibe información inicial del usuario desde el Bounded Context de Generación y Autenticación de Cuenta (inbound), lo que le permite construir y mantener el perfil completo.
 Define queries para la lectura de datos del usuario y commands para la actualización de configuraciones y almacenamiento de cambios realizados. Además, puede enviar información configurada hacia otros contextos (outbound), como el idioma del usuario.
 Toda esta información es almacenada en una base de datos MySQL.
 
-<p align="center">Gestión y Proceso de Suscripción BC</p> <p align="center"><img src="images/structurizr-109637-SubscriptionComponent.png" width="500"/></p>
+<p align="center">Gestión y Proceso de Suscripción BC</p> <p align="center"><img src="images/structurizr-104049-SubscriptionComponent.png" width="500"/></p>
 
 Este Bounded Context es responsable de la gestión del ciclo de vida de las suscripciones, incluyendo la creación, renovación, cancelación y cambio de plan.
 Recibe como entrada información del usuario y configuraciones provenientes del Bounded Context de Perfil y Configuración (inbound), lo que le permite adaptar el proceso de suscripción a las preferencias del usuario.
 Cuenta con commands que gestionan las operaciones sobre la suscripción y queries que permiten consultar el estado, datos de facturación y detalles asociados al usuario.
 La información de suscripciones es persistida en una base de datos MySQL, asegurando el control y seguimiento del estado de cada cuenta.
 
-<p align="center">Gestión de Inventario BC</p> <p align="center"><img src="images/structurizr-109637-InventoryComponent.png" width="500"/></p>
+<p align="center">Gestión de Inventario BC</p> <p align="center"><img src="images/structurizr-104049-InventoryComponent.png" width="500"/></p>
 
 Este Bounded Context se encarga de la administración del inventario, incluyendo la creación, actualización y eliminación de productos, así como la gestión de lotes asociados.
 Además, incorpora funcionalidades de monitoreo como alertas de stock y caducidad de productos. Para ello, utiliza queries que permiten obtener configuraciones relevantes, como el idioma del usuario desde el Bounded Context de Perfil y Configuración (inbound).
@@ -1414,18 +1414,18 @@ Asimismo, expone información de productos hacia otros contextos (outbound), com
 Incluye commands para la gestión de productos y operaciones relacionadas, y persiste toda la información en una base de datos MySQL.
 
 
-<p align="center">Ventas BC</p> <p align="center"><img src="images/structurizr-109637-SalesComponent.png" width="500"/></p>
+<p align="center">Ventas BC</p> <p align="center"><img src="images/structurizr-104049-SalesComponent.png" width="500"/></p>
 
 Este Bounded Context gestiona el proceso de venta presencial, desde la selección de productos hasta la generación del comprobante.
-Para ello, consume información del Bounded Context de Inventario (inbound) para validar disponibilidad de productos y stock, así como del Bounded Context de Pagos para verificar el estado de las transacciones.
+Para ello, consume información del Bounded Context de Inventario (inbound) para validar disponibilidad de productos y stock, y registra el método de pago seleccionado como parte del propio proceso de venta.
 Incluye queries para la consulta de información relevante y commands para registrar las ventas realizadas.
 Toda la información generada es persistida en una base de datos MySQL.
 
-<p align="center">ChatBot BC</p> <p align="center"><img src="images/structurizr-109637-ChatbotComponent.png" width="500"/></p>
+<p align="center">ChatBot BC</p> <p align="center"><img src="images/structurizr-104049-ChatbotComponent.png" width="500"/></p>
 
 Este Bounded Context permite la gestión de ventas a través de un canal conversacional basado en WhatsApp.
-Para su funcionamiento, consume información del Bounded Context de Inventario (inbound) para consultar disponibilidad de productos, así como del Bounded Context de Pagos para verificar y confirmar transacciones.
-Incluye queries para la obtención de información necesaria durante la interacción con el usuario y commands para la generación de pedidos y procesamiento de pagos.
+Para su funcionamiento, consume información del Bounded Context de Inventario (inbound) para consultar disponibilidad de productos y registra la confirmación de pago dentro del flujo del pedido.
+Incluye queries para la obtención de información necesaria durante la interacción con el usuario y commands para la generación, actualización y seguimiento de pedidos.
 Además, se integra con servicios externos de mensajería (WhatsApp API) y persiste la información en una base de datos MySQL, permitiendo el seguimiento de las conversaciones y transacciones realizadas.
 
 ## 4.7. Software Object-Oriented Design
