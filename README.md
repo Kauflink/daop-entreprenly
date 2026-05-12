@@ -195,46 +195,56 @@ En esta sección se detallan las actividades realizadas en el trabajo final y el
 <table>
   <thead>
     <tr>
-      <th>Criterio específico</th>
-      <th>Acciones realizadas</th>
-      <th>Conclusiones</th>
+      <th align="left">CRITERIO ESPECÍFICO</th>
+      <th align="left">ACCIONES REALIZADAS</th>
+      <th align="left">CONCLUSIONES</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>Comunica oralmente con efectividad a diferentes rangos de audiencia.</td>
-      <td>
+      <td valign="top" width="15%">Comunica oralmente con efectividad a diferentes rangos de audiencia.</td>
+      <td valign="top" width="50%">
         <strong>Camargo Briceño, Joseph Julius</strong><br>
-        <em>AV1:</em> Lideró la reunión de Sprint Planning 1 vía Discord, comunicando el sprint goal, el alcance del entregable y la distribución de tareas al equipo de forma clara y estructurada. Participó en las entrevistas con usuarios del segmento objetivo (comerciantes de retail), adaptando el lenguaje técnico a una audiencia no especializada para validar la problemática identificada en la startup Kauflink.<br><br>
+        <em>AV1:</em> Lideró la reunión de Sprint Planning 1 vía Discord, comunicando el sprint goal, el alcance del entregable y la distribución de tareas al equipo de forma clara y estructurada. Participó en las entrevistas con usuarios del segmento objetivo, adaptando el lenguaje técnico a una audiencia no especializada.<br>
+        <em>TB1:</em> Sustentó la lógica técnica del <strong>Bounded Context de Perfil y Configuración</strong> ante el equipo. Lideró la sesión de revisión de correcciones, comunicando los ajustes necesarios en el modelo de dominio para alinearlos con el feedback del profesor de forma directa.<br><br>
         <strong>Peirano Brun, José Antonio</strong><br>
-        <em>AV1:</em> Participó activamente en las sesiones de needfinding y en las reuniones de coordinación del equipo, comunicando sus observaciones y propuestas de mejora de forma oral ante sus compañeros. Colaboró en la exposición de hallazgos derivados del análisis competitivo y del proceso de Lean UX, dirigiendo sus argumentos tanto a una audiencia técnica (el equipo) como a la audiencia representada por los User Personas definidos.<br><br>
+        <em>AV1:</em> Participó activamente en las sesiones de needfinding y en las reuniones de coordinación del equipo, comunicando sus observaciones y propuestas de mejora de forma oral ante sus compañeros. Colaboró en la exposición de hallazgos derivados del análisis competitivo.<br>
+        <em>TB1:</em> Expuso la arquitectura del <strong>Bounded Context de Gestión de Inventario</strong>. Sustentó las soluciones técnicas aplicadas para resolver las observaciones del profesor respecto al manejo de stock y lotes ante el equipo de desarrollo.<br><br>
         <strong>Palma De Los Santos, Elynor Mikela</strong><br>
-        <em>AV1:</em> Participó en las sesiones de entrevistas con usuarios del segmento objetivo, formulando preguntas con claridad y adaptando el registro comunicativo según el perfil del entrevistado (comerciante o consumidor). Expuso sus hallazgos ante el equipo durante las reuniones de análisis, contribuyendo a la construcción colectiva de los User Personas y el Empathy Map.<br><br>
+        <em>AV1:</em> Participó en las sesiones de entrevistas con usuarios del segmento objetivo, formulando preguntas con claridad y adaptando el registro comunicativo según el perfil del entrevistado. Expuso sus hallazgos ante el equipo durante las reuniones de análisis.<br>
+        <em>TB1:</em> Presentó el diseño conversacional del <strong>Bounded Context de ChatBot</strong> y los cambios en el esquema de base de datos. Colaboró en la sustentación oral de las correcciones del entregable, comunicando mejoras en la experiencia de usuario basadas en el feedback docente.<br><br>
         <strong>Flores Pinchi, José Fernando</strong><br>
-        <em>AV1:</em> Participó en la reunión de Sprint Planning 1 y en las sesiones de coordinación del equipo, comunicando sus aportes al desarrollo del Landing Page de forma comprensible ante sus compañeros. Colaboró en la discusión oral de decisiones de diseño y estructura de contenido, justificando sus elecciones con argumentos orientados al usuario final.<br><br>
+        <em>AV1:</em> Participó en la reunión de Sprint Planning 1 y en las sesiones de coordinación del equipo, comunicando sus aportes al desarrollo del Landing Page de forma comprensible ante sus compañeros. Colaboró en la discusión oral de decisiones de diseño.<br>
+        <em>TB1:</em> Sustentó la lógica de transacciones del <strong>Bounded Context de Ventas</strong> y la estructura de la presentación final del proyecto (PPT). Participó en la defensa técnica de las decisiones de diseño del equipo frente a las correcciones indicadas por el docente.<br><br>
         <strong>Chavez Carrasco, Lionel Abraham</strong><br>
-        <em>AV1:</em> Propuso y sustentó oralmente ante el equipo las decisiones de diseño interactivo del Landing Page, incluyendo la implementación del switch de tema claro/oscuro, el selector de idioma y las animaciones del hero. Comunicó con precisión técnica las soluciones adoptadas durante el Sprint, siendo capaz de explicar decisiones de implementación tanto a compañeros técnicos como a miembros del equipo con perfiles distintos.
+        <em>AV1:</em> Propuso y sustentó oralmente ante el equipo las decisiones de diseño interactivo del Landing Page, incluyendo la implementación del switch de tema claro/oscuro y el selector de idioma. Comunicó con precisión técnica las soluciones adoptadas durante el Sprint.<br>
+        <em>TB1:</em> Explicó la lógica de pagos y estados en el <strong>Bounded Context de Gestión y Proceso de Suscripción</strong>. Sustentó las nuevas User Stories de la Landing Page ante el equipo, asegurando la comprensión técnica de los flujos de navegación actualizados.<br><br>
       </td>
-      <td>
-        En la entrega AV1, el equipo desarrolló la capacidad de comunicación oral efectiva en dos contextos diferenciados: con audiencias externas no técnicas (comerciantes y consumidores entrevistados durante el needfinding) y con audiencias técnicas internas (reuniones de Sprint Planning y sesiones de coordinación por Discord). La realización de entrevistas permitió a cada integrante practicar la adaptación del lenguaje según el perfil del interlocutor, evitando tecnicismos innecesarios al comunicarse con usuarios finales. Las reuniones de equipo, por su parte, fortalecieron la capacidad de argumentar decisiones de diseño y desarrollo de manera estructurada ante pares de ingeniería. Este proceso evidencia el inicio del desarrollo de la competencia de comunicación oral efectiva con distintos rangos de audiencia.
+      <td valign="top" width="35%">
+        A través de las entregas AV1 y TB1, el equipo fortaleció la comunicación técnica en entornos de alta exigencia. En la AV1 se priorizó la comunicación con usuarios finales, mientras que en la TB1 se consolidó la capacidad de sustentar decisiones arquitectónicas complejas y aplicar correcciones técnicas críticas de forma estructurada ante una audiencia experta.
       </td>
     </tr>
     <tr>
-      <td>Comunica por escrito con efectividad a diferentes rangos de audiencia.</td>
-      <td>
+      <td valign="top">Comunica por escrito con efectividad a diferentes rangos de audiencia.</td>
+      <td valign="top">
         <strong>Camargo Briceño, Joseph Julius</strong><br>
-        <em>AV1:</em> Redactó la descripción de la startup, misión, visión y valores en el Capítulo I, adaptando el tono a una audiencia académica y de negocio. Documentó las convenciones de GitFlow, Semantic Versioning y Conventional Commits en el informe técnico (Capítulo V), comunicando con precisión las reglas de contribución al repositorio para una audiencia desarrolladora. Elaboró la documentación del pipeline de CI/CD y el proceso de despliegue en GitHub Pages, redactando instrucciones técnicas paso a paso comprensibles para el equipo.<br><br>
+        <em>AV1:</em> Redactó la descripción de la startup, misión, visión y valores. Documentó las convenciones de GitFlow, Semantic Versioning y Conventional Commits. Elaboró la documentación del pipeline de CI/CD y el proceso de despliegue.<br>
+        <em>TB1:</em> Documentó las especificaciones técnicas del <strong>Bounded Context de Perfil y Configuración</strong> y redactó la sección de performance del sistema. Consolidó la redacción final de la TB1, integrando todas las correcciones solicitadas por el docente con registro formal.<br><br>
         <strong>Peirano Brun, José Antonio</strong><br>
-        <em>AV1:</em> Contribuyó en la redacción de secciones del informe técnico (Capítulos I–III), manteniendo un registro formal apropiado para una audiencia académica. Colaboró en la corrección del contenido textual del Landing Page, asegurando que los mensajes dirigidos a comerciantes y consumidores fueran coherentes, sin errores y comprensibles para una audiencia general sin formación técnica.<br><br>
+        <em>AV1:</em> Contribuyó en la redacción de secciones del informe técnico (Capítulos I-III), manteniendo un registro formal académico. Colaboró en la corrección del contenido textual del Landing Page para asegurar coherencia y claridad para el usuario general.<br>
+        <em>TB1:</em> Redactó técnicamente el <strong>Bounded Context de Gestión de Inventario</strong> y documentó las revisiones y actualizaciones del repositorio. Actualizó los requerimientos funcionales en el informe basándose en las observaciones técnicas recibidas para mejorar la precisión documental.<br><br>
         <strong>Palma De Los Santos, Elynor Mikela</strong><br>
-        <em>AV1:</em> Lideró la revisión y corrección ortográfica y de redacción del contenido textual del Landing Page de Entreprenly, garantizando que la comunicación escrita dirigida a los visitantes (comerciantes y clientes finales) fuera profesional y libre de errores. Participó en la redacción de User Stories y criterios de aceptación en el Capítulo III, usando un formato estructurado (Given-When-Then) orientado a comunicar requerimientos de forma clara a audiencias técnicas y no técnicas.<br><br>
+        <em>AV1:</em> Lideró la revisión y corrección ortográfica del contenido textual del Landing Page. Participó en la redacción de User Stories y criterios de aceptación estructurados (Given-When-Then) para audiencias técnicas y no técnicas.<br>
+        <em>TB1:</em> Documentó el <strong>Bounded Context de ChatBot</strong> y actualizó los diagramas de clases, structuraizer y esquema de base de datos. Lideró la revisión editorial de las correcciones finales para asegurar el cumplimiento de los estándares académicos.<br><br>
         <strong>Flores Pinchi, José Fernando</strong><br>
-        <em>AV1:</em> Colaboró en el desarrollo de la estructura base del Landing Page, produciendo contenido escrito (textos del hero, sección de funcionalidades, planes y footer) dirigido a una audiencia de usuarios finales. Participó en la corrección de redacción y ortografía del Landing Page y aportó a la documentación del informe técnico, contribuyendo a mantener la coherencia del tono escrito a lo largo del documento.<br><br>
+        <em>AV1:</em> Colaboró en la estructura base del Landing Page, produciendo textos dirigidos a usuarios finales. Participó en la corrección de redacción y ortografía del informe técnico, contribuyendo a la coherencia del tono escrito.<br>
+        <em>TB1:</em> Redactó la documentación técnica del <strong>Bounded Context de Ventas</strong> y elaboró el contenido de la presentación (PPT) del proyecto. Participó en la redacción de las correcciones del informe técnico, traduciendo los ajustes del profesor a especificaciones escritas precisas.<br><br>
         <strong>Chavez Carrasco, Lionel Abraham</strong><br>
-        <em>AV1:</em> Desarrolló el contenido escrito del Landing Page de Entreprenly —incluyendo headlines, descripciones de funcionalidades, CTAs diferenciados por segmento y textos de la sección de planes— comunicando la propuesta de valor del producto a una audiencia de comerciantes y consumidores finales en registro no técnico. Documentó las guías de estilo CSS, las convenciones de TypeScript y las decisiones de arquitectura frontend en el Capítulo IV, produciendo documentación técnica estructurada para audiencias de desarrollo.
+        <em>AV1:</em> Desarrolló el contenido escrito del Landing Page, incluyendo headlines y descripciones de funcionalidades. Documentó las guías de estilo CSS, convenciones de TypeScript y decisiones de arquitectura frontend en el Capítulo IV.<br>
+        <em>TB1:</em> Redactó el <strong>Bounded Context de Gestión y Proceso de Suscripción</strong> y las nuevas User Stories de la Landing Page. Documentó la revisión del repositorio y las correcciones de diagramación, asegurando que la arquitectura técnica quedara explicada con rigor técnico.
       </td>
-      <td>
-        A lo largo de la entrega AV1, el equipo produjo comunicación escrita dirigida a tres audiencias diferenciadas: una audiencia académica (el informe técnico con los Capítulos I al V, redactado con registro formal y estructurado), una audiencia de usuarios finales (el Landing Page de Entreprenly, con textos publicitarios, propuesta de valor y CTAs adaptados al segmento de comerciantes y consumidores peruanos), y una audiencia técnica de desarrollo (documentación de convenciones de código, GitFlow, configuración de CI/CD y diagramas de arquitectura). La coexistencia de estos tres registros escritos en un mismo entregable evidencia que el equipo ha iniciado el desarrollo de la capacidad de comunicación escrita efectiva con distintos rangos de audiencia, ajustando vocabulario, nivel de formalidad y estructura según el destinatario en cada contexto.
+      <td valign="top">
+        La comunicación escrita evolucionó hacia la documentación técnica profunda en la TB1. La redacción de los Bounded Contexts y la integración de diagramas estructurales evidencian capacidad para organizar información compleja, adaptando el lenguaje para desarrolladores y revisores académicos con precisión y coherencia.
       </td>
     </tr>
   </tbody>
