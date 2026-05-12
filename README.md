@@ -53,44 +53,43 @@ En esta sección se presenta la evidencia de colaboración del equipo Kauflink d
 
 **URL:** https://github.com/Kauflink/daop-entreprenly
 
+---
+
+### **AV1: Entregable Inicial**
+
 Durante la elaboración de la AV1, los cinco integrantes del equipo contribuyeron en la redacción y revisión del informe, distribuyendo la carga de trabajo por capítulos. El trabajo se organizó en ramas por capítulo siguiendo el flujo GitFlow, con integraciones periódicas a la rama `main` mediante Pull Requests.
 
-### Distribución de contribuciones por integrante
+#### Distribución de contribuciones por integrante (AV1)
 
-<table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-  <thead>
-    <tr>
-      <th>Integrante</th>
-      <th>Secciones principales del informe</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Camargo Briceño, Joseph Julius</td>
-      <td>1.1 Startup Profile · 1.1.1 Descripción de la Startup · 5.1 Software Configuration Management · 5.2.1 Sprint 1 (Sprint Planning, Sprint Backlog, Development Evidence, Deployment Evidence, Team Collaboration Insights)</td>
-    </tr>
-    <tr>
-      <td>Chavez Carrasco, Lionel Abraham</td>
-      <td>4.1 Style Guidelines · 4.3 Landing Page UI Design (Wireframes y Mock-ups) · 4.4 Web Applications UX/UI Design · 5.2.1.5 Execution Evidence for Sprint Review</td>
-    </tr>
-    <tr>
-      <td>Palma De Los Santos, Elynor Mikela</td>
-      <td>2.2 Entrevistas · 2.3 Needfinding (User Personas, Empathy Mapping, User Journey Mapping) · 3.1 User Stories (criterios de aceptación) · Student Outcome</td>
-    </tr>
-    <tr>
-      <td>Peirano Brun, José Antonio</td>
-      <td>2.1 Competidores · 2.4 Big Picture Event Storming · 4.6 Domain-Driven Software Architecture · 4.7 Software Object-Oriented Design</td>
-    </tr>
-    <tr>
-      <td>Flores Pinchi, José Fernando</td>
-      <td>1.2 Solution Profile · 1.3 Segmentos objetivo · 3.2 Impact Mapping · 3.3 Product Backlog · 4.8 Database Design</td>
-    </tr>
-  </tbody>
-</table>
+| Integrante | Secciones principales del informe |
+| :--- | :--- |
+| Camargo Briceño, Joseph Julius | 1.1 Startup Profile · 1.1.1 Descripción de la Startup · 5.1 Software Configuration Management · 5.2.1 Sprint 1 (Sprint Planning, Sprint Backlog, Development Evidence, Deployment Evidence, Team Collaboration Insights) |
+| Chavez Carrasco, Lionel Abraham | 4.1 Style Guidelines · 4.3 Landing Page UI Design (Wireframes y Mock-ups) · 4.4 Web Applications UX/UI Design · 5.2.1.5 Execution Evidence for Sprint Review |
+| Palma De Los Santos, Elynor Mikela | 2.2 Entrevistas · 2.3 Needfinding (User Personas, Empathy Mapping, User Journey Mapping) · 3.1 User Stories (criterios de aceptación) · Student Outcome |
+| Peirano Brun, José Antonio | 2.1 Competidores · 2.4 Big Picture Event Storming · 4.6 Domain-Driven Software Architecture · 4.7 Software Object-Oriented Design |
+| Flores Pinchi, José Fernando | 1.2 Solution Profile · 1.3 Segmentos objetivo · 3.2 Impact Mapping · 3.3 Product Backlog · 4.8 Database Design |
 
 ![Contri](docs/images/contri1.png "contri1")
-
 ![Contri2](docs/images/contri2.png "contri2")
+---
+
+### **TB1: Consolidación de Arquitectura y Sprint 2**
+
+Para la entrega TB1, el equipo se enfocó en la definición técnica de los Bounded Contexts y la ejecución del segundo Sprint, aplicando las correcciones indicadas por el docente y finalizando la documentación base del proyecto.
+
+#### Distribución de contribuciones por integrante (TB1)
+
+| Integrante | Secciones principales del informe |
+| :--- | :--- |
+| Camargo Briceño, Joseph Julius | 5.2.2.8 Team Collaboration Insights during Sprint · Bounded Context: Perfil y Configuración · Documentación de Performance del Sistema · Consolidación y Revisión de Redacción Académica TB1 |
+| Chavez Carrasco, Lionel Abraham | 5.2.2.3 Sprint Backlog 2 · Bounded Context: Gestión y Proceso de Suscripción · User Stories de la Landing Page · 5.2.2.5 Execution Evidence for Sprint Review |
+| Palma De Los Santos, Elynor Mikela | 5.2.2.6 Services Documentation Evidence for Sprint Review · Bounded Context: ChatBot · Actualización de Diagramas de Clases, Structurizer y Diagrama de Base de Datos · Student Outcome TB1 |
+| Peirano Brun, José Antonio | 5.2.2.2 Aspect Leaders and Collaborators · Bounded Context: Gestión de Inventario · 5.2.2.7 Software Deployment Evidence for Sprint Review · Revisión y Mantenimiento del Repositorio |
+| Flores Pinchi, José Fernando | 5.2.2.1 Sprint Planning 2 · 5.2.2.4 Development Evidence for Sprint Review · Bounded Context: Ventas · Elaboración de la Presentación (PPT) · Avance de Conclusiones, Bibliografía y Anexos |
+
+![Contri3](docs/images/contri3.png "contri3")
+![Contri4](docs/images/contri4.png "contri4")
+
 
 # Contenido
 
