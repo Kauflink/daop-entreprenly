@@ -1560,21 +1560,21 @@ Al término del Sprint 2, el equipo implementó y desplegó el Frontend Web Appl
 
 - **i18n:** Soporte bilingüe ES/EN en todos los BCs con traducción dinámica del título de la pestaña del navegador.
 
-*(Colocar captura de la vista Home del dashboard desplegado en Firebase)*
+![home_p](./images/home_p.png "home_p")
 
-*(Colocar captura del BC de Sales — Punto de Venta con ticket activo)*
+![sales_p](./images/sales_p.png "sales_p")
 
-*(Colocar captura del BC de Chatbot — vista de conexión QR y lista de conversaciones)*
+![chatbot_p](./images/chatbot_p.png "chatbot_p")
 
-*(Colocar captura del BC de Profile con las 8 tarjetas de configuración)*
+![profile_p](./images/profile_p.png "profile_p")
 
-*(Colocar captura del BC de Subscription con los planes en PEN y USD)*
+![subscription_p](./images/subscription_p.png "subscription_p")
 
 ---
 
 #### 5.2.2.6. Services Documentation Evidence for Sprint Review
 
-Durante el Sprint 2, el Backend (RESTful Web Services con Spring Boot) aún no fue implementado. El Frontend Web Application consume una API simulada mediante **JSON-Server**, que sirve el archivo `server/db.json` como una REST API completa accesible localmente en `http://localhost:3000/api/v1`. A continuación se documentan los endpoints utilizados durante este Sprint:
+Durante el Sprint 2, el Backend (RESTful Web Services con Spring Boot) aún no ha sido implementado. Por ello, la Frontend Web Application consume una API simulada mediante **JSON-Server**, que sirve el archivo `server/db.json` como una REST API completa. Esta API está disponible localmente en `http://localhost:3000/api/v1` y, adicionalmente, se desplegó una instancia remota en `http://db.entreprenly.online/api/v1` para que los datos también sean accesibles desde la aplicación publicada en Firebase. A continuación se documentan los endpoints utilizados durante este Sprint:
 
 <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%;">
   <thead>
@@ -1587,84 +1587,227 @@ Durante el Sprint 2, el Backend (RESTful Web Services con Spring Boot) aún no f
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td><code>/api/v1/products</code></td>
-      <td>GET</td>
-      <td>Retorna la lista completa de productos del inventario.</td>
-      <td>Ninguno</td>
-      <td><code>[{ "id": 1, "name": "Arroz Costeño", "price": 3.50, "unit": "kg", "stock": 50 }]</code></td>
-    </tr>
-    <tr>
-      <td><code>/api/v1/products/:id</code></td>
-      <td>GET</td>
-      <td>Retorna un producto específico por su ID.</td>
-      <td><code>id</code>: identificador numérico del producto (path param)</td>
-      <td><code>{ "id": 1, "name": "Arroz Costeño", "price": 3.50, "unit": "kg", "stock": 50 }</code></td>
-    </tr>
-    <tr>
-      <td><code>/api/v1/products/:id</code></td>
-      <td>PATCH</td>
-      <td>Actualiza parcialmente un producto, usado para decrementar el stock tras una venta.</td>
-      <td><code>id</code>: path param. Body: <code>{ "stock": &lt;nuevo valor&gt; }</code></td>
-      <td><code>{ "id": 1, "name": "Arroz Costeño", "price": 3.50, "unit": "kg", "stock": 45 }</code></td>
-    </tr>
-    <tr>
-      <td><code>/api/v1/sales</code></td>
-      <td>GET</td>
-      <td>Retorna el historial de ventas registradas.</td>
-      <td>Ninguno</td>
-      <td><code>[{ "id": 1, "date": "2026-05-12", "total": 25.50, "paymentMethod": "cash", "items": [...] }]</code></td>
-    </tr>
-    <tr>
-      <td><code>/api/v1/sales</code></td>
-      <td>POST</td>
-      <td>Registra una nueva venta al finalizar el ticket en el Punto de Venta.</td>
-      <td>Body: <code>{ "date", "total", "paymentMethod", "items": [{ "productId", "quantity", "subtotal" }] }</code></td>
-      <td><code>{ "id": 5, "date": "2026-05-12", "total": 18.00, "paymentMethod": "digital", "items": [...] }</code> — HTTP 201</td>
-    </tr>
-    <tr>
-      <td><code>/api/v1/cash-registers</code></td>
-      <td>GET</td>
-      <td>Retorna los registros de caja por fecha, usado para cargar el Resumen de Caja del día al iniciar la vista de Sales.</td>
-      <td>Ninguno</td>
-      <td><code>[{ "id": 1, "date": "2026-05-12", "totalCash": 150.00, "totalDigital": 75.00 }]</code></td>
-    </tr>
-    <tr>
-      <td><code>/api/v1/cash-registers/:id</code></td>
-      <td>PUT</td>
-      <td>Actualiza el registro de caja del día con los nuevos totales acumulados tras cada venta.</td>
-      <td><code>id</code>: path param. Body: <code>{ "date", "totalCash", "totalDigital" }</code></td>
-      <td><code>{ "id": 1, "date": "2026-05-12", "totalCash": 168.00, "totalDigital": 75.00 }</code></td>
-    </tr>
-    <tr>
-      <td><code>/api/v1/iot-scale</code></td>
-      <td>GET</td>
-      <td>Retorna el estado de la balanza IoT (conectada / desconectada) y el peso actual leído.</td>
-      <td>Ninguno</td>
-      <td><code>{ "id": 1, "connected": true, "deviceId": "SCALE-001", "currentWeight": 1.35 }</code></td>
-    </tr>
-    <tr>
-      <td><code>/api/v1/conversations</code></td>
-      <td>GET</td>
-      <td>Retorna las conversaciones activas de WhatsApp gestionadas por el Chatbot BC.</td>
-      <td>Ninguno</td>
-      <td><code>[{ "id": 1, "clientName": "Juan", "lastMessage": "Quiero pedir...", "status": "pending" }]</code></td>
-    </tr>
-    <tr>
-      <td><code>/api/v1/orders</code></td>
-      <td>GET</td>
-      <td>Retorna los pedidos recibidos por WhatsApp con sus productos y estado de pago.</td>
-      <td>Ninguno</td>
-      <td><code>[{ "id": 1, "conversationId": 1, "items": [...], "total": 12.00, "paymentStatus": "pending" }]</code></td>
-    </tr>
+
+  <!-- Inventario: productos unitarios -->
+  <tr>
+    <td colspan="5"><strong>Inventario — Productos unitarios</strong></td>
+  </tr>
+  <tr>
+    <td><code>/api/v1/inventory-unit-products</code></td>
+    <td>GET</td>
+    <td>Retorna la lista completa de productos vendidos por unidad.</td>
+    <td>Ninguno</td>
+    <td><code>[{ "id": 1, "name": "Coca Cola 500ml", "price": 2.50, "productType": "unit", "codeQR": "7501055363483", "weightGrams": 500, "brand": "Coca-Cola" }]</code></td>
+  </tr>
+  <tr>
+    <td><code>/api/v1/inventory-unit-products/:id</code></td>
+    <td>GET</td>
+    <td>Retorna un producto unitario específico por su ID.</td>
+    <td><code>id</code>: identificador numérico del producto (path param)</td>
+    <td><code>{ "id": 1, "name": "Coca Cola 500ml", "price": 2.50, "productType": "unit", "codeQR": "7501055363483", "weightGrams": 500, "brand": "Coca-Cola" }</code></td>
+  </tr>
+  <tr>
+    <td><code>/api/v1/inventory-unit-products/:id</code></td>
+    <td>PATCH</td>
+    <td>Actualiza parcialmente un producto unitario (precio, descripción, etc.).</td>
+    <td><code>id</code>: path param. Body: campos a actualizar, ej. <code>{ "price": 3.00 }</code></td>
+    <td><code>{ "id": 1, "name": "Coca Cola 500ml", "price": 3.00, "productType": "unit", ... }</code></td>
+  </tr>
+
+  <!-- Inventario: productos a granel -->
+  <tr>
+    <td colspan="5"><strong>Inventario — Productos a granel (por peso)</strong></td>
+  </tr>
+  <tr>
+    <td><code>/api/v1/inventory-weight-products</code></td>
+    <td>GET</td>
+    <td>Retorna la lista completa de productos vendidos por kilogramo.</td>
+    <td>Ninguno</td>
+    <td><code>[{ "id": 1, "name": "White Rice", "pricePerKg": 1.80, "productType": "weight", "codeQR": "WP-RICE-001" }]</code></td>
+  </tr>
+  <tr>
+    <td><code>/api/v1/inventory-weight-products/:id</code></td>
+    <td>PATCH</td>
+    <td>Actualiza parcialmente un producto a granel (precio por kg, descripción, etc.).</td>
+    <td><code>id</code>: path param. Body: campos a actualizar, ej. <code>{ "pricePerKg": 2.00 }</code></td>
+    <td><code>{ "id": 1, "name": "White Rice", "pricePerKg": 2.00, "productType": "weight", ... }</code></td>
+  </tr>
+
+  <!-- Inventario: lotes unitarios -->
+  <tr>
+    <td colspan="5"><strong>Inventario — Lotes unitarios</strong></td>
+  </tr>
+  <tr>
+    <td><code>/api/v1/inventory-unit-lots</code></td>
+    <td>GET</td>
+    <td>Retorna todos los lotes de productos unitarios con su cantidad y fecha de vencimiento.</td>
+    <td>Ninguno</td>
+    <td><code>[{ "id": 1, "productId": 1, "codeQR": "LOT-CC-001", "lotType": "unit", "quantity": 80, "expiryDate": "2026-03-15T00:00:00.000Z" }]</code></td>
+  </tr>
+  <tr>
+    <td><code>/api/v1/inventory-unit-lots/:id</code></td>
+    <td>PATCH</td>
+    <td>Actualiza la cantidad de un lote unitario, usado para decrementar stock tras una venta.</td>
+    <td><code>id</code>: path param. Body: <code>{ "quantity": &lt;nuevo valor&gt; }</code></td>
+    <td><code>{ "id": 1, "productId": 1, "quantity": 77, "expiryDate": "2026-03-15T00:00:00.000Z" }</code></td>
+  </tr>
+
+  <!-- Inventario: lotes a granel -->
+  <tr>
+    <td colspan="5"><strong>Inventario — Lotes a granel</strong></td>
+  </tr>
+  <tr>
+    <td><code>/api/v1/inventory-weight-lots</code></td>
+    <td>GET</td>
+    <td>Retorna todos los lotes de productos a granel con su cantidad en kg.</td>
+    <td>Ninguno</td>
+    <td><code>[{ "id": 1, "productId": 1, "codeQR": "WLOT-RICE-001", "lotType": "weight", "quantityKg": 120 }]</code></td>
+  </tr>
+  <tr>
+    <td><code>/api/v1/inventory-weight-lots/:id</code></td>
+    <td>PATCH</td>
+    <td>Actualiza la cantidad en kg de un lote a granel tras una venta o ajuste de inventario.</td>
+    <td><code>id</code>: path param. Body: <code>{ "quantityKg": &lt;nuevo valor&gt; }</code></td>
+    <td><code>{ "id": 1, "productId": 1, "quantityKg": 118.5, "lotType": "weight" }</code></td>
+  </tr>
+
+  <!-- Alertas de stock -->
+  <tr>
+    <td colspan="5"><strong>Inventario — Alertas de stock</strong></td>
+  </tr>
+  <tr>
+    <td><code>/api/v1/inventory-stock-alerts</code></td>
+    <td>GET</td>
+    <td>Retorna las alertas activas de inventario: productos vencidos, por vencer, con bajo stock o agotados.</td>
+    <td>Ninguno</td>
+    <td><code>[{ "id": 1, "lotId": 1, "productId": 1, "alertType": "expired", "severity": "critical", "message": "Coca Cola 500ml lot #1 expired on 15/3/2026.", "createdAt": "2026-03-16T08:00:00Z" }]</code></td>
+  </tr>
+
+  <!-- Ventas -->
+  <tr>
+    <td colspan="5"><strong>Ventas y caja</strong></td>
+  </tr>
+  <tr>
+    <td><code>/api/v1/sales</code></td>
+    <td>GET</td>
+    <td>Retorna el historial de ventas registradas en el Punto de Venta.</td>
+    <td>Ninguno</td>
+    <td><code>[{ "id": 1, "date": "2026-05-12", "total": 25.50, "paymentMethod": "cash", "items": [...] }]</code></td>
+  </tr>
+  <tr>
+    <td><code>/api/v1/sales</code></td>
+    <td>POST</td>
+    <td>Registra una nueva venta al finalizar el ticket en el Punto de Venta.</td>
+    <td>Body: <code>{ "date", "total", "paymentMethod", "items": [{ "productId", "quantity", "subtotal" }] }</code></td>
+    <td><code>{ "id": 1, "date": "2026-05-12", "total": 5.00, "paymentMethod": "cash", "items": [...] }</code> — HTTP 201</td>
+  </tr>
+  <tr>
+    <td><code>/api/v1/cash-registers</code></td>
+    <td>GET</td>
+    <td>Retorna los registros de caja por fecha, con totales de efectivo, digital y conteo de ventas.</td>
+    <td>Ninguno</td>
+    <td><code>[{ "id": 1, "date": "2026-05-12", "totalCash": 5, "totalDigital": 0, "saleCount": 1 }]</code></td>
+  </tr>
+  <tr>
+    <td><code>/api/v1/cash-registers/:id</code></td>
+    <td>PUT</td>
+    <td>Actualiza el registro de caja del día con los nuevos totales acumulados tras cada venta.</td>
+    <td><code>id</code>: path param. Body: <code>{ "date", "totalCash", "totalDigital", "saleCount" }</code></td>
+    <td><code>{ "id": 2, "date": "2026-05-12", "totalCash": 10, "totalDigital": 0, "saleCount": 2 }</code></td>
+  </tr>
+
+  <!-- Balanza IoT -->
+  <tr>
+    <td colspan="5"><strong>Balanza IoT</strong></td>
+  </tr>
+  <tr>
+    <td><code>/api/v1/iot-scale</code></td>
+    <td>GET</td>
+    <td>Retorna el estado actual de la balanza IoT (conectada o desconectada) y su identificador de dispositivo.</td>
+    <td>Ninguno</td>
+    <td><code>{ "id": 1, "connected": false, "deviceId": "SCALE-001" }</code></td>
+  </tr>
+  <tr>
+    <td><code>/api/v1/iot-scale/1</code></td>
+    <td>PATCH</td>
+    <td>Actualiza el estado de conexión de la balanza IoT.</td>
+    <td>Body: <code>{ "connected": true }</code></td>
+    <td><code>{ "id": 1, "connected": true, "deviceId": "SCALE-001" }</code></td>
+  </tr>
+
+  <!-- Chatbot WhatsApp -->
+  <tr>
+    <td colspan="5"><strong>Chatbot WhatsApp</strong></td>
+  </tr>
+  <tr>
+    <td><code>/api/v1/whatsapp-sessions</code></td>
+    <td>GET</td>
+    <td>Retorna las sesiones de WhatsApp vinculadas al vendedor.</td>
+    <td>Ninguno</td>
+    <td><code>[{ "id": 1, "sellerId": 1, "phone": "+51 999 888 777", "businessName": "Bodega El Huerto", "status": "connected", "connectedAt": "11/5/2026..." }]</code></td>
+  </tr>
+  <tr>
+    <td><code>/api/v1/conversations</code></td>
+    <td>GET</td>
+    <td>Retorna las conversaciones de WhatsApp con su estado: ACTIVE, WAITING_PAYMENT, COMPLETED o CLOSED.</td>
+    <td>Ninguno</td>
+    <td><code>[{ "id": 1, "sellerId": 1, "clientPhone": "+51 987 654 321", "clientName": "Andrea Torres", "status": "WAITING_PAYMENT", "lastMessage": "Comprobante enviado" }]</code></td>
+  </tr>
+  <tr>
+    <td><code>/api/v1/conversations/:id</code></td>
+    <td>PATCH</td>
+    <td>Actualiza el estado de una conversación (ej: marcar como COMPLETED tras aprobar el pago).</td>
+    <td><code>id</code>: path param. Body: <code>{ "status": "COMPLETED" }</code></td>
+    <td><code>{ "id": 1, "clientName": "Andrea Torres", "status": "COMPLETED", ... }</code></td>
+  </tr>
+  <tr>
+    <td><code>/api/v1/chat-messages</code></td>
+    <td>GET</td>
+    <td>Retorna los mensajes de una conversación (remitente: bot, client o system).</td>
+    <td>Query param: <code>?conversationId=1</code></td>
+    <td><code>[{ "id": 1, "conversationId": 1, "sender": "bot", "type": "text", "content": "Hola Andrea...", "sentAt": "2026-04-15T10:00:00.000Z" }]</code></td>
+  </tr>
+  <tr>
+    <td><code>/api/v1/chat-orders</code></td>
+    <td>GET</td>
+    <td>Retorna los pedidos generados por WhatsApp con sus items, dirección de entrega y estado de pago.</td>
+    <td>Ninguno</td>
+    <td><code>[{ "id": 1, "conversationId": 1, "orderNumber": "#0042", "total": 7.50, "status": "WAITING_PAYMENT", "paymentMethod": "YAPE", "deliveryAddress": "Av. Los Alamos 234, Miraflores" }]</code></td>
+  </tr>
+  <tr>
+    <td><code>/api/v1/chat-orders/:id</code></td>
+    <td>PATCH</td>
+    <td>Actualiza el estado de un pedido de WhatsApp (ej: CONFIRMED, BLOCKED, CANCELLED).</td>
+    <td><code>id</code>: path param. Body: <code>{ "status": "CONFIRMED" }</code></td>
+    <td><code>{ "id": 3, "orderNumber": "#0044", "status": "CONFIRMED", "total": 7.60, ... }</code></td>
+  </tr>
+
+  <!-- Perfil y suscripción -->
+  <tr>
+    <td colspan="5"><strong>Perfil y suscripción</strong></td>
+  </tr>
+  <tr>
+    <td><code>/api/v1/profile</code></td>
+    <td>GET</td>
+    <td>Retorna los datos del usuario, preferencias (idioma, tema, moneda) y configuración de notificaciones.</td>
+    <td>Ninguno</td>
+    <td><code>{ "user": { "id": 1, "role": "Administrador", "plan": "Plan Control" }, "preferences": { "language": "en", "theme": "light" }, "notification_settings": { "stock_alerts": true } }</code></td>
+  </tr>
+  <tr>
+    <td><code>/api/v1/subscription-dashboard</code></td>
+    <td>GET</td>
+    <td>Retorna el plan actual, plan recomendado, límites de uso y configuración de facturación y métodos de pago.</td>
+    <td>Ninguno</td>
+    <td><code>[{ "id": 1, "currentPlan": { "name": "Plan Control", "status": "active", "monthlyPrice": 89 }, "limits": [...], "billingSetup": { "hasPaymentMethod": true, ... } }]</code></td>
+  </tr>
   </tbody>
 </table>
 
-*(Colocar captura de JSON-Server corriendo localmente con los endpoints activos)*
+![json-server](./images/json-server.png "json-server")
 
-*(Colocar captura de una llamada GET /api/v1/products respondiendo con la lista de productos)*
+![postman](./images/postman.png "postman")
 
-*(Colocar captura de una llamada POST /api/v1/sales con el body y la respuesta 201)*
+![postman2](./images/postman2.png "postman2")
 
 **URL del repositorio del Frontend Web Application:** https://github.com/Kauflink/daop-entreprenly-frontend
 
