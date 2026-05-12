@@ -1063,9 +1063,11 @@
     <td>Como comerciante, quiero visualizar un resumen de las ventas del día en el panel de inicio para conocer el rendimiento de mi negocio sin ingresar al módulo de ventas.</td>
     <td>
       <strong>Scenario 1: Resumen de ventas cargado correctamente</strong><br>
-      Dado que el comerciante accede al panel de inicio y existen ventas registradas en el día, cuando el sistema carga la información, entonces se muestra el total de ventas del día, el número de transacciones y el desglose por método de pago.<br><br>
+      Dado que el comerciante accede al panel de inicio y existen ventas registradas en el día, cuando el sistema carga la información, entonces se muestra la tarjeta "Ingresos del día" con el total acumulado, el total en efectivo y el total digital correspondiente a Yape, Plin o tarjeta.<br><br>
       <strong>Scenario 2: Sin ventas registradas en el día</strong><br>
-      Dado que el comerciante accede al panel de inicio y no se ha registrado ninguna venta en el día actual, cuando el sistema carga la información, entonces el resumen muestra cero en todos los indicadores y se indica que aún no hay ventas registradas para el día.
+      Dado que el comerciante accede al panel de inicio y no se ha registrado ninguna venta en el día actual, cuando el sistema carga la información, entonces la tarjeta muestra S/0.00 en el total del día, efectivo y digital.<br><br>
+      <strong>Scenario 3: Acceso al módulo de ventas</strong><br>
+      Dado que el comerciante visualiza la tarjeta "Ingresos del día", cuando presiona el enlace "Ir a Ventas", entonces el sistema navega a la ruta "/dashboard/sales".
     </td>
     <td>Epic-16</td>
   </tr>
@@ -1076,9 +1078,11 @@
     <td>Como comerciante, quiero visualizar el estado de conexión del chatbot y los chats activos desde el panel de inicio para saber si mi canal de ventas por WhatsApp está operativo sin ingresar al módulo de chatbot.</td>
     <td>
       <strong>Scenario 1: Chatbot conectado con actividad reciente</strong><br>
-      Dado que el comerciante accede al panel de inicio y el chatbot se encuentra vinculado y activo, cuando el sistema carga la vista, entonces se muestra el estado "Conectado", el número de conversaciones activas del día y el número de pedidos generados por el bot.<br><br>
+      Dado que el comerciante accede al panel de inicio y el chatbot se encuentra vinculado y activo, cuando el sistema carga la vista, entonces se muestra el estado "WhatsApp Conectado" y el texto que indica que el chatbot está activo y recibiendo mensajes.<br><br>
       <strong>Scenario 2: Chatbot desconectado</strong><br>
-      Dado que el comerciante accede al panel de inicio y el chatbot no está vinculado o su sesión expiró, cuando el sistema carga la vista, entonces se muestra el estado "Desconectado" con una alerta visible y un acceso directo para reconectar desde el mismo panel.
+      Dado que el comerciante accede al panel de inicio y el chatbot no está vinculado o su sesión expiró, cuando el sistema carga la vista, entonces se muestra el estado "WhatsApp Desconectado", una descripción del problema y el botón "Conectar ahora".<br><br>
+      <strong>Scenario 3: Pedidos pendientes visibles desde el estado del chatbot</strong><br>
+      Dado que existen pedidos esperando validación de pago, cuando el sistema carga la tarjeta de estado del chatbot, entonces se muestra un aviso con el número de pedidos pendientes.
     </td>
     <td>Epic-16</td>
   </tr>
@@ -1089,9 +1093,11 @@
     <td>Como comerciante, quiero ver las alertas críticas de inventario directamente en el panel de inicio para identificar rápidamente productos agotados o lotes próximos a vencer sin ingresar al módulo de lotes.</td>
     <td>
       <strong>Scenario 1: Alertas de inventario mostradas en el home</strong><br>
-      Dado que el comerciante accede al panel de inicio y existen productos sin stock o lotes próximos a vencer, cuando el sistema carga la vista, entonces se muestra una sección de alertas con el nombre del producto o lote afectado y el tipo de alerta correspondiente.<br><br>
+      Dado que el comerciante accede al panel de inicio y existen productos sin stock, con stock bajo, vencidos o próximos a vencer, cuando el sistema carga la vista, entonces se muestra un banner de alerta y una lista con el producto afectado y el tipo de alerta correspondiente.<br><br>
       <strong>Scenario 2: Sin alertas activas de inventario</strong><br>
-      Dado que el comerciante accede al panel de inicio y no existen condiciones críticas en el inventario, cuando el sistema carga la vista, entonces la sección de alertas muestra un mensaje indicando que todo el inventario está en estado normal.
+      Dado que el comerciante accede al panel de inicio y no existen condiciones críticas en el inventario, cuando el sistema carga la vista, entonces la sección de alertas muestra el mensaje "Todo en orden" e indica que no hay alertas de inventario.<br><br>
+      <strong>Scenario 3: Acceso al inventario desde una alerta</strong><br>
+      Dado que el comerciante visualiza alertas en el home, cuando presiona "Ver inventario", entonces el sistema navega a la ruta "/dashboard/inventory/lots".
     </td>
     <td>Epic-16</td>
   </tr>
@@ -1102,9 +1108,9 @@
     <td>Como comerciante, quiero ver el número de pedidos que están pendientes de atención en el panel de inicio para priorizar mi respuesta sin necesidad de ingresar al módulo de chatbot.</td>
     <td>
       <strong>Scenario 1: Pedidos pendientes mostrados correctamente</strong><br>
-      Dado que el comerciante accede al panel de inicio y existen pedidos en estado "pendiente de validación" o "esperando pago", cuando el sistema carga la vista, entonces se muestra un contador con el número total de pedidos que requieren atención inmediata del comerciante.<br><br>
+      Dado que el comerciante accede al panel de inicio y existen pedidos pendientes de validación de pago, cuando el sistema carga la vista, entonces se muestra un aviso dentro de la tarjeta de chatbot con el número de pedidos esperando validación.<br><br>
       <strong>Scenario 2: Sin pedidos pendientes</strong><br>
-      Dado que el comerciante accede al panel de inicio y todos los pedidos del día han sido atendidos o no existe ninguno, cuando el sistema carga la vista, entonces el contador muestra cero y se indica que no hay pedidos pendientes de atención.
+      Dado que el comerciante accede al panel de inicio y todos los pedidos han sido atendidos o no existe ninguno, cuando el sistema carga la vista, entonces no se muestra el aviso de pedidos pendientes.
     </td>
     <td>Epic-16</td>
   </tr>
@@ -1115,9 +1121,11 @@
     <td>Como comerciante, quiero ver los pedidos más recientes con su estado actual en el panel de inicio para hacer seguimiento sin ingresar al módulo de pedidos.</td>
     <td>
       <strong>Scenario 1: Pedidos recientes mostrados correctamente</strong><br>
-      Dado que el comerciante accede al panel de inicio y existen pedidos registrados en el día, cuando el sistema carga la vista, entonces se muestran los últimos cinco pedidos con número de pedido, nombre del cliente, monto total y estado actual.<br><br>
+      Dado que el comerciante accede al panel de inicio y existen pedidos registrados, cuando el sistema carga la vista, entonces se muestran los pedidos recientes con número de pedido, fecha, monto total y estado actual.<br><br>
       <strong>Scenario 2: Sin pedidos registrados en el día</strong><br>
-      Dado que el comerciante accede al panel de inicio y no se ha registrado ningún pedido en el día actual, cuando el sistema carga la vista, entonces la sección de pedidos recientes muestra un mensaje indicando que aún no hay pedidos para el día.
+      Dado que el comerciante accede al panel de inicio y no se ha registrado ningún pedido, cuando el sistema carga la vista, entonces la sección de pedidos recientes muestra el mensaje "Sin pedidos todavía".<br><br>
+      <strong>Scenario 3: Resumen por estado</strong><br>
+      Dado que existen pedidos recientes, cuando el sistema carga la sección, entonces muestra contadores de pedidos aprobados y pendientes.
     </td>
     <td>Epic-16</td>
   </tr>
@@ -1128,11 +1136,26 @@
     <td>Como comerciante, quiero contar con accesos directos a los módulos principales desde el panel de inicio para navegar rápidamente a cualquier sección sin recorrer el menú lateral.</td>
     <td>
       <strong>Scenario 1: Acceso directo navega al módulo correcto</strong><br>
-      Dado que el comerciante se encuentra en el panel de inicio, cuando presiona alguno de los accesos directos disponibles, entonces el sistema lo redirige al módulo correspondiente sin pérdida de datos ni recargas innecesarias.<br><br>
-      <strong>Scenario 2: Acceso directo con indicador de alerta activa</strong><br>
-      Dado que el comerciante se encuentra en el panel de inicio y un módulo tiene alertas o notificaciones pendientes, cuando el sistema carga la vista, entonces el acceso directo correspondiente muestra un indicador visual con el número de alertas o pendientes activos.
+      Dado que el comerciante se encuentra en el panel de inicio, cuando presiona un acceso directo, entonces el sistema lo redirige al módulo correspondiente entre Ventas, Chatbot, Pedidos, Inventario o Ayuda.<br><br>
+      <strong>Scenario 2: Accesibilidad de accesos directos</strong><br>
+      Dado que el comerciante navega con teclado o lector de pantalla, cuando enfoca un acceso directo, entonces el enlace expone una etiqueta accesible con el nombre del módulo de destino.
     </td>
     <td>Epic-16</td>
+  </tr>
+  <!-- US 79 -->
+  <tr>
+    <td>US-79</td>
+    <td>Escanear código QR en inventario</td>
+    <td>Como usuario de inventario, quiero escanear códigos QR desde los formularios de productos y lotes para completar el código del registro sin ingresarlo manualmente.</td>
+    <td>
+      <strong>Scenario 1: Escaneo de QR exitoso</strong><br>
+      Dado que el usuario se encuentra en un formulario de producto o lote con el componente de escaneo disponible, cuando presiona el botón con ícono de cámara y escanea un código QR válido, entonces el sistema completa el campo de código QR con el valor detectado y cierra el panel de escaneo.<br><br>
+      <strong>Scenario 2: Permiso de cámara denegado</strong><br>
+      Dado que el usuario presiona el botón de escaneo, cuando el navegador bloquea el acceso a la cámara, entonces el sistema muestra el mensaje de permiso denegado y no modifica el campo de código QR.<br><br>
+      <strong>Scenario 3: Cámara no disponible</strong><br>
+      Dado que el usuario intenta abrir el escáner y el dispositivo no permite iniciar la cámara, cuando el sistema recibe el error, entonces muestra el mensaje "No se pudo acceder a la cámara" y permite cerrar el panel.
+    </td>
+    <td>Epic-01</td>
   </tr>
   <!-- Epic 17 -->
   <tr>
@@ -1140,18 +1163,19 @@
     <td><strong>Centro de Soporte y Ayuda</strong></td>
     <td>Como comerciante, quiero contar con un centro de soporte accesible desde el botón de Ayuda para resolver mis dudas, reportar problemas y consultar guías de uso de la plataforma sin necesidad de contactar a un agente externo.</td>
     <td></td>
+    <td></td>
   </tr>
 
-  <!-- US 71 -->
+  <!-- US 74 -->
   <tr>
-    <td>US-71</td>
+    <td>US-74</td>
     <td>Visualizar el centro de soporte</td>
     <td>Como comerciante, quiero visualizar el centro de soporte al presionar el botón de Ayuda para acceder de forma rápida a las opciones de asistencia disponibles.</td>
     <td>
       <strong>Scenario 1: Centro de soporte cargado correctamente</strong><br>
       Dado que el comerciante presiona el botón de Ayuda en el sidebar,<br>
       Cuando el sistema carga la vista de soporte,<br>
-      Entonces se muestran las secciones: buscador de ayuda, artículos frecuentes, acceso directo a reportar problema y datos de contacto del soporte.<br><br>
+      Entonces se muestran el buscador de ayuda, artículos más consultados, todos los artículos, categorías y acceso directo a reportar un problema.<br><br>
       <strong>Scenario 2: Centro de soporte sin artículos disponibles</strong><br>
       Dado que el comerciante accede al centro de soporte,<br>
       Y no existen artículos de ayuda configurados,<br>
@@ -1162,16 +1186,16 @@
     <td>Epic-17</td>
   </tr>
 
-  <!-- US 72 -->
+  <!-- US 75 -->
   <tr>
-    <td>US-72</td>
+    <td>US-75</td>
     <td>Buscar artículo de ayuda</td>
     <td>Como comerciante, quiero buscar artículos de ayuda por palabras clave para encontrar rápidamente la información que necesito sin revisar todas las categorías.</td>
     <td>
       <strong>Scenario 1: Búsqueda con resultados encontrados</strong><br>
       Dado que el comerciante está en el centro de soporte,<br>
       Cuando ingresa una palabra clave en el buscador y confirma la búsqueda,<br>
-      Entonces el sistema muestra los artículos que coinciden con el término ingresado.<br><br>
+      Entonces el sistema muestra la cantidad de resultados encontrados, el término buscado, las categorías relacionadas y los artículos que coinciden con la consulta.<br><br>
       <strong>Scenario 2: Búsqueda sin resultados</strong><br>
       Dado que el comerciante ingresa un término en el buscador,<br>
       Y no existen artículos que coincidan con la búsqueda,<br>
@@ -1182,16 +1206,16 @@
     <td>Epic-17</td>
   </tr>
 
-  <!-- US 73 -->
+  <!-- US 76 -->
   <tr>
-    <td>US-73</td>
+    <td>US-76</td>
     <td>Consultar artículo de ayuda</td>
     <td>Como comerciante, quiero abrir y leer un artículo de ayuda para entender cómo usar una funcionalidad de la plataforma o resolver un problema específico.</td>
     <td>
       <strong>Scenario 1: Artículo cargado correctamente</strong><br>
       Dado que el comerciante selecciona un artículo desde el listado o los resultados de búsqueda,<br>
       Cuando el sistema carga el artículo,<br>
-      Entonces se muestra el título, el contenido detallado y las secciones relacionadas.<br><br>
+      Entonces se muestra el breadcrumb de ayuda, categoría, título, tiempo de lectura, pasos del artículo y artículos relacionados cuando existan.<br><br>
       <strong>Scenario 2: Artículo marcado como útil o no útil</strong><br>
       Dado que el comerciante leyó el artículo de ayuda,<br>
       Cuando selecciona la opción "¿Te fue útil este artículo?"<br>
@@ -1202,9 +1226,9 @@
     <td>Epic-17</td>
   </tr>
 
-  <!-- US 74 -->
+  <!-- US 77 -->
   <tr>
-    <td>US-74</td>
+    <td>US-77</td>
     <td>Reportar un problema</td>
     <td>Como comerciante, quiero reportar un problema o incidencia desde el centro de soporte para que el equipo de Entreprenly pueda revisarlo y darle seguimiento.</td>
     <td>
@@ -1224,16 +1248,16 @@
     <td>Epic-17</td>
   </tr>
 
-  <!-- US 75 -->
+  <!-- US 78 -->
   <tr>
-    <td>US-75</td>
+    <td>US-78</td>
     <td>Confirmar envío del reporte</td>
     <td>Como comerciante, quiero recibir una confirmación visual tras enviar un reporte para tener la certeza de que mi solicitud fue registrada correctamente.</td>
     <td>
       <strong>Scenario 1: Confirmación mostrada correctamente</strong><br>
       Dado que el comerciante envió un reporte de problema exitosamente,<br>
       Cuando el sistema procesa el envío,<br>
-      Entonces se muestra una pantalla de confirmación con el número de ticket generado, el mensaje "Tu reporte fue recibido" y la opción de volver al centro de soporte.<br><br>
+      Entonces se muestra una pantalla de confirmación con el número de ticket generado, fecha, resumen del reporte y la opción de volver al centro de soporte.<br><br>
       <strong>Scenario 2: Error en el envío del reporte</strong><br>
       Dado que el comerciante intentó enviar un reporte,<br>
       Y ocurre un error en el sistema durante el procesamiento,<br>
@@ -1242,6 +1266,53 @@
       Y se muestra un mensaje indicando que hubo un error y se invita a intentarlo nuevamente.
     </td>
     <td>Epic-17</td>
+  </tr>
+  <!-- EPIC 18 -->
+  <tr>
+    <td><strong>Epic-18</strong></td>
+    <td><strong>Experiencia global del dashboard</strong></td>
+    <td>Como usuario autenticado, quiero contar con navegación global, cambio de idioma y manejo de estados generales para usar el dashboard de forma consistente entre módulos.</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <!-- US 80 -->
+  <tr>
+    <td>US-80</td>
+    <td>Navegar entre módulos desde el sidebar</td>
+    <td>Como usuario autenticado, quiero usar el sidebar del dashboard para ingresar rápidamente a Home, Productos, Lotes, Ventas, Suscripción, Pedidos, Chatbot y Ayuda.</td>
+    <td>
+      <strong>Scenario 1: Navegación a módulo correcto</strong><br>
+      Dado que el usuario se encuentra dentro del dashboard, cuando presiona una opción del sidebar, entonces el sistema navega a la ruta correspondiente y marca la opción activa visualmente.<br><br>
+      <strong>Scenario 2: Acceso al perfil desde el bloque de usuario</strong><br>
+      Dado que el usuario visualiza el bloque de perfil del sidebar, cuando presiona dicho bloque, entonces el sistema navega a la ruta "/dashboard/profile".
+    </td>
+    <td>Epic-18</td>
+  </tr>
+  <!-- US 81 -->
+  <tr>
+    <td>US-81</td>
+    <td>Cambiar idioma de la interfaz</td>
+    <td>Como usuario del dashboard, quiero alternar entre español e inglés para visualizar los textos de la interfaz en el idioma que prefiera.</td>
+    <td>
+      <strong>Scenario 1: Cambio de idioma a español</strong><br>
+      Dado que el usuario visualiza el selector de idioma, cuando presiona la opción "ES", entonces el sistema actualiza el idioma activo a español mediante el servicio de traducción y refresca los textos traducibles de la interfaz.<br><br>
+      <strong>Scenario 2: Cambio de idioma a inglés</strong><br>
+      Dado que el usuario visualiza el selector de idioma, cuando presiona la opción "EN", entonces el sistema actualiza el idioma activo a inglés y mantiene resaltada la opción seleccionada.
+    </td>
+    <td>Epic-18</td>
+  </tr>
+  <!-- US 82 -->
+  <tr>
+    <td>US-82</td>
+    <td>Gestionar rutas no encontradas</td>
+    <td>Como usuario del dashboard, quiero recibir una vista de ruta no encontrada cuando ingreso a una URL inválida para entender que la página solicitada no existe.</td>
+    <td>
+      <strong>Scenario 1: Ruta inválida dentro de la aplicación</strong><br>
+      Dado que el usuario ingresa una URL que no coincide con las rutas configuradas del frontend, cuando Angular evalúa la navegación, entonces carga el componente de página no encontrada.<br><br>
+      <strong>Scenario 2: Ruta vacía del dashboard</strong><br>
+      Dado que el usuario ingresa a la ruta base del dashboard, cuando el sistema resuelve la ruta sin segmento adicional, entonces redirige automáticamente a "/dashboard/home".
+    </td>
+    <td>Epic-18</td>
   </tr>
   </tbody>
 </table>
@@ -1363,5 +1434,10 @@ A continuación se presenta el Product Backlog de Entreprenly con todas las User
     <tr><td>76</td><td>US-62</td><td>Cambiar contraseña</td><td>Como usuario autenticado, quiero cambiar mi contraseña para mantener la seguridad de mi cuenta.</td><td>3</td></tr>
     <tr><td>77</td><td>US-63</td><td>Configurar preferencias de idioma, zona horaria y tema</td><td>Como usuario autenticado, quiero configurar mi idioma, zona horaria y tema visual para adaptar la plataforma a mis preferencias.</td><td>2</td></tr>
     <tr><td>78</td><td>US-64</td><td>Configurar notificaciones</td><td>Como usuario autenticado, quiero configurar mis preferencias de notificación para recibir solo los avisos que me sean relevantes.</td><td>2</td></tr>
+    <!-- BLOQUE 16: FUNCIONALIDADES DETECTADAS EN FRONTEND -->
+    <tr><td>79</td><td>US-79</td><td>Escanear código QR en inventario</td><td>Como usuario de inventario, quiero escanear códigos QR desde los formularios de productos y lotes para completar el código del registro sin ingresarlo manualmente.</td><td>3</td></tr>
+    <tr><td>80</td><td>US-80</td><td>Navegar entre módulos desde el sidebar</td><td>Como usuario autenticado, quiero usar el sidebar del dashboard para ingresar rápidamente a Home, Productos, Lotes, Ventas, Suscripción, Pedidos, Chatbot y Ayuda.</td><td>2</td></tr>
+    <tr><td>81</td><td>US-81</td><td>Cambiar idioma de la interfaz</td><td>Como usuario del dashboard, quiero alternar entre español e inglés para visualizar los textos de la interfaz en el idioma que prefiera.</td><td>2</td></tr>
+    <tr><td>82</td><td>US-82</td><td>Gestionar rutas no encontradas</td><td>Como usuario del dashboard, quiero recibir una vista de ruta no encontrada cuando ingreso a una URL inválida para entender que la página solicitada no existe.</td><td>1</td></tr>
   </tbody>
 </table>
