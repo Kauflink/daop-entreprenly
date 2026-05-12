@@ -1476,60 +1476,147 @@ El módulo de suscripciones fue ampliado con un catálogo de planes y funcionali
 
 <div align="center">
 
-![Database Diagram Entreprenly](images/Entreprendly_database_diagram.png)
+![Database Diagram Entreprenly](images/Entreprenly_database_diagram.png)
 
 </div>
+## Organización del esquema de base de datos
+
 El esquema se organiza en las siguientes tablas por categoría:
-
-**Identidad y Acceso**
-
-- `Comerciantes` (datos de acceso, perfil y roles).
-- `PreferenciasComercio` (idioma, moneda, tema y notificaciones).
-- `SesionesActivas` (JWTs activos para control y revocación de sesiones).
-- `TokensVerificacion` (tokens de verificación y recuperación de contraseña).
-- `Clientes` (datos básicos por comerciante para pedidos y comprobantes).
-
-**Suscripciones**
-
-- `PlanesDetalle` (catálogo de planes con precios, badge y estado activo).
-- `CaracteristicasPlan` (funcionalidades habilitadas por plan mediante FK a `PlanesDetalle`).
-- `Suscripciones` (plan contratado, ciclo de facturación y ciclo de vida de la suscripción).
-- `BoletoSuscripcion` (registro de cobros y últimos 4 dígitos de tarjeta).
-- `MetodosPagoSuscripcion` (métodos de pago registrados por el comerciante).
-- `DatosFiscales` (información fiscal asociada al comerciante).
-- `ActividadSuscripcion` (historial de eventos con tipo de evento y metadata JSON para i18n).
-
-**Inventario**
-
-- `Categorias` (clasificación de productos por comerciante).
-- `Productos` (catálogo principal con control de stock y tipo de producto).
-- `Lotes` (trazabilidad, vencimiento, fecha de entrada y códigos QR de inventario).
-
-**Ventas**
-
-- `LecturasBalanza` (pesajes realizados por la balanza IoT).
-- `Ventas` (encabezado de transacciones presenciales).
-- `DetalleVenta` (detalle de productos vendidos con precio snapshot).
-- `ResumenDiario` (arqueo y cierre diario de caja con conteo de ventas).
-
-**Chatbot WhatsApp**
-
-- `ConexionesWhatsApp` (sesión vinculada mediante QR, nombre de negocio y timestamp de conexión).
-- `Conversaciones` (hilo de conversación por cliente con estado y timestamps).
-- `MensajesConversacion` (mensajes individuales dentro del hilo, incluyendo imágenes de comprobante).
-
-**Pedidos**
-
-- `Pedidos` (gestión del flujo de pedidos digitales con contador de rechazos y estado bloqueado).
-- `DetallePedido` (detalle de productos solicitados con precio snapshot).
-- `Pagos` (comprobantes de pago digital Yape/Plin con estado de validación).
 
 ---
 
+**Inventario**
+
+- `inventory_unit_products`  
+  Catálogo de productos vendidos por unidad, incluyendo precio, peso en gramos, marca y código QR único.
+
+- `inventory_weight_products`  
+  Catálogo de productos vendidos por peso, almacenando el precio por kilogramo y código QR.
+
+- `inventory_lots`  
+  Tabla general de trazabilidad de lotes con fecha de ingreso y tipo de lote (`unit` o `weight`).
+
+- `inventory_unit_lots`  
+  Lotes específicos de productos unitarios con cantidad disponible y fecha de vencimiento.
+
+- `inventory_weight_lots`  
+  Lotes de productos vendidos al peso con cantidad disponible en kilogramos.
+
+- `inventory_stock_alerts`  
+  Registro de alertas de inventario como productos vencidos, próximos a vencer, bajo stock o sin stock.
+
+---
+
+**Ventas**
+
+- `sales`  
+  Encabezado de ventas presenciales, incluyendo método de pago, estado de la venta, total y timestamps.
+
+- `sale_items`  
+  Detalle de productos vendidos en cada transacción con snapshot del nombre, cantidad, peso y subtotal.
+
+- `cash_registers`  
+  Resumen diario de caja con totales en efectivo, pagos digitales y cantidad de ventas realizadas.
+
+---
+
+ **IoT**
+
+- `iot_scale`  
+  Registro de conexión de la balanza IoT utilizada para productos vendidos por peso.
+
+---
+ **Suscripciones**
+
+- `subscription_dashboard`  
+  Información principal del plan actual y plan recomendado para el comerciante, incluyendo precios, estado y periodo de facturación.
+
+- `subscription_plan_features`  
+  Características habilitadas para cada plan asociado al dashboard de suscripciones.
+
+- `subscription_plan_limits`  
+  Límites de uso del plan, como consumo actual y capacidad máxima permitida.
+
+- `subscription_billing_setup`  
+  Configuración de facturación y datos fiscales asociados al comerciante.
+
+- `subscription_payment_methods`  
+  Métodos de pago registrados para suscripciones, incluyendo marca de tarjeta y últimos cuatro dígitos.
+
+- `subscription_activity`  
+  Historial de actividades y eventos relacionados con la suscripción.
+
+---
+
+**Perfil y Configuración**
+
+- `profile_user`  
+  Información básica del usuario administrador, incluyendo nombre, rol y plan contratado.
+
+- `profile_preferences`  
+  Preferencias del usuario como idioma, zona horaria, tema visual y moneda.
+
+- `profile_notification_settings`  
+  Configuración de notificaciones relacionadas con stock, pagos y mensajes del chatbot.
+
+---
+
+**WhatsApp y Chatbot**
+
+- `whatsapp_sessions`  
+  Sesiones activas de WhatsApp vinculadas al negocio mediante QR.
+
+- `conversations`  
+  Conversaciones generadas entre clientes y el chatbot, con estado y timestamps.
+
+- `chat_messages`  
+  Mensajes enviados dentro de cada conversación, incluyendo texto e imágenes.
+
+---
+
+**Pedidos Digitales**
+
+- `chat_orders`  
+  Gestión de pedidos realizados mediante WhatsApp, incluyendo dirección, método de pago, estado y control de rechazos.
+
+- `chat_order_items`  
+  Detalle de productos solicitados en cada pedido con snapshot de precio unitario.
+
+---
+
+**Relaciones principales**
+
+- Los productos (`inventory_unit_products` y `inventory_weight_products`) se relacionan con sus respectivos lotes mediante claves foráneas.
+- Las ventas (`sales`) se relacionan con `sale_items`.
+- Las conversaciones (`conversations`) se relacionan con mensajes (`chat_messages`) y pedidos (`chat_orders`.
+- Los pedidos (`chat_orders`) se relacionan con `chat_order_items`.
+- El dashboard de suscripciones (`subscription_dashboard`) centraliza relaciones con:
+  - `subscription_plan_features`
+  - `subscription_plan_limits`
+  - `subscription_billing_setup`
+  - `subscription_payment_methods`
+  - `subscription_activity`
+- El usuario (`profile_user`) se relaciona con:
+  - `profile_preferences`
+  - `profile_notification_settings`
+
+---
+
+**Normalización aplicada**
+
 La normalización aplicada se resume en tres puntos principales:
 
-- **Primera Forma Normal (1FN):** se cumple mediante el uso de valores atómicos y `ENUM` para atributos de dominio controlado.
+- **Primera Forma Normal (1FN):**  
+  Se cumple mediante el uso de atributos atómicos y tipos controlados mediante `ENUM`, evitando listas o valores multivaluados en una misma columna.
 
-- **Segunda Forma Normal (2FN):** se garantiza utilizando claves primarias simples en todas las tablas.
+- **Segunda Forma Normal (2FN):**  
+  Se garantiza utilizando claves primarias simples y separando adecuadamente entidades independientes como productos, lotes, ventas, conversaciones y suscripciones.
 
-- **Tercera Forma Normal (3FN):** se evidencia en la separación de entidades como `PreferenciasComercio`, `Categorias`, `DatosFiscales` y `CaracteristicasPlan`, eliminando dependencias transitivas y evitando redundancia de información. Los valores derivados como subtotales no se almacenan en tablas de detalle, ya que pueden calcularse dinámicamente a partir de `cantidad` y `precio_unit`. Los totales almacenados en `Ventas`, `Pedidos` y `ResumenDiario` son snapshots contables para auditoría e historial, no datos normalizados puros.
+- **Tercera Forma Normal (3FN):**  
+  Se evidencia en la separación de configuraciones, preferencias, características de planes y actividades en tablas independientes, eliminando redundancia y dependencias transitivas.
+
+Además:
+
+- Los detalles de ventas y pedidos almacenan snapshots de información (`productName`, `unitPrice`, `subtotal`) para mantener consistencia histórica aunque cambie el catálogo de productos posteriormente.
+- Los totales almacenados en `sales`, `chat_orders` y `cash_registers` funcionan como registros contables históricos y no como datos derivados puramente calculables.
+- La separación entre productos unitarios y productos por peso evita valores nulos innecesarios y mejora la integridad del modelo de inventario.
