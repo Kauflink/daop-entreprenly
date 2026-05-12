@@ -593,48 +593,107 @@ El objetivo principal de este Sprint fue implementar y desplegar la primera vers
       <td>Done</td>
     </tr>
     <tr>
-      <td>US-49</td>
-      <td>Conocer propuesta de valor en landing page</td>
+      <td>US-85</td>
+      <td>Visualizar la propuesta de valor</td>
       <td>T-03</td>
-      <td>Desarrollar estructura base del Landing Page</td>
-      <td>Implementar las secciones principales del Landing Page: hero, funcionalidades, planes y footer.</td>
+      <td>Implementar Hero section y Problem section</td>
+      <td>Desarrollar la sección hero con headline "Controla inventario, pedidos y cobros de tu negocio", propuesta de valor y CTAs diferenciados por segmento, y la sección de problema que contextualiza los dolores del comerciante.</td>
       <td>4</td>
       <td>Chavez Carrasco, Lionel Abraham / Flores Pinchi, José Fernando</td>
       <td>Done</td>
     </tr>
     <tr>
-      <td>US-49</td>
-      <td>Conocer propuesta de valor en landing page</td>
+      <td>US-85</td>
+      <td>Visualizar la propuesta de valor</td>
       <td>T-04</td>
-      <td>Implementar controles de tema e idioma y mejoras de CTAs</td>
-      <td>Agregar switch de tema claro/oscuro, selector de idioma (ES/EN) y mejorar los call-to-action para cada segmento objetivo.</td>
+      <td>Implementar controles de tema e idioma</td>
+      <td>Agregar switch de tema claro/oscuro y selector de idioma (Español/Inglés) accesibles desde la barra de navegación, con mejoras en los call-to-action diferenciados por segmento objetivo.</td>
+      <td>4</td>
+      <td>Chavez Carrasco, Lionel Abraham</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-85</td>
+      <td>Visualizar la propuesta de valor</td>
+      <td>T-05</td>
+      <td>Implementar animaciones y transiciones de la landing</td>
+      <td>Agregar transiciones de fade al cambio de tema y animaciones de movimiento en la sección hero para mejorar la experiencia visual del visitante al cargar la página.</td>
       <td>3</td>
       <td>Chavez Carrasco, Lionel Abraham</td>
       <td>Done</td>
     </tr>
     <tr>
-      <td>US-49</td>
-      <td>Conocer propuesta de valor en landing page</td>
-      <td>T-05</td>
-      <td>Agregar animaciones de transición en hero</td>
-      <td>Implementar efectos de fade para cambio de tema y animaciones de movimiento en la sección hero.</td>
+      <td>US-86</td>
+      <td>Explorar las funciones principales</td>
+      <td>T-06</td>
+      <td>Implementar Main Features section y How It Works section</td>
+      <td>Desarrollar la sección de funcionalidades principales con los 4 pilares (Inventario, Finanzas, Chatbot, Balanza IoT) y la sección explicativa del flujo de adopción del sistema paso a paso.</td>
+      <td>4</td>
+      <td>Chavez Carrasco, Lionel Abraham / Flores Pinchi, José Fernando</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-86</td>
+      <td>Explorar las funciones principales</td>
+      <td>T-07</td>
+      <td>Implementar Merchant Benefits section, Client Trust section y Comparativa breve section</td>
+      <td>Desarrollar la sección de beneficios operativos para el comerciante, la sección de confianza del cliente final y la sección comparativa que contrasta la gestión manual, sistemas genéricos y Entreprenly.</td>
+      <td>3</td>
+      <td>Chavez Carrasco, Lionel Abraham / Flores Pinchi, José Fernando</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-87</td>
+      <td>Revisar los planes de suscripción</td>
+      <td>T-08</td>
+      <td>Implementar Planes section</td>
+      <td>Desarrollar la sección comercial con las tarjetas del Plan Free y Plan Control, mostrando el costo mensual, la lista de funcionalidades incluidas en cada nivel y los botones de acción hacia el registro.</td>
+      <td>3</td>
+      <td>Chavez Carrasco, Lionel Abraham / Flores Pinchi, José Fernando</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-88</td>
+      <td>Consultar las preguntas frecuentes</td>
+      <td>T-09</td>
+      <td>Implementar FAQ section y Next Step section</td>
+      <td>Desarrollar la sección de preguntas frecuentes con acordeones interactivos que expanden y colapsan respuestas, y la sección de cierre con CTA final que refuerza la conversión hacia el registro.</td>
+      <td>3</td>
+      <td>Palma De Los Santos, Elynor Mikela / Peirano Brun, José Antonio</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-89</td>
+      <td>Iniciar sesión desde la landing page</td>
+      <td>T-10</td>
+      <td>Implementar navegación del header y enlace "Ingresar"</td>
+      <td>Desarrollar el header con la barra de navegación principal (Cómo funciona, Beneficios, Planes, FAQ), el botón "Iniciar sesión" que redirige a <code>./login.html</code> y el menú responsive desplegable para dispositivos móviles.</td>
       <td>2</td>
       <td>Chavez Carrasco, Lionel Abraham</td>
       <td>Done</td>
     </tr>
     <tr>
+      <td>US-90</td>
+      <td>Acceder mediante el botón de acción principal</td>
+      <td>T-11</td>
+      <td>Implementar CTAs "Empezar gratis" y Footer section</td>
+      <td>Implementar el botón "Empezar gratis" en el Hero y en la sección Next step que redirige a <code>./register.html</code>, y desarrollar el footer con los grupos Explorar y Siguiente paso, datos de contacto y enlaces de la marca.</td>
+      <td>2</td>
+      <td>Peirano Brun, José Antonio / Flores Pinchi, José Fernando</td>
+      <td>Done</td>
+    </tr>
+    <tr>
       <td>US-49</td>
       <td>Conocer propuesta de valor en landing page</td>
-      <td>T-06</td>
+      <td>T-12</td>
       <td>Revisión y corrección de contenido textual</td>
-      <td>Corregir ortografía, tildes y redacción en el contenido del Landing Page.</td>
+      <td>Corregir errores ortográficos, de tildes y redacción en todos los textos del Landing Page para garantizar la calidad del contenido publicado en producción.</td>
       <td>2</td>
       <td>Palma De Los Santos, Elynor Mikela / Peirano Brun, José Antonio / Flores Pinchi, José Fernando</td>
       <td>Done</td>
     </tr>
   </tbody>
 </table>
-
 ---
  
 #### 5.2.1.4. Development Evidence for Sprint Review
