@@ -1445,7 +1445,7 @@ Además, se integra con servicios externos de mensajería (WhatsApp API) y persi
 <p align="center"><img src="images/CLASS DIAGRAM — Gestión de Inventario BC.svg" width="500"/></p>
 
 <p align="center">Ventas BC</p>
-<p align="center"><img src="images/CLASS DIAGRAM — Ventas BC.svg" width="500"/></p>
+<p align="center"><img src="images/Sales_BC-Class_Diagram__Ventas_BC.png" width="500"/></p>
 
 <p align="center">Chatbot de WhatsApp BC</p>
 <p align="center"><img src="images/CLASS DIAGRAM — Chatbot de WhatsApp BC.svg" width="500"/></p>
