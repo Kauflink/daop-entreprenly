@@ -887,7 +887,6 @@ Al término del Sprint 1, el equipo logró implementar y desplegar satisfactoria
 - **Footer:** Información de contacto, términos y condiciones y enlaces relevantes.
 - **Controles de experiencia:** Selector de idioma (Español / Inglés) y switch de tema claro/oscuro, accesibles desde la barra de navegación.
 
-
 ![landing_desplegado](./images/landing_desplegado.png "landing_desplegado")
  
 ---
@@ -903,11 +902,28 @@ Durante el Sprint 1, el alcance de implementación se limitó exclusivamente al 
 Durante el Sprint 1, el equipo configuró y ejecutó el proceso de despliegue del Landing Page mediante GitHub Pages y un pipeline de integración continua con GitHub Actions. A continuación se describe el proceso realizado:
  
 1. **Creación del repositorio:** Se creó el repositorio público `landing-entreprenly` bajo la organización `Kauflink` en GitHub, aplicando GitFlow con las ramas `main` y `develop`.
+
+![creacion_repos](./images/creacion_repos.png "creacion_repos")
+
 2. **Configuración del dominio personalizado:** Se añadió el archivo `CNAME` al repositorio con el dominio personalizado asignado al Landing Page.
+
+![cname](./images/cname.png "cname")
+
+![entreprenly_cname](./images/entreprenly_cname.png "entreprenly_cname")
+
 3. **Configuración del pipeline de CI/CD:** Se creó un workflow de GitHub Actions (`.github/workflows/`) que automatiza el proceso de build y despliegue. El workflow incluye los pasos de instalación de dependencias (`npm ci`), compilación de estilos con Tailwind CSS (`npm run build`) y despliegue automático a la rama `gh-pages` al fusionar cambios en `main`.
+
+![workflows1](./images/workflows1.png "workflows1")
+
+![workflows2](./images/workflows2.png "workflows2")
+
 4. **Ajustes iterativos del pipeline:** Se realizaron cuatro refinamientos del workflow durante el Sprint para resolver compatibilidades con la versión de Node.js y actualizar GitHub Actions a la versión 4.
+
+![landing_desplegado](./images/landing_desplegado.png "landing_desplegado")
+
 5. **Verificación del despliegue:** Se comprobó que el Landing Page quedó correctamente publicado y accesible desde la URL de GitHub Pages con el dominio configurado.
-*(Insertar aquí screenshots del workflow de GitHub Actions ejecutado exitosamente, la configuración de GitHub Pages en el repositorio y el Landing Page accesible en su URL de producción)*
+
+![landing_desplegado](./images/landing_desplegado.png "landing_desplegado")
  
 ---
  
