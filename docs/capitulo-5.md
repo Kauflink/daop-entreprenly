@@ -1839,28 +1839,10 @@ Durante el Sprint 2, los cinco miembros del equipo participaron activamente en l
 
 El equipo aplicó GitFlow como estrategia de control de versiones, trabajando en ramas `feature/` por Bounded Context (e.g., `feature/sales`, `feature/chatbot`, `feature/profile-configuration`, `feature/subscription`, `feature/inventory`) y realizando la integración a `develop` y `main` mediante Pull Requests. Se realizaron un total de **53 Pull Requests** durante el Sprint. La distribución de commits por miembro del equipo fue la siguiente: Camargo Briceño (87 commits), Palma De Los Santos (58 commits), Flores Pinchi (51 commits), Chavez Carrasco (49 commits) y Peirano Brun (5 commits).
 
-*(Colocar captura de la vista de Contributors del repositorio daop-entreprenly-frontend en GitHub con el gráfico de commits por autor)*
+![contributors_p2](./images/contributors_p2.png "contributors_p2")
 
-*(Colocar captura de la lista de Pull Requests cerrados en el repositorio durante el Sprint 2)*
+![pull_p2](./images/pull_p2.png "pull_p2")
 
-*(Colocar captura del network graph de ramas en GitHub mostrando las integraciones feature → develop → main)*
+![network_g](./images/network_g.png "network_g")
 
 **URL del repositorio del Frontend Web Application:** https://github.com/Kauflink/daop-entreprenly-frontend
-
-## 5.3. Validation Interviews
-
-### 5.3.1. Diseño de Entrevistas
-
-*Contenido por agregar.*
-
-### 5.3.2. Registro de Entrevistas
-
-*Contenido por agregar.*
-
-### 5.3.3. Evaluaciones según heurísticas
-
-*Contenido por agregar.*
-
-## 5.4. Video About-the-Product
-
-*Contenido por agregar.*
