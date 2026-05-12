@@ -25,12 +25,14 @@
   <tr>
     <td>US-01</td>
     <td>Agregar productos</td>
-    <td>Como usuario quiero agregar productos para gestionar mi inventario de manera eficiente.</td>
+    <td>Como comerciante quiero agregar productos para gestionar mi inventario de manera eficiente.</td>
     <td>
-      <strong>Scenario 1: Agregar producto correctamente</strong><br>
-      Dado que el usuario está en el formulario de productos, cuando ingrese los datos correctamente y presione "Guardar", entonces el producto se registrará exitosamente.<br><br>
-      <strong>Scenario 2: Validación de datos</strong><br>
-      Dado que el usuario está en el formulario de productos, cuando deje campos obligatorios vacíos y presione "Guardar", entonces el sistema mostrará mensajes de error.
+      <strong>Scenario 1: Agregar producto unitario correctamente</strong><br>
+      Dado que el comerciante está en el formulario de productos en "/dashboard/inventory/products", cuando ingresa nombre, descripción, precio por unidad, stock inicial, categoría y tipo "unitario" y presiona "Guardar", entonces el producto se registra en el inventario y aparece en el listado con tipo "Unit Product".<br><br>
+      <strong>Scenario 2: Agregar producto por peso correctamente</strong><br>
+      Dado que el comerciante está en el formulario de productos, cuando selecciona tipo "por peso" e ingresa precio por kg y stock en kg, entonces el producto se registra y aparece en el listado con tipo "Weight Product" mostrando el stock en kilogramos.<br><br>
+      <strong>Scenario 3: Validación de campos obligatorios</strong><br>
+      Dado que el comerciante está en el formulario de productos, cuando deje campos obligatorios vacíos y presione "Guardar", entonces el sistema resalta cada campo omitido con el mensaje "Este campo es obligatorio" y no registra el producto.
     </td>
     <td>Epic-01</td>
   </tr>
@@ -38,7 +40,7 @@
   <tr>
     <td>US-02</td>
     <td>Editar lotes</td>
-    <td>Como usuario quiero editar los lotes para actualizar los datos del inventario.</td>
+    <td>Como comerciante quiero editar los lotes para actualizar los datos del inventario.</td>
     <td>
       <strong>Scenario 1: Editar lote correctamente</strong><br>
       Dado que el usuario está en la sección de lotes y selecciona un lote existente, cuando modifique los datos correctamente y presione "Guardar", entonces los cambios del lote se actualizarán exitosamente.<br><br>
@@ -51,7 +53,7 @@
   <tr>
     <td>US-03</td>
     <td>Agregar lotes</td>
-    <td>Como usuario quiero agregar lotes para gestionar correctamente las cantidades y fechas de vencimiento.</td>
+    <td>Como comerciante quiero agregar lotes para gestionar correctamente las cantidades y fechas de vencimiento.</td>
     <td>
       <strong>Scenario 1: Agregar lote correctamente</strong><br>
       Dado que el usuario está en la sección de lotes y selecciona un lote existente, cuando ingrese una cantidad y fecha válida y presione "Agregar", entonces el nuevo lote se agregará exitosamente.<br><br>
@@ -66,7 +68,7 @@
   <tr>
     <td>US-04</td>
     <td>Eliminar lotes</td>
-    <td>Como usuario quiero eliminar lotes para deshacerme de los lotes que no me sirvan.</td>
+    <td>Como comerciante quiero eliminar lotes para deshacerme de los lotes que no me sirvan.</td>
     <td>
       <strong>Scenario 1: Eliminar lote correctamente</strong><br>
       Dado que el usuario está en la sección de lotes y selecciona un lote existente, cuando presione "Eliminar", entonces el lote se eliminará exitosamente.<br><br>
@@ -79,7 +81,7 @@
   <tr>
     <td>US-05</td>
     <td>Editar productos</td>
-    <td>Como usuario quiero editar productos para actualizar los datos en el inventario.</td>
+    <td>Como comerciante quiero editar productos para actualizar los datos en el inventario.</td>
     <td>
       <strong>Scenario 1: Producto editado correctamente</strong><br>
       Dado que el usuario está en la sección de productos y selecciona un producto existente, cuando presione "Editar", entonces el producto se actualizará exitosamente.<br><br>
@@ -92,7 +94,7 @@
   <tr>
     <td>US-06</td>
     <td>Visualizar detalles de lotes</td>
-    <td>Como usuario quiero visualizar los detalles de los lotes para gestionar mejor el inventario.</td>
+    <td>Como comerciante quiero visualizar los detalles de los lotes para gestionar mejor el inventario.</td>
     <td>
       <strong>Scenario 1: Detalles de lote mostrados correctamente</strong><br>
       Dado que el usuario está en la sección de lotes y selecciona un lote existente, cuando presione "Ver Detalles", entonces los detalles se mostrarán exitosamente.<br><br>
@@ -107,7 +109,7 @@
   <tr>
     <td>US-10</td>
     <td>Visualizar detalles de producto</td>
-    <td>Como usuario quiero visualizar la información detallada de cada producto en el listado para conocer rápidamente sus características, stock disponible y precio sin necesidad de ingresar a otra pantalla.</td>
+    <td>Como comerciante quiero visualizar la información detallada de cada producto en el listado para conocer rápidamente sus características, stock disponible y precio sin necesidad de ingresar a otra pantalla.</td>
     <td>
       <strong>Scenario 1: Visualización de información del producto</strong><br>
       Dado que el usuario accede al listado de productos, cuando se carga la información, entonces cada producto debe mostrar: tipo, nombre, descripción, código QR, stock total y precio.<br><br>
@@ -120,7 +122,7 @@
   <tr>
     <td>US-12</td>
     <td>Buscar productos</td>
-    <td>Como usuario quiero tener un buscador de productos para perder menos tiempo buscando en el inventario.</td>
+    <td>Como comerciante quiero tener un buscador de productos para perder menos tiempo buscando en el inventario.</td>
     <td>
       <strong>Scenario 1: Búsqueda de productos por nombre</strong><br>
       Dado que el usuario está en el listado de productos, cuando ingresa el nombre de un producto en el campo de búsqueda, entonces el sistema filtra y muestra los productos que coincidan.<br><br>
@@ -133,7 +135,7 @@
   <tr>
     <td>US-23</td>
     <td>Crear lotes</td>
-    <td>Como usuario quiero crear lotes de productos para controlar mejor el stock y la caducidad en el inventario.</td>
+    <td>Como comerciante quiero crear lotes de productos para controlar mejor el stock y la caducidad en el inventario.</td>
     <td>
       <strong>Scenario 1: Creación de lote exitosa</strong><br>
       Dado que el usuario está en la sección de productos, cuando presiona "Crear Lote", selecciona un producto y completa los datos correctamente, entonces el sistema registra el nuevo lote y lo muestra en la lista.<br><br>
@@ -154,7 +156,7 @@
   <tr>
     <td>US-07</td>
     <td>Detectar stock agotado</td>
-    <td>Como usuario quiero ser notificado cuando tengo bajo/nada de stock.</td>
+    <td>Como comerciante quiero ser notificado cuando tengo bajo/nada de stock.</td>
     <td>
       <strong>Scenario 1: Alerta de stock próximo a agotarse</strong><br>
       Dado que uno o más lotes tienen stock por debajo del umbral definido, cuando el usuario accede al dashboard de lotes, entonces se muestra una alerta visible indicando los lotes próximos a agotarse.<br><br>
@@ -167,7 +169,7 @@
   <tr>
     <td>US-08</td>
     <td>Mostrar alertas de estado al visualizar detalles</td>
-    <td>Como usuario quiero visualizar alertas de estado al ver el detalle de un lote para identificar rápidamente si tiene stock bajo, está agotado o próximo a vencer.</td>
+    <td>Como comerciante quiero visualizar alertas de estado al ver el detalle de un lote para identificar rápidamente si tiene stock bajo, está agotado o próximo a vencer.</td>
     <td>
       <strong>Scenario 1: Alerta de estado mostrada</strong><br>
       Dado que el lote tiene stock bajo, está agotado o próximo a vencer, cuando presiona "Ver Detalles", entonces se mostrarán los detalles del lote con alertas de estado.<br><br>
@@ -180,7 +182,7 @@
   <tr>
     <td>US-09</td>
     <td>Visualizar dashboard de lotes</td>
-    <td>Como usuario quiero visualizar un dashboard de lotes con indicadores y alertas para conocer rápidamente el estado de mi inventario al ingresar al módulo de lotes.</td>
+    <td>Como comerciante quiero visualizar un dashboard de lotes con indicadores y alertas para conocer rápidamente el estado de mi inventario al ingresar al módulo de lotes.</td>
     <td>
       <strong>Scenario 1: Visualización de resumen de lotes</strong><br>
       Dado que el usuario ingresa al módulo de lotes, cuando se carga la pantalla, entonces se muestra un resumen con indicadores clave sobre los estados de los lotes.<br><br>
@@ -193,7 +195,7 @@
   <tr>
     <td>US-11</td>
     <td>Recibir alerta de caducidad de lote</td>
-    <td>Como usuario quiero ser notificado cuando un lote esté próximo a vencer o ya haya vencido para tomar acciones como priorizar su uso o descartarlo.</td>
+    <td>Como comerciante quiero ser notificado cuando un lote esté próximo a vencer o ya haya vencido para tomar acciones como priorizar su uso o descartarlo.</td>
     <td>
       <strong>Scenario 1: Alerta de lote próximo a vencer</strong><br>
       Dado que uno o más lotes tienen fecha de caducidad dentro del rango próximo definido, cuando el usuario accede al dashboard de lotes, entonces se muestra una alerta indicando los lotes próximos a vencer.<br><br>
@@ -409,12 +411,12 @@
     <td>Buscar productos en el inventario y validar su tipo de medida</td>
     <td>Como cajero, quiero buscar productos del inventario para que el sistema valide si son por cantidad o peso, para abrir la interfaz de ingreso correspondiente.</td>
     <td>
-      <strong>Scenario 1: Búsqueda y validación de producto por peso</strong><br>
-      Dado que el cajero ingresa "Manzana" en el buscador, cuando selecciona el producto de la lista y el sistema verifica que el producto está registrado con medida en "Kg", entonces el sistema despliega el modal "Registrar Peso".<br><br>
-      <strong>Scenario 2: Búsqueda y validación de producto por cantidad</strong><br>
-      Dado que el cajero realiza una búsqueda, cuando selecciona "Coca Cola" del inventario y el sistema verifica que el producto está registrado por unidades, entonces el sistema despliega el modal "Registrar Cantidad".<br><br>
+      <strong>Scenario 1: Búsqueda con autocompletado y validación por peso</strong><br>
+      Dado que el cajero está en "/dashboard/sales" y escribe en el campo de búsqueda, cuando el texto coincide con un producto del inventario, entonces el sistema muestra una lista desplegable de sugerencias en tiempo real; al seleccionar un producto con tipo "Weight Product", el sistema cierra el buscador y abre el modal "Registrar Peso".<br><br>
+      <strong>Scenario 2: Búsqueda con autocompletado y validación por cantidad</strong><br>
+      Dado que el cajero escribe en el campo de búsqueda, cuando selecciona un producto con tipo "Unit Product" de la lista desplegable, entonces el sistema cierra el buscador y abre el modal "Registrar Cantidad".<br><br>
       <strong>Scenario 3: Producto no encontrado</strong><br>
-      Dado que el término ingresado no coincide con el inventario, cuando se ejecuta la búsqueda, entonces el sistema muestra un mensaje indicando "Producto no encontrado".
+      Dado que el cajero ingresa un término que no coincide con ningún producto del inventario, cuando el sistema evalúa las coincidencias, entonces la lista desplegable muestra el mensaje "Producto no encontrado" y no permite seleccionar ningún ítem.
     </td>
     <td>Epic-05</td>
   </tr>
@@ -425,9 +427,9 @@
     <td>Como cajero, quiero ingresar el número de unidades de un producto seleccionado, para añadirlo al detalle de la venta.</td>
     <td>
       <strong>Scenario 1: Confirmación de cantidad unitaria</strong><br>
-      Dado que el modal "Registrar Cantidad" está abierto, cuando el cajero ingresa el número entero "3" en el teclado numérico y presiona el botón "Confirmar cantidad", entonces el sistema calcula el subtotal y añade el ítem al detalle de la venta.<br><br>
+      Dado que el modal "Registrar Cantidad" está abierto y muestra el nombre del producto y el stock disponible, cuando el cajero usa el teclado numérico del modal para ingresar un número entero (p. ej. "3") y presiona "Confirmar cantidad", entonces el sistema calcula el subtotal (precio × 3), cierra el modal y añade el ítem al ticket de venta con nombre, cantidad y subtotal visibles.<br><br>
       <strong>Scenario 2: Validación de stock insuficiente por cantidad</strong><br>
-      Dado que el cajero ha ingresado una cantidad en el modal, cuando el sistema verifica que la cantidad solicitada es mayor al stock disponible y el usuario intenta confirmar la acción, entonces el sistema muestra una alerta indicando "Stock insuficiente" y no permite añadir el producto al ticket.
+      Dado que el modal "Registrar Cantidad" está abierto, cuando el cajero ingresa una cantidad mayor al stock disponible del producto y presiona "Confirmar cantidad", entonces el sistema muestra una alerta de "Stock insuficiente" dentro del modal y no añade el producto al ticket, manteniendo el modal abierto para que el cajero corrija la cantidad.
     </td>
     <td>Epic-05</td>
   </tr>
@@ -437,12 +439,12 @@
     <td>Capturar el peso mediante balanza IoT o ingreso manual</td>
     <td>Como cajero, quiero obtener el peso del producto automáticamente o por teclado para procesar la venta de productos al granel.</td>
     <td>
-      <strong>Scenario 1: Captura automática</strong><br>
-      Dado que el modal "Registrar Peso" está abierto, cuando el sistema detecta una balanza IoT conectada y el cajero coloca el producto sobre la balanza física y el hardware envía la lectura de peso al sistema, entonces el valor se carga automáticamente en el campo de peso.<br><br>
-      <strong>Scenario 2: Registro de peso manual</strong><br>
-      Dado que el sistema no detecta una balanza y el modal "Registrar Peso" está abierto, cuando el cajero digita el peso observado físicamente en el teclado decimal y presiona el botón "Confirmar Peso", entonces el sistema registra el dato y añade el producto al ticket de venta.<br><br>
+      <strong>Scenario 1: Captura automática con balanza IoT</strong><br>
+      Dado que el modal "Registrar Peso" está abierto y el endpoint "/api/v1/iot-scale" retorna <code>connected: true</code>, cuando el sistema obtiene la lectura de la balanza, entonces muestra el peso en el campo del modal; después de 800 ms de mostrar el valor, el sistema confirma automáticamente y añade el producto al ticket de venta sin que el cajero deba pulsar ningún botón.<br><br>
+      <strong>Scenario 2: Registro de peso manual (sin balanza)</strong><br>
+      Dado que el modal "Registrar Peso" está abierto y el endpoint "/api/v1/iot-scale" retorna <code>connected: false</code>, cuando el cajero usa el teclado decimal del modal para ingresar el peso observado físicamente y presiona "Confirmar Peso", entonces el sistema calcula el subtotal (precio/kg × peso), cierra el modal y añade el producto al ticket.<br><br>
       <strong>Scenario 3: Validación de stock insuficiente por peso</strong><br>
-      Dado que el cajero ha ingresado el peso en el modal, cuando el sistema verifica que el peso solicitado es mayor al stock disponible y el usuario intenta confirmar la acción, entonces el sistema muestra una alerta indicando "Stock insuficiente" y no permite añadir el producto al ticket.
+      Dado que el modal "Registrar Peso" está abierto, cuando el peso ingresado o capturado es mayor al stock disponible en kg del producto, entonces el sistema muestra una alerta "Stock insuficiente" dentro del modal y no añade el producto al ticket.
     </td>
     <td>Epic-05</td>
   </tr>
@@ -454,8 +456,8 @@
     <td>
       <strong>Scenario 1: Actualización del detalle y monto total</strong><br>
       Dado que se han añadido productos al ticket de venta, cuando el sistema procesa cada ítem de la lista y calcula automáticamente el subtotal multiplicando el precio por la cantidad o peso y suma todos los subtotales, entonces el sistema muestra el desglose detallado y el monto total acumulado de la venta en la interfaz.<br><br>
-      <strong>Scenario 2: Edición o eliminación de un ítem del detalle</strong><br>
-      Dado que un producto ya se encuentra registrado en el detalle de la venta, cuando el cajero selecciona la opción de eliminar y el sistema confirma la acción, entonces el sistema actualiza la lista del detalle y recalcula el monto total de la venta inmediatamente.
+      <strong>Scenario 2: Eliminación de un ítem del detalle</strong><br>
+      Dado que un producto ya se encuentra registrado en el ticket de venta, cuando el cajero presiona el ícono de basurero (eliminar) que aparece junto al ítem, entonces el sistema elimina el producto del ticket de forma inmediata y recalcula el subtotal y el conteo de ítems sin requerir confirmación adicional.
     </td>
     <td>Epic-05</td>
   </tr>
@@ -466,9 +468,9 @@
     <td>Como cajero, quiero elegir el medio por el cual está pagando el cliente (Efectivo o Tarjeta/Yape/Plin), para que el ingreso se registre en la categoría contable correcta.</td>
     <td>
       <strong>Scenario 1: Selección de método de pago exitosa</strong><br>
-      Dado que el ticket de venta tiene el monto total calculado, cuando el cajero hace clic sobre el ícono de "Efectivo" o "Tarjeta Yape/Plin" y el sistema marca visualmente la opción seleccionada como activa, entonces el sistema habilita el botón "Finalizar Venta y Emitir Boleta".<br><br>
+      Dado que el ticket de venta tiene al menos un producto, cuando el cajero hace clic sobre "Efectivo" o "Tarjeta / Yape / Plin" (digital), entonces el sistema marca visualmente la opción seleccionada con borde activo; el método "digital" agrupa Tarjeta, Yape y Plin como un único canal y lo registra como ingreso digital en la caja.<br><br>
       <strong>Scenario 2: Intento de finalización sin método de pago</strong><br>
-      Dado que el cajero ha terminado de agregar productos al ticket, cuando intenta presionar el botón de finalizar la venta sin haber marcado una opción de pago, entonces el sistema muestra un mensaje de advertencia indicando "Por favor, seleccione un método de pago" y bloquea la emisión de la boleta.
+      Dado que el cajero ha terminado de agregar productos al ticket pero no seleccionó método de pago, cuando presiona "Finalizar Venta", entonces el sistema muestra el mensaje "Por favor, seleccione un método de pago" que desaparece automáticamente después de 3 segundos, y no procesa la venta.
     </td>
     <td>Epic-05</td>
   </tr>
@@ -479,9 +481,9 @@
     <td>Como cajero, quiero procesar el pago y finalizar la venta en un solo paso, para registrar la transacción en el sistema y entregar el comprobante al cliente de forma inmediata.</td>
     <td>
       <strong>Scenario 1: Procesamiento exitoso del cierre de venta</strong><br>
-      Dado que el ticket de venta tiene productos añadidos y el método de pago ha sido seleccionado, cuando el cajero presiona el botón "Finalizar Venta y Emitir Boleta" y el sistema valida que los datos de la transacción son correctos, entonces el sistema genera el comprobante de pago, muestra un mensaje de éxito y limpia la interfaz para una nueva venta.<br><br>
-      <strong>Scenario 2: Bloqueo de finalización por datos incompletos</strong><br>
-      Dado que el cajero se encuentra en la pantalla de ventas, cuando intenta presionar el botón de finalizar venta sin productos en el ticket o sin método de pago, entonces el sistema muestra un mensaje "No hay productos en el ticket" manteniendo la interfaz de venta activa hasta que se complete el campo requerido.
+      Dado que el ticket de venta tiene al menos un producto y el método de pago está seleccionado, cuando el cajero presiona "Finalizar Venta", entonces el sistema registra la venta en el endpoint "/api/v1/sales", actualiza el resumen de caja en "/api/v1/cash-registers" sumando el monto al canal correspondiente, y muestra el modal "Venta Exitosa"; el modal se cierra automáticamente después de 2 segundos o manualmente con el botón "X", y el ticket queda vacío listo para una nueva venta.<br><br>
+      <strong>Scenario 2: Bloqueo por ticket vacío</strong><br>
+      Dado que el cajero se encuentra en la pantalla de ventas con el ticket sin productos, cuando presiona "Finalizar Venta", entonces el sistema muestra el mensaje "No hay productos en el ticket" que desaparece automáticamente después de 3 segundos, y no procesa la venta.
     </td>
     <td>Epic-05</td>
   </tr>
@@ -500,9 +502,9 @@
     <td>Como comerciante, quiero que cada venta finalizada sume su monto al acumulado del método correspondiente, para tener visibilidad inmediata de cuánto dinero hay en efectivo y cuánto en digital.</td>
     <td>
       <strong>Scenario 1: Actualización del acumulado por método de pago</strong><br>
-      Dado que se ha finalizado una venta exitosamente, cuando el sistema procesa el registro de la transacción y detecta el método de pago utilizado (Efectivo o Tarjeta/Digital), entonces el sistema actualiza visualmente el "Resumen de Caja" con los nuevos montos acumulados.<br><br>
+      Dado que se ha finalizado una venta exitosamente, cuando el sistema procesa el registro de la transacción con método "CASH" o "DIGITAL", entonces el sistema suma el monto al campo <code>totalCash</code> o <code>totalDigital</code> del registro de caja del día en el endpoint "/api/v1/cash-registers" y actualiza visualmente el panel "Resumen de Caja" de forma inmediata.<br><br>
       <strong>Scenario 2: Visualización del total general de ingresos</strong><br>
-      Dado que los saldos por categoría (Efectivo y Digital) han sido actualizados, cuando el comerciante visualiza el panel de "Resumen de Caja", entonces el sistema muestra el "Total del Día" como la suma consolidada de todos los medios de pago.
+      Dado que existen ingresos registrados en efectivo y/o digital, cuando el comerciante visualiza el panel "Resumen de Caja" en la página de ventas, entonces el sistema muestra "Efectivo", "Tarjeta / Yape / Plin" y "Total del Día" como la suma de ambos canales, expresados en la moneda configurada en las preferencias del perfil.
     </td>
     <td>Epic-06</td>
   </tr>
@@ -513,9 +515,9 @@
     <td>Como cajero, quiero visualizar de forma centralizada los ingresos acumulados por método de pago, para tener un control inmediato de los saldos del día sin salir de la interfaz principal.</td>
     <td>
       <strong>Scenario 1: Visualización dinámica de ingresos operativos</strong><br>
-      Dado que el cajero se encuentra en la sección de "Ventas", cuando finaliza transacciones de forma sucesiva, entonces el sistema actualiza automáticamente los contadores de "Efectivo", "Tarjeta Yape/Plin" y el "Total del Día" en la parte inferior de la pantalla.<br><br>
-      <strong>Scenario 2: Persistencia de saldos al cambiar de sección</strong><br>
-      Dado que el cajero tiene un saldo acumulado en el Resumen de Caja, cuando navega hacia otra sección y regresa nuevamente a "Ventas", entonces el sistema muestra los saldos actualizados tal como estaban antes de salir de la pestaña.
+      Dado que el cajero se encuentra en "/dashboard/sales", cuando finaliza transacciones de forma sucesiva, entonces el sistema actualiza automáticamente los contadores de "Efectivo", "Tarjeta / Yape / Plin" y el "Total del Día" en el componente CashSummary sin requerir recarga de página.<br><br>
+      <strong>Scenario 2: Carga de saldos persistidos al ingresar a ventas</strong><br>
+      Dado que el comerciante tiene ventas registradas en el día, cuando accede o regresa a "/dashboard/sales", entonces el sistema consulta el endpoint "/api/v1/cash-registers" y muestra los saldos acumulados del día correspondiente a la fecha actual, sin perder datos al navegar entre secciones o recargar la página.
     </td>
     <td>Epic-06</td>
   </tr>
@@ -1023,15 +1025,17 @@
   <!-- US 63 -->
   <tr>
     <td>US-63</td>
-    <td>Configurar preferencias de idioma, zona horaria y tema</td>
-    <td>Como usuario autenticado, quiero configurar mi idioma, zona horaria y tema visual para adaptar la plataforma a mis preferencias.</td>
+    <td>Configurar preferencias de idioma, zona horaria, tema y moneda</td>
+    <td>Como comerciante autenticado, quiero configurar mi idioma, zona horaria, tema visual y moneda para adaptar la plataforma a mis preferencias operativas.</td>
     <td>
       <strong>Scenario 1: Cambio de idioma exitoso</strong><br>
-      Dado que el usuario selecciona un idioma disponible, cuando guarda la preferencia, entonces el sistema actualiza el idioma de la interfaz de forma inmediata.<br><br>
+      Dado que el comerciante está en la tarjeta "Preferencias" de "/dashboard/profile" y selecciona "Español" o "English", cuando el sistema aplica el cambio mediante el servicio de traducción, entonces todos los textos traducibles de la interfaz se actualizan de forma inmediata sin recargar la página.<br><br>
       <strong>Scenario 2: Cambio de zona horaria exitoso</strong><br>
-      Dado que el usuario selecciona una zona horaria de la lista disponible, cuando guarda la preferencia, entonces el sistema la almacena y la aplica en las fechas mostradas.<br><br>
+      Dado que el comerciante selecciona una zona horaria de la lista disponible (p. ej. "America/Lima (UTC-05:00)"), cuando el sistema persiste la preferencia, entonces las fechas y horas mostradas en la plataforma se ajustan a la zona horaria seleccionada.<br><br>
       <strong>Scenario 3: Cambio de tema exitoso</strong><br>
-      Dado que el usuario selecciona el tema claro u oscuro, cuando guarda la preferencia, entonces el sistema aplica el tema de forma inmediata y lo persiste para futuras sesiones.
+      Dado que el comerciante selecciona el tema "light" u "dark", cuando el sistema aplica el cambio, entonces la interfaz cambia de tema de forma inmediata y persiste la preferencia para futuras sesiones.<br><br>
+      <strong>Scenario 4: Cambio de moneda exitoso</strong><br>
+      Dado que el comerciante selecciona "S/ Sol (PEN)" o "$ Dollar (USD)" en el selector de moneda, cuando el sistema persiste la preferencia, entonces los montos en el Resumen de Caja y en el ticket de ventas se formatean con el símbolo de la moneda seleccionada.
     </td>
     <td>Epic-15</td>
   </tr>
@@ -1314,6 +1318,32 @@
     </td>
     <td>Epic-18</td>
   </tr>
+  <!-- US 83 -->
+  <tr>
+    <td>US-83</td>
+    <td>Registrar y verificar número de teléfono</td>
+    <td>Como comerciante autenticado, quiero registrar y verificar mi número de teléfono en el perfil para tener un canal de contacto adicional vinculado a mi cuenta.</td>
+    <td>
+      <strong>Scenario 1: Número de teléfono registrado correctamente</strong><br>
+      Dado que el comerciante está en la tarjeta "Verificar Teléfono" de "/dashboard/profile" e ingresa un número con formato válido (entre 7 y 20 dígitos, opcionalmente con prefijo internacional "+"), cuando presiona "Verificar teléfono", entonces el sistema registra el número y muestra confirmación del envío del código de verificación.<br><br>
+      <strong>Scenario 2: Formato de teléfono inválido</strong><br>
+      Dado que el comerciante ingresa un número con menos de 7 dígitos o caracteres no permitidos, cuando el sistema valida el campo, entonces muestra un mensaje de error de formato y no envía el código de verificación.
+    </td>
+    <td>Epic-15</td>
+  </tr>
+  <!-- US 84 -->
+  <tr>
+    <td>US-84</td>
+    <td>Cancelar venta en curso</td>
+    <td>Como cajero, quiero cancelar la venta en curso para limpiar el ticket y empezar una nueva transacción sin procesar el cobro.</td>
+    <td>
+      <strong>Scenario 1: Cancelación exitosa del ticket</strong><br>
+      Dado que el cajero tiene productos en el ticket de venta en "/dashboard/sales", cuando presiona el botón de cancelar venta, entonces el sistema elimina todos los ítems del ticket, limpia el método de pago seleccionado y deja la interfaz lista para una nueva venta sin registrar ninguna transacción.<br><br>
+      <strong>Scenario 2: Cancelación con ticket vacío</strong><br>
+      Dado que el cajero no tiene productos en el ticket, cuando el sistema evalúa la acción de cancelar, entonces no realiza ninguna operación ya que el ticket ya está vacío.
+    </td>
+    <td>Epic-05</td>
+  </tr>
   </tbody>
 </table>
 
@@ -1432,12 +1462,15 @@ A continuación se presenta el Product Backlog de Entreprenly con todas las User
     <tr><td>74</td><td>US-60</td><td>Subir foto de perfil</td><td>Como usuario autenticado, quiero subir una foto de perfil para personalizar mi cuenta en la plataforma.</td><td>3</td></tr>
     <tr><td>75</td><td>US-61</td><td>Cambiar email con re-verificación</td><td>Como usuario autenticado, quiero cambiar mi email y verificarlo para mantener mis datos de contacto actualizados.</td><td>3</td></tr>
     <tr><td>76</td><td>US-62</td><td>Cambiar contraseña</td><td>Como usuario autenticado, quiero cambiar mi contraseña para mantener la seguridad de mi cuenta.</td><td>3</td></tr>
-    <tr><td>77</td><td>US-63</td><td>Configurar preferencias de idioma, zona horaria y tema</td><td>Como usuario autenticado, quiero configurar mi idioma, zona horaria y tema visual para adaptar la plataforma a mis preferencias.</td><td>2</td></tr>
+    <tr><td>77</td><td>US-63</td><td>Configurar preferencias de idioma, zona horaria, tema y moneda</td><td>Como comerciante autenticado, quiero configurar mi idioma, zona horaria, tema visual y moneda para adaptar la plataforma a mis preferencias operativas.</td><td>3</td></tr>
     <tr><td>78</td><td>US-64</td><td>Configurar notificaciones</td><td>Como usuario autenticado, quiero configurar mis preferencias de notificación para recibir solo los avisos que me sean relevantes.</td><td>2</td></tr>
     <!-- BLOQUE 16: FUNCIONALIDADES DETECTADAS EN FRONTEND -->
     <tr><td>79</td><td>US-79</td><td>Escanear código QR en inventario</td><td>Como usuario de inventario, quiero escanear códigos QR desde los formularios de productos y lotes para completar el código del registro sin ingresarlo manualmente.</td><td>3</td></tr>
     <tr><td>80</td><td>US-80</td><td>Navegar entre módulos desde el sidebar</td><td>Como usuario autenticado, quiero usar el sidebar del dashboard para ingresar rápidamente a Home, Productos, Lotes, Ventas, Suscripción, Pedidos, Chatbot y Ayuda.</td><td>2</td></tr>
     <tr><td>81</td><td>US-81</td><td>Cambiar idioma de la interfaz</td><td>Como usuario del dashboard, quiero alternar entre español e inglés para visualizar los textos de la interfaz en el idioma que prefiera.</td><td>2</td></tr>
     <tr><td>82</td><td>US-82</td><td>Gestionar rutas no encontradas</td><td>Como usuario del dashboard, quiero recibir una vista de ruta no encontrada cuando ingreso a una URL inválida para entender que la página solicitada no existe.</td><td>1</td></tr>
+    <!-- BLOQUE 17: NUEVAS FUNCIONALIDADES -->
+    <tr><td>83</td><td>US-83</td><td>Registrar y verificar número de teléfono</td><td>Como comerciante autenticado, quiero registrar y verificar mi número de teléfono en el perfil para tener un canal de contacto adicional vinculado a mi cuenta.</td><td>2</td></tr>
+    <tr><td>84</td><td>US-84</td><td>Cancelar venta en curso</td><td>Como cajero, quiero cancelar la venta en curso para limpiar el ticket y empezar una nueva transacción sin procesar el cobro.</td><td>1</td></tr>
   </tbody>
 </table>
