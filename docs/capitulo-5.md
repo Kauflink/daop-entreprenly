@@ -468,7 +468,7 @@ Para este primer Sprint, el equipo estableció como objetivo principal la implem
     </tr>
     <tr>
       <td><strong>Sprint 1 Goal</strong></td>
-      <td>Our focus is on presenting Entreprenly's value proposition to potential users through a functional and deployed Landing Page. We believe it delivers a clear first impression of the product and motivates visitors from our target segments to explore the platform. This will be confirmed when the Landing Page is publicly accessible, includes all key sections (hero, features, pricing and call-to-action), and redirects visitors correctly toward the Web Application.</td>
+      <td>Nuestro enfoque está en presentar la propuesta de valor de Entreprenly a los usuarios potenciales a través de un Landing Page funcional y desplegado. Creemos que genera una primera impresión clara del producto y motiva a los visitantes de nuestros segmentos objetivo a explorar la plataforma. Esto se confirmará cuando el Landing Page esté públicamente accesible, incluya todas las secciones clave (hero, funcionalidades, planes y llamados a la acción) y redirija correctamente a los visitantes hacia la Web Application.</td>
     </tr>
     <tr>
       <td><strong>Sprint 1 Velocity</strong></td>
@@ -578,7 +578,7 @@ El objetivo principal de este Sprint fue implementar y desplegar la primera vers
       <td>T-01</td>
       <td>Configuración inicial del repositorio</td>
       <td>Crear el repositorio, inicializar el proyecto con HTML/CSS/Tailwind y configurar el <code>.gitignore</code> y <code>package.json</code>.</td>
-      <td>2</td>
+      <td>4</td>
       <td>Camargo Briceño, Joseph Julius</td>
       <td>Done</td>
     </tr>
@@ -588,7 +588,7 @@ El objetivo principal de este Sprint fue implementar y desplegar la primera vers
       <td>T-02</td>
       <td>Configurar pipeline de despliegue (GitHub Actions)</td>
       <td>Crear y ajustar el workflow de GitHub Actions para despliegue automático en GitHub Pages con CNAME configurado.</td>
-      <td>3</td>
+      <td>4</td>
       <td>Camargo Briceño, Joseph Julius</td>
       <td>Done</td>
     </tr>
@@ -618,7 +618,7 @@ El objetivo principal de este Sprint fue implementar y desplegar la primera vers
       <td>T-05</td>
       <td>Implementar animaciones y transiciones de la landing</td>
       <td>Agregar transiciones de fade al cambio de tema y animaciones de movimiento en la sección hero para mejorar la experiencia visual del visitante al cargar la página.</td>
-      <td>3</td>
+      <td>4</td>
       <td>Chavez Carrasco, Lionel Abraham</td>
       <td>Done</td>
     </tr>
@@ -638,7 +638,7 @@ El objetivo principal de este Sprint fue implementar y desplegar la primera vers
       <td>T-07</td>
       <td>Implementar Merchant Benefits section, Client Trust section y Comparativa breve section</td>
       <td>Desarrollar la sección de beneficios operativos para el comerciante, la sección de confianza del cliente final y la sección comparativa que contrasta la gestión manual, sistemas genéricos y Entreprenly.</td>
-      <td>3</td>
+      <td>4</td>
       <td>Chavez Carrasco, Lionel Abraham / Flores Pinchi, José Fernando</td>
       <td>Done</td>
     </tr>
@@ -648,7 +648,7 @@ El objetivo principal de este Sprint fue implementar y desplegar la primera vers
       <td>T-08</td>
       <td>Implementar Planes section</td>
       <td>Desarrollar la sección comercial con las tarjetas del Plan Free y Plan Control, mostrando el costo mensual, la lista de funcionalidades incluidas en cada nivel y los botones de acción hacia el registro.</td>
-      <td>3</td>
+      <td>4</td>
       <td>Chavez Carrasco, Lionel Abraham / Flores Pinchi, José Fernando</td>
       <td>Done</td>
     </tr>
@@ -658,7 +658,7 @@ El objetivo principal de este Sprint fue implementar y desplegar la primera vers
       <td>T-09</td>
       <td>Implementar FAQ section y Next Step section</td>
       <td>Desarrollar la sección de preguntas frecuentes con acordeones interactivos que expanden y colapsan respuestas, y la sección de cierre con CTA final que refuerza la conversión hacia el registro.</td>
-      <td>3</td>
+      <td>4</td>
       <td>Palma De Los Santos, Elynor Mikela / Peirano Brun, José Antonio</td>
       <td>Done</td>
     </tr>
@@ -668,7 +668,7 @@ El objetivo principal de este Sprint fue implementar y desplegar la primera vers
       <td>T-10</td>
       <td>Implementar navegación del header y enlace "Ingresar"</td>
       <td>Desarrollar el header con la barra de navegación principal (Cómo funciona, Beneficios, Planes, FAQ), el botón "Iniciar sesión" que redirige a <code>./login.html</code> y el menú responsive desplegable para dispositivos móviles.</td>
-      <td>2</td>
+      <td>4</td>
       <td>Chavez Carrasco, Lionel Abraham</td>
       <td>Done</td>
     </tr>
@@ -678,7 +678,7 @@ El objetivo principal de este Sprint fue implementar y desplegar la primera vers
       <td>T-11</td>
       <td>Implementar CTAs "Empezar gratis" y Footer section</td>
       <td>Implementar el botón "Empezar gratis" en el Hero y en la sección Next step que redirige a <code>./register.html</code>, y desarrollar el footer con los grupos Explorar y Siguiente paso, datos de contacto y enlaces de la marca.</td>
-      <td>2</td>
+      <td>4</td>
       <td>Peirano Brun, José Antonio / Flores Pinchi, José Fernando</td>
       <td>Done</td>
     </tr>
@@ -688,7 +688,7 @@ El objetivo principal de este Sprint fue implementar y desplegar la primera vers
       <td>T-12</td>
       <td>Revisión y corrección de contenido textual</td>
       <td>Corregir errores ortográficos, de tildes y redacción en todos los textos del Landing Page para garantizar la calidad del contenido publicado en producción.</td>
-      <td>2</td>
+      <td>4</td>
       <td>Palma De Los Santos, Elynor Mikela / Peirano Brun, José Antonio / Flores Pinchi, José Fernando</td>
       <td>Done</td>
     </tr>
@@ -940,21 +940,775 @@ El equipo aplicó GitFlow como estrategia de control de versiones, trabajando en
 
 ### 5.2.2. Sprint 2
 
-#### 5.2.2.1.Sprint Planning 2
+#### 5.2.2.1. Sprint Planning 2
+
+Para este segundo Sprint, el equipo estableció como objetivo principal la implementación de la Frontend Web Application de Entreprenly en Angular, cubriendo todos los Bounded Contexts planificados: Auth, Profile, Subscription, Inventory, Sales y Chatbot. La reunión de planificación se llevó a cabo de manera virtual, donde se definieron las User Stories a abordar, el Sprint Goal y la distribución de responsabilidades por Bounded Context.
+
+<table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+  <tbody>
+    <tr>
+      <td colspan="2"><strong>Sprint 2</strong></td>
+    </tr>
+    <tr>
+      <td colspan="2"><strong>Sprint Planning Background</strong></td>
+    </tr>
+    <tr>
+      <td><strong>Date</strong></td>
+      <td>2026-04-21</td>
+    </tr>
+    <tr>
+      <td><strong>Time</strong></td>
+      <td>09:00 AM</td>
+    </tr>
+    <tr>
+      <td><strong>Location</strong></td>
+      <td>Reunión virtual vía Discord</td>
+    </tr>
+    <tr>
+      <td><strong>Prepared By</strong></td>
+      <td>Camargo Briceño, Joseph Julius</td>
+    </tr>
+    <tr>
+      <td><strong>Attendees (to planning meeting)</strong></td>
+      <td>Camargo Briceño, Joseph Julius / Chavez Carrasco, Lionel Abraham / Palma De Los Santos, Elynor Mikela / Peirano Brun, José Antonio / Flores Pinchi, José Fernando</td>
+    </tr>
+    <tr>
+      <td><strong>Sprint 1 Review Summary</strong></td>
+      <td>En el Sprint 1 se implementó y desplegó exitosamente la primera versión del Landing Page de Entreprenly. La página se encuentra disponible en <a href="https://entreprenly.online">entreprenly.online</a> con dominio personalizado y despliegue continuo mediante GitHub Actions. Se cubrieron todas las secciones planificadas: Hero, Funcionalidades, Planes, FAQ y Footer, con soporte de tema claro/oscuro e idioma Español/Inglés.</td>
+    </tr>
+    <tr>
+      <td><strong>Sprint 1 Retrospective Summary</strong></td>
+      <td>El equipo identificó que la coordinación entre ramas mejoró con GitFlow. Para el Sprint 2 se acordó asignar un Bounded Context por miembro del equipo para evitar conflictos de merge, mantener la rama <code>develop</code> como punto de integración central y aumentar la frecuencia de Pull Requests para revisión cruzada.</td>
+    </tr>
+    <tr>
+      <td colspan="2"><strong>Sprint Goal &amp; User Stories</strong></td>
+    </tr>
+    <tr>
+      <td><strong>Sprint 2 Goal</strong></td>
+      <td>Nuestro enfoque está en desarrollar el Frontend Web Application completo de Entreprenly en Angular, cubriendo todos los Bounded Contexts principales: Sales (Punto de Venta), Chatbot (Pedidos WhatsApp), Subscription, Inventory y Profile. Creemos que entrega una aplicación web funcional y desplegable con la que los comerciantes peruanos pueden gestionar sus operaciones de venta y sus pedidos de WhatsApp. Esto se confirmará cuando la aplicación Angular esté desplegada exitosamente en Firebase Hosting y todos los flujos clave —registro de ventas en caja, gestión de pedidos por chatbot y configuración del perfil de usuario— sean funcionales y navegables.</td>
+    </tr>
+    <tr>
+      <td><strong>Sprint 2 Velocity</strong></td>
+      <td>34</td>
+    </tr>
+    <tr>
+      <td><strong>Sum of Story Points</strong></td>
+      <td>34</td>
+    </tr>
+  </tbody>
+</table>
+
+---
 
 #### 5.2.2.2. Aspect Leaders and Collaborators
 
-#### 5.2.2.3.Sprint Backlog 2
+En el Sprint 2, el equipo organizó el trabajo asignando un Bounded Context principal por miembro para maximizar la autonomía y reducir conflictos de merge. Los aspectos cubiertos fueron: la infraestructura base y el DashboardLayout compartido, el BC de Sales (Punto de Venta), el BC de Chatbot (Pedidos WhatsApp), los BCs de Subscription e Inventory, y el BC de Profile junto con la internacionalización (i18n) y el sistema de temas. A continuación se presenta la matriz de liderazgo y colaboración (LACX):
 
-#### 5.2.2.4.Development Evidence for Sprint Review
+<table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+  <thead>
+    <tr>
+      <th>Team Member (Last Name, First Name)</th>
+      <th>GitHub Username</th>
+      <th>Infraestructura Base y DashboardLayout<br>Leader (L) / Collaborator (C)</th>
+      <th>Sales BC — Punto de Venta<br>Leader (L) / Collaborator (C)</th>
+      <th>Chatbot BC — Pedidos WhatsApp<br>Leader (L) / Collaborator (C)</th>
+      <th>Subscription & Inventory BC<br>Leader (L) / Collaborator (C)</th>
+      <th>Profile BC, i18n y Tema<br>Leader (L) / Collaborator (C)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Camargo Briceño, Joseph Julius</td>
+      <td>Juyens</td>
+      <td>L</td>
+      <td>C</td>
+      <td>C</td>
+      <td>C</td>
+      <td>L</td>
+    </tr>
+    <tr>
+      <td>Chavez Carrasco, Lionel Abraham</td>
+      <td>LioTG</td>
+      <td>C</td>
+      <td>C</td>
+      <td>C</td>
+      <td>L</td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <td>Palma De Los Santos, Elynor Mikela</td>
+      <td>elynorpalma</td>
+      <td>C</td>
+      <td>C</td>
+      <td>L</td>
+      <td>C</td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <td>Peirano Brun, José Antonio</td>
+      <td>DoomerGX</td>
+      <td>C</td>
+      <td>C</td>
+      <td>C</td>
+      <td>L</td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <td>Flores Pinchi, José Fernando</td>
+      <td>Ferdinant12-ops</td>
+      <td>C</td>
+      <td>L</td>
+      <td>C</td>
+      <td>C</td>
+      <td>C</td>
+    </tr>
+  </tbody>
+</table>
 
-#### 5.2.2.5.Execution Evidence for Sprint Review
+---
 
-#### 5.2.2.6.Services Documentation Evidence for Sprint Review
+#### 5.2.2.3. Sprint Backlog 2
 
-#### 5.2.2.7.Software Deployment Evidence for Sprint Review
+El objetivo principal de este Sprint fue implementar la Frontend Web Application de Entreprenly en Angular, cubriendo los Bounded Contexts de Auth, Profile, Subscription, Inventory, Sales y Chatbot, junto con las vistas compartidas de Home y Help. A continuación se presenta el tablero del Sprint y el detalle de los Work-items asociados.
 
-#### 5.2.2.8.Team Collaboration Insights during Sprint
+*(Colocar captura del tablero Jira con el Sprint 2 activo)*
+
+<table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+  <thead>
+    <tr>
+      <th colspan="8">Sprint # Sprint 2</th>
+    </tr>
+    <tr>
+      <th colspan="2">User Story</th>
+      <th colspan="6">Work-Item / Task</th>
+    </tr>
+    <tr>
+      <th>Id</th>
+      <th>Title</th>
+      <th>Id</th>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Estimation (Hours)</th>
+      <th>Assigned To</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>US-01</td>
+      <td>Iniciar sesión en la aplicación</td>
+      <td>T-01</td>
+      <td>Configurar proyecto Angular y estructura base</td>
+      <td>Inicializar el proyecto Angular con la arquitectura DDD por Bounded Context, configurar rutas lazy-loading, el shell del DashboardLayout con sidebar naranja y <code>router-outlet</code>, y conectar las rutas principales.</td>
+      <td>4</td>
+      <td>Camargo Briceño, Joseph Julius</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-01</td>
+      <td>Iniciar sesión en la aplicación</td>
+      <td>T-02</td>
+      <td>Implementar DashboardLayout responsive con sidebar</td>
+      <td>Desarrollar el componente <code>DashboardLayoutComponent</code> con sidebar naranja, logotipo, íconos de navegación por BC y botón de logout, con layout responsive para distintas resoluciones de pantalla.</td>
+      <td>4</td>
+      <td>Camargo Briceño, Joseph Julius</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-06</td>
+      <td>Configurar perfil de usuario</td>
+      <td>T-03</td>
+      <td>Implementar Profile BC con 8 tarjetas de configuración</td>
+      <td>Desarrollar el Bounded Context de perfil con sus 8 tarjetas de configuración (información personal, seguridad, preferencias, notificaciones, entre otras), siguiendo la arquitectura DDD de 4 capas.</td>
+      <td>5</td>
+      <td>Camargo Briceño, Joseph Julius</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-07</td>
+      <td>Personalizar preferencias de idioma y tema</td>
+      <td>T-04</td>
+      <td>Implementar i18n bilingüe, selector de moneda y persistencia de tema</td>
+      <td>Integrar el sistema de internacionalización ES/EN en todos los BCs, agregar el selector de moneda (PEN/USD) en el BC de Profile, y persistir las preferencias de idioma y tema claro/oscuro en <code>localStorage</code> para evitar el flash al recargar.</td>
+      <td>4</td>
+      <td>Camargo Briceño, Joseph Julius</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-24</td>
+      <td>Buscar producto en el punto de venta</td>
+      <td>T-05</td>
+      <td>Implementar Sales BC base y buscador con autocompletado</td>
+      <td>Crear la estructura DDD del Sales BC (domain, application, infrastructure, presentation), configurar el <code>db.json</code> con productos peruanos, e implementar el buscador de productos con autocompletado y validación "Producto no encontrado".</td>
+      <td>4</td>
+      <td>Flores Pinchi, José Fernando</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-25</td>
+      <td>Registrar cantidad de producto por unidad</td>
+      <td>T-06</td>
+      <td>Implementar modal "Registrar Cantidad" con teclado numérico</td>
+      <td>Desarrollar el modal de registro de cantidad con teclado numérico y validación de stock disponible para productos vendidos por unidad.</td>
+      <td>4</td>
+      <td>Flores Pinchi, José Fernando</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-26</td>
+      <td>Registrar peso de producto con balanza IoT</td>
+      <td>T-07</td>
+      <td>Implementar modal "Registrar Peso" con modo IoT y manual</td>
+      <td>Desarrollar el modal de peso con dos modos: automático (lee peso de <code>db.json</code> y auto-confirma) cuando la balanza está conectada, y manual con teclado decimal cuando <code>connected: false</code>.</td>
+      <td>4</td>
+      <td>Flores Pinchi, José Fernando</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-27</td>
+      <td>Eliminar producto del ticket de venta</td>
+      <td>T-08</td>
+      <td>Implementar eliminación de ítems y resumen lateral del ticket</td>
+      <td>Agregar el ícono de basurero por ítem del ticket para eliminación individual, y el panel de resumen lateral con subtotal, cantidad de ítems y total en tiempo real usando signals de Angular.</td>
+      <td>4</td>
+      <td>Flores Pinchi, José Fernando</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-28</td>
+      <td>Seleccionar método de pago</td>
+      <td>T-09</td>
+      <td>Implementar selección de método de pago y validaciones</td>
+      <td>Desarrollar la selección de método de pago (Efectivo / Tarjeta-Yape-Plin agrupados como digital) con validación "Por favor seleccione un método de pago" que se auto-oculta a los 3 segundos.</td>
+      <td>4</td>
+      <td>Flores Pinchi, José Fernando</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-29</td>
+      <td>Finalizar venta y confirmar pago</td>
+      <td>T-10</td>
+      <td>Implementar finalización de venta y modal "Venta Exitosa"</td>
+      <td>Desarrollar el flujo de finalización de venta con validaciones ("No hay productos en el ticket"), modal "Venta Exitosa" con auto-cierre a los 2 segundos, y reset del ticket al completar la venta. Incluir el decremento de stock en el Inventory BC tras cada venta.</td>
+      <td>5</td>
+      <td>Flores Pinchi, José Fernando</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-30</td>
+      <td>Ver resumen del cierre de caja</td>
+      <td>T-11</td>
+      <td>Implementar Resumen de Caja con persistencia en db.json</td>
+      <td>Desarrollar el panel de Resumen de Caja con totales por día (Total Día, Efectivo, Digital), persitirlos en <code>cash-registers</code> del <code>db.json</code> mediante PUT al finalizar cada venta, y recargarlos al volver a la vista de ventas.</td>
+      <td>4</td>
+      <td>Flores Pinchi, José Fernando</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-32</td>
+      <td>Conectar cuenta de WhatsApp al chatbot</td>
+      <td>T-12</td>
+      <td>Implementar Chatbot BC base y flujo de conexión QR</td>
+      <td>Crear la estructura DDD del Chatbot BC e implementar la vista de conexión WhatsApp con generación de QR scannable, countdown de expiración y reinicio automático del código QR.</td>
+      <td>4</td>
+      <td>Palma De Los Santos, Elynor Mikela</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-33</td>
+      <td>Ver conversaciones de WhatsApp entrantes</td>
+      <td>T-13</td>
+      <td>Implementar vista de conversaciones con session guard</td>
+      <td>Desarrollar la lista de conversaciones activas del chatbot con guard que bloquea el acceso si WhatsApp no está conectado, burbuja de escritura del cliente y efecto typewriter del bot en la barra de mensajes.</td>
+      <td>4</td>
+      <td>Palma De Los Santos, Elynor Mikela</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-34</td>
+      <td>Gestionar pedidos recibidos por WhatsApp</td>
+      <td>T-14</td>
+      <td>Implementar vista de órdenes y validación de pago del chatbot</td>
+      <td>Desarrollar la vista de órdenes del chatbot con carga de productos reales del Inventory BC, validación de pago y chips de rechazo traducidos. Implementar soporte i18n bilingüe completo (ES/EN) en todos los componentes del Chatbot BC.</td>
+      <td>5</td>
+      <td>Palma De Los Santos, Elynor Mikela</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-11</td>
+      <td>Ver planes de suscripción disponibles</td>
+      <td>T-15</td>
+      <td>Implementar Subscription BC con vista de planes</td>
+      <td>Desarrollar el Bounded Context de Subscription con la vista de planes disponibles (Plan Free y Plan Control), precios sincronizados con el selector de moneda del Profile BC, y traducciones bilingües completas.</td>
+      <td>4</td>
+      <td>Chavez Carrasco, Lionel Abraham</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-16</td>
+      <td>Ver inventario de productos y lotes</td>
+      <td>T-16</td>
+      <td>Implementar Inventory BC e integración con Sales y Home</td>
+      <td>Desarrollar el Bounded Context de Inventory con la vista de productos y lotes, e integrar sus datos reales con el BC de Sales (para el buscador y el decremento de stock) y con la vista de Home (alertas de lotes próximos a vencer).</td>
+      <td>4</td>
+      <td>Chavez Carrasco, Lionel Abraham / Peirano Brun, José Antonio</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-41</td>
+      <td>Ver panel principal del dashboard</td>
+      <td>T-17</td>
+      <td>Implementar vistas de Home y Help del dashboard</td>
+      <td>Desarrollar la vista de Home con el panel de resumen del negocio (alertas de lotes, accesos rápidos, locale reactivo al idioma) y la vista de Help con el centro de ayuda, artículos bilingües y conteo real por categoría.</td>
+      <td>4</td>
+      <td>Palma De Los Santos, Elynor Mikela</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-01</td>
+      <td>Iniciar sesión en la aplicación</td>
+      <td>T-18</td>
+      <td>Configurar despliegue en Firebase Hosting</td>
+      <td>Configurar Firebase Hosting para el Frontend Web Application, crear el workflow de GitHub Actions para despliegue continuo al integrar cambios en <code>main</code>, y validar el despliegue en <code>https://entreprenly.web.app</code>.</td>
+      <td>4</td>
+      <td>Camargo Briceño, Joseph Julius</td>
+      <td>Done</td>
+    </tr>
+  </tbody>
+</table>
+
+---
+
+#### 5.2.2.4. Development Evidence for Sprint Review
+
+Durante el Sprint 2, el equipo trabajó exclusivamente sobre el repositorio del Frontend Web Application (`daop-entreprenly-frontend`). Se realizaron más de 100 commits entre el 9 y el 12 de mayo de 2026, cubriendo desde la configuración inicial del proyecto Angular hasta la integración completa de todos los Bounded Contexts. A continuación se presenta el registro de los commits más representativos:
+
+<table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+  <thead>
+    <tr>
+      <th>Repository</th>
+      <th>Branch</th>
+      <th>Commit Id</th>
+      <th>Commit Message</th>
+      <th>Commit Message Body</th>
+      <th>Committed on (Date)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Kauflink/daop-entreprenly-frontend</td>
+      <td>main</td>
+      <td>10fa91e</td>
+      <td>Initial commit</td>
+      <td>Creación inicial del repositorio del Frontend Web Application.</td>
+      <td>2026-05-09</td>
+    </tr>
+    <tr>
+      <td>Kauflink/daop-entreprenly-frontend</td>
+      <td>main</td>
+      <td>4306255</td>
+      <td>chore: initial Angular project setup</td>
+      <td>Configuración inicial del proyecto Angular con estructura base, dependencias y configuración de rutas.</td>
+      <td>2026-05-09</td>
+    </tr>
+    <tr>
+      <td>Kauflink/daop-entreprenly-frontend</td>
+      <td>main</td>
+      <td>2a97fc6</td>
+      <td>feat(core): implement base interfaces, shared components and main views</td>
+      <td>Se implementan las interfaces base, componentes compartidos y las vistas principales de la aplicación.</td>
+      <td>2026-05-09</td>
+    </tr>
+    <tr>
+      <td>Kauflink/daop-entreprenly-frontend</td>
+      <td>develop</td>
+      <td>ccd0a90</td>
+      <td>dbJsonSales</td>
+      <td>Se agrega la estructura inicial del <code>db.json</code> con productos peruanos para el BC de Sales.</td>
+      <td>2026-05-09</td>
+    </tr>
+    <tr>
+      <td>Kauflink/daop-entreprenly-frontend</td>
+      <td>main</td>
+      <td>982fc2a</td>
+      <td>feat(layout): add DashboardLayout shell component</td>
+      <td>Se crea el componente DashboardLayout como shell de la aplicación con sidebar y área de contenido.</td>
+      <td>2026-05-10</td>
+    </tr>
+    <tr>
+      <td>Kauflink/daop-entreprenly-frontend</td>
+      <td>main</td>
+      <td>4ce1265</td>
+      <td>feat(layout): integrate DashboardLayout as app shell with nested routing</td>
+      <td>Se integra el DashboardLayout como shell principal con rutas anidadas y <code>router-outlet</code> funcional.</td>
+      <td>2026-05-10</td>
+    </tr>
+    <tr>
+      <td>Kauflink/daop-entreprenly-frontend</td>
+      <td>main</td>
+      <td>c8eb0bb</td>
+      <td>feat(dashboard-layout): responsive sidebar with logo and scaled proportions</td>
+      <td>Se implementa el sidebar naranja responsive con logotipo de Entreprenly y proporciones ajustadas al diseño.</td>
+      <td>2026-05-10</td>
+    </tr>
+    <tr>
+      <td>Kauflink/daop-entreprenly-frontend</td>
+      <td>feature/chatbot</td>
+      <td>33b1cf6</td>
+      <td>feat(chatbot): implement chatbot bounded context base structure</td>
+      <td>Se crea la estructura DDD base del Chatbot BC con sus 4 capas (domain, application, infrastructure, presentation).</td>
+      <td>2026-05-10</td>
+    </tr>
+    <tr>
+      <td>Kauflink/daop-entreprenly-frontend</td>
+      <td>main</td>
+      <td>41fb81e</td>
+      <td>feat(profile): add profile bounded context with 8 configuration cards</td>
+      <td>Se implementa el BC de Profile con las 8 tarjetas de configuración siguiendo la arquitectura DDD.</td>
+      <td>2026-05-10</td>
+    </tr>
+    <tr>
+      <td>Kauflink/daop-entreprenly-frontend</td>
+      <td>feature/chatbot</td>
+      <td>49dc628</td>
+      <td>feat(chatbot): add navigation flow, QR countdown and bot auto-response</td>
+      <td>Se agrega el flujo de navegación del chatbot, el countdown de expiración del QR y la respuesta automática del bot.</td>
+      <td>2026-05-10</td>
+    </tr>
+    <tr>
+      <td>Kauflink/daop-entreprenly-frontend</td>
+      <td>feature/chatbot</td>
+      <td>b5c8f40</td>
+      <td>style(chatbot): match components to Figma design</td>
+      <td>Se ajustan los componentes del Chatbot BC al diseño especificado en Figma.</td>
+      <td>2026-05-10</td>
+    </tr>
+    <tr>
+      <td>Kauflink/daop-entreprenly-frontend</td>
+      <td>feature/chatbot</td>
+      <td>5bb4851</td>
+      <td>feat(chatbot): add real scannable QR code with WhatsApp deep link</td>
+      <td>Se implementa un QR real y escaneable que codifica el deep link de WhatsApp para la conexión de la cuenta del comerciante.</td>
+      <td>2026-05-10</td>
+    </tr>
+    <tr>
+      <td>Kauflink/daop-entreprenly-frontend</td>
+      <td>feature/chatbot</td>
+      <td>b9835d2</td>
+      <td>feat(chatbot): add session guard to block conversations without connected WhatsApp</td>
+      <td>Se agrega un guard de sesión que bloquea el acceso a la vista de conversaciones si WhatsApp no está conectado.</td>
+      <td>2026-05-10</td>
+    </tr>
+    <tr>
+      <td>Kauflink/daop-entreprenly-frontend</td>
+      <td>develop</td>
+      <td>b4d933d</td>
+      <td>salesActualizacionFuncionalidadCompleta</td>
+      <td>Se completa la funcionalidad del Sales BC con el ticket de venta, validaciones y resumen lateral.</td>
+      <td>2026-05-10</td>
+    </tr>
+    <tr>
+      <td>Kauflink/daop-entreprenly-frontend</td>
+      <td>feature/chatbot</td>
+      <td>9d96203</td>
+      <td>feat(chatbot): implement complete chatbot flow with conversations, orders and payment validation</td>
+      <td>Se implementa el flujo completo del chatbot: lista de conversaciones, gestión de órdenes y validación de pago.</td>
+      <td>2026-05-10</td>
+    </tr>
+    <tr>
+      <td>Kauflink/daop-entreprenly-frontend</td>
+      <td>main</td>
+      <td>4536170</td>
+      <td>fix(dashboard-layout): enable child route rendering and profile navigation</td>
+      <td>Se corrige el renderizado de rutas hijas en el DashboardLayout y la navegación al BC de Profile.</td>
+      <td>2026-05-10</td>
+    </tr>
+    <tr>
+      <td>Kauflink/daop-entreprenly-frontend</td>
+      <td>feature/sales</td>
+      <td>3c57947</td>
+      <td>feat(sales): adjust sales cart, payment methods and cash summary</td>
+      <td>Se ajusta el carrito de ventas, los métodos de pago (Efectivo / Digital) y el panel de Resumen de Caja.</td>
+      <td>2026-05-11</td>
+    </tr>
+    <tr>
+      <td>Kauflink/daop-entreprenly-frontend</td>
+      <td>main</td>
+      <td>d115523</td>
+      <td>feat(shared): implement Help and Home dashboard pages</td>
+      <td>Se implementan las vistas de Home (panel resumen del negocio con alertas) y Help (centro de ayuda con artículos por categoría).</td>
+      <td>2026-05-11</td>
+    </tr>
+    <tr>
+      <td>Kauflink/daop-entreprenly-frontend</td>
+      <td>feature/sales</td>
+      <td>970d6fe</td>
+      <td>feat(sales): decrement inventory stock on sale completion</td>
+      <td>Se agrega el decremento automático del stock en el Inventory BC al completar una venta en el Sales BC.</td>
+      <td>2026-05-11</td>
+    </tr>
+    <tr>
+      <td>Kauflink/daop-entreprenly-frontend</td>
+      <td>main</td>
+      <td>10c612d</td>
+      <td>feat(chatbot): add bilingual i18n support and real inventory product data</td>
+      <td>Se agrega soporte i18n bilingüe completo al Chatbot BC y se conectan los productos reales del Inventory BC.</td>
+      <td>2026-05-11</td>
+    </tr>
+    <tr>
+      <td>Kauflink/daop-entreprenly-frontend</td>
+      <td>main</td>
+      <td>78d93ae</td>
+      <td>feat(chatbot,help): client typing bubble, bot typewriter in input bar, real category counts</td>
+      <td>Se agrega la burbuja de escritura del cliente, el efecto typewriter del bot y los conteos reales por categoría en Help.</td>
+      <td>2026-05-11</td>
+    </tr>
+    <tr>
+      <td>Kauflink/daop-entreprenly-frontend</td>
+      <td>main</td>
+      <td>e356dda</td>
+      <td>fix(preferences): persist theme and language across reloads</td>
+      <td>Se corrige la persistencia de las preferencias de tema e idioma en <code>localStorage</code> para que sobrevivan a recargas de página.</td>
+      <td>2026-05-11</td>
+    </tr>
+    <tr>
+      <td>Kauflink/daop-entreprenly-frontend</td>
+      <td>main</td>
+      <td>c18c8f2</td>
+      <td>feat(i18n): translate browser tab titles based on active language</td>
+      <td>Se implementa la traducción dinámica del título de la pestaña del navegador según el idioma activo del usuario.</td>
+      <td>2026-05-11</td>
+    </tr>
+    <tr>
+      <td>Kauflink/daop-entreprenly-frontend</td>
+      <td>main</td>
+      <td>c39716c</td>
+      <td>fix(subscription): agregar traduccion de idiomas de bc</td>
+      <td>Se agregan las traducciones ES/EN faltantes al Bounded Context de Subscription.</td>
+      <td>2026-05-11</td>
+    </tr>
+    <tr>
+      <td>Kauflink/daop-entreprenly-frontend</td>
+      <td>main</td>
+      <td>54e9f01</td>
+      <td>feat(subscription): restore subscription BC from feature/inventory</td>
+      <td>Se restaura el Bounded Context de Subscription que había sido excluido accidentalmente durante la integración del BC de Inventory.</td>
+      <td>2026-05-11</td>
+    </tr>
+    <tr>
+      <td>Kauflink/daop-entreprenly-frontend</td>
+      <td>main</td>
+      <td>475913a</td>
+      <td>feat(profile): add currency selector to preferences card</td>
+      <td>Se agrega el selector de moneda (PEN / USD) en la tarjeta de preferencias del Profile BC, sincronizado con los precios del Subscription BC.</td>
+      <td>2026-05-12</td>
+    </tr>
+    <tr>
+      <td>Kauflink/daop-entreprenly-frontend</td>
+      <td>main</td>
+      <td>8f946c1</td>
+      <td>fix: refactor currency handling and sync subscription pricing</td>
+      <td>Se refactoriza el manejo de moneda y se sincroniza el precio de los planes de Subscription con la moneda seleccionada en Profile.</td>
+      <td>2026-05-12</td>
+    </tr>
+    <tr>
+      <td>Kauflink/daop-entreprenly-frontend</td>
+      <td>main</td>
+      <td>e460790</td>
+      <td>feat(home): redesign dashboard panel to match Figma designs</td>
+      <td>Se rediseña el panel de Home para que coincida exactamente con el diseño especificado en Figma.</td>
+      <td>2026-05-12</td>
+    </tr>
+    <tr>
+      <td>Kauflink/daop-entreprenly-frontend</td>
+      <td>main</td>
+      <td>157d4a1</td>
+      <td>feat(help): redesign help module to match Figma designs</td>
+      <td>Se rediseña el módulo de Help para que coincida con el diseño de Figma.</td>
+      <td>2026-05-12</td>
+    </tr>
+    <tr>
+      <td>Kauflink/daop-entreprenly-frontend</td>
+      <td>main</td>
+      <td>382f19b</td>
+      <td>fix(chatbot): replace hardcoded localhost URLs with environment config</td>
+      <td>Se reemplazan las URLs hardcodeadas de <code>localhost</code> en el Chatbot BC con la configuración del entorno (<code>environment.ts</code>).</td>
+      <td>2026-05-12</td>
+    </tr>
+  </tbody>
+</table>
+
+---
+
+#### 5.2.2.5. Execution Evidence for Sprint Review
+
+Al término del Sprint 2, el equipo implementó y desplegó el Frontend Web Application de Entreprenly en Angular. La aplicación se encuentra disponible públicamente en Firebase Hosting en la URL `https://entreprenly.web.app`. Los Bounded Contexts implementados y sus funcionalidades clave son los siguientes:
+
+- **DashboardLayout:** Sidebar naranja responsive con logo de Entreprenly, íconos de navegación por BC y botón de logout. Funciona como shell de la aplicación con rutas lazy-loading anidadas.
+
+- **Sales BC — Punto de Venta:** Buscador de productos con autocompletado, modales de registro por cantidad (teclado numérico) y por peso (modo balanza IoT automático / modo manual), eliminación de ítems del ticket, selección de método de pago (Efectivo / Tarjeta-Yape-Plin), finalización de venta con modal "Venta Exitosa", y Resumen de Caja con persistencia en `db.json`.
+
+- **Chatbot BC — Pedidos WhatsApp:** Vista de conexión de cuenta WhatsApp mediante QR escaneable con countdown de expiración, guard de sesión, lista de conversaciones activas con burbuja de escritura del cliente, gestión de órdenes con productos reales del inventario, y validación de pago con chips de rechazo.
+
+- **Subscription BC:** Vista de planes disponibles (Plan Free y Plan Control) con precios sincronizados al selector de moneda del usuario.
+
+- **Inventory BC:** Vista de productos y lotes con datos reales consumidos por el Sales BC (decremento de stock) y por el Home BC (alertas de lotes próximos a vencer).
+
+- **Profile BC:** 8 tarjetas de configuración incluyendo selector de moneda (PEN/USD) y preferencias de idioma/tema que persisten en `localStorage`.
+
+- **Home y Help:** Panel resumen del negocio con alertas reactivas al idioma activo, y centro de ayuda con artículos bilingües agrupados por categoría con conteos reales.
+
+- **i18n:** Soporte bilingüe ES/EN en todos los BCs con traducción dinámica del título de la pestaña del navegador.
+
+*(Colocar captura de la vista Home del dashboard desplegado en Firebase)*
+
+*(Colocar captura del BC de Sales — Punto de Venta con ticket activo)*
+
+*(Colocar captura del BC de Chatbot — vista de conexión QR y lista de conversaciones)*
+
+*(Colocar captura del BC de Profile con las 8 tarjetas de configuración)*
+
+*(Colocar captura del BC de Subscription con los planes en PEN y USD)*
+
+---
+
+#### 5.2.2.6. Services Documentation Evidence for Sprint Review
+
+Durante el Sprint 2, el Backend (RESTful Web Services con Spring Boot) aún no fue implementado. El Frontend Web Application consume una API simulada mediante **JSON-Server**, que sirve el archivo `server/db.json` como una REST API completa accesible localmente en `http://localhost:3000/api/v1`. A continuación se documentan los endpoints utilizados durante este Sprint:
+
+<table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+  <thead>
+    <tr>
+      <th>Endpoint</th>
+      <th>Verbo HTTP</th>
+      <th>Descripción</th>
+      <th>Parámetros</th>
+      <th>Response ejemplo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>/api/v1/products</code></td>
+      <td>GET</td>
+      <td>Retorna la lista completa de productos del inventario.</td>
+      <td>Ninguno</td>
+      <td><code>[{ "id": 1, "name": "Arroz Costeño", "price": 3.50, "unit": "kg", "stock": 50 }]</code></td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/products/:id</code></td>
+      <td>GET</td>
+      <td>Retorna un producto específico por su ID.</td>
+      <td><code>id</code>: identificador numérico del producto (path param)</td>
+      <td><code>{ "id": 1, "name": "Arroz Costeño", "price": 3.50, "unit": "kg", "stock": 50 }</code></td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/products/:id</code></td>
+      <td>PATCH</td>
+      <td>Actualiza parcialmente un producto, usado para decrementar el stock tras una venta.</td>
+      <td><code>id</code>: path param. Body: <code>{ "stock": &lt;nuevo valor&gt; }</code></td>
+      <td><code>{ "id": 1, "name": "Arroz Costeño", "price": 3.50, "unit": "kg", "stock": 45 }</code></td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/sales</code></td>
+      <td>GET</td>
+      <td>Retorna el historial de ventas registradas.</td>
+      <td>Ninguno</td>
+      <td><code>[{ "id": 1, "date": "2026-05-12", "total": 25.50, "paymentMethod": "cash", "items": [...] }]</code></td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/sales</code></td>
+      <td>POST</td>
+      <td>Registra una nueva venta al finalizar el ticket en el Punto de Venta.</td>
+      <td>Body: <code>{ "date", "total", "paymentMethod", "items": [{ "productId", "quantity", "subtotal" }] }</code></td>
+      <td><code>{ "id": 5, "date": "2026-05-12", "total": 18.00, "paymentMethod": "digital", "items": [...] }</code> — HTTP 201</td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/cash-registers</code></td>
+      <td>GET</td>
+      <td>Retorna los registros de caja por fecha, usado para cargar el Resumen de Caja del día al iniciar la vista de Sales.</td>
+      <td>Ninguno</td>
+      <td><code>[{ "id": 1, "date": "2026-05-12", "totalCash": 150.00, "totalDigital": 75.00 }]</code></td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/cash-registers/:id</code></td>
+      <td>PUT</td>
+      <td>Actualiza el registro de caja del día con los nuevos totales acumulados tras cada venta.</td>
+      <td><code>id</code>: path param. Body: <code>{ "date", "totalCash", "totalDigital" }</code></td>
+      <td><code>{ "id": 1, "date": "2026-05-12", "totalCash": 168.00, "totalDigital": 75.00 }</code></td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/iot-scale</code></td>
+      <td>GET</td>
+      <td>Retorna el estado de la balanza IoT (conectada / desconectada) y el peso actual leído.</td>
+      <td>Ninguno</td>
+      <td><code>{ "id": 1, "connected": true, "deviceId": "SCALE-001", "currentWeight": 1.35 }</code></td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/conversations</code></td>
+      <td>GET</td>
+      <td>Retorna las conversaciones activas de WhatsApp gestionadas por el Chatbot BC.</td>
+      <td>Ninguno</td>
+      <td><code>[{ "id": 1, "clientName": "Juan", "lastMessage": "Quiero pedir...", "status": "pending" }]</code></td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/orders</code></td>
+      <td>GET</td>
+      <td>Retorna los pedidos recibidos por WhatsApp con sus productos y estado de pago.</td>
+      <td>Ninguno</td>
+      <td><code>[{ "id": 1, "conversationId": 1, "items": [...], "total": 12.00, "paymentStatus": "pending" }]</code></td>
+    </tr>
+  </tbody>
+</table>
+
+*(Colocar captura de JSON-Server corriendo localmente con los endpoints activos)*
+
+*(Colocar captura de una llamada GET /api/v1/products respondiendo con la lista de productos)*
+
+*(Colocar captura de una llamada POST /api/v1/sales con el body y la respuesta 201)*
+
+**URL del repositorio del Frontend Web Application:** https://github.com/Kauflink/daop-entreprenly-frontend
+
+La documentación formal de los endpoints con OpenAPI/Swagger se incorporará a partir del Sprint 3, cuando se implemente el Backend con Spring Boot, conforme a lo planificado en el Product Backlog.
+
+---
+
+#### 5.2.2.7. Software Deployment Evidence for Sprint Review
+
+Durante el Sprint 2, el equipo configuró y ejecutó el proceso de despliegue del Frontend Web Application mediante Firebase Hosting y un pipeline de integración continua con GitHub Actions. A continuación se describe el proceso realizado:
+
+1. **Creación del repositorio del Frontend:** Se creó el repositorio público `daop-entreprenly-frontend` bajo la organización `Kauflink` en GitHub, aplicando GitFlow con ramas `main`, `develop` y ramas `feature/` por Bounded Context.
+
+*(Colocar captura del repositorio daop-entreprenly-frontend en GitHub con la estructura de ramas)*
+
+3. **Configuración de Firebase Hosting:** Se creó un proyecto en Firebase Console, se inicializó Firebase Hosting en el repositorio del frontend con `firebase init hosting`, configurando `dist/entreprenly/browser` como directorio público y habilitando la reescritura de rutas al `index.html` para el SPA routing de Angular.
+
+*(Colocar captura de Firebase Console con el proyecto de Entreprenly y Hosting activo)*
+
+4. **Configuración del pipeline de CI/CD:** Se creó el workflow de GitHub Actions (`.github/workflows/`) que se ejecuta ante cada push a `main` y realiza: checkout del repositorio, configuración de Node.js, instalación de dependencias con `npm install`, build de producción con `ng build --configuration production` y despliegue en Firebase Hosting usando la acción oficial `FirebaseExtended/action-hosting-deploy`.
+
+*(Colocar captura del archivo deploy workflow en GitHub Actions)*
+
+*(Colocar captura del workflow ejecutado exitosamente con todos los pasos en verde)*
+
+5. **Verificación del despliegue:** Se validó que la aplicación Angular se encuentra correctamente desplegada y accesible en `https://entreprenly.web.app`, con navegación entre BCs funcional sin errores 404 al refrescar el navegador.
+
+*(Colocar captura del Frontend Web Application desplegado y accesible en entreprenly.web.app)*
+
+---
+
+#### 5.2.2.8. Team Collaboration Insights during Sprint
+
+Durante el Sprint 2, los cinco miembros del equipo participaron activamente en la implementación del Frontend Web Application, evidenciado a través de los commits y Pull Requests registrados en el repositorio `daop-entreprenly-frontend`. El trabajo se distribuyó por Bounded Context: Joseph Julius lideró la infraestructura base, el DashboardLayout, el Profile BC y la configuración del i18n y el sistema de temas; Elynor Mikela lideró el Chatbot BC y las vistas de Home y Help; José Fernando lideró el Sales BC; Lionel Abraham lideró el Subscription BC con soporte en el Inventory BC; y José Antonio contribuyó con las traducciones del Subscription BC.
+
+El equipo aplicó GitFlow como estrategia de control de versiones, trabajando en ramas `feature/` por Bounded Context (e.g., `feature/sales`, `feature/chatbot`, `feature/profile-configuration`, `feature/subscription`, `feature/inventory`) y realizando la integración a `develop` y `main` mediante Pull Requests. Se realizaron un total de **53 Pull Requests** durante el Sprint. La distribución de commits por miembro del equipo fue la siguiente: Camargo Briceño (87 commits), Palma De Los Santos (58 commits), Flores Pinchi (51 commits), Chavez Carrasco (49 commits) y Peirano Brun (5 commits).
+
+*(Colocar captura de la vista de Contributors del repositorio daop-entreprenly-frontend en GitHub con el gráfico de commits por autor)*
+
+*(Colocar captura de la lista de Pull Requests cerrados en el repositorio durante el Sprint 2)*
+
+*(Colocar captura del network graph de ramas en GitHub mostrando las integraciones feature → develop → main)*
+
+**URL del repositorio del Frontend Web Application:** https://github.com/Kauflink/daop-entreprenly-frontend
 
 ## 5.3. Validation Interviews
 
