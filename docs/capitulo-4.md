@@ -1095,7 +1095,7 @@ Esta sección presenta los mock-ups de alta fidelidad de la aplicación web de E
 #### Dashboard Principal
  
 <p align="center">
-    <img src="images/landing.png" alt="landing" width="800"/>
+    <img src="images/Landing.png" alt="landing" width="800"/>
   </p>
  
 *Ilustración – Web Application Mock-up: Dashboard Principal*
@@ -1105,7 +1105,7 @@ El dashboard aplica la paleta de colores primaria del proyecto sobre una superfi
 #### Módulo de Productos
  
 <p align="center">
-    <img src="images/productos.png" alt="Producto" width="800"/>
+    <img src="images/Productos.png" alt="Producto" width="800"/>
   </p>
  
 *Ilustración – Web Application Mock-up: Módulo de Productos*
@@ -1342,13 +1342,13 @@ Gestión de Inventario
 En este Bounded Context se realiza la creación y modificación de productos. También incluye la gestión de lotes (creación, modificación y eliminación), así como funcionalidades adicionales como alertas de caducidad y control de stock.
 
 Chatbot de WhatsApp
-<p align="center"> <img src="images/Entreprenly - Chatbot de WhatsApp.JPG" width="500"/> <img src="images/Canvas BC 5.jPG" width="500"/> </p>
+<p align="center"> <img src="images/Entreprenly - Chatbot de WhatsApp.jpg" width="500"/> <img src="images/Canvas BC 5.jpg" width="500"/> </p>
 
 Este Bounded Context permite la venta a través de un chatbot de WhatsApp. Para ello, consume información del inventario con el fin de conocer la disponibilidad de productos.
 
 
 Ventas
-<p align="center"> <img src="images/Entreprenly - VentaS.jpg" width="500"/> <img src="images/Canvas BC 3.jpg" width="500"/> </p>
+<p align="center"> <img src="images/Entreprenly - Ventas.jpg" width="500"/> <img src="images/Canvas BC 3.jpg" width="500"/> </p>
 
 En este Bounded Context se realiza la gestión de ventas presenciales. Este proceso incluye la verificación de stock y la asignación de datos dependiendo del tipo de producto (por unidad o por peso).
 
