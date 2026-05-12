@@ -1,6 +1,4 @@
-﻿# Capítulo III: Requirements Specification
-
-## 3.1. User Stories
+﻿## 3.1. User Stories
 
 <table>
   <thead>
@@ -13,7 +11,10 @@
     </tr>
   </thead>
   <tbody>
-  <!-- EPIC 01 -->
+
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <!-- EPIC-01                                                    -->
+  <!-- ══════════════════════════════════════════════════════════ -->
   <tr>
     <td><strong>Epic-01</strong></td>
     <td><strong>Gestión de inventario</strong></td>
@@ -21,7 +22,6 @@
     <td></td>
     <td></td>
   </tr>
-  <!-- US 01 -->
   <tr>
     <td>US-01</td>
     <td>Agregar productos</td>
@@ -34,7 +34,6 @@
     </td>
     <td>Epic-01</td>
   </tr>
-  <!-- US 02 -->
   <tr>
     <td>US-02</td>
     <td>Editar lotes</td>
@@ -47,7 +46,6 @@
     </td>
     <td>Epic-01</td>
   </tr>
-  <!-- US 03 -->
   <tr>
     <td>US-03</td>
     <td>Agregar lotes</td>
@@ -56,13 +54,10 @@
       <strong>Scenario 1: Agregar lote correctamente</strong><br>
       Dado que el usuario está en la sección de lotes y selecciona un lote existente, cuando ingrese una cantidad y fecha válida y presione "Agregar", entonces el nuevo lote se agregará exitosamente.<br><br>
       <strong>Scenario 2: Intento de registro de lote con información incompleta</strong><br>
-      Dado que el usuario se encuentra en el formulario de Agregación de Lotes. 
-      Cuando intenta procesar la solicitud dejando uno o más campos obligatorios vacíos.
-      Entonces el sistema debe impedir el registro y resaltar cada campo omitido con el mensaje: "Este campo es obligatorio".
+      Dado que el usuario se encuentra en el formulario de Agregación de Lotes, cuando intenta procesar la solicitud dejando uno o más campos obligatorios vacíos, entonces el sistema debe impedir el registro y resaltar cada campo omitido con el mensaje: "Este campo es obligatorio".
     </td>
     <td>Epic-01</td>
   </tr>
-  <!-- US 04 -->
   <tr>
     <td>US-04</td>
     <td>Eliminar lotes</td>
@@ -75,7 +70,6 @@
     </td>
     <td>Epic-01</td>
   </tr>
-  <!-- US 05 -->
   <tr>
     <td>US-05</td>
     <td>Editar productos</td>
@@ -88,7 +82,6 @@
     </td>
     <td>Epic-01</td>
   </tr>
-  <!-- US 06 -->
   <tr>
     <td>US-06</td>
     <td>Visualizar detalles de lotes</td>
@@ -97,13 +90,10 @@
       <strong>Scenario 1: Detalles de lote mostrados correctamente</strong><br>
       Dado que el usuario está en la sección de lotes y selecciona un lote existente, cuando presione "Ver Detalles", entonces los detalles se mostrarán exitosamente.<br><br>
       <strong>Scenario 2: Error al recuperar los detalles del lote</strong><br>
-      Dado que el usuario visualiza la tarjeta de un producto con lotes existentes.
-      Cuando el usuario presiona "Ver Detalles" pero ocurre un error de comunicación con el servidor (timeout o error 500).
-      Entonces el sistema debe mostrar un mensaje de error indicando: "No se pudieron cargar los detalles en este momento. Inténtelo más tarde".
+      Dado que el usuario visualiza la tarjeta de un producto con lotes existentes, cuando el usuario presiona "Ver Detalles" pero ocurre un error de comunicación con el servidor (timeout o error 500), entonces el sistema debe mostrar un mensaje de error indicando: "No se pudieron cargar los detalles en este momento. Inténtelo más tarde".
     </td>
     <td>Epic-01</td>
   </tr>
-  <!-- US 10 -->
   <tr>
     <td>US-10</td>
     <td>Visualizar detalles de producto</td>
@@ -116,7 +106,6 @@
     </td>
     <td>Epic-01</td>
   </tr>
-  <!-- US 12 -->
   <tr>
     <td>US-12</td>
     <td>Buscar productos</td>
@@ -129,7 +118,6 @@
     </td>
     <td>Epic-01</td>
   </tr>
-  <!-- US 23 -->
   <tr>
     <td>US-23</td>
     <td>Crear lotes</td>
@@ -142,7 +130,10 @@
     </td>
     <td>Epic-01</td>
   </tr>
-  <!-- EPIC 02 -->
+
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <!-- EPIC-02                                                    -->
+  <!-- ══════════════════════════════════════════════════════════ -->
   <tr>
     <td><strong>Epic-02</strong></td>
     <td><strong>Notificaciones de inventario</strong></td>
@@ -150,7 +141,6 @@
     <td></td>
     <td></td>
   </tr>
-  <!-- US 07 -->
   <tr>
     <td>US-07</td>
     <td>Detectar stock agotado</td>
@@ -163,7 +153,6 @@
     </td>
     <td>Epic-02</td>
   </tr>
-  <!-- US 08 -->
   <tr>
     <td>US-08</td>
     <td>Mostrar alertas de estado al visualizar detalles</td>
@@ -176,7 +165,6 @@
     </td>
     <td>Epic-02</td>
   </tr>
-  <!-- US 09 -->
   <tr>
     <td>US-09</td>
     <td>Visualizar dashboard de lotes</td>
@@ -189,7 +177,6 @@
     </td>
     <td>Epic-02</td>
   </tr>
-  <!-- US 11 -->
   <tr>
     <td>US-11</td>
     <td>Recibir alerta de caducidad de lote</td>
@@ -202,7 +189,10 @@
     </td>
     <td>Epic-02</td>
   </tr>
-  <!-- EPIC 03 -->
+
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <!-- EPIC-03                                                    -->
+  <!-- ══════════════════════════════════════════════════════════ -->
   <tr>
     <td><strong>Epic-03</strong></td>
     <td><strong>Proceso de suscripción</strong></td>
@@ -210,7 +200,6 @@
     <td></td>
     <td></td>
   </tr>
-  <!-- US 13 -->
   <tr>
     <td>US-13</td>
     <td>Seleccionar plan de suscripción</td>
@@ -223,7 +212,6 @@
     </td>
     <td>Epic-03</td>
   </tr>
-  <!-- US 14 -->
   <tr>
     <td>US-14</td>
     <td>Iniciar proceso de suscripción</td>
@@ -236,7 +224,6 @@
     </td>
     <td>Epic-03</td>
   </tr>
-  <!-- US 15 -->
   <tr>
     <td>US-15</td>
     <td>Registrar datos de facturación</td>
@@ -249,7 +236,6 @@
     </td>
     <td>Epic-03</td>
   </tr>
-  <!-- US 16 -->
   <tr>
     <td>US-16</td>
     <td>Procesar cobro de suscripción</td>
@@ -262,7 +248,6 @@
     </td>
     <td>Epic-03</td>
   </tr>
-  <!-- US 17 -->
   <tr>
     <td>US-17</td>
     <td>Activar suscripción</td>
@@ -275,7 +260,10 @@
     </td>
     <td>Epic-03</td>
   </tr>
-  <!-- EPIC 04 -->
+
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <!-- EPIC-04                                                    -->
+  <!-- ══════════════════════════════════════════════════════════ -->
   <tr>
     <td><strong>Epic-04</strong></td>
     <td><strong>Configuración de suscripción</strong></td>
@@ -283,7 +271,6 @@
     <td></td>
     <td></td>
   </tr>
-  <!-- US 18 -->
   <tr>
     <td>US-18</td>
     <td>Visualizar panel de suscripción</td>
@@ -296,7 +283,6 @@
     </td>
     <td>Epic-04</td>
   </tr>
-  <!-- US 19 -->
   <tr>
     <td>US-19</td>
     <td>Consultar estado de suscripción</td>
@@ -309,7 +295,6 @@
     </td>
     <td>Epic-04</td>
   </tr>
-  <!-- US 20 -->
   <tr>
     <td>US-20</td>
     <td>Renovar suscripción</td>
@@ -322,7 +307,6 @@
     </td>
     <td>Epic-04</td>
   </tr>
-  <!-- US 21 -->
   <tr>
     <td>US-21</td>
     <td>Solicitar cancelación de suscripción</td>
@@ -337,7 +321,6 @@
     </td>
     <td>Epic-04</td>
   </tr>
-  <!-- US 22 -->
   <tr>
     <td>US-22</td>
     <td>Cancelar suscripción</td>
@@ -350,7 +333,6 @@
     </td>
     <td>Epic-04</td>
   </tr>
-  <!-- US 71 -->
   <tr>
     <td>US-71</td>
     <td>Agregar método de pago de suscripción</td>
@@ -365,7 +347,6 @@
     </td>
     <td>Epic-04</td>
   </tr>
-  <!-- US 72 -->
   <tr>
     <td>US-72</td>
     <td>Completar datos fiscales de suscripción</td>
@@ -380,7 +361,6 @@
     </td>
     <td>Epic-04</td>
   </tr>
-  <!-- US 73 -->
   <tr>
     <td>US-73</td>
     <td>Descargar historial de suscripción</td>
@@ -395,7 +375,10 @@
     </td>
     <td>Epic-04</td>
   </tr>
-  <!-- EPIC 05 -->
+
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <!-- EPIC-05                                                    -->
+  <!-- ══════════════════════════════════════════════════════════ -->
   <tr>
     <td><strong>Epic-05</strong></td>
     <td><strong>Gestión de Transacciones y Operaciones de Venta</strong></td>
@@ -403,7 +386,6 @@
     <td></td>
     <td></td>
   </tr>
-  <!-- US 24 -->
   <tr>
     <td>US-24</td>
     <td>Buscar productos en el inventario y validar su tipo de medida</td>
@@ -418,7 +400,6 @@
     </td>
     <td>Epic-05</td>
   </tr>
-  <!-- US 25 -->
   <tr>
     <td>US-25</td>
     <td>Registrar la cantidad de unidades en el Ticket de Venta</td>
@@ -431,7 +412,6 @@
     </td>
     <td>Epic-05</td>
   </tr>
-  <!-- US 26 -->
   <tr>
     <td>US-26</td>
     <td>Capturar el peso mediante balanza IoT o ingreso manual</td>
@@ -446,7 +426,6 @@
     </td>
     <td>Epic-05</td>
   </tr>
-  <!-- US 27 -->
   <tr>
     <td>US-27</td>
     <td>Gestionar el desglose y cálculo del Ticket de Venta</td>
@@ -459,7 +438,6 @@
     </td>
     <td>Epic-05</td>
   </tr>
-  <!-- US 28 -->
   <tr>
     <td>US-28</td>
     <td>Seleccionar el método de pago para la transacción</td>
@@ -472,7 +450,6 @@
     </td>
     <td>Epic-05</td>
   </tr>
-  <!-- US 29 -->
   <tr>
     <td>US-29</td>
     <td>Finalizar la venta y emitir el comprobante de pago</td>
@@ -485,7 +462,10 @@
     </td>
     <td>Epic-05</td>
   </tr>
-  <!-- EPIC 06 -->
+
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <!-- EPIC-06                                                    -->
+  <!-- ══════════════════════════════════════════════════════════ -->
   <tr>
     <td><strong>Epic-06</strong></td>
     <td><strong>Control de Ingresos y Monitoreo de Caja</strong></td>
@@ -493,20 +473,18 @@
     <td></td>
     <td></td>
   </tr>
-  <!-- US 30 -->
   <tr>
     <td>US-30</td>
     <td>Clasificar automáticamente los ingresos según el medio de pago</td>
     <td>Como comerciante, quiero que cada venta finalizada sume su monto al acumulado del método correspondiente, para tener visibilidad inmediata de cuánto dinero hay en efectivo y cuánto en digital.</td>
     <td>
       <strong>Scenario 1: Actualización del acumulado por método de pago</strong><br>
-      Dado que se ha finalizado una venta exitosamente, cuando el sistema procesa el registro de la transacción y detecta el método de pago utilizado (Efectivo o Tarjeta/Digital), entonces el sistema actualiza visualmente el "Resumen de Caja" con los nuevos montos acumulados.<br><br>
+      Dado que se ha finalizado una venta exitosamente, cuando el sistema procesa el registro de la transacción y detecta el método de pago utilizado, entonces el sistema actualiza visualmente el "Resumen de Caja" con los nuevos montos acumulados.<br><br>
       <strong>Scenario 2: Visualización del total general de ingresos</strong><br>
-      Dado que los saldos por categoría (Efectivo y Digital) han sido actualizados, cuando el comerciante visualiza el panel de "Resumen de Caja", entonces el sistema muestra el "Total del Día" como la suma consolidada de todos los medios de pago.
+      Dado que los saldos por categoría han sido actualizados, cuando el comerciante visualiza el panel de "Resumen de Caja", entonces el sistema muestra el "Total del Día" como la suma consolidada de todos los medios de pago.
     </td>
     <td>Epic-06</td>
   </tr>
-  <!-- US 31 -->
   <tr>
     <td>US-31</td>
     <td>Monitorear el Resumen de Caja en tiempo real dentro del panel de ventas</td>
@@ -519,7 +497,10 @@
     </td>
     <td>Epic-06</td>
   </tr>
-  <!-- EPIC 07 -->
+
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <!-- EPIC-07                                                    -->
+  <!-- ══════════════════════════════════════════════════════════ -->
   <tr>
     <td><strong>Epic-07</strong></td>
     <td><strong>Configurar Chatbot de WhatsApp Business</strong></td>
@@ -527,7 +508,6 @@
     <td></td>
     <td></td>
   </tr>
-  <!-- US 32 -->
   <tr>
     <td>US-32</td>
     <td>Vincular cuenta de WhatsApp Business mediante código QR</td>
@@ -542,7 +522,6 @@
     </td>
     <td>Epic-07</td>
   </tr>
-  <!-- US 33 -->
   <tr>
     <td>US-33</td>
     <td>Consultar estado de vinculación del chatbot</td>
@@ -555,7 +534,10 @@
     </td>
     <td>Epic-07</td>
   </tr>
-  <!-- EPIC 08 -->
+
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <!-- EPIC-08                                                    -->
+  <!-- ══════════════════════════════════════════════════════════ -->
   <tr>
     <td><strong>Epic-08</strong></td>
     <td><strong>Gestionar Conversaciones desde el Dashboard</strong></td>
@@ -563,7 +545,6 @@
     <td></td>
     <td></td>
   </tr>
-  <!-- US 34 -->
   <tr>
     <td>US-34</td>
     <td>Visualizar conversaciones de clientes en el dashboard</td>
@@ -576,7 +557,6 @@
     </td>
     <td>Epic-08</td>
   </tr>
-  <!-- US 35 -->
   <tr>
     <td>US-35</td>
     <td>Responder mensajes de clientes desde el dashboard</td>
@@ -589,7 +569,10 @@
     </td>
     <td>Epic-08</td>
   </tr>
-  <!-- EPIC 09 -->
+
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <!-- EPIC-09                                                    -->
+  <!-- ══════════════════════════════════════════════════════════ -->
   <tr>
     <td><strong>Epic-09</strong></td>
     <td><strong>Procesar Pedidos mediante Bot Automático</strong></td>
@@ -597,7 +580,6 @@
     <td></td>
     <td></td>
   </tr>
-  <!-- US 36 -->
   <tr>
     <td>US-36</td>
     <td>Responder consulta de producto disponible</td>
@@ -610,7 +592,6 @@
     </td>
     <td>Epic-09</td>
   </tr>
-  <!-- US 37 -->
   <tr>
     <td>US-37</td>
     <td>Sugerir alternativas ante producto no disponible</td>
@@ -623,7 +604,6 @@
     </td>
     <td>Epic-09</td>
   </tr>
-  <!-- US 38 -->
   <tr>
     <td>US-38</td>
     <td>Confirmar pedido con el cliente</td>
@@ -638,7 +618,10 @@
     </td>
     <td>Epic-09</td>
   </tr>
-  <!-- EPIC 10 -->
+
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <!-- EPIC-10                                                    -->
+  <!-- ══════════════════════════════════════════════════════════ -->
   <tr>
     <td><strong>Epic-10</strong></td>
     <td><strong>Gestionar Pago Digital P2P</strong></td>
@@ -646,7 +629,6 @@
     <td></td>
     <td></td>
   </tr>
-  <!-- US 39 -->
   <tr>
     <td>US-39</td>
     <td>Recibir instrucciones de pago por WhatsApp</td>
@@ -659,7 +641,6 @@
     </td>
     <td>Epic-10</td>
   </tr>
-  <!-- US 40 -->
   <tr>
     <td>US-40</td>
     <td>Reportar comprobante de pago digital</td>
@@ -672,7 +653,6 @@
     </td>
     <td>Epic-10</td>
   </tr>
-  <!-- US 41 -->
   <tr>
     <td>US-41</td>
     <td>Validar comprobante de pago desde el dashboard</td>
@@ -687,7 +667,6 @@
     </td>
     <td>Epic-10</td>
   </tr>
-  <!-- US 42 -->
   <tr>
     <td>US-42</td>
     <td>Notificar resultado de validación al cliente</td>
@@ -700,7 +679,10 @@
     </td>
     <td>Epic-10</td>
   </tr>
-  <!-- EPIC 11 -->
+
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <!-- EPIC-11                                                    -->
+  <!-- ══════════════════════════════════════════════════════════ -->
   <tr>
     <td><strong>Epic-11</strong></td>
     <td><strong>Confirmar Venta y Emitir Comprobante</strong></td>
@@ -708,7 +690,6 @@
     <td></td>
     <td></td>
   </tr>
-  <!-- US 43 -->
   <tr>
     <td>US-43</td>
     <td>Confirmar pedido y descontar stock</td>
@@ -721,7 +702,6 @@
     </td>
     <td>Epic-11</td>
   </tr>
-  <!-- US 44 -->
   <tr>
     <td>US-44</td>
     <td>Registrar venta en el sistema</td>
@@ -734,7 +714,6 @@
     </td>
     <td>Epic-11</td>
   </tr>
-  <!-- US 45 -->
   <tr>
     <td>US-45</td>
     <td>Emitir comprobante digital al cliente</td>
@@ -747,7 +726,10 @@
     </td>
     <td>Epic-11</td>
   </tr>
-  <!-- EPIC 12 -->
+
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <!-- EPIC-12                                                    -->
+  <!-- ══════════════════════════════════════════════════════════ -->
   <tr>
     <td><strong>Epic-12</strong></td>
     <td><strong>Manejar Flujos Alternativos y Restricciones</strong></td>
@@ -755,7 +737,6 @@
     <td></td>
     <td></td>
   </tr>
-  <!-- US 46 -->
   <tr>
     <td>US-46</td>
     <td>Manejar stock insuficiente en pedido</td>
@@ -768,7 +749,6 @@
     </td>
     <td>Epic-12</td>
   </tr>
-  <!-- US 47 -->
   <tr>
     <td>US-47</td>
     <td>Cancelar pedido por expiración de tiempo de pago</td>
@@ -781,7 +761,6 @@
     </td>
     <td>Epic-12</td>
   </tr>
-  <!-- US 48 -->
   <tr>
     <td>US-48</td>
     <td>Rechazar comprobante de pago inválido</td>
@@ -794,7 +773,10 @@
     </td>
     <td>Epic-12</td>
   </tr>
-  <!-- EPIC 13 -->
+
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <!-- EPIC-13                                                    -->
+  <!-- ══════════════════════════════════════════════════════════ -->
   <tr>
     <td><strong>Epic-13</strong></td>
     <td><strong>Technical Stories – Implementar RESTful API</strong></td>
@@ -802,7 +784,6 @@
     <td></td>
     <td></td>
   </tr>
-  <!-- US 49 -->
   <tr>
     <td>US-49</td>
     <td>Conocer propuesta de valor en landing page</td>
@@ -815,7 +796,6 @@
     </td>
     <td>Epic-13</td>
   </tr>
-  <!-- US 50 -->
   <tr>
     <td>US-50</td>
     <td>Gestionar ciclo de vida de pedidos mediante API</td>
@@ -830,7 +810,6 @@
     </td>
     <td>Epic-13</td>
   </tr>
-  <!-- US 51 -->
   <tr>
     <td>US-51</td>
     <td>Validar y registrar pagos mediante API</td>
@@ -845,7 +824,10 @@
     </td>
     <td>Epic-13</td>
   </tr>
-  <!-- EPIC 14 -->
+
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <!-- EPIC-14                                                    -->
+  <!-- ══════════════════════════════════════════════════════════ -->
   <tr>
     <td><strong>Epic-14</strong></td>
     <td><strong>Inicio de sesión y registro</strong></td>
@@ -853,7 +835,6 @@
     <td></td>
     <td></td>
   </tr>
-  <!-- US 52 -->
   <tr>
     <td>US-52</td>
     <td>Registrar cuenta con email</td>
@@ -868,7 +849,6 @@
     </td>
     <td>Epic-14</td>
   </tr>
-  <!-- US 53 -->
   <tr>
     <td>US-53</td>
     <td>Verificar email</td>
@@ -883,7 +863,6 @@
     </td>
     <td>Epic-14</td>
   </tr>
-  <!-- US 54 -->
   <tr>
     <td>US-54</td>
     <td>Iniciar sesión con credenciales</td>
@@ -898,7 +877,6 @@
     </td>
     <td>Epic-14</td>
   </tr>
-  <!-- US 55 -->
   <tr>
     <td>US-55</td>
     <td>Iniciar sesión con Google OAuth</td>
@@ -913,7 +891,6 @@
     </td>
     <td>Epic-14</td>
   </tr>
-  <!-- US 56 -->
   <tr>
     <td>US-56</td>
     <td>Recuperar contraseña</td>
@@ -928,7 +905,6 @@
     </td>
     <td>Epic-14</td>
   </tr>
-  <!-- US 57 -->
   <tr>
     <td>US-57</td>
     <td>Cerrar sesión</td>
@@ -941,7 +917,10 @@
     </td>
     <td>Epic-14</td>
   </tr>
-  <!-- EPIC 15 -->
+
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <!-- EPIC-15                                                    -->
+  <!-- ══════════════════════════════════════════════════════════ -->
   <tr>
     <td><strong>Epic-15</strong></td>
     <td><strong>Perfil y configuración</strong></td>
@@ -949,7 +928,6 @@
     <td></td>
     <td></td>
   </tr>
-  <!-- US 58 -->
   <tr>
     <td>US-58</td>
     <td>Visualizar perfil actual</td>
@@ -962,7 +940,6 @@
     </td>
     <td>Epic-15</td>
   </tr>
-  <!-- US 59 -->
   <tr>
     <td>US-59</td>
     <td>Actualizar nombre y biografía</td>
@@ -975,7 +952,6 @@
     </td>
     <td>Epic-15</td>
   </tr>
-  <!-- US 60 -->
   <tr>
     <td>US-60</td>
     <td>Subir foto de perfil</td>
@@ -990,7 +966,6 @@
     </td>
     <td>Epic-15</td>
   </tr>
-  <!-- US 61 -->
   <tr>
     <td>US-61</td>
     <td>Cambiar email con re-verificación</td>
@@ -1005,7 +980,6 @@
     </td>
     <td>Epic-15</td>
   </tr>
-  <!-- US 62 -->
   <tr>
     <td>US-62</td>
     <td>Cambiar contraseña</td>
@@ -1020,7 +994,6 @@
     </td>
     <td>Epic-15</td>
   </tr>
-  <!-- US 63 -->
   <tr>
     <td>US-63</td>
     <td>Configurar preferencias de idioma, zona horaria y tema</td>
@@ -1035,7 +1008,6 @@
     </td>
     <td>Epic-15</td>
   </tr>
-  <!-- US 64 -->
   <tr>
     <td>US-64</td>
     <td>Configurar notificaciones</td>
@@ -1048,7 +1020,10 @@
     </td>
     <td>Epic-15</td>
   </tr>
-  <!-- EPIC 16 -->
+
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <!-- EPIC-16                                                    -->
+  <!-- ══════════════════════════════════════════════════════════ -->
   <tr>
     <td><strong>Epic-16</strong></td>
     <td><strong>Panel de Inicio (Home)</strong></td>
@@ -1056,108 +1031,82 @@
     <td></td>
     <td></td>
   </tr>
-  <!-- US 65 -->
   <tr>
     <td>US-65</td>
     <td>Visualizar resumen de ventas del día</td>
     <td>Como comerciante, quiero visualizar un resumen de las ventas del día en el panel de inicio para conocer el rendimiento de mi negocio sin ingresar al módulo de ventas.</td>
     <td>
       <strong>Scenario 1: Resumen de ventas cargado correctamente</strong><br>
-      Dado que el comerciante accede al panel de inicio y existen ventas registradas en el día, cuando el sistema carga la información, entonces se muestra la tarjeta "Ingresos del día" con el total acumulado, el total en efectivo y el total digital correspondiente a Yape, Plin o tarjeta.<br><br>
+      Dado que el comerciante accede al panel de inicio y existen ventas registradas en el día, cuando el sistema carga la información, entonces se muestra el total de ventas del día, el número de transacciones y el desglose por método de pago.<br><br>
       <strong>Scenario 2: Sin ventas registradas en el día</strong><br>
-      Dado que el comerciante accede al panel de inicio y no se ha registrado ninguna venta en el día actual, cuando el sistema carga la información, entonces la tarjeta muestra S/0.00 en el total del día, efectivo y digital.<br><br>
-      <strong>Scenario 3: Acceso al módulo de ventas</strong><br>
-      Dado que el comerciante visualiza la tarjeta "Ingresos del día", cuando presiona el enlace "Ir a Ventas", entonces el sistema navega a la ruta "/dashboard/sales".
+      Dado que el comerciante accede al panel de inicio y no se ha registrado ninguna venta en el día actual, cuando el sistema carga la información, entonces el resumen muestra cero en todos los indicadores y se indica que aún no hay ventas registradas para el día.
     </td>
     <td>Epic-16</td>
   </tr>
-  <!-- US 66 -->
   <tr>
     <td>US-66</td>
     <td>Visualizar estado del chatbot en el home</td>
     <td>Como comerciante, quiero visualizar el estado de conexión del chatbot y los chats activos desde el panel de inicio para saber si mi canal de ventas por WhatsApp está operativo sin ingresar al módulo de chatbot.</td>
     <td>
       <strong>Scenario 1: Chatbot conectado con actividad reciente</strong><br>
-      Dado que el comerciante accede al panel de inicio y el chatbot se encuentra vinculado y activo, cuando el sistema carga la vista, entonces se muestra el estado "WhatsApp Conectado" y el texto que indica que el chatbot está activo y recibiendo mensajes.<br><br>
+      Dado que el comerciante accede al panel de inicio y el chatbot se encuentra vinculado y activo, cuando el sistema carga la vista, entonces se muestra el estado "Conectado", el número de conversaciones activas del día y el número de pedidos generados por el bot.<br><br>
       <strong>Scenario 2: Chatbot desconectado</strong><br>
-      Dado que el comerciante accede al panel de inicio y el chatbot no está vinculado o su sesión expiró, cuando el sistema carga la vista, entonces se muestra el estado "WhatsApp Desconectado", una descripción del problema y el botón "Conectar ahora".<br><br>
-      <strong>Scenario 3: Pedidos pendientes visibles desde el estado del chatbot</strong><br>
-      Dado que existen pedidos esperando validación de pago, cuando el sistema carga la tarjeta de estado del chatbot, entonces se muestra un aviso con el número de pedidos pendientes.
+      Dado que el comerciante accede al panel de inicio y el chatbot no está vinculado o su sesión expiró, cuando el sistema carga la vista, entonces se muestra el estado "Desconectado" con una alerta visible y un acceso directo para reconectar desde el mismo panel.
     </td>
     <td>Epic-16</td>
   </tr>
-  <!-- US 67 -->
   <tr>
     <td>US-67</td>
     <td>Visualizar alertas de inventario en el home</td>
     <td>Como comerciante, quiero ver las alertas críticas de inventario directamente en el panel de inicio para identificar rápidamente productos agotados o lotes próximos a vencer sin ingresar al módulo de lotes.</td>
     <td>
       <strong>Scenario 1: Alertas de inventario mostradas en el home</strong><br>
-      Dado que el comerciante accede al panel de inicio y existen productos sin stock, con stock bajo, vencidos o próximos a vencer, cuando el sistema carga la vista, entonces se muestra un banner de alerta y una lista con el producto afectado y el tipo de alerta correspondiente.<br><br>
+      Dado que el comerciante accede al panel de inicio y existen productos sin stock o lotes próximos a vencer, cuando el sistema carga la vista, entonces se muestra una sección de alertas con el nombre del producto o lote afectado y el tipo de alerta correspondiente.<br><br>
       <strong>Scenario 2: Sin alertas activas de inventario</strong><br>
-      Dado que el comerciante accede al panel de inicio y no existen condiciones críticas en el inventario, cuando el sistema carga la vista, entonces la sección de alertas muestra el mensaje "Todo en orden" e indica que no hay alertas de inventario.<br><br>
-      <strong>Scenario 3: Acceso al inventario desde una alerta</strong><br>
-      Dado que el comerciante visualiza alertas en el home, cuando presiona "Ver inventario", entonces el sistema navega a la ruta "/dashboard/inventory/lots".
+      Dado que el comerciante accede al panel de inicio y no existen condiciones críticas en el inventario, cuando el sistema carga la vista, entonces la sección de alertas muestra un mensaje indicando que todo el inventario está en estado normal.
     </td>
     <td>Epic-16</td>
   </tr>
-  <!-- US 68 -->
   <tr>
     <td>US-68</td>
     <td>Visualizar contador de pedidos pendientes en el home</td>
     <td>Como comerciante, quiero ver el número de pedidos que están pendientes de atención en el panel de inicio para priorizar mi respuesta sin necesidad de ingresar al módulo de chatbot.</td>
     <td>
       <strong>Scenario 1: Pedidos pendientes mostrados correctamente</strong><br>
-      Dado que el comerciante accede al panel de inicio y existen pedidos pendientes de validación de pago, cuando el sistema carga la vista, entonces se muestra un aviso dentro de la tarjeta de chatbot con el número de pedidos esperando validación.<br><br>
+      Dado que el comerciante accede al panel de inicio y existen pedidos en estado "pendiente de validación" o "esperando pago", cuando el sistema carga la vista, entonces se muestra un contador con el número total de pedidos que requieren atención inmediata del comerciante.<br><br>
       <strong>Scenario 2: Sin pedidos pendientes</strong><br>
-      Dado que el comerciante accede al panel de inicio y todos los pedidos han sido atendidos o no existe ninguno, cuando el sistema carga la vista, entonces no se muestra el aviso de pedidos pendientes.
+      Dado que el comerciante accede al panel de inicio y todos los pedidos del día han sido atendidos o no existe ninguno, cuando el sistema carga la vista, entonces el contador muestra cero y se indica que no hay pedidos pendientes de atención.
     </td>
     <td>Epic-16</td>
   </tr>
-  <!-- US 69 -->
   <tr>
     <td>US-69</td>
     <td>Visualizar pedidos recientes en el home</td>
     <td>Como comerciante, quiero ver los pedidos más recientes con su estado actual en el panel de inicio para hacer seguimiento sin ingresar al módulo de pedidos.</td>
     <td>
       <strong>Scenario 1: Pedidos recientes mostrados correctamente</strong><br>
-      Dado que el comerciante accede al panel de inicio y existen pedidos registrados, cuando el sistema carga la vista, entonces se muestran los pedidos recientes con número de pedido, fecha, monto total y estado actual.<br><br>
+      Dado que el comerciante accede al panel de inicio y existen pedidos registrados en el día, cuando el sistema carga la vista, entonces se muestran los últimos cinco pedidos con número de pedido, nombre del cliente, monto total y estado actual.<br><br>
       <strong>Scenario 2: Sin pedidos registrados en el día</strong><br>
-      Dado que el comerciante accede al panel de inicio y no se ha registrado ningún pedido, cuando el sistema carga la vista, entonces la sección de pedidos recientes muestra el mensaje "Sin pedidos todavía".<br><br>
-      <strong>Scenario 3: Resumen por estado</strong><br>
-      Dado que existen pedidos recientes, cuando el sistema carga la sección, entonces muestra contadores de pedidos aprobados y pendientes.
+      Dado que el comerciante accede al panel de inicio y no se ha registrado ningún pedido en el día actual, cuando el sistema carga la vista, entonces la sección de pedidos recientes muestra un mensaje indicando que aún no hay pedidos para el día.
     </td>
     <td>Epic-16</td>
   </tr>
-  <!-- US 70 -->
   <tr>
     <td>US-70</td>
     <td>Acceder a módulos desde accesos directos del home</td>
     <td>Como comerciante, quiero contar con accesos directos a los módulos principales desde el panel de inicio para navegar rápidamente a cualquier sección sin recorrer el menú lateral.</td>
     <td>
       <strong>Scenario 1: Acceso directo navega al módulo correcto</strong><br>
-      Dado que el comerciante se encuentra en el panel de inicio, cuando presiona un acceso directo, entonces el sistema lo redirige al módulo correspondiente entre Ventas, Chatbot, Pedidos, Inventario o Ayuda.<br><br>
-      <strong>Scenario 2: Accesibilidad de accesos directos</strong><br>
-      Dado que el comerciante navega con teclado o lector de pantalla, cuando enfoca un acceso directo, entonces el enlace expone una etiqueta accesible con el nombre del módulo de destino.
+      Dado que el comerciante se encuentra en el panel de inicio, cuando presiona alguno de los accesos directos disponibles, entonces el sistema lo redirige al módulo correspondiente sin pérdida de datos ni recargas innecesarias.<br><br>
+      <strong>Scenario 2: Acceso directo con indicador de alerta activa</strong><br>
+      Dado que el comerciante se encuentra en el panel de inicio y un módulo tiene alertas o notificaciones pendientes, cuando el sistema carga la vista, entonces el acceso directo correspondiente muestra un indicador visual con el número de alertas o pendientes activos.
     </td>
     <td>Epic-16</td>
   </tr>
-  <!-- US 79 -->
-  <tr>
-    <td>US-79</td>
-    <td>Escanear código QR en inventario</td>
-    <td>Como usuario de inventario, quiero escanear códigos QR desde los formularios de productos y lotes para completar el código del registro sin ingresarlo manualmente.</td>
-    <td>
-      <strong>Scenario 1: Escaneo de QR exitoso</strong><br>
-      Dado que el usuario se encuentra en un formulario de producto o lote con el componente de escaneo disponible, cuando presiona el botón con ícono de cámara y escanea un código QR válido, entonces el sistema completa el campo de código QR con el valor detectado y cierra el panel de escaneo.<br><br>
-      <strong>Scenario 2: Permiso de cámara denegado</strong><br>
-      Dado que el usuario presiona el botón de escaneo, cuando el navegador bloquea el acceso a la cámara, entonces el sistema muestra el mensaje de permiso denegado y no modifica el campo de código QR.<br><br>
-      <strong>Scenario 3: Cámara no disponible</strong><br>
-      Dado que el usuario intenta abrir el escáner y el dispositivo no permite iniciar la cámara, cuando el sistema recibe el error, entonces muestra el mensaje "No se pudo acceder a la cámara" y permite cerrar el panel.
-    </td>
-    <td>Epic-01</td>
-  </tr>
-  <!-- Epic 17 -->
+
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <!-- EPIC-17                                                    -->
+  <!-- ══════════════════════════════════════════════════════════ -->
   <tr>
     <td><strong>Epic-17</strong></td>
     <td><strong>Centro de Soporte y Ayuda</strong></td>
@@ -1165,159 +1114,321 @@
     <td></td>
     <td></td>
   </tr>
-
-  <!-- US 74 -->
   <tr>
     <td>US-74</td>
     <td>Visualizar el centro de soporte</td>
     <td>Como comerciante, quiero visualizar el centro de soporte al presionar el botón de Ayuda para acceder de forma rápida a las opciones de asistencia disponibles.</td>
     <td>
       <strong>Scenario 1: Centro de soporte cargado correctamente</strong><br>
-      Dado que el comerciante presiona el botón de Ayuda en el sidebar,<br>
-      Cuando el sistema carga la vista de soporte,<br>
-      Entonces se muestran el buscador de ayuda, artículos más consultados, todos los artículos, categorías y acceso directo a reportar un problema.<br><br>
+      Dado que el comerciante presiona el botón de Ayuda en el sidebar, cuando el sistema carga la vista de soporte, entonces se muestran las secciones: buscador de ayuda, artículos frecuentes, acceso directo a reportar problema y datos de contacto del soporte.<br><br>
       <strong>Scenario 2: Centro de soporte sin artículos disponibles</strong><br>
-      Dado que el comerciante accede al centro de soporte,<br>
-      Y no existen artículos de ayuda configurados,<br>
-      Cuando el sistema carga la vista,<br>
-      Entonces se muestra un mensaje indicando que el contenido de ayuda no está disponible aún<br>
-      Y se mantiene visible la opción de reportar un problema.
+      Dado que el comerciante accede al centro de soporte y no existen artículos de ayuda configurados, cuando el sistema carga la vista, entonces se muestra un mensaje indicando que el contenido de ayuda no está disponible aún y se mantiene visible la opción de reportar un problema.
     </td>
     <td>Epic-17</td>
   </tr>
-
-  <!-- US 75 -->
   <tr>
     <td>US-75</td>
     <td>Buscar artículo de ayuda</td>
     <td>Como comerciante, quiero buscar artículos de ayuda por palabras clave para encontrar rápidamente la información que necesito sin revisar todas las categorías.</td>
     <td>
       <strong>Scenario 1: Búsqueda con resultados encontrados</strong><br>
-      Dado que el comerciante está en el centro de soporte,<br>
-      Cuando ingresa una palabra clave en el buscador y confirma la búsqueda,<br>
-      Entonces el sistema muestra la cantidad de resultados encontrados, el término buscado, las categorías relacionadas y los artículos que coinciden con la consulta.<br><br>
+      Dado que el comerciante está en el centro de soporte, cuando ingresa una palabra clave en el buscador y confirma la búsqueda, entonces el sistema muestra los artículos que coinciden con el término ingresado.<br><br>
       <strong>Scenario 2: Búsqueda sin resultados</strong><br>
-      Dado que el comerciante ingresa un término en el buscador,<br>
-      Y no existen artículos que coincidan con la búsqueda,<br>
-      Cuando el sistema procesa la consulta,<br>
-      Entonces se muestra un mensaje indicando que no se encontraron resultados<br>
-      Y se sugiere reformular la búsqueda o reportar el problema directamente.
+      Dado que el comerciante ingresa un término en el buscador y no existen artículos que coincidan con la búsqueda, cuando el sistema procesa la consulta, entonces se muestra un mensaje indicando que no se encontraron resultados y se sugiere reformular la búsqueda o reportar el problema directamente.
     </td>
     <td>Epic-17</td>
   </tr>
-
-  <!-- US 76 -->
   <tr>
     <td>US-76</td>
     <td>Consultar artículo de ayuda</td>
     <td>Como comerciante, quiero abrir y leer un artículo de ayuda para entender cómo usar una funcionalidad de la plataforma o resolver un problema específico.</td>
     <td>
       <strong>Scenario 1: Artículo cargado correctamente</strong><br>
-      Dado que el comerciante selecciona un artículo desde el listado o los resultados de búsqueda,<br>
-      Cuando el sistema carga el artículo,<br>
-      Entonces se muestra el breadcrumb de ayuda, categoría, título, tiempo de lectura, pasos del artículo y artículos relacionados cuando existan.<br><br>
+      Dado que el comerciante selecciona un artículo desde el listado o los resultados de búsqueda, cuando el sistema carga el artículo, entonces se muestra el título, el contenido detallado y las secciones relacionadas.<br><br>
       <strong>Scenario 2: Artículo marcado como útil o no útil</strong><br>
-      Dado que el comerciante leyó el artículo de ayuda,<br>
-      Cuando selecciona la opción "¿Te fue útil este artículo?"<br>
-      Y elige "Sí" o "No",<br>
-      Entonces el sistema registra la respuesta<br>
-      Y si elige "No", muestra la opción de reportar el problema directamente.
+      Dado que el comerciante leyó el artículo de ayuda, cuando selecciona la opción "¿Te fue útil este artículo?" y elige "Sí" o "No", entonces el sistema registra la respuesta y si elige "No", muestra la opción de reportar el problema directamente.
     </td>
     <td>Epic-17</td>
   </tr>
-
-  <!-- US 77 -->
   <tr>
     <td>US-77</td>
     <td>Reportar un problema</td>
     <td>Como comerciante, quiero reportar un problema o incidencia desde el centro de soporte para que el equipo de Entreprenly pueda revisarlo y darle seguimiento.</td>
     <td>
       <strong>Scenario 1: Reporte enviado correctamente</strong><br>
-      Dado que el comerciante está en el formulario de reporte de problema,<br>
-      Y completa los campos obligatorios: categoría, descripción y módulo afectado,<br>
-      Cuando presiona el botón "Enviar reporte",<br>
-      Entonces el sistema registra el reporte<br>
-      Y muestra una confirmación indicando que fue recibido.<br><br>
+      Dado que el comerciante está en el formulario de reporte de problema y completa los campos obligatorios: categoría, descripción y módulo afectado, cuando presiona el botón "Enviar reporte", entonces el sistema registra el reporte y muestra una confirmación indicando que fue recibido.<br><br>
       <strong>Scenario 2: Intento de envío con campos incompletos</strong><br>
-      Dado que el comerciante está en el formulario de reporte,<br>
-      Y deja campos obligatorios vacíos,<br>
-      Cuando presiona el botón "Enviar reporte",<br>
-      Entonces el sistema no registra el reporte<br>
-      Y muestra mensajes de error indicando los campos que deben completarse.
+      Dado que el comerciante está en el formulario de reporte y deja campos obligatorios vacíos, cuando presiona el botón "Enviar reporte", entonces el sistema no registra el reporte y muestra mensajes de error indicando los campos que deben completarse.
     </td>
     <td>Epic-17</td>
   </tr>
-
-  <!-- US 78 -->
   <tr>
     <td>US-78</td>
     <td>Confirmar envío del reporte</td>
     <td>Como comerciante, quiero recibir una confirmación visual tras enviar un reporte para tener la certeza de que mi solicitud fue registrada correctamente.</td>
     <td>
       <strong>Scenario 1: Confirmación mostrada correctamente</strong><br>
-      Dado que el comerciante envió un reporte de problema exitosamente,<br>
-      Cuando el sistema procesa el envío,<br>
-      Entonces se muestra una pantalla de confirmación con el número de ticket generado, fecha, resumen del reporte y la opción de volver al centro de soporte.<br><br>
+      Dado que el comerciante envió un reporte de problema exitosamente, cuando el sistema procesa el envío, entonces se muestra una pantalla de confirmación con el número de ticket generado, el mensaje "Tu reporte fue recibido" y la opción de volver al centro de soporte.<br><br>
       <strong>Scenario 2: Error en el envío del reporte</strong><br>
-      Dado que el comerciante intentó enviar un reporte,<br>
-      Y ocurre un error en el sistema durante el procesamiento,<br>
-      Cuando el sistema detecta el fallo,<br>
-      Entonces no se genera el ticket<br>
-      Y se muestra un mensaje indicando que hubo un error y se invita a intentarlo nuevamente.
+      Dado que el comerciante intentó enviar un reporte y ocurre un error en el sistema durante el procesamiento, cuando el sistema detecta el fallo, entonces no se genera el ticket y se muestra un mensaje indicando que hubo un error y se invita a intentarlo nuevamente.
     </td>
     <td>Epic-17</td>
   </tr>
-  <!-- EPIC 18 -->
+
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <!-- EPIC-19 (LANDING)                                          -->
+  <!-- ══════════════════════════════════════════════════════════ -->
   <tr>
-    <td><strong>Epic-18</strong></td>
-    <td><strong>Experiencia global del dashboard</strong></td>
-    <td>Como usuario autenticado, quiero contar con navegación global, cambio de idioma y manejo de estados generales para usar el dashboard de forma consistente entre módulos.</td>
+    <td><strong>Epic-19</strong></td>
+    <td><strong>Propuesta de valor y dolor del comerciante en la landing</strong></td>
+    <td>Como equipo de producto, queremos comunicar claramente la propuesta de valor de Entreprenly y los problemas que resuelve en la landing page para que el visitante se identifique y decida explorar el producto.</td>
     <td></td>
     <td></td>
   </tr>
-  <!-- US 80 -->
   <tr>
-    <td>US-80</td>
-    <td>Navegar entre módulos desde el sidebar</td>
-    <td>Como usuario autenticado, quiero usar el sidebar del dashboard para ingresar rápidamente a Home, Productos, Lotes, Ventas, Suscripción, Pedidos, Chatbot y Ayuda.</td>
+    <td>US-83</td>
+    <td>Ver propuesta de valor en el hero</td>
+    <td>Como visitante, quiero ver un titular, subtítulo y CTA claros al llegar a la landing para entender de qué trata el producto de un vistazo.</td>
     <td>
-      <strong>Scenario 1: Navegación a módulo correcto</strong><br>
-      Dado que el usuario se encuentra dentro del dashboard, cuando presiona una opción del sidebar, entonces el sistema navega a la ruta correspondiente y marca la opción activa visualmente.<br><br>
-      <strong>Scenario 2: Acceso al perfil desde el bloque de usuario</strong><br>
-      Dado que el usuario visualiza el bloque de perfil del sidebar, cuando presiona dicho bloque, entonces el sistema navega a la ruta "/dashboard/profile".
+      <strong>Escenario 1: Cargar la sección hero</strong><br>
+      Dado que el visitante accede a la landing page, cuando la página termina de cargar, entonces se muestra el titular principal, el subtítulo descriptivo y al menos un botón de CTA visible sin necesidad de hacer scroll.<br><br>
+      <strong>Escenario 2: CTA del hero redirige correctamente</strong><br>
+      Dado que el visitante hace clic en el CTA del hero, cuando se activa el evento, entonces es redirigido al formulario de registro o a la sección de planes.
     </td>
-    <td>Epic-18</td>
+    <td>Epic-19</td>
   </tr>
-  <!-- US 81 -->
   <tr>
-    <td>US-81</td>
-    <td>Cambiar idioma de la interfaz</td>
-    <td>Como usuario del dashboard, quiero alternar entre español e inglés para visualizar los textos de la interfaz en el idioma que prefiera.</td>
+    <td>US-84</td>
+    <td>Conocer los problemas que resuelve el producto</td>
+    <td>Como visitante, quiero ver los problemas comunes que enfrento como comerciante para identificarme con el producto antes de seguir leyendo.</td>
     <td>
-      <strong>Scenario 1: Cambio de idioma a español</strong><br>
-      Dado que el usuario visualiza el selector de idioma, cuando presiona la opción "ES", entonces el sistema actualiza el idioma activo a español mediante el servicio de traducción y refresca los textos traducibles de la interfaz.<br><br>
-      <strong>Scenario 2: Cambio de idioma a inglés</strong><br>
-      Dado que el usuario visualiza el selector de idioma, cuando presiona la opción "EN", entonces el sistema actualiza el idioma activo a inglés y mantiene resaltada la opción seleccionada.
+      <strong>Escenario 1: Ver la sección de pain points</strong><br>
+      Dado que el visitante llega a la sección "El Problema", cuando se carga la sección, entonces se muestran al menos 3 pain points relevantes para pequeños comerciantes con ícono o ilustración por cada uno.<br><br>
+      <strong>Escenario 2: Pain points visibles sin interacción adicional</strong><br>
+      Dado que el visitante hace scroll hasta la sección, cuando el contenido entra en el viewport, entonces todos los pain points son legibles sin necesidad de expandir ni hacer clic.
     </td>
-    <td>Epic-18</td>
+    <td>Epic-19</td>
   </tr>
-  <!-- US 82 -->
+
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <!-- EPIC-20 (LANDING)                                          -->
+  <!-- ══════════════════════════════════════════════════════════ -->
   <tr>
-    <td>US-82</td>
-    <td>Gestionar rutas no encontradas</td>
-    <td>Como usuario del dashboard, quiero recibir una vista de ruta no encontrada cuando ingreso a una URL inválida para entender que la página solicitada no existe.</td>
-    <td>
-      <strong>Scenario 1: Ruta inválida dentro de la aplicación</strong><br>
-      Dado que el usuario ingresa una URL que no coincide con las rutas configuradas del frontend, cuando Angular evalúa la navegación, entonces carga el componente de página no encontrada.<br><br>
-      <strong>Scenario 2: Ruta vacía del dashboard</strong><br>
-      Dado que el usuario ingresa a la ruta base del dashboard, cuando el sistema resuelve la ruta sin segmento adicional, entonces redirige automáticamente a "/dashboard/home".
-    </td>
-    <td>Epic-18</td>
+    <td><strong>Epic-20</strong></td>
+    <td><strong>Presentación de características, pasos y beneficios del producto</strong></td>
+    <td>Como equipo de producto, queremos mostrar de forma estructurada las funcionalidades clave, el flujo de uso y los beneficios cuantificables de Entreprenly en la landing page para reducir la barrera de adopción del visitante.</td>
+    <td></td>
+    <td></td>
   </tr>
+  <tr>
+    <td>US-85</td>
+    <td>Explorar las funcionalidades clave del producto</td>
+    <td>Como visitante, quiero ver las 4 características principales del producto para evaluar si cubre mis necesidades antes de registrarme.</td>
+    <td>
+      <strong>Escenario 1: Ver tarjetas de funcionalidades</strong><br>
+      Dado que el visitante llega a la sección de características, cuando se carga la sección, entonces se muestran exactamente 4 tarjetas, cada una con ícono, título y descripción breve de la funcionalidad.<br><br>
+      <strong>Escenario 2: Tarjetas responsivas en móvil</strong><br>
+      Dado que el visitante accede desde un dispositivo móvil, cuando visualiza la sección de características, entonces las 4 tarjetas se reorganizan en una o dos columnas sin desbordamiento de contenido.
+    </td>
+    <td>Epic-20</td>
+  </tr>
+  <tr>
+    <td>US-86</td>
+    <td>Entender cómo funciona el producto paso a paso</td>
+    <td>Como visitante, quiero ver los pasos para usar el producto para entender cómo funciona antes de registrarme.</td>
+    <td>
+      <strong>Escenario 1: Ver la sección "Cómo funciona"</strong><br>
+      Dado que el visitante llega a la sección de pasos, cuando se carga la sección, entonces se muestran exactamente 4 pasos numerados, cada uno con título y descripción breve.<br><br>
+      <strong>Escenario 2: Pasos en orden secuencial</strong><br>
+      Dado que el visitante lee la sección, cuando revisa el contenido, entonces los pasos están ordenados del 1 al 4 y la numeración es visible y clara.
+    </td>
+    <td>Epic-20</td>
+  </tr>
+  <tr>
+    <td>US-87</td>
+    <td>Conocer los beneficios concretos del producto</td>
+    <td>Como visitante, quiero conocer los beneficios cuantificables del producto para tomar una decisión informada sobre si registrarme.</td>
+    <td>
+      <strong>Escenario 1: Ver sección de beneficios</strong><br>
+      Dado que el visitante llega a la sección de beneficios, cuando se carga la sección, entonces se muestran al menos 3 beneficios con métricas o datos cuantificables (p. ej. "Reduce tu merma un 30 %").<br><br>
+      <strong>Escenario 2: Beneficios con íconos identificables</strong><br>
+      Dado que el visitante revisa la sección, cuando visualiza cada beneficio, entonces cada ítem cuenta con un ícono o ilustración que refuerza visualmente el mensaje.
+    </td>
+    <td>Epic-20</td>
+  </tr>
+
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <!-- EPIC-21 (LANDING)                                          -->
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <tr>
+    <td><strong>Epic-21</strong></td>
+    <td><strong>Prueba social y comparativa con la competencia</strong></td>
+    <td>Como equipo de producto, queremos mostrar testimonios, métricas de confianza y una tabla comparativa en la landing page para que el visitante perciba la credibilidad del producto y lo prefiera sobre alternativas del mercado.</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>US-88</td>
+    <td>Ver testimonios y métricas de clientes actuales</td>
+    <td>Como visitante, quiero ver testimonios reales y estadísticas de uso para confiar en el producto antes de registrarme.</td>
+    <td>
+      <strong>Escenario 1: Ver sección de confianza con testimonios</strong><br>
+      Dado que el visitante llega a la sección de prueba social, cuando se carga la sección, entonces se muestran al menos 2 testimonios con nombre, cargo o tipo de negocio y cita textual.<br><br>
+      <strong>Escenario 2: Ver métricas de impacto</strong><br>
+      Dado que el visitante visualiza la sección, cuando revisa el contenido, entonces se muestran al menos 3 métricas cuantificables de impacto del producto (p. ej. número de comerciantes, % de reducción de pérdidas).
+    </td>
+    <td>Epic-21</td>
+  </tr>
+  <tr>
+    <td>US-89</td>
+    <td>Comparar Entreprenly con la competencia</td>
+    <td>Como visitante, quiero ver una tabla comparativa entre Entreprenly y alternativas del mercado para entender por qué es la mejor opción para mi negocio.</td>
+    <td>
+      <strong>Escenario 1: Ver tabla comparativa</strong><br>
+      Dado que el visitante llega a la sección de comparación, cuando se carga la sección, entonces se muestra una tabla con al menos 5 criterios de comparación entre Entreprenly y al menos 2 alternativas del mercado.<br><br>
+      <strong>Escenario 2: Entreprenly destacado visualmente</strong><br>
+      Dado que el visitante revisa la tabla, cuando la visualiza, entonces la columna de Entreprenly se muestra visualmente diferenciada (color, borde o encabezado destacado) respecto a las columnas de la competencia.<br><br>
+      <strong>Escenario 3: Tabla adaptada a móvil</strong><br>
+      Dado que el visitante accede desde un smartphone, cuando visualiza la sección, entonces la tabla es desplazable horizontalmente o se reorganiza para no provocar desbordamiento de pantalla.
+    </td>
+    <td>Epic-21</td>
+  </tr>
+
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <!-- EPIC-22 (LANDING)                                          -->
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <tr>
+    <td><strong>Epic-22</strong></td>
+    <td><strong>Planes de precios, FAQ y conversión final</strong></td>
+    <td>Como equipo de producto, queremos presentar los planes de precios, resolver dudas frecuentes y ofrecer un CTA de cierre en la landing page para maximizar la tasa de conversión de visitante a usuario registrado.</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>US-90</td>
+    <td>Seleccionar plan de precios desde la landing</td>
+    <td>Como visitante, quiero ver y comparar los planes de precios para decidir cuál elegir antes de registrarme.</td>
+    <td>
+      <strong>Escenario 1: Ver sección de precios</strong><br>
+      Dado que el visitante llega a la sección de precios, cuando se carga la sección, entonces se muestran los planes "Plan Free" y "Plan Control" con sus precios, lista de características con checkmarks y un CTA propio por plan.<br><br>
+      <strong>Escenario 2: Alternar entre facturación mensual y anual</strong><br>
+      Dado que el visitante está en la sección de precios, cuando hace clic en el toggle "Anual", entonces los precios de cada plan se actualizan para reflejar la tarifa anual y se muestra el ahorro correspondiente.<br><br>
+      <strong>Escenario 3: Identificar el plan destacado</strong><br>
+      Dado que el visitante ve los planes de precios, cuando observa la sección, entonces el "Plan Control" se presenta visualmente destacado (borde, etiqueta o color diferenciado) respecto al "Plan Free".
+    </td>
+    <td>Epic-22</td>
+  </tr>
+  <tr>
+    <td>US-91</td>
+    <td>Resolver dudas frecuentes desde la landing</td>
+    <td>Como visitante, quiero consultar una sección de preguntas frecuentes para resolver mis dudas sin necesidad de contactar a soporte.</td>
+    <td>
+      <strong>Escenario 1: Ver preguntas frecuentes</strong><br>
+      Dado que el visitante accede a la sección FAQ, cuando carga la sección, entonces se muestran al menos 4 preguntas con sus respuestas colapsadas por defecto.<br><br>
+      <strong>Escenario 2: Expandir una pregunta</strong><br>
+      Dado que el visitante ve la lista de preguntas, cuando hace clic en una pregunta, entonces la respuesta se despliega con animación suave y la pregunta muestra un ícono de "abierto".<br><br>
+      <strong>Escenario 3: Colapsar una pregunta abierta</strong><br>
+      Dado que el visitante tiene una pregunta expandida, cuando hace clic nuevamente en ella, entonces la respuesta se oculta y el ícono vuelve a su estado original.
+    </td>
+    <td>Epic-22</td>
+  </tr>
+  <tr>
+    <td>US-92</td>
+    <td>Iniciar registro desde el CTA final de la landing</td>
+    <td>Como visitante, quiero encontrar un llamado a la acción claro al final de la landing para iniciar mi registro sin tener que desplazarme nuevamente al inicio.</td>
+    <td>
+      <strong>Escenario 1: Ver el CTA final</strong><br>
+      Dado que el visitante ha llegado al final de la landing, cuando visualiza la sección de cierre, entonces encuentra un título motivador, una breve descripción y un botón de CTA visible con texto orientado a la acción (p. ej. "Empieza gratis").<br><br>
+      <strong>Escenario 2: Acción del CTA final</strong><br>
+      Dado que el visitante hace clic en el botón CTA del cierre, cuando se activa el evento, entonces es redirigido al formulario de registro o a la sección correspondiente del flujo de alta.
+    </td>
+    <td>Epic-22</td>
+  </tr>
+
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <!-- EPIC-23 (LANDING)                                          -->
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <tr>
+    <td><strong>Epic-23</strong></td>
+    <td><strong>Experiencia de usuario y accesibilidad en la landing</strong></td>
+    <td>Como equipo de producto, queremos que la landing page sea navegable, responsiva, multilingüe, personalizable en tema y accesible para todos los usuarios, para garantizar una experiencia de calidad independientemente del dispositivo o condición del visitante.</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>US-93</td>
+    <td>Navegar entre secciones mediante el header</td>
+    <td>Como visitante, quiero usar el menú de navegación del encabezado para desplazarme directamente a cualquier sección sin hacer scroll manual por toda la página.</td>
+    <td>
+      <strong>Escenario 1: Hacer clic en un enlace de navegación</strong><br>
+      Dado que el visitante está en cualquier punto de la landing, cuando hace clic en un ítem del menú de navegación, entonces la página se desplaza con animación suave hasta la sección correspondiente.<br><br>
+      <strong>Escenario 2: El ítem activo se resalta</strong><br>
+      Dado que el visitante hace scroll por la landing, cuando una sección entra en el viewport, entonces el ítem de navegación correspondiente se resalta visualmente indicando la sección activa.
+    </td>
+    <td>Epic-23</td>
+  </tr>
+  <tr>
+    <td>US-94</td>
+    <td>Cambiar entre modo claro y oscuro</td>
+    <td>Como visitante, quiero alternar entre el tema claro y el tema oscuro para adaptar la experiencia visual a mis preferencias o condiciones de iluminación.</td>
+    <td>
+      <strong>Escenario 1: Activar modo oscuro</strong><br>
+      Dado que la landing está en modo claro (predeterminado), cuando el visitante hace clic en el ícono de tema ubicado en el header, entonces toda la página cambia al tema oscuro de forma inmediata y sin recarga.<br><br>
+      <strong>Escenario 2: Volver al modo claro</strong><br>
+      Dado que la landing está en modo oscuro, cuando el visitante hace clic nuevamente en el ícono de tema, entonces la página regresa al tema claro.<br><br>
+      <strong>Escenario 3: Persistencia de preferencia</strong><br>
+      Dado que el visitante ha seleccionado un tema, cuando recarga la página en la misma sesión, entonces la landing mantiene el tema previamente seleccionado.
+    </td>
+    <td>Epic-23</td>
+  </tr>
+  <tr>
+    <td>US-95</td>
+    <td>Cambiar el idioma entre español e inglés</td>
+    <td>Como visitante, quiero alternar el idioma de la landing entre español e inglés para comprenderla en mi lengua preferida.</td>
+    <td>
+      <strong>Escenario 1: Cambiar a inglés</strong><br>
+      Dado que la landing está en español (predeterminado), cuando el visitante hace clic en el selector de idioma "EN", entonces todos los textos de la landing se actualizan al inglés sin recargar la página.<br><br>
+      <strong>Escenario 2: Volver a español</strong><br>
+      Dado que la landing está en inglés, cuando el visitante hace clic en el selector de idioma "ES", entonces todos los textos vuelven al español.<br><br>
+      <strong>Escenario 3: Cobertura completa de traducción</strong><br>
+      Dado que el visitante cambia de idioma, cuando revisa cualquier sección de la landing, entonces ningún texto permanece en el idioma anterior.
+    </td>
+    <td>Epic-23</td>
+  </tr>
+  <tr>
+    <td>US-96</td>
+    <td>Navegar la landing desde dispositivos móviles</td>
+    <td>Como visitante, quiero que la landing se adapte correctamente a pantallas pequeñas y que el menú de navegación sea usable en móvil para tener una experiencia fluida sin importar el dispositivo.</td>
+    <td>
+      <strong>Escenario 1: Ver la landing en móvil</strong><br>
+      Dado que el visitante accede desde un dispositivo con pantalla menor a 768 px, cuando carga la landing, entonces todos los elementos se reorganizan en una sola columna sin desbordamiento horizontal.<br><br>
+      <strong>Escenario 2: Abrir el menú hamburguesa</strong><br>
+      Dado que el visitante está en móvil y el menú de navegación está oculto, cuando toca el ícono de menú (hamburguesa), entonces el menú de navegación se despliega mostrando todos los ítems disponibles.<br><br>
+      <strong>Escenario 3: Cerrar el menú al seleccionar una opción</strong><br>
+      Dado que el menú móvil está abierto, cuando el visitante toca un ítem de navegación, entonces el menú se cierra y la página hace scroll suave hasta la sección correspondiente.
+    </td>
+    <td>Epic-23</td>
+  </tr>
+  <tr>
+    <td>US-97</td>
+    <td>Acceder a la landing con tecnologías asistivas</td>
+    <td>Como visitante con discapacidad, quiero que la landing sea navegable mediante teclado y compatible con lectores de pantalla para acceder al contenido sin barreras.</td>
+    <td>
+      <strong>Escenario 1: Navegación con teclado</strong><br>
+      Dado que el visitante usa exclusivamente el teclado, cuando presiona Tab para navegar los elementos interactivos, entonces el foco avanza en orden lógico y cada elemento activo muestra un indicador de foco visible.<br><br>
+      <strong>Escenario 2: Compatibilidad con lector de pantalla</strong><br>
+      Dado que el visitante usa un lector de pantalla, cuando recorre la landing, entonces los elementos interactivos cuentan con etiquetas aria-label o texto alternativo descriptivo que comunica su propósito correctamente.<br><br>
+      <strong>Escenario 3: Contraste suficiente</strong><br>
+      Dado que el visitante tiene baja visión, cuando revisa la landing en modo claro u oscuro, entonces el contraste de texto sobre fondo cumple al menos el nivel AA de las WCAG 2.1 (ratio mínimo 4.5:1 para texto normal).
+    </td>
+    <td>Epic-23</td>
+  </tr>
+
   </tbody>
 </table>
 
 ## 3.2. Impact Mapping
+
 
 El Impact Mapping es una técnica de planificación estratégica que permite vincular los objetivos de negocio con las funcionalidades del producto, respondiendo las preguntas: ¿por qué construimos esto?, ¿quién nos ayuda a lograrlo?, ¿cómo cambia su comportamiento? y ¿qué entregamos para provocar ese cambio? Su elaboración permite asegurar que cada User Story tenga un propósito claro y directo sobre el objetivo del negocio.A continuación se presenta el Impact Map elaborado en UXPressia para Entreprenly:
 
@@ -1327,8 +1438,6 @@ El Impact Map parte de un único objetivo de negocio: permitir que el pequeño c
 A partir de este actor se derivaron cinco impactos esperados: que deje de gestionar su inventario manualmente, que reaccione a tiempo ante problemas de stock, que registre sus ventas presenciales de forma rápida y ordenada, que delegue la atención de pedidos por WhatsApp al chatbot, y que tome decisiones con información centralizada desde el panel de inicio. Cada uno de estos impactos se traduce en entregables concretos que corresponden a las funcionalidades de la plataforma, las cuales están sustentadas por las User Stories especificadas en la sección 3.1.
 
 ## 3.3. Product Backlog
-
-A continuación se presenta el Product Backlog de Entreprenly con todas las User Stories priorizadas según su valor para el negocio. Las User Stories de mayor impacto directo en la operación del comerciante y en la propuesta de valor central del producto se ubican en las primeras posiciones. Las historias relacionadas con autenticación, suscripción y perfil, si bien necesarias, se ubican en posiciones posteriores por tratarse de funcionalidades de soporte.
 
 <table>
   <thead>
@@ -1341,103 +1450,204 @@ A continuación se presenta el Product Backlog de Entreprenly con todas las User
     </tr>
   </thead>
   <tbody>
-    <!-- BLOQUE 1: LANDING -->
-    <tr><td>1</td><td>US-49</td><td>Conocer propuesta de valor en landing page</td><td>Como visitante, quiero entender qué hace Entreprenly y cómo puede beneficiar a mi negocio para decidir si me interesa adquirirlo.</td><td>3</td></tr>
-    <!-- BLOQUE 2: AUTENTICACIÓN -->
-    <tr><td>2</td><td>US-52</td><td>Registrar cuenta con email</td><td>Como usuario anónimo, quiero registrarme con mi email y contraseña para crear una cuenta en Entreprenly y obtener automáticamente el Plan Free.</td><td>3</td></tr>
-    <tr><td>3</td><td>US-53</td><td>Verificar email</td><td>Como usuario registrado, quiero verificar mi email mediante el enlace enviado a mi correo para activar mi cuenta.</td><td>3</td></tr>
-    <tr><td>4</td><td>US-54</td><td>Iniciar sesión con credenciales</td><td>Como usuario registrado, quiero iniciar sesión con mi email y contraseña para acceder al dashboard de Entreprenly.</td><td>3</td></tr>
-    <tr><td>5</td><td>US-55</td><td>Iniciar sesión con Google OAuth</td><td>Como usuario anónimo, quiero iniciar sesión con mi cuenta de Google para acceder a Entreprenly sin necesidad de crear credenciales nuevas.</td><td>5</td></tr>
-    <tr><td>6</td><td>US-56</td><td>Recuperar contraseña</td><td>Como usuario registrado, quiero recuperar el acceso a mi cuenta mediante un enlace enviado a mi email para restablecer mi contraseña.</td><td>3</td></tr>
-    <tr><td>7</td><td>US-57</td><td>Cerrar sesión</td><td>Como usuario autenticado, quiero cerrar mi sesión para que el sistema revoque mi token y me redirija a la pantalla de login.</td><td>1</td></tr>
-    <!-- BLOQUE 3: GESTIÓN DE INVENTARIO -->
-    <tr><td>8</td><td>US-01</td><td>Agregar productos</td><td>Como usuario quiero agregar productos para gestionar mi inventario de manera eficiente.</td><td>3</td></tr>
-    <tr><td>9</td><td>US-05</td><td>Editar productos</td><td>Como usuario quiero editar productos para actualizar los datos en el inventario.</td><td>2</td></tr>
-    <tr><td>10</td><td>US-10</td><td>Visualizar detalles de producto</td><td>Como usuario quiero visualizar la información detallada de cada producto en el listado para conocer rápidamente sus características, stock disponible y precio sin necesidad de ingresar a otra pantalla.</td><td>2</td></tr>
-    <tr><td>11</td><td>US-12</td><td>Buscar productos</td><td>Como usuario quiero tener un buscador de productos para perder menos tiempo buscando en el inventario.</td><td>3</td></tr>
-    <tr><td>12</td><td>US-23</td><td>Crear lotes</td><td>Como usuario quiero crear lotes de productos para controlar mejor el stock y la caducidad en el inventario.</td><td>3</td></tr>
-    <tr><td>13</td><td>US-03</td><td>Agregar lotes</td><td>Como usuario quiero agregar lotes para gestionar correctamente las cantidades y fechas de vencimiento.</td><td>2</td></tr>
-    <tr><td>14</td><td>US-02</td><td>Editar lotes</td><td>Como usuario quiero editar los lotes para actualizar los datos del inventario.</td><td>2</td></tr>
-    <tr><td>15</td><td>US-06</td><td>Visualizar detalles de lotes</td><td>Como usuario quiero visualizar los detalles de los lotes para gestionar mejor el inventario.</td><td>2</td></tr>
-    <tr><td>16</td><td>US-04</td><td>Eliminar lotes</td><td>Como usuario quiero eliminar lotes para deshacerme de los lotes que no me sirvan.</td><td>1</td></tr>
-    <!-- BLOQUE 4: ALERTAS DE INVENTARIO -->
-    <tr><td>17</td><td>US-09</td><td>Visualizar dashboard de lotes</td><td>Como usuario quiero visualizar un dashboard de lotes con indicadores y alertas para conocer rápidamente el estado de mi inventario al ingresar al módulo de lotes.</td><td>3</td></tr>
-    <tr><td>18</td><td>US-07</td><td>Detectar stock agotado</td><td>Como usuario quiero ser notificado cuando tengo bajo/nada de stock.</td><td>3</td></tr>
-    <tr><td>19</td><td>US-11</td><td>Recibir alerta de caducidad de lote</td><td>Como usuario quiero ser notificado cuando un lote esté próximo a vencer o ya haya vencido para tomar acciones como priorizar su uso o descartarlo.</td><td>3</td></tr>
-    <tr><td>20</td><td>US-08</td><td>Mostrar alertas de estado al visualizar detalles</td><td>Como usuario quiero visualizar alertas de estado al ver el detalle de un lote para identificar rápidamente si tiene stock bajo, está agotado o próximo a vencer.</td><td>2</td></tr>
-    <!-- BLOQUE 5: VENTAS PRESENCIALES (POS) -->
-    <tr><td>21</td><td>US-24</td><td>Buscar productos en el inventario y validar su tipo de medida</td><td>Como cajero, quiero buscar productos del inventario para que el sistema valide si son por cantidad o peso, para abrir la interfaz de ingreso correspondiente.</td><td>3</td></tr>
-    <tr><td>22</td><td>US-25</td><td>Registrar la cantidad de unidades en el Ticket de Venta</td><td>Como cajero, quiero ingresar el número de unidades de un producto seleccionado, para añadirlo al detalle de la venta.</td><td>2</td></tr>
-    <tr><td>23</td><td>US-26</td><td>Capturar el peso mediante balanza IoT o ingreso manual</td><td>Como cajero, quiero obtener el peso del producto automáticamente o por teclado para procesar la venta de productos al granel.</td><td>5</td></tr>
-    <tr><td>24</td><td>US-27</td><td>Gestionar el desglose y cálculo del Ticket de Venta</td><td>Como cajero, quiero visualizar el desglose de productos para verificar que la información sea correcta antes de proceder al pago.</td><td>3</td></tr>
-    <tr><td>25</td><td>US-28</td><td>Seleccionar el método de pago para la transacción</td><td>Como cajero, quiero elegir el medio por el cual está pagando el cliente para que el ingreso se registre en la categoría contable correcta.</td><td>2</td></tr>
-    <tr><td>26</td><td>US-29</td><td>Finalizar la venta y emitir el comprobante de pago</td><td>Como cajero, quiero procesar el pago y finalizar la venta en un solo paso para registrar la transacción en el sistema y entregar el comprobante al cliente de forma inmediata.</td><td>3</td></tr>
-    <!-- BLOQUE 6: CONTROL DE CAJA -->
-    <tr><td>27</td><td>US-30</td><td>Clasificar automáticamente los ingresos según el medio de pago</td><td>Como comerciante, quiero que cada venta finalizada sume su monto al acumulado del método correspondiente para tener visibilidad inmediata del efectivo y digital.</td><td>3</td></tr>
-    <tr><td>28</td><td>US-31</td><td>Monitorear el Resumen de Caja en tiempo real dentro del panel de ventas</td><td>Como cajero, quiero visualizar de forma centralizada los ingresos acumulados por método de pago para tener un control inmediato de los saldos del día sin salir de la interfaz principal.</td><td>2</td></tr>
-    <!-- BLOQUE 7: PANEL DE INICIO (HOME) -->
-    <tr><td>29</td><td>US-65</td><td>Visualizar resumen de ventas del día</td><td>Como comerciante, quiero visualizar un resumen de las ventas del día en el panel de inicio para conocer el rendimiento de mi negocio sin ingresar al módulo de ventas.</td><td>2</td></tr>
-    <tr><td>30</td><td>US-67</td><td>Visualizar alertas de inventario en el home</td><td>Como comerciante, quiero ver las alertas críticas de inventario directamente en el panel de inicio para identificar rápidamente productos agotados o lotes próximos a vencer.</td><td>2</td></tr>
-    <tr><td>31</td><td>US-68</td><td>Visualizar contador de pedidos pendientes en el home</td><td>Como comerciante, quiero ver el número de pedidos que están pendientes de atención en el panel de inicio para priorizar mi respuesta sin necesidad de ingresar al módulo de chatbot.</td><td>1</td></tr>
-    <tr><td>32</td><td>US-69</td><td>Visualizar pedidos recientes en el home</td><td>Como comerciante, quiero ver los pedidos más recientes con su estado actual en el panel de inicio para hacer seguimiento sin ingresar al módulo de pedidos.</td><td>2</td></tr>
-    <tr><td>33</td><td>US-66</td><td>Visualizar estado del chatbot en el home</td><td>Como comerciante, quiero visualizar el estado de conexión del chatbot y los chats activos desde el panel de inicio para saber si mi canal de ventas por WhatsApp está operativo.</td><td>2</td></tr>
-    <tr><td>34</td><td>US-70</td><td>Acceder a módulos desde accesos directos del home</td><td>Como comerciante, quiero contar con accesos directos a los módulos principales desde el panel de inicio para navegar rápidamente a cualquier sección sin recorrer el menú lateral.</td><td>1</td></tr>
-    <!-- BLOQUE 8: CHATBOT WHATSAPP -->
-    <tr><td>35</td><td>US-32</td><td>Vincular cuenta de WhatsApp Business mediante código QR</td><td>Como comerciante, quiero conectar mi cuenta de WhatsApp Business escaneando un código QR para activar el chatbot de atención a clientes desde el dashboard.</td><td>5</td></tr>
-    <tr><td>36</td><td>US-33</td><td>Consultar estado de vinculación del chatbot</td><td>Como comerciante, quiero conocer el estado de conexión de mi WhatsApp Business para saber si el chatbot se encuentra activo o requiere reconexión.</td><td>2</td></tr>
-    <tr><td>37</td><td>US-34</td><td>Visualizar conversaciones de clientes en el dashboard</td><td>Como comerciante, quiero ver los chats que el bot ha tenido con mis clientes dentro del dashboard para tener visibilidad de todas las conversaciones activas sin usar WhatsApp directamente.</td><td>3</td></tr>
-    <tr><td>38</td><td>US-35</td><td>Responder mensajes de clientes desde el dashboard</td><td>Como comerciante, quiero enviar mensajes a mis clientes directamente desde el dashboard para gestionar conversaciones sin necesitar abrir WhatsApp.</td><td>3</td></tr>
-    <!-- BLOQUE 9: FLUJO DE PEDIDOS POR BOT -->
-    <tr><td>39</td><td>US-36</td><td>Responder consulta de producto disponible</td><td>Como sistema, quiero que el chatbot responda automáticamente al cliente con la información del producto solicitado cuando este existe en el inventario.</td><td>3</td></tr>
-    <tr><td>40</td><td>US-37</td><td>Sugerir alternativas ante producto no disponible</td><td>Como sistema, quiero que el chatbot informe al cliente cuando un producto no está disponible y le sugiera otros productos del inventario.</td><td>2</td></tr>
-    <tr><td>41</td><td>US-38</td><td>Confirmar pedido con el cliente</td><td>Como sistema, quiero que el chatbot presente un resumen del pedido al cliente y solicite confirmación antes de proceder al pago.</td><td>3</td></tr>
-    <tr><td>42</td><td>US-39</td><td>Recibir instrucciones de pago por WhatsApp</td><td>Como cliente, quiero recibir las instrucciones de pago a través del chatbot para saber cómo realizar la transferencia y completar mi pedido.</td><td>2</td></tr>
-    <tr><td>43</td><td>US-40</td><td>Reportar comprobante de pago digital</td><td>Como cliente, quiero enviar el comprobante de mi pago al chatbot para que el comerciante pueda verificarlo y confirmar mi pedido.</td><td>3</td></tr>
-    <tr><td>44</td><td>US-41</td><td>Validar comprobante de pago desde el dashboard</td><td>Como comerciante, quiero revisar el comprobante reportado por el cliente y aprobarlo o rechazarlo desde el dashboard.</td><td>3</td></tr>
-    <tr><td>45</td><td>US-42</td><td>Notificar resultado de validación al cliente</td><td>Como cliente, quiero recibir una notificación sobre el resultado de la validación de mi pago para saber si mi pedido fue confirmado.</td><td>2</td></tr>
-    <!-- BLOQUE 10: CONFIRMACIÓN Y CIERRE DE PEDIDOS -->
-    <tr><td>46</td><td>US-43</td><td>Confirmar pedido y descontar stock</td><td>Como sistema, quiero confirmar el pedido automáticamente al aprobar el pago para actualizar el inventario en tiempo real y reflejar el consumo de stock.</td><td>3</td></tr>
-    <tr><td>47</td><td>US-44</td><td>Registrar venta en el sistema</td><td>Como comerciante, quiero que cada pedido confirmado quede registrado como venta en el sistema para mantener un control financiero preciso y trazable.</td><td>2</td></tr>
-    <tr><td>48</td><td>US-45</td><td>Emitir comprobante digital al cliente</td><td>Como cliente, quiero recibir un comprobante de mi compra a través del chatbot para tener un respaldo de la transacción realizada.</td><td>3</td></tr>
-    <!-- BLOQUE 11: FLUJOS ALTERNATIVOS Y RESTRICCIONES -->
-    <tr><td>49</td><td>US-46</td><td>Manejar stock insuficiente en pedido</td><td>Como cliente, quiero ser notificado cuando un producto no tiene stock suficiente para ajustar mi pedido antes de proceder al pago.</td><td>3</td></tr>
-    <tr><td>50</td><td>US-47</td><td>Cancelar pedido por expiración de tiempo de pago</td><td>Como sistema, quiero cancelar automáticamente un pedido cuando el cliente no reporta el comprobante de pago en el tiempo establecido para liberar el stock reservado.</td><td>3</td></tr>
-    <tr><td>51</td><td>US-48</td><td>Rechazar comprobante de pago inválido</td><td>Como comerciante, quiero rechazar un comprobante de pago cuando sea incorrecto o sospechoso para proteger el negocio de transacciones fraudulentas.</td><td>3</td></tr>
-    <!-- BLOQUE 12: API TÉCNICA -->
-    <tr><td>52</td><td>US-50</td><td>Gestionar ciclo de vida de pedidos mediante API</td><td>Como developer, quiero endpoints para crear y actualizar pedidos para que el chatbot y el dashboard intercambien información del pedido de forma automática y consistente.</td><td>5</td></tr>
-    <tr><td>53</td><td>US-51</td><td>Validar y registrar pagos mediante API</td><td>Como developer, quiero un endpoint para aprobar o rechazar pagos desde el dashboard para que el sistema actualice el inventario y notifique al cliente de forma automática.</td><td>5</td></tr>
-    <!-- BLOQUE 13: SUSCRIPCIÓN -->
-    <tr><td>54</td><td>US-13</td><td>Seleccionar plan de suscripción</td><td>Como usuario con Plan Free, quiero presionar el botón "Elegir plan" en la tarjeta del Plan Control para definir el plan que deseo contratar y continuar con el proceso de suscripción.</td><td>2</td></tr>
-    <tr><td>55</td><td>US-14</td><td>Iniciar proceso de suscripción</td><td>Como usuario con un plan seleccionado, quiero presionar el botón "Continuar con la suscripción" para abrir el formulario de facturación y comenzar formalmente la contratación del plan elegido.</td><td>2</td></tr>
-    <tr><td>56</td><td>US-71</td><td>Agregar método de pago de suscripción</td><td>Como usuario con acceso al panel "Suscripción", quiero presionar el botón "Agregar método de pago" para registrar un medio de cobro que pueda usarse en pagos y renovaciones del Plan Control.</td><td>3</td></tr>
-    <tr><td>57</td><td>US-72</td><td>Completar datos fiscales de suscripción</td><td>Como usuario con una cuenta registrada, quiero presionar el botón "Completar datos" para registrar mi RUC o DNI, razón social o nombre, dirección fiscal y correo de facturación.</td><td>2</td></tr>
-    <tr><td>58</td><td>US-15</td><td>Registrar datos de facturación</td><td>Como usuario, quiero completar el formulario de facturación y presionar el botón "Continuar al pago" para que el sistema pueda preparar el cobro correspondiente a la suscripción.</td><td>3</td></tr>
-    <tr><td>59</td><td>US-16</td><td>Procesar cobro de suscripción</td><td>Como usuario, quiero revisar el resumen de cobro y presionar el botón "Pagar y activar suscripción" para validar el pago del Plan Control seleccionado.</td><td>5</td></tr>
-    <tr><td>60</td><td>US-17</td><td>Activar suscripción</td><td>Como usuario, quiero que al confirmarse el pago el sistema active automáticamente el Plan Control y me redirija al panel de suscripción para acceder a las funcionalidades premium.</td><td>3</td></tr>
-    <tr><td>61</td><td>US-18</td><td>Visualizar panel de suscripción</td><td>Como usuario, quiero hacer clic en la opción lateral "Suscripción" para ver un panel con el plan actual, estado, fecha de renovación, facturación y acciones disponibles.</td><td>2</td></tr>
-    <tr><td>62</td><td>US-19</td><td>Consultar estado de suscripción</td><td>Como usuario, quiero ver una etiqueta de estado en el panel de suscripción para saber si mi plan se encuentra en estado "Activa", "Cancelación programada", "Cancelada" o "Plan Free".</td><td>1</td></tr>
-    <tr><td>63</td><td>US-20</td><td>Renovar suscripción</td><td>Como usuario con una suscripción de pago activa o próxima a vencer, quiero presionar el botón "Renovar suscripción" para extender la vigencia de mi acceso a la plataforma.</td><td>3</td></tr>
-    <tr><td>64</td><td>US-21</td><td>Solicitar cancelación de suscripción</td><td>Como usuario con una suscripción de pago activa, quiero presionar el botón "Solicitar cancelación" y luego "Confirmar cancelación" para detener la renovación automática al finalizar el periodo vigente.</td><td>2</td></tr>
-    <tr><td>65</td><td>US-22</td><td>Cancelar suscripción</td><td>Como sistema, quiero cancelar la suscripción de pago al finalizar su periodo vigente para retirar el acceso premium y devolver la cuenta del usuario al Plan Free.</td><td>3</td></tr>
-    <tr><td>66</td><td>US-73</td><td>Descargar historial de suscripción</td><td>Como usuario, quiero presionar el botón "Descargar historial" para obtener un archivo con los eventos de mi plan, pagos, renovaciones, cambios y cancelaciones.</td><td>2</td></tr>
-    <!-- BLOQUE 14: SOPORTE Y AYUDA (NUEVO) -->
-    <tr><td>67</td><td>US-74</td><td>Visualizar el centro de soporte</td><td>Como comerciante, quiero visualizar el centro de soporte al presionar el botón de Ayuda para acceder de forma rápida a las opciones de asistencia disponibles.</td><td>2</td></tr>
-    <tr><td>68</td><td>US-75</td><td>Buscar artículo de ayuda</td><td>Como comerciante, quiero buscar artículos de ayuda por palabras clave para encontrar rápidamente la información que necesito sin revisar todas las categorías.</td><td>2</td></tr>
-    <tr><td>69</td><td>US-76</td><td>Consultar artículo de ayuda</td><td>Como comerciante, quiero abrir y leer un artículo de ayuda para entender cómo usar una funcionalidad de la plataforma o resolver un problema específico.</td><td>2</td></tr>
-    <tr><td>70</td><td>US-77</td><td>Reportar un problema</td><td>Como comerciante, quiero reportar un problema o incidencia desde el centro de soporte para que el equipo de Entreprenly pueda revisarlo y darle seguimiento.</td><td>3</td></tr>
-    <tr><td>71</td><td>US-78</td><td>Confirmar envío del reporte</td><td>Como comerciante, quiero recibir una confirmación visual tras enviar un reporte para tener la certeza de que mi solicitud fue registrada correctamente.</td><td>1</td></tr>
-    <!-- BLOQUE 15: PERFIL Y CONFIGURACIÓN -->
-    <tr><td>72</td><td>US-58</td><td>Visualizar perfil actual</td><td>Como usuario autenticado, quiero visualizar mi perfil actual para revisar mis datos registrados en la plataforma.</td><td>1</td></tr>
-    <tr><td>73</td><td>US-59</td><td>Actualizar nombre y biografía</td><td>Como usuario autenticado, quiero actualizar mi nombre y biografía para mantener mi perfil al día.</td><td>2</td></tr>
-    <tr><td>74</td><td>US-60</td><td>Subir foto de perfil</td><td>Como usuario autenticado, quiero subir una foto de perfil para personalizar mi cuenta en la plataforma.</td><td>3</td></tr>
-    <tr><td>75</td><td>US-61</td><td>Cambiar email con re-verificación</td><td>Como usuario autenticado, quiero cambiar mi email y verificarlo para mantener mis datos de contacto actualizados.</td><td>3</td></tr>
-    <tr><td>76</td><td>US-62</td><td>Cambiar contraseña</td><td>Como usuario autenticado, quiero cambiar mi contraseña para mantener la seguridad de mi cuenta.</td><td>3</td></tr>
-    <tr><td>77</td><td>US-63</td><td>Configurar preferencias de idioma, zona horaria y tema</td><td>Como usuario autenticado, quiero configurar mi idioma, zona horaria y tema visual para adaptar la plataforma a mis preferencias.</td><td>2</td></tr>
-    <tr><td>78</td><td>US-64</td><td>Configurar notificaciones</td><td>Como usuario autenticado, quiero configurar mis preferencias de notificación para recibir solo los avisos que me sean relevantes.</td><td>2</td></tr>
-    <!-- BLOQUE 16: FUNCIONALIDADES DETECTADAS EN FRONTEND -->
-    <tr><td>79</td><td>US-79</td><td>Escanear código QR en inventario</td><td>Como usuario de inventario, quiero escanear códigos QR desde los formularios de productos y lotes para completar el código del registro sin ingresarlo manualmente.</td><td>3</td></tr>
-    <tr><td>80</td><td>US-80</td><td>Navegar entre módulos desde el sidebar</td><td>Como usuario autenticado, quiero usar el sidebar del dashboard para ingresar rápidamente a Home, Productos, Lotes, Ventas, Suscripción, Pedidos, Chatbot y Ayuda.</td><td>2</td></tr>
-    <tr><td>81</td><td>US-81</td><td>Cambiar idioma de la interfaz</td><td>Como usuario del dashboard, quiero alternar entre español e inglés para visualizar los textos de la interfaz en el idioma que prefiera.</td><td>2</td></tr>
-    <tr><td>82</td><td>US-82</td><td>Gestionar rutas no encontradas</td><td>Como usuario del dashboard, quiero recibir una vista de ruta no encontrada cuando ingreso a una URL inválida para entender que la página solicitada no existe.</td><td>1</td></tr>
+
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <!-- BLOQUE 1 – LANDING PAGE (Epic-19 a Epic-23)              -->
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <tr style="background-color:#e8f0fe;">
+      <td colspan="5"><strong>BLOQUE 1 – Landing Page (Epic-19 a Epic-23)</strong></td>
+    </tr>
+    <tr><td>1</td><td>US-83</td><td>Ver propuesta de valor en el hero</td><td>Como visitante, quiero ver un titular, subtítulo y CTA claros al llegar a la landing para entender de qué trata el producto de un vistazo.</td><td>2</td></tr>
+    <tr><td>2</td><td>US-84</td><td>Conocer los problemas que resuelve el producto</td><td>Como visitante, quiero ver los problemas comunes que enfrento como comerciante para identificarme con el producto antes de seguir leyendo.</td><td>2</td></tr>
+    <tr><td>3</td><td>US-85</td><td>Explorar las funcionalidades clave del producto</td><td>Como visitante, quiero ver las 4 características principales del producto para evaluar si cubre mis necesidades antes de registrarme.</td><td>3</td></tr>
+    <tr><td>4</td><td>US-86</td><td>Entender cómo funciona el producto paso a paso</td><td>Como visitante, quiero ver los pasos para usar el producto para entender cómo funciona antes de registrarme.</td><td>2</td></tr>
+    <tr><td>5</td><td>US-87</td><td>Conocer los beneficios concretos del producto</td><td>Como visitante, quiero conocer los beneficios cuantificables del producto para tomar una decisión informada sobre si registrarme.</td><td>2</td></tr>
+    <tr><td>6</td><td>US-88</td><td>Ver testimonios y métricas de clientes actuales</td><td>Como visitante, quiero ver testimonios reales y estadísticas de uso para confiar en el producto antes de registrarme.</td><td>3</td></tr>
+    <tr><td>7</td><td>US-89</td><td>Comparar Entreprenly con la competencia</td><td>Como visitante, quiero ver una tabla comparativa entre Entreprenly y alternativas del mercado para entender por qué es la mejor opción para mi negocio.</td><td>3</td></tr>
+    <tr><td>8</td><td>US-90</td><td>Seleccionar plan de precios desde la landing</td><td>Como visitante, quiero ver y comparar los planes de precios para decidir cuál elegir antes de registrarme.</td><td>3</td></tr>
+    <tr><td>9</td><td>US-91</td><td>Resolver dudas frecuentes desde la landing</td><td>Como visitante, quiero consultar una sección de preguntas frecuentes para resolver mis dudas sin necesidad de contactar a soporte.</td><td>2</td></tr>
+    <tr><td>10</td><td>US-92</td><td>Iniciar registro desde el CTA final de la landing</td><td>Como visitante, quiero encontrar un llamado a la acción claro al final de la landing para iniciar mi registro sin tener que desplazarme nuevamente al inicio.</td><td>2</td></tr>
+    <tr><td>11</td><td>US-93</td><td>Navegar entre secciones mediante el header</td><td>Como visitante, quiero usar el menú de navegación del encabezado para desplazarme directamente a cualquier sección sin hacer scroll manual.</td><td>2</td></tr>
+    <tr><td>12</td><td>US-94</td><td>Cambiar entre modo claro y oscuro</td><td>Como visitante, quiero alternar entre el tema claro y el tema oscuro para adaptar la experiencia visual a mis preferencias o condiciones de iluminación.</td><td>2</td></tr>
+    <tr><td>13</td><td>US-95</td><td>Cambiar el idioma entre español e inglés</td><td>Como visitante, quiero alternar el idioma de la landing entre español e inglés para comprenderla en mi lengua preferida.</td><td>3</td></tr>
+    <tr><td>14</td><td>US-96</td><td>Navegar la landing desde dispositivos móviles</td><td>Como visitante, quiero que la landing se adapte correctamente a pantallas pequeñas y que el menú de navegación sea usable en móvil para tener una experiencia fluida sin importar el dispositivo.</td><td>3</td></tr>
+    <tr><td>15</td><td>US-97</td><td>Acceder a la landing con tecnologías asistivas</td><td>Como visitante con discapacidad, quiero que la landing sea navegable mediante teclado y compatible con lectores de pantalla para acceder al contenido sin barreras.</td><td>3</td></tr>
+
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <!-- BLOQUE 2 – GESTIÓN DE INVENTARIO (Epic-01)               -->
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <tr style="background-color:#e8f0fe;">
+      <td colspan="5"><strong>BLOQUE 2 – Gestión de Inventario (Epic-01)</strong></td>
+    </tr>
+    <tr><td>16</td><td>US-01</td><td>Agregar productos</td><td>Como usuario quiero agregar productos para gestionar mi inventario de manera eficiente.</td><td>3</td></tr>
+    <tr><td>17</td><td>US-05</td><td>Editar productos</td><td>Como usuario quiero editar productos para actualizar los datos en el inventario.</td><td>2</td></tr>
+    <tr><td>18</td><td>US-10</td><td>Visualizar detalles de producto</td><td>Como usuario quiero visualizar la información detallada de cada producto en el listado para conocer rápidamente sus características, stock disponible y precio sin necesidad de ingresar a otra pantalla.</td><td>2</td></tr>
+    <tr><td>19</td><td>US-12</td><td>Buscar productos</td><td>Como usuario quiero tener un buscador de productos para perder menos tiempo buscando en el inventario.</td><td>3</td></tr>
+    <tr><td>20</td><td>US-23</td><td>Crear lotes</td><td>Como usuario quiero crear lotes de productos para controlar mejor el stock y la caducidad en el inventario.</td><td>3</td></tr>
+    <tr><td>21</td><td>US-03</td><td>Agregar lotes</td><td>Como usuario quiero agregar lotes para gestionar correctamente las cantidades y fechas de vencimiento.</td><td>2</td></tr>
+    <tr><td>22</td><td>US-02</td><td>Editar lotes</td><td>Como usuario quiero editar los lotes para actualizar los datos del inventario.</td><td>2</td></tr>
+    <tr><td>23</td><td>US-06</td><td>Visualizar detalles de lotes</td><td>Como usuario quiero visualizar los detalles de los lotes para gestionar mejor el inventario.</td><td>2</td></tr>
+    <tr><td>24</td><td>US-04</td><td>Eliminar lotes</td><td>Como usuario quiero eliminar lotes para deshacerme de los lotes que no me sirvan.</td><td>1</td></tr>
+
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <!-- BLOQUE 3 – ALERTAS DE INVENTARIO (Epic-02)               -->
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <tr style="background-color:#e8f0fe;">
+      <td colspan="5"><strong>BLOQUE 3 – Alertas de Inventario (Epic-02)</strong></td>
+    </tr>
+    <tr><td>25</td><td>US-09</td><td>Visualizar dashboard de lotes</td><td>Como usuario quiero visualizar un dashboard de lotes con indicadores y alertas para conocer rápidamente el estado de mi inventario al ingresar al módulo de lotes.</td><td>3</td></tr>
+    <tr><td>26</td><td>US-07</td><td>Detectar stock agotado</td><td>Como usuario quiero ser notificado cuando tengo bajo/nada de stock.</td><td>3</td></tr>
+    <tr><td>27</td><td>US-11</td><td>Recibir alerta de caducidad de lote</td><td>Como usuario quiero ser notificado cuando un lote esté próximo a vencer o ya haya vencido para tomar acciones como priorizar su uso o descartarlo.</td><td>3</td></tr>
+    <tr><td>28</td><td>US-08</td><td>Mostrar alertas de estado al visualizar detalles</td><td>Como usuario quiero visualizar alertas de estado al ver el detalle de un lote para identificar rápidamente si tiene stock bajo, está agotado o próximo a vencer.</td><td>2</td></tr>
+
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <!-- BLOQUE 4 – VENTAS PRESENCIALES / POS (Epic-05)           -->
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <tr style="background-color:#e8f0fe;">
+      <td colspan="5"><strong>BLOQUE 4 – Ventas Presenciales / POS (Epic-05)</strong></td>
+    </tr>
+    <tr><td>29</td><td>US-24</td><td>Buscar productos en el inventario y validar su tipo de medida</td><td>Como cajero, quiero buscar productos del inventario para que el sistema valide si son por cantidad o peso, para abrir la interfaz de ingreso correspondiente.</td><td>3</td></tr>
+    <tr><td>30</td><td>US-25</td><td>Registrar la cantidad de unidades en el Ticket de Venta</td><td>Como cajero, quiero ingresar el número de unidades de un producto seleccionado, para añadirlo al detalle de la venta.</td><td>2</td></tr>
+    <tr><td>31</td><td>US-26</td><td>Capturar el peso mediante balanza IoT o ingreso manual</td><td>Como cajero, quiero obtener el peso del producto automáticamente o por teclado para procesar la venta de productos al granel.</td><td>5</td></tr>
+    <tr><td>32</td><td>US-27</td><td>Gestionar el desglose y cálculo del Ticket de Venta</td><td>Como cajero, quiero visualizar el desglose de productos (nombre, cantidad/peso, precio unitario y subtotal) para verificar que la información sea correcta antes de proceder al pago.</td><td>3</td></tr>
+    <tr><td>33</td><td>US-28</td><td>Seleccionar el método de pago para la transacción</td><td>Como cajero, quiero elegir el medio por el cual está pagando el cliente (Efectivo o Tarjeta/Yape/Plin), para que el ingreso se registre en la categoría contable correcta.</td><td>2</td></tr>
+    <tr><td>34</td><td>US-29</td><td>Finalizar la venta y emitir el comprobante de pago</td><td>Como cajero, quiero procesar el pago y finalizar la venta en un solo paso, para registrar la transacción en el sistema y entregar el comprobante al cliente de forma inmediata.</td><td>3</td></tr>
+
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <!-- BLOQUE 5 – CONTROL DE CAJA (Epic-06)                     -->
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <tr style="background-color:#e8f0fe;">
+      <td colspan="5"><strong>BLOQUE 5 – Control de Caja (Epic-06)</strong></td>
+    </tr>
+    <tr><td>35</td><td>US-30</td><td>Clasificar automáticamente los ingresos según el medio de pago</td><td>Como comerciante, quiero que cada venta finalizada sume su monto al acumulado del método correspondiente, para tener visibilidad inmediata de cuánto dinero hay en efectivo y cuánto en digital.</td><td>3</td></tr>
+    <tr><td>36</td><td>US-31</td><td>Monitorear el Resumen de Caja en tiempo real dentro del panel de ventas</td><td>Como cajero, quiero visualizar de forma centralizada los ingresos acumulados por método de pago, para tener un control inmediato de los saldos del día sin salir de la interfaz principal.</td><td>2</td></tr>
+
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <!-- BLOQUE 6 – PANEL DE INICIO / HOME (Epic-16)              -->
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <tr style="background-color:#e8f0fe;">
+      <td colspan="5"><strong>BLOQUE 6 – Panel de Inicio / Home (Epic-16)</strong></td>
+    </tr>
+    <tr><td>37</td><td>US-65</td><td>Visualizar resumen de ventas del día</td><td>Como comerciante, quiero visualizar un resumen de las ventas del día en el panel de inicio para conocer el rendimiento de mi negocio sin ingresar al módulo de ventas.</td><td>2</td></tr>
+    <tr><td>38</td><td>US-67</td><td>Visualizar alertas de inventario en el home</td><td>Como comerciante, quiero ver las alertas críticas de inventario directamente en el panel de inicio para identificar rápidamente productos agotados o lotes próximos a vencer sin ingresar al módulo de lotes.</td><td>2</td></tr>
+    <tr><td>39</td><td>US-68</td><td>Visualizar contador de pedidos pendientes en el home</td><td>Como comerciante, quiero ver el número de pedidos que están pendientes de atención en el panel de inicio para priorizar mi respuesta sin necesidad de ingresar al módulo de chatbot.</td><td>1</td></tr>
+    <tr><td>40</td><td>US-69</td><td>Visualizar pedidos recientes en el home</td><td>Como comerciante, quiero ver los pedidos más recientes con su estado actual en el panel de inicio para hacer seguimiento sin ingresar al módulo de pedidos.</td><td>2</td></tr>
+    <tr><td>41</td><td>US-66</td><td>Visualizar estado del chatbot en el home</td><td>Como comerciante, quiero visualizar el estado de conexión del chatbot y los chats activos desde el panel de inicio para saber si mi canal de ventas por WhatsApp está operativo sin ingresar al módulo de chatbot.</td><td>2</td></tr>
+    <tr><td>42</td><td>US-70</td><td>Acceder a módulos desde accesos directos del home</td><td>Como comerciante, quiero contar con accesos directos a los módulos principales desde el panel de inicio para navegar rápidamente a cualquier sección sin recorrer el menú lateral.</td><td>1</td></tr>
+
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <!-- BLOQUE 7 – CHATBOT WHATSAPP (Epic-07 / Epic-08)          -->
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <tr style="background-color:#e8f0fe;">
+      <td colspan="5"><strong>BLOQUE 7 – Chatbot WhatsApp (Epic-07 / Epic-08)</strong></td>
+    </tr>
+    <tr><td>43</td><td>US-32</td><td>Vincular cuenta de WhatsApp Business mediante código QR</td><td>Como comerciante, quiero conectar mi cuenta de WhatsApp Business escaneando un código QR para activar el chatbot de atención a clientes desde el dashboard.</td><td>5</td></tr>
+    <tr><td>44</td><td>US-33</td><td>Consultar estado de vinculación del chatbot</td><td>Como comerciante, quiero conocer el estado de conexión de mi WhatsApp Business para saber si el chatbot se encuentra activo o requiere reconexión.</td><td>2</td></tr>
+    <tr><td>45</td><td>US-34</td><td>Visualizar conversaciones de clientes en el dashboard</td><td>Como comerciante, quiero ver los chats que el bot ha tenido con mis clientes dentro del dashboard para tener visibilidad de todas las conversaciones activas sin usar WhatsApp directamente.</td><td>3</td></tr>
+    <tr><td>46</td><td>US-35</td><td>Responder mensajes de clientes desde el dashboard</td><td>Como comerciante, quiero enviar mensajes a mis clientes directamente desde el dashboard para gestionar conversaciones sin necesitar abrir WhatsApp.</td><td>3</td></tr>
+
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <!-- BLOQUE 8 – FLUJO DE PEDIDOS POR BOT (Epic-09 / Epic-10)  -->
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <tr style="background-color:#e8f0fe;">
+      <td colspan="5"><strong>BLOQUE 8 – Flujo de Pedidos por Bot (Epic-09 / Epic-10)</strong></td>
+    </tr>
+    <tr><td>47</td><td>US-36</td><td>Responder consulta de producto disponible</td><td>Como sistema, quiero que el chatbot responda automáticamente al cliente con la información del producto solicitado cuando este existe en el inventario para iniciar el proceso de pedido sin intervención del comerciante.</td><td>3</td></tr>
+    <tr><td>48</td><td>US-37</td><td>Sugerir alternativas ante producto no disponible</td><td>Como sistema, quiero que el chatbot informe al cliente cuando un producto no está disponible y le sugiera otros productos del inventario para evitar que la conversación quede sin respuesta útil.</td><td>2</td></tr>
+    <tr><td>49</td><td>US-38</td><td>Confirmar pedido con el cliente</td><td>Como sistema, quiero que el chatbot presente un resumen del pedido al cliente y solicite confirmación antes de proceder al pago para asegurar que los productos y cantidades sean correctos.</td><td>3</td></tr>
+    <tr><td>50</td><td>US-39</td><td>Recibir instrucciones de pago por WhatsApp</td><td>Como cliente, quiero recibir las instrucciones de pago a través del chatbot para saber cómo realizar la transferencia y completar mi pedido.</td><td>2</td></tr>
+    <tr><td>51</td><td>US-40</td><td>Reportar comprobante de pago digital</td><td>Como cliente, quiero enviar el comprobante de mi pago al chatbot para que el comerciante pueda verificarlo y confirmar mi pedido.</td><td>3</td></tr>
+    <tr><td>52</td><td>US-41</td><td>Validar comprobante de pago desde el dashboard</td><td>Como comerciante, quiero revisar el comprobante reportado por el cliente y aprobarlo o rechazarlo desde el dashboard para confirmar que el dinero fue recibido correctamente.</td><td>3</td></tr>
+    <tr><td>53</td><td>US-42</td><td>Notificar resultado de validación al cliente</td><td>Como cliente, quiero recibir una notificación sobre el resultado de la validación de mi pago para saber si mi pedido fue confirmado o si debo realizar alguna acción adicional.</td><td>2</td></tr>
+
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <!-- BLOQUE 9 – CONFIRMACIÓN Y CIERRE DE PEDIDOS (Epic-11)    -->
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <tr style="background-color:#e8f0fe;">
+      <td colspan="5"><strong>BLOQUE 9 – Confirmación y Cierre de Pedidos (Epic-11)</strong></td>
+    </tr>
+    <tr><td>54</td><td>US-43</td><td>Confirmar pedido y descontar stock</td><td>Como sistema, quiero confirmar el pedido automáticamente al aprobar el pago para actualizar el inventario en tiempo real y reflejar el consumo de stock.</td><td>3</td></tr>
+    <tr><td>55</td><td>US-44</td><td>Registrar venta en el sistema</td><td>Como comerciante, quiero que cada pedido confirmado quede registrado como venta en el sistema para mantener un control financiero preciso y trazable.</td><td>2</td></tr>
+    <tr><td>56</td><td>US-45</td><td>Emitir comprobante digital al cliente</td><td>Como cliente, quiero recibir un comprobante de mi compra a través del chatbot para tener un respaldo de la transacción realizada.</td><td>3</td></tr>
+
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <!-- BLOQUE 10 – FLUJOS ALTERNATIVOS Y RESTRICCIONES (Epic-12)-->
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <tr style="background-color:#e8f0fe;">
+      <td colspan="5"><strong>BLOQUE 10 – Flujos Alternativos y Restricciones (Epic-12)</strong></td>
+    </tr>
+    <tr><td>57</td><td>US-46</td><td>Manejar stock insuficiente en pedido</td><td>Como cliente, quiero ser notificado cuando un producto no tiene stock suficiente para ajustar mi pedido antes de proceder al pago.</td><td>3</td></tr>
+    <tr><td>58</td><td>US-47</td><td>Cancelar pedido por expiración de tiempo de pago</td><td>Como sistema, quiero cancelar automáticamente un pedido cuando el cliente no reporta el comprobante de pago en el tiempo establecido para liberar el stock reservado.</td><td>3</td></tr>
+    <tr><td>59</td><td>US-48</td><td>Rechazar comprobante de pago inválido</td><td>Como comerciante, quiero rechazar un comprobante de pago cuando sea incorrecto o sospechoso para proteger el negocio de transacciones fraudulentas.</td><td>3</td></tr>
+
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <!-- BLOQUE 11 – DEVELOPER / TÉCNICO (Epic-13)                -->
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <tr style="background-color:#e8f0fe;">
+      <td colspan="5"><strong>BLOQUE 11 – Developer / Técnico (Epic-13)</strong></td>
+    </tr>
+    <tr><td>60</td><td>US-49</td><td>Conocer propuesta de valor en landing page</td><td>Como visitante, quiero entender qué hace Entreprenly y cómo puede beneficiar a mi negocio para decidir si me interesa adquirirlo.</td><td>3</td></tr>
+    <tr><td>61</td><td>US-50</td><td>Gestionar ciclo de vida de pedidos mediante API</td><td>Como developer, quiero endpoints para crear y actualizar pedidos para que el chatbot y el dashboard intercambien información del pedido de forma automática y consistente.</td><td>5</td></tr>
+    <tr><td>62</td><td>US-51</td><td>Validar y registrar pagos mediante API</td><td>Como developer, quiero un endpoint para aprobar o rechazar pagos desde el dashboard para que el sistema actualice el inventario y notifique al cliente de forma automática.</td><td>5</td></tr>
+
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <!-- BLOQUE 12 – AUTENTICACIÓN (Epic-14)                      -->
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <tr style="background-color:#e8f0fe;">
+      <td colspan="5"><strong>BLOQUE 12 – Autenticación (Epic-14)</strong></td>
+    </tr>
+    <tr><td>63</td><td>US-52</td><td>Registrar cuenta con email</td><td>Como usuario anónimo, quiero registrarme con mi email y contraseña para crear una cuenta en Entreprenly y obtener automáticamente el Plan Free.</td><td>3</td></tr>
+    <tr><td>64</td><td>US-53</td><td>Verificar email</td><td>Como usuario registrado, quiero verificar mi email mediante el enlace enviado a mi correo para activar mi cuenta.</td><td>3</td></tr>
+    <tr><td>65</td><td>US-54</td><td>Iniciar sesión con credenciales</td><td>Como usuario registrado, quiero iniciar sesión con mi email y contraseña para acceder al dashboard de Entreprenly.</td><td>3</td></tr>
+    <tr><td>66</td><td>US-55</td><td>Iniciar sesión con Google OAuth</td><td>Como usuario anónimo, quiero iniciar sesión con mi cuenta de Google para acceder a Entreprenly sin necesidad de crear credenciales nuevas.</td><td>5</td></tr>
+    <tr><td>67</td><td>US-56</td><td>Recuperar contraseña</td><td>Como usuario registrado, quiero recuperar el acceso a mi cuenta mediante un enlace enviado a mi email para restablecer mi contraseña.</td><td>3</td></tr>
+    <tr><td>68</td><td>US-57</td><td>Cerrar sesión</td><td>Como usuario autenticado, quiero cerrar mi sesión para que el sistema revoque mi token y me redirija a la pantalla de login.</td><td>1</td></tr>
+
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <!-- BLOQUE 13 – SUSCRIPCIÓN (Epic-03 / Epic-04)              -->
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <tr style="background-color:#e8f0fe;">
+      <td colspan="5"><strong>BLOQUE 13 – Suscripción (Epic-03 / Epic-04)</strong></td>
+    </tr>
+    <tr><td>69</td><td>US-13</td><td>Seleccionar plan de suscripción</td><td>Como usuario con Plan Free, quiero presionar el botón "Elegir plan" en la tarjeta del Plan Control para definir el plan que deseo contratar y continuar con el proceso de suscripción.</td><td>2</td></tr>
+    <tr><td>70</td><td>US-14</td><td>Iniciar proceso de suscripción</td><td>Como usuario con un plan seleccionado, quiero presionar el botón "Continuar con la suscripción" para abrir el formulario de facturación y comenzar formalmente la contratación del plan elegido.</td><td>2</td></tr>
+    <tr><td>71</td><td>US-71</td><td>Agregar método de pago de suscripción</td><td>Como usuario con acceso al panel "Suscripción", quiero presionar el botón "Agregar método de pago" dentro de la sección "Método de pago y datos fiscales" para registrar un medio de cobro que pueda usarse en pagos y renovaciones del Plan Control.</td><td>3</td></tr>
+    <tr><td>72</td><td>US-72</td><td>Completar datos fiscales de suscripción</td><td>Como usuario con una cuenta registrada, quiero presionar el botón "Completar datos" dentro de "Método de pago y datos fiscales" para registrar mi RUC o DNI, razón social o nombre, dirección fiscal y correo de facturación.</td><td>2</td></tr>
+    <tr><td>73</td><td>US-15</td><td>Registrar datos de facturación</td><td>Como usuario, quiero completar el formulario de facturación y presionar el botón "Continuar al pago" para que el sistema pueda preparar el cobro correspondiente a la suscripción.</td><td>3</td></tr>
+    <tr><td>74</td><td>US-16</td><td>Procesar cobro de suscripción</td><td>Como usuario, quiero revisar el resumen de cobro y presionar el botón "Pagar y activar suscripción" para validar el pago del Plan Control seleccionado.</td><td>5</td></tr>
+    <tr><td>75</td><td>US-17</td><td>Activar suscripción</td><td>Como usuario, quiero que al confirmarse el pago el sistema active automáticamente el Plan Control y me redirija al panel de suscripción para acceder a las funcionalidades premium.</td><td>3</td></tr>
+    <tr><td>76</td><td>US-18</td><td>Visualizar panel de suscripción</td><td>Como usuario, quiero hacer clic en la opción lateral "Suscripción" para ver un panel con el plan actual, estado, fecha de renovación, facturación y acciones disponibles.</td><td>2</td></tr>
+    <tr><td>77</td><td>US-19</td><td>Consultar estado de suscripción</td><td>Como usuario, quiero ver una etiqueta de estado en el panel de suscripción para saber si mi plan se encuentra en estado "Activa", "Cancelación programada", "Cancelada" o "Plan Free".</td><td>1</td></tr>
+    <tr><td>78</td><td>US-20</td><td>Renovar suscripción</td><td>Como usuario con una suscripción de pago activa o próxima a vencer, quiero presionar el botón "Renovar suscripción" para extender la vigencia de mi acceso a la plataforma.</td><td>3</td></tr>
+    <tr><td>79</td><td>US-21</td><td>Solicitar cancelación de suscripción</td><td>Como usuario con una suscripción de pago activa, quiero presionar el botón "Solicitar cancelación" y luego "Confirmar cancelación" para detener la renovación automática al finalizar el periodo vigente.</td><td>2</td></tr>
+    <tr><td>80</td><td>US-22</td><td>Cancelar suscripción</td><td>Como sistema, quiero cancelar la suscripción de pago al finalizar su periodo vigente para retirar el acceso premium y devolver la cuenta del usuario al Plan Free.</td><td>3</td></tr>
+    <tr><td>81</td><td>US-73</td><td>Descargar historial de suscripción</td><td>Como usuario, quiero presionar el botón "Descargar historial" dentro de "Actividad de la suscripción" para obtener un archivo con los eventos de mi plan, pagos, renovaciones, cambios y cancelaciones.</td><td>2</td></tr>
+
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <!-- BLOQUE 14 – SOPORTE Y AYUDA (Epic-17)                    -->
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <tr style="background-color:#e8f0fe;">
+      <td colspan="5"><strong>BLOQUE 14 – Soporte y Ayuda (Epic-17)</strong></td>
+    </tr>
+    <tr><td>82</td><td>US-74</td><td>Visualizar el centro de soporte</td><td>Como comerciante, quiero visualizar el centro de soporte al presionar el botón de Ayuda para acceder de forma rápida a las opciones de asistencia disponibles.</td><td>2</td></tr>
+    <tr><td>83</td><td>US-75</td><td>Buscar artículo de ayuda</td><td>Como comerciante, quiero buscar artículos de ayuda por palabras clave para encontrar rápidamente la información que necesito sin revisar todas las categorías.</td><td>2</td></tr>
+    <tr><td>84</td><td>US-76</td><td>Consultar artículo de ayuda</td><td>Como comerciante, quiero abrir y leer un artículo de ayuda para entender cómo usar una funcionalidad de la plataforma o resolver un problema específico.</td><td>2</td></tr>
+    <tr><td>85</td><td>US-77</td><td>Reportar un problema</td><td>Como comerciante, quiero reportar un problema o incidencia desde el centro de soporte para que el equipo de Entreprenly pueda revisarlo y darle seguimiento.</td><td>3</td></tr>
+    <tr><td>86</td><td>US-78</td><td>Confirmar envío del reporte</td><td>Como comerciante, quiero recibir una confirmación visual tras enviar un reporte para tener la certeza de que mi solicitud fue registrada correctamente.</td><td>1</td></tr>
+
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <!-- BLOQUE 15 – PERFIL Y CONFIGURACIÓN (Epic-15)             -->
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <tr style="background-color:#e8f0fe;">
+      <td colspan="5"><strong>BLOQUE 15 – Perfil y Configuración (Epic-15)</strong></td>
+    </tr>
+    <tr><td>87</td><td>US-58</td><td>Visualizar perfil actual</td><td>Como usuario autenticado, quiero visualizar mi perfil actual para revisar mis datos registrados en la plataforma.</td><td>1</td></tr>
+    <tr><td>88</td><td>US-59</td><td>Actualizar nombre y biografía</td><td>Como usuario autenticado, quiero actualizar mi nombre y biografía para mantener mi perfil al día.</td><td>2</td></tr>
+    <tr><td>89</td><td>US-60</td><td>Subir foto de perfil</td><td>Como usuario autenticado, quiero subir una foto de perfil para personalizar mi cuenta en la plataforma.</td><td>3</td></tr>
+    <tr><td>90</td><td>US-61</td><td>Cambiar email con re-verificación</td><td>Como usuario autenticado, quiero cambiar mi email y verificarlo para mantener mis datos de contacto actualizados.</td><td>3</td></tr>
+    <tr><td>91</td><td>US-62</td><td>Cambiar contraseña</td><td>Como usuario autenticado, quiero cambiar mi contraseña para mantener la seguridad de mi cuenta.</td><td>3</td></tr>
+    <tr><td>92</td><td>US-63</td><td>Configurar preferencias de idioma, zona horaria y tema</td><td>Como usuario autenticado, quiero configurar mi idioma, zona horaria y tema visual para adaptar la plataforma a mis preferencias.</td><td>2</td></tr>
+    <tr><td>93</td><td>US-64</td><td>Configurar notificaciones</td><td>Como usuario autenticado, quiero configurar mis preferencias de notificación para recibir solo los avisos que me sean relevantes.</td><td>2</td></tr>
+
   </tbody>
 </table>
