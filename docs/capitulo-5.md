@@ -359,7 +359,7 @@ Los pasos para configurar y ejecutar el despliegue son los siguientes:
 
 #### Frontend Web Application
 
-El Frontend Web Application de Entreprenly está desarrollado con **Angular** y se despliega mediante **Firebase Hosting**, disponible en el subdominio **[app.entreprenly.online](https://app.entreprenly.online)**. Firebase Hosting fue elegido sobre GitHub Pages por tres razones concretas: soporta el enrutamiento del lado del cliente (SPA routing) de Angular de forma nativa sin configuraciones adicionales, permite asociar subdominios personalizados sin conflictos con el dominio principal ya utilizado por el Landing Page en GitHub Pages, y se integra de forma directa con GitHub Actions para automatizar el ciclo de build y despliegue.
+El Frontend Web Application de Entreprenly está desarrollado con **Angular** y se despliega mediante **Firebase Hosting**, disponible en el subdominio **[https://entreprenly.web.app](https://entreprenly.web.app)**. Firebase Hosting fue elegido sobre GitHub Pages por tres razones concretas: soporta el enrutamiento del lado del cliente (SPA routing) de Angular de forma nativa sin configuraciones adicionales, permite asociar subdominios personalizados sin conflictos con el dominio principal ya utilizado por el Landing Page en GitHub Pages, y se integra de forma directa con GitHub Actions para automatizar el ciclo de build y despliegue.
 
 Los pasos para configurar y ejecutar el despliegue son los siguientes:
 
