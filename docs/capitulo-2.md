@@ -1077,7 +1077,6 @@ Con los eventos ya ordenados, el equipo identificó y colocó los Actores (perso
 <div align="center">
   <img src="./images/gestion_inventario.svg" alt="proceso_de_suscripcion" width="800">
 
-  <img src="./images/pagos.svg" alt="configuracion_de_suscripcion" width="800">
 
   <img src="./images/ventas.svg" alt="venta" width="800">
 
