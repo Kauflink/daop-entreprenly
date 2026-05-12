@@ -1071,7 +1071,7 @@ En el Sprint 2, el equipo organizó el trabajo asignando un Bounded Context prin
 
 El objetivo principal de este Sprint fue implementar la Frontend Web Application de Entreprenly en Angular, cubriendo los Bounded Contexts de Auth, Profile, Subscription, Inventory, Sales y Chatbot, junto con las vistas compartidas de Home y Help. A continuación se presenta el tablero del Sprint y el detalle de los Work-items asociados.
 
-*(Colocar captura del tablero Jira con el Sprint 2 activo)*
+![sprint2](./images/sprint2.png "sprint2")
 
 <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%;">
   <thead>
@@ -1590,9 +1590,6 @@ Durante el Sprint 2, el Backend (RESTful Web Services con Spring Boot) aún no h
 
   <!-- Inventario: productos unitarios -->
   <tr>
-    <td colspan="5"><strong>Inventario — Productos unitarios</strong></td>
-  </tr>
-  <tr>
     <td><code>/api/v1/inventory-unit-products</code></td>
     <td>GET</td>
     <td>Retorna la lista completa de productos vendidos por unidad.</td>
@@ -1616,9 +1613,6 @@ Durante el Sprint 2, el Backend (RESTful Web Services con Spring Boot) aún no h
 
   <!-- Inventario: productos a granel -->
   <tr>
-    <td colspan="5"><strong>Inventario — Productos a granel (por peso)</strong></td>
-  </tr>
-  <tr>
     <td><code>/api/v1/inventory-weight-products</code></td>
     <td>GET</td>
     <td>Retorna la lista completa de productos vendidos por kilogramo.</td>
@@ -1634,9 +1628,6 @@ Durante el Sprint 2, el Backend (RESTful Web Services con Spring Boot) aún no h
   </tr>
 
   <!-- Inventario: lotes unitarios -->
-  <tr>
-    <td colspan="5"><strong>Inventario — Lotes unitarios</strong></td>
-  </tr>
   <tr>
     <td><code>/api/v1/inventory-unit-lots</code></td>
     <td>GET</td>
@@ -1654,9 +1645,6 @@ Durante el Sprint 2, el Backend (RESTful Web Services con Spring Boot) aún no h
 
   <!-- Inventario: lotes a granel -->
   <tr>
-    <td colspan="5"><strong>Inventario — Lotes a granel</strong></td>
-  </tr>
-  <tr>
     <td><code>/api/v1/inventory-weight-lots</code></td>
     <td>GET</td>
     <td>Retorna todos los lotes de productos a granel con su cantidad en kg.</td>
@@ -1673,9 +1661,6 @@ Durante el Sprint 2, el Backend (RESTful Web Services con Spring Boot) aún no h
 
   <!-- Alertas de stock -->
   <tr>
-    <td colspan="5"><strong>Inventario — Alertas de stock</strong></td>
-  </tr>
-  <tr>
     <td><code>/api/v1/inventory-stock-alerts</code></td>
     <td>GET</td>
     <td>Retorna las alertas activas de inventario: productos vencidos, por vencer, con bajo stock o agotados.</td>
@@ -1684,9 +1669,6 @@ Durante el Sprint 2, el Backend (RESTful Web Services con Spring Boot) aún no h
   </tr>
 
   <!-- Ventas -->
-  <tr>
-    <td colspan="5"><strong>Ventas y caja</strong></td>
-  </tr>
   <tr>
     <td><code>/api/v1/sales</code></td>
     <td>GET</td>
@@ -1718,9 +1700,6 @@ Durante el Sprint 2, el Backend (RESTful Web Services con Spring Boot) aún no h
 
   <!-- Balanza IoT -->
   <tr>
-    <td colspan="5"><strong>Balanza IoT</strong></td>
-  </tr>
-  <tr>
     <td><code>/api/v1/iot-scale</code></td>
     <td>GET</td>
     <td>Retorna el estado actual de la balanza IoT (conectada o desconectada) y su identificador de dispositivo.</td>
@@ -1736,9 +1715,6 @@ Durante el Sprint 2, el Backend (RESTful Web Services con Spring Boot) aún no h
   </tr>
 
   <!-- Chatbot WhatsApp -->
-  <tr>
-    <td colspan="5"><strong>Chatbot WhatsApp</strong></td>
-  </tr>
   <tr>
     <td><code>/api/v1/whatsapp-sessions</code></td>
     <td>GET</td>
@@ -1783,9 +1759,6 @@ Durante el Sprint 2, el Backend (RESTful Web Services con Spring Boot) aún no h
   </tr>
 
   <!-- Perfil y suscripción -->
-  <tr>
-    <td colspan="5"><strong>Perfil y suscripción</strong></td>
-  </tr>
   <tr>
     <td><code>/api/v1/profile</code></td>
     <td>GET</td>
