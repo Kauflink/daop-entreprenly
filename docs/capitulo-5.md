@@ -694,6 +694,7 @@ El objetivo principal de este Sprint fue implementar y desplegar la primera vers
     </tr>
   </tbody>
 </table>
+
 ---
  
 #### 5.2.1.4. Development Evidence for Sprint Review
@@ -917,11 +918,7 @@ Durante el Sprint 1, el equipo configuró y ejecutó el proceso de despliegue de
 
 ![workflows2](./images/workflows2.png "workflows2")
 
-4. **Ajustes iterativos del pipeline:** Se realizaron cuatro refinamientos del workflow durante el Sprint para resolver compatibilidades con la versión de Node.js y actualizar GitHub Actions a la versión 4.
-
-![landing_desplegado](./images/landing_desplegado.png "landing_desplegado")
-
-5. **Verificación del despliegue:** Se comprobó que el Landing Page quedó correctamente publicado y accesible desde la URL de GitHub Pages con el dominio configurado.
+4. **Verificación del despliegue:** Se comprobó que el Landing Page quedó correctamente publicado y accesible desde la URL de GitHub Pages con el dominio configurado.
 
 ![landing_desplegado](./images/landing_desplegado.png "landing_desplegado")
  
