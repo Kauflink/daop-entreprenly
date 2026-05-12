@@ -1342,14 +1342,10 @@ Gestión de Inventario
 En este Bounded Context se realiza la creación y modificación de productos. También incluye la gestión de lotes (creación, modificación y eliminación), así como funcionalidades adicionales como alertas de caducidad y control de stock.
 
 Chatbot de WhatsApp
-<p align="center"> <img src="images/Entreprenly - Chatbot de WhatsApp.jpg" width="500"/> <img src="images/Canvas BC 5.jpg" width="500"/> </p>
+<p align="center"> <img src="images/Entreprenly - Chatbot de WhatsApp.JPG" width="500"/> <img src="images/Canvas BC 5.jPG" width="500"/> </p>
 
 Este Bounded Context permite la venta a través de un chatbot de WhatsApp. Para ello, consume información del inventario con el fin de conocer la disponibilidad de productos.
 
-Pagos
-<p align="center"> <img src="images/Entreprenly - Pagos.jpg" width="500"/> <img src="images/Canvas BC 4.jpg" width="500"/> </p>
-
-En este Bounded Context se gestionan los pagos tanto de ventas presenciales como de aquellas realizadas a través de WhatsApp.
 
 Ventas
 <p align="center"> <img src="images/Entreprenly - Ventas.jpg" width="500"/> <img src="images/Canvas BC 3.jpg" width="500"/> </p>
@@ -1370,7 +1366,6 @@ A continuación, se presentan los principales flujos de interacción del sistema
 
 <p align="center"><img src="images/Entreprenly - Flujo Gestion de inventario.jpg" width="500"/></p>
 
-<p align="center"><img src="images/Entreprenly - Flujo Pagos.jpg" width="500"/></p>
 
 <p align="center"><img src="images/Entreprenly - Flujo Gestion y Proceso de suscripcion.jpg" width="500"/></p>
 
@@ -1418,11 +1413,6 @@ Además, incorpora funcionalidades de monitoreo como alertas de stock y caducida
 Asimismo, expone información de productos hacia otros contextos (outbound), como Ventas y Chatbot.
 Incluye commands para la gestión de productos y operaciones relacionadas, y persiste toda la información en una base de datos MySQL.
 
-<p align="center">Pagos BC</p> <p align="center"><img src="images/structurizr-104049-PaymentComponent.png" width="500"/></p>
-
-Este Bounded Context es responsable de la gestión de los pagos asociados a las ventas, tanto presenciales como realizadas a través de otros canales como el chatbot.
-Incluye queries para la consulta de información de pagos y commands para la generación y envío de comprobantes. Además, se encarga de validar y confirmar transacciones mediante la integración con servicios externos.
-La información de pagos es almacenada en una base de datos MySQL, permitiendo el seguimiento y control de las transacciones realizadas.
 
 <p align="center">Ventas BC</p> <p align="center"><img src="images/structurizr-104049-SalesComponent.png" width="500"/></p>
 
@@ -1454,9 +1444,6 @@ Además, se integra con servicios externos de mensajería (WhatsApp API) y persi
 <p align="center">Gestión de Inventario de Suscripción BC</p>
 <p align="center"><img src="images/Inventory_BC-Class_Diagram__Gestión_de_Inventario_BC.png" width="500"/></p>
 
-<p align="center">Pagos BC</p>
-<p align="center"><img src="images/Payment_BC-Class_Diagram__Payment_BC.png" width="500"/></p>
-
 <p align="center">Ventas BC</p>
 <p align="center"><img src="images/Sales_BC-Class_Diagram__Ventas_BC.png" width="500"/></p>
 
@@ -1465,66 +1452,80 @@ Además, se integra con servicios externos de mensajería (WhatsApp API) y persi
 
 ## 4.8. Database Design
 
-El diseño de base de datos de Entreprenly está implementado en MySQL 8.0 y organizado en seis categorías. El esquema aplica normalización hasta la Tercera Forma Normal (3FN), eliminando redundancias y garantizando la integridad referencial en toda la operación del negocio.
 
-El sistema distingue dos actores con responsabilidades distintas: los **Comerciantes**, quienes administran el negocio y tienen suscripción activa, y los **Clientes**, cuyos datos se registran únicamente para boletas y pedidos por WhatsApp, sin acceso al sistema.
+El diseño de base de datos de Entreprenly está implementado en MySQL 8.0 y organizado en seis categorías funcionales. El esquema aplica normalización hasta la Tercera Forma Normal (3FN), eliminando redundancias y garantizando la integridad referencial en todas las operaciones del sistema.
 
-Los productos se clasifican en tipo `unidad` (precio por unidad) y tipo `peso`o (precio por kilogramo), lo que determina cómo se interpreta el `stock_total` en cada caso.
+El sistema diferencia dos actores principales con responsabilidades distintas: los **Comerciantes**, quienes administran el negocio, gestionan inventario, ventas, suscripciones y el chatbot; y los **Clientes**, cuyos datos se registran únicamente para pedidos, conversaciones y emisión de comprobantes, sin acceso directo a la plataforma.
 
-La balanza IoT se integra mediante `LecturasBalanza`, que registra cada pesaje y se vincula a una venta al confirmar la transacción, descontando el stock automáticamente.
+Los productos se clasifican en tipo **unidad** y tipo **peso**, lo que determina cómo se interpreta el `stock_total` y cómo se procesan las ventas. Los productos por unidad pueden incluir atributos adicionales como marca y peso en gramos, mientras que los productos por peso se integran directamente con la balanza IoT.
 
-El arqueo de caja diario se gestiona en `ResumenDiario`, cuyo campo `total_general` es una columna calculada con `GENERATED ALWAYS AS` para evitar inconsistencias.
+La integración IoT se implementa mediante `LecturasBalanza`, que registra cada pesaje realizado junto con un snapshot histórico del precio por kilogramo. Cada lectura puede vincularse posteriormente a una venta confirmada, permitiendo mantener trazabilidad del pesaje y automatizar el descuento del inventario.
 
-Los pagos digitales (Yape y Plin) operan bajo un modelo P2P con validación manual del comerciante desde el dashboard.
+El control de inventario utiliza `Lotes` para manejar trazabilidad y vencimiento de productos perecibles. Cada lote almacena cantidad disponible, fecha de ingreso, fecha de vencimiento y un código QR para identificación rápida dentro del sistema.
 
-El chatbot de WhatsApp se integra mediante `ConexionesWhatsApp`, que persiste la sesión del número vinculado por QR, y `Conversaciones`, que registra cada mensaje del chat.
+El arqueo de caja diario se centraliza en `ResumenDiario`, donde el campo `total_general` se calcula automáticamente mediante `GENERATED ALWAYS AS`, evitando inconsistencias entre los distintos métodos de pago registrados.
+
+El chatbot de WhatsApp se integra mediante `ConexionesWhatsApp`, que almacena la sesión vinculada por QR entre el comerciante y WhatsApp. Además, `Conversaciones` registra el historial completo de mensajes intercambiados entre cliente y chatbot.
+
+Los pedidos digitales siguen un flujo de estados que va desde `pendiente` hasta `completado` o `cancelado`. Los pagos digitales mediante Yape y Plin se gestionan directamente dentro del flujo de pedidos y ventas, por lo que no existe una tabla independiente de pagos. Esta decisión reduce redundancia y simplifica el modelo relacional.
+
+El módulo de suscripciones fue ampliado con un catálogo de planes y funcionalidades adicionales. `PlanesDetalle` define precios mensuales y anuales, `CaracteristicasPlan` almacena las funcionalidades disponibles por plan, y `ActividadSuscripcion` registra eventos relevantes asociados al ciclo de vida de la suscripción del comerciante.
 
 ### 4.8.1. Database Diagrams
 
 <div align="center">
 
-![Database Diagram Entreprenly](images/Entreprendly_database_diagram.svg)
+![Database Diagram Entreprenly](images/Entreprendly_database_diagram.png)
 
 </div>
 
 El esquema se organiza en las siguientes tablas por categoría:
+**Identidad y Acceso**
 
-**Identidad y Acceso:**
+- `Comerciantes` (datos de acceso, perfil y roles).
+- `PreferenciasComercio` (idioma, moneda, tema y notificaciones).
+- `SesionesActivas` (JWTs activos para control y revocación de sesiones).
+- `TokensVerificacion` (tokens de verificación y recuperación de contraseña).
+- `Clientes` (datos básicos para pedidos y comprobantes).
 
-- `Comerciantes` (datos de acceso y rol).
-- `PreferenciasComercio` (idioma, tema y notificaciones).
-- `SesionesActivas` (JWTs activos para revocación de sesiones).
-- `TokensVerificacion` (tokens de un solo uso para verificar email y recuperar contraseña).
-- `Clientes` (datos para boletas).
+**Suscripciones**
 
-**Suscripciones:**
+- `Suscripciones` (plan contratado y ciclo de vida de la suscripción).
+- `BoletoSuscripcion` (registro de cobros y últimos 4 dígitos de tarjeta).
+- `PlanesDetalle` (catálogo de planes, precios y recomendaciones).
+- `CaracteristicasPlan` (funcionalidades habilitadas por plan).
+- `MetodosPagoSuscripcion` (métodos de pago registrados por el comerciante).
+- `DatosFiscales` (información fiscal asociada al comerciante).
+- `ActividadSuscripcion` (historial de actividad y eventos de suscripción).
 
-- `Suscripciones` (plan y ciclo de vida: pendiente → activa → cancelada → vencida).
-- `BoletoSuscripcion` (datos del cobro, guarda solo los últimos 4 dígitos de la tarjeta por seguridad).
+**Inventario**
 
-**Inventario:**
+- `Categorias` (clasificación normalizada de productos).
+- `Productos` (catálogo principal con control de stock y tipo de producto).
+- `Lotes` (trazabilidad, vencimiento y códigos QR de inventario).
 
-- `Categorias` (tabla de referencia normalizada).
-- `Productos` (catálogo con tipo unidad o peso, precio y stock).
-- `Lotes` (trazabilidad por fecha de vencimiento para productos perecederos).
+**Ventas**
 
-**Ventas e IoT:**
+- `LecturasBalanza` (pesajes realizados por la balanza inteligente).
+- `Ventas` (encabezado de transacciones presenciales).
+- `DetalleVenta` (detalle de productos vendidos).
+- `ResumenDiario` (arqueo y cierre diario de caja).
 
-- `LecturasBalanza` (pesajes con snapshot histórico de precio).
-- `Ventas` (encabezado de transacción presencial).
-- `DetalleVenta` (líneas de cada venta).
-- `ResumenDiario` (cierre de caja con total_general calculado automáticamente).
+**Chatbot WhatsApp**
 
-**Chatbot WhatsApp:**
+- `ConexionesWhatsApp` (sesión vinculada mediante QR).
+- `Conversaciones` (historial de mensajes del chatbot y clientes).
 
-- `ConexionesWhatsApp` (sesión delnúmero vinculado por QR, relación 1:1 con el comerciante).
-- `Conversaciones` (historial de mensajes entre bot, cliente y comerciante).
+**Pedidos**
 
-**Pedidos y Pagos:**
+- `Pedidos` (gestión del flujo de pedidos digitales).
+- `DetallePedido` (detalle de productos solicitados en cada pedido).
 
-- `Pedidos` (ciclo pendiente → esperando_pago → confirmado → completado).
-- `DetallePedido` (líneas del pedido).
-- `Pagos` (validación manual del comprobante Yape/Plin, relación 1:1 con el pedido).
 
-La normalización aplicada se resume en tres puntos. La **1FN** se cumple con valores atómicos en todas las columnas usando ENUM para campos de valores controlados. La **2FN** se cumple con claves primarias simples en todas las tablas. La **3FN** se evidencia en la separación de `PreferenciasComercio`, `BoletoSuscripcion` y `Categorias` para eliminar dependencias transitivas, la eliminación del campo `subtotal` en los detalles por ser valor derivado, y la separación de `Clientes` y `Comerciantes` por pertenecer a entidades de negocio distintas.
+La normalización aplicada se resume en tres puntos principales:
 
+- **Primera Forma Normal (1FN):** se cumple mediante el uso de valores atómicos y `ENUM` para atributos de dominio controlado.
+
+- **Segunda Forma Normal (2FN):** se garantiza utilizando claves primarias simples en todas las tablas.
+
+- **Tercera Forma Normal (3FN):** se evidencia en la separación de entidades como `PreferenciasComercio`, `Categorias`, `DatosFiscales` y `CaracteristicasPlan`, eliminando dependencias transitivas y evitando redundancia de información. Asimismo, los valores derivados como subtotales no se almacenan en tablas de detalle, ya que pueden calcularse dinámicamente a partir de `cantidad` y `precio_unit`.
