@@ -13,15 +13,18 @@
     </tr>
   </thead>
   <tbody>
+ 
+  <!-- ═══════════════════════════════════════════════════════════ -->
   <!-- EPIC 01 -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
   <tr>
-    <td><strong>Epic-01</strong></td>
-    <td><strong>Gestión de inventario</strong></td>
+    <td>Epic-01</td>
+    <td>Gestión de inventario</td>
     <td>Como usuario quiero gestionar mi inventario (lotes y productos) para visualizar los datos con mayor claridad.</td>
     <td></td>
     <td></td>
   </tr>
-  <!-- US 01 -->
+  <!-- US-01 -->
   <tr>
     <td>US-01</td>
     <td>Agregar productos</td>
@@ -36,7 +39,7 @@
     </td>
     <td>Epic-01</td>
   </tr>
-  <!-- US 02 -->
+  <!-- US-02 -->
   <tr>
     <td>US-02</td>
     <td>Editar lotes</td>
@@ -49,7 +52,7 @@
     </td>
     <td>Epic-01</td>
   </tr>
-  <!-- US 03 -->
+  <!-- US-03 -->
   <tr>
     <td>US-03</td>
     <td>Agregar lotes</td>
@@ -58,13 +61,11 @@
       <strong>Scenario 1: Agregar lote correctamente</strong><br>
       Dado que el usuario está en la sección de lotes y selecciona un lote existente, cuando ingrese una cantidad y fecha válida y presione "Agregar", entonces el nuevo lote se agregará exitosamente.<br><br>
       <strong>Scenario 2: Intento de registro de lote con información incompleta</strong><br>
-      Dado que el usuario se encuentra en el formulario de Agregación de Lotes. 
-      Cuando intenta procesar la solicitud dejando uno o más campos obligatorios vacíos.
-      Entonces el sistema debe impedir el registro y resaltar cada campo omitido con el mensaje: "Este campo es obligatorio".
+      Dado que el usuario se encuentra en el formulario de Agregación de Lotes, cuando intenta procesar la solicitud dejando uno o más campos obligatorios vacíos, entonces el sistema debe impedir el registro y resaltar cada campo omitido con el mensaje: "Este campo es obligatorio".
     </td>
     <td>Epic-01</td>
   </tr>
-  <!-- US 04 -->
+  <!-- US-04 -->
   <tr>
     <td>US-04</td>
     <td>Eliminar lotes</td>
@@ -77,7 +78,7 @@
     </td>
     <td>Epic-01</td>
   </tr>
-  <!-- US 05 -->
+  <!-- US-05 -->
   <tr>
     <td>US-05</td>
     <td>Editar productos</td>
@@ -90,7 +91,7 @@
     </td>
     <td>Epic-01</td>
   </tr>
-  <!-- US 06 -->
+  <!-- US-06 -->
   <tr>
     <td>US-06</td>
     <td>Visualizar detalles de lotes</td>
@@ -99,15 +100,13 @@
       <strong>Scenario 1: Detalles de lote mostrados correctamente</strong><br>
       Dado que el usuario está en la sección de lotes y selecciona un lote existente, cuando presione "Ver Detalles", entonces los detalles se mostrarán exitosamente.<br><br>
       <strong>Scenario 2: Error al recuperar los detalles del lote</strong><br>
-      Dado que el usuario visualiza la tarjeta de un producto con lotes existentes.
-      Cuando el usuario presiona "Ver Detalles" pero ocurre un error de comunicación con el servidor (timeout o error 500).
-      Entonces el sistema debe mostrar un mensaje de error indicando: "No se pudieron cargar los detalles en este momento. Inténtelo más tarde".
+      Dado que el usuario visualiza la tarjeta de un producto con lotes existentes, cuando el usuario presiona "Ver Detalles" pero ocurre un error de comunicación con el servidor (timeout o error 500), entonces el sistema debe mostrar un mensaje de error indicando: "No se pudieron cargar los detalles en este momento. Inténtelo más tarde".
     </td>
     <td>Epic-01</td>
   </tr>
-  <!-- US 10 -->
+  <!-- US-07 -->
   <tr>
-    <td>US-10</td>
+    <td>US-07</td>
     <td>Visualizar detalles de producto</td>
     <td>Como comerciante quiero visualizar la información detallada de cada producto en el listado para conocer rápidamente sus características, stock disponible y precio sin necesidad de ingresar a otra pantalla.</td>
     <td>
@@ -118,9 +117,9 @@
     </td>
     <td>Epic-01</td>
   </tr>
-  <!-- US 12 -->
+  <!-- US-08 -->
   <tr>
-    <td>US-12</td>
+    <td>US-08</td>
     <td>Buscar productos</td>
     <td>Como comerciante quiero tener un buscador de productos para perder menos tiempo buscando en el inventario.</td>
     <td>
@@ -131,9 +130,9 @@
     </td>
     <td>Epic-01</td>
   </tr>
-  <!-- US 23 -->
+  <!-- US-09 -->
   <tr>
-    <td>US-23</td>
+    <td>US-09</td>
     <td>Crear lotes</td>
     <td>Como comerciante quiero crear lotes de productos para controlar mejor el stock y la caducidad en el inventario.</td>
     <td>
@@ -144,17 +143,35 @@
     </td>
     <td>Epic-01</td>
   </tr>
-  <!-- EPIC 02 -->
+  <!-- US-10 -->
   <tr>
-    <td><strong>Epic-02</strong></td>
-    <td><strong>Notificaciones de inventario</strong></td>
+    <td>US-10</td>
+    <td>Escanear código QR en inventario</td>
+    <td>Como usuario de inventario, quiero escanear códigos QR desde los formularios de productos y lotes para completar el código del registro sin ingresarlo manualmente.</td>
+    <td>
+      <strong>Scenario 1: Escaneo de QR exitoso</strong><br>
+      Dado que el usuario se encuentra en un formulario de producto o lote con el componente de escaneo disponible, cuando presiona el botón con ícono de cámara y escanea un código QR válido, entonces el sistema completa el campo de código QR con el valor detectado y cierra el panel de escaneo.<br><br>
+      <strong>Scenario 2: Permiso de cámara denegado</strong><br>
+      Dado que el usuario presiona el botón de escaneo, cuando el navegador bloquea el acceso a la cámara, entonces el sistema muestra el mensaje de permiso denegado y no modifica el campo de código QR.<br><br>
+      <strong>Scenario 3: Cámara no disponible</strong><br>
+      Dado que el usuario intenta abrir el escáner y el dispositivo no permite iniciar la cámara, cuando el sistema recibe el error, entonces muestra el mensaje "No se pudo acceder a la cámara" y permite cerrar el panel.
+    </td>
+    <td>Epic-01</td>
+  </tr>
+ 
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- EPIC 02 -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <tr class="epic-row">
+    <td>Epic-02</td>
+    <td>Notificaciones de inventario</td>
     <td>Como usuario quiero que el sistema me notifique el estado de mis lotes para organizarme mejor.</td>
     <td></td>
     <td></td>
   </tr>
-  <!-- US 07 -->
+  <!-- US-11 -->
   <tr>
-    <td>US-07</td>
+    <td>US-11</td>
     <td>Detectar stock agotado</td>
     <td>Como comerciante quiero ser notificado cuando tengo bajo/nada de stock.</td>
     <td>
@@ -165,9 +182,9 @@
     </td>
     <td>Epic-02</td>
   </tr>
-  <!-- US 08 -->
+  <!-- US-12 -->
   <tr>
-    <td>US-08</td>
+    <td>US-12</td>
     <td>Mostrar alertas de estado al visualizar detalles</td>
     <td>Como comerciante quiero visualizar alertas de estado al ver el detalle de un lote para identificar rápidamente si tiene stock bajo, está agotado o próximo a vencer.</td>
     <td>
@@ -178,9 +195,9 @@
     </td>
     <td>Epic-02</td>
   </tr>
-  <!-- US 09 -->
+  <!-- US-13 -->
   <tr>
-    <td>US-09</td>
+    <td>US-13</td>
     <td>Visualizar dashboard de lotes</td>
     <td>Como comerciante quiero visualizar un dashboard de lotes con indicadores y alertas para conocer rápidamente el estado de mi inventario al ingresar al módulo de lotes.</td>
     <td>
@@ -191,9 +208,9 @@
     </td>
     <td>Epic-02</td>
   </tr>
-  <!-- US 11 -->
+  <!-- US-14 -->
   <tr>
-    <td>US-11</td>
+    <td>US-14</td>
     <td>Recibir alerta de caducidad de lote</td>
     <td>Como comerciante quiero ser notificado cuando un lote esté próximo a vencer o ya haya vencido para tomar acciones como priorizar su uso o descartarlo.</td>
     <td>
@@ -204,17 +221,20 @@
     </td>
     <td>Epic-02</td>
   </tr>
+ 
+  <!-- ═══════════════════════════════════════════════════════════ -->
   <!-- EPIC 03 -->
-  <tr>
-    <td><strong>Epic-03</strong></td>
-    <td><strong>Proceso de suscripción</strong></td>
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <tr class="epic-row">
+    <td>Epic-03</td>
+    <td>Proceso de suscripción</td>
     <td>Como usuario con cuenta creada y Plan Free asignado por defecto, quiero iniciar la suscripción al Plan Control para habilitar las funcionalidades premium desde la landing o desde la sección "Suscripción" del dashboard.</td>
     <td></td>
     <td></td>
   </tr>
-  <!-- US 13 -->
+  <!-- US-15 -->
   <tr>
-    <td>US-13</td>
+    <td>US-15</td>
     <td>Seleccionar plan de suscripción</td>
     <td>Como usuario con Plan Free, quiero presionar el botón "Elegir plan" en la tarjeta del Plan Control para definir el plan que deseo contratar y continuar con el proceso de suscripción.</td>
     <td>
@@ -225,9 +245,9 @@
     </td>
     <td>Epic-03</td>
   </tr>
-  <!-- US 14 -->
+  <!-- US-16 -->
   <tr>
-    <td>US-14</td>
+    <td>US-16</td>
     <td>Iniciar proceso de suscripción</td>
     <td>Como usuario con un plan seleccionado, quiero presionar el botón "Continuar con la suscripción" para abrir el formulario de facturación y comenzar formalmente la contratación del plan elegido.</td>
     <td>
@@ -238,9 +258,9 @@
     </td>
     <td>Epic-03</td>
   </tr>
-  <!-- US 15 -->
+  <!-- US-17 -->
   <tr>
-    <td>US-15</td>
+    <td>US-17</td>
     <td>Registrar datos de facturación</td>
     <td>Como usuario, quiero completar el formulario de facturación y presionar el botón "Continuar al pago" para que el sistema pueda preparar el cobro correspondiente a la suscripción.</td>
     <td>
@@ -251,9 +271,9 @@
     </td>
     <td>Epic-03</td>
   </tr>
-  <!-- US 16 -->
+  <!-- US-18 -->
   <tr>
-    <td>US-16</td>
+    <td>US-18</td>
     <td>Procesar cobro de suscripción</td>
     <td>Como usuario, quiero revisar el resumen de cobro y presionar el botón "Pagar y activar suscripción" para validar el pago del Plan Control seleccionado.</td>
     <td>
@@ -264,9 +284,9 @@
     </td>
     <td>Epic-03</td>
   </tr>
-  <!-- US 17 -->
+  <!-- US-19 -->
   <tr>
-    <td>US-17</td>
+    <td>US-19</td>
     <td>Activar suscripción</td>
     <td>Como usuario, quiero que al confirmarse el pago el sistema active automáticamente el Plan Control y me redirija al panel de suscripción para acceder a las funcionalidades premium.</td>
     <td>
@@ -277,17 +297,20 @@
     </td>
     <td>Epic-03</td>
   </tr>
+ 
+  <!-- ═══════════════════════════════════════════════════════════ -->
   <!-- EPIC 04 -->
-  <tr>
-    <td><strong>Epic-04</strong></td>
-    <td><strong>Configuración de suscripción</strong></td>
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <tr class="epic-row">
+    <td>Epic-04</td>
+    <td>Configuración de suscripción</td>
     <td>Como usuario, quiero visualizar y gestionar mi plan actual desde la sección "Suscripción" del dashboard para consultar su estado, renovarlo o cancelarlo según mis necesidades.</td>
     <td></td>
     <td></td>
   </tr>
-  <!-- US 18 -->
+  <!-- US-20 -->
   <tr>
-    <td>US-18</td>
+    <td>US-20</td>
     <td>Visualizar panel de suscripción</td>
     <td>Como usuario, quiero hacer clic en la opción lateral "Suscripción" para ver un panel con el plan actual, estado, fecha de renovación, facturación y acciones disponibles.</td>
     <td>
@@ -298,9 +321,9 @@
     </td>
     <td>Epic-04</td>
   </tr>
-  <!-- US 19 -->
+  <!-- US-21 -->
   <tr>
-    <td>US-19</td>
+    <td>US-21</td>
     <td>Consultar estado de suscripción</td>
     <td>Como usuario, quiero ver una etiqueta de estado en el panel de suscripción para saber si mi plan se encuentra en estado "Activa", "Cancelación programada", "Cancelada" o "Plan Free".</td>
     <td>
@@ -311,9 +334,9 @@
     </td>
     <td>Epic-04</td>
   </tr>
-  <!-- US 20 -->
+  <!-- US-22 -->
   <tr>
-    <td>US-20</td>
+    <td>US-22</td>
     <td>Renovar suscripción</td>
     <td>Como usuario con una suscripción de pago activa o próxima a vencer, quiero presionar el botón "Renovar suscripción" para extender la vigencia de mi acceso a la plataforma.</td>
     <td>
@@ -324,9 +347,9 @@
     </td>
     <td>Epic-04</td>
   </tr>
-  <!-- US 21 -->
+  <!-- US-23 -->
   <tr>
-    <td>US-21</td>
+    <td>US-23</td>
     <td>Solicitar cancelación de suscripción</td>
     <td>Como usuario con una suscripción de pago activa, quiero presionar el botón "Solicitar cancelación" y luego "Confirmar cancelación" para detener la renovación automática al finalizar el periodo vigente.</td>
     <td>
@@ -339,9 +362,9 @@
     </td>
     <td>Epic-04</td>
   </tr>
-  <!-- US 22 -->
+  <!-- US-24 -->
   <tr>
-    <td>US-22</td>
+    <td>US-24</td>
     <td>Cancelar suscripción</td>
     <td>Como sistema, quiero cancelar la suscripción de pago al finalizar su periodo vigente para retirar el acceso premium y devolver la cuenta del usuario al Plan Free.</td>
     <td>
@@ -352,9 +375,9 @@
     </td>
     <td>Epic-04</td>
   </tr>
-  <!-- US 71 -->
+  <!-- US-25 -->
   <tr>
-    <td>US-71</td>
+    <td>US-25</td>
     <td>Agregar método de pago de suscripción</td>
     <td>Como usuario con acceso al panel "Suscripción", quiero presionar el botón "Agregar método de pago" dentro de la sección "Método de pago y datos fiscales" para registrar un medio de cobro que pueda usarse en pagos y renovaciones del Plan Control.</td>
     <td>
@@ -367,9 +390,9 @@
     </td>
     <td>Epic-04</td>
   </tr>
-  <!-- US 72 -->
+  <!-- US-26 -->
   <tr>
-    <td>US-72</td>
+    <td>US-26</td>
     <td>Completar datos fiscales de suscripción</td>
     <td>Como usuario con una cuenta registrada, quiero presionar el botón "Completar datos" dentro de "Método de pago y datos fiscales" para registrar mi RUC o DNI, razón social o nombre, dirección fiscal y correo de facturación.</td>
     <td>
@@ -382,9 +405,9 @@
     </td>
     <td>Epic-04</td>
   </tr>
-  <!-- US 73 -->
+  <!-- US-27 -->
   <tr>
-    <td>US-73</td>
+    <td>US-27</td>
     <td>Descargar historial de suscripción</td>
     <td>Como usuario, quiero presionar el botón "Descargar historial" dentro de "Actividad de la suscripción" para obtener un archivo con los eventos de mi plan, pagos, renovaciones, cambios y cancelaciones.</td>
     <td>
@@ -397,17 +420,20 @@
     </td>
     <td>Epic-04</td>
   </tr>
+ 
+  <!-- ═══════════════════════════════════════════════════════════ -->
   <!-- EPIC 05 -->
-  <tr>
-    <td><strong>Epic-05</strong></td>
-    <td><strong>Gestión de Transacciones y Operaciones de Venta</strong></td>
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <tr class="epic-row">
+    <td>Epic-05</td>
+    <td>Gestión de Transacciones y Operaciones de Venta</td>
     <td>Como comerciante, quiero gestionar el proceso completo de registro de ventas, desde la selección de productos hasta la emisión del comprobante, para asegurar una operación ágil y sin errores.</td>
     <td></td>
     <td></td>
   </tr>
-  <!-- US 24 -->
+  <!-- US-28 -->
   <tr>
-    <td>US-24</td>
+    <td>US-28</td>
     <td>Buscar productos en el inventario y validar su tipo de medida</td>
     <td>Como cajero, quiero buscar productos del inventario para que el sistema valide si son por cantidad o peso, para abrir la interfaz de ingreso correspondiente.</td>
     <td>
@@ -420,9 +446,9 @@
     </td>
     <td>Epic-05</td>
   </tr>
-  <!-- US 25 -->
+  <!-- US-29 -->
   <tr>
-    <td>US-25</td>
+    <td>US-29</td>
     <td>Registrar la cantidad de unidades en el Ticket de Venta</td>
     <td>Como cajero, quiero ingresar el número de unidades de un producto seleccionado, para añadirlo al detalle de la venta.</td>
     <td>
@@ -433,9 +459,9 @@
     </td>
     <td>Epic-05</td>
   </tr>
-  <!-- US 26 -->
+  <!-- US-30 -->
   <tr>
-    <td>US-26</td>
+    <td>US-30</td>
     <td>Capturar el peso mediante balanza IoT o ingreso manual</td>
     <td>Como cajero, quiero obtener el peso del producto automáticamente o por teclado para procesar la venta de productos al granel.</td>
     <td>
@@ -448,9 +474,9 @@
     </td>
     <td>Epic-05</td>
   </tr>
-  <!-- US 27 -->
+  <!-- US-31 -->
   <tr>
-    <td>US-27</td>
+    <td>US-31</td>
     <td>Gestionar el desglose y cálculo del Ticket de Venta</td>
     <td>Como cajero, quiero visualizar el desglose de productos (nombre, cantidad/peso, precio unitario y subtotal) para verificar que la información sea correcta antes de proceder al pago.</td>
     <td>
@@ -461,9 +487,9 @@
     </td>
     <td>Epic-05</td>
   </tr>
-  <!-- US 28 -->
+  <!-- US-32 -->
   <tr>
-    <td>US-28</td>
+    <td>US-32</td>
     <td>Seleccionar el método de pago para la transacción</td>
     <td>Como cajero, quiero elegir el medio por el cual está pagando el cliente (Efectivo o Tarjeta/Yape/Plin), para que el ingreso se registre en la categoría contable correcta.</td>
     <td>
@@ -474,9 +500,9 @@
     </td>
     <td>Epic-05</td>
   </tr>
-  <!-- US 29 -->
+  <!-- US-33 -->
   <tr>
-    <td>US-29</td>
+    <td>US-33</td>
     <td>Finalizar la venta y emitir el comprobante de pago</td>
     <td>Como cajero, quiero procesar el pago y finalizar la venta en un solo paso, para registrar la transacción en el sistema y entregar el comprobante al cliente de forma inmediata.</td>
     <td>
@@ -487,17 +513,33 @@
     </td>
     <td>Epic-05</td>
   </tr>
-  <!-- EPIC 06 -->
+  <!-- US-34 -->
   <tr>
-    <td><strong>Epic-06</strong></td>
-    <td><strong>Control de Ingresos y Monitoreo de Caja</strong></td>
+    <td>US-34</td>
+    <td>Cancelar venta en curso</td>
+    <td>Como cajero, quiero cancelar la venta en curso para limpiar el ticket y empezar una nueva transacción sin procesar el cobro.</td>
+    <td>
+      <strong>Scenario 1: Cancelación exitosa del ticket</strong><br>
+      Dado que el cajero tiene productos en el ticket de venta en "/dashboard/sales", cuando presiona el botón de cancelar venta, entonces el sistema elimina todos los ítems del ticket, limpia el método de pago seleccionado y deja la interfaz lista para una nueva venta sin registrar ninguna transacción.<br><br>
+      <strong>Scenario 2: Cancelación con ticket vacío</strong><br>
+      Dado que el cajero no tiene productos en el ticket, cuando el sistema evalúa la acción de cancelar, entonces no realiza ninguna operación ya que el ticket ya está vacío.
+    </td>
+    <td>Epic-05</td>
+  </tr>
+ 
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- EPIC 06 -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <tr class="epic-row">
+    <td>Epic-06</td>
+    <td>Control de Ingresos y Monitoreo de Caja</td>
     <td>Como dueño del negocio, quiero supervisar los flujos de dinero entrante en tiempo real, para tener visibilidad total sobre la liquidez y los métodos de pago utilizados durante el día.</td>
     <td></td>
     <td></td>
   </tr>
-  <!-- US 30 -->
+  <!-- US-35 -->
   <tr>
-    <td>US-30</td>
+    <td>US-35</td>
     <td>Clasificar automáticamente los ingresos según el medio de pago</td>
     <td>Como comerciante, quiero que cada venta finalizada sume su monto al acumulado del método correspondiente, para tener visibilidad inmediata de cuánto dinero hay en efectivo y cuánto en digital.</td>
     <td>
@@ -508,9 +550,9 @@
     </td>
     <td>Epic-06</td>
   </tr>
-  <!-- US 31 -->
+  <!-- US-36 -->
   <tr>
-    <td>US-31</td>
+    <td>US-36</td>
     <td>Monitorear el Resumen de Caja en tiempo real dentro del panel de ventas</td>
     <td>Como cajero, quiero visualizar de forma centralizada los ingresos acumulados por método de pago, para tener un control inmediato de los saldos del día sin salir de la interfaz principal.</td>
     <td>
@@ -521,17 +563,20 @@
     </td>
     <td>Epic-06</td>
   </tr>
+ 
+  <!-- ═══════════════════════════════════════════════════════════ -->
   <!-- EPIC 07 -->
-  <tr>
-    <td><strong>Epic-07</strong></td>
-    <td><strong>Configurar Chatbot de WhatsApp Business</strong></td>
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <tr class="epic-row">
+    <td>Epic-07</td>
+    <td>Configurar Chatbot de WhatsApp Business</td>
     <td>Como comerciante, quiero configurar y vincular el chatbot de WhatsApp Business desde el dashboard para activar la atención automatizada de clientes.</td>
     <td></td>
     <td></td>
   </tr>
-  <!-- US 32 -->
+  <!-- US-37 -->
   <tr>
-    <td>US-32</td>
+    <td>US-37</td>
     <td>Vincular cuenta de WhatsApp Business mediante código QR</td>
     <td>Como comerciante, quiero conectar mi cuenta de WhatsApp Business escaneando un código QR para activar el chatbot de atención a clientes desde el dashboard.</td>
     <td>
@@ -544,9 +589,9 @@
     </td>
     <td>Epic-07</td>
   </tr>
-  <!-- US 33 -->
+  <!-- US-38 -->
   <tr>
-    <td>US-33</td>
+    <td>US-38</td>
     <td>Consultar estado de vinculación del chatbot</td>
     <td>Como comerciante, quiero conocer el estado de conexión de mi WhatsApp Business para saber si el chatbot se encuentra activo o requiere reconexión.</td>
     <td>
@@ -557,17 +602,20 @@
     </td>
     <td>Epic-07</td>
   </tr>
+ 
+  <!-- ═══════════════════════════════════════════════════════════ -->
   <!-- EPIC 08 -->
-  <tr>
-    <td><strong>Epic-08</strong></td>
-    <td><strong>Gestionar Conversaciones desde el Dashboard</strong></td>
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <tr class="epic-row">
+    <td>Epic-08</td>
+    <td>Gestionar Conversaciones desde el Dashboard</td>
     <td>Como comerciante, quiero visualizar y gestionar los chats de mis clientes directamente desde el dashboard para atenderlos sin salir de la plataforma.</td>
     <td></td>
     <td></td>
   </tr>
-  <!-- US 34 -->
+  <!-- US-39 -->
   <tr>
-    <td>US-34</td>
+    <td>US-39</td>
     <td>Visualizar conversaciones de clientes en el dashboard</td>
     <td>Como comerciante, quiero ver los chats que el bot ha tenido con mis clientes dentro del dashboard para tener visibilidad de todas las conversaciones activas sin usar WhatsApp directamente.</td>
     <td>
@@ -578,9 +626,9 @@
     </td>
     <td>Epic-08</td>
   </tr>
-  <!-- US 35 -->
+  <!-- US-40 -->
   <tr>
-    <td>US-35</td>
+    <td>US-40</td>
     <td>Responder mensajes de clientes desde el dashboard</td>
     <td>Como comerciante, quiero enviar mensajes a mis clientes directamente desde el dashboard para gestionar conversaciones sin necesitar abrir WhatsApp.</td>
     <td>
@@ -591,17 +639,20 @@
     </td>
     <td>Epic-08</td>
   </tr>
+ 
+  <!-- ═══════════════════════════════════════════════════════════ -->
   <!-- EPIC 09 -->
-  <tr>
-    <td><strong>Epic-09</strong></td>
-    <td><strong>Procesar Pedidos mediante Bot Automático</strong></td>
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <tr class="epic-row">
+    <td>Epic-09</td>
+    <td>Procesar Pedidos mediante Bot Automático</td>
     <td>Como sistema, quiero que el chatbot responda automáticamente a los clientes según el stock disponible del negocio para facilitar el proceso de pedido sin intervención manual del comerciante.</td>
     <td></td>
     <td></td>
   </tr>
-  <!-- US 36 -->
+  <!-- US-41 -->
   <tr>
-    <td>US-36</td>
+    <td>US-41</td>
     <td>Responder consulta de producto disponible</td>
     <td>Como sistema, quiero que el chatbot responda automáticamente al cliente con la información del producto solicitado cuando este existe en el inventario para iniciar el proceso de pedido sin intervención del comerciante.</td>
     <td>
@@ -612,9 +663,9 @@
     </td>
     <td>Epic-09</td>
   </tr>
-  <!-- US 37 -->
+  <!-- US-42 -->
   <tr>
-    <td>US-37</td>
+    <td>US-42</td>
     <td>Sugerir alternativas ante producto no disponible</td>
     <td>Como sistema, quiero que el chatbot informe al cliente cuando un producto no está disponible y le sugiera otros productos del inventario para evitar que la conversación quede sin respuesta útil.</td>
     <td>
@@ -625,9 +676,9 @@
     </td>
     <td>Epic-09</td>
   </tr>
-  <!-- US 38 -->
+  <!-- US-43 -->
   <tr>
-    <td>US-38</td>
+    <td>US-43</td>
     <td>Confirmar pedido con el cliente</td>
     <td>Como sistema, quiero que el chatbot presente un resumen del pedido al cliente y solicite confirmación antes de proceder al pago para asegurar que los productos y cantidades sean correctos.</td>
     <td>
@@ -640,17 +691,20 @@
     </td>
     <td>Epic-09</td>
   </tr>
+ 
+  <!-- ═══════════════════════════════════════════════════════════ -->
   <!-- EPIC 10 -->
-  <tr>
-    <td><strong>Epic-10</strong></td>
-    <td><strong>Gestionar Pago Digital P2P</strong></td>
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <tr class="epic-row">
+    <td>Epic-10</td>
+    <td>Gestionar Pago Digital P2P</td>
     <td>Como cliente y comerciante, queremos gestionar el envío y la validación de comprobantes de pago digitales (Yape/Plin) a través de WhatsApp y el dashboard, para garantizar una transacción segura y confirmada antes de finalizar la venta.</td>
     <td></td>
     <td></td>
   </tr>
-  <!-- US 39 -->
+  <!-- US-44 -->
   <tr>
-    <td>US-39</td>
+    <td>US-44</td>
     <td>Recibir instrucciones de pago por WhatsApp</td>
     <td>Como cliente, quiero recibir las instrucciones de pago a través del chatbot para saber cómo realizar la transferencia y completar mi pedido.</td>
     <td>
@@ -661,9 +715,9 @@
     </td>
     <td>Epic-10</td>
   </tr>
-  <!-- US 40 -->
+  <!-- US-45 -->
   <tr>
-    <td>US-40</td>
+    <td>US-45</td>
     <td>Reportar comprobante de pago digital</td>
     <td>Como cliente, quiero enviar el comprobante de mi pago al chatbot para que el comerciante pueda verificarlo y confirmar mi pedido.</td>
     <td>
@@ -674,9 +728,9 @@
     </td>
     <td>Epic-10</td>
   </tr>
-  <!-- US 41 -->
+  <!-- US-46 -->
   <tr>
-    <td>US-41</td>
+    <td>US-46</td>
     <td>Validar comprobante de pago desde el dashboard</td>
     <td>Como comerciante, quiero revisar el comprobante reportado por el cliente y aprobarlo o rechazarlo desde el dashboard para confirmar que el dinero fue recibido correctamente.</td>
     <td>
@@ -689,9 +743,9 @@
     </td>
     <td>Epic-10</td>
   </tr>
-  <!-- US 42 -->
+  <!-- US-47 -->
   <tr>
-    <td>US-42</td>
+    <td>US-47</td>
     <td>Notificar resultado de validación al cliente</td>
     <td>Como cliente, quiero recibir una notificación sobre el resultado de la validación de mi pago para saber si mi pedido fue confirmado o si debo realizar alguna acción adicional.</td>
     <td>
@@ -702,17 +756,20 @@
     </td>
     <td>Epic-10</td>
   </tr>
+ 
+  <!-- ═══════════════════════════════════════════════════════════ -->
   <!-- EPIC 11 -->
-  <tr>
-    <td><strong>Epic-11</strong></td>
-    <td><strong>Confirmar Venta y Emitir Comprobante</strong></td>
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <tr class="epic-row">
+    <td>Epic-11</td>
+    <td>Confirmar Venta y Emitir Comprobante</td>
     <td>Como dueño de negocio, quiero que el sistema confirme el pedido tras la validación del pago, descuente el stock y emita un comprobante digital, para mantener el control financiero y brindar un respaldo de la compra al cliente.</td>
     <td></td>
     <td></td>
   </tr>
-  <!-- US 43 -->
+  <!-- US-48 -->
   <tr>
-    <td>US-43</td>
+    <td>US-48</td>
     <td>Confirmar pedido y descontar stock</td>
     <td>Como sistema, quiero confirmar el pedido automáticamente al aprobar el pago para actualizar el inventario en tiempo real y reflejar el consumo de stock.</td>
     <td>
@@ -723,9 +780,9 @@
     </td>
     <td>Epic-11</td>
   </tr>
-  <!-- US 44 -->
+  <!-- US-49 -->
   <tr>
-    <td>US-44</td>
+    <td>US-49</td>
     <td>Registrar venta en el sistema</td>
     <td>Como comerciante, quiero que cada pedido confirmado quede registrado como venta en el sistema para mantener un control financiero preciso y trazable.</td>
     <td>
@@ -736,9 +793,9 @@
     </td>
     <td>Epic-11</td>
   </tr>
-  <!-- US 45 -->
+  <!-- US-50 -->
   <tr>
-    <td>US-45</td>
+    <td>US-50</td>
     <td>Emitir comprobante digital al cliente</td>
     <td>Como cliente, quiero recibir un comprobante de mi compra a través del chatbot para tener un respaldo de la transacción realizada.</td>
     <td>
@@ -749,17 +806,20 @@
     </td>
     <td>Epic-11</td>
   </tr>
+ 
+  <!-- ═══════════════════════════════════════════════════════════ -->
   <!-- EPIC 12 -->
-  <tr>
-    <td><strong>Epic-12</strong></td>
-    <td><strong>Manejar Flujos Alternativos y Restricciones</strong></td>
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <tr class="epic-row">
+    <td>Epic-12</td>
+    <td>Manejar Flujos Alternativos y Restricciones</td>
     <td>Como sistema de gestión, quiero manejar escenarios de excepción como falta de stock, tiempos de espera agotados y rechazos de pago, para proteger la integridad del inventario y evitar pérdidas económicas.</td>
     <td></td>
     <td></td>
   </tr>
-  <!-- US 46 -->
+  <!-- US-51 -->
   <tr>
-    <td>US-46</td>
+    <td>US-51</td>
     <td>Manejar stock insuficiente en pedido</td>
     <td>Como cliente, quiero ser notificado cuando un producto no tiene stock suficiente para ajustar mi pedido antes de proceder al pago.</td>
     <td>
@@ -770,9 +830,9 @@
     </td>
     <td>Epic-12</td>
   </tr>
-  <!-- US 47 -->
+  <!-- US-52 -->
   <tr>
-    <td>US-47</td>
+    <td>US-52</td>
     <td>Cancelar pedido por expiración de tiempo de pago</td>
     <td>Como sistema, quiero cancelar automáticamente un pedido cuando el cliente no reporta el comprobante de pago en el tiempo establecido para liberar el stock reservado.</td>
     <td>
@@ -783,9 +843,9 @@
     </td>
     <td>Epic-12</td>
   </tr>
-  <!-- US 48 -->
+  <!-- US-53 -->
   <tr>
-    <td>US-48</td>
+    <td>US-53</td>
     <td>Rechazar comprobante de pago inválido</td>
     <td>Como comerciante, quiero rechazar un comprobante de pago cuando sea incorrecto o sospechoso para proteger el negocio de transacciones fraudulentas.</td>
     <td>
@@ -796,17 +856,20 @@
     </td>
     <td>Epic-12</td>
   </tr>
+ 
+  <!-- ═══════════════════════════════════════════════════════════ -->
   <!-- EPIC 13 -->
-  <tr>
-    <td><strong>Epic-13</strong></td>
-    <td><strong>Technical Stories – Implementar RESTful API</strong></td>
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <tr class="epic-row">
+    <td>Epic-13</td>
+    <td>Technical Stories – Implementar RESTful API</td>
     <td>Como equipo de desarrollo, queremos implementar una arquitectura de servicios RESTful segura y escalable para que todos los componentes de la plataforma intercambien datos de manera consistente.</td>
     <td></td>
     <td></td>
   </tr>
-  <!-- US 49 -->
+  <!-- US-54 -->
   <tr>
-    <td>US-49</td>
+    <td>US-54</td>
     <td>Conocer propuesta de valor en landing page</td>
     <td>Como visitante, quiero entender qué hace Entreprenly y cómo puede beneficiar a mi negocio para decidir si me interesa adquirirlo.</td>
     <td>
@@ -817,9 +880,9 @@
     </td>
     <td>Epic-13</td>
   </tr>
-  <!-- US 50 -->
+  <!-- US-55 -->
   <tr>
-    <td>US-50</td>
+    <td>US-55</td>
     <td>Gestionar ciclo de vida de pedidos mediante API</td>
     <td>Como developer, quiero endpoints para crear y actualizar pedidos para que el chatbot y el dashboard intercambien información del pedido de forma automática y consistente.</td>
     <td>
@@ -832,9 +895,9 @@
     </td>
     <td>Epic-13</td>
   </tr>
-  <!-- US 51 -->
+  <!-- US-56 -->
   <tr>
-    <td>US-51</td>
+    <td>US-56</td>
     <td>Validar y registrar pagos mediante API</td>
     <td>Como developer, quiero un endpoint para aprobar o rechazar pagos desde el dashboard para que el sistema actualice el inventario y notifique al cliente de forma automática.</td>
     <td>
@@ -847,17 +910,20 @@
     </td>
     <td>Epic-13</td>
   </tr>
+ 
+  <!-- ═══════════════════════════════════════════════════════════ -->
   <!-- EPIC 14 -->
-  <tr>
-    <td><strong>Epic-14</strong></td>
-    <td><strong>Inicio de sesión y registro</strong></td>
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <tr class="epic-row">
+    <td>Epic-14</td>
+    <td>Inicio de sesión y registro</td>
     <td>Como usuario quiero registrarme, verificar mi cuenta, iniciar sesión y recuperar mi contraseña para acceder de forma segura a la plataforma.</td>
     <td></td>
     <td></td>
   </tr>
-  <!-- US 52 -->
+  <!-- US-57 -->
   <tr>
-    <td>US-52</td>
+    <td>US-57</td>
     <td>Registrar cuenta con email</td>
     <td>Como usuario anónimo, quiero registrarme con mi email y contraseña para crear una cuenta en Entreprenly y obtener automáticamente el Plan Free.</td>
     <td>
@@ -870,9 +936,9 @@
     </td>
     <td>Epic-14</td>
   </tr>
-  <!-- US 53 -->
+  <!-- US-58 -->
   <tr>
-    <td>US-53</td>
+    <td>US-58</td>
     <td>Verificar email</td>
     <td>Como usuario registrado, quiero verificar mi email mediante el enlace enviado a mi correo para activar mi cuenta.</td>
     <td>
@@ -885,9 +951,9 @@
     </td>
     <td>Epic-14</td>
   </tr>
-  <!-- US 54 -->
+  <!-- US-59 -->
   <tr>
-    <td>US-54</td>
+    <td>US-59</td>
     <td>Iniciar sesión con credenciales</td>
     <td>Como usuario registrado, quiero iniciar sesión con mi email y contraseña para acceder al dashboard de Entreprenly.</td>
     <td>
@@ -900,9 +966,9 @@
     </td>
     <td>Epic-14</td>
   </tr>
-  <!-- US 55 -->
+  <!-- US-60 -->
   <tr>
-    <td>US-55</td>
+    <td>US-60</td>
     <td>Iniciar sesión con Google OAuth</td>
     <td>Como usuario anónimo, quiero iniciar sesión con mi cuenta de Google para acceder a Entreprenly sin necesidad de crear credenciales nuevas.</td>
     <td>
@@ -915,9 +981,9 @@
     </td>
     <td>Epic-14</td>
   </tr>
-  <!-- US 56 -->
+  <!-- US-61 -->
   <tr>
-    <td>US-56</td>
+    <td>US-61</td>
     <td>Recuperar contraseña</td>
     <td>Como usuario registrado, quiero recuperar el acceso a mi cuenta mediante un enlace enviado a mi email para restablecer mi contraseña.</td>
     <td>
@@ -930,9 +996,9 @@
     </td>
     <td>Epic-14</td>
   </tr>
-  <!-- US 57 -->
+  <!-- US-62 -->
   <tr>
-    <td>US-57</td>
+    <td>US-62</td>
     <td>Cerrar sesión</td>
     <td>Como usuario autenticado, quiero cerrar mi sesión para que el sistema revoque mi token y me redirija a la pantalla de login.</td>
     <td>
@@ -943,17 +1009,20 @@
     </td>
     <td>Epic-14</td>
   </tr>
+ 
+  <!-- ═══════════════════════════════════════════════════════════ -->
   <!-- EPIC 15 -->
-  <tr>
-    <td><strong>Epic-15</strong></td>
-    <td><strong>Perfil y configuración</strong></td>
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <tr class="epic-row">
+    <td>Epic-15</td>
+    <td>Perfil y configuración</td>
     <td>Como usuario quiero gestionar mi perfil y preferencias personales para personalizar mi experiencia dentro de la plataforma.</td>
     <td></td>
     <td></td>
   </tr>
-  <!-- US 58 -->
+  <!-- US-63 -->
   <tr>
-    <td>US-58</td>
+    <td>US-63</td>
     <td>Visualizar perfil actual</td>
     <td>Como usuario autenticado, quiero visualizar mi perfil actual para revisar mis datos registrados en la plataforma.</td>
     <td>
@@ -964,9 +1033,9 @@
     </td>
     <td>Epic-15</td>
   </tr>
-  <!-- US 59 -->
+  <!-- US-64 -->
   <tr>
-    <td>US-59</td>
+    <td>US-64</td>
     <td>Actualizar nombre y biografía</td>
     <td>Como usuario autenticado, quiero actualizar mi nombre y biografía para mantener mi perfil al día.</td>
     <td>
@@ -977,9 +1046,9 @@
     </td>
     <td>Epic-15</td>
   </tr>
-  <!-- US 60 -->
+  <!-- US-65 -->
   <tr>
-    <td>US-60</td>
+    <td>US-65</td>
     <td>Subir foto de perfil</td>
     <td>Como usuario autenticado, quiero subir una foto de perfil para personalizar mi cuenta en la plataforma.</td>
     <td>
@@ -992,9 +1061,9 @@
     </td>
     <td>Epic-15</td>
   </tr>
-  <!-- US 61 -->
+  <!-- US-66 -->
   <tr>
-    <td>US-61</td>
+    <td>US-66</td>
     <td>Cambiar email con re-verificación</td>
     <td>Como usuario autenticado, quiero cambiar mi email y verificarlo para mantener mis datos de contacto actualizados.</td>
     <td>
@@ -1007,9 +1076,9 @@
     </td>
     <td>Epic-15</td>
   </tr>
-  <!-- US 62 -->
+  <!-- US-67 -->
   <tr>
-    <td>US-62</td>
+    <td>US-67</td>
     <td>Cambiar contraseña</td>
     <td>Como usuario autenticado, quiero cambiar mi contraseña para mantener la seguridad de mi cuenta.</td>
     <td>
@@ -1022,9 +1091,9 @@
     </td>
     <td>Epic-15</td>
   </tr>
-  <!-- US 63 -->
+  <!-- US-68 -->
   <tr>
-    <td>US-63</td>
+    <td>US-68</td>
     <td>Configurar preferencias de idioma, zona horaria, tema y moneda</td>
     <td>Como comerciante autenticado, quiero configurar mi idioma, zona horaria, tema visual y moneda para adaptar la plataforma a mis preferencias operativas.</td>
     <td>
@@ -1039,9 +1108,9 @@
     </td>
     <td>Epic-15</td>
   </tr>
-  <!-- US 64 -->
+  <!-- US-69 -->
   <tr>
-    <td>US-64</td>
+    <td>US-69</td>
     <td>Configurar notificaciones</td>
     <td>Como usuario autenticado, quiero configurar mis preferencias de notificación para recibir solo los avisos que me sean relevantes.</td>
     <td>
@@ -1052,17 +1121,33 @@
     </td>
     <td>Epic-15</td>
   </tr>
-  <!-- EPIC 16 -->
+  <!-- US-70 -->
   <tr>
-    <td><strong>Epic-16</strong></td>
-    <td><strong>Panel de Inicio (Home)</strong></td>
+    <td>US-70</td>
+    <td>Registrar y verificar número de teléfono</td>
+    <td>Como comerciante autenticado, quiero registrar y verificar mi número de teléfono en el perfil para tener un canal de contacto adicional vinculado a mi cuenta.</td>
+    <td>
+      <strong>Scenario 1: Número de teléfono registrado correctamente</strong><br>
+      Dado que el comerciante está en la tarjeta "Verificar Teléfono" de "/dashboard/profile" e ingresa un número con formato válido (entre 7 y 20 dígitos, opcionalmente con prefijo internacional "+"), cuando presiona "Verificar teléfono", entonces el sistema registra el número y muestra confirmación del envío del código de verificación.<br><br>
+      <strong>Scenario 2: Formato de teléfono inválido</strong><br>
+      Dado que el comerciante ingresa un número con menos de 7 dígitos o caracteres no permitidos, cuando el sistema valida el campo, entonces muestra un mensaje de error de formato y no envía el código de verificación.
+    </td>
+    <td>Epic-15</td>
+  </tr>
+ 
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- EPIC 16 -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <tr class="epic-row">
+    <td>Epic-16</td>
+    <td>Panel de Inicio (Home)</td>
     <td>Como comerciante, quiero contar con un panel de inicio centralizado que me muestre un resumen visual del estado de mi negocio al ingresar a la plataforma, para tomar decisiones rápidas sin necesidad de navegar entre módulos.</td>
     <td></td>
     <td></td>
   </tr>
-  <!-- US 65 -->
+  <!-- US-71 -->
   <tr>
-    <td>US-65</td>
+    <td>US-71</td>
     <td>Visualizar resumen de ventas del día</td>
     <td>Como comerciante, quiero visualizar un resumen de las ventas del día en el panel de inicio para conocer el rendimiento de mi negocio sin ingresar al módulo de ventas.</td>
     <td>
@@ -1075,9 +1160,9 @@
     </td>
     <td>Epic-16</td>
   </tr>
-  <!-- US 66 -->
+  <!-- US-72 -->
   <tr>
-    <td>US-66</td>
+    <td>US-72</td>
     <td>Visualizar estado del chatbot en el home</td>
     <td>Como comerciante, quiero visualizar el estado de conexión del chatbot y los chats activos desde el panel de inicio para saber si mi canal de ventas por WhatsApp está operativo sin ingresar al módulo de chatbot.</td>
     <td>
@@ -1090,9 +1175,9 @@
     </td>
     <td>Epic-16</td>
   </tr>
-  <!-- US 67 -->
+  <!-- US-73 -->
   <tr>
-    <td>US-67</td>
+    <td>US-73</td>
     <td>Visualizar alertas de inventario en el home</td>
     <td>Como comerciante, quiero ver las alertas críticas de inventario directamente en el panel de inicio para identificar rápidamente productos agotados o lotes próximos a vencer sin ingresar al módulo de lotes.</td>
     <td>
@@ -1105,9 +1190,9 @@
     </td>
     <td>Epic-16</td>
   </tr>
-  <!-- US 68 -->
+  <!-- US-74 -->
   <tr>
-    <td>US-68</td>
+    <td>US-74</td>
     <td>Visualizar contador de pedidos pendientes en el home</td>
     <td>Como comerciante, quiero ver el número de pedidos que están pendientes de atención en el panel de inicio para priorizar mi respuesta sin necesidad de ingresar al módulo de chatbot.</td>
     <td>
@@ -1118,9 +1203,9 @@
     </td>
     <td>Epic-16</td>
   </tr>
-  <!-- US 69 -->
+  <!-- US-75 -->
   <tr>
-    <td>US-69</td>
+    <td>US-75</td>
     <td>Visualizar pedidos recientes en el home</td>
     <td>Como comerciante, quiero ver los pedidos más recientes con su estado actual en el panel de inicio para hacer seguimiento sin ingresar al módulo de pedidos.</td>
     <td>
@@ -1133,9 +1218,9 @@
     </td>
     <td>Epic-16</td>
   </tr>
-  <!-- US 70 -->
+  <!-- US-76 -->
   <tr>
-    <td>US-70</td>
+    <td>US-76</td>
     <td>Acceder a módulos desde accesos directos del home</td>
     <td>Como comerciante, quiero contar con accesos directos a los módulos principales desde el panel de inicio para navegar rápidamente a cualquier sección sin recorrer el menú lateral.</td>
     <td>
@@ -1146,142 +1231,96 @@
     </td>
     <td>Epic-16</td>
   </tr>
-  <!-- US 79 -->
-  <tr>
-    <td>US-79</td>
-    <td>Escanear código QR en inventario</td>
-    <td>Como usuario de inventario, quiero escanear códigos QR desde los formularios de productos y lotes para completar el código del registro sin ingresarlo manualmente.</td>
-    <td>
-      <strong>Scenario 1: Escaneo de QR exitoso</strong><br>
-      Dado que el usuario se encuentra en un formulario de producto o lote con el componente de escaneo disponible, cuando presiona el botón con ícono de cámara y escanea un código QR válido, entonces el sistema completa el campo de código QR con el valor detectado y cierra el panel de escaneo.<br><br>
-      <strong>Scenario 2: Permiso de cámara denegado</strong><br>
-      Dado que el usuario presiona el botón de escaneo, cuando el navegador bloquea el acceso a la cámara, entonces el sistema muestra el mensaje de permiso denegado y no modifica el campo de código QR.<br><br>
-      <strong>Scenario 3: Cámara no disponible</strong><br>
-      Dado que el usuario intenta abrir el escáner y el dispositivo no permite iniciar la cámara, cuando el sistema recibe el error, entonces muestra el mensaje "No se pudo acceder a la cámara" y permite cerrar el panel.
-    </td>
-    <td>Epic-01</td>
-  </tr>
-  <!-- Epic 17 -->
-  <tr>
-    <td><strong>Epic-17</strong></td>
-    <td><strong>Centro de Soporte y Ayuda</strong></td>
+ 
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- EPIC 17 -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <tr class="epic-row">
+    <td>Epic-17</td>
+    <td>Centro de Soporte y Ayuda</td>
     <td>Como comerciante, quiero contar con un centro de soporte accesible desde el botón de Ayuda para resolver mis dudas, reportar problemas y consultar guías de uso de la plataforma sin necesidad de contactar a un agente externo.</td>
     <td></td>
     <td></td>
   </tr>
-
-  <!-- US 74 -->
+  <!-- US-77 -->
   <tr>
-    <td>US-74</td>
+    <td>US-77</td>
     <td>Visualizar el centro de soporte</td>
     <td>Como comerciante, quiero visualizar el centro de soporte al presionar el botón de Ayuda para acceder de forma rápida a las opciones de asistencia disponibles.</td>
     <td>
       <strong>Scenario 1: Centro de soporte cargado correctamente</strong><br>
-      Dado que el comerciante presiona el botón de Ayuda en el sidebar,<br>
-      Cuando el sistema carga la vista de soporte,<br>
-      Entonces se muestran el buscador de ayuda, artículos más consultados, todos los artículos, categorías y acceso directo a reportar un problema.<br><br>
+      Dado que el comerciante presiona el botón de Ayuda en el sidebar, cuando el sistema carga la vista de soporte, entonces se muestran el buscador de ayuda, artículos más consultados, todos los artículos, categorías y acceso directo a reportar un problema.<br><br>
       <strong>Scenario 2: Centro de soporte sin artículos disponibles</strong><br>
-      Dado que el comerciante accede al centro de soporte,<br>
-      Y no existen artículos de ayuda configurados,<br>
-      Cuando el sistema carga la vista,<br>
-      Entonces se muestra un mensaje indicando que el contenido de ayuda no está disponible aún<br>
-      Y se mantiene visible la opción de reportar un problema.
+      Dado que el comerciante accede al centro de soporte y no existen artículos de ayuda configurados, cuando el sistema carga la vista, entonces se muestra un mensaje indicando que el contenido de ayuda no está disponible aún y se mantiene visible la opción de reportar un problema.
     </td>
     <td>Epic-17</td>
   </tr>
-
-  <!-- US 75 -->
+  <!-- US-78 -->
   <tr>
-    <td>US-75</td>
+    <td>US-78</td>
     <td>Buscar artículo de ayuda</td>
     <td>Como comerciante, quiero buscar artículos de ayuda por palabras clave para encontrar rápidamente la información que necesito sin revisar todas las categorías.</td>
     <td>
       <strong>Scenario 1: Búsqueda con resultados encontrados</strong><br>
-      Dado que el comerciante está en el centro de soporte,<br>
-      Cuando ingresa una palabra clave en el buscador y confirma la búsqueda,<br>
-      Entonces el sistema muestra la cantidad de resultados encontrados, el término buscado, las categorías relacionadas y los artículos que coinciden con la consulta.<br><br>
+      Dado que el comerciante está en el centro de soporte, cuando ingresa una palabra clave en el buscador y confirma la búsqueda, entonces el sistema muestra la cantidad de resultados encontrados, el término buscado, las categorías relacionadas y los artículos que coinciden con la consulta.<br><br>
       <strong>Scenario 2: Búsqueda sin resultados</strong><br>
-      Dado que el comerciante ingresa un término en el buscador,<br>
-      Y no existen artículos que coincidan con la búsqueda,<br>
-      Cuando el sistema procesa la consulta,<br>
-      Entonces se muestra un mensaje indicando que no se encontraron resultados<br>
-      Y se sugiere reformular la búsqueda o reportar el problema directamente.
+      Dado que el comerciante ingresa un término en el buscador y no existen artículos que coincidan con la búsqueda, cuando el sistema procesa la consulta, entonces se muestra un mensaje indicando que no se encontraron resultados y se sugiere reformular la búsqueda o reportar el problema directamente.
     </td>
     <td>Epic-17</td>
   </tr>
-
-  <!-- US 76 -->
+  <!-- US-79 -->
   <tr>
-    <td>US-76</td>
+    <td>US-79</td>
     <td>Consultar artículo de ayuda</td>
     <td>Como comerciante, quiero abrir y leer un artículo de ayuda para entender cómo usar una funcionalidad de la plataforma o resolver un problema específico.</td>
     <td>
       <strong>Scenario 1: Artículo cargado correctamente</strong><br>
-      Dado que el comerciante selecciona un artículo desde el listado o los resultados de búsqueda,<br>
-      Cuando el sistema carga el artículo,<br>
-      Entonces se muestra el breadcrumb de ayuda, categoría, título, tiempo de lectura, pasos del artículo y artículos relacionados cuando existan.<br><br>
+      Dado que el comerciante selecciona un artículo desde el listado o los resultados de búsqueda, cuando el sistema carga el artículo, entonces se muestra el breadcrumb de ayuda, categoría, título, tiempo de lectura, pasos del artículo y artículos relacionados cuando existan.<br><br>
       <strong>Scenario 2: Artículo marcado como útil o no útil</strong><br>
-      Dado que el comerciante leyó el artículo de ayuda,<br>
-      Cuando selecciona la opción "¿Te fue útil este artículo?"<br>
-      Y elige "Sí" o "No",<br>
-      Entonces el sistema registra la respuesta<br>
-      Y si elige "No", muestra la opción de reportar el problema directamente.
+      Dado que el comerciante leyó el artículo de ayuda, cuando selecciona la opción "¿Te fue útil este artículo?" y elige "Sí" o "No", entonces el sistema registra la respuesta y si elige "No", muestra la opción de reportar el problema directamente.
     </td>
     <td>Epic-17</td>
   </tr>
-
-  <!-- US 77 -->
+  <!-- US-80 -->
   <tr>
-    <td>US-77</td>
+    <td>US-80</td>
     <td>Reportar un problema</td>
     <td>Como comerciante, quiero reportar un problema o incidencia desde el centro de soporte para que el equipo de Entreprenly pueda revisarlo y darle seguimiento.</td>
     <td>
       <strong>Scenario 1: Reporte enviado correctamente</strong><br>
-      Dado que el comerciante está en el formulario de reporte de problema,<br>
-      Y completa los campos obligatorios: categoría, descripción y módulo afectado,<br>
-      Cuando presiona el botón "Enviar reporte",<br>
-      Entonces el sistema registra el reporte<br>
-      Y muestra una confirmación indicando que fue recibido.<br><br>
+      Dado que el comerciante está en el formulario de reporte de problema y completa los campos obligatorios: categoría, descripción y módulo afectado, cuando presiona el botón "Enviar reporte", entonces el sistema registra el reporte y muestra una confirmación indicando que fue recibido.<br><br>
       <strong>Scenario 2: Intento de envío con campos incompletos</strong><br>
-      Dado que el comerciante está en el formulario de reporte,<br>
-      Y deja campos obligatorios vacíos,<br>
-      Cuando presiona el botón "Enviar reporte",<br>
-      Entonces el sistema no registra el reporte<br>
-      Y muestra mensajes de error indicando los campos que deben completarse.
+      Dado que el comerciante está en el formulario de reporte y deja campos obligatorios vacíos, cuando presiona el botón "Enviar reporte", entonces el sistema no registra el reporte y muestra mensajes de error indicando los campos que deben completarse.
     </td>
     <td>Epic-17</td>
   </tr>
-
-  <!-- US 78 -->
+  <!-- US-81 -->
   <tr>
-    <td>US-78</td>
+    <td>US-81</td>
     <td>Confirmar envío del reporte</td>
     <td>Como comerciante, quiero recibir una confirmación visual tras enviar un reporte para tener la certeza de que mi solicitud fue registrada correctamente.</td>
     <td>
       <strong>Scenario 1: Confirmación mostrada correctamente</strong><br>
-      Dado que el comerciante envió un reporte de problema exitosamente,<br>
-      Cuando el sistema procesa el envío,<br>
-      Entonces se muestra una pantalla de confirmación con el número de ticket generado, fecha, resumen del reporte y la opción de volver al centro de soporte.<br><br>
+      Dado que el comerciante envió un reporte de problema exitosamente, cuando el sistema procesa el envío, entonces se muestra una pantalla de confirmación con el número de ticket generado, fecha, resumen del reporte y la opción de volver al centro de soporte.<br><br>
       <strong>Scenario 2: Error en el envío del reporte</strong><br>
-      Dado que el comerciante intentó enviar un reporte,<br>
-      Y ocurre un error en el sistema durante el procesamiento,<br>
-      Cuando el sistema detecta el fallo,<br>
-      Entonces no se genera el ticket<br>
-      Y se muestra un mensaje indicando que hubo un error y se invita a intentarlo nuevamente.
+      Dado que el comerciante intentó enviar un reporte y ocurre un error en el sistema durante el procesamiento, cuando el sistema detecta el fallo, entonces no se genera el ticket y se muestra un mensaje indicando que hubo un error e invita a intentarlo nuevamente.
     </td>
     <td>Epic-17</td>
   </tr>
+ 
+  <!-- ═══════════════════════════════════════════════════════════ -->
   <!-- EPIC 18 -->
-  <tr>
-    <td><strong>Epic-18</strong></td>
-    <td><strong>Experiencia global del dashboard</strong></td>
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <tr class="epic-row">
+    <td>Epic-18</td>
+    <td>Experiencia global del dashboard</td>
     <td>Como usuario autenticado, quiero contar con navegación global, cambio de idioma y manejo de estados generales para usar el dashboard de forma consistente entre módulos.</td>
     <td></td>
     <td></td>
   </tr>
-  <!-- US 80 -->
+  <!-- US-82 -->
   <tr>
-    <td>US-80</td>
+    <td>US-82</td>
     <td>Navegar entre módulos desde el sidebar</td>
     <td>Como usuario autenticado, quiero usar el sidebar del dashboard para ingresar rápidamente a Home, Productos, Lotes, Ventas, Suscripción, Pedidos, Chatbot y Ayuda.</td>
     <td>
@@ -1292,9 +1331,9 @@
     </td>
     <td>Epic-18</td>
   </tr>
-  <!-- US 81 -->
+  <!-- US-83 -->
   <tr>
-    <td>US-81</td>
+    <td>US-83</td>
     <td>Cambiar idioma de la interfaz</td>
     <td>Como usuario del dashboard, quiero alternar entre español e inglés para visualizar los textos de la interfaz en el idioma que prefiera.</td>
     <td>
@@ -1305,9 +1344,9 @@
     </td>
     <td>Epic-18</td>
   </tr>
-  <!-- US 82 -->
+  <!-- US-84 -->
   <tr>
-    <td>US-82</td>
+    <td>US-84</td>
     <td>Gestionar rutas no encontradas</td>
     <td>Como usuario del dashboard, quiero recibir una vista de ruta no encontrada cuando ingreso a una URL inválida para entender que la página solicitada no existe.</td>
     <td>
@@ -1318,15 +1357,18 @@
     </td>
     <td>Epic-18</td>
   </tr>
+ 
+  <!-- ═══════════════════════════════════════════════════════════ -->
   <!-- EPIC 19 -->
-  <tr>
-    <td><strong>Epic-19</strong></td>
-    <td><strong>Landing Page</strong></td>
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <tr class="epic-row">
+    <td>Epic-19</td>
+    <td>Landing Page</td>
     <td>Como comerciante quiero acceder a la landing page para visualizar la propuesta de valor de Entreprenly, sus funciones, planes y cómo facilita la gestión de inventario, ventas y atención por WhatsApp de mi negocio.</td>
     <td></td>
     <td></td>
   </tr>
-  <!-- US 85 -->
+  <!-- US-85 -->
   <tr>
     <td>US-85</td>
     <td>Visualizar la propuesta de valor</td>
@@ -1337,7 +1379,7 @@
     </td>
     <td>Epic-19</td>
   </tr>
-  <!-- US 86 -->
+  <!-- US-86 -->
   <tr>
     <td>US-86</td>
     <td>Explorar las funciones principales</td>
@@ -1348,7 +1390,7 @@
     </td>
     <td>Epic-19</td>
   </tr>
-  <!-- US 87 -->
+  <!-- US-87 -->
   <tr>
     <td>US-87</td>
     <td>Revisar los planes de suscripción</td>
@@ -1359,7 +1401,7 @@
     </td>
     <td>Epic-19</td>
   </tr>
-  <!-- US 88 -->
+  <!-- US-88 -->
   <tr>
     <td>US-88</td>
     <td>Consultar las preguntas frecuentes</td>
@@ -1370,7 +1412,7 @@
     </td>
     <td>Epic-19</td>
   </tr>
-  <!-- US 89 -->
+  <!-- US-89 -->
   <tr>
     <td>US-89</td>
     <td>Iniciar sesión desde la landing page</td>
@@ -1381,7 +1423,7 @@
     </td>
     <td>Epic-19</td>
   </tr>
-  <!-- US 90 -->
+  <!-- US-90 -->
   <tr>
     <td>US-90</td>
     <td>Acceder mediante el botón de acción principal</td>
@@ -1391,32 +1433,6 @@
       Dado que el comerciante hace clic en el botón "Empezar gratis" en el Hero de la landing page, cuando el enlace es validado, entonces el sistema lo redirige a la pantalla de registro de cuenta nueva.
     </td>
     <td>Epic-19</td>
-  </tr>
-  <!-- US 83 -->
-  <tr>
-    <td>US-83</td>
-    <td>Registrar y verificar número de teléfono</td>
-    <td>Como comerciante autenticado, quiero registrar y verificar mi número de teléfono en el perfil para tener un canal de contacto adicional vinculado a mi cuenta.</td>
-    <td>
-      <strong>Scenario 1: Número de teléfono registrado correctamente</strong><br>
-      Dado que el comerciante está en la tarjeta "Verificar Teléfono" de "/dashboard/profile" e ingresa un número con formato válido (entre 7 y 20 dígitos, opcionalmente con prefijo internacional "+"), cuando presiona "Verificar teléfono", entonces el sistema registra el número y muestra confirmación del envío del código de verificación.<br><br>
-      <strong>Scenario 2: Formato de teléfono inválido</strong><br>
-      Dado que el comerciante ingresa un número con menos de 7 dígitos o caracteres no permitidos, cuando el sistema valida el campo, entonces muestra un mensaje de error de formato y no envía el código de verificación.
-    </td>
-    <td>Epic-15</td>
-  </tr>
-  <!-- US 84 -->
-  <tr>
-    <td>US-84</td>
-    <td>Cancelar venta en curso</td>
-    <td>Como cajero, quiero cancelar la venta en curso para limpiar el ticket y empezar una nueva transacción sin procesar el cobro.</td>
-    <td>
-      <strong>Scenario 1: Cancelación exitosa del ticket</strong><br>
-      Dado que el cajero tiene productos en el ticket de venta en "/dashboard/sales", cuando presiona el botón de cancelar venta, entonces el sistema elimina todos los ítems del ticket, limpia el método de pago seleccionado y deja la interfaz lista para una nueva venta sin registrar ninguna transacción.<br><br>
-      <strong>Scenario 2: Cancelación con ticket vacío</strong><br>
-      Dado que el cajero no tiene productos en el ticket, cuando el sistema evalúa la acción de cancelar, entonces no realiza ninguna operación ya que el ticket ya está vacío.
-    </td>
-    <td>Epic-05</td>
   </tr>
   </tbody>
 </table>
