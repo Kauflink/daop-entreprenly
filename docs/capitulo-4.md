@@ -1342,14 +1342,10 @@ Gestión de Inventario
 En este Bounded Context se realiza la creación y modificación de productos. También incluye la gestión de lotes (creación, modificación y eliminación), así como funcionalidades adicionales como alertas de caducidad y control de stock.
 
 Chatbot de WhatsApp
-<p align="center"> <img src="images/Entreprenly - Chatbot de WhatsApp.jpg" width="500"/> <img src="images/Canvas BC 5.jpg" width="500"/> </p>
+<p align="center"> <img src="images/Entreprenly - Chatbot de WhatsApp.JPG" width="500"/> <img src="images/Canvas BC 5.jPG" width="500"/> </p>
 
 Este Bounded Context permite la venta a través de un chatbot de WhatsApp. Para ello, consume información del inventario con el fin de conocer la disponibilidad de productos.
 
-Pagos
-<p align="center"> <img src="images/Entreprenly - Pagos.jpg" width="500"/> <img src="images/Canvas BC 4.jpg" width="500"/> </p>
-
-En este Bounded Context se gestionan los pagos tanto de ventas presenciales como de aquellas realizadas a través de WhatsApp.
 
 Ventas
 <p align="center"> <img src="images/Entreprenly - VentaS.jpg" width="500"/> <img src="images/Canvas BC 3.jpg" width="500"/> </p>
@@ -1370,7 +1366,6 @@ A continuación, se presentan los principales flujos de interacción del sistema
 
 <p align="center"><img src="images/Entreprenly - Flujo Gestion de inventario.jpg" width="500"/></p>
 
-<p align="center"><img src="images/Entreprenly - Flujo Pagos.jpg" width="500"/></p>
 
 <p align="center"><img src="images/Entreprenly - Flujo Gestion y Proceso de suscripcion.jpg" width="500"/></p>
 
@@ -1381,57 +1376,52 @@ A continuación, se presenta el System Context Diagram del sistema Entreprenly. 
 
 <p align="center">
 <p align="center">
-<img src="images/structurizr-104049-EntreprenlySystemContext.png" width="500"/>
+<img src="images/structurizr-109637-EntreprenlySystemContext.png" width="500"/>
 </p>
 
 ### 4.6.3. Software Architecture Container Diagrams
 A continuación, se presenta el Container Diagram del sistema Entreprenly. Este diagrama describe la arquitectura interna a nivel de contenedores, mostrando los principales componentes desplegables, como la aplicación web, el API Gateway y los distintos Bounded Contexts implementados como servicios independientes. Además, se incluyen las bases de datos asociadas a cada contexto y los sistemas externos con los que interactúan, permitiendo visualizar la distribución de responsabilidades, la comunicación entre componentes y la estructura general del sistema
 <p align="center">
-<img src="images/structurizr-104049-EntreprenlyContainer.png" width="500"/>
+<img src="images/structurizr-109637-EntreprenlyContainer.png" width="500"/>
 </p>
 
 ### 4.6.4. Software Architecture Components Diagrams
-<p align="center">Generación y Autenticación de Cuenta BC</p> <p align="center"><img src="images/structurizr-104049-AuthComponent.png" width="500"/></p>
+<p align="center">Generación y Autenticación de Cuenta BC</p> <p align="center"><img src="images/structurizr-109637-AuthComponent.png" width="500"/></p>
 
 Este Bounded Context es responsable de la gestión de identidad del usuario dentro del sistema, abarcando tanto el registro como la autenticación. Para ello, integra mecanismos de acceso alternativo mediante Google OAuth, así como un sistema externo de correo para la verificación y vinculación de cuentas.
 A nivel funcional, incluye queries orientados a la lectura de datos de sesión y credenciales, y commands destinados a la creación de cuentas, actualización de información y cambio de contraseña.
 Finalmente, toda la información relacionada con autenticación es persistida en una base de datos MySQL, garantizando la consistencia y seguridad de los datos.
 
-<p align="center">Perfil y Configuración BC</p> <p align="center"><img src="images/structurizr-104049-ProfileComponent.png" width="500"/></p>
+<p align="center">Perfil y Configuración BC</p> <p align="center"><img src="images/structurizr-109637-ProfileComponent.png" width="500"/></p>
 
 Este Bounded Context se encarga de la gestión de la información del perfil del usuario y sus preferencias de configuración, tales como zona horaria, idioma, tema de interfaz (UI), notificaciones y foto de perfil.
 Recibe información inicial del usuario desde el Bounded Context de Generación y Autenticación de Cuenta (inbound), lo que le permite construir y mantener el perfil completo.
 Define queries para la lectura de datos del usuario y commands para la actualización de configuraciones y almacenamiento de cambios realizados. Además, puede enviar información configurada hacia otros contextos (outbound), como el idioma del usuario.
 Toda esta información es almacenada en una base de datos MySQL.
 
-<p align="center">Gestión y Proceso de Suscripción BC</p> <p align="center"><img src="images/structurizr-104049-SubscriptionComponent.png" width="500"/></p>
+<p align="center">Gestión y Proceso de Suscripción BC</p> <p align="center"><img src="images/structurizr-109637-SubscriptionComponent.png" width="500"/></p>
 
 Este Bounded Context es responsable de la gestión del ciclo de vida de las suscripciones, incluyendo la creación, renovación, cancelación y cambio de plan.
 Recibe como entrada información del usuario y configuraciones provenientes del Bounded Context de Perfil y Configuración (inbound), lo que le permite adaptar el proceso de suscripción a las preferencias del usuario.
 Cuenta con commands que gestionan las operaciones sobre la suscripción y queries que permiten consultar el estado, datos de facturación y detalles asociados al usuario.
 La información de suscripciones es persistida en una base de datos MySQL, asegurando el control y seguimiento del estado de cada cuenta.
 
-<p align="center">Gestión de Inventario BC</p> <p align="center"><img src="images/structurizr-104049-InventoryComponent.png" width="500"/></p>
+<p align="center">Gestión de Inventario BC</p> <p align="center"><img src="images/structurizr-109637-InventoryComponent.png" width="500"/></p>
 
 Este Bounded Context se encarga de la administración del inventario, incluyendo la creación, actualización y eliminación de productos, así como la gestión de lotes asociados.
 Además, incorpora funcionalidades de monitoreo como alertas de stock y caducidad de productos. Para ello, utiliza queries que permiten obtener configuraciones relevantes, como el idioma del usuario desde el Bounded Context de Perfil y Configuración (inbound).
 Asimismo, expone información de productos hacia otros contextos (outbound), como Ventas y Chatbot.
 Incluye commands para la gestión de productos y operaciones relacionadas, y persiste toda la información en una base de datos MySQL.
 
-<p align="center">Pagos BC</p> <p align="center"><img src="images/structurizr-104049-PaymentComponent.png" width="500"/></p>
 
-Este Bounded Context es responsable de la gestión de los pagos asociados a las ventas, tanto presenciales como realizadas a través de otros canales como el chatbot.
-Incluye queries para la consulta de información de pagos y commands para la generación y envío de comprobantes. Además, se encarga de validar y confirmar transacciones mediante la integración con servicios externos.
-La información de pagos es almacenada en una base de datos MySQL, permitiendo el seguimiento y control de las transacciones realizadas.
-
-<p align="center">Ventas BC</p> <p align="center"><img src="images/structurizr-104049-SalesComponent.png" width="500"/></p>
+<p align="center">Ventas BC</p> <p align="center"><img src="images/structurizr-109637-SalesComponent.png" width="500"/></p>
 
 Este Bounded Context gestiona el proceso de venta presencial, desde la selección de productos hasta la generación del comprobante.
 Para ello, consume información del Bounded Context de Inventario (inbound) para validar disponibilidad de productos y stock, así como del Bounded Context de Pagos para verificar el estado de las transacciones.
 Incluye queries para la consulta de información relevante y commands para registrar las ventas realizadas.
 Toda la información generada es persistida en una base de datos MySQL.
 
-<p align="center">ChatBot BC</p> <p align="center"><img src="images/structurizr-104049-ChatbotComponent.png" width="500"/></p>
+<p align="center">ChatBot BC</p> <p align="center"><img src="images/structurizr-109637-ChatbotComponent.png" width="500"/></p>
 
 Este Bounded Context permite la gestión de ventas a través de un canal conversacional basado en WhatsApp.
 Para su funcionamiento, consume información del Bounded Context de Inventario (inbound) para consultar disponibilidad de productos, así como del Bounded Context de Pagos para verificar y confirmar transacciones.
@@ -1443,89 +1433,100 @@ Además, se integra con servicios externos de mensajería (WhatsApp API) y persi
 ### 4.7.1. Class Diagrams
 
 <p align="center">Generación y Autenticación de Cuenta BC</p>
-<p align="center"><img src="images/Auth_BC-Class_Diagram__Generación_y_Autenticación_de_Cuenta_BC.png" width="500"/></p>
+<p align="center"><img src="images/CLASS DIAGRAM — Generación y Autenticación de Cuenta BC.svg" width="500"/></p>
 
 <p align="center">Perfil y Configuración BC</p>
-<p align="center"><img src="images/Profile_BC-Class_Diagram__Perfil_y_Configuración_BC.png" width="500"/></p>
+<p align="center"><img src="images/CLASS DIAGRAM — Perfil y Configuración BC.svg" width="500"/></p>
 
 <p align="center">Gestión y Proceso de Suscripción BC</p>
-<p align="center"><img src="images/Subscription_BC-Class_Diagram__Gestión_y_Proceso_de_Suscripción_BC.png" width="500"/></p>
+<p align="center"><img src="images/CLASS DIAGRAM — Gestión y Proceso de Suscripción BC.svg" width="500"/></p>
 
 <p align="center">Gestión de Inventario de Suscripción BC</p>
-<p align="center"><img src="images/Inventory_BC-Class_Diagram__Gestión_de_Inventario_BC.png" width="500"/></p>
-
-<p align="center">Pagos BC</p>
-<p align="center"><img src="images/Payment_BC-Class_Diagram__Payment_BC.png" width="500"/></p>
+<p align="center"><img src="images/CLASS DIAGRAM — Gestión de Inventario BC.svg" width="500"/></p>
 
 <p align="center">Ventas BC</p>
-<p align="center"><img src="images/Sales_BC-Class_Diagram__Ventas_BC.png" width="500"/></p>
+<p align="center"><img src="images/CLASS DIAGRAM — Ventas BC.svg" width="500"/></p>
 
 <p align="center">Chatbot de WhatsApp BC</p>
-<p align="center"><img src="images/Chatbot_BC-Class_Diagram__Chatbot_de_WhatsApp_BC.png" width="500"/></p>
+<p align="center"><img src="images/CLASS DIAGRAM — Chatbot de WhatsApp BC.svg" width="500"/></p>
 
 
 ## 4.8. Database Design
 
-El diseño de base de datos de Entreprenly está implementado en MySQL 8.0 y organizado en seis categorías. El esquema aplica normalización hasta la Tercera Forma Normal (3FN), eliminando redundancias y garantizando la integridad referencial en toda la operación del negocio.
 
-El sistema distingue dos actores con responsabilidades distintas: los **Comerciantes**, quienes administran el negocio y tienen suscripción activa, y los **Clientes**, cuyos datos se registran únicamente para boletas y pedidos por WhatsApp, sin acceso al sistema.
+El diseño de base de datos de Entreprenly está implementado en MySQL 8.0 y organizado en seis categorías funcionales. El esquema aplica normalización hasta la Tercera Forma Normal (3FN), eliminando redundancias y garantizando la integridad referencial en todas las operaciones del sistema.
 
-Los productos se clasifican en tipo `unidad` (precio por unidad) y tipo `peso`o (precio por kilogramo), lo que determina cómo se interpreta el `stock_total` en cada caso.
+El sistema diferencia dos actores principales con responsabilidades distintas: los **Comerciantes**, quienes administran el negocio, gestionan inventario, ventas, suscripciones y el chatbot; y los **Clientes**, cuyos datos se registran únicamente para pedidos, conversaciones y emisión de comprobantes, sin acceso directo a la plataforma.
 
-La balanza IoT se integra mediante `LecturasBalanza`, que registra cada pesaje y se vincula a una venta al confirmar la transacción, descontando el stock automáticamente.
+Los productos se clasifican en tipo **unidad** y tipo **peso**, lo que determina cómo se interpreta el `stock_total` y cómo se procesan las ventas. Los productos por unidad pueden incluir atributos adicionales como marca y peso en gramos, mientras que los productos por peso se integran directamente con la balanza IoT.
 
-El arqueo de caja diario se gestiona en `ResumenDiario`, cuyo campo `total_general` es una columna calculada con `GENERATED ALWAYS AS` para evitar inconsistencias.
+La integración IoT se implementa mediante `LecturasBalanza`, que registra cada pesaje realizado junto con un snapshot histórico del precio por kilogramo. Cada lectura puede vincularse posteriormente a una venta confirmada, permitiendo mantener trazabilidad del pesaje y automatizar el descuento del inventario.
 
-Los pagos digitales (Yape y Plin) operan bajo un modelo P2P con validación manual del comerciante desde el dashboard.
+El control de inventario utiliza `Lotes` para manejar trazabilidad y vencimiento de productos perecibles. Cada lote almacena cantidad disponible, fecha de ingreso, fecha de vencimiento y un código QR para identificación rápida dentro del sistema.
 
-El chatbot de WhatsApp se integra mediante `ConexionesWhatsApp`, que persiste la sesión del número vinculado por QR, y `Conversaciones`, que registra cada mensaje del chat.
+El arqueo de caja diario se centraliza en `ResumenDiario`, donde el campo `total_general` se calcula automáticamente mediante `GENERATED ALWAYS AS`, evitando inconsistencias entre los distintos métodos de pago registrados.
+
+El chatbot de WhatsApp se integra mediante `ConexionesWhatsApp`, que almacena la sesión vinculada por QR entre el comerciante y WhatsApp. Además, `Conversaciones` registra el historial completo de mensajes intercambiados entre cliente y chatbot.
+
+Los pedidos digitales siguen un flujo de estados que va desde `pendiente` hasta `completado` o `cancelado`. Los pagos digitales mediante Yape y Plin se gestionan directamente dentro del flujo de pedidos y ventas, por lo que no existe una tabla independiente de pagos. Esta decisión reduce redundancia y simplifica el modelo relacional.
+
+El módulo de suscripciones fue ampliado con un catálogo de planes y funcionalidades adicionales. `PlanesDetalle` define precios mensuales y anuales, `CaracteristicasPlan` almacena las funcionalidades disponibles por plan, y `ActividadSuscripcion` registra eventos relevantes asociados al ciclo de vida de la suscripción del comerciante.
 
 ### 4.8.1. Database Diagrams
 
 <div align="center">
 
-![Database Diagram Entreprenly](images/Entreprendly_database_diagram.svg)
+![Database Diagram Entreprenly](images/Entreprendly_database_diagram.png)
 
 </div>
 
 El esquema se organiza en las siguientes tablas por categoría:
+**Identidad y Acceso**
 
-**Identidad y Acceso:**
+- `Comerciantes` (datos de acceso, perfil y roles).
+- `PreferenciasComercio` (idioma, moneda, tema y notificaciones).
+- `SesionesActivas` (JWTs activos para control y revocación de sesiones).
+- `TokensVerificacion` (tokens de verificación y recuperación de contraseña).
+- `Clientes` (datos básicos para pedidos y comprobantes).
 
-- `Comerciantes` (datos de acceso y rol).
-- `PreferenciasComercio` (idioma, tema y notificaciones).
-- `SesionesActivas` (JWTs activos para revocación de sesiones).
-- `TokensVerificacion` (tokens de un solo uso para verificar email y recuperar contraseña).
-- `Clientes` (datos para boletas).
+**Suscripciones**
 
-**Suscripciones:**
+- `Suscripciones` (plan contratado y ciclo de vida de la suscripción).
+- `BoletoSuscripcion` (registro de cobros y últimos 4 dígitos de tarjeta).
+- `PlanesDetalle` (catálogo de planes, precios y recomendaciones).
+- `CaracteristicasPlan` (funcionalidades habilitadas por plan).
+- `MetodosPagoSuscripcion` (métodos de pago registrados por el comerciante).
+- `DatosFiscales` (información fiscal asociada al comerciante).
+- `ActividadSuscripcion` (historial de actividad y eventos de suscripción).
 
-- `Suscripciones` (plan y ciclo de vida: pendiente → activa → cancelada → vencida).
-- `BoletoSuscripcion` (datos del cobro, guarda solo los últimos 4 dígitos de la tarjeta por seguridad).
+**Inventario**
 
-**Inventario:**
+- `Categorias` (clasificación normalizada de productos).
+- `Productos` (catálogo principal con control de stock y tipo de producto).
+- `Lotes` (trazabilidad, vencimiento y códigos QR de inventario).
 
-- `Categorias` (tabla de referencia normalizada).
-- `Productos` (catálogo con tipo unidad o peso, precio y stock).
-- `Lotes` (trazabilidad por fecha de vencimiento para productos perecederos).
+**Ventas**
 
-**Ventas e IoT:**
+- `LecturasBalanza` (pesajes realizados por la balanza inteligente).
+- `Ventas` (encabezado de transacciones presenciales).
+- `DetalleVenta` (detalle de productos vendidos).
+- `ResumenDiario` (arqueo y cierre diario de caja).
 
-- `LecturasBalanza` (pesajes con snapshot histórico de precio).
-- `Ventas` (encabezado de transacción presencial).
-- `DetalleVenta` (líneas de cada venta).
-- `ResumenDiario` (cierre de caja con total_general calculado automáticamente).
+**Chatbot WhatsApp**
 
-**Chatbot WhatsApp:**
+- `ConexionesWhatsApp` (sesión vinculada mediante QR).
+- `Conversaciones` (historial de mensajes del chatbot y clientes).
 
-- `ConexionesWhatsApp` (sesión delnúmero vinculado por QR, relación 1:1 con el comerciante).
-- `Conversaciones` (historial de mensajes entre bot, cliente y comerciante).
+**Pedidos**
 
-**Pedidos y Pagos:**
+- `Pedidos` (gestión del flujo de pedidos digitales).
+- `DetallePedido` (detalle de productos solicitados en cada pedido).
 
-- `Pedidos` (ciclo pendiente → esperando_pago → confirmado → completado).
-- `DetallePedido` (líneas del pedido).
-- `Pagos` (validación manual del comprobante Yape/Plin, relación 1:1 con el pedido).
 
-La normalización aplicada se resume en tres puntos. La **1FN** se cumple con valores atómicos en todas las columnas usando ENUM para campos de valores controlados. La **2FN** se cumple con claves primarias simples en todas las tablas. La **3FN** se evidencia en la separación de `PreferenciasComercio`, `BoletoSuscripcion` y `Categorias` para eliminar dependencias transitivas, la eliminación del campo `subtotal` en los detalles por ser valor derivado, y la separación de `Clientes` y `Comerciantes` por pertenecer a entidades de negocio distintas.
+La normalización aplicada se resume en tres puntos principales:
 
+- **Primera Forma Normal (1FN):** se cumple mediante el uso de valores atómicos y `ENUM` para atributos de dominio controlado.
+
+- **Segunda Forma Normal (2FN):** se garantiza utilizando claves primarias simples en todas las tablas.
+
+- **Tercera Forma Normal (3FN):** se evidencia en la separación de entidades como `PreferenciasComercio`, `Categorias`, `DatosFiscales` y `CaracteristicasPlan`, eliminando dependencias transitivas y evitando redundancia de información. Asimismo, los valores derivados como subtotales no se almacenan en tablas de detalle, ya que pueden calcularse dinámicamente a partir de `cantidad` y `precio_unit`.
