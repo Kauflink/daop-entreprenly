@@ -1105,7 +1105,7 @@ El dashboard aplica la paleta de colores primaria del proyecto sobre una superfi
 #### Módulo de Productos
  
 <p align="center">
-    <img src="images/Productos.png" alt="Producto" width="800"/>
+    <img src="images/productos.png" alt="Producto" width="800"/>
   </p>
  
 *Ilustración – Web Application Mock-up: Módulo de Productos*
@@ -1309,7 +1309,7 @@ El prototipo cubre los siguientes flujos principales de interacción, representa
  
 El video de demostración del prototipo, donde se explican en detalle los flujos principales y las decisiones de diseño más relevantes, está disponible en Microsoft Stream en el siguiente enlace:
  
-**Enlace al video del prototipo:** *(Enlace pendiente de subida al repositorio del equipo)*
+**Enlace al video del prototipo:** **https://youtu.be/T2icL1vz_9Q**
 
 
 ## 4.6. Domain-Driven Software Architecture
@@ -1348,7 +1348,7 @@ Este Bounded Context permite la venta a través de un chatbot de WhatsApp. Para 
 
 
 Ventas
-<p align="center"> <img src="images/Entreprenly - Ventas.jpg" width="500"/> <img src="images/Canvas BC 3.jpg" width="500"/> </p>
+<p align="center"> <img src="images/Entreprenly - VentaS.jpg" width="500"/> <img src="images/Canvas BC 3.jpg" width="500"/> </p>
 
 En este Bounded Context se realiza la gestión de ventas presenciales. Este proceso incluye la verificación de stock y la asignación de datos dependiendo del tipo de producto (por unidad o por peso).
 
@@ -1445,10 +1445,11 @@ Además, se integra con servicios externos de mensajería (WhatsApp API) y persi
 <p align="center"><img src="images/CLASS DIAGRAM — Gestión de Inventario BC.svg" width="500"/></p>
 
 <p align="center">Ventas BC</p>
-<p align="center"><img src="images/CLASS DIAGRAM — Ventas BC.svg" width="500"/></p>
+<p align="center"><img src="images/Sales_BC-Class_Diagram__Ventas_BC.png" width="500"/></p>
 
 <p align="center">Chatbot de WhatsApp BC</p>
 <p align="center"><img src="images/CLASS DIAGRAM — Chatbot de WhatsApp BC.svg" width="500"/></p>
+
 
 ## 4.8. Database Design
 
