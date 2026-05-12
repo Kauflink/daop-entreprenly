@@ -1821,21 +1821,15 @@ Durante el Sprint 2, el equipo configuró y ejecutó el proceso de despliegue de
 
 1. **Creación del repositorio del Frontend:** Se creó el repositorio público `daop-entreprenly-frontend` bajo la organización `Kauflink` en GitHub, aplicando GitFlow con ramas `main`, `develop` y ramas `feature/` por Bounded Context.
 
-*(Colocar captura del repositorio daop-entreprenly-frontend en GitHub con la estructura de ramas)*
+![repo_frontend](./images/repo_frontend.png "repo_frontend")
 
-3. **Configuración de Firebase Hosting:** Se creó un proyecto en Firebase Console, se inicializó Firebase Hosting en el repositorio del frontend con `firebase init hosting`, configurando `dist/entreprenly/browser` como directorio público y habilitando la reescritura de rutas al `index.html` para el SPA routing de Angular.
+2. **Configuración de Firebase Hosting:** Se creó un proyecto en Firebase Console, se inicializó Firebase Hosting en el repositorio del frontend con `firebase init hosting`, configurando `dist/entreprenly/browser` como directorio público y habilitando la reescritura de rutas al `index.html` para el SPA routing de Angular.
 
-*(Colocar captura de Firebase Console con el proyecto de Entreprenly y Hosting activo)*
+![firebase_p](./images/firebase_p.png "firebase_p")
 
-4. **Configuración del pipeline de CI/CD:** Se creó el workflow de GitHub Actions (`.github/workflows/`) que se ejecuta ante cada push a `main` y realiza: checkout del repositorio, configuración de Node.js, instalación de dependencias con `npm install`, build de producción con `ng build --configuration production` y despliegue en Firebase Hosting usando la acción oficial `FirebaseExtended/action-hosting-deploy`.
+3. **Verificación del despliegue:** Se validó que la aplicación Angular se encuentra correctamente desplegada y accesible en `https://entreprenly.web.app`, con navegación entre BCs funcional sin errores 404 al refrescar el navegador.
 
-*(Colocar captura del archivo deploy workflow en GitHub Actions)*
-
-*(Colocar captura del workflow ejecutado exitosamente con todos los pasos en verde)*
-
-5. **Verificación del despliegue:** Se validó que la aplicación Angular se encuentra correctamente desplegada y accesible en `https://entreprenly.web.app`, con navegación entre BCs funcional sin errores 404 al refrescar el navegador.
-
-*(Colocar captura del Frontend Web Application desplegado y accesible en entreprenly.web.app)*
+![app_firebase](./images/app_firebase.png "app_firebase")
 
 ---
 
