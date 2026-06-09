@@ -60,7 +60,7 @@ En esta sección se especifican las épicas y las User Stories que definen el al
       <td colspan="2">Escanear código QR en inventario</td>
     </tr>
     <tr>
-      <td>US-91</td>
+      <td>US-90</td>
       <td colspan="2">Eliminar productos</td>
     </tr>
   </tbody>
@@ -396,15 +396,15 @@ En esta sección se especifican las épicas y las User Stories que definen el al
       <td colspan="2"><strong>User Story</strong></td>
     </tr>
     <tr>
-      <td>US-51</td>
+      <td>US-50</td>
       <td colspan="2">Manejar stock insuficiente en pedido</td>
     </tr>
     <tr>
-      <td>US-52</td>
+      <td>US-51</td>
       <td colspan="2">Cancelar pedido por expiración de tiempo de pago</td>
     </tr>
     <tr>
-      <td>US-53</td>
+      <td>US-52</td>
       <td colspan="2">Rechazar comprobante de pago inválido</td>
     </tr>
   </tbody>
@@ -424,31 +424,31 @@ En esta sección se especifican las épicas y las User Stories que definen el al
       <td colspan="2"><strong>User Story</strong></td>
     </tr>
     <tr>
-      <td>US-54</td>
+      <td>US-53</td>
       <td colspan="2">Conocer propuesta de valor en landing page</td>
     </tr>
     <tr>
-      <td>US-55</td>
+      <td>US-54</td>
       <td colspan="2">Gestionar ciclo de vida de pedidos mediante API</td>
     </tr>
     <tr>
-      <td>US-56</td>
+      <td>US-55</td>
       <td colspan="2">Validar y registrar pagos mediante API</td>
     </tr>
     <tr>
-      <td>US-92</td>
+      <td>US-91</td>
       <td colspan="2">Autenticar y autorizar usuarios mediante JWT</td>
     </tr>
     <tr>
-      <td>US-93</td>
+      <td>US-92</td>
       <td colspan="2">Containerizar y desplegar la API mediante Docker y CI/CD</td>
     </tr>
     <tr>
-      <td>US-94</td>
+      <td>US-93</td>
       <td colspan="2">Persistir datos mediante JPA por bounded context</td>
     </tr>
     <tr>
-      <td>US-95</td>
+      <td>US-94</td>
       <td colspan="2">Desplegar el frontend en Firebase Hosting</td>
     </tr>
   </tbody>
@@ -468,27 +468,27 @@ En esta sección se especifican las épicas y las User Stories que definen el al
       <td colspan="2"><strong>User Story</strong></td>
     </tr>
     <tr>
-      <td>US-57</td>
+      <td>US-56</td>
       <td colspan="2">Registrar cuenta con email</td>
     </tr>
     <tr>
-      <td>US-58</td>
+      <td>US-57</td>
       <td colspan="2">Verificar email</td>
     </tr>
     <tr>
-      <td>US-59</td>
+      <td>US-58</td>
       <td colspan="2">Iniciar sesión con credenciales</td>
     </tr>
     <tr>
-      <td>US-60</td>
+      <td>US-59</td>
       <td colspan="2">Iniciar sesión con Google OAuth</td>
     </tr>
     <tr>
-      <td>US-61</td>
+      <td>US-60</td>
       <td colspan="2">Recuperar contraseña</td>
     </tr>
     <tr>
-      <td>US-62</td>
+      <td>US-61</td>
       <td colspan="2">Cerrar sesión</td>
     </tr>
   </tbody>
@@ -508,35 +508,35 @@ En esta sección se especifican las épicas y las User Stories que definen el al
       <td colspan="2"><strong>User Story</strong></td>
     </tr>
     <tr>
-      <td>US-63</td>
+      <td>US-62</td>
       <td colspan="2">Visualizar perfil actual</td>
     </tr>
     <tr>
-      <td>US-64</td>
+      <td>US-63</td>
       <td colspan="2">Actualizar nombre y biografía</td>
     </tr>
     <tr>
-      <td>US-65</td>
+      <td>US-64</td>
       <td colspan="2">Subir foto de perfil</td>
     </tr>
     <tr>
-      <td>US-66</td>
+      <td>US-65</td>
       <td colspan="2">Cambiar email con re-verificación</td>
     </tr>
     <tr>
-      <td>US-67</td>
+      <td>US-66</td>
       <td colspan="2">Cambiar contraseña</td>
     </tr>
     <tr>
-      <td>US-68</td>
+      <td>US-67</td>
       <td colspan="2">Configurar preferencias de idioma, zona horaria, tema y moneda</td>
     </tr>
     <tr>
-      <td>US-69</td>
+      <td>US-68</td>
       <td colspan="2">Configurar notificaciones</td>
     </tr>
     <tr>
-      <td>US-70</td>
+      <td>US-69</td>
       <td colspan="2">Registrar y verificar número de teléfono</td>
     </tr>
   </tbody>
@@ -556,27 +556,27 @@ En esta sección se especifican las épicas y las User Stories que definen el al
       <td colspan="2"><strong>User Story</strong></td>
     </tr>
     <tr>
-      <td>US-71</td>
+      <td>US-70</td>
       <td colspan="2">Visualizar resumen de ventas del día</td>
     </tr>
     <tr>
-      <td>US-72</td>
+      <td>US-71</td>
       <td colspan="2">Visualizar estado del chatbot en el home</td>
     </tr>
     <tr>
-      <td>US-73</td>
+      <td>US-72</td>
       <td colspan="2">Visualizar alertas de inventario en el home</td>
     </tr>
     <tr>
-      <td>US-74</td>
+      <td>US-73</td>
       <td colspan="2">Visualizar contador de pedidos pendientes en el home</td>
     </tr>
     <tr>
-      <td>US-75</td>
+      <td>US-74</td>
       <td colspan="2">Visualizar pedidos recientes en el home</td>
     </tr>
     <tr>
-      <td>US-76</td>
+      <td>US-75</td>
       <td colspan="2">Acceder a módulos desde accesos directos del home</td>
     </tr>
   </tbody>
@@ -596,23 +596,23 @@ En esta sección se especifican las épicas y las User Stories que definen el al
       <td colspan="2"><strong>User Story</strong></td>
     </tr>
     <tr>
-      <td>US-77</td>
+      <td>US-76</td>
       <td colspan="2">Visualizar el centro de soporte</td>
     </tr>
     <tr>
-      <td>US-78</td>
+      <td>US-77</td>
       <td colspan="2">Buscar artículo de ayuda</td>
     </tr>
     <tr>
-      <td>US-79</td>
+      <td>US-78</td>
       <td colspan="2">Consultar artículo de ayuda</td>
     </tr>
     <tr>
-      <td>US-80</td>
+      <td>US-79</td>
       <td colspan="2">Reportar un problema</td>
     </tr>
     <tr>
-      <td>US-81</td>
+      <td>US-80</td>
       <td colspan="2">Confirmar envío del reporte</td>
     </tr>
   </tbody>
@@ -632,15 +632,15 @@ En esta sección se especifican las épicas y las User Stories que definen el al
       <td colspan="2"><strong>User Story</strong></td>
     </tr>
     <tr>
-      <td>US-82</td>
+      <td>US-81</td>
       <td colspan="2">Navegar entre módulos desde el sidebar</td>
     </tr>
     <tr>
-      <td>US-83</td>
+      <td>US-82</td>
       <td colspan="2">Cambiar idioma de la interfaz</td>
     </tr>
     <tr>
-      <td>US-84</td>
+      <td>US-83</td>
       <td colspan="2">Gestionar rutas no encontradas</td>
     </tr>
   </tbody>
@@ -660,27 +660,27 @@ En esta sección se especifican las épicas y las User Stories que definen el al
       <td colspan="2"><strong>User Story</strong></td>
     </tr>
     <tr>
-      <td>US-85</td>
+      <td>US-84</td>
       <td colspan="2">Visualizar la propuesta de valor</td>
     </tr>
     <tr>
-      <td>US-86</td>
+      <td>US-85</td>
       <td colspan="2">Explorar las funciones principales</td>
     </tr>
     <tr>
-      <td>US-87</td>
+      <td>US-86</td>
       <td colspan="2">Revisar los planes de suscripción</td>
     </tr>
     <tr>
-      <td>US-88</td>
+      <td>US-87</td>
       <td colspan="2">Consultar las preguntas frecuentes</td>
     </tr>
     <tr>
-      <td>US-89</td>
+      <td>US-88</td>
       <td colspan="2">Iniciar sesión desde la landing page</td>
     </tr>
     <tr>
-      <td>US-90</td>
+      <td>US-89</td>
       <td colspan="2">Acceder mediante el botón de acción principal</td>
     </tr>
   </tbody>
@@ -969,34 +969,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
       Dado que el usuario presiona el botón de escaneo, cuando el navegador bloquea el acceso a la cámara, entonces el sistema muestra el mensaje de permiso denegado y no modifica el campo de código QR.<br><br>
       <strong>Scenario 3: Cámara no disponible</strong><br>
       Dado que el usuario intenta abrir el escáner y el dispositivo no permite iniciar la cámara, cuando el sistema recibe el error, entonces muestra el mensaje "No se pudo acceder a la cámara" y permite cerrar el panel.
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-<table>
-  <tbody>
-    <tr>
-      <td><strong>User Story</strong></td>
-      <td>91</td>
-      <td><strong>Epic ID</strong></td>
-      <td>01</td>
-    </tr>
-    <tr>
-      <td><strong>Title</strong></td>
-      <td colspan="3">Eliminar productos</td>
-    </tr>
-    <tr>
-      <td><strong>Description</strong></td>
-      <td colspan="3">Como comerciante quiero eliminar productos para deshacerme de los productos que no me sirvan.</td>
-    </tr>
-    <tr>
-      <td><strong>Acceptance Criteria</strong></td>
-      <td colspan="3">
-      <strong>Scenario 1: Eliminar producto correctamente</strong><br>
-      Dado que el usuario está en la sección de productos y selecciona un producto existente, cuando presione "Eliminar", entonces el producto se eliminará exitosamente.<br><br>
-      <strong>Scenario 2: Validación al eliminar lote</strong><br>
-      Dado que el usuario está en la sección de productos y no selecciona un producto existente, cuando presione "Eliminar", entonces saldrá un mensaje de error de no haber seleccionado un producto.
       </td>
     </tr>
   </tbody>
@@ -2116,7 +2088,7 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   <tbody>
     <tr>
       <td><strong>User Story</strong></td>
-      <td>51</td>
+      <td>50</td>
       <td><strong>Epic ID</strong></td>
       <td>12</td>
     </tr>
@@ -2144,7 +2116,7 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   <tbody>
     <tr>
       <td><strong>User Story</strong></td>
-      <td>52</td>
+      <td>51</td>
       <td><strong>Epic ID</strong></td>
       <td>12</td>
     </tr>
@@ -2172,7 +2144,7 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   <tbody>
     <tr>
       <td><strong>User Story</strong></td>
-      <td>53</td>
+      <td>52</td>
       <td><strong>Epic ID</strong></td>
       <td>12</td>
     </tr>
@@ -2200,7 +2172,7 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   <tbody>
     <tr>
       <td><strong>User Story</strong></td>
-      <td>54</td>
+      <td>53</td>
       <td><strong>Epic ID</strong></td>
       <td>13</td>
     </tr>
@@ -2228,7 +2200,7 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   <tbody>
     <tr>
       <td><strong>User Story</strong></td>
-      <td>55</td>
+      <td>54</td>
       <td><strong>Epic ID</strong></td>
       <td>13</td>
     </tr>
@@ -2258,7 +2230,7 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   <tbody>
     <tr>
       <td><strong>User Story</strong></td>
-      <td>56</td>
+      <td>55</td>
       <td><strong>Epic ID</strong></td>
       <td>13</td>
     </tr>
@@ -2288,127 +2260,7 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   <tbody>
     <tr>
       <td><strong>User Story</strong></td>
-      <td>92</td>
-      <td><strong>Epic ID</strong></td>
-      <td>13</td>
-    </tr>
-    <tr>
-      <td><strong>Title</strong></td>
-      <td colspan="3">Autenticar y autorizar usuarios mediante JWT</td>
-    </tr>
-    <tr>
-      <td><strong>Description</strong></td>
-      <td colspan="3">Como equipo de desarrollo, queremos proteger los endpoints de la API mediante autenticación basada en JWT para que solo los usuarios autenticados accedan a los recursos del comerciante.</td>
-    </tr>
-    <tr>
-      <td><strong>Acceptance Criteria</strong></td>
-      <td colspan="3">
-      <strong>Scenario 1: Generación de token al iniciar sesión</strong><br>
-      Dado que un usuario envía credenciales válidas al endpoint de autenticación, cuando el servidor las valida, entonces responde con HTTP 200 y retorna un token JWT firmado con su tiempo de expiración.<br><br>
-      <strong>Scenario 2: Acceso autorizado con token válido</strong><br>
-      Dado que el cliente incluye un token JWT válido en la cabecera Authorization, cuando solicita un recurso protegido, entonces el servidor valida el token y responde con HTTP 200 y los datos solicitados.<br><br>
-      <strong>Scenario 3: Rechazo de token inválido o ausente</strong><br>
-      Dado que el cliente solicita un recurso protegido sin token o con un token inválido o expirado, cuando el servidor evalúa la solicitud, entonces responde con HTTP 401 indicando que la autenticación es requerida.
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-<table>
-  <tbody>
-    <tr>
-      <td><strong>User Story</strong></td>
-      <td>93</td>
-      <td><strong>Epic ID</strong></td>
-      <td>13</td>
-    </tr>
-    <tr>
-      <td><strong>Title</strong></td>
-      <td colspan="3">Containerizar y desplegar la API mediante Docker y CI/CD</td>
-    </tr>
-    <tr>
-      <td><strong>Description</strong></td>
-      <td colspan="3">Como equipo de desarrollo, queremos empaquetar el backend en una imagen Docker y automatizar su construcción y despliegue mediante un pipeline de CI/CD para garantizar entregas reproducibles y consistentes.</td>
-    </tr>
-    <tr>
-      <td><strong>Acceptance Criteria</strong></td>
-      <td colspan="3">
-      <strong>Scenario 1: Construcción de imagen Docker</strong><br>
-      Dado que el código fuente está en la rama principal, cuando se ejecuta la construcción definida en el Dockerfile, entonces el sistema genera una imagen ejecutable del backend sin errores.<br><br>
-      <strong>Scenario 2: Pipeline de integración continua exitoso</strong><br>
-      Dado que se realiza un push o merge a la rama integradora, cuando el pipeline de GitHub Actions se ejecuta, entonces compila el proyecto, ejecuta las pruebas y construye la imagen automáticamente.<br><br>
-      <strong>Scenario 3: Fallo de build detiene el despliegue</strong><br>
-      Dado que la compilación o las pruebas fallan, cuando el pipeline se ejecuta, entonces el sistema detiene el proceso y no publica una imagen defectuosa.
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-<table>
-  <tbody>
-    <tr>
-      <td><strong>User Story</strong></td>
-      <td>94</td>
-      <td><strong>Epic ID</strong></td>
-      <td>13</td>
-    </tr>
-    <tr>
-      <td><strong>Title</strong></td>
-      <td colspan="3">Persistir datos mediante JPA por bounded context</td>
-    </tr>
-    <tr>
-      <td><strong>Description</strong></td>
-      <td colspan="3">Como equipo de desarrollo, queremos mapear las entidades de dominio a la base de datos mediante JPA respetando los límites de cada bounded context para mantener la integridad y separación de los datos.</td>
-    </tr>
-    <tr>
-      <td><strong>Acceptance Criteria</strong></td>
-      <td colspan="3">
-      <strong>Scenario 1: Persistencia de entidad de dominio</strong><br>
-      Dado que se ejecuta una operación de creación sobre un agregado, cuando el repositorio JPA persiste la entidad, entonces los datos quedan almacenados y son recuperables por su identificador.<br><br>
-      <strong>Scenario 2: Generación automática del esquema</strong><br>
-      Dado que la aplicación arranca con un nuevo bounded context, cuando se inicializa la capa de persistencia, entonces el sistema crea las tablas correspondientes según el mapeo definido.<br><br>
-      <strong>Scenario 3: Aislamiento entre contextos</strong><br>
-      Dado que dos bounded contexts definen entidades distintas, cuando se persisten sus datos, entonces cada contexto gestiona sus tablas sin interferir con los demás.
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-<table>
-  <tbody>
-    <tr>
-      <td><strong>User Story</strong></td>
-      <td>95</td>
-      <td><strong>Epic ID</strong></td>
-      <td>13</td>
-    </tr>
-    <tr>
-      <td><strong>Title</strong></td>
-      <td colspan="3">Desplegar el frontend en Firebase Hosting</td>
-    </tr>
-    <tr>
-      <td><strong>Description</strong></td>
-      <td colspan="3">Como equipo de desarrollo, queremos desplegar la aplicación Angular en Firebase Hosting para entregar el frontend de forma escalable y accesible a los comerciantes.</td>
-    </tr>
-    <tr>
-      <td><strong>Acceptance Criteria</strong></td>
-      <td colspan="3">
-      <strong>Scenario 1: Build de producción del frontend</strong><br>
-      Dado que el código del frontend está listo para release, cuando se ejecuta el build de producción, entonces el sistema genera los artefactos optimizados sin errores.<br><br>
-      <strong>Scenario 2: Despliegue exitoso en Firebase</strong><br>
-      Dado que existe un build de producción válido, cuando se ejecuta el despliegue a Firebase Hosting, entonces la aplicación queda publicada y accesible mediante su URL.<br><br>
-      <strong>Scenario 3: Reversión ante despliegue fallido</strong><br>
-      Dado que un despliegue presenta errores, cuando el equipo lo detecta, entonces Firebase Hosting permite revertir a la versión estable previamente publicada.
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-<table>
-  <tbody>
-    <tr>
-      <td><strong>User Story</strong></td>
-      <td>57</td>
+      <td>56</td>
       <td><strong>Epic ID</strong></td>
       <td>14</td>
     </tr>
@@ -2438,7 +2290,7 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   <tbody>
     <tr>
       <td><strong>User Story</strong></td>
-      <td>58</td>
+      <td>57</td>
       <td><strong>Epic ID</strong></td>
       <td>14</td>
     </tr>
@@ -2468,7 +2320,7 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   <tbody>
     <tr>
       <td><strong>User Story</strong></td>
-      <td>59</td>
+      <td>58</td>
       <td><strong>Epic ID</strong></td>
       <td>14</td>
     </tr>
@@ -2498,7 +2350,7 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   <tbody>
     <tr>
       <td><strong>User Story</strong></td>
-      <td>60</td>
+      <td>59</td>
       <td><strong>Epic ID</strong></td>
       <td>14</td>
     </tr>
@@ -2528,7 +2380,7 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   <tbody>
     <tr>
       <td><strong>User Story</strong></td>
-      <td>61</td>
+      <td>60</td>
       <td><strong>Epic ID</strong></td>
       <td>14</td>
     </tr>
@@ -2558,7 +2410,7 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   <tbody>
     <tr>
       <td><strong>User Story</strong></td>
-      <td>62</td>
+      <td>61</td>
       <td><strong>Epic ID</strong></td>
       <td>14</td>
     </tr>
@@ -2586,7 +2438,7 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   <tbody>
     <tr>
       <td><strong>User Story</strong></td>
-      <td>63</td>
+      <td>62</td>
       <td><strong>Epic ID</strong></td>
       <td>15</td>
     </tr>
@@ -2614,7 +2466,7 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   <tbody>
     <tr>
       <td><strong>User Story</strong></td>
-      <td>64</td>
+      <td>63</td>
       <td><strong>Epic ID</strong></td>
       <td>15</td>
     </tr>
@@ -2642,7 +2494,7 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   <tbody>
     <tr>
       <td><strong>User Story</strong></td>
-      <td>65</td>
+      <td>64</td>
       <td><strong>Epic ID</strong></td>
       <td>15</td>
     </tr>
@@ -2672,7 +2524,7 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   <tbody>
     <tr>
       <td><strong>User Story</strong></td>
-      <td>66</td>
+      <td>65</td>
       <td><strong>Epic ID</strong></td>
       <td>15</td>
     </tr>
@@ -2702,7 +2554,7 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   <tbody>
     <tr>
       <td><strong>User Story</strong></td>
-      <td>67</td>
+      <td>66</td>
       <td><strong>Epic ID</strong></td>
       <td>15</td>
     </tr>
@@ -2732,7 +2584,7 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   <tbody>
     <tr>
       <td><strong>User Story</strong></td>
-      <td>68</td>
+      <td>67</td>
       <td><strong>Epic ID</strong></td>
       <td>15</td>
     </tr>
@@ -2764,7 +2616,7 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   <tbody>
     <tr>
       <td><strong>User Story</strong></td>
-      <td>69</td>
+      <td>68</td>
       <td><strong>Epic ID</strong></td>
       <td>15</td>
     </tr>
@@ -2792,7 +2644,7 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   <tbody>
     <tr>
       <td><strong>User Story</strong></td>
-      <td>70</td>
+      <td>69</td>
       <td><strong>Epic ID</strong></td>
       <td>15</td>
     </tr>
@@ -2820,7 +2672,7 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   <tbody>
     <tr>
       <td><strong>User Story</strong></td>
-      <td>71</td>
+      <td>70</td>
       <td><strong>Epic ID</strong></td>
       <td>16</td>
     </tr>
@@ -2850,7 +2702,7 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   <tbody>
     <tr>
       <td><strong>User Story</strong></td>
-      <td>72</td>
+      <td>71</td>
       <td><strong>Epic ID</strong></td>
       <td>16</td>
     </tr>
@@ -2880,7 +2732,7 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   <tbody>
     <tr>
       <td><strong>User Story</strong></td>
-      <td>73</td>
+      <td>72</td>
       <td><strong>Epic ID</strong></td>
       <td>16</td>
     </tr>
@@ -2910,7 +2762,7 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   <tbody>
     <tr>
       <td><strong>User Story</strong></td>
-      <td>74</td>
+      <td>73</td>
       <td><strong>Epic ID</strong></td>
       <td>16</td>
     </tr>
@@ -2938,7 +2790,7 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   <tbody>
     <tr>
       <td><strong>User Story</strong></td>
-      <td>75</td>
+      <td>74</td>
       <td><strong>Epic ID</strong></td>
       <td>16</td>
     </tr>
@@ -2968,7 +2820,7 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   <tbody>
     <tr>
       <td><strong>User Story</strong></td>
-      <td>76</td>
+      <td>75</td>
       <td><strong>Epic ID</strong></td>
       <td>16</td>
     </tr>
@@ -2996,7 +2848,7 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   <tbody>
     <tr>
       <td><strong>User Story</strong></td>
-      <td>77</td>
+      <td>76</td>
       <td><strong>Epic ID</strong></td>
       <td>17</td>
     </tr>
@@ -3024,7 +2876,7 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   <tbody>
     <tr>
       <td><strong>User Story</strong></td>
-      <td>78</td>
+      <td>77</td>
       <td><strong>Epic ID</strong></td>
       <td>17</td>
     </tr>
@@ -3052,7 +2904,7 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   <tbody>
     <tr>
       <td><strong>User Story</strong></td>
-      <td>79</td>
+      <td>78</td>
       <td><strong>Epic ID</strong></td>
       <td>17</td>
     </tr>
@@ -3080,7 +2932,7 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   <tbody>
     <tr>
       <td><strong>User Story</strong></td>
-      <td>80</td>
+      <td>79</td>
       <td><strong>Epic ID</strong></td>
       <td>17</td>
     </tr>
@@ -3108,7 +2960,7 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   <tbody>
     <tr>
       <td><strong>User Story</strong></td>
-      <td>81</td>
+      <td>80</td>
       <td><strong>Epic ID</strong></td>
       <td>17</td>
     </tr>
@@ -3136,7 +2988,7 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   <tbody>
     <tr>
       <td><strong>User Story</strong></td>
-      <td>82</td>
+      <td>81</td>
       <td><strong>Epic ID</strong></td>
       <td>18</td>
     </tr>
@@ -3164,7 +3016,7 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   <tbody>
     <tr>
       <td><strong>User Story</strong></td>
-      <td>83</td>
+      <td>82</td>
       <td><strong>Epic ID</strong></td>
       <td>18</td>
     </tr>
@@ -3192,7 +3044,7 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   <tbody>
     <tr>
       <td><strong>User Story</strong></td>
-      <td>84</td>
+      <td>83</td>
       <td><strong>Epic ID</strong></td>
       <td>18</td>
     </tr>
@@ -3220,7 +3072,7 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   <tbody>
     <tr>
       <td><strong>User Story</strong></td>
-      <td>85</td>
+      <td>84</td>
       <td><strong>Epic ID</strong></td>
       <td>19</td>
     </tr>
@@ -3246,7 +3098,7 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   <tbody>
     <tr>
       <td><strong>User Story</strong></td>
-      <td>86</td>
+      <td>85</td>
       <td><strong>Epic ID</strong></td>
       <td>19</td>
     </tr>
@@ -3272,7 +3124,7 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   <tbody>
     <tr>
       <td><strong>User Story</strong></td>
-      <td>87</td>
+      <td>86</td>
       <td><strong>Epic ID</strong></td>
       <td>19</td>
     </tr>
@@ -3298,7 +3150,7 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   <tbody>
     <tr>
       <td><strong>User Story</strong></td>
-      <td>88</td>
+      <td>87</td>
       <td><strong>Epic ID</strong></td>
       <td>19</td>
     </tr>
@@ -3324,7 +3176,7 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   <tbody>
     <tr>
       <td><strong>User Story</strong></td>
-      <td>89</td>
+      <td>88</td>
       <td><strong>Epic ID</strong></td>
       <td>19</td>
     </tr>
@@ -3350,7 +3202,7 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   <tbody>
     <tr>
       <td><strong>User Story</strong></td>
-      <td>90</td>
+      <td>89</td>
       <td><strong>Epic ID</strong></td>
       <td>19</td>
     </tr>
@@ -3367,6 +3219,154 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
       <td colspan="3">
       <strong>Scenario 1: Redirección al formulario de registro</strong><br>
       Dado que el comerciante hace clic en el botón "Empezar gratis" en el Hero de la landing page, cuando el enlace es validado, entonces el sistema lo redirige a la pantalla de registro de cuenta nueva.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>User Story</strong></td>
+      <td>90</td>
+      <td><strong>Epic ID</strong></td>
+      <td>01</td>
+    </tr>
+    <tr>
+      <td><strong>Title</strong></td>
+      <td colspan="3">Eliminar productos</td>
+    </tr>
+    <tr>
+      <td><strong>Description</strong></td>
+      <td colspan="3">Como comerciante quiero eliminar productos para deshacerme de los productos que no me sirvan.</td>
+    </tr>
+    <tr>
+      <td><strong>Acceptance Criteria</strong></td>
+      <td colspan="3">
+      <strong>Scenario 1: Eliminar producto correctamente</strong><br>
+      Dado que el usuario está en la sección de productos y selecciona un producto existente, cuando presione "Eliminar", entonces el producto se eliminará exitosamente.<br><br>
+      <strong>Scenario 2: Validación al eliminar lote</strong><br>
+      Dado que el usuario está en la sección de productos y no selecciona un producto existente, cuando presione "Eliminar", entonces saldrá un mensaje de error de no haber seleccionado un producto.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>User Story</strong></td>
+      <td>91</td>
+      <td><strong>Epic ID</strong></td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td><strong>Title</strong></td>
+      <td colspan="3">Autenticar y autorizar usuarios mediante JWT</td>
+    </tr>
+    <tr>
+      <td><strong>Description</strong></td>
+      <td colspan="3">Como equipo de desarrollo, queremos proteger los endpoints de la API mediante autenticación basada en JWT para que solo los usuarios autenticados accedan a los recursos del comerciante.</td>
+    </tr>
+    <tr>
+      <td><strong>Acceptance Criteria</strong></td>
+      <td colspan="3">
+      <strong>Scenario 1: Generación de token al iniciar sesión</strong><br>
+      Dado que un usuario envía credenciales válidas al endpoint de autenticación, cuando el servidor las valida, entonces responde con HTTP 200 y retorna un token JWT firmado con su tiempo de expiración.<br><br>
+      <strong>Scenario 2: Acceso autorizado con token válido</strong><br>
+      Dado que el cliente incluye un token JWT válido en la cabecera Authorization, cuando solicita un recurso protegido, entonces el servidor valida el token y responde con HTTP 200 y los datos solicitados.<br><br>
+      <strong>Scenario 3: Rechazo de token inválido o ausente</strong><br>
+      Dado que el cliente solicita un recurso protegido sin token o con un token inválido o expirado, cuando el servidor evalúa la solicitud, entonces responde con HTTP 401 indicando que la autenticación es requerida.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>User Story</strong></td>
+      <td>92</td>
+      <td><strong>Epic ID</strong></td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td><strong>Title</strong></td>
+      <td colspan="3">Containerizar y desplegar la API mediante Docker y CI/CD</td>
+    </tr>
+    <tr>
+      <td><strong>Description</strong></td>
+      <td colspan="3">Como equipo de desarrollo, queremos empaquetar el backend en una imagen Docker y automatizar su construcción y despliegue mediante un pipeline de CI/CD para garantizar entregas reproducibles y consistentes.</td>
+    </tr>
+    <tr>
+      <td><strong>Acceptance Criteria</strong></td>
+      <td colspan="3">
+      <strong>Scenario 1: Construcción de imagen Docker</strong><br>
+      Dado que el código fuente está en la rama principal, cuando se ejecuta la construcción definida en el Dockerfile, entonces el sistema genera una imagen ejecutable del backend sin errores.<br><br>
+      <strong>Scenario 2: Pipeline de integración continua exitoso</strong><br>
+      Dado que se realiza un push o merge a la rama integradora, cuando el pipeline de GitHub Actions se ejecuta, entonces compila el proyecto, ejecuta las pruebas y construye la imagen automáticamente.<br><br>
+      <strong>Scenario 3: Fallo de build detiene el despliegue</strong><br>
+      Dado que la compilación o las pruebas fallan, cuando el pipeline se ejecuta, entonces el sistema detiene el proceso y no publica una imagen defectuosa.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>User Story</strong></td>
+      <td>93</td>
+      <td><strong>Epic ID</strong></td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td><strong>Title</strong></td>
+      <td colspan="3">Persistir datos mediante JPA por bounded context</td>
+    </tr>
+    <tr>
+      <td><strong>Description</strong></td>
+      <td colspan="3">Como equipo de desarrollo, queremos mapear las entidades de dominio a la base de datos mediante JPA respetando los límites de cada bounded context para mantener la integridad y separación de los datos.</td>
+    </tr>
+    <tr>
+      <td><strong>Acceptance Criteria</strong></td>
+      <td colspan="3">
+      <strong>Scenario 1: Persistencia de entidad de dominio</strong><br>
+      Dado que se ejecuta una operación de creación sobre un agregado, cuando el repositorio JPA persiste la entidad, entonces los datos quedan almacenados y son recuperables por su identificador.<br><br>
+      <strong>Scenario 2: Generación automática del esquema</strong><br>
+      Dado que la aplicación arranca con un nuevo bounded context, cuando se inicializa la capa de persistencia, entonces el sistema crea las tablas correspondientes según el mapeo definido.<br><br>
+      <strong>Scenario 3: Aislamiento entre contextos</strong><br>
+      Dado que dos bounded contexts definen entidades distintas, cuando se persisten sus datos, entonces cada contexto gestiona sus tablas sin interferir con los demás.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>User Story</strong></td>
+      <td>94</td>
+      <td><strong>Epic ID</strong></td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td><strong>Title</strong></td>
+      <td colspan="3">Desplegar el frontend en Firebase Hosting</td>
+    </tr>
+    <tr>
+      <td><strong>Description</strong></td>
+      <td colspan="3">Como equipo de desarrollo, queremos desplegar la aplicación Angular en Firebase Hosting para entregar el frontend de forma escalable y accesible a los comerciantes.</td>
+    </tr>
+    <tr>
+      <td><strong>Acceptance Criteria</strong></td>
+      <td colspan="3">
+      <strong>Scenario 1: Build de producción del frontend</strong><br>
+      Dado que el código del frontend está listo para release, cuando se ejecuta el build de producción, entonces el sistema genera los artefactos optimizados sin errores.<br><br>
+      <strong>Scenario 2: Despliegue exitoso en Firebase</strong><br>
+      Dado que existe un build de producción válido, cuando se ejecuta el despliegue a Firebase Hosting, entonces la aplicación queda publicada y accesible mediante su URL.<br><br>
+      <strong>Scenario 3: Reversión ante despliegue fallido</strong><br>
+      Dado que un despliegue presenta errores, cuando el equipo lo detecta, entonces Firebase Hosting permite revertir a la versión estable previamente publicada.
       </td>
     </tr>
   </tbody>
@@ -3397,20 +3397,20 @@ A continuación se presenta el Product Backlog de Entreprenly con todas las User
   </thead>
   <tbody>
     <!-- BLOQUE 1: LANDING PAGE -->
-    <tr><td>1</td><td>US-85</td><td>Visualizar la propuesta de valor</td><td>Como comerciante que visita la web, quiero ver el headline y la propuesta de valor en el Hero para entender rápidamente qué problemas resuelve Entreprenly.</td><td>2</td></tr>
-    <tr><td>2</td><td>US-86</td><td>Explorar las funciones principales</td><td>Como comerciante interesado, quiero conocer los pilares técnicos (Inventario, Finanzas, Chatbot, Balanza) para evaluar si las herramientas se ajustan a mis necesidades operativas.</td><td>2</td></tr>
-    <tr><td>3</td><td>US-87</td><td>Revisar los planes de suscripción</td><td>Como comerciante potencial, quiero ver la tabla comparativa de precios y beneficios para seleccionar el plan que mejor se adapte a mi presupuesto.</td><td>2</td></tr>
-    <tr><td>4</td><td>US-88</td><td>Consultar las preguntas frecuentes</td><td>Como comerciante con dudas, quiero leer la sección de FAQ para resolver inquietudes comunes sobre la balanza IoT o el chatbot sin contactar a soporte.</td><td>1</td></tr>
-    <tr><td>5</td><td>US-89</td><td>Iniciar sesión desde la landing page</td><td>Como comerciante registrado, quiero encontrar el botón de ingreso en la landing para acceder rápidamente a mi panel de administración.</td><td>1</td></tr>
-    <tr><td>6</td><td>US-90</td><td>Acceder mediante el botón de acción principal</td><td>Como comerciante nuevo, quiero usar el botón "Empezar gratis" en el Hero para iniciar el proceso de registro de inmediato.</td><td>1</td></tr>
-    <tr><td>7</td><td>US-54</td><td>Conocer propuesta de valor en landing page</td><td>Como visitante, quiero entender qué hace Entreprenly y cómo puede beneficiar a mi negocio para decidir si me interesa adquirirlo.</td><td>3</td></tr>
+    <tr><td>1</td><td>US-84</td><td>Visualizar la propuesta de valor</td><td>Como comerciante que visita la web, quiero ver el headline y la propuesta de valor en el Hero para entender rápidamente qué problemas resuelve Entreprenly.</td><td>2</td></tr>
+    <tr><td>2</td><td>US-85</td><td>Explorar las funciones principales</td><td>Como comerciante interesado, quiero conocer los pilares técnicos (Inventario, Finanzas, Chatbot, Balanza) para evaluar si las herramientas se ajustan a mis necesidades operativas.</td><td>2</td></tr>
+    <tr><td>3</td><td>US-86</td><td>Revisar los planes de suscripción</td><td>Como comerciante potencial, quiero ver la tabla comparativa de precios y beneficios para seleccionar el plan que mejor se adapte a mi presupuesto.</td><td>2</td></tr>
+    <tr><td>4</td><td>US-87</td><td>Consultar las preguntas frecuentes</td><td>Como comerciante con dudas, quiero leer la sección de FAQ para resolver inquietudes comunes sobre la balanza IoT o el chatbot sin contactar a soporte.</td><td>1</td></tr>
+    <tr><td>5</td><td>US-88</td><td>Iniciar sesión desde la landing page</td><td>Como comerciante registrado, quiero encontrar el botón de ingreso en la landing para acceder rápidamente a mi panel de administración.</td><td>1</td></tr>
+    <tr><td>6</td><td>US-89</td><td>Acceder mediante el botón de acción principal</td><td>Como comerciante nuevo, quiero usar el botón "Empezar gratis" en el Hero para iniciar el proceso de registro de inmediato.</td><td>1</td></tr>
+    <tr><td>7</td><td>US-53</td><td>Conocer propuesta de valor en landing page</td><td>Como visitante, quiero entender qué hace Entreprenly y cómo puede beneficiar a mi negocio para decidir si me interesa adquirirlo.</td><td>3</td></tr>
     <!-- BLOQUE 2: PANEL DE INICIO (HOME) -->
-    <tr><td>8</td><td>US-71</td><td>Visualizar resumen de ventas del día</td><td>Como comerciante, quiero visualizar un resumen de las ventas del día en el panel de inicio para conocer el rendimiento de mi negocio sin ingresar al módulo de ventas.</td><td>2</td></tr>
-    <tr><td>9</td><td>US-73</td><td>Visualizar alertas de inventario en el home</td><td>Como comerciante, quiero ver las alertas críticas de inventario directamente en el panel de inicio para identificar rápidamente productos agotados o lotes próximos a vencer.</td><td>2</td></tr>
-    <tr><td>10</td><td>US-74</td><td>Visualizar contador de pedidos pendientes en el home</td><td>Como comerciante, quiero ver el número de pedidos que están pendientes de atención en el panel de inicio para priorizar mi respuesta sin necesidad de ingresar al módulo de chatbot.</td><td>1</td></tr>
-    <tr><td>11</td><td>US-75</td><td>Visualizar pedidos recientes en el home</td><td>Como comerciante, quiero ver los pedidos más recientes con su estado actual en el panel de inicio para hacer seguimiento sin ingresar al módulo de pedidos.</td><td>2</td></tr>
-    <tr><td>12</td><td>US-72</td><td>Visualizar estado del chatbot en el home</td><td>Como comerciante, quiero visualizar el estado de conexión del chatbot y los chats activos desde el panel de inicio para saber si mi canal de ventas por WhatsApp está operativo.</td><td>2</td></tr>
-    <tr><td>13</td><td>US-76</td><td>Acceder a módulos desde accesos directos del home</td><td>Como comerciante, quiero contar con accesos directos a los módulos principales desde el panel de inicio para navegar rápidamente a cualquier sección sin recorrer el menú lateral.</td><td>1</td></tr>
+    <tr><td>8</td><td>US-70</td><td>Visualizar resumen de ventas del día</td><td>Como comerciante, quiero visualizar un resumen de las ventas del día en el panel de inicio para conocer el rendimiento de mi negocio sin ingresar al módulo de ventas.</td><td>2</td></tr>
+    <tr><td>9</td><td>US-72</td><td>Visualizar alertas de inventario en el home</td><td>Como comerciante, quiero ver las alertas críticas de inventario directamente en el panel de inicio para identificar rápidamente productos agotados o lotes próximos a vencer.</td><td>2</td></tr>
+    <tr><td>10</td><td>US-73</td><td>Visualizar contador de pedidos pendientes en el home</td><td>Como comerciante, quiero ver el número de pedidos que están pendientes de atención en el panel de inicio para priorizar mi respuesta sin necesidad de ingresar al módulo de chatbot.</td><td>1</td></tr>
+    <tr><td>11</td><td>US-74</td><td>Visualizar pedidos recientes en el home</td><td>Como comerciante, quiero ver los pedidos más recientes con su estado actual en el panel de inicio para hacer seguimiento sin ingresar al módulo de pedidos.</td><td>2</td></tr>
+    <tr><td>12</td><td>US-71</td><td>Visualizar estado del chatbot en el home</td><td>Como comerciante, quiero visualizar el estado de conexión del chatbot y los chats activos desde el panel de inicio para saber si mi canal de ventas por WhatsApp está operativo.</td><td>2</td></tr>
+    <tr><td>13</td><td>US-75</td><td>Acceder a módulos desde accesos directos del home</td><td>Como comerciante, quiero contar con accesos directos a los módulos principales desde el panel de inicio para navegar rápidamente a cualquier sección sin recorrer el menú lateral.</td><td>1</td></tr>
     <!-- BLOQUE 3: GESTIÓN DE INVENTARIO -->
     <tr><td>14</td><td>US-01</td><td>Agregar productos</td><td>Como comerciante quiero agregar productos para gestionar mi inventario de manera eficiente.</td><td>3</td></tr>
     <tr><td>15</td><td>US-05</td><td>Editar productos</td><td>Como comerciante quiero editar productos para actualizar los datos en el inventario.</td><td>2</td></tr>
@@ -3422,7 +3422,7 @@ A continuación se presenta el Product Backlog de Entreprenly con todas las User
     <tr><td>21</td><td>US-06</td><td>Visualizar detalles de lotes</td><td>Como comerciante quiero visualizar los detalles de los lotes para gestionar mejor el inventario.</td><td>2</td></tr>
     <tr><td>22</td><td>US-04</td><td>Eliminar lotes</td><td>Como comerciante quiero eliminar lotes para deshacerme de los lotes que no me sirvan.</td><td>1</td></tr>
     <tr><td>23</td><td>US-10</td><td>Escanear código QR en inventario</td><td>Como comerciante, quiero escanear códigos QR desde los formularios de productos y lotes para completar el código del registro sin ingresarlo manualmente.</td><td>3</td></tr>
-    <tr><td>24</td><td>US-91</td><td>Eliminar productos</td><td>Como comerciante quiero eliminar productos para deshacerme de los productos que no me sirvan.</td><td>1</td></tr>
+    <tr><td>24</td><td>US-90</td><td>Eliminar productos</td><td>Como comerciante quiero eliminar productos para deshacerme de los productos que no me sirvan.</td><td>1</td></tr>
     <!-- BLOQUE 4: ALERTAS DE INVENTARIO -->
     <tr><td>25</td><td>US-13</td><td>Visualizar dashboard de lotes</td><td>Como comerciante quiero visualizar un dashboard de lotes con indicadores y alertas para conocer rápidamente el estado de mi inventario al ingresar al módulo de lotes.</td><td>3</td></tr>
     <tr><td>26</td><td>US-11</td><td>Detectar stock agotado</td><td>Como comerciante quiero ser notificado cuando tengo bajo/nada de stock.</td><td>3</td></tr>
@@ -3458,15 +3458,15 @@ A continuación se presenta el Product Backlog de Entreprenly con todas las User
     <tr><td>52</td><td>US-23</td><td>Solicitar cancelación de suscripción</td><td>Como comerciante con una suscripción de pago activa, quiero presionar el botón "Solicitar cancelación" y luego "Confirmar cancelación" para detener la renovación automática al finalizar el periodo vigente.</td><td>2</td></tr>
     <tr><td>53</td><td>US-27</td><td>Descargar historial de suscripción</td><td>Como comerciante, quiero presionar el botón "Descargar historial" para obtener un archivo con los eventos de mi plan, pagos, renovaciones, cambios y cancelaciones.</td><td>2</td></tr>
     <!-- BLOQUE 9: SOPORTE Y AYUDA -->
-    <tr><td>54</td><td>US-77</td><td>Visualizar el centro de soporte</td><td>Como comerciante, quiero visualizar el centro de soporte al presionar el botón de Ayuda para acceder de forma rápida a las opciones de asistencia disponibles.</td><td>2</td></tr>
-    <tr><td>55</td><td>US-78</td><td>Buscar artículo de ayuda</td><td>Como comerciante, quiero buscar artículos de ayuda por palabras clave para encontrar rápidamente la información que necesito sin revisar todas las categorías.</td><td>2</td></tr>
-    <tr><td>56</td><td>US-79</td><td>Consultar artículo de ayuda</td><td>Como comerciante, quiero abrir y leer un artículo de ayuda para entender cómo usar una funcionalidad de la plataforma o resolver un problema específico.</td><td>2</td></tr>
-    <tr><td>57</td><td>US-80</td><td>Reportar un problema</td><td>Como comerciante, quiero reportar un problema o incidencia desde el centro de soporte para que el equipo de Entreprenly pueda revisarlo y darle seguimiento.</td><td>3</td></tr>
-    <tr><td>58</td><td>US-81</td><td>Confirmar envío del reporte</td><td>Como comerciante, quiero recibir una confirmación visual tras enviar un reporte para tener la certeza de que mi solicitud fue registrada correctamente.</td><td>1</td></tr>
+    <tr><td>54</td><td>US-76</td><td>Visualizar el centro de soporte</td><td>Como comerciante, quiero visualizar el centro de soporte al presionar el botón de Ayuda para acceder de forma rápida a las opciones de asistencia disponibles.</td><td>2</td></tr>
+    <tr><td>55</td><td>US-77</td><td>Buscar artículo de ayuda</td><td>Como comerciante, quiero buscar artículos de ayuda por palabras clave para encontrar rápidamente la información que necesito sin revisar todas las categorías.</td><td>2</td></tr>
+    <tr><td>56</td><td>US-78</td><td>Consultar artículo de ayuda</td><td>Como comerciante, quiero abrir y leer un artículo de ayuda para entender cómo usar una funcionalidad de la plataforma o resolver un problema específico.</td><td>2</td></tr>
+    <tr><td>57</td><td>US-79</td><td>Reportar un problema</td><td>Como comerciante, quiero reportar un problema o incidencia desde el centro de soporte para que el equipo de Entreprenly pueda revisarlo y darle seguimiento.</td><td>3</td></tr>
+    <tr><td>58</td><td>US-80</td><td>Confirmar envío del reporte</td><td>Como comerciante, quiero recibir una confirmación visual tras enviar un reporte para tener la certeza de que mi solicitud fue registrada correctamente.</td><td>1</td></tr>
     <!-- BLOQUE 10: NAVEGACIÓN Y UX GLOBAL -->
-    <tr><td>59</td><td>US-82</td><td>Navegar entre módulos desde el sidebar</td><td>Como comerciante autenticado, quiero usar el sidebar del dashboard para ingresar rápidamente a Home, Productos, Lotes, Ventas, Suscripción, Pedidos, Chatbot y Ayuda.</td><td>2</td></tr>
-    <tr><td>60</td><td>US-83</td><td>Cambiar idioma de la interfaz</td><td>Como comerciante del dashboard, quiero alternar entre español e inglés para visualizar los textos de la interfaz en el idioma que prefiera.</td><td>2</td></tr>
-    <tr><td>61</td><td>US-84</td><td>Gestionar rutas no encontradas</td><td>Como comerciante del dashboard, quiero recibir una vista de ruta no encontrada cuando ingreso a una URL inválida para entender que la página solicitada no existe.</td><td>1</td></tr>
+    <tr><td>59</td><td>US-81</td><td>Navegar entre módulos desde el sidebar</td><td>Como comerciante autenticado, quiero usar el sidebar del dashboard para ingresar rápidamente a Home, Productos, Lotes, Ventas, Suscripción, Pedidos, Chatbot y Ayuda.</td><td>2</td></tr>
+    <tr><td>60</td><td>US-82</td><td>Cambiar idioma de la interfaz</td><td>Como comerciante del dashboard, quiero alternar entre español e inglés para visualizar los textos de la interfaz en el idioma que prefiera.</td><td>2</td></tr>
+    <tr><td>61</td><td>US-83</td><td>Gestionar rutas no encontradas</td><td>Como comerciante del dashboard, quiero recibir una vista de ruta no encontrada cuando ingreso a una URL inválida para entender que la página solicitada no existe.</td><td>1</td></tr>
     <!-- BLOQUE 11: SISTEMA - FLUJO DE PEDIDOS POR BOT -->
     <tr><td>62</td><td>US-41</td><td>Responder consulta de producto disponible</td><td>Como sistema, quiero que el chatbot responda automáticamente al cliente con la información del producto solicitado cuando este existe en el inventario.</td><td>3</td></tr>
     <tr><td>63</td><td>US-42</td><td>Sugerir alternativas ante producto no disponible</td><td>Como sistema, quiero que el chatbot informe al cliente cuando un producto no está disponible y le sugiera otros productos del inventario.</td><td>2</td></tr>
@@ -3479,32 +3479,32 @@ A continuación se presenta el Product Backlog de Entreprenly con todas las User
     <tr><td>69</td><td>US-48</td><td>Confirmar pedido y descontar stock</td><td>Como sistema, quiero confirmar el pedido automáticamente al aprobar el pago para actualizar el inventario en tiempo real y reflejar el consumo de stock.</td><td>3</td></tr>
     <tr><td>70</td><td>US-49</td><td>Registrar venta en el sistema</td><td>Como comerciante, quiero que cada pedido confirmado quede registrado como venta en el sistema para mantener un control financiero preciso y trazable.</td><td>2</td></tr>
     <!-- BLOQUE 13: SISTEMA - FLUJOS ALTERNATIVOS Y RESTRICCIONES -->
-    <tr><td>71</td><td>US-51</td><td>Manejar stock insuficiente en pedido</td><td>Como cliente final, quiero ser notificado cuando un producto no tiene stock suficiente para ajustar mi pedido antes de proceder al pago.</td><td>3</td></tr>
-    <tr><td>72</td><td>US-52</td><td>Cancelar pedido por expiración de tiempo de pago</td><td>Como sistema, quiero cancelar automáticamente un pedido cuando el cliente no reporta el comprobante de pago en el tiempo establecido para liberar el stock reservado.</td><td>3</td></tr>
-    <tr><td>73</td><td>US-53</td><td>Rechazar comprobante de pago inválido</td><td>Como comerciante, quiero rechazar un comprobante de pago cuando sea incorrecto o sospechoso para proteger el negocio de transacciones fraudulentas.</td><td>3</td></tr>
+    <tr><td>71</td><td>US-50</td><td>Manejar stock insuficiente en pedido</td><td>Como cliente final, quiero ser notificado cuando un producto no tiene stock suficiente para ajustar mi pedido antes de proceder al pago.</td><td>3</td></tr>
+    <tr><td>72</td><td>US-51</td><td>Cancelar pedido por expiración de tiempo de pago</td><td>Como sistema, quiero cancelar automáticamente un pedido cuando el cliente no reporta el comprobante de pago en el tiempo establecido para liberar el stock reservado.</td><td>3</td></tr>
+    <tr><td>73</td><td>US-52</td><td>Rechazar comprobante de pago inválido</td><td>Como comerciante, quiero rechazar un comprobante de pago cuando sea incorrecto o sospechoso para proteger el negocio de transacciones fraudulentas.</td><td>3</td></tr>
     <tr><td>74</td><td>US-24</td><td>Cancelar suscripción</td><td>Como sistema, quiero cancelar la suscripción de pago al finalizar su periodo vigente para retirar el acceso premium y devolver la cuenta del comerciante al Plan Free.</td><td>3</td></tr>
     <!-- BLOQUE 14: SISTEMA - API TÉCNICA -->
-    <tr><td>75</td><td>US-55</td><td>Gestionar ciclo de vida de pedidos mediante API</td><td>Como developer, quiero endpoints para crear y actualizar pedidos para que el chatbot y el dashboard intercambien información del pedido de forma automática y consistente.</td><td>5</td></tr>
-    <tr><td>76</td><td>US-56</td><td>Validar y registrar pagos mediante API</td><td>Como developer, quiero un endpoint para aprobar o rechazar pagos desde el dashboard para que el sistema actualice el inventario y notifique al cliente de forma automática.</td><td>5</td></tr>
-    <tr><td>77</td><td>US-92</td><td>Autenticar y autorizar usuarios mediante JWT</td><td>Como equipo de desarrollo, queremos proteger los endpoints de la API mediante autenticación basada en JWT para que solo los usuarios autenticados accedan a los recursos del comerciante.</td><td>5</td></tr>
-    <tr><td>78</td><td>US-93</td><td>Containerizar y desplegar la API mediante Docker y CI/CD</td><td>Como equipo de desarrollo, queremos empaquetar el backend en una imagen Docker y automatizar su construcción y despliegue mediante un pipeline de CI/CD para garantizar entregas reproducibles y consistentes.</td><td>5</td></tr>
-    <tr><td>79</td><td>US-94</td><td>Persistir datos mediante JPA por bounded context</td><td>Como equipo de desarrollo, queremos mapear las entidades de dominio a la base de datos mediante JPA respetando los límites de cada bounded context para mantener la integridad y separación de los datos.</td><td>3</td></tr>
-    <tr><td>80</td><td>US-95</td><td>Desplegar el frontend en Firebase Hosting</td><td>Como equipo de desarrollo, queremos desplegar la aplicación Angular en Firebase Hosting para entregar el frontend de forma escalable y accesible a los comerciantes.</td><td>3</td></tr>
+    <tr><td>75</td><td>US-54</td><td>Gestionar ciclo de vida de pedidos mediante API</td><td>Como developer, quiero endpoints para crear y actualizar pedidos para que el chatbot y el dashboard intercambien información del pedido de forma automática y consistente.</td><td>5</td></tr>
+    <tr><td>76</td><td>US-55</td><td>Validar y registrar pagos mediante API</td><td>Como developer, quiero un endpoint para aprobar o rechazar pagos desde el dashboard para que el sistema actualice el inventario y notifique al cliente de forma automática.</td><td>5</td></tr>
+    <tr><td>77</td><td>US-91</td><td>Autenticar y autorizar usuarios mediante JWT</td><td>Como equipo de desarrollo, queremos proteger los endpoints de la API mediante autenticación basada en JWT para que solo los usuarios autenticados accedan a los recursos del comerciante.</td><td>5</td></tr>
+    <tr><td>78</td><td>US-92</td><td>Containerizar y desplegar la API mediante Docker y CI/CD</td><td>Como equipo de desarrollo, queremos empaquetar el backend en una imagen Docker y automatizar su construcción y despliegue mediante un pipeline de CI/CD para garantizar entregas reproducibles y consistentes.</td><td>5</td></tr>
+    <tr><td>79</td><td>US-93</td><td>Persistir datos mediante JPA por bounded context</td><td>Como equipo de desarrollo, queremos mapear las entidades de dominio a la base de datos mediante JPA respetando los límites de cada bounded context para mantener la integridad y separación de los datos.</td><td>3</td></tr>
+    <tr><td>80</td><td>US-94</td><td>Desplegar el frontend en Firebase Hosting</td><td>Como equipo de desarrollo, queremos desplegar la aplicación Angular en Firebase Hosting para entregar el frontend de forma escalable y accesible a los comerciantes.</td><td>3</td></tr>
     <!-- BLOQUE 15: AUTENTICACIÓN -->
-    <tr><td>81</td><td>US-57</td><td>Registrar cuenta con email</td><td>Como comerciante anónimo, quiero registrarme con mi email y contraseña para crear una cuenta en Entreprenly y obtener automáticamente el Plan Free.</td><td>3</td></tr>
-    <tr><td>82</td><td>US-58</td><td>Verificar email</td><td>Como comerciante registrado, quiero verificar mi email mediante el enlace enviado a mi correo para activar mi cuenta.</td><td>3</td></tr>
-    <tr><td>83</td><td>US-59</td><td>Iniciar sesión con credenciales</td><td>Como comerciante registrado, quiero iniciar sesión con mi email y contraseña para acceder al dashboard de Entreprenly.</td><td>3</td></tr>
-    <tr><td>84</td><td>US-60</td><td>Iniciar sesión con Google OAuth</td><td>Como comerciante anónimo, quiero iniciar sesión con mi cuenta de Google para acceder a Entreprenly sin necesidad de crear credenciales nuevas.</td><td>5</td></tr>
-    <tr><td>85</td><td>US-61</td><td>Recuperar contraseña</td><td>Como comerciante registrado, quiero recuperar el acceso a mi cuenta mediante un enlace enviado a mi email para restablecer mi contraseña.</td><td>3</td></tr>
-    <tr><td>86</td><td>US-62</td><td>Cerrar sesión</td><td>Como comerciante autenticado, quiero cerrar mi sesión para que el sistema revoque mi token y me redirija a la pantalla de login.</td><td>1</td></tr>
+    <tr><td>81</td><td>US-56</td><td>Registrar cuenta con email</td><td>Como comerciante anónimo, quiero registrarme con mi email y contraseña para crear una cuenta en Entreprenly y obtener automáticamente el Plan Free.</td><td>3</td></tr>
+    <tr><td>82</td><td>US-57</td><td>Verificar email</td><td>Como comerciante registrado, quiero verificar mi email mediante el enlace enviado a mi correo para activar mi cuenta.</td><td>3</td></tr>
+    <tr><td>83</td><td>US-58</td><td>Iniciar sesión con credenciales</td><td>Como comerciante registrado, quiero iniciar sesión con mi email y contraseña para acceder al dashboard de Entreprenly.</td><td>3</td></tr>
+    <tr><td>84</td><td>US-59</td><td>Iniciar sesión con Google OAuth</td><td>Como comerciante anónimo, quiero iniciar sesión con mi cuenta de Google para acceder a Entreprenly sin necesidad de crear credenciales nuevas.</td><td>5</td></tr>
+    <tr><td>85</td><td>US-60</td><td>Recuperar contraseña</td><td>Como comerciante registrado, quiero recuperar el acceso a mi cuenta mediante un enlace enviado a mi email para restablecer mi contraseña.</td><td>3</td></tr>
+    <tr><td>86</td><td>US-61</td><td>Cerrar sesión</td><td>Como comerciante autenticado, quiero cerrar mi sesión para que el sistema revoque mi token y me redirija a la pantalla de login.</td><td>1</td></tr>
     <!-- BLOQUE 16: PERFIL Y CONFIGURACIÓN -->
-    <tr><td>87</td><td>US-63</td><td>Visualizar perfil actual</td><td>Como comerciante autenticado, quiero visualizar mi perfil actual para revisar mis datos registrados en la plataforma.</td><td>1</td></tr>
-    <tr><td>88</td><td>US-64</td><td>Actualizar nombre y biografía</td><td>Como comerciante autenticado, quiero actualizar mi nombre y biografía para mantener mi perfil al día.</td><td>2</td></tr>
-    <tr><td>89</td><td>US-65</td><td>Subir foto de perfil</td><td>Como comerciante autenticado, quiero subir una foto de perfil para personalizar mi cuenta en la plataforma.</td><td>3</td></tr>
-    <tr><td>90</td><td>US-66</td><td>Cambiar email con re-verificación</td><td>Como comerciante autenticado, quiero cambiar mi email y verificarlo para mantener mis datos de contacto actualizados.</td><td>3</td></tr>
-    <tr><td>91</td><td>US-67</td><td>Cambiar contraseña</td><td>Como comerciante autenticado, quiero cambiar mi contraseña para mantener la seguridad de mi cuenta.</td><td>3</td></tr>
-    <tr><td>92</td><td>US-68</td><td>Configurar preferencias de idioma, zona horaria, tema y moneda</td><td>Como comerciante autenticado, quiero configurar mi idioma, zona horaria, tema visual y moneda para adaptar la plataforma a mis preferencias operativas.</td><td>3</td></tr>
-    <tr><td>93</td><td>US-69</td><td>Configurar notificaciones</td><td>Como comerciante autenticado, quiero configurar mis preferencias de notificación para recibir solo los avisos que me sean relevantes.</td><td>2</td></tr>
-    <tr><td>94</td><td>US-70</td><td>Registrar y verificar número de teléfono</td><td>Como comerciante autenticado, quiero registrar y verificar mi número de teléfono en el perfil para tener un canal de contacto adicional vinculado a mi cuenta.</td><td>2</td></tr>
+    <tr><td>87</td><td>US-62</td><td>Visualizar perfil actual</td><td>Como comerciante autenticado, quiero visualizar mi perfil actual para revisar mis datos registrados en la plataforma.</td><td>1</td></tr>
+    <tr><td>88</td><td>US-63</td><td>Actualizar nombre y biografía</td><td>Como comerciante autenticado, quiero actualizar mi nombre y biografía para mantener mi perfil al día.</td><td>2</td></tr>
+    <tr><td>89</td><td>US-64</td><td>Subir foto de perfil</td><td>Como comerciante autenticado, quiero subir una foto de perfil para personalizar mi cuenta en la plataforma.</td><td>3</td></tr>
+    <tr><td>90</td><td>US-65</td><td>Cambiar email con re-verificación</td><td>Como comerciante autenticado, quiero cambiar mi email y verificarlo para mantener mis datos de contacto actualizados.</td><td>3</td></tr>
+    <tr><td>91</td><td>US-66</td><td>Cambiar contraseña</td><td>Como comerciante autenticado, quiero cambiar mi contraseña para mantener la seguridad de mi cuenta.</td><td>3</td></tr>
+    <tr><td>92</td><td>US-67</td><td>Configurar preferencias de idioma, zona horaria, tema y moneda</td><td>Como comerciante autenticado, quiero configurar mi idioma, zona horaria, tema visual y moneda para adaptar la plataforma a mis preferencias operativas.</td><td>3</td></tr>
+    <tr><td>93</td><td>US-68</td><td>Configurar notificaciones</td><td>Como comerciante autenticado, quiero configurar mis preferencias de notificación para recibir solo los avisos que me sean relevantes.</td><td>2</td></tr>
+    <tr><td>94</td><td>US-69</td><td>Registrar y verificar número de teléfono</td><td>Como comerciante autenticado, quiero registrar y verificar mi número de teléfono en el perfil para tener un canal de contacto adicional vinculado a mi cuenta.</td><td>2</td></tr>
   </tbody>
 </table>
