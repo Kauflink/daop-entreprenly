@@ -546,7 +546,7 @@ En este primer Sprint, el equipo organizó su trabajo en torno a cuatro aspectos
  
 #### 5.2.1.3. Sprint Backlog 1
  
-El objetivo principal de este Sprint fue implementar y desplegar la primera versión del Landing Page de Entreprenly, cubriendo la User Story US-49 del Product Backlog. A continuación se presenta el tablero del Sprint y el detalle de los Work-items asociados.
+El objetivo principal de este Sprint fue implementar y desplegar la primera versión del Landing Page de Entreprenly, cubriendo la User Story US-53 del Product Backlog. A continuación se presenta el tablero del Sprint y el detalle de los Work-items asociados.
  
  
 ![Logo de la UPC](./images/sprint1.png "Universidad Peruana de Ciencias Aplicadas")
@@ -573,7 +573,7 @@ El objetivo principal de este Sprint fue implementar y desplegar la primera vers
   </thead>
   <tbody>
     <tr>
-      <td>US-49</td>
+      <td>US-53</td>
       <td>Conocer propuesta de valor en landing page</td>
       <td>T-01</td>
       <td>Configuración inicial del repositorio</td>
@@ -583,7 +583,7 @@ El objetivo principal de este Sprint fue implementar y desplegar la primera vers
       <td>Done</td>
     </tr>
     <tr>
-      <td>US-49</td>
+      <td>US-53</td>
       <td>Conocer propuesta de valor en landing page</td>
       <td>T-02</td>
       <td>Configurar pipeline de despliegue (GitHub Actions)</td>
@@ -593,7 +593,7 @@ El objetivo principal de este Sprint fue implementar y desplegar la primera vers
       <td>Done</td>
     </tr>
     <tr>
-      <td>US-85</td>
+      <td>US-84</td>
       <td>Visualizar la propuesta de valor</td>
       <td>T-03</td>
       <td>Implementar Hero section y Problem section</td>
@@ -603,7 +603,7 @@ El objetivo principal de este Sprint fue implementar y desplegar la primera vers
       <td>Done</td>
     </tr>
     <tr>
-      <td>US-85</td>
+      <td>US-84</td>
       <td>Visualizar la propuesta de valor</td>
       <td>T-04</td>
       <td>Implementar controles de tema e idioma</td>
@@ -613,7 +613,7 @@ El objetivo principal de este Sprint fue implementar y desplegar la primera vers
       <td>Done</td>
     </tr>
     <tr>
-      <td>US-85</td>
+      <td>US-84</td>
       <td>Visualizar la propuesta de valor</td>
       <td>T-05</td>
       <td>Implementar animaciones y transiciones de la landing</td>
@@ -623,7 +623,7 @@ El objetivo principal de este Sprint fue implementar y desplegar la primera vers
       <td>Done</td>
     </tr>
     <tr>
-      <td>US-86</td>
+      <td>US-85</td>
       <td>Explorar las funciones principales</td>
       <td>T-06</td>
       <td>Implementar Main Features section y How It Works section</td>
@@ -633,7 +633,7 @@ El objetivo principal de este Sprint fue implementar y desplegar la primera vers
       <td>Done</td>
     </tr>
     <tr>
-      <td>US-86</td>
+      <td>US-85</td>
       <td>Explorar las funciones principales</td>
       <td>T-07</td>
       <td>Implementar Merchant Benefits section, Client Trust section y Comparativa breve section</td>
@@ -643,7 +643,7 @@ El objetivo principal de este Sprint fue implementar y desplegar la primera vers
       <td>Done</td>
     </tr>
     <tr>
-      <td>US-87</td>
+      <td>US-86</td>
       <td>Revisar los planes de suscripción</td>
       <td>T-08</td>
       <td>Implementar Planes section</td>
@@ -653,7 +653,7 @@ El objetivo principal de este Sprint fue implementar y desplegar la primera vers
       <td>Done</td>
     </tr>
     <tr>
-      <td>US-88</td>
+      <td>US-87</td>
       <td>Consultar las preguntas frecuentes</td>
       <td>T-09</td>
       <td>Implementar FAQ section y Next Step section</td>
@@ -663,7 +663,7 @@ El objetivo principal de este Sprint fue implementar y desplegar la primera vers
       <td>Done</td>
     </tr>
     <tr>
-      <td>US-89</td>
+      <td>US-88</td>
       <td>Iniciar sesión desde la landing page</td>
       <td>T-10</td>
       <td>Implementar navegación del header y enlace "Ingresar"</td>
@@ -673,7 +673,7 @@ El objetivo principal de este Sprint fue implementar y desplegar la primera vers
       <td>Done</td>
     </tr>
     <tr>
-      <td>US-90</td>
+      <td>US-89</td>
       <td>Acceder mediante el botón de acción principal</td>
       <td>T-11</td>
       <td>Implementar CTAs "Empezar gratis" y Footer section</td>
@@ -683,7 +683,7 @@ El objetivo principal de este Sprint fue implementar y desplegar la primera vers
       <td>Done</td>
     </tr>
     <tr>
-      <td>US-49</td>
+      <td>US-53</td>
       <td>Conocer propuesta de valor en landing page</td>
       <td>T-12</td>
       <td>Revisión y corrección de contenido textual</td>
@@ -1125,7 +1125,7 @@ El objetivo principal de este Sprint fue implementar la Frontend Web Application
       <td>Done</td>
     </tr>
     <tr>
-      <td>US-07</td>
+      <td>US-11</td>
       <td>Personalizar preferencias de idioma y tema</td>
       <td>T-04</td>
       <td>Implementar i18n bilingüe, selector de moneda y persistencia de tema</td>
@@ -1135,7 +1135,7 @@ El objetivo principal de este Sprint fue implementar la Frontend Web Application
       <td>Done</td>
     </tr>
     <tr>
-      <td>US-24</td>
+      <td>US-28</td>
       <td>Buscar producto en el punto de venta</td>
       <td>T-05</td>
       <td>Implementar Sales BC base y buscador con autocompletado</td>
@@ -1145,7 +1145,7 @@ El objetivo principal de este Sprint fue implementar la Frontend Web Application
       <td>Done</td>
     </tr>
     <tr>
-      <td>US-25</td>
+      <td>US-29</td>
       <td>Registrar cantidad de producto por unidad</td>
       <td>T-06</td>
       <td>Implementar modal "Registrar Cantidad" con teclado numérico</td>
@@ -1155,7 +1155,7 @@ El objetivo principal de este Sprint fue implementar la Frontend Web Application
       <td>Done</td>
     </tr>
     <tr>
-      <td>US-26</td>
+      <td>US-30</td>
       <td>Registrar peso de producto con balanza IoT</td>
       <td>T-07</td>
       <td>Implementar modal "Registrar Peso" con modo IoT y manual</td>
@@ -1165,7 +1165,7 @@ El objetivo principal de este Sprint fue implementar la Frontend Web Application
       <td>Done</td>
     </tr>
     <tr>
-      <td>US-27</td>
+      <td>US-31</td>
       <td>Eliminar producto del ticket de venta</td>
       <td>T-08</td>
       <td>Implementar eliminación de ítems y resumen lateral del ticket</td>
@@ -1175,7 +1175,7 @@ El objetivo principal de este Sprint fue implementar la Frontend Web Application
       <td>Done</td>
     </tr>
     <tr>
-      <td>US-28</td>
+      <td>US-32</td>
       <td>Seleccionar método de pago</td>
       <td>T-09</td>
       <td>Implementar selección de método de pago y validaciones</td>
@@ -1185,7 +1185,7 @@ El objetivo principal de este Sprint fue implementar la Frontend Web Application
       <td>Done</td>
     </tr>
     <tr>
-      <td>US-29</td>
+      <td>US-33</td>
       <td>Finalizar venta y confirmar pago</td>
       <td>T-10</td>
       <td>Implementar finalización de venta y modal "Venta Exitosa"</td>
@@ -1195,7 +1195,7 @@ El objetivo principal de este Sprint fue implementar la Frontend Web Application
       <td>Done</td>
     </tr>
     <tr>
-      <td>US-30</td>
+      <td>US-35</td>
       <td>Ver resumen del cierre de caja</td>
       <td>T-11</td>
       <td>Implementar Resumen de Caja con persistencia en db.json</td>
@@ -1205,7 +1205,7 @@ El objetivo principal de este Sprint fue implementar la Frontend Web Application
       <td>Done</td>
     </tr>
     <tr>
-      <td>US-32</td>
+      <td>US-37</td>
       <td>Conectar cuenta de WhatsApp al chatbot</td>
       <td>T-12</td>
       <td>Implementar Chatbot BC base y flujo de conexión QR</td>
@@ -1215,7 +1215,7 @@ El objetivo principal de este Sprint fue implementar la Frontend Web Application
       <td>Done</td>
     </tr>
     <tr>
-      <td>US-33</td>
+      <td>US-38</td>
       <td>Ver conversaciones de WhatsApp entrantes</td>
       <td>T-13</td>
       <td>Implementar vista de conversaciones con session guard</td>
@@ -1225,7 +1225,7 @@ El objetivo principal de este Sprint fue implementar la Frontend Web Application
       <td>Done</td>
     </tr>
     <tr>
-      <td>US-34</td>
+      <td>US-39</td>
       <td>Gestionar pedidos recibidos por WhatsApp</td>
       <td>T-14</td>
       <td>Implementar vista de órdenes y validación de pago del chatbot</td>
@@ -1235,7 +1235,7 @@ El objetivo principal de este Sprint fue implementar la Frontend Web Application
       <td>Done</td>
     </tr>
     <tr>
-      <td>US-11</td>
+      <td>US-14</td>
       <td>Ver planes de suscripción disponibles</td>
       <td>T-15</td>
       <td>Implementar Subscription BC con vista de planes</td>
@@ -1245,7 +1245,7 @@ El objetivo principal de este Sprint fue implementar la Frontend Web Application
       <td>Done</td>
     </tr>
     <tr>
-      <td>US-16</td>
+      <td>US-18</td>
       <td>Ver inventario de productos y lotes</td>
       <td>T-16</td>
       <td>Implementar Inventory BC e integración con Sales y Home</td>
@@ -1255,7 +1255,7 @@ El objetivo principal de este Sprint fue implementar la Frontend Web Application
       <td>Done</td>
     </tr>
     <tr>
-      <td>US-41</td>
+      <td>US-46</td>
       <td>Ver panel principal del dashboard</td>
       <td>T-17</td>
       <td>Implementar vistas de Home y Help del dashboard</td>
