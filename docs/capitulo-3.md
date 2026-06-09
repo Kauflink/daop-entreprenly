@@ -401,10 +401,6 @@ En esta sección se especifican las épicas y las User Stories que definen el al
       <td>US-49</td>
       <td colspan="2">Registrar venta en el sistema</td>
     </tr>
-    <tr>
-      <td>US-50</td>
-      <td colspan="2">Emitir comprobante digital al cliente</td>
-    </tr>
   </tbody>
 </table>
 
@@ -464,6 +460,22 @@ En esta sección se especifican las épicas y las User Stories que definen el al
     <tr>
       <td>US-56</td>
       <td colspan="2">Validar y registrar pagos mediante API</td>
+    </tr>
+    <tr>
+      <td>US-92</td>
+      <td colspan="2">Autenticar y autorizar usuarios mediante JWT</td>
+    </tr>
+    <tr>
+      <td>US-93</td>
+      <td colspan="2">Containerizar y desplegar la API mediante Docker y CI/CD</td>
+    </tr>
+    <tr>
+      <td>US-94</td>
+      <td colspan="2">Persistir datos mediante JPA por bounded context</td>
+    </tr>
+    <tr>
+      <td>US-95</td>
+      <td colspan="2">Desplegar el frontend en Firebase Hosting</td>
     </tr>
   </tbody>
 </table>
@@ -2238,36 +2250,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   </tbody>
 </table>
 
-<p><em>US-50 — Emitir comprobante digital al cliente</em></p>
-
-<table>
-  <tbody>
-    <tr>
-      <td><strong>User Story</strong></td>
-      <td>50</td>
-      <td><strong>Epic ID</strong></td>
-      <td>11</td>
-    </tr>
-    <tr>
-      <td><strong>Title</strong></td>
-      <td colspan="3">Emitir comprobante digital al cliente</td>
-    </tr>
-    <tr>
-      <td><strong>Description</strong></td>
-      <td colspan="3">Como cliente, quiero recibir un comprobante de mi compra a través del chatbot para tener un respaldo de la transacción realizada.</td>
-    </tr>
-    <tr>
-      <td><strong>Acceptance Criteria</strong></td>
-      <td colspan="3">
-      <strong>Scenario 1: Bot envía comprobante al cliente tras registrar la venta</strong><br>
-      Dado que la venta ha sido registrada correctamente, cuando el sistema genera el comprobante, entonces el bot envía al cliente un resumen con número de pedido, productos, cantidades, monto total y fecha.<br><br>
-      <strong>Scenario 2: Sistema marca el pedido como completado al emitir el comprobante</strong><br>
-      Dado que el comprobante fue generado y enviado, cuando el sistema confirma la entrega, entonces registra el evento con marca de tiempo y actualiza el estado del pedido a completado.
-      </td>
-    </tr>
-  </tbody>
-</table>
-
 <p><em>US-51 — Manejar stock insuficiente en pedido</em></p>
 
 <table>
@@ -2447,6 +2429,134 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
       Dado que el developer envía una solicitud de rechazo con motivo especificado, cuando el servidor procesa el rechazo, entonces el sistema responde con HTTP 200 y registra el motivo en el historial del pago.<br><br>
       <strong>Scenario 3: Solicitud sobre pago inexistente</strong><br>
       Dado que el developer referencia un ID de pago que no existe, cuando el servidor busca el recurso, entonces el sistema responde con HTTP 404 indicando que el pago no fue encontrado.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><em>US-92 — Autenticar y autorizar usuarios mediante JWT</em></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>User Story</strong></td>
+      <td>92</td>
+      <td><strong>Epic ID</strong></td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td><strong>Title</strong></td>
+      <td colspan="3">Autenticar y autorizar usuarios mediante JWT</td>
+    </tr>
+    <tr>
+      <td><strong>Description</strong></td>
+      <td colspan="3">Como equipo de desarrollo, queremos proteger los endpoints de la API mediante autenticación basada en JWT para que solo los usuarios autenticados accedan a los recursos del comerciante.</td>
+    </tr>
+    <tr>
+      <td><strong>Acceptance Criteria</strong></td>
+      <td colspan="3">
+      <strong>Scenario 1: Generación de token al iniciar sesión</strong><br>
+      Dado que un usuario envía credenciales válidas al endpoint de autenticación, cuando el servidor las valida, entonces responde con HTTP 200 y retorna un token JWT firmado con su tiempo de expiración.<br><br>
+      <strong>Scenario 2: Acceso autorizado con token válido</strong><br>
+      Dado que el cliente incluye un token JWT válido en la cabecera Authorization, cuando solicita un recurso protegido, entonces el servidor valida el token y responde con HTTP 200 y los datos solicitados.<br><br>
+      <strong>Scenario 3: Rechazo de token inválido o ausente</strong><br>
+      Dado que el cliente solicita un recurso protegido sin token o con un token inválido o expirado, cuando el servidor evalúa la solicitud, entonces responde con HTTP 401 indicando que la autenticación es requerida.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><em>US-93 — Containerizar y desplegar la API mediante Docker y CI/CD</em></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>User Story</strong></td>
+      <td>93</td>
+      <td><strong>Epic ID</strong></td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td><strong>Title</strong></td>
+      <td colspan="3">Containerizar y desplegar la API mediante Docker y CI/CD</td>
+    </tr>
+    <tr>
+      <td><strong>Description</strong></td>
+      <td colspan="3">Como equipo de desarrollo, queremos empaquetar el backend en una imagen Docker y automatizar su construcción y despliegue mediante un pipeline de CI/CD para garantizar entregas reproducibles y consistentes.</td>
+    </tr>
+    <tr>
+      <td><strong>Acceptance Criteria</strong></td>
+      <td colspan="3">
+      <strong>Scenario 1: Construcción de imagen Docker</strong><br>
+      Dado que el código fuente está en la rama principal, cuando se ejecuta la construcción definida en el Dockerfile, entonces el sistema genera una imagen ejecutable del backend sin errores.<br><br>
+      <strong>Scenario 2: Pipeline de integración continua exitoso</strong><br>
+      Dado que se realiza un push o merge a la rama integradora, cuando el pipeline de GitHub Actions se ejecuta, entonces compila el proyecto, ejecuta las pruebas y construye la imagen automáticamente.<br><br>
+      <strong>Scenario 3: Fallo de build detiene el despliegue</strong><br>
+      Dado que la compilación o las pruebas fallan, cuando el pipeline se ejecuta, entonces el sistema detiene el proceso y no publica una imagen defectuosa.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><em>US-94 — Persistir datos mediante JPA por bounded context</em></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>User Story</strong></td>
+      <td>94</td>
+      <td><strong>Epic ID</strong></td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td><strong>Title</strong></td>
+      <td colspan="3">Persistir datos mediante JPA por bounded context</td>
+    </tr>
+    <tr>
+      <td><strong>Description</strong></td>
+      <td colspan="3">Como equipo de desarrollo, queremos mapear las entidades de dominio a la base de datos mediante JPA respetando los límites de cada bounded context para mantener la integridad y separación de los datos.</td>
+    </tr>
+    <tr>
+      <td><strong>Acceptance Criteria</strong></td>
+      <td colspan="3">
+      <strong>Scenario 1: Persistencia de entidad de dominio</strong><br>
+      Dado que se ejecuta una operación de creación sobre un agregado, cuando el repositorio JPA persiste la entidad, entonces los datos quedan almacenados y son recuperables por su identificador.<br><br>
+      <strong>Scenario 2: Generación automática del esquema</strong><br>
+      Dado que la aplicación arranca con un nuevo bounded context, cuando se inicializa la capa de persistencia, entonces el sistema crea las tablas correspondientes según el mapeo definido.<br><br>
+      <strong>Scenario 3: Aislamiento entre contextos</strong><br>
+      Dado que dos bounded contexts definen entidades distintas, cuando se persisten sus datos, entonces cada contexto gestiona sus tablas sin interferir con los demás.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><em>US-95 — Desplegar el frontend en Firebase Hosting</em></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>User Story</strong></td>
+      <td>95</td>
+      <td><strong>Epic ID</strong></td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td><strong>Title</strong></td>
+      <td colspan="3">Desplegar el frontend en Firebase Hosting</td>
+    </tr>
+    <tr>
+      <td><strong>Description</strong></td>
+      <td colspan="3">Como equipo de desarrollo, queremos desplegar la aplicación Angular en Firebase Hosting para entregar el frontend de forma escalable y accesible a los comerciantes.</td>
+    </tr>
+    <tr>
+      <td><strong>Acceptance Criteria</strong></td>
+      <td colspan="3">
+      <strong>Scenario 1: Build de producción del frontend</strong><br>
+      Dado que el código del frontend está listo para release, cuando se ejecuta el build de producción, entonces el sistema genera los artefactos optimizados sin errores.<br><br>
+      <strong>Scenario 2: Despliegue exitoso en Firebase</strong><br>
+      Dado que existe un build de producción válido, cuando se ejecuta el despliegue a Firebase Hosting, entonces la aplicación queda publicada y accesible mediante su URL.<br><br>
+      <strong>Scenario 3: Reversión ante despliegue fallido</strong><br>
+      Dado que un despliegue presenta errores, cuando el equipo lo detecta, entonces Firebase Hosting permite revertir a la versión estable previamente publicada.
       </td>
     </tr>
   </tbody>
