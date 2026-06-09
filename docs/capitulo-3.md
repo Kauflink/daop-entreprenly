@@ -1436,7 +1436,19 @@
   </tr>
   </tbody>
 </table>
-
+ <!-- US-91 -->
+  <tr>
+    <td>US-91</td>
+    <td>Eliminar productos</td>
+    <td>Como comerciante quiero eliminar productos para deshacerme de los productos que no me sirvan.</td>
+    <td>
+      <strong>Scenario 1: Eliminar producto correctamente</strong><br>
+      Dado que el usuario está en la sección de productos y selecciona un producto existente, cuando presione "Eliminar", entonces el producto se eliminará exitosamente.<br><br>
+      <strong>Scenario 2: Validación al eliminar lote</strong><br>
+      Dado que el usuario está en la sección de productos y no selecciona un producto existente, cuando presione "Eliminar", entonces saldrá un mensaje de error de no haber seleccionado un producto.
+    </td>
+    <td>Epic-01</td>
+  </tr>
 ## 3.2. Impact Mapping
 
 El Impact Mapping es una técnica de planificación estratégica que permite vincular los objetivos de negocio con las funcionalidades del producto, respondiendo las preguntas: ¿por qué construimos esto?, ¿quién nos ayuda a lograrlo?, ¿cómo cambia su comportamiento? y ¿qué entregamos para provocar ese cambio? Su elaboración permite asegurar que cada User Story tenga un propósito claro y directo sobre el objetivo del negocio.A continuación se presenta el Impact Map elaborado en UXPressia para Entreprenly:
