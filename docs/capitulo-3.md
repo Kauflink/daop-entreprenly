@@ -6,8 +6,6 @@ En esta sección se especifican las épicas y las User Stories que definen el al
 
 ### Épicas
 
-<p><em>Épica 01 — Gestión de inventario</em></p>
-
 <table>
   <tbody>
     <tr>
@@ -68,8 +66,6 @@ En esta sección se especifican las épicas y las User Stories que definen el al
   </tbody>
 </table>
 
-<p><em>Épica 02 — Notificaciones de inventario</em></p>
-
 <table>
   <tbody>
     <tr>
@@ -101,8 +97,6 @@ En esta sección se especifican las épicas y las User Stories que definen el al
     </tr>
   </tbody>
 </table>
-
-<p><em>Épica 03 — Proceso de suscripción</em></p>
 
 <table>
   <tbody>
@@ -139,8 +133,6 @@ En esta sección se especifican las épicas y las User Stories que definen el al
     </tr>
   </tbody>
 </table>
-
-<p><em>Épica 04 — Configuración de suscripción</em></p>
 
 <table>
   <tbody>
@@ -190,8 +182,6 @@ En esta sección se especifican las épicas y las User Stories que definen el al
   </tbody>
 </table>
 
-<p><em>Épica 05 — Gestión de Transacciones y Operaciones de Venta</em></p>
-
 <table>
   <tbody>
     <tr>
@@ -236,8 +226,6 @@ En esta sección se especifican las épicas y las User Stories que definen el al
   </tbody>
 </table>
 
-<p><em>Épica 06 — Control de Ingresos y Monitoreo de Caja</em></p>
-
 <table>
   <tbody>
     <tr>
@@ -261,8 +249,6 @@ En esta sección se especifican las épicas y las User Stories que definen el al
     </tr>
   </tbody>
 </table>
-
-<p><em>Épica 07 — Configurar Chatbot de WhatsApp Business</em></p>
 
 <table>
   <tbody>
@@ -288,8 +274,6 @@ En esta sección se especifican las épicas y las User Stories que definen el al
   </tbody>
 </table>
 
-<p><em>Épica 08 — Gestionar Conversaciones desde el Dashboard</em></p>
-
 <table>
   <tbody>
     <tr>
@@ -313,8 +297,6 @@ En esta sección se especifican las épicas y las User Stories que definen el al
     </tr>
   </tbody>
 </table>
-
-<p><em>Épica 09 — Procesar Pedidos mediante Bot Automático</em></p>
 
 <table>
   <tbody>
@@ -343,8 +325,6 @@ En esta sección se especifican las épicas y las User Stories que definen el al
     </tr>
   </tbody>
 </table>
-
-<p><em>Épica 10 — Gestionar Pago Digital P2P</em></p>
 
 <table>
   <tbody>
@@ -378,8 +358,6 @@ En esta sección se especifican las épicas y las User Stories que definen el al
   </tbody>
 </table>
 
-<p><em>Épica 11 — Confirmar Venta y Emitir Comprobante</em></p>
-
 <table>
   <tbody>
     <tr>
@@ -403,8 +381,6 @@ En esta sección se especifican las épicas y las User Stories que definen el al
     </tr>
   </tbody>
 </table>
-
-<p><em>Épica 12 — Manejar Flujos Alternativos y Restricciones</em></p>
 
 <table>
   <tbody>
@@ -433,8 +409,6 @@ En esta sección se especifican las épicas y las User Stories que definen el al
     </tr>
   </tbody>
 </table>
-
-<p><em>Épica 13 — Technical Stories – Implementar RESTful API</em></p>
 
 <table>
   <tbody>
@@ -480,8 +454,6 @@ En esta sección se especifican las épicas y las User Stories que definen el al
   </tbody>
 </table>
 
-<p><em>Épica 14 — Inicio de sesión y registro</em></p>
-
 <table>
   <tbody>
     <tr>
@@ -521,8 +493,6 @@ En esta sección se especifican las épicas y las User Stories que definen el al
     </tr>
   </tbody>
 </table>
-
-<p><em>Épica 15 — Perfil y configuración</em></p>
 
 <table>
   <tbody>
@@ -572,8 +542,6 @@ En esta sección se especifican las épicas y las User Stories que definen el al
   </tbody>
 </table>
 
-<p><em>Épica 16 — Panel de Inicio (Home)</em></p>
-
 <table>
   <tbody>
     <tr>
@@ -614,8 +582,6 @@ En esta sección se especifican las épicas y las User Stories que definen el al
   </tbody>
 </table>
 
-<p><em>Épica 17 — Centro de Soporte y Ayuda</em></p>
-
 <table>
   <tbody>
     <tr>
@@ -652,8 +618,6 @@ En esta sección se especifican las épicas y las User Stories que definen el al
   </tbody>
 </table>
 
-<p><em>Épica 18 — Experiencia global del dashboard</em></p>
-
 <table>
   <tbody>
     <tr>
@@ -681,8 +645,6 @@ En esta sección se especifican las épicas y las User Stories que definen el al
     </tr>
   </tbody>
 </table>
-
-<p><em>Épica 19 — Landing Page</em></p>
 
 <table>
   <tbody>
@@ -728,8 +690,6 @@ En esta sección se especifican las épicas y las User Stories que definen el al
 
 A continuación se detalla cada User Story con su épica relacionada, descripción y criterios de aceptación.
 
-<p><em>US-01 — Agregar productos</em></p>
-
 <table>
   <tbody>
     <tr>
@@ -760,8 +720,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   </tbody>
 </table>
 
-<p><em>US-02 — Editar lotes</em></p>
-
 <table>
   <tbody>
     <tr>
@@ -789,8 +747,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
     </tr>
   </tbody>
 </table>
-
-<p><em>US-03 — Agregar lotes</em></p>
 
 <table>
   <tbody>
@@ -820,8 +776,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   </tbody>
 </table>
 
-<p><em>US-04 — Eliminar lotes</em></p>
-
 <table>
   <tbody>
     <tr>
@@ -849,8 +803,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
     </tr>
   </tbody>
 </table>
-
-<p><em>US-05 — Editar productos</em></p>
 
 <table>
   <tbody>
@@ -880,8 +832,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   </tbody>
 </table>
 
-<p><em>US-06 — Visualizar detalles de lotes</em></p>
-
 <table>
   <tbody>
     <tr>
@@ -909,8 +859,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
     </tr>
   </tbody>
 </table>
-
-<p><em>US-07 — Visualizar detalles de producto</em></p>
 
 <table>
   <tbody>
@@ -940,8 +888,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   </tbody>
 </table>
 
-<p><em>US-08 — Buscar productos</em></p>
-
 <table>
   <tbody>
     <tr>
@@ -970,8 +916,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   </tbody>
 </table>
 
-<p><em>US-09 — Crear lotes</em></p>
-
 <table>
   <tbody>
     <tr>
@@ -999,8 +943,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
     </tr>
   </tbody>
 </table>
-
-<p><em>US-10 — Escanear código QR en inventario</em></p>
 
 <table>
   <tbody>
@@ -1032,8 +974,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   </tbody>
 </table>
 
-<p><em>US-91 — Eliminar productos</em></p>
-
 <table>
   <tbody>
     <tr>
@@ -1061,8 +1001,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
     </tr>
   </tbody>
 </table>
-
-<p><em>US-11 — Detectar stock agotado</em></p>
 
 <table>
   <tbody>
@@ -1092,8 +1030,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   </tbody>
 </table>
 
-<p><em>US-12 — Mostrar alertas de estado al visualizar detalles</em></p>
-
 <table>
   <tbody>
     <tr>
@@ -1121,8 +1057,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
     </tr>
   </tbody>
 </table>
-
-<p><em>US-13 — Visualizar dashboard de lotes</em></p>
 
 <table>
   <tbody>
@@ -1152,8 +1086,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   </tbody>
 </table>
 
-<p><em>US-14 — Recibir alerta de caducidad de lote</em></p>
-
 <table>
   <tbody>
     <tr>
@@ -1181,8 +1113,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
     </tr>
   </tbody>
 </table>
-
-<p><em>US-15 — Seleccionar plan de suscripción</em></p>
 
 <table>
   <tbody>
@@ -1212,8 +1142,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   </tbody>
 </table>
 
-<p><em>US-16 — Iniciar proceso de suscripción</em></p>
-
 <table>
   <tbody>
     <tr>
@@ -1241,8 +1169,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
     </tr>
   </tbody>
 </table>
-
-<p><em>US-17 — Registrar datos de facturación</em></p>
 
 <table>
   <tbody>
@@ -1272,8 +1198,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   </tbody>
 </table>
 
-<p><em>US-18 — Procesar cobro de suscripción</em></p>
-
 <table>
   <tbody>
     <tr>
@@ -1301,8 +1225,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
     </tr>
   </tbody>
 </table>
-
-<p><em>US-19 — Activar suscripción</em></p>
 
 <table>
   <tbody>
@@ -1332,8 +1254,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   </tbody>
 </table>
 
-<p><em>US-20 — Visualizar panel de suscripción</em></p>
-
 <table>
   <tbody>
     <tr>
@@ -1361,8 +1281,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
     </tr>
   </tbody>
 </table>
-
-<p><em>US-21 — Consultar estado de suscripción</em></p>
 
 <table>
   <tbody>
@@ -1392,8 +1310,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   </tbody>
 </table>
 
-<p><em>US-22 — Renovar suscripción</em></p>
-
 <table>
   <tbody>
     <tr>
@@ -1421,8 +1337,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
     </tr>
   </tbody>
 </table>
-
-<p><em>US-23 — Solicitar cancelación de suscripción</em></p>
 
 <table>
   <tbody>
@@ -1454,8 +1368,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   </tbody>
 </table>
 
-<p><em>US-24 — Cancelar suscripción</em></p>
-
 <table>
   <tbody>
     <tr>
@@ -1483,8 +1395,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
     </tr>
   </tbody>
 </table>
-
-<p><em>US-25 — Agregar método de pago de suscripción</em></p>
 
 <table>
   <tbody>
@@ -1516,8 +1426,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   </tbody>
 </table>
 
-<p><em>US-26 — Completar datos fiscales de suscripción</em></p>
-
 <table>
   <tbody>
     <tr>
@@ -1547,8 +1455,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
     </tr>
   </tbody>
 </table>
-
-<p><em>US-27 — Descargar historial de suscripción</em></p>
 
 <table>
   <tbody>
@@ -1580,8 +1486,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   </tbody>
 </table>
 
-<p><em>US-28 — Buscar productos en el inventario y validar su tipo de medida</em></p>
-
 <table>
   <tbody>
     <tr>
@@ -1612,8 +1516,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   </tbody>
 </table>
 
-<p><em>US-29 — Registrar la cantidad de unidades en el Ticket de Venta</em></p>
-
 <table>
   <tbody>
     <tr>
@@ -1641,8 +1543,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
     </tr>
   </tbody>
 </table>
-
-<p><em>US-30 — Capturar el peso mediante balanza IoT o ingreso manual</em></p>
 
 <table>
   <tbody>
@@ -1674,8 +1574,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   </tbody>
 </table>
 
-<p><em>US-31 — Gestionar el desglose y cálculo del Ticket de Venta</em></p>
-
 <table>
   <tbody>
     <tr>
@@ -1703,8 +1601,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
     </tr>
   </tbody>
 </table>
-
-<p><em>US-32 — Seleccionar el método de pago para la transacción</em></p>
 
 <table>
   <tbody>
@@ -1734,8 +1630,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   </tbody>
 </table>
 
-<p><em>US-33 — Finalizar la venta y emitir el comprobante de pago</em></p>
-
 <table>
   <tbody>
     <tr>
@@ -1763,8 +1657,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
     </tr>
   </tbody>
 </table>
-
-<p><em>US-34 — Cancelar venta en curso</em></p>
 
 <table>
   <tbody>
@@ -1794,8 +1686,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   </tbody>
 </table>
 
-<p><em>US-35 — Clasificar automáticamente los ingresos según el medio de pago</em></p>
-
 <table>
   <tbody>
     <tr>
@@ -1824,8 +1714,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   </tbody>
 </table>
 
-<p><em>US-36 — Monitorear el Resumen de Caja en tiempo real dentro del panel de ventas</em></p>
-
 <table>
   <tbody>
     <tr>
@@ -1853,8 +1741,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
     </tr>
   </tbody>
 </table>
-
-<p><em>US-37 — Vincular cuenta de WhatsApp Business mediante código QR</em></p>
 
 <table>
   <tbody>
@@ -1886,8 +1772,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   </tbody>
 </table>
 
-<p><em>US-38 — Consultar estado de vinculación del chatbot</em></p>
-
 <table>
   <tbody>
     <tr>
@@ -1915,8 +1799,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
     </tr>
   </tbody>
 </table>
-
-<p><em>US-39 — Visualizar conversaciones de clientes en el dashboard</em></p>
 
 <table>
   <tbody>
@@ -1946,8 +1828,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   </tbody>
 </table>
 
-<p><em>US-40 — Responder mensajes de clientes desde el dashboard</em></p>
-
 <table>
   <tbody>
     <tr>
@@ -1975,8 +1855,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
     </tr>
   </tbody>
 </table>
-
-<p><em>US-41 — Responder consulta de producto disponible</em></p>
 
 <table>
   <tbody>
@@ -2006,8 +1884,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   </tbody>
 </table>
 
-<p><em>US-42 — Sugerir alternativas ante producto no disponible</em></p>
-
 <table>
   <tbody>
     <tr>
@@ -2035,8 +1911,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
     </tr>
   </tbody>
 </table>
-
-<p><em>US-43 — Confirmar pedido con el cliente</em></p>
 
 <table>
   <tbody>
@@ -2068,8 +1942,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   </tbody>
 </table>
 
-<p><em>US-44 — Recibir instrucciones de pago por WhatsApp</em></p>
-
 <table>
   <tbody>
     <tr>
@@ -2098,8 +1970,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   </tbody>
 </table>
 
-<p><em>US-45 — Reportar comprobante de pago digital</em></p>
-
 <table>
   <tbody>
     <tr>
@@ -2127,8 +1997,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
     </tr>
   </tbody>
 </table>
-
-<p><em>US-46 — Validar comprobante de pago desde el dashboard</em></p>
 
 <table>
   <tbody>
@@ -2160,8 +2028,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   </tbody>
 </table>
 
-<p><em>US-47 — Notificar resultado de validación al cliente</em></p>
-
 <table>
   <tbody>
     <tr>
@@ -2189,8 +2055,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
     </tr>
   </tbody>
 </table>
-
-<p><em>US-48 — Confirmar pedido y descontar stock</em></p>
 
 <table>
   <tbody>
@@ -2220,8 +2084,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   </tbody>
 </table>
 
-<p><em>US-49 — Registrar venta en el sistema</em></p>
-
 <table>
   <tbody>
     <tr>
@@ -2249,8 +2111,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
     </tr>
   </tbody>
 </table>
-
-<p><em>US-51 — Manejar stock insuficiente en pedido</em></p>
 
 <table>
   <tbody>
@@ -2280,8 +2140,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   </tbody>
 </table>
 
-<p><em>US-52 — Cancelar pedido por expiración de tiempo de pago</em></p>
-
 <table>
   <tbody>
     <tr>
@@ -2309,8 +2167,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
     </tr>
   </tbody>
 </table>
-
-<p><em>US-53 — Rechazar comprobante de pago inválido</em></p>
 
 <table>
   <tbody>
@@ -2340,8 +2196,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   </tbody>
 </table>
 
-<p><em>US-54 — Conocer propuesta de valor en landing page</em></p>
-
 <table>
   <tbody>
     <tr>
@@ -2369,8 +2223,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
     </tr>
   </tbody>
 </table>
-
-<p><em>US-55 — Gestionar ciclo de vida de pedidos mediante API</em></p>
 
 <table>
   <tbody>
@@ -2402,8 +2254,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   </tbody>
 </table>
 
-<p><em>US-56 — Validar y registrar pagos mediante API</em></p>
-
 <table>
   <tbody>
     <tr>
@@ -2433,8 +2283,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
     </tr>
   </tbody>
 </table>
-
-<p><em>US-92 — Autenticar y autorizar usuarios mediante JWT</em></p>
 
 <table>
   <tbody>
@@ -2466,8 +2314,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   </tbody>
 </table>
 
-<p><em>US-93 — Containerizar y desplegar la API mediante Docker y CI/CD</em></p>
-
 <table>
   <tbody>
     <tr>
@@ -2497,8 +2343,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
     </tr>
   </tbody>
 </table>
-
-<p><em>US-94 — Persistir datos mediante JPA por bounded context</em></p>
 
 <table>
   <tbody>
@@ -2530,8 +2374,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   </tbody>
 </table>
 
-<p><em>US-95 — Desplegar el frontend en Firebase Hosting</em></p>
-
 <table>
   <tbody>
     <tr>
@@ -2561,8 +2403,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
     </tr>
   </tbody>
 </table>
-
-<p><em>US-57 — Registrar cuenta con email</em></p>
 
 <table>
   <tbody>
@@ -2594,8 +2434,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   </tbody>
 </table>
 
-<p><em>US-58 — Verificar email</em></p>
-
 <table>
   <tbody>
     <tr>
@@ -2625,8 +2463,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
     </tr>
   </tbody>
 </table>
-
-<p><em>US-59 — Iniciar sesión con credenciales</em></p>
 
 <table>
   <tbody>
@@ -2658,8 +2494,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   </tbody>
 </table>
 
-<p><em>US-60 — Iniciar sesión con Google OAuth</em></p>
-
 <table>
   <tbody>
     <tr>
@@ -2689,8 +2523,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
     </tr>
   </tbody>
 </table>
-
-<p><em>US-61 — Recuperar contraseña</em></p>
 
 <table>
   <tbody>
@@ -2722,8 +2554,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   </tbody>
 </table>
 
-<p><em>US-62 — Cerrar sesión</em></p>
-
 <table>
   <tbody>
     <tr>
@@ -2751,8 +2581,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
     </tr>
   </tbody>
 </table>
-
-<p><em>US-63 — Visualizar perfil actual</em></p>
 
 <table>
   <tbody>
@@ -2782,8 +2610,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   </tbody>
 </table>
 
-<p><em>US-64 — Actualizar nombre y biografía</em></p>
-
 <table>
   <tbody>
     <tr>
@@ -2811,8 +2637,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
     </tr>
   </tbody>
 </table>
-
-<p><em>US-65 — Subir foto de perfil</em></p>
 
 <table>
   <tbody>
@@ -2844,8 +2668,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   </tbody>
 </table>
 
-<p><em>US-66 — Cambiar email con re-verificación</em></p>
-
 <table>
   <tbody>
     <tr>
@@ -2876,8 +2698,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   </tbody>
 </table>
 
-<p><em>US-67 — Cambiar contraseña</em></p>
-
 <table>
   <tbody>
     <tr>
@@ -2907,8 +2727,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
     </tr>
   </tbody>
 </table>
-
-<p><em>US-68 — Configurar preferencias de idioma, zona horaria, tema y moneda</em></p>
 
 <table>
   <tbody>
@@ -2942,8 +2760,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   </tbody>
 </table>
 
-<p><em>US-69 — Configurar notificaciones</em></p>
-
 <table>
   <tbody>
     <tr>
@@ -2972,8 +2788,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   </tbody>
 </table>
 
-<p><em>US-70 — Registrar y verificar número de teléfono</em></p>
-
 <table>
   <tbody>
     <tr>
@@ -3001,8 +2815,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
     </tr>
   </tbody>
 </table>
-
-<p><em>US-71 — Visualizar resumen de ventas del día</em></p>
 
 <table>
   <tbody>
@@ -3034,8 +2846,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   </tbody>
 </table>
 
-<p><em>US-72 — Visualizar estado del chatbot en el home</em></p>
-
 <table>
   <tbody>
     <tr>
@@ -3065,8 +2875,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
     </tr>
   </tbody>
 </table>
-
-<p><em>US-73 — Visualizar alertas de inventario en el home</em></p>
 
 <table>
   <tbody>
@@ -3098,8 +2906,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   </tbody>
 </table>
 
-<p><em>US-74 — Visualizar contador de pedidos pendientes en el home</em></p>
-
 <table>
   <tbody>
     <tr>
@@ -3127,8 +2933,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
     </tr>
   </tbody>
 </table>
-
-<p><em>US-75 — Visualizar pedidos recientes en el home</em></p>
 
 <table>
   <tbody>
@@ -3160,8 +2964,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   </tbody>
 </table>
 
-<p><em>US-76 — Acceder a módulos desde accesos directos del home</em></p>
-
 <table>
   <tbody>
     <tr>
@@ -3189,8 +2991,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
     </tr>
   </tbody>
 </table>
-
-<p><em>US-77 — Visualizar el centro de soporte</em></p>
 
 <table>
   <tbody>
@@ -3220,8 +3020,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   </tbody>
 </table>
 
-<p><em>US-78 — Buscar artículo de ayuda</em></p>
-
 <table>
   <tbody>
     <tr>
@@ -3249,8 +3047,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
     </tr>
   </tbody>
 </table>
-
-<p><em>US-79 — Consultar artículo de ayuda</em></p>
 
 <table>
   <tbody>
@@ -3280,8 +3076,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   </tbody>
 </table>
 
-<p><em>US-80 — Reportar un problema</em></p>
-
 <table>
   <tbody>
     <tr>
@@ -3309,8 +3103,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
     </tr>
   </tbody>
 </table>
-
-<p><em>US-81 — Confirmar envío del reporte</em></p>
 
 <table>
   <tbody>
@@ -3340,8 +3132,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   </tbody>
 </table>
 
-<p><em>US-82 — Navegar entre módulos desde el sidebar</em></p>
-
 <table>
   <tbody>
     <tr>
@@ -3369,8 +3159,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
     </tr>
   </tbody>
 </table>
-
-<p><em>US-83 — Cambiar idioma de la interfaz</em></p>
 
 <table>
   <tbody>
@@ -3400,8 +3188,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   </tbody>
 </table>
 
-<p><em>US-84 — Gestionar rutas no encontradas</em></p>
-
 <table>
   <tbody>
     <tr>
@@ -3430,8 +3216,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   </tbody>
 </table>
 
-<p><em>US-85 — Visualizar la propuesta de valor</em></p>
-
 <table>
   <tbody>
     <tr>
@@ -3457,8 +3241,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
     </tr>
   </tbody>
 </table>
-
-<p><em>US-86 — Explorar las funciones principales</em></p>
 
 <table>
   <tbody>
@@ -3486,8 +3268,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   </tbody>
 </table>
 
-<p><em>US-87 — Revisar los planes de suscripción</em></p>
-
 <table>
   <tbody>
     <tr>
@@ -3513,8 +3293,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
     </tr>
   </tbody>
 </table>
-
-<p><em>US-88 — Consultar las preguntas frecuentes</em></p>
 
 <table>
   <tbody>
@@ -3542,8 +3320,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   </tbody>
 </table>
 
-<p><em>US-89 — Iniciar sesión desde la landing page</em></p>
-
 <table>
   <tbody>
     <tr>
@@ -3569,8 +3345,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
     </tr>
   </tbody>
 </table>
-
-<p><em>US-90 — Acceder mediante el botón de acción principal</em></p>
 
 <table>
   <tbody>
