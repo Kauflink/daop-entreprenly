@@ -1013,7 +1013,7 @@ Para este segundo Sprint, el equipo estableció como objetivo principal la imple
     </tr>
     <tr>
       <td><strong>Sprint 2 Goal</strong></td>
-      <td>Nuestro enfoque está en desarrollar el Frontend Web Application completo de Entreprenly en Angular, cubriendo todos los Bounded Contexts principales: Sales (Punto de Venta), Chatbot (Pedidos WhatsApp), Subscription, Inventory y Profile. Creemos que entrega una aplicación web funcional y desplegable con la que los comerciantes peruanos pueden gestionar sus operaciones de venta y sus pedidos de WhatsApp. Esto se confirmará cuando la aplicación Angular esté desplegada exitosamente en Firebase Hosting y todos los flujos clave —registro de ventas en caja, gestión de pedidos por chatbot y configuración del perfil de usuario— sean funcionales y navegables.</td>
+      <td>Nuestro enfoque está en desarrollar el Frontend Web Application completo de Entreprenly en Angular, cubriendo todos los Bounded Contexts principales: Sales (Punto de Venta), Chatbot (Pedidos WhatsApp), Subscription, Inventory y Profile. Creemos que entrega una aplicación web funcional y desplegable con la que los comerciantes peruanos pueden gestionar sus operaciones de venta y sus pedidos de WhatsApp. Esto se confirmará cuando la aplicación Angular esté desplegada exitosamente en Firebase Hosting y todos los flujos clave, como el registro de ventas en caja, la gestión de pedidos por chatbot y la configuración del perfil de usuario, sean funcionales y navegables.</td>
     </tr>
     <tr>
       <td><strong>Sprint 2 Velocity</strong></td>
@@ -1038,8 +1038,8 @@ En el Sprint 2, el equipo organizó el trabajo asignando un Bounded Context prin
       <th>Team Member (Last Name, First Name)</th>
       <th>GitHub Username</th>
       <th>Infraestructura Base y DashboardLayout<br>Leader (L) / Collaborator (C)</th>
-      <th>Sales BC — Punto de Venta<br>Leader (L) / Collaborator (C)</th>
-      <th>Chatbot BC — Pedidos WhatsApp<br>Leader (L) / Collaborator (C)</th>
+      <th>Sales BC (Punto de Venta)<br>Leader (L) / Collaborator (C)</th>
+      <th>Chatbot BC (Pedidos WhatsApp)<br>Leader (L) / Collaborator (C)</th>
       <th>Subscription & Inventory BC<br>Leader (L) / Collaborator (C)</th>
       <th>Profile BC, i18n y Tema<br>Leader (L) / Collaborator (C)</th>
     </tr>
@@ -1748,9 +1748,9 @@ Al término del Sprint 2, el equipo implementó y desplegó el Frontend Web Appl
 
 - **DashboardLayout:** Sidebar naranja responsive con logo de Entreprenly, íconos de navegación por BC y botón de logout. Funciona como shell de la aplicación con rutas lazy-loading anidadas.
 
-- **Sales BC — Punto de Venta:** Buscador de productos con autocompletado, modales de registro por cantidad (teclado numérico) y por peso (modo balanza IoT automático / modo manual), eliminación de ítems del ticket, selección de método de pago (Efectivo / Tarjeta-Yape-Plin), finalización de venta con modal "Venta Exitosa", y Resumen de Caja con persistencia en `db.json`.
+- **Sales BC (Punto de Venta):** Buscador de productos con autocompletado, modales de registro por cantidad (teclado numérico) y por peso (modo balanza IoT automático / modo manual), eliminación de ítems del ticket, selección de método de pago (Efectivo / Tarjeta-Yape-Plin), finalización de venta con modal "Venta Exitosa", y Resumen de Caja con persistencia en `db.json`.
 
-- **Chatbot BC — Pedidos WhatsApp:** Vista de conexión de cuenta WhatsApp mediante QR escaneable con countdown de expiración, guard de sesión, lista de conversaciones activas con burbuja de escritura del cliente, gestión de órdenes con productos reales del inventario, y validación de pago con chips de rechazo.
+- **Chatbot BC (Pedidos WhatsApp):** Vista de conexión de cuenta WhatsApp mediante QR escaneable con countdown de expiración, guard de sesión, lista de conversaciones activas con burbuja de escritura del cliente, gestión de órdenes con productos reales del inventario, y validación de pago con chips de rechazo.
 
 - **Subscription BC:** Vista de planes disponibles (Plan Free y Plan Control) con precios sincronizados al selector de moneda del usuario.
 
@@ -1883,7 +1883,7 @@ Durante el Sprint 2, el Backend (RESTful Web Services con Spring Boot) aún no h
     <td>POST</td>
     <td>Registra una nueva venta al finalizar el ticket en el Punto de Venta.</td>
     <td>Body: <code>{ "date", "total", "paymentMethod", "items": [{ "productId", "quantity", "subtotal" }] }</code></td>
-    <td><code>{ "id": 1, "date": "2026-05-12", "total": 5.00, "paymentMethod": "cash", "items": [...] }</code> — HTTP 201</td>
+    <td><code>{ "id": 1, "date": "2026-05-12", "total": 5.00, "paymentMethod": "cash", "items": [...] }</code> (HTTP 201)</td>
   </tr>
   <tr>
     <td><code>/api/v1/cash-registers</code></td>
@@ -2080,7 +2080,7 @@ En el Sprint 3, el equipo organizó el trabajo asignando un Bounded Context del 
 
 #### 5.2.3.3. Sprint Backlog 3
 
-El objetivo principal de este Sprint fue implementar los RESTful Web Services de Entreprenly, cubriendo las User Stories de los flujos de pedido del chatbot (**US-41 a US-52**) y las Technical Stories del EPIC-13 (**US-54** y **US-55** —API de pedidos y pagos—, **US-91** —autenticación JWT—, **US-92** —containerización y CI/CD— y **US-93** —persistencia JPA por bounded context—). Cada historia se descompuso en Engineering Tasks con una estimación individual entre 4 y 8 horas, gestionadas en el tablero Kanban del Sprint con las columnas **To Do, In Process, To Review y Done**.
+El objetivo principal de este Sprint fue implementar los RESTful Web Services de Entreprenly. El alcance abarcó los flujos de pedido del chatbot, comprendidos en las User Stories US-41 a US-52, junto con las Technical Stories del EPIC-13. Estas últimas cubren la API de pedidos y pagos en las historias US-54 y US-55, la autenticación con JWT en la US-91, la containerización y el pipeline de CI/CD en la US-92, y la persistencia JPA por bounded context en la US-93. Cada historia se descompuso en Engineering Tasks con una estimación individual de entre 4 y 8 horas, gestionadas en el tablero Kanban del Sprint a través de las columnas **To Do, In Process, To Review y Done**.
 
 **Board público del Sprint 3 (Trello):** [https://trello.com/b/XXXXXXXX/entreprenly-sprint-3](https://trello.com/b/XXXXXXXX/entreprenly-sprint-3) *(reemplazar con la URL pública del board antes de la entrega)*
 
@@ -2728,7 +2728,7 @@ La persistencia se realiza sobre **MySQL** mediante JPA respetando los límites 
 
 #### 5.2.3.6. Services Documentation Evidence for Sprint Review
 
-A diferencia del Sprint 2 —donde la Frontend Web Application consumía una Fake RESTful API servida con JSON-Server—, en el Sprint 3 se implementó el Backend real con Spring Boot y se documentó formalmente mediante **OpenAPI/Swagger**. La especificación OpenAPI está disponible en `https://daop-api.entreprenly.online/v3/api-docs` y la interfaz interactiva de exploración y prueba en `https://daop-api.entreprenly.online/swagger-ui/index.html`.
+A diferencia del Sprint 2, en el que la Frontend Web Application consumía una Fake RESTful API servida con JSON-Server, en el Sprint 3 se implementó el Backend real con Spring Boot y se documentó formalmente mediante **OpenAPI/Swagger**. La especificación OpenAPI está disponible en `https://daop-api.entreprenly.online/v3/api-docs` y la interfaz interactiva de exploración y prueba en `https://daop-api.entreprenly.online/swagger-ui/index.html`.
 
 La API expone **77 operaciones** distribuidas en **23 controladores REST** a través de los 7 Bounded Contexts. Todos los endpoints de negocio están protegidos con **JWT**; únicamente el sign-in, el sign-up y los endpoints del bridge de WhatsApp (autenticados con un token de bridge dedicado) quedan fuera de esa protección. A continuación se documentan los endpoints representativos por Bounded Context:
 
