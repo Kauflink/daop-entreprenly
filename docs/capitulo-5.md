@@ -175,7 +175,7 @@ Para la gestión del código fuente y el seguimiento de modificaciones, el equip
 | :--- | :--- |
 | **Landing Page** | https://github.com/Kauflink/landing-entreprenly |
 | **Web Services** | https://github.com/Kauflink/daop-entreprenly-web-services | 
-| **Frontend Web Application** | https://github.com/Kauflink/daop-entreprenly-web-applications |
+| **Frontend Web Application** | https://github.com/Kauflink/daop-entreprenly-frontend |
 
 **Estrategia de Flujo de Trabajo: GitFlow**
 
@@ -359,26 +359,26 @@ Los pasos para configurar y ejecutar el despliegue son los siguientes:
 
 #### Frontend Web Application
 
-El Frontend Web Application de Entreprenly está desarrollado con **Angular** y se despliega mediante **Firebase Hosting**, disponible en el subdominio **[https://entreprenly.web.app](https://entreprenly.web.app)**. Firebase Hosting fue elegido sobre GitHub Pages por tres razones concretas: soporta el enrutamiento del lado del cliente (SPA routing) de Angular de forma nativa sin configuraciones adicionales, permite asociar subdominios personalizados sin conflictos con el dominio principal ya utilizado por el Landing Page en GitHub Pages, y se integra de forma directa con GitHub Actions para automatizar el ciclo de build y despliegue.
+El Frontend Web Application de Entreprenly está desarrollado con **Angular** y se despliega mediante **Firebase Hosting**, bajo el proyecto `daop-entreprenly`. La aplicación está disponible en la URL por defecto de Firebase **[https://daop-entreprenly.web.app](https://daop-entreprenly.web.app)** y en el dominio personalizado **[https://daop.entreprenly.online](https://daop.entreprenly.online)**. Firebase Hosting fue elegido sobre GitHub Pages por tres razones concretas: soporta el enrutamiento del lado del cliente (SPA routing) de Angular de forma nativa sin configuraciones adicionales, permite asociar subdominios personalizados sin conflictos con el dominio principal ya utilizado por el Landing Page en GitHub Pages, y se integra de forma directa con GitHub Actions para automatizar el ciclo de build y despliegue.
 
 Los pasos para configurar y ejecutar el despliegue son los siguientes:
 
-1. Crear un proyecto en **Firebase Console** ([console.firebase.google.com](https://console.firebase.google.com)) e ingresar a la sección **Hosting**. Activar el servicio y asociarlo al proyecto de Entreprenly.
+1. Crear el proyecto **`daop-entreprenly`** en **Firebase Console** ([console.firebase.google.com](https://console.firebase.google.com)) e ingresar a la sección **Hosting** para activar el servicio.
 2. En el entorno local, instalar Firebase CLI:
    ```bash
    npm install -g firebase-tools
    firebase login
    ```
-3. Dentro del repositorio del Frontend (`Kauflink/daop-entreprenly-web-applications`), inicializar Firebase Hosting:
+3. Dentro del repositorio del Frontend (`Kauflink/daop-entreprenly-frontend`), inicializar Firebase Hosting:
    ```bash
    firebase init hosting
    ```
-   Durante la inicialización, seleccionar el proyecto Firebase creado, indicar `dist/entreprenly` como directorio público (output del build de Angular), confirmar que la aplicación es una SPA respondiendo `Yes` a la opción de reescritura de rutas al `index.html`, y no sobrescribir el `index.html` existente.
+   Durante la inicialización, seleccionar el proyecto `daop-entreprenly`, indicar `dist/entreprenly/browser` como directorio público (output del build de producción de Angular), confirmar que la aplicación es una SPA respondiendo `Yes` a la opción de reescritura de rutas al `index.html`, y no sobrescribir el `index.html` existente. El archivo `.firebaserc` queda configurado con el proyecto por defecto `daop-entreprenly`.
 4. Verificar que el archivo `firebase.json` generado incluya la regla de reescritura para SPA routing:
    ```json
    {
      "hosting": {
-       "public": "dist/entreprenly",
+       "public": "dist/entreprenly/browser",
        "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
        "rewrites": [
          { "source": "**", "destination": "/index.html" }
@@ -386,37 +386,26 @@ Los pasos para configurar y ejecutar el despliegue son los siguientes:
      }
    }
    ```
-5. En Firebase Console, ingresar a **Hosting > Add custom domain** y registrar el subdominio `app.entreprenly.online`. Firebase proporcionará los registros DNS necesarios (tipo `A` o `CNAME`) que deben configurarse en el proveedor del dominio.
-6. En el repositorio, configurar el **GitHub Secret** `FIREBASE_SERVICE_ACCOUNT` con las credenciales de la cuenta de servicio de Firebase, necesarias para autenticar el despliegue desde GitHub Actions.
-7. Crear el archivo `.github/workflows/deploy-frontend.yml` con el workflow de GitHub Actions. El workflow se ejecuta ante cada push en la rama `main` y realiza los siguientes pasos: checkout del repositorio, configuración de Node.js con la versión requerida, instalación de dependencias con `npm install`, generación del build de producción con `ng build --configuration production` y despliegue en Firebase Hosting usando la acción oficial `FirebaseExtended/action-hosting-deploy`.
-8. Validar el despliegue accediendo a `https://app.entreprenly.online` y verificando que la navegación entre vistas de Angular funciona correctamente sin errores 404 al refrescar el navegador.
+5. En Firebase Console, ingresar a **Hosting > Add custom domain** y registrar el subdominio `daop.entreprenly.online`. Firebase proporciona los registros DNS necesarios (tipo `A` o `TXT`) que deben configurarse en el proveedor del dominio, y emite automáticamente el certificado TLS.
+6. En el repositorio, configurar el **GitHub Secret** `FIREBASE_SERVICE_ACCOUNT_DAOP_ENTREPRENLY` con las credenciales de la cuenta de servicio de Firebase, necesarias para autenticar el despliegue desde GitHub Actions.
+7. Crear el archivo `.github/workflows/firebase-hosting.yml` con el workflow de GitHub Actions. El workflow se ejecuta ante cada push en la rama `main` y realiza los siguientes pasos: checkout del repositorio, configuración de **Node.js 22** con caché de npm, instalación de dependencias con `npm ci`, generación del build con `npm run build` y despliegue en Firebase Hosting usando la acción oficial `FirebaseExtended/action-hosting-deploy@v0` con `channelId: live`.
+8. Validar el despliegue accediendo a `https://daop.entreprenly.online` y verificando que la navegación entre vistas de Angular funciona correctamente sin errores 404 al refrescar el navegador.
 
 #### RESTful Web Services
 
-El Backend de Entreprenly está desarrollado con **Spring Boot** y se despliega sobre una instancia de **Google Compute Engine (VM)** en **Google Cloud Platform (GCP)**, accesible a través del subdominio **[api.entreprenly.online](https://api.entreprenly.online)**. La automatización del despliegue se gestiona mediante **GitHub Actions**, que se conecta de forma segura a la VM mediante SSH para ejecutar el proceso de actualización del servicio.
+El Backend de Entreprenly está desarrollado con **Spring Boot** y se despliega de forma **containerizada con Docker** sobre una instancia de **Google Compute Engine (VM)** en **Google Cloud Platform (GCP)**, accesible a través del subdominio **[daop-api.entreprenly.online](https://daop-api.entreprenly.online)**. La automatización del despliegue se gestiona mediante **GitHub Actions**, que se autentica a GCP sin claves mediante **Workload Identity Federation (WIF)**, construye y publica la imagen Docker en **Artifact Registry** y la actualiza en la VM mediante `docker compose`.
 
 Los pasos para configurar y ejecutar el despliegue son los siguientes:
 
-1. En la consola de GCP, crear una instancia de **Compute Engine** con las siguientes características mínimas recomendadas: sistema operativo Ubuntu 24.04 LTS, tipo de máquina `e2-medium`, disco de arranque de 50 GB y dirección IP externa estática asignada.
-2. En la instancia, instalar **Java 17 (JDK)**:
-   ```bash
-   sudo apt update
-   sudo apt install -y openjdk-17-jdk
-   ```
-3. Configurar el servicio de Spring Boot como un servicio del sistema operativo con `systemd`, creando el archivo `/etc/systemd/system/entreprenly.service`, para garantizar su reinicio automático ante fallos o reinicios de la VM.
-4. En el proveedor de DNS del dominio, crear un registro `A` que apunte `api.entreprenly.online` a la IP externa estática de la instancia de GCP.
-5. Instalar **Nginx** y **Certbot** en la VM para habilitar HTTPS mediante un certificado SSL gratuito de Let's Encrypt, configurando Nginx como proxy inverso que redirige el tráfico del puerto 443 al puerto `8080` donde escucha Spring Boot:
-   ```bash
-   sudo apt install -y nginx certbot python3-certbot-nginx
-   sudo certbot --nginx -d api.entreprenly.online
-   ```
-6. En el repositorio de Web Services (`Kauflink/daop-entreprenly-web-services`), configurar los siguientes **GitHub Secrets**:
-   - `GCP_VM_HOST`: dirección IP externa estática de la instancia.
-   - `GCP_VM_USER`: nombre de usuario de la instancia.
-   - `GCP_VM_SSH_KEY`: clave SSH privada para autenticación sin contraseña.
-7. Crear el archivo `.github/workflows/deploy-backend.yml` con el workflow de GitHub Actions. El workflow se ejecuta ante cada push en la rama `main` y realiza los siguientes pasos: checkout del repositorio, configuración de Java 17, generación del artefacto ejecutable con `./mvnw clean package -DskipTests`, transferencia del archivo `.jar` a la VM mediante `scp` y reinicio del servicio en la VM mediante `ssh` con los comandos `sudo systemctl stop entreprenly`, copia del nuevo `.jar` y `sudo systemctl start entreprenly`.
-8. Configurar las **reglas de firewall** en GCP para exponer únicamente los puertos `80` y `443` al tráfico externo, manteniendo el puerto `8080` de Spring Boot restringido al acceso local de Nginx.
-9. Documentar los endpoints del API desplegado mediante **Swagger UI**, accesible en la ruta `https://api.entreprenly.online/swagger-ui/index.html`, y registrar la URL base del API como variable de entorno en el proyecto del Frontend Web Application para su integración.
+1. En la consola de GCP, crear una instancia de **Compute Engine** con sistema operativo Ubuntu, **Docker** y **Docker Compose** instalados, y una dirección IP externa estática asignada. En la VM, definir el directorio `/opt/entreprenly` con un archivo `docker-compose.yml` que referencia la imagen publicada en Artifact Registry y las variables de entorno del perfil de producción.
+2. Crear un repositorio en **Artifact Registry** para alojar la imagen Docker del backend.
+3. Definir el **`Dockerfile`** multi-stage en el repositorio de Web Services: la primera etapa compila la aplicación con **Maven** sobre un JDK **Eclipse Temurin 26**; la segunda etapa ejecuta el `.jar` sobre un JRE **Temurin 26** ligero, con el perfil `prod` activo y exponiendo el puerto `8092`.
+4. Configurar **Workload Identity Federation** en GCP (un Workload Identity Pool y Provider para GitHub Actions) y una cuenta de servicio de despliegue con permisos sobre Artifact Registry y Compute Engine. En el repositorio, registrar las siguientes **GitHub Variables**: `GCP_PROJECT_ID`, `GCP_WIF_PROVIDER`, `GCP_DEPLOY_SA`, `GCP_REGION`, `GCP_ZONE`, `GCE_INSTANCE` y `AR_IMAGE`.
+5. En el proveedor de DNS del dominio, crear un registro `A` que apunte `daop-api.entreprenly.online` a la IP externa estática de la instancia.
+6. Configurar **Caddy** como proxy inverso en la VM, que obtiene y renueva automáticamente el certificado TLS de Let's Encrypt para `daop-api.entreprenly.online` y redirige el tráfico HTTPS al contenedor de Spring Boot en el puerto `8092`.
+7. Definir las variables de entorno del perfil `prod` requeridas por el contenedor: `DATABASE_URL`, `DATABASE_PORT`, `DATABASE_NAME`, `DATABASE_USER`, `DATABASE_PASSWORD` (apuntando a la base de datos MySQL en `db.entreprenly.online`), `JWT_SECRET`, `PORT` y `SPRING_PROFILES_ACTIVE=prod`.
+8. Crear el archivo `.github/workflows/deploy.yml` con el workflow de GitHub Actions. El workflow se ejecuta ante cada push en la rama `main` y realiza los siguientes pasos: checkout del repositorio, autenticación a GCP mediante WIF (`google-github-actions/auth@v2`), configuración de `gcloud`, construcción de la imagen (`docker build`) etiquetada con el SHA del commit y `latest`, publicación en Artifact Registry (`docker push`) y roll-out en la VM por SSH ejecutando `docker compose pull && docker compose up -d`, con reintentos para tolerar la propagación de llaves.
+9. Documentar los endpoints del API desplegado mediante **Swagger UI**, accesible en la ruta `https://daop-api.entreprenly.online/swagger-ui/index.html` (especificación OpenAPI en `/v3/api-docs`), y registrar la URL base del API en el entorno del Frontend Web Application para su integración.
 10. Validar el despliegue realizando una solicitud de prueba a un endpoint del API desde Swagger UI o desde Postman, confirmando que el servicio responde correctamente sobre HTTPS.
 
 ## 5.2. Landing Page, Services & Applications Implementation
@@ -1486,7 +1475,7 @@ A continuación se presenta el tablero del Sprint y el detalle de los Work-items
       <td>Desplegar el frontend en Firebase Hosting</td>
       <td>T-35</td>
       <td>Configurar el despliegue en Firebase Hosting</td>
-      <td>Configurar Firebase Hosting, crear el workflow de GitHub Actions para despliegue continuo y validar el despliegue en <code>https://entreprenly.web.app</code>.</td>
+      <td>Configurar Firebase Hosting, crear el workflow de GitHub Actions para despliegue continuo y validar el despliegue en <code>https://daop.entreprenly.online</code>.</td>
       <td>5</td>
       <td>Camargo Briceño, Joseph Julius</td>
       <td>Done</td>
@@ -1759,7 +1748,7 @@ Durante el Sprint 2, el equipo trabajó exclusivamente sobre el repositorio del 
 
 #### 5.2.2.5. Execution Evidence for Sprint Review
 
-Al término del Sprint 2, el equipo implementó y desplegó el Frontend Web Application de Entreprenly en Angular. La aplicación se encuentra disponible públicamente en Firebase Hosting en la URL `https://entreprenly.web.app`. Los Bounded Contexts implementados y sus funcionalidades clave son los siguientes:
+Al término del Sprint 2, el equipo implementó y desplegó el Frontend Web Application de Entreprenly en Angular. La aplicación se encuentra disponible públicamente en Firebase Hosting en la URL `https://daop.entreprenly.online`. Los Bounded Contexts implementados y sus funcionalidades clave son los siguientes:
 
 - **DashboardLayout:** Sidebar naranja responsive con logo de Entreprenly, íconos de navegación por BC y botón de logout. Funciona como shell de la aplicación con rutas lazy-loading anidadas.
 
@@ -2017,7 +2006,7 @@ Durante el Sprint 2, el equipo configuró y ejecutó el proceso de despliegue de
 
 ![firebase_p](./images/firebase_p.png "firebase_p")
 
-3. **Verificación del despliegue:** Se validó que la aplicación Angular se encuentra correctamente desplegada y accesible en `https://entreprenly.web.app`, con navegación entre BCs funcional sin errores 404 al refrescar el navegador.
+3. **Verificación del despliegue:** Se validó que la aplicación Angular se encuentra correctamente desplegada y accesible en `https://daop.entreprenly.online`, con navegación entre BCs funcional sin errores 404 al refrescar el navegador.
 
 ![app_firebase](./images/app_firebase.png "app_firebase")
 
@@ -2052,7 +2041,7 @@ Para este tercer Sprint, el equipo estableció como objetivo principal la implem
     <tr><td><strong>Location</strong></td><td>Reunión virtual vía Discord</td></tr>
     <tr><td><strong>Prepared By</strong></td><td>Camargo Briceño, Joseph Julius</td></tr>
     <tr><td><strong>Attendees (to planning meeting)</strong></td><td>Camargo Briceño, Joseph Julius / Chavez Carrasco, Lionel Abraham / Palma De Los Santos, Elynor Mikela / Peirano Brun, José Antonio / Flores Pinchi, José Fernando</td></tr>
-    <tr><td><strong>Sprint 2 Review Summary</strong></td><td>En el Sprint 2 se implementó y desplegó el Frontend Web Application en Angular sobre Firebase Hosting (<a href="https://entreprenly.web.app">entreprenly.web.app</a>), cubriendo los Bounded Contexts de Sales, Chatbot, Inventory, Subscription y Profile, junto con las vistas de Home y Help. La aplicación consumió una Fake RESTful API servida con JSON-Server.</td></tr>
+    <tr><td><strong>Sprint 2 Review Summary</strong></td><td>En el Sprint 2 se implementó y desplegó el Frontend Web Application en Angular sobre Firebase Hosting (<a href="https://daop.entreprenly.online">daop.entreprenly.online</a>), cubriendo los Bounded Contexts de Sales, Chatbot, Inventory, Subscription y Profile, junto con las vistas de Home y Help. La aplicación consumió una Fake RESTful API servida con JSON-Server.</td></tr>
     <tr><td><strong>Sprint 2 Retrospective Summary</strong></td><td>El equipo identificó que la Fake API con JSON-Server no provee persistencia real, autenticación ni reglas de negocio del lado del servidor. Para el Sprint 3 se acordó implementar el Backend real con Spring Boot bajo arquitectura DDD, asignando un Bounded Context por miembro, incorporar autenticación con JWT y persistencia con JPA por contexto, y automatizar el despliegue en Google Cloud con Docker y CI/CD.</td></tr>
     <tr><td colspan="2"><strong>Sprint Goal &amp; User Stories</strong></td></tr>
     <tr><td><strong>Sprint 3 Goal</strong></td><td>Nuestro enfoque está en implementar y desplegar la primera versión de los RESTful Web Services de Entreprenly con Spring Boot, reemplazando la Fake API por un Backend real con autenticación JWT, persistencia JPA por bounded context y documentación OpenAPI. Creemos que entrega una plataforma multi-tenant en la que cada comerciante gestiona de forma segura su inventario, ventas, suscripción y pedidos de WhatsApp con datos persistentes. Esto se confirmará cuando la API esté desplegada en Google Cloud, protegida con JWT, documentada en Swagger UI y respondiendo sobre HTTPS en su dominio público.</td></tr>
