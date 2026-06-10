@@ -2082,7 +2082,7 @@ En el Sprint 3, el equipo organizó el trabajo asignando un Bounded Context del 
 
 El objetivo principal de este Sprint fue implementar los RESTful Web Services de Entreprenly. El alcance abarcó los flujos de pedido del chatbot, comprendidos en las User Stories US-41 a US-52, junto con las Technical Stories del EPIC-13. Estas últimas cubren la API de pedidos y pagos en las historias US-54 y US-55, la autenticación con JWT en la US-91, la containerización y el pipeline de CI/CD en la US-92, y la persistencia JPA por bounded context en la US-93. Cada historia se descompuso en Engineering Tasks con una estimación individual de entre 4 y 8 horas, gestionadas en el tablero Kanban del Sprint a través de las columnas **To Do, In Process, To Review y Done**.
 
-**Board público del Sprint 3 (Trello):** [https://trello.com/b/XXXXXXXX/entreprenly-sprint-3](https://trello.com/b/XXXXXXXX/entreprenly-sprint-3) *(reemplazar con la URL pública del board antes de la entrega)*
+**Board público del Sprint 3 (Trello):** [https://trello.com/b/kcHoLNFO/entreprenly-sprint-3](https://trello.com/b/kcHoLNFO/entreprenly-sprint-3)
 
 A continuación se presenta el tablero del Sprint y el detalle de los Work-items asociados.
 
