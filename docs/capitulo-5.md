@@ -235,27 +235,25 @@ Las convenciones aplicadas son las siguientes:
 - Se utiliza **HTML5** como estándar de marcado, declarando siempre el `DOCTYPE` al inicio del documento: `<!DOCTYPE html>`.
 - Los nombres de los elementos y atributos se escriben en **minúsculas** (`<section>`, `<article>`, `class="hero-section"`).
 - Los atributos se encierran siempre entre **comillas dobles**: `<img src="logo.png" alt="Entreprenly logo">`.
-- Se incluyen los atributos `lang` en la etiqueta `<html>` para indicar el idioma de la página: `<html lang="en">`.
+- Se incluyen los atributos `lang` en la etiqueta `<html>` para indicar el idioma de la página: `<html lang="es">`.
 - Todas las imágenes incluyen el atributo `alt` con una descripción significativa, como parte del enfoque de accesibilidad (a11y) del proyecto.
 - Se utiliza **indentación de 2 espacios** para mantener la legibilidad del árbol de elementos.
 - Los elementos de bloque se escriben en líneas separadas; los elementos en línea pueden mantenerse en una misma línea si el resultado es conciso.
-- Se evita el uso de estilos en línea (`style=""`); todo el estilo visual se delega a las hojas de estilo CSS externas o a las clases de Angular Material.
+- Se evita el uso de estilos en línea (`style=""`); todo el estilo visual se delega a las clases utilitarias de **Tailwind CSS** y a la hoja de estilos generada.
 - Los comentarios se utilizan para delimitar secciones principales del documento: `<!-- Hero Section -->`.
 
 #### CSS
 
-Para el estilo visual del Landing Page de Entreprenly, el equipo adopta la **Google HTML/CSS Style Guide** como guía de referencia, complementada con las convenciones del sistema de diseño basado en **Material Design**.
+Para el estilo visual del Landing Page de Entreprenly, el equipo utiliza **Tailwind CSS v4** bajo un enfoque *utility-first*. La hoja de estilos final `styles.css` se genera a partir de `src/input.css` mediante la CLI de Tailwind (`tailwindcss --minify`), por lo que no se escribe CSS a mano salvo casos puntuales.
 
 Las convenciones aplicadas son las siguientes:
 
-- Los nombres de clases se escriben en **kebab-case**: `.hero-section`, `.cta-button`, `.nav-link`.
-- Se evita el uso de selectores de ID para estilos; se prefieren selectores de clase por su reutilizabilidad.
-- Las propiedades dentro de cada regla se ordenan de forma **alfabética** para facilitar la lectura y comparación entre reglas.
-- Se utiliza **indentación de 2 espacios**.
-- Se evita el uso de `!important`; en su lugar, se gestionan las especificidades de los selectores de forma explícita.
-- Las unidades `rem` y `em` se prefieren sobre `px` para valores de tipografía y espaciado, garantizando escalabilidad y accesibilidad.
-- Los colores se definen usando variables CSS (`--primary-color: #1A73E8;`) centralizadas en el bloque `:root` para mantener la consistencia con el Design System.
-- Cada archivo CSS tiene un alcance definido y no acumula estilos globales innecesarios.
+- El estilo se compone directamente en el marcado mediante **clases utilitarias** de Tailwind (`flex`, `px-4`, `text-center`, `md:grid-cols-3`), evitando hojas de estilo manuales extensas.
+- Las **variantes responsive** (`sm:`, `md:`, `lg:`) se utilizan para aplicar los principios de Responsive Web Design bajo un enfoque mobile-first.
+- Cuando se requiere una clase propia, su nombre se escribe en **kebab-case** y se evita el uso de selectores de ID para estilos.
+- Los **tokens de diseño** (colores, tipografías y espaciados) se centralizan en la configuración de Tailwind y en variables CSS dentro de `src/input.css`, manteniendo la consistencia con el Design System.
+- Las unidades relativas (`rem`, `em`) se prefieren sobre `px` para valores de tipografía y espaciado, garantizando escalabilidad y accesibilidad.
+- Se evita el uso de `!important`; las especificidades se gestionan mediante el orden natural de las utilidades de Tailwind.
 
 #### JavaScript
 
@@ -343,15 +341,15 @@ En esta sección se especifica la configuración de despliegue definida por el e
 
 #### Landing Page
 
-El Landing Page de Entreprenly está desarrollado con HTML5, CSS3 y JavaScript, y se despliega mediante **GitHub Pages**, aprovechando el soporte nativo de esta plataforma para sitios web estáticos. La automatización del proceso de despliegue se realiza a través de **GitHub Actions**, de modo que cada integración a la rama `main` desencadena automáticamente la publicación de la nueva versión. El sitio se encuentra disponible en el dominio personalizado **[entreprenly.online](https://entreprenly.online)**.
+El Landing Page de Entreprenly está desarrollado con HTML5, **Tailwind CSS** y JavaScript, y se despliega mediante **GitHub Pages**, aprovechando el soporte nativo de esta plataforma para sitios web estáticos. La automatización del proceso de despliegue se realiza a través de **GitHub Actions**, de modo que cada integración a la rama `main` desencadena automáticamente la publicación de la nueva versión. El sitio se encuentra disponible en el dominio personalizado **[entreprenly.online](https://entreprenly.online)**.
 
 Los pasos para configurar y ejecutar el despliegue son los siguientes:
 
 1. Asegurarse de que el repositorio del Landing Page (`Kauflink/landing-entreprenly`) esté público en GitHub.
-2. En la configuración del repositorio, ingresar a **Settings > Pages** y seleccionar la rama `main` y la carpeta raíz (`/`) como fuente de publicación.
+2. En la configuración del repositorio, ingresar a **Settings > Pages** y seleccionar **GitHub Actions** como fuente de publicación (Build and deployment > Source).
 3. Configurar el dominio personalizado ingresando `entreprenly.online` en el campo **Custom domain** y habilitando **Enforce HTTPS**.
 4. En el proveedor de DNS del dominio, crear los registros `A` que apunten a las IPs de los servidores de GitHub Pages, de acuerdo con la documentación oficial de GitHub.
-5. En el repositorio, crear el archivo `.github/workflows/deploy.yml` con el workflow de GitHub Actions encargado de ejecutar el despliegue automático al detectar un push sobre la rama `main`. El workflow realiza los pasos de checkout del repositorio y publicación en GitHub Pages usando la acción oficial `actions/deploy-pages`.
+5. En el repositorio, crear el archivo `.github/workflows/deploy.yml` con el workflow de GitHub Actions, que se ejecuta ante cada push sobre la rama `main`. El workflow realiza el checkout del repositorio, la configuración de **Node.js 20**, la instalación de dependencias (`npm install`), la compilación de estilos con Tailwind (`npm run build`), la subida del artefacto con `actions/upload-pages-artifact` y la publicación con la acción oficial `actions/deploy-pages`.
 6. Verificar que el archivo `CNAME` con el valor `entreprenly.online` esté presente en la raíz del repositorio para que GitHub Pages respete el dominio personalizado entre despliegues.
 7. Validar el despliegue accediendo a `https://entreprenly.online` y confirmando que la versión publicada corresponde con el último commit integrado en `main`.
 
@@ -942,7 +940,7 @@ Durante el Sprint 1, el equipo configuró y ejecutó el proceso de despliegue de
 
 <img src="images/entreprenly_cname.png" width="600">
 
-3. **Configuración del pipeline de CI/CD:** Se creó un workflow de GitHub Actions (`.github/workflows/`) que automatiza el proceso de build y despliegue. El workflow incluye los pasos de instalación de dependencias (`npm ci`), compilación de estilos con Tailwind CSS (`npm run build`) y despliegue automático a la rama `gh-pages` al fusionar cambios en `main`.
+3. **Configuración del pipeline de CI/CD:** Se creó un workflow de GitHub Actions (`.github/workflows/`) que automatiza el proceso de build y despliegue. El workflow incluye los pasos de instalación de dependencias (`npm install`), compilación de estilos con Tailwind CSS (`npm run build`) y publicación en GitHub Pages mediante las acciones `actions/upload-pages-artifact` y `actions/deploy-pages` al integrar cambios en `main`.
 
 <img src="images/workflows1.png" width="600">
 
