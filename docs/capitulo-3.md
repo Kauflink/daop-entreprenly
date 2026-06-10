@@ -994,9 +994,9 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
       <td><strong>Acceptance Criteria</strong></td>
       <td colspan="3">
       <strong>Scenario 1: Alerta de stock próximo a agotarse</strong><br>
-      Dado que uno o más lotes tienen stock por debajo del umbral definido, cuando el usuario accede al dashboard de lotes, entonces se muestra una alerta visible indicando los lotes próximos a agotarse.<br><br>
+      Dado que uno o más productos tienen stock total mayor a cero pero igual o menor a 5 unidades o kilogramos, cuando el usuario presiona el botón de campana de alertas en el dashboard de lotes, entonces el desplegable de alertas muestra una alerta de stock bajo indicando el número de lotes a punto de quedarse sin stock, junto con el producto y el lote afectados.<br><br>
       <strong>Scenario 2: Alerta de stock agotado</strong><br>
-      Dado que uno o más lotes están agotados, cuando el usuario accede al dashboard, entonces se muestra una alerta indicando los lotes agotados.
+      Dado que uno o más lotes tienen cantidad igual a cero o un producto no tiene stock en ninguno de sus lotes, cuando el usuario accede al dashboard de lotes, entonces el indicador "Sin Stock" muestra el número de casos agotados y el desplegable de alertas lista cada lote sin stock indicando el producto afectado.
       </td>
     </tr>
   </tbody>
@@ -1021,10 +1021,10 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
     <tr>
       <td><strong>Acceptance Criteria</strong></td>
       <td colspan="3">
-      <strong>Scenario 1: Alerta de estado mostrada</strong><br>
-      Dado que el lote tiene stock bajo, está agotado o próximo a vencer, cuando presiona "Ver Detalles", entonces se mostrarán los detalles del lote con alertas de estado.<br><br>
+      <strong>Scenario 1: Alertas de estado mostradas en el detalle</strong><br>
+      Dado que el producto consultado tiene lotes con stock bajo, agotados, vencidos o próximos a vencer, cuando el usuario presiona "Ver Detalles", entonces el sistema muestra sobre la tabla de lotes banners de alerta agrupados por tipo, con el conteo y el detalle correspondientes únicamente a ese producto, y las filas de los lotes vencidos se marcan con la etiqueta "Vencido" y la fecha de caducidad resaltada.<br><br>
       <strong>Scenario 2: Sin alertas si el estado es normal</strong><br>
-      Dado que el lote no tiene condiciones críticas, cuando presiona "Ver Detalles", entonces se muestran los detalles sin alertas.
+      Dado que los lotes del producto no presentan condiciones críticas, cuando el usuario presiona "Ver Detalles", entonces el sistema muestra la tabla de lotes sin banners de alerta ni etiquetas de estado.
       </td>
     </tr>
   </tbody>
@@ -1050,9 +1050,9 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
       <td><strong>Acceptance Criteria</strong></td>
       <td colspan="3">
       <strong>Scenario 1: Visualización de resumen de lotes</strong><br>
-      Dado que el usuario ingresa al módulo de lotes, cuando se carga la pantalla, entonces se muestra un resumen con indicadores clave sobre los estados de los lotes.<br><br>
+      Dado que el usuario ingresa al módulo de lotes, cuando se carga la pantalla, entonces se muestran los indicadores "Total de Lotes" (contando solo lotes asociados a productos existentes), "Lotes Vencidos" y "Sin Stock", las tarjetas por producto con su stock total y número de lotes registrados, y el botón de campana con el contador de alertas activas.<br><br>
       <strong>Scenario 2: Sin alertas si no hay condiciones críticas</strong><br>
-      Dado que no existen lotes vencidos ni próximos a vencer, cuando se carga el dashboard, entonces no se muestra el banner de alertas.
+      Dado que no existen lotes vencidos, agotados, con stock bajo ni próximos a vencer, cuando se carga el dashboard, entonces el contador de la campana no se muestra y, al abrir el desplegable de alertas, se indica el mensaje "No hay alertas pendientes.".
       </td>
     </tr>
   </tbody>
@@ -1078,9 +1078,11 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
       <td><strong>Acceptance Criteria</strong></td>
       <td colspan="3">
       <strong>Scenario 1: Alerta de lote próximo a vencer</strong><br>
-      Dado que uno o más lotes tienen fecha de caducidad dentro del rango próximo definido, cuando el usuario accede al dashboard de lotes, entonces se muestra una alerta indicando los lotes próximos a vencer.<br><br>
+      Dado que uno o más lotes tienen fecha de caducidad dentro de los próximos 5 días, cuando el usuario abre el desplegable de alertas del dashboard de lotes, entonces se muestra una alerta de lotes próximos a vencer indicando el número de lotes afectados, el producto, los días restantes y la fecha de vencimiento.<br><br>
       <strong>Scenario 2: Alerta de lote vencido</strong><br>
-      Dado que uno o más lotes tienen fecha de caducidad menor a la fecha actual, cuando el usuario accede al dashboard, entonces se muestra una alerta indicando los lotes vencidos.
+      Dado que uno o más lotes tienen fecha de caducidad menor a la fecha actual, cuando el usuario abre el desplegable de alertas, entonces se muestra una alerta de lotes vencidos con el número de lotes afectados, el producto y la fecha en que vencieron, listada con la mayor prioridad, y el indicador "Lotes Vencidos" del dashboard refleja el total.<br><br>
+      <strong>Scenario 3: Navegación desde la alerta al lote afectado</strong><br>
+      Dado que el usuario visualiza una alerta de caducidad en el desplegable, cuando la presiona, entonces el sistema navega a la vista de lotes del producto afectado para que pueda revisar o gestionar el lote correspondiente.
       </td>
     </tr>
   </tbody>
@@ -3281,7 +3283,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
     </tr>
   </tbody>
 </table>
-
 <table>
   <tbody>
     <tr>
