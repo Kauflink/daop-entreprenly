@@ -279,7 +279,7 @@ Las convenciones aplicadas son las siguientes:
 - Los nombres de **clases, interfaces y enumeraciones** se escriben en **PascalCase**: `UserProfile`, `AuthService`, `PaymentStatus`.
 - Los nombres de **variables, funciones y métodos** se escriben en **camelCase**: `isLoggedIn`, `fetchUserData()`.
 - Los nombres de **constantes globales** se escriben en **UPPER_SNAKE_CASE**: `MAX_RETRY_ATTEMPTS`.
-- Los nombres de **archivos** de componentes, servicios y módulos de Angular siguen la convención **kebab-case** con sufijo descriptivo: `user-profile.component.ts`, `auth.service.ts`, `app-routing.module.ts`.
+- Los nombres de **archivos** de Angular siguen la convención **kebab-case** con sufijo descriptivo según su rol: `product-item.component.ts`, `inventory-api.service.ts`, `sale.entity.ts`, `payment-method.enum.ts` y `app.routes.ts`.
 - Se declaran **tipos explícitos** para todos los parámetros de funciones y valores de retorno; se evita el uso de `any`.
 - Se utilizan **interfaces** para describir la forma de los objetos del dominio: `interface Entrepreneur { id: number; name: string; }`.
 - Se prefiere el uso de **Observables** de RxJS sobre Promises para el manejo de operaciones asíncronas, coherente con el modelo reactivo de Angular.
@@ -295,8 +295,8 @@ Las convenciones aplicadas son las siguientes:
 - Cada componente, servicio o módulo reside en **su propio archivo**, siguiendo el principio de una clase por archivo.
 - Los nombres de **componentes** siguen el patrón `[Feature]Component`: `DashboardComponent`, `ProjectCardComponent`.
 - Los nombres de **servicios** siguen el patrón `[Feature]Service`: `AuthService`, `ProjectService`.
-- Los **selectores** de los componentes se escriben en **kebab-case** con un prefijo único del proyecto (`ep-` por Entreprenly): `ep-project-card`, `ep-navbar`.
-- Los **módulos** de funcionalidad se organizan por bounded context o feature, evitando un único módulo monolítico.
+- Los **selectores** de los componentes se escriben en **kebab-case** con el prefijo único del proyecto (`app-`, configurado en `angular.json`): `app-conversation-list`, `app-message-bubble`, `app-qr-connection-card`.
+- La aplicación utiliza **componentes standalone** (sin `NgModule`); el enrutamiento se organiza por bounded context mediante archivos de rutas lazy-loaded (`*.routes.ts`) registrados en `app.routes.ts` y `app.config.ts`.
 - Los métodos del ciclo de vida de Angular (`ngOnInit`, `ngOnDestroy`) se implementan a través de sus interfaces correspondientes (`OnInit`, `OnDestroy`).
 
 #### Java y Spring Boot
@@ -308,7 +308,7 @@ Las convenciones aplicadas son las siguientes:
 - Los nombres de **clases** se escriben en **PascalCase**: `ProjectController`, `UserRepository`, `AuthenticationService`.
 - Los nombres de **métodos y variables** se escriben en **camelCase**: `findProjectById()`, `currentUser`.
 - Los nombres de **constantes** se escriben en **UPPER_SNAKE_CASE**: `DEFAULT_PAGE_SIZE`.
-- Los nombres de **paquetes** se escriben en **minúsculas** y se organizan por bounded context, siguiendo la estructura: `com.kauflink.entreprenly.[boundedcontext].[layer]`. Por ejemplo: `com.kauflink.entreprenly.projects.interfaces`, `com.kauflink.entreprenly.auth.domain`.
+- Los nombres de **paquetes** se escriben en **minúsculas** y se organizan por bounded context, siguiendo la estructura: `online.entreprenly.platform.[boundedcontext].[layer]`. Los bounded contexts implementados son `iam`, `profile`, `inventory`, `sales`, `subscription`, `chatbot` y `shared`. Por ejemplo: `online.entreprenly.platform.iam.interfaces.rest`, `online.entreprenly.platform.chatbot.domain.model.aggregates`.
 - La arquitectura interna de cada bounded context sigue el patrón de capas: `interfaces` (controllers), `application` (services, command handlers), `domain` (entities, value objects, repositories interfaces) e `infrastructure` (JPA repositories, external adapters).
 - Los **endpoints** de los controladores REST se nombran en **kebab-case** y en plural para recursos: `/api/v1/projects`, `/api/v1/users`.
 - Los **métodos HTTP** se emplean de acuerdo con su semántica RESTful: `GET` para consultas, `POST` para creación, `PUT` para actualización completa, `PATCH` para actualización parcial y `DELETE` para eliminación.
@@ -319,24 +319,22 @@ Las convenciones aplicadas son las siguientes:
 
 #### Gherkin (Acceptance Criteria)
 
-Para la redacción de los criterios de aceptación de las User Stories y los escenarios de prueba de aceptación de los RESTful Web Services, el equipo adopta las **Gherkin Conventions for Readable Specifications**.
+Para la redacción de los criterios de aceptación de las User Stories (detallados en el Capítulo III), el equipo adopta el estilo **Gherkin** en su variante en español (`Dado – Cuando – Entonces`). Las pruebas automatizadas del Backend se implementan con **JUnit** sobre los servicios y agregados de cada bounded context.
 
 Las convenciones aplicadas son las siguientes:
 
-- Cada escenario se redacta en inglés, en **tiempo presente y tercera persona**.
-- La estructura `Given – When – Then` se respeta estrictamente: `Given` define el contexto inicial, `When` describe la acción del usuario o del sistema y `Then` especifica el resultado esperado.
-- Se utiliza `And` para añadir condiciones adicionales dentro de un mismo bloque, evitando repetir la palabra clave principal.
+- Cada escenario se redacta en **español**, en **tiempo presente y tercera persona**.
+- La estructura `Dado – Cuando – Entonces` se respeta estrictamente: `Dado` define el contexto inicial, `Cuando` describe la acción del usuario o del sistema y `Entonces` especifica el resultado esperado.
+- Se utiliza `y` para añadir condiciones adicionales dentro de un mismo bloque, evitando repetir la palabra clave principal.
 - Los nombres de los escenarios son descriptivos y comunican el comportamiento esperado sin referirse a detalles de implementación.
 - Se evita la lógica condicional dentro de un mismo escenario; cada escenario cubre un único camino de ejecución (happy path o unhappy path).
 
-**Ejemplo de escenario para un endpoint de la API:**
+**Ejemplo de criterio de aceptación de una User Story:**
 
 ```gherkin
-Scenario: Developer retrieves an existing project successfully
-  Given a project with id 1 exists in the system
-  When the developer sends a GET request to "/api/v1/projects/1"
-  Then the response status code should be 200
-  And the response body should contain the project details
+Dado que el comerciante está en el formulario de productos en "/dashboard/inventory/products"
+Cuando ingresa nombre, descripción, precio por unidad, stock inicial, categoría y tipo "unitario" y presiona "Guardar"
+Entonces el producto se registra en el inventario y aparece en el listado con tipo "Unit Product"
 ```
 
 ### 5.1.4. Software Deployment Configuration
