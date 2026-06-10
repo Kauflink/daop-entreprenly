@@ -552,7 +552,7 @@ El objetivo principal de este Sprint fue implementar y desplegar la primera vers
 
 A continuación se presenta el tablero del Sprint y el detalle de los Work-items asociados.
  
-![sprint1](./images/sprint1.png "Tablero del Sprint 1 en Trello")
+<img src="images/sprint1.png" width="600">
  
 <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%;">
   <thead>
@@ -931,7 +931,7 @@ Al término del Sprint 1, el equipo logró implementar y desplegar satisfactoria
 - **Footer:** Información de contacto, términos y condiciones y enlaces relevantes.
 - **Controles de experiencia:** Selector de idioma (Español / Inglés) y switch de tema claro/oscuro, accesibles desde la barra de navegación.
 
-![landing_desplegado](./images/landing_desplegado.png "landing_desplegado")
+<img src="images/landing_desplegado.png" width="600">
  
 ---
  
@@ -947,23 +947,23 @@ Durante el Sprint 1, el equipo configuró y ejecutó el proceso de despliegue de
  
 1. **Creación del repositorio:** Se creó el repositorio público `landing-entreprenly` bajo la organización `Kauflink` en GitHub, aplicando GitFlow con las ramas `main` y `develop`.
 
-![creacion_repos](./images/creacion_repos.png "creacion_repos")
+<img src="images/creacion_repos.png" width="600">
 
 2. **Configuración del dominio personalizado:** Se añadió el archivo `CNAME` al repositorio con el dominio personalizado asignado al Landing Page.
 
-![cname](./images/cname.png "cname")
+<img src="images/cname.png" width="600">
 
-![entreprenly_cname](./images/entreprenly_cname.png "entreprenly_cname")
+<img src="images/entreprenly_cname.png" width="600">
 
 3. **Configuración del pipeline de CI/CD:** Se creó un workflow de GitHub Actions (`.github/workflows/`) que automatiza el proceso de build y despliegue. El workflow incluye los pasos de instalación de dependencias (`npm ci`), compilación de estilos con Tailwind CSS (`npm run build`) y despliegue automático a la rama `gh-pages` al fusionar cambios en `main`.
 
-![workflows1](./images/workflows1.png "workflows1")
+<img src="images/workflows1.png" width="600">
 
-![workflows2](./images/workflows2.png "workflows2")
+<img src="images/workflows2.png" width="600">
 
 4. **Verificación del despliegue:** Se comprobó que el Landing Page quedó correctamente publicado y accesible desde la URL de GitHub Pages con el dominio configurado.
 
-![landing_desplegado](./images/landing_desplegado.png "landing_desplegado")
+<img src="images/landing_desplegado.png" width="600">
  
 ---
  
@@ -973,11 +973,11 @@ Durante el Sprint 1, todos los miembros del equipo participaron activamente en l
  
 El equipo aplicó GitFlow como estrategia de control de versiones, trabajando en la rama `develop` y realizando la integración a `main` mediante Pull Requests revisados y aprobados por otros miembros. Se realizaron un total de 5 Pull Requests durante el Sprint.
  
-![commits1](./images/commits1.png "commits1")
+<img src="images/commits1.png" width="600">
 
-![commits2](./images/commits2.png "commits2")
+<img src="images/commits2.png" width="600">
 
-![commits3](./images/commits3.png "commits3")
+<img src="images/commits3.png" width="600">
 
 **URL del repositorio del Landing Page:** https://github.com/Kauflink/landing-entreprenly
 
@@ -1118,7 +1118,7 @@ El objetivo principal de este Sprint fue implementar la Frontend Web Application
 
 A continuación se presenta el tablero del Sprint y el detalle de los Work-items asociados.
 
-![sprint2](./images/sprint2.png "Tablero del Sprint 2 en Trello")
+<img src="images/sprint2.png" width="600">
 
 <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%;">
   <thead>
@@ -1777,15 +1777,15 @@ Al término del Sprint 2, el equipo implementó y desplegó el Frontend Web Appl
 
 - **i18n:** Soporte bilingüe ES/EN en todos los BCs con traducción dinámica del título de la pestaña del navegador.
 
-![home_p](./images/home_p.png "home_p")
+<img src="images/home_p.png" width="600">
 
-![sales_p](./images/sales_p.png "sales_p")
+<img src="images/sales_p.png" width="600">
 
-![chatbot_p](./images/chatbot_p.png "chatbot_p")
+<img src="images/chatbot_p.png" width="600">
 
-![profile_p](./images/profile_p.png "profile_p")
+<img src="images/profile_p.png" width="600">
 
-![subscription_p](./images/subscription_p.png "subscription_p")
+<img src="images/subscription_p.png" width="600">
 
 ---
 
@@ -1993,11 +1993,11 @@ Durante el Sprint 2, el Backend (RESTful Web Services con Spring Boot) aún no h
   </tbody>
 </table>
 
-![json-server](./images/json-server.png "json-server")
+<img src="images/json-server.png" width="600">
 
-![postman](./images/postman.png "postman")
+<img src="images/postman.png" width="600">
 
-![postman2](./images/postman2.png "postman2")
+<img src="images/postman2.png" width="600">
 
 **URL del repositorio del Frontend Web Application:** https://github.com/Kauflink/daop-entreprenly-frontend
 
@@ -2011,15 +2011,15 @@ Durante el Sprint 2, el equipo configuró y ejecutó el proceso de despliegue de
 
 1. **Creación del repositorio del Frontend:** Se creó el repositorio público `daop-entreprenly-frontend` bajo la organización `Kauflink` en GitHub, aplicando GitFlow con ramas `main`, `develop` y ramas `feature/` por Bounded Context.
 
-![repo_frontend](./images/repo_frontend.png "repo_frontend")
+<img src="images/repo_frontend.png" width="600">
 
 2. **Configuración de Firebase Hosting:** Se creó un proyecto en Firebase Console, se inicializó Firebase Hosting en el repositorio del frontend con `firebase init hosting`, configurando `dist/entreprenly/browser` como directorio público y habilitando la reescritura de rutas al `index.html` para el SPA routing de Angular.
 
-![firebase_p](./images/firebase_p.png "firebase_p")
+<img src="images/firebase_p.png" width="600">
 
 3. **Verificación del despliegue:** Se validó que la aplicación Angular se encuentra correctamente desplegada y accesible en `https://entreprenly.web.app`, con navegación entre BCs funcional sin errores 404 al refrescar el navegador.
 
-![app_firebase](./images/app_firebase.png "app_firebase")
+<img src="images/app_firebase.png" width="600">
 
 ---
 
@@ -2029,11 +2029,11 @@ Durante el Sprint 2, los cinco miembros del equipo participaron activamente en l
 
 El equipo aplicó GitFlow como estrategia de control de versiones, trabajando en ramas `feature/` por Bounded Context (e.g., `feature/sales`, `feature/chatbot`, `feature/profile-configuration`, `feature/subscription`, `feature/inventory`) y realizando la integración a `develop` y `main` mediante Pull Requests. Se realizaron un total de **53 Pull Requests** durante el Sprint. La distribución de commits por miembro del equipo fue la siguiente: Camargo Briceño (87 commits), Palma De Los Santos (58 commits), Flores Pinchi (51 commits), Chavez Carrasco (49 commits) y Peirano Brun (5 commits).
 
-![contributors_p2](./images/contributors_p2.png "contributors_p2")
+<img src="images/contributors_p2.png" width="600">
 
-![pull_p2](./images/pull_p2.png "pull_p2")
+<img src="images/pull_p2.png" width="600">
 
-![network_g](./images/network_g.png "network_g")
+<img src="images/network_g.png" width="600">
 
 **URL del repositorio del Frontend Web Application:** https://github.com/Kauflink/daop-entreprenly-frontend
 
@@ -3279,282 +3279,394 @@ A continuación se registran las entrevistas de validación realizadas por segme
 
 ## 5.4. Evaluaciones según heurísticas
 
-Esta sección presenta la plantilla de evaluación heurística que será utilizada para analizar la calidad de uso de Entreprenly durante la etapa de validación. La evaluación se organizará en tres grupos: heurísticas de usabilidad, arquitectura de información e inclusive design. Cada criterio deberá completarse posteriormente con un puntaje del 1 al 5, evidencia observada durante las pruebas y oportunidades de mejora identificadas.
+Esta sección presenta la evaluación heurística aplicada a **Entreprenly** durante la etapa de validación. La evaluación se organiza en tres grupos: heurísticas de usabilidad, arquitectura de información e inclusive design. Cada criterio incluye un puntaje del 1 al 5, la evidencia observada (referenciada por figura) y las oportunidades de mejora identificadas.
 
-> **Nota:** Los campos entre corchetes `[ ]` son marcadores de contenido y deben reemplazarse con los hallazgos reales obtenidos en las sesiones de evaluación.
+### Catálogo de figuras
+
+| Fig. | Pantalla | Archivo |
+|------|----------|---------|
+| Fig. 1 | Panel de Inicio (Dashboard) | `Fig-01-panel-de-inicio.jpeg` |
+| Fig. 2 | Catálogo de Productos | `Fig-02-catalogo-de-productos.jpeg` |
+| Fig. 3 | Modal "Editar Producto" | `Fig-03-modal-editar-producto.jpeg` |
+| Fig. 4 | Modal "Agregar Nuevo Producto" | `Fig-04-modal-agregar-producto.jpeg` |
+| Fig. 5 | Lotes de Inventario (vista general) | `Fig-05-lotes-de-inventario.jpeg` |
+| Fig. 6 | Panel de Alertas de Lotes | `Fig-06-panel-alertas-de-lotes.jpeg` |
+| Fig. 7 | Modal "Agregar Nuevo Lote" | `Fig-07-modal-agregar-lote.jpeg` |
+| Fig. 8 | Detalle de Lote (lote vencido) | `Fig-08-detalle-de-lote-vencido.jpeg` |
+| Fig. 9 | Ventas – "Producto no encontrado" | `Fig-09-ventas-producto-no-encontrado.jpeg` |
+| Fig. 10 | Suscripción – Planes Free y Control | `Fig-10-suscripcion-planes.jpeg` |
+| Fig. 11 | Suscripción – Límites, facturación e historial | `Fig-11-suscripcion-limites-facturacion-historial.jpeg` |
+| Fig. 12 | Modal "Agregar método de pago" | `Fig-12-modal-agregar-metodo-de-pago.jpeg` |
+| Fig. 13 | Modal "Completar datos de facturación" | `Fig-13-modal-datos-de-facturacion.jpeg` |
+| Fig. 14 | Modal "Historial de suscripción" | `Fig-14-modal-historial-de-suscripcion.jpeg` |
+| Fig. 15 | Ventas – Registrar cantidad (teclado numérico) | `Fig-15-ventas-registrar-cantidad.jpeg` |
+| Fig. 16 | Centro de Ayuda | `Fig-16-centro-de-ayuda.jpeg` |
+| Fig. 17 | Formulario "Reportar un problema" | `Fig-17-reportar-un-problema.jpeg` |
+| Fig. 18 | Artículo de ayuda "¿Cómo validar un pago?" | `Fig-18-articulo-validar-un-pago.jpeg` |
+| Fig. 19 | Perfil y configuración de cuenta | `Fig-19-perfil-configuracion.jpeg` |
+
+---
 
 ### 5.4.1. Heurísticas de usabilidad
 
-En esta subsección se evaluará la experiencia de uso de Entreprenly tomando como referencia las heurísticas de Nielsen. El objetivo es identificar si la plataforma comunica correctamente el estado del sistema, reduce errores, mantiene consistencia visual y permite que el usuario complete sus tareas principales sin fricción.
+En esta subsección se evalúa la experiencia de uso de Entreprenly tomando como referencia las heurísticas de Nielsen.
 
-**Visibilidad del estado del sistema - Puntaje: [ ]/5**
+#### Visibilidad del estado del sistema — Puntaje: 5/5
 
-[Describir si Entreprenly comunica oportunamente el resultado de las acciones del usuario. Considerar mensajes de confirmación, alertas, estados de carga, cambios visuales en botones, validaciones en formularios, confirmaciones de registro, inicio de sesión, suscripción, inventario, ventas, pedidos o chatbot.]
+Entreprenly comunica oportunamente el estado del sistema. El Panel de Inicio muestra en tiempo real el resumen del día (ventas, ingresos, pedidos y alertas), el estado del chatbot ("Activo") y el estado del inventario con etiquetas como "Vencido" y "Stock bajo". El panel de alertas de lotes notifica vencimientos y faltantes, y la vista de Suscripción refleja el plan activo y el consumo de límites mediante barras de progreso.
 
-**Evidencia observada:** [Completar con pantallas, módulos o flujos donde se observó esta heurística.]
+<img src="images/Fig-01-panel-de-inicio.jpeg" width="600">
 
-**Mejora sugerida:** [Completar con una recomendación concreta si aplica.]
+<img src="images/Fig-06-panel-alertas-de-lotes.jpeg" width="600">
 
----
+**Evidencia observada:** Fig. 1 (resumen y alertas del dashboard), Fig. 6 (notificaciones de lotes), Fig. 11 (uso del plan y estado de facturación).
 
-**Relación entre el sistema y el mundo real - Puntaje: [ ]/5**
-
-[Describir si el lenguaje, los conceptos y las acciones de la interfaz son comprensibles para comerciantes y clientes finales. Considerar términos como inventario, lote, stock, caja diaria, pedido, suscripción, chatbot, método de pago y datos fiscales.]
-
-**Evidencia observada:** [Completar con ejemplos de textos, labels, botones o secciones.]
-
-**Mejora sugerida:** [Completar con una recomendación concreta si aplica.]
+**Mejora sugerida:** Añadir un *toast* de confirmación visible tras guardar producto/lote, ya que el modal se cierra sin un mensaje persistente de éxito.
 
 ---
 
-**Libertad y control por parte del usuario - Puntaje: [ ]/5**
+#### Relación entre el sistema y el mundo real — Puntaje: 5/5
 
-[Describir si el usuario puede cancelar, volver, editar, cerrar modales, corregir información o mantener su plan sin quedar atrapado en un flujo. Considerar login, registro, recuperación de contraseña, suscripción, perfil, inventario y pedidos.]
+El lenguaje es cercano al comerciante peruano: "Lotes", "Stock", "Caja diaria", "Boleta", "Yape/Plin", "RUC" y "Razón social". En las vistas de Lotes y de Datos de facturación se emplean términos fiscales y de inventario propios del rubro.
 
-**Evidencia observada:** [Completar con flujos donde el usuario conserva control.]
+<img src="images/Fig-05-lotes-de-inventario.jpeg" width="600">
 
-**Mejora sugerida:** [Completar con una recomendación concreta si aplica.]
+<img src="images/Fig-13-modal-datos-de-facturacion.jpeg" width="600">
 
----
+**Evidencia observada:** Fig. 5 (lotes/unidades), Fig. 8 (fecha de vencimiento), Fig. 13 (RUC, razón social, dirección fiscal), Fig. 9 ("Tarjeta – Yape/Plin").
 
-**Consistencia y estándares - Puntaje: [ ]/5**
-
-[Describir si la interfaz mantiene patrones visuales y funcionales consistentes entre la landing page, login, registro, dashboard y módulos internos. Considerar colores, botones, formularios, tarjetas, tablas, modales, navegación y nomenclatura.]
-
-**Evidencia observada:** [Completar con ejemplos de consistencia o inconsistencias detectadas.]
-
-**Mejora sugerida:** [Completar con una recomendación concreta si aplica.]
+**Mejora sugerida:** Incluir ayuda contextual (tooltip) en "Peso (g)" para productos a granel, diferenciándolo de "Unidad".
 
 ---
 
-**Prevención de errores - Puntaje: [ ]/5**
+#### Libertad y control por parte del usuario — Puntaje: 5/5
 
-[Describir si el sistema ayuda a evitar errores antes de que ocurran. Considerar campos obligatorios, validación de formularios, confirmaciones antes de acciones críticas, límites de plan, selección de método de pago, datos fiscales, stock disponible y acciones sobre suscripción.]
+Todos los modales tienen botón de cierre (×) y opción Cancelar; el detalle de lote ofrece "Volver"; el Perfil permite editar datos, cambiar contraseña, idioma, tema y notificaciones sin quedar atrapado. En Ventas existe "Cancelar Venta".
 
-**Evidencia observada:** [Completar con ejemplos de prevención de errores.]
+<img src="images/Fig-03-modal-editar-producto.jpeg" width="600">
 
-**Mejora sugerida:** [Completar con una recomendación concreta si aplica.]
+<img src="images/Fig-19-perfil-configuracion.jpeg" width="600">
 
----
+**Evidencia observada:** Fig. 3 y Fig. 4 (× y Cancelar en modales), Fig. 8 (botón Volver), Fig. 13 (Cancelar), Fig. 19 (edición libre de perfil).
 
-**Reconocer antes que recordar - Puntaje: [ ]/5**
-
-[Describir si la interfaz permite que el usuario identifique fácilmente qué debe hacer sin memorizar rutas o pasos. Considerar íconos, títulos, etiquetas de sección, sidebar, tarjetas resumen, botones visibles y ayudas contextuales.]
-
-**Evidencia observada:** [Completar con elementos que facilitan el reconocimiento.]
-
-**Mejora sugerida:** [Completar con una recomendación concreta si aplica.]
+**Mejora sugerida:** Agregar confirmación "¿Descartar cambios?" al cerrar un modal con campos ya editados, para evitar pérdidas accidentales.
 
 ---
 
-**Flexibilidad y eficiencia en el uso - Puntaje: [ ]/5**
+#### Consistencia y estándares — Puntaje: 5/5
 
-[Describir si Entreprenly permite que usuarios nuevos y recurrentes completen tareas de forma eficiente. Considerar accesos rápidos, navegación lateral, búsquedas, filtros, acciones principales, descarga de historial, gestión de productos, lotes, ventas, caja y suscripción.]
+Se mantiene un patrón visual uniforme: sidebar naranja fija, tipografía estable, botones primarios naranjas, y tarjetas y tablas con el mismo estilo en Productos, Lotes, Ventas, Suscripción y Ayuda. La nomenclatura de navegación es consistente en todas las pantallas.
 
-**Evidencia observada:** [Completar con tareas o flujos evaluados.]
+<img src="images/Fig-02-catalogo-de-productos.jpeg" width="600">
 
-**Mejora sugerida:** [Completar con una recomendación concreta si aplica.]
+<img src="images/Fig-10-suscripcion-planes.jpeg" width="600">
 
----
+**Evidencia observada:** Fig. 1, Fig. 2, Fig. 5, Fig. 10 y Fig. 16 comparten layout, colores y jerarquía de botones.
 
-**Diseño estético y minimalista - Puntaje: [ ]/5**
-
-[Describir si la interfaz mantiene claridad visual, jerarquía adecuada y bajo ruido visual. Considerar la landing page, formularios de acceso, cards de planes, tablas comparativas, módulos del dashboard, perfil y suscripción.]
-
-**Evidencia observada:** [Completar con pantallas evaluadas.]
-
-**Mejora sugerida:** [Completar con una recomendación concreta si aplica.]
+**Mejora sugerida:** Unificar el estilo del botón "Volver" (Fig. 8, negro) con el resto de botones secundarios (blancos con borde).
 
 ---
 
-**Ayuda a los usuarios a reconocer, diagnosticar y recuperarse de los errores - Puntaje: [ ]/5**
+#### Prevención de errores — Puntaje: 4/5
 
-[Describir si los mensajes de error explican qué ocurrió y cómo solucionarlo. Considerar corrección de correo, recuperación de contraseña, activación de cuenta, validación de pago, formularios incompletos, límites del plan Free y errores de navegación.]
+Los formularios usan campos guía y valores por defecto. En Agregar Producto el botón Guardar permanece atenuado hasta completar lo necesario; en Agregar Lote se solicitan fecha de ingreso y vencimiento; en Datos de facturación y Método de pago se marcan formatos esperados (tarjeta, CVV, RUC).
 
-**Evidencia observada:** [Completar con mensajes o estados de error observados.]
+<img src="images/Fig-04-modal-agregar-producto.jpeg" width="600">
 
-**Mejora sugerida:** [Completar con una recomendación concreta si aplica.]
+<img src="images/Fig-07-modal-agregar-lote.jpeg" width="600">
+
+**Evidencia observada:** Fig. 4 (Guardar atenuado), Fig. 7 (fechas obligatorias), Fig. 12 y Fig. 13 (formatos guía).
+
+**Mejora sugerida:** Validar en línea que la *Fecha de Vencimiento* sea posterior a la *Fecha de Ingreso* y advertir antes de registrar un lote ya vencido.
 
 ---
 
-**Ayuda y documentación - Puntaje: [ ]/5**
+#### Reconocer antes que recordar — Puntaje: 5/5
 
-[Describir si el usuario cuenta con soporte, preguntas frecuentes, centro de ayuda, artículos, reportes de problema o información suficiente para resolver dudas sin asistencia directa.]
+El dashboard ofrece "Accesos rápidos" con íconos y una sidebar siempre visible con etiquetas de texto. El usuario reconoce los módulos sin memorizar rutas; las tarjetas resumen muestran lo relevante de un vistazo.
 
-**Evidencia observada:** [Completar con secciones, artículos o flujos de soporte evaluados.]
+<img src="images/Fig-01-panel-de-inicio.jpeg" width="600">
 
-**Mejora sugerida:** [Completar con una recomendación concreta si aplica.]
+**Evidencia observada:** Fig. 1 (accesos rápidos e íconos), sidebar persistente en todas las figuras, Fig. 16 (categorías con íconos).
+
+**Mejora sugerida:** Resaltar de forma más marcada el ítem activo del menú para reforzar la ubicación del usuario.
+
+---
+
+#### Flexibilidad y eficiencia en el uso — Puntaje: 4/5
+
+Existen atajos (accesos rápidos del dashboard), buscador de lotes, descarga de historial, teclado numérico para registrar cantidad en ventas y generación automática de código QR, lo que agiliza tanto al usuario nuevo como al recurrente.
+
+<img src="images/Fig-15-ventas-registrar-cantidad.jpeg" width="600">
+
+<img src="images/Fig-14-modal-historial-de-suscripcion.jpeg" width="600">
+
+**Evidencia observada:** Fig. 1 (accesos rápidos), Fig. 14 (Descargar historial), Fig. 15 (teclado numérico), Fig. 2 (QR por producto).
+
+**Mejora sugerida:** Incorporar búsqueda/filtros en el catálogo de Productos y atajos de teclado en el módulo de Ventas para usuarios avanzados.
+
+---
+
+#### Diseño estético y minimalista — Puntaje: 5/5
+
+La interfaz mantiene jerarquía clara y bajo ruido visual: uso consistente del naranja como color de acción, espacios en blanco amplios y tarjetas bien delimitadas en Suscripción y en el dashboard.
+
+<img src="images/Fig-10-suscripcion-planes.jpeg" width="600">
+
+**Evidencia observada:** Fig. 1, Fig. 10 (cards de planes), Fig. 16 (centro de ayuda ordenado).
+
+**Mejora sugerida:** En el dashboard, equilibrar la densidad de la zona inferior (estado de inventario) para evitar acumulación de tarjetas pequeñas.
+
+---
+
+#### Ayuda a los usuarios a reconocer, diagnosticar y recuperarse de los errores — Puntaje: 4/5
+
+El sistema señala errores con color y texto: en Ventas muestra "⊘ Producto no encontrado"; en Lotes marca el lote "Vencido" en rojo con la fecha. Los estados de error son reconocibles.
+
+<img src="images/Fig-09-ventas-producto-no-encontrado.jpeg" width="600">
+
+<img src="images/Fig-08-detalle-de-lote-vencido.jpeg" width="600">
+
+**Evidencia observada:** Fig. 9 (producto no encontrado), Fig. 8 (lote vencido), Fig. 11 (estados "pendiente de completar").
+
+**Mejora sugerida:** Que el mensaje "Producto no encontrado" sugiera la acción siguiente (p. ej. "Verifica el nombre o créalo en Productos"), explicando cómo recuperarse y no solo qué ocurrió.
+
+---
+
+#### Ayuda y documentación — Puntaje: 5/5
+
+Cuenta con un Centro de Ayuda con artículos frecuentes, categorías, buscador y datos de soporte (correo, WhatsApp, horario); artículos paso a paso; y un formulario para reportar problemas con tiempos de respuesta.
+
+<img src="images/Fig-16-centro-de-ayuda.jpeg" width="600">
+
+<img src="images/Fig-17-reportar-un-problema.jpeg" width="600">
+
+<img src="images/Fig-18-articulo-validar-un-pago.jpeg" width="600">
+
+**Evidencia observada:** Fig. 16 (artículos y soporte), Fig. 17 (reporte de problema), Fig. 18 (guía "¿Cómo validar un pago?").
+
+**Mejora sugerida:** Enlazar ayuda contextual ("?") desde cada módulo directamente al artículo correspondiente del centro de ayuda.
+
+---
 
 ### 5.4.2. Arquitectura de información
 
-En esta subsección se evaluará si la organización de la información de Entreprenly permite que el usuario encuentre, comprenda y utilice el contenido de forma clara. La evaluación se enfocará en la estructura de navegación, jerarquía visual, ubicación de acciones clave y coherencia entre secciones.
+En esta subsección se evalúa si la organización de la información permite encontrar, comprender y utilizar el contenido de forma clara.
 
-**Is it findable? - Puntaje: [ ]/5**
+#### Is it findable? — Puntaje: 5/5
 
-[Describir si los usuarios pueden encontrar rápidamente las funciones principales: inicio de sesión, registro, planes, FAQ, inventario, ventas, lotes, caja diaria, suscripción, perfil, soporte y chatbot.]
+Las funciones principales se ubican en la sidebar fija y en los accesos rápidos del dashboard; el Centro de Ayuda agrupa soporte y FAQ por categorías.
 
-**Evidencia observada:** [Completar con rutas de navegación o pantallas.]
+<img src="images/Fig-01-panel-de-inicio.jpeg" width="600">
 
-**Mejora sugerida:** [Completar con una recomendación concreta si aplica.]
+**Evidencia observada:** Fig. 1, Fig. 16, navegación lateral presente en todas las figuras.
 
----
-
-**Is it accessible? - Puntaje: [ ]/5**
-
-[Describir si el contenido puede ser usado en distintos tamaños de pantalla y por usuarios con diferentes necesidades. Considerar contraste, tamaño de texto, espaciado, foco visual, labels y diseño responsivo.]
-
-**Evidencia observada:** [Completar con observaciones de desktop, tablet o móvil.]
-
-**Mejora sugerida:** [Completar con una recomendación concreta si aplica.]
+**Mejora sugerida:** Añadir un buscador global en el header del dashboard.
 
 ---
 
-**Is it clear? - Puntaje: [ ]/5**
+#### Is it accessible? — Puntaje: 4/5
 
-[Describir si los textos, títulos, botones y agrupaciones de contenido comunican claramente su propósito. Considerar la claridad de los módulos, formularios, modales y estados del sistema.]
+Buen contraste (texto oscuro sobre blanco, acción naranja), etiquetas visibles y opción de tema Claro/Oscuro e idioma/zona horaria configurables.
 
-**Evidencia observada:** [Completar con ejemplos de claridad o confusión.]
+<img src="images/Fig-19-perfil-configuracion.jpeg" width="600">
 
-**Mejora sugerida:** [Completar con una recomendación concreta si aplica.]
+**Evidencia observada:** Fig. 19 (preferencias de tema/idioma), formularios con labels (Fig. 4, Fig. 13).
 
----
-
-**Is it communicative? - Puntaje: [ ]/5**
-
-[Describir si la interfaz comunica información relevante en el momento adecuado. Considerar estados de plan, stock, pagos, caja diaria, pedidos, confirmaciones, alertas y actividad de suscripción.]
-
-**Evidencia observada:** [Completar con mensajes o indicadores evaluados.]
-
-**Mejora sugerida:** [Completar con una recomendación concreta si aplica.]
+**Mejora sugerida:** Validar el contraste del texto blanco sobre naranja (banner del dashboard) y confirmar el comportamiento responsivo en móvil/tablet.
 
 ---
 
-**Is it usable? - Puntaje: [ ]/5**
+#### Is it clear? — Puntaje: 5/5
 
-[Describir si los usuarios pueden completar las tareas principales sin asistencia externa. Considerar registro, verificación de email, login, recuperación de contraseña, selección de plan, agregar método de pago, completar datos fiscales, descargar historial, mantener plan, gestionar inventario y revisar pedidos.]
+Títulos y subtítulos describen cada sección ("Catálogo de productos disponibles", "Registra y procesa las ventas del día"); los modales incluyen título y descripción.
 
-**Evidencia observada:** [Completar con tareas realizadas durante validación.]
+<img src="images/Fig-05-lotes-de-inventario.jpeg" width="600">
 
-**Mejora sugerida:** [Completar con una recomendación concreta si aplica.]
+**Evidencia observada:** Fig. 2, Fig. 5, Fig. 8 (encabezados descriptivos).
 
----
-
-**Is it credible? - Puntaje: [ ]/5**
-
-[Describir si Entreprenly genera confianza mediante información clara, diseño profesional, datos consistentes, precios transparentes, mensajes de seguridad, identidad visual y coherencia en la propuesta de valor.]
-
-**Evidencia observada:** [Completar con elementos que refuerzan o reducen credibilidad.]
-
-**Mejora sugerida:** [Completar con una recomendación concreta si aplica.]
+**Mejora sugerida:** Acompañar las barras de "Límites disponibles" con una leyenda del significado al alcanzar el tope.
 
 ---
 
-**Is it controllable? - Puntaje: [ ]/5**
+#### Is it communicative? — Puntaje: 5/5
 
-[Describir si el usuario puede controlar su experiencia: cambiar de sección, cancelar acciones, mantener el plan actual, editar perfil, corregir información, cerrar popups y volver a estados previos.]
+La interfaz informa en el momento adecuado: estado del plan, stock, alertas de lotes y actividad de suscripción.
 
-**Evidencia observada:** [Completar con flujos evaluados.]
+<img src="images/Fig-11-suscripcion-limites-facturacion-historial.jpeg" width="600">
 
-**Mejora sugerida:** [Completar con una recomendación concreta si aplica.]
+**Evidencia observada:** Fig. 1 (resumen), Fig. 6 (alertas), Fig. 11 (historial/estado de facturación).
 
----
-
-**Is it valuable? - Puntaje: [ ]/5**
-
-[Describir si la plataforma aporta valor real a comerciantes y clientes finales. Considerar control de stock, reducción de errores, conciliación de caja, pedidos por WhatsApp, gestión de suscripción, soporte y claridad operativa.]
-
-**Evidencia observada:** [Completar con comentarios de usuarios o hallazgos.]
-
-**Mejora sugerida:** [Completar con una recomendación concreta si aplica.]
+**Mejora sugerida:** Mostrar contadores de notificaciones también en la sidebar (módulos Lotes/Pedidos).
 
 ---
 
-**Is it learnable? - Puntaje: [ ]/5**
+#### Is it usable? — Puntaje: 4/5
 
-[Describir si un usuario nuevo puede entender rápidamente cómo usar la plataforma. Considerar onboarding implícito, labels claros, jerarquía de botones, navegación y patrones repetidos.]
+Las tareas principales se completan sin asistencia: alta de productos y lotes, registro de ventas, gestión de suscripción, método de pago, datos fiscales y descarga de historial.
 
-**Evidencia observada:** [Completar con observaciones de primeras tareas.]
+<img src="images/Fig-12-modal-agregar-metodo-de-pago.jpeg" width="600">
 
-**Mejora sugerida:** [Completar con una recomendación concreta si aplica.]
+**Evidencia observada:** Fig. 4, Fig. 7, Fig. 12, Fig. 13, Fig. 14, Fig. 15.
+
+**Mejora sugerida:** Guiar el primer registro con un mini-onboarding; los módulos vacíos ya muestran estados como "Aún no hay pedidos".
 
 ---
 
-**Is it delightful? - Puntaje: [ ]/5**
+#### Is it credible? — Puntaje: 5/5
 
-[Describir si la experiencia resulta agradable, fluida y profesional sin añadir ruido visual. Considerar microinteracciones, claridad estética, sensación de control, confianza y satisfacción al completar tareas.]
+Transmite confianza con precios transparentes, identidad visual coherente, datos de soporte reales y una propuesta de valor clara.
 
-**Evidencia observada:** [Completar con comentarios o reacciones de usuarios.]
+<img src="images/Fig-10-suscripcion-planes.jpeg" width="600">
 
-**Mejora sugerida:** [Completar con una recomendación concreta si aplica.]
+**Evidencia observada:** Fig. 10 (planes y precios), Fig. 16 (soporte con correo/WhatsApp/horario).
+
+**Mejora sugerida:** Incluir un sello/nota de seguridad de pago en el modal de tarjeta (Fig. 12).
+
+---
+
+#### Is it controllable? — Puntaje: 5/5
+
+El usuario cambia de sección, cancela acciones, mantiene su plan, edita su perfil y vuelve a estados previos (botón Volver, ×, Cancelar).
+
+<img src="images/Fig-08-detalle-de-lote-vencido.jpeg" width="600">
+
+**Evidencia observada:** Fig. 8 (Volver), Fig. 13 (Cancelar), Fig. 19 (control total del perfil).
+
+**Mejora sugerida:** Confirmar antes de cerrar modales con cambios sin guardar.
+
+---
+
+#### Is it valuable? — Puntaje: 5/5
+
+Aporta valor real: control de stock y vencimientos, conciliación de caja por método de pago, pedidos por WhatsApp vía chatbot y gestión de suscripción.
+
+<img src="images/Fig-01-panel-de-inicio.jpeg" width="600">
+
+**Evidencia observada:** Fig. 1 (caja por método de pago), Fig. 6 (vencimientos), Fig. 10 (valor del plan Control).
+
+**Mejora sugerida:** Resaltar en el dashboard el beneficio acumulado (p. ej. mermas evitadas por alertas de vencimiento).
+
+---
+
+#### Is it learnable? — Puntaje: 5/5
+
+Patrones repetidos, labels claros y guías paso a paso facilitan el aprendizaje.
+
+<img src="images/Fig-18-articulo-validar-un-pago.jpeg" width="600">
+
+**Evidencia observada:** Fig. 4 (formulario autoexplicativo), Fig. 18 (artículo paso a paso).
+
+**Mejora sugerida:** Tour interactivo opcional en el primer ingreso.
+
+---
+
+#### Is it delightful? — Puntaje: 4/5
+
+La experiencia es fluida, limpia y profesional, con estados claros y sensación de control.
+
+<img src="images/Fig-10-suscripcion-planes.jpeg" width="600">
+
+**Evidencia observada:** Fig. 1, Fig. 10 (estética cuidada).
+
+**Mejora sugerida:** Sumar microinteracciones (animación al guardar, checkmark al finalizar una venta) para reforzar la satisfacción.
+
+---
 
 ### 5.4.3. Inclusive design
 
-En esta subsección se evaluará si Entreprenly considera diferentes contextos de uso, niveles de experiencia digital y necesidades de accesibilidad. El análisis permitirá identificar si la plataforma ofrece una experiencia comparable, clara y útil para comerciantes con distintos grados de familiaridad tecnológica y clientes finales que interactúan mediante canales simples.
+En esta subsección se evalúa si Entreprenly considera distintos contextos de uso, niveles de experiencia digital y necesidades de accesibilidad.
 
-**Principio 1: Proporciona experiencias comparables - Puntaje: [ ]/5**
+#### Principio 1: Proporciona experiencias comparables — Puntaje: 5/5
 
-[Describir si los usuarios pueden acceder a una experiencia equivalente desde los principales puntos de contacto: landing page, login, registro, dashboard, soporte y chatbot.]
+Los puntos de contacto (dashboard, módulos, soporte y chatbot) ofrecen una experiencia equivalente y coherente; el chatbot habilita la compra por WhatsApp como canal alterno.
 
-**Evidencia observada:** [Completar con pantallas o flujos evaluados.]
+<img src="images/Fig-01-panel-de-inicio.jpeg" width="600">
 
-**Mejora sugerida:** [Completar con una recomendación concreta si aplica.]
+**Evidencia observada:** Fig. 1 (chatbot activo), Fig. 16 (soporte), navegación uniforme en todas las figuras.
 
----
-
-**Principio 2: Considera la situación del usuario - Puntaje: [ ]/5**
-
-[Describir si la interfaz responde a contextos reales de uso, como atención rápida en tienda, registro de ventas durante horas de alta demanda, revisión de stock, cierre de caja o compra por WhatsApp.]
-
-**Evidencia observada:** [Completar con escenarios de uso observados.]
-
-**Mejora sugerida:** [Completar con una recomendación concreta si aplica.]
+**Mejora sugerida:** Garantizar paridad de la experiencia en la versión móvil del dashboard.
 
 ---
 
-**Principio 3: Sé consistente - Puntaje: [ ]/5**
+#### Principio 2: Considera la situación del usuario — Puntaje: 5/5
 
-[Describir si los patrones visuales, botones, formularios, mensajes y navegación se mantienen consistentes en todos los módulos y pantallas.]
+Responde a contextos reales de tienda: registro ágil de ventas con teclado numérico, cierre de caja por método de pago, revisión rápida de stock y alertas, y pedidos por WhatsApp en horas de demanda.
 
-**Evidencia observada:** [Completar con elementos consistentes o inconsistentes.]
+<img src="images/Fig-15-ventas-registrar-cantidad.jpeg" width="600">
 
-**Mejora sugerida:** [Completar con una recomendación concreta si aplica.]
+**Evidencia observada:** Fig. 15 (registro rápido), Fig. 1 (resumen de caja), Fig. 6 (alertas operativas).
 
----
-
-**Principio 4: Deja al usuario mandar - Puntaje: [ ]/5**
-
-[Describir si el usuario conserva autonomía para decidir, cancelar, modificar, corregir, volver o mantener su configuración actual. Considerar especialmente los flujos de suscripción, perfil, formularios y popups.]
-
-**Evidencia observada:** [Completar con flujos donde el usuario tiene control.]
-
-**Mejora sugerida:** [Completar con una recomendación concreta si aplica.]
+**Mejora sugerida:** Modo de venta rápida a pantalla completa para horas pico.
 
 ---
 
-**Principio 5: Ofrece opciones - Puntaje: [ ]/5**
+#### Principio 3: Sé consistente — Puntaje: 5/5
 
-[Describir si la plataforma ofrece alternativas de navegación y acción. Considerar botones principales y secundarios, acceso desde el header, CTA, sidebar, FAQ, soporte, inicio de sesión, registro y planes.]
+Botones, formularios, mensajes y navegación se mantienen consistentes en todos los módulos.
 
-**Evidencia observada:** [Completar con opciones disponibles para el usuario.]
+<img src="images/Fig-02-catalogo-de-productos.jpeg" width="600">
 
-**Mejora sugerida:** [Completar con una recomendación concreta si aplica.]
+**Evidencia observada:** Fig. 2, Fig. 5, Fig. 10, Fig. 16 (mismo sistema visual).
 
----
-
-**Principio 6: Prioriza el contenido - Puntaje: [ ]/5**
-
-[Describir si el contenido más importante aparece primero y se diferencia claramente del contenido secundario. Considerar la landing page, dashboard, módulos operativos, tablas, cards, formularios y estados de suscripción.]
-
-**Evidencia observada:** [Completar con ejemplos de jerarquía visual.]
-
-**Mejora sugerida:** [Completar con una recomendación concreta si aplica.]
+**Mejora sugerida:** Homogeneizar el estilo del botón "Volver" (Fig. 8).
 
 ---
 
-**Principio 7: Agrega valor - Puntaje: [ ]/5**
+#### Principio 4: Deja al usuario mandar — Puntaje: 5/5
 
-[Describir si la experiencia aporta beneficios concretos al usuario más allá de cumplir una tarea básica. Considerar ahorro de tiempo, reducción de errores, confianza en el stock, control de caja, automatización por chatbot y claridad de suscripción.]
+El usuario conserva autonomía: editar perfil, mantener su plan, cancelar, corregir y cerrar popups.
 
-**Evidencia observada:** [Completar con comentarios de usuarios o hallazgos de validación.]
+<img src="images/Fig-19-perfil-configuracion.jpeg" width="600">
 
-**Mejora sugerida:** [Completar con una recomendación concreta si aplica.]
+**Evidencia observada:** Fig. 19 (perfil), Fig. 3 (editar), Fig. 13 (Cancelar), Fig. 14 (descargar/cerrar).
+
+**Mejora sugerida:** Permitir deshacer la última acción en Ventas (quitar un producto agregado por error).
+
+---
+
+#### Principio 5: Ofrece opciones — Puntaje: 5/5
+
+Brinda alternativas de navegación y acción: botones primarios y secundarios, sidebar, accesos rápidos, FAQ, reporte de problema y métodos de pago Efectivo / Tarjeta-Yape/Plin.
+
+<img src="images/Fig-09-ventas-producto-no-encontrado.jpeg" width="600">
+
+<img src="images/Fig-16-centro-de-ayuda.jpeg" width="600">
+
+**Evidencia observada:** Fig. 9 (métodos de pago), Fig. 16 (FAQ + reporte), Fig. 1 (accesos rápidos).
+
+**Mejora sugerida:** Hacer más visible la comparación de ahorro entre el plan Mensual y Anual (el toggle ya existe en Fig. 10).
+
+---
+
+#### Principio 6: Prioriza el contenido — Puntaje: 5/5
+
+El contenido más importante aparece primero: resumen del día y alertas en el tope del dashboard; plan recomendado destacado en Suscripción.
+
+<img src="images/Fig-10-suscripcion-planes.jpeg" width="600">
+
+**Evidencia observada:** Fig. 1 (jerarquía del resumen), Fig. 10 (Plan Control "Recomendado" resaltado).
+
+**Mejora sugerida:** Priorizar visualmente las alertas críticas (vencidos) sobre las informativas.
+
+---
+
+#### Principio 7: Agrega valor — Puntaje: 5/5
+
+Genera beneficios concretos: ahorro de tiempo, menos errores, confianza en el stock, control de caja, automatización por chatbot y claridad de suscripción.
+
+<img src="images/Fig-06-panel-alertas-de-lotes.jpeg" width="600">
+
+**Evidencia observada:** Fig. 6 (evita mermas), Fig. 1 (control de caja), Fig. 10 (valor del plan), Fig. 18 (autoservicio de soporte).
+
+**Mejora sugerida:** Agregar reportes/indicadores de tendencia (ventas semanales, productos más vendidos) para reforzar el valor analítico.
+
+---
+
+### Resumen de puntajes
+
+| Grupo | Promedio |
+|-------|----------|
+| 5.4.1 Heurísticas de usabilidad (Nielsen) | **4.7 / 5** |
+| 5.4.2 Arquitectura de información | **4.8 / 5** |
+| 5.4.3 Inclusive design | **5.0 / 5** |
