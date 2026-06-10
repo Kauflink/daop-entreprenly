@@ -533,7 +533,7 @@ En este primer Sprint, el equipo organizó su trabajo en torno a cuatro aspectos
  
 El objetivo principal de este Sprint fue implementar y desplegar la primera versión del Landing Page de Entreprenly, cubriendo las User Stories **US-53, US-84, US-85, US-86, US-87, US-88 y US-89** del Product Backlog. Cada User Story se descompuso en Engineering Tasks con una estimación individual entre 4 y 8 horas, gestionadas en el tablero Kanban del Sprint con las columnas **To Do, In Process, To Review y Done**.
 
-**Board público del Sprint 1 (Trello):** [https://trello.com/b/XXXXXXXX/entreprenly-sprint-1](https://trello.com/b/XXXXXXXX/entreprenly-sprint-1) *(reemplazar con la URL pública del board antes de la entrega)*
+**Board público del Sprint 1 (Trello):** [https://trello.com/b/w5cZrD9x/entreprenly-sprint-1](https://trello.com/b/w5cZrD9x/entreprenly-sprint-1)
 
 A continuación se presenta el tablero del Sprint y el detalle de los Work-items asociados.
  
@@ -1099,7 +1099,7 @@ En el Sprint 2, el equipo organizó el trabajo asignando un Bounded Context prin
 
 El objetivo principal de este Sprint fue implementar la Frontend Web Application de Entreprenly en Angular, cubriendo los Bounded Contexts de Inventory, Sales, Chatbot, Subscription y Profile, junto con las vistas de Home, Help y la navegación. Cada User Story se descompuso en Engineering Tasks con una estimación individual entre 4 y 8 horas, gestionadas en el tablero Kanban del Sprint con las columnas **To Do, In Process, To Review y Done**.
 
-**Board público del Sprint 2 (Trello):** [https://trello.com/b/XXXXXXXX/entreprenly-sprint-2](https://trello.com/b/XXXXXXXX/entreprenly-sprint-2) *(reemplazar con la URL pública del board antes de la entrega)*
+**Board público del Sprint 2 (Trello):** [https://trello.com/b/X5XRlVOZ/entreprenly-sprint-2](https://trello.com/b/X5XRlVOZ/entreprenly-sprint-2)
 
 A continuación se presenta el tablero del Sprint y el detalle de los Work-items asociados.
 
