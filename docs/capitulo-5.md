@@ -18,9 +18,9 @@ En esta sección se detallan las herramientas, frameworks y plataformas utilizad
   </thead>
   <tbody>
     <tr>
-      <td><strong>Jira</strong></td>
-      <td>Herramienta principal para la gestión del proyecto, administración del Product Backlog y seguimiento de Sprints bajo metodología ágil.</td>
-      <td><a href="https://www.atlassian.com/software/jira">https://www.atlassian.com/software/jira</a></td>
+      <td><strong>Trello</strong></td>
+      <td>Herramienta de soporte a agile development utilizada para la gestión del Product Backlog y de los Sprint Backlogs. Cada Sprint se organiza en un tablero Kanban con las columnas <em>To Do</em>, <em>In Process</em>, <em>To Review</em> y <em>Done</em>, configurado como board público para su revisión.</td>
+      <td><a href="https://trello.com/">https://trello.com/</a></td>
     </tr>
   </tbody>
 </table>
@@ -472,11 +472,11 @@ Para este primer Sprint, el equipo estableció como objetivo principal la implem
     </tr>
     <tr>
       <td><strong>Sprint 1 Velocity</strong></td>
-      <td>8</td>
+      <td>12</td>
     </tr>
     <tr>
       <td><strong>Sum of Story Points</strong></td>
-      <td>8</td>
+      <td>12</td>
     </tr>
   </tbody>
 </table>
@@ -546,10 +546,13 @@ En este primer Sprint, el equipo organizó su trabajo en torno a cuatro aspectos
  
 #### 5.2.1.3. Sprint Backlog 1
  
-El objetivo principal de este Sprint fue implementar y desplegar la primera versión del Landing Page de Entreprenly, cubriendo la User Story US-53 del Product Backlog. A continuación se presenta el tablero del Sprint y el detalle de los Work-items asociados.
+El objetivo principal de este Sprint fue implementar y desplegar la primera versión del Landing Page de Entreprenly, cubriendo las User Stories **US-53, US-84, US-85, US-86, US-87, US-88 y US-89** del Product Backlog. Cada User Story se descompuso en Engineering Tasks con una estimación individual entre 4 y 8 horas, gestionadas en el tablero Kanban del Sprint con las columnas **To Do, In Process, To Review y Done**.
+
+**Board público del Sprint 1 (Trello):** [https://trello.com/b/XXXXXXXX/entreprenly-sprint-1](https://trello.com/b/XXXXXXXX/entreprenly-sprint-1) *(reemplazar con la URL pública del board antes de la entrega)*
+
+A continuación se presenta el tablero del Sprint y el detalle de los Work-items asociados.
  
- 
-![Logo de la UPC](./images/sprint1.png "Universidad Peruana de Ciencias Aplicadas")
+![sprint1](./images/sprint1.png "Tablero del Sprint 1 en Trello")
  
 <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%;">
   <thead>
@@ -578,7 +581,7 @@ El objetivo principal de este Sprint fue implementar y desplegar la primera vers
       <td>T-01</td>
       <td>Configuración inicial del repositorio</td>
       <td>Crear el repositorio, inicializar el proyecto con HTML/CSS/Tailwind y configurar el <code>.gitignore</code> y <code>package.json</code>.</td>
-      <td>4</td>
+      <td>5</td>
       <td>Camargo Briceño, Joseph Julius</td>
       <td>Done</td>
     </tr>
@@ -587,109 +590,149 @@ El objetivo principal de este Sprint fue implementar y desplegar la primera vers
       <td>Conocer propuesta de valor en landing page</td>
       <td>T-02</td>
       <td>Configurar pipeline de despliegue (GitHub Actions)</td>
-      <td>Crear y ajustar el workflow de GitHub Actions para despliegue automático en GitHub Pages con CNAME configurado.</td>
-      <td>4</td>
+      <td>Crear y ajustar el workflow de GitHub Actions para despliegue automático en GitHub Pages con el archivo <code>CNAME</code>.</td>
+      <td>5</td>
       <td>Camargo Briceño, Joseph Julius</td>
       <td>Done</td>
     </tr>
     <tr>
-      <td>US-84</td>
-      <td>Visualizar la propuesta de valor</td>
+      <td>US-53</td>
+      <td>Conocer propuesta de valor en landing page</td>
       <td>T-03</td>
-      <td>Implementar Hero section y Problem section</td>
-      <td>Desarrollar la sección hero con headline "Controla inventario, pedidos y cobros de tu negocio", propuesta de valor y CTAs diferenciados por segmento, y la sección de problema que contextualiza los dolores del comerciante.</td>
+      <td>Revisar y corregir el contenido textual</td>
+      <td>Corregir errores ortográficos, de tildes y de redacción en todos los textos del Landing Page antes del despliegue a producción.</td>
       <td>4</td>
-      <td>Chavez Carrasco, Lionel Abraham / Flores Pinchi, José Fernando</td>
+      <td>Palma De Los Santos, Elynor Mikela / Peirano Brun, José Antonio / Flores Pinchi, José Fernando</td>
       <td>Done</td>
     </tr>
     <tr>
       <td>US-84</td>
       <td>Visualizar la propuesta de valor</td>
       <td>T-04</td>
-      <td>Implementar controles de tema e idioma</td>
-      <td>Agregar switch de tema claro/oscuro y selector de idioma (Español/Inglés) accesibles desde la barra de navegación, con mejoras en los call-to-action diferenciados por segmento objetivo.</td>
-      <td>4</td>
-      <td>Chavez Carrasco, Lionel Abraham</td>
+      <td>Maquetar la estructura semántica del Hero</td>
+      <td>Desarrollar el HTML semántico de la sección Hero con headline, propuesta de valor e ilustración principal.</td>
+      <td>6</td>
+      <td>Chavez Carrasco, Lionel Abraham / Flores Pinchi, José Fernando</td>
       <td>Done</td>
     </tr>
     <tr>
       <td>US-84</td>
       <td>Visualizar la propuesta de valor</td>
       <td>T-05</td>
-      <td>Implementar animaciones y transiciones de la landing</td>
-      <td>Agregar transiciones de fade al cambio de tema y animaciones de movimiento en la sección hero para mejorar la experiencia visual del visitante al cargar la página.</td>
-      <td>4</td>
+      <td>Estilar el Hero responsive y CTAs por segmento</td>
+      <td>Estilar el Hero mobile-first con Tailwind e implementar los call-to-action diferenciados por segmento objetivo.</td>
+      <td>5</td>
       <td>Chavez Carrasco, Lionel Abraham</td>
       <td>Done</td>
     </tr>
     <tr>
-      <td>US-85</td>
-      <td>Explorar las funciones principales</td>
+      <td>US-84</td>
+      <td>Visualizar la propuesta de valor</td>
       <td>T-06</td>
-      <td>Implementar Main Features section y How It Works section</td>
-      <td>Desarrollar la sección de funcionalidades principales con los 4 pilares (Inventario, Finanzas, Chatbot, Balanza IoT) y la sección explicativa del flujo de adopción del sistema paso a paso.</td>
+      <td>Implementar animaciones de entrada del Hero</td>
+      <td>Agregar animaciones de movimiento en el Hero y transiciones de fade al cambio de tema para mejorar la experiencia visual.</td>
       <td>4</td>
-      <td>Chavez Carrasco, Lionel Abraham / Flores Pinchi, José Fernando</td>
+      <td>Chavez Carrasco, Lionel Abraham</td>
       <td>Done</td>
     </tr>
     <tr>
       <td>US-85</td>
       <td>Explorar las funciones principales</td>
       <td>T-07</td>
-      <td>Implementar Merchant Benefits section, Client Trust section y Comparativa breve section</td>
-      <td>Desarrollar la sección de beneficios operativos para el comerciante, la sección de confianza del cliente final y la sección comparativa que contrasta la gestión manual, sistemas genéricos y Entreprenly.</td>
-      <td>4</td>
+      <td>Implementar la sección Main Features</td>
+      <td>Desarrollar la sección de funcionalidades con los 4 pilares: Inventario, Finanzas, Chatbot y Balanza IoT.</td>
+      <td>6</td>
       <td>Chavez Carrasco, Lionel Abraham / Flores Pinchi, José Fernando</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-85</td>
+      <td>Explorar las funciones principales</td>
+      <td>T-08</td>
+      <td>Implementar las secciones How It Works y Merchant Benefits</td>
+      <td>Desarrollar el flujo de adopción paso a paso y la sección de beneficios operativos para el comerciante.</td>
+      <td>6</td>
+      <td>Flores Pinchi, José Fernando</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-85</td>
+      <td>Explorar las funciones principales</td>
+      <td>T-09</td>
+      <td>Implementar las secciones Client Trust y Comparativa</td>
+      <td>Desarrollar la sección de confianza del cliente final y la comparativa entre gestión manual, sistemas genéricos y Entreprenly.</td>
+      <td>5</td>
+      <td>Chavez Carrasco, Lionel Abraham</td>
       <td>Done</td>
     </tr>
     <tr>
       <td>US-86</td>
       <td>Revisar los planes de suscripción</td>
-      <td>T-08</td>
-      <td>Implementar Planes section</td>
-      <td>Desarrollar la sección comercial con las tarjetas del Plan Free y Plan Control, mostrando el costo mensual, la lista de funcionalidades incluidas en cada nivel y los botones de acción hacia el registro.</td>
-      <td>4</td>
-      <td>Chavez Carrasco, Lionel Abraham / Flores Pinchi, José Fernando</td>
+      <td>T-10</td>
+      <td>Implementar la sección Planes</td>
+      <td>Desarrollar las tarjetas del Plan Free y Plan Control con costo mensual, lista de funcionalidades y botones de acción hacia el registro.</td>
+      <td>6</td>
+      <td>Flores Pinchi, José Fernando</td>
       <td>Done</td>
     </tr>
     <tr>
       <td>US-87</td>
       <td>Consultar las preguntas frecuentes</td>
-      <td>T-09</td>
-      <td>Implementar FAQ section y Next Step section</td>
-      <td>Desarrollar la sección de preguntas frecuentes con acordeones interactivos que expanden y colapsan respuestas, y la sección de cierre con CTA final que refuerza la conversión hacia el registro.</td>
-      <td>4</td>
+      <td>T-11</td>
+      <td>Implementar la sección FAQ con acordeones</td>
+      <td>Desarrollar la sección de preguntas frecuentes con acordeones interactivos que expanden y colapsan las respuestas.</td>
+      <td>5</td>
       <td>Palma De Los Santos, Elynor Mikela / Peirano Brun, José Antonio</td>
       <td>Done</td>
     </tr>
     <tr>
       <td>US-88</td>
       <td>Iniciar sesión desde la landing page</td>
-      <td>T-10</td>
-      <td>Implementar navegación del header y enlace "Ingresar"</td>
-      <td>Desarrollar el header con la barra de navegación principal (Cómo funciona, Beneficios, Planes, FAQ), el botón "Iniciar sesión" que redirige a <code>./login.html</code> y el menú responsive desplegable para dispositivos móviles.</td>
+      <td>T-12</td>
+      <td>Implementar el header y navbar responsive</td>
+      <td>Desarrollar el header con la barra de navegación principal (Cómo funciona, Beneficios, Planes, FAQ) y el menú desplegable para móvil.</td>
+      <td>5</td>
+      <td>Chavez Carrasco, Lionel Abraham</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-88</td>
+      <td>Iniciar sesión desde la landing page</td>
+      <td>T-13</td>
+      <td>Implementar el botón "Iniciar sesión"</td>
+      <td>Agregar el botón de ingreso en el header que redirige a <code>./login.html</code>.</td>
       <td>4</td>
+      <td>Chavez Carrasco, Lionel Abraham</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-88</td>
+      <td>Iniciar sesión desde la landing page</td>
+      <td>T-14</td>
+      <td>Implementar los controles de tema e idioma</td>
+      <td>Agregar el switch de tema claro/oscuro y el selector de idioma (Español/Inglés) accesibles desde la barra de navegación.</td>
+      <td>6</td>
       <td>Chavez Carrasco, Lionel Abraham</td>
       <td>Done</td>
     </tr>
     <tr>
       <td>US-89</td>
       <td>Acceder mediante el botón de acción principal</td>
-      <td>T-11</td>
-      <td>Implementar CTAs "Empezar gratis" y Footer section</td>
-      <td>Implementar el botón "Empezar gratis" en el Hero y en la sección Next step que redirige a <code>./register.html</code>, y desarrollar el footer con los grupos Explorar y Siguiente paso, datos de contacto y enlaces de la marca.</td>
+      <td>T-15</td>
+      <td>Implementar los CTAs "Empezar gratis"</td>
+      <td>Implementar los botones "Empezar gratis" en el Hero y en la sección Next Step que redirigen a <code>./register.html</code>.</td>
       <td>4</td>
       <td>Peirano Brun, José Antonio / Flores Pinchi, José Fernando</td>
       <td>Done</td>
     </tr>
     <tr>
-      <td>US-53</td>
-      <td>Conocer propuesta de valor en landing page</td>
-      <td>T-12</td>
-      <td>Revisión y corrección de contenido textual</td>
-      <td>Corregir errores ortográficos, de tildes y redacción en todos los textos del Landing Page para garantizar la calidad del contenido publicado en producción.</td>
-      <td>4</td>
-      <td>Palma De Los Santos, Elynor Mikela / Peirano Brun, José Antonio / Flores Pinchi, José Fernando</td>
+      <td>US-89</td>
+      <td>Acceder mediante el botón de acción principal</td>
+      <td>T-16</td>
+      <td>Implementar el Footer</td>
+      <td>Desarrollar el footer con los grupos Explorar y Siguiente paso, datos de contacto y enlaces de la marca.</td>
+      <td>5</td>
+      <td>Peirano Brun, José Antonio / Flores Pinchi, José Fernando</td>
       <td>Done</td>
     </tr>
   </tbody>
@@ -989,11 +1032,11 @@ Para este segundo Sprint, el equipo estableció como objetivo principal la imple
     </tr>
     <tr>
       <td><strong>Sprint 2 Velocity</strong></td>
-      <td>34</td>
+      <td>74</td>
     </tr>
     <tr>
       <td><strong>Sum of Story Points</strong></td>
-      <td>34</td>
+      <td>74</td>
     </tr>
   </tbody>
 </table>
@@ -1069,9 +1112,13 @@ En el Sprint 2, el equipo organizó el trabajo asignando un Bounded Context prin
 
 #### 5.2.2.3. Sprint Backlog 2
 
-El objetivo principal de este Sprint fue implementar la Frontend Web Application de Entreprenly en Angular, cubriendo los Bounded Contexts de Auth, Profile, Subscription, Inventory, Sales y Chatbot, junto con las vistas compartidas de Home y Help. A continuación se presenta el tablero del Sprint y el detalle de los Work-items asociados.
+El objetivo principal de este Sprint fue implementar la Frontend Web Application de Entreprenly en Angular, cubriendo los Bounded Contexts de Inventory, Sales, Chatbot, Subscription y Profile, junto con las vistas de Home, Help y la navegación. Cada User Story se descompuso en Engineering Tasks con una estimación individual entre 4 y 8 horas, gestionadas en el tablero Kanban del Sprint con las columnas **To Do, In Process, To Review y Done**.
 
-![sprint2](./images/sprint2.png "sprint2")
+**Board público del Sprint 2 (Trello):** [https://trello.com/b/XXXXXXXX/entreprenly-sprint-2](https://trello.com/b/XXXXXXXX/entreprenly-sprint-2) *(reemplazar con la URL pública del board antes de la entrega)*
+
+A continuación se presenta el tablero del Sprint y el detalle de los Work-items asociados.
+
+![sprint2](./images/sprint2.png "Tablero del Sprint 2 en Trello")
 
 <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%;">
   <thead>
@@ -1095,182 +1142,352 @@ El objetivo principal de este Sprint fue implementar la Frontend Web Application
   </thead>
   <tbody>
     <tr>
-      <td>US-01</td>
-      <td>Iniciar sesión en la aplicación</td>
+      <td>US-81</td>
+      <td>Navegar entre módulos desde el sidebar</td>
       <td>T-01</td>
-      <td>Configurar proyecto Angular y estructura base</td>
-      <td>Inicializar el proyecto Angular con la arquitectura DDD por Bounded Context, configurar rutas lazy-loading, el shell del DashboardLayout con sidebar naranja y <code>router-outlet</code>, y conectar las rutas principales.</td>
-      <td>4</td>
+      <td>Configurar el proyecto Angular con arquitectura DDD</td>
+      <td>Inicializar el proyecto Angular con arquitectura DDD por Bounded Context, rutas lazy-loading y la estructura base de carpetas.</td>
+      <td>6</td>
       <td>Camargo Briceño, Joseph Julius</td>
       <td>Done</td>
     </tr>
     <tr>
-      <td>US-01</td>
-      <td>Iniciar sesión en la aplicación</td>
+      <td>US-81</td>
+      <td>Navegar entre módulos desde el sidebar</td>
       <td>T-02</td>
-      <td>Implementar DashboardLayout responsive con sidebar</td>
-      <td>Desarrollar el componente <code>DashboardLayoutComponent</code> con sidebar naranja, logotipo, íconos de navegación por BC y botón de logout, con layout responsive para distintas resoluciones de pantalla.</td>
+      <td>Implementar el DashboardLayout responsive con sidebar</td>
+      <td>Desarrollar el <code>DashboardLayoutComponent</code> con sidebar naranja, logotipo, íconos de navegación por BC, botón de logout y <code>router-outlet</code>.</td>
+      <td>6</td>
+      <td>Camargo Briceño, Joseph Julius</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-82</td>
+      <td>Cambiar idioma de la interfaz</td>
+      <td>T-03</td>
+      <td>Integrar i18n bilingüe ES/EN</td>
+      <td>Integrar el sistema de internacionalización ES/EN en todos los BCs y traducir dinámicamente el título de la pestaña del navegador.</td>
+      <td>6</td>
+      <td>Camargo Briceño, Joseph Julius</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-83</td>
+      <td>Gestionar rutas no encontradas</td>
+      <td>T-04</td>
+      <td>Implementar la vista de ruta no encontrada (404)</td>
+      <td>Desarrollar la vista que se muestra cuando el usuario ingresa a una URL inválida dentro del dashboard.</td>
       <td>4</td>
       <td>Camargo Briceño, Joseph Julius</td>
       <td>Done</td>
     </tr>
     <tr>
-      <td>US-06</td>
-      <td>Configurar perfil de usuario</td>
-      <td>T-03</td>
-      <td>Implementar Profile BC con 8 tarjetas de configuración</td>
-      <td>Desarrollar el Bounded Context de perfil con sus 8 tarjetas de configuración (información personal, seguridad, preferencias, notificaciones, entre otras), siguiendo la arquitectura DDD de 4 capas.</td>
+      <td>US-62</td>
+      <td>Visualizar perfil actual</td>
+      <td>T-05</td>
+      <td>Implementar el Profile BC y la tarjeta de información personal</td>
+      <td>Crear la estructura DDD del Profile BC y la tarjeta que muestra los datos registrados del comerciante.</td>
       <td>5</td>
       <td>Camargo Briceño, Joseph Julius</td>
       <td>Done</td>
     </tr>
     <tr>
-      <td>US-11</td>
-      <td>Personalizar preferencias de idioma y tema</td>
-      <td>T-04</td>
-      <td>Implementar i18n bilingüe, selector de moneda y persistencia de tema</td>
-      <td>Integrar el sistema de internacionalización ES/EN en todos los BCs, agregar el selector de moneda (PEN/USD) en el BC de Profile, y persistir las preferencias de idioma y tema claro/oscuro en <code>localStorage</code> para evitar el flash al recargar.</td>
+      <td>US-63</td>
+      <td>Actualizar nombre y biografía</td>
+      <td>T-06</td>
+      <td>Implementar la edición de nombre y biografía</td>
+      <td>Desarrollar el formulario de edición de nombre y biografía dentro del perfil.</td>
+      <td>4</td>
+      <td>Camargo Briceño, Joseph Julius</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-64</td>
+      <td>Subir foto de perfil</td>
+      <td>T-07</td>
+      <td>Implementar la carga de avatar</td>
+      <td>Desarrollar la carga de foto de perfil con previsualización y codificación base64.</td>
+      <td>5</td>
+      <td>Camargo Briceño, Joseph Julius</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-67</td>
+      <td>Configurar preferencias de idioma, zona horaria, tema y moneda</td>
+      <td>T-08</td>
+      <td>Implementar la tarjeta de preferencias</td>
+      <td>Desarrollar la tarjeta de preferencias con idioma, tema claro/oscuro y selector de moneda (PEN/USD) sincronizado con el Subscription BC.</td>
+      <td>6</td>
+      <td>Camargo Briceño, Joseph Julius</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-67</td>
+      <td>Configurar preferencias de idioma, zona horaria, tema y moneda</td>
+      <td>T-09</td>
+      <td>Persistir las preferencias en localStorage</td>
+      <td>Persistir las preferencias de idioma, tema y moneda en <code>localStorage</code> para que sobrevivan a recargas y evitar el flash inicial.</td>
+      <td>4</td>
+      <td>Camargo Briceño, Joseph Julius</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-68</td>
+      <td>Configurar notificaciones</td>
+      <td>T-10</td>
+      <td>Implementar la tarjeta de configuración de notificaciones</td>
+      <td>Desarrollar la tarjeta que permite activar o desactivar los avisos de stock, vencimientos y pedidos.</td>
       <td>4</td>
       <td>Camargo Briceño, Joseph Julius</td>
       <td>Done</td>
     </tr>
     <tr>
       <td>US-28</td>
-      <td>Buscar producto en el punto de venta</td>
-      <td>T-05</td>
-      <td>Implementar Sales BC base y buscador con autocompletado</td>
-      <td>Crear la estructura DDD del Sales BC (domain, application, infrastructure, presentation), configurar el <code>db.json</code> con productos peruanos, e implementar el buscador de productos con autocompletado y validación "Producto no encontrado".</td>
+      <td>Buscar productos en el inventario y validar su tipo de medida</td>
+      <td>T-11</td>
+      <td>Implementar el Sales BC base y el buscador</td>
+      <td>Crear la estructura DDD del Sales BC, configurar el <code>db.json</code> con productos peruanos e implementar el buscador con autocompletado.</td>
+      <td>6</td>
+      <td>Flores Pinchi, José Fernando</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-28</td>
+      <td>Buscar productos en el inventario y validar su tipo de medida</td>
+      <td>T-12</td>
+      <td>Validar el tipo de medida del producto</td>
+      <td>Validar si el producto es por unidad o por peso para abrir la interfaz de ingreso correspondiente, con mensaje "Producto no encontrado".</td>
       <td>4</td>
       <td>Flores Pinchi, José Fernando</td>
       <td>Done</td>
     </tr>
     <tr>
       <td>US-29</td>
-      <td>Registrar cantidad de producto por unidad</td>
-      <td>T-06</td>
-      <td>Implementar modal "Registrar Cantidad" con teclado numérico</td>
-      <td>Desarrollar el modal de registro de cantidad con teclado numérico y validación de stock disponible para productos vendidos por unidad.</td>
-      <td>4</td>
+      <td>Registrar la cantidad de unidades en el Ticket de Venta</td>
+      <td>T-13</td>
+      <td>Implementar el modal "Registrar Cantidad"</td>
+      <td>Desarrollar el modal con teclado numérico y validación de stock disponible para productos vendidos por unidad.</td>
+      <td>5</td>
       <td>Flores Pinchi, José Fernando</td>
       <td>Done</td>
     </tr>
     <tr>
       <td>US-30</td>
-      <td>Registrar peso de producto con balanza IoT</td>
-      <td>T-07</td>
-      <td>Implementar modal "Registrar Peso" con modo IoT y manual</td>
-      <td>Desarrollar el modal de peso con dos modos: automático (lee peso de <code>db.json</code> y auto-confirma) cuando la balanza está conectada, y manual con teclado decimal cuando <code>connected: false</code>.</td>
-      <td>4</td>
+      <td>Capturar el peso mediante balanza IoT o ingreso manual</td>
+      <td>T-14</td>
+      <td>Implementar el modal de peso en modo IoT</td>
+      <td>Desarrollar el modo automático que lee el peso de <code>db.json</code> y auto-confirma cuando la balanza está conectada.</td>
+      <td>5</td>
+      <td>Flores Pinchi, José Fernando</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-30</td>
+      <td>Capturar el peso mediante balanza IoT o ingreso manual</td>
+      <td>T-15</td>
+      <td>Implementar el modal de peso en modo manual</td>
+      <td>Desarrollar el modo manual con teclado decimal cuando la balanza reporta <code>connected: false</code>.</td>
+      <td>5</td>
       <td>Flores Pinchi, José Fernando</td>
       <td>Done</td>
     </tr>
     <tr>
       <td>US-31</td>
-      <td>Eliminar producto del ticket de venta</td>
-      <td>T-08</td>
-      <td>Implementar eliminación de ítems y resumen lateral del ticket</td>
-      <td>Agregar el ícono de basurero por ítem del ticket para eliminación individual, y el panel de resumen lateral con subtotal, cantidad de ítems y total en tiempo real usando signals de Angular.</td>
-      <td>4</td>
+      <td>Gestionar el desglose y cálculo del Ticket de Venta</td>
+      <td>T-16</td>
+      <td>Implementar el ticket y el resumen lateral</td>
+      <td>Desarrollar el desglose de ítems, la eliminación individual por ítem y el panel de resumen con subtotal y total en tiempo real usando signals.</td>
+      <td>6</td>
       <td>Flores Pinchi, José Fernando</td>
       <td>Done</td>
     </tr>
     <tr>
       <td>US-32</td>
-      <td>Seleccionar método de pago</td>
-      <td>T-09</td>
-      <td>Implementar selección de método de pago y validaciones</td>
-      <td>Desarrollar la selección de método de pago (Efectivo / Tarjeta-Yape-Plin agrupados como digital) con validación "Por favor seleccione un método de pago" que se auto-oculta a los 3 segundos.</td>
+      <td>Seleccionar el método de pago para la transacción</td>
+      <td>T-17</td>
+      <td>Implementar la selección de método de pago</td>
+      <td>Desarrollar la selección de método de pago (Efectivo / Digital) con validación que se auto-oculta a los 3 segundos.</td>
       <td>4</td>
       <td>Flores Pinchi, José Fernando</td>
       <td>Done</td>
     </tr>
     <tr>
       <td>US-33</td>
-      <td>Finalizar venta y confirmar pago</td>
-      <td>T-10</td>
-      <td>Implementar finalización de venta y modal "Venta Exitosa"</td>
-      <td>Desarrollar el flujo de finalización de venta con validaciones ("No hay productos en el ticket"), modal "Venta Exitosa" con auto-cierre a los 2 segundos, y reset del ticket al completar la venta. Incluir el decremento de stock en el Inventory BC tras cada venta.</td>
+      <td>Finalizar la venta y emitir el comprobante de pago</td>
+      <td>T-18</td>
+      <td>Implementar la finalización de venta</td>
+      <td>Desarrollar el flujo de finalización con validaciones, modal "Venta Exitosa" con auto-cierre y reset del ticket.</td>
       <td>5</td>
       <td>Flores Pinchi, José Fernando</td>
       <td>Done</td>
     </tr>
     <tr>
-      <td>US-35</td>
-      <td>Ver resumen del cierre de caja</td>
-      <td>T-11</td>
-      <td>Implementar Resumen de Caja con persistencia en db.json</td>
-      <td>Desarrollar el panel de Resumen de Caja con totales por día (Total Día, Efectivo, Digital), persitirlos en <code>cash-registers</code> del <code>db.json</code> mediante PUT al finalizar cada venta, y recargarlos al volver a la vista de ventas.</td>
+      <td>US-34</td>
+      <td>Cancelar venta en curso</td>
+      <td>T-19</td>
+      <td>Implementar la cancelación de venta</td>
+      <td>Desarrollar la acción que limpia el ticket y permite iniciar una nueva transacción sin procesar el cobro.</td>
       <td>4</td>
       <td>Flores Pinchi, José Fernando</td>
       <td>Done</td>
     </tr>
     <tr>
+      <td>US-35</td>
+      <td>Clasificar automáticamente los ingresos según el medio de pago</td>
+      <td>T-20</td>
+      <td>Acumular ingresos por método de pago</td>
+      <td>Sumar el monto de cada venta finalizada al acumulado del método correspondiente (efectivo / digital).</td>
+      <td>4</td>
+      <td>Flores Pinchi, José Fernando</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-36</td>
+      <td>Monitorear el Resumen de Caja en tiempo real dentro del panel de ventas</td>
+      <td>T-21</td>
+      <td>Implementar el panel Resumen de Caja</td>
+      <td>Desarrollar el panel con totales por día y su persistencia en <code>cash-registers</code> del <code>db.json</code> mediante PUT tras cada venta.</td>
+      <td>5</td>
+      <td>Flores Pinchi, José Fernando</td>
+      <td>Done</td>
+    </tr>
+    <tr>
       <td>US-37</td>
-      <td>Conectar cuenta de WhatsApp al chatbot</td>
-      <td>T-12</td>
-      <td>Implementar Chatbot BC base y flujo de conexión QR</td>
-      <td>Crear la estructura DDD del Chatbot BC e implementar la vista de conexión WhatsApp con generación de QR scannable, countdown de expiración y reinicio automático del código QR.</td>
+      <td>Vincular cuenta de WhatsApp Business mediante código QR</td>
+      <td>T-22</td>
+      <td>Implementar el Chatbot BC base y la conexión QR</td>
+      <td>Crear la estructura DDD del Chatbot BC y la vista de conexión con generación de QR escaneable (deep link de WhatsApp).</td>
+      <td>6</td>
+      <td>Palma De Los Santos, Elynor Mikela</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-37</td>
+      <td>Vincular cuenta de WhatsApp Business mediante código QR</td>
+      <td>T-23</td>
+      <td>Implementar el countdown y reinicio del QR</td>
+      <td>Agregar el contador de expiración del código QR y su reinicio automático al vencer.</td>
       <td>4</td>
       <td>Palma De Los Santos, Elynor Mikela</td>
       <td>Done</td>
     </tr>
     <tr>
       <td>US-38</td>
-      <td>Ver conversaciones de WhatsApp entrantes</td>
-      <td>T-13</td>
-      <td>Implementar vista de conversaciones con session guard</td>
-      <td>Desarrollar la lista de conversaciones activas del chatbot con guard que bloquea el acceso si WhatsApp no está conectado, burbuja de escritura del cliente y efecto typewriter del bot en la barra de mensajes.</td>
-      <td>4</td>
-      <td>Palma De Los Santos, Elynor Mikela</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US-39</td>
-      <td>Gestionar pedidos recibidos por WhatsApp</td>
-      <td>T-14</td>
-      <td>Implementar vista de órdenes y validación de pago del chatbot</td>
-      <td>Desarrollar la vista de órdenes del chatbot con carga de productos reales del Inventory BC, validación de pago y chips de rechazo traducidos. Implementar soporte i18n bilingüe completo (ES/EN) en todos los componentes del Chatbot BC.</td>
+      <td>Consultar estado de vinculación del chatbot</td>
+      <td>T-24</td>
+      <td>Implementar el indicador de estado y session guard</td>
+      <td>Desarrollar el indicador de estado de conexión y el guard que bloquea el acceso a las conversaciones si WhatsApp no está conectado.</td>
       <td>5</td>
       <td>Palma De Los Santos, Elynor Mikela</td>
       <td>Done</td>
     </tr>
     <tr>
-      <td>US-14</td>
-      <td>Ver planes de suscripción disponibles</td>
-      <td>T-15</td>
-      <td>Implementar Subscription BC con vista de planes</td>
-      <td>Desarrollar el Bounded Context de Subscription con la vista de planes disponibles (Plan Free y Plan Control), precios sincronizados con el selector de moneda del Profile BC, y traducciones bilingües completas.</td>
-      <td>4</td>
+      <td>US-39</td>
+      <td>Visualizar conversaciones de clientes en el dashboard</td>
+      <td>T-25</td>
+      <td>Implementar la lista de conversaciones</td>
+      <td>Desarrollar la lista de conversaciones activas con la burbuja de escritura del cliente y el efecto typewriter del bot.</td>
+      <td>6</td>
+      <td>Palma De Los Santos, Elynor Mikela</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-40</td>
+      <td>Responder mensajes de clientes desde el dashboard</td>
+      <td>T-26</td>
+      <td>Implementar la vista de órdenes del chatbot</td>
+      <td>Desarrollar la vista de órdenes con productos reales del Inventory BC, validación de pago y chips de rechazo traducidos.</td>
+      <td>6</td>
+      <td>Palma De Los Santos, Elynor Mikela</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-07</td>
+      <td>Visualizar detalles de producto</td>
+      <td>T-27</td>
+      <td>Implementar el Inventory BC y la vista de productos</td>
+      <td>Crear la estructura del Inventory BC con la vista de productos y sus detalles (stock, precio, características).</td>
+      <td>5</td>
+      <td>Chavez Carrasco, Lionel Abraham / Peirano Brun, José Antonio</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-08</td>
+      <td>Buscar productos</td>
+      <td>T-28</td>
+      <td>Integrar el inventario con el Sales BC</td>
+      <td>Integrar los datos reales del Inventory BC con el buscador del Sales BC y el decremento de stock tras cada venta.</td>
+      <td>5</td>
       <td>Chavez Carrasco, Lionel Abraham</td>
       <td>Done</td>
     </tr>
     <tr>
-      <td>US-18</td>
-      <td>Ver inventario de productos y lotes</td>
-      <td>T-16</td>
-      <td>Implementar Inventory BC e integración con Sales y Home</td>
-      <td>Desarrollar el Bounded Context de Inventory con la vista de productos y lotes, e integrar sus datos reales con el BC de Sales (para el buscador y el decremento de stock) y con la vista de Home (alertas de lotes próximos a vencer).</td>
+      <td>US-13</td>
+      <td>Visualizar dashboard de lotes</td>
+      <td>T-29</td>
+      <td>Implementar la vista de lotes con alertas</td>
+      <td>Desarrollar la vista de lotes con indicadores y alertas de lotes próximos a vencer, consumida también por la vista de Home.</td>
+      <td>5</td>
+      <td>Peirano Brun, José Antonio</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-15</td>
+      <td>Seleccionar plan de suscripción</td>
+      <td>T-30</td>
+      <td>Implementar el Subscription BC con la vista de planes</td>
+      <td>Desarrollar el Subscription BC con la vista de planes disponibles (Plan Free y Plan Control) y traducciones bilingües.</td>
+      <td>5</td>
+      <td>Chavez Carrasco, Lionel Abraham</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-20</td>
+      <td>Visualizar panel de suscripción</td>
+      <td>T-31</td>
+      <td>Implementar el panel de suscripción</td>
+      <td>Desarrollar el panel con el plan actual y precios sincronizados con el selector de moneda del Profile BC.</td>
       <td>4</td>
       <td>Chavez Carrasco, Lionel Abraham / Peirano Brun, José Antonio</td>
       <td>Done</td>
     </tr>
     <tr>
-      <td>US-46</td>
-      <td>Ver panel principal del dashboard</td>
-      <td>T-17</td>
-      <td>Implementar vistas de Home y Help del dashboard</td>
-      <td>Desarrollar la vista de Home con el panel de resumen del negocio (alertas de lotes, accesos rápidos, locale reactivo al idioma) y la vista de Help con el centro de ayuda, artículos bilingües y conteo real por categoría.</td>
+      <td>US-70</td>
+      <td>Visualizar resumen de ventas del día</td>
+      <td>T-32</td>
+      <td>Implementar la vista de Home</td>
+      <td>Desarrollar el panel de inicio con el resumen del negocio, accesos rápidos y locale reactivo al idioma activo.</td>
+      <td>6</td>
+      <td>Palma De Los Santos, Elynor Mikela</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-72</td>
+      <td>Visualizar alertas de inventario en el home</td>
+      <td>T-33</td>
+      <td>Integrar las alertas de inventario en Home</td>
+      <td>Mostrar en el panel de inicio las alertas críticas de lotes próximos a vencer y productos agotados.</td>
       <td>4</td>
       <td>Palma De Los Santos, Elynor Mikela</td>
       <td>Done</td>
     </tr>
     <tr>
-      <td>US-01</td>
-      <td>Iniciar sesión en la aplicación</td>
-      <td>T-18</td>
-      <td>Configurar despliegue en Firebase Hosting</td>
-      <td>Configurar Firebase Hosting para el Frontend Web Application, crear el workflow de GitHub Actions para despliegue continuo al integrar cambios en <code>main</code>, y validar el despliegue en <code>https://entreprenly.web.app</code>.</td>
-      <td>4</td>
+      <td>US-76</td>
+      <td>Visualizar el centro de soporte</td>
+      <td>T-34</td>
+      <td>Implementar la vista de Help</td>
+      <td>Desarrollar el centro de ayuda con artículos bilingües agrupados por categoría y conteo real por categoría.</td>
+      <td>5</td>
+      <td>Palma De Los Santos, Elynor Mikela</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-94</td>
+      <td>Desplegar el frontend en Firebase Hosting</td>
+      <td>T-35</td>
+      <td>Configurar el despliegue en Firebase Hosting</td>
+      <td>Configurar Firebase Hosting, crear el workflow de GitHub Actions para despliegue continuo y validar el despliegue en <code>https://entreprenly.web.app</code>.</td>
+      <td>5</td>
       <td>Camargo Briceño, Joseph Julius</td>
       <td>Done</td>
     </tr>
@@ -1819,6 +2036,947 @@ El equipo aplicó GitFlow como estrategia de control de versiones, trabajando en
 ![network_g](./images/network_g.png "network_g")
 
 **URL del repositorio del Frontend Web Application:** https://github.com/Kauflink/daop-entreprenly-frontend
+
+### 5.2.3. Sprint 3
+
+#### 5.2.3.1. Sprint Planning 3
+
+Para este tercer Sprint, el equipo estableció como objetivo principal la implementación y despliegue de la primera versión de los RESTful Web Services (Backend) de Entreprenly con Spring Boot, reemplazando la Fake RESTful API utilizada en el Sprint 2 por un Backend real con autenticación, persistencia y reglas de negocio del lado del servidor. La reunión de planificación se llevó a cabo de manera virtual, donde se definieron las User Stories y Technical Stories a abordar, el Sprint Goal y la distribución de responsabilidades por Bounded Context.
+
+<table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+  <tbody>
+    <tr><td colspan="2"><strong>Sprint 3</strong></td></tr>
+    <tr><td colspan="2"><strong>Sprint Planning Background</strong></td></tr>
+    <tr><td><strong>Date</strong></td><td>2026-06-02</td></tr>
+    <tr><td><strong>Time</strong></td><td>09:00 AM</td></tr>
+    <tr><td><strong>Location</strong></td><td>Reunión virtual vía Discord</td></tr>
+    <tr><td><strong>Prepared By</strong></td><td>Camargo Briceño, Joseph Julius</td></tr>
+    <tr><td><strong>Attendees (to planning meeting)</strong></td><td>Camargo Briceño, Joseph Julius / Chavez Carrasco, Lionel Abraham / Palma De Los Santos, Elynor Mikela / Peirano Brun, José Antonio / Flores Pinchi, José Fernando</td></tr>
+    <tr><td><strong>Sprint 2 Review Summary</strong></td><td>En el Sprint 2 se implementó y desplegó el Frontend Web Application en Angular sobre Firebase Hosting (<a href="https://entreprenly.web.app">entreprenly.web.app</a>), cubriendo los Bounded Contexts de Sales, Chatbot, Inventory, Subscription y Profile, junto con las vistas de Home y Help. La aplicación consumió una Fake RESTful API servida con JSON-Server.</td></tr>
+    <tr><td><strong>Sprint 2 Retrospective Summary</strong></td><td>El equipo identificó que la Fake API con JSON-Server no provee persistencia real, autenticación ni reglas de negocio del lado del servidor. Para el Sprint 3 se acordó implementar el Backend real con Spring Boot bajo arquitectura DDD, asignando un Bounded Context por miembro, incorporar autenticación con JWT y persistencia con JPA por contexto, y automatizar el despliegue en Google Cloud con Docker y CI/CD.</td></tr>
+    <tr><td colspan="2"><strong>Sprint Goal &amp; User Stories</strong></td></tr>
+    <tr><td><strong>Sprint 3 Goal</strong></td><td>Nuestro enfoque está en implementar y desplegar la primera versión de los RESTful Web Services de Entreprenly con Spring Boot, reemplazando la Fake API por un Backend real con autenticación JWT, persistencia JPA por bounded context y documentación OpenAPI. Creemos que entrega una plataforma multi-tenant en la que cada comerciante gestiona de forma segura su inventario, ventas, suscripción y pedidos de WhatsApp con datos persistentes. Esto se confirmará cuando la API esté desplegada en Google Cloud, protegida con JWT, documentada en Swagger UI y respondiendo sobre HTTPS en su dominio público.</td></tr>
+    <tr><td><strong>Sprint 3 Velocity</strong></td><td>55</td></tr>
+    <tr><td><strong>Sum of Story Points</strong></td><td>55</td></tr>
+  </tbody>
+</table>
+
+
+---
+
+#### 5.2.3.2. Aspect Leaders and Collaborators
+
+En el Sprint 3, el equipo organizó el trabajo asignando un Bounded Context del Backend por miembro para maximizar la autonomía y reducir conflictos de merge. Los aspectos cubiertos fueron: el IAM Bounded Context junto con la seguridad JWT y la configuración del despliegue en Google Cloud, el Profile BC, el Sales BC, el Inventory BC, el Chatbot BC y el Subscription BC. A continuación se presenta la matriz de liderazgo y colaboración (LACX):
+
+<table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+  <thead>
+    <tr>
+      <th>Team Member (Last Name, First Name)</th>
+      <th>GitHub Username</th>
+      <th>IAM/Auth y Despliegue<br>Leader (L) / Collaborator (C)</th>
+      <th>Profile BC<br>Leader (L) / Collaborator (C)</th>
+      <th>Sales BC<br>Leader (L) / Collaborator (C)</th>
+      <th>Inventory BC<br>Leader (L) / Collaborator (C)</th>
+      <th>Chatbot BC<br>Leader (L) / Collaborator (C)</th>
+      <th>Subscription BC<br>Leader (L) / Collaborator (C)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Camargo Briceño, Joseph Julius</td><td>Juyens</td><td>L</td><td>L</td><td>C</td><td>C</td><td>C</td><td>C</td></tr>
+    <tr><td>Chavez Carrasco, Lionel Abraham</td><td>LioTG</td><td>C</td><td>C</td><td>C</td><td>C</td><td>C</td><td>L</td></tr>
+    <tr><td>Palma De Los Santos, Elynor Mikela</td><td>elynorpalma</td><td>C</td><td>C</td><td>C</td><td>C</td><td>L</td><td>C</td></tr>
+    <tr><td>Peirano Brun, José Antonio</td><td>DoomerGX</td><td>C</td><td>C</td><td>C</td><td>L</td><td>C</td><td>C</td></tr>
+    <tr><td>Flores Pinchi, José Fernando</td><td>Ferdinant12-ops</td><td>C</td><td>C</td><td>L</td><td>C</td><td>C</td><td>C</td></tr>
+  </tbody>
+</table>
+
+
+---
+
+#### 5.2.3.3. Sprint Backlog 3
+
+El objetivo principal de este Sprint fue implementar los RESTful Web Services de Entreprenly, cubriendo las User Stories de los flujos de pedido del chatbot (**US-41 a US-52**) y las Technical Stories del EPIC-13 (**US-54** y **US-55** —API de pedidos y pagos—, **US-91** —autenticación JWT—, **US-92** —containerización y CI/CD— y **US-93** —persistencia JPA por bounded context—). Cada historia se descompuso en Engineering Tasks con una estimación individual entre 4 y 8 horas, gestionadas en el tablero Kanban del Sprint con las columnas **To Do, In Process, To Review y Done**.
+
+**Board público del Sprint 3 (Trello):** [https://trello.com/b/XXXXXXXX/entreprenly-sprint-3](https://trello.com/b/XXXXXXXX/entreprenly-sprint-3) *(reemplazar con la URL pública del board antes de la entrega)*
+
+A continuación se presenta el tablero del Sprint y el detalle de los Work-items asociados.
+
+![sprint3](./images/sprint3.png "Tablero del Sprint 3 en Trello")
+
+<table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+  <thead>
+    <tr>
+      <th colspan="8">Sprint # Sprint 3</th>
+    </tr>
+    <tr>
+      <th colspan="2">User Story</th>
+      <th colspan="6">Work-Item / Task</th>
+    </tr>
+    <tr>
+      <th>Id</th>
+      <th>Title</th>
+      <th>Id</th>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Estimation (Hours)</th>
+      <th>Assigned To</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>US-91</td>
+      <td>Autenticar y autorizar usuarios mediante JWT</td>
+      <td>T-01</td>
+      <td>Implementar el IAM Bounded Context</td>
+      <td>Crear el IAM BC con autenticación por email, hash de contraseña con BCrypt y asignación automática del rol por defecto al registrarse.</td>
+      <td>6</td>
+      <td>Camargo Briceño, Joseph Julius</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-91</td>
+      <td>Autenticar y autorizar usuarios mediante JWT</td>
+      <td>T-02</td>
+      <td>Implementar la generación y validación de JWT</td>
+      <td>Desarrollar la emisión de tokens JWT en el sign-in y el filtro de seguridad que valida el token en cada solicitud protegida.</td>
+      <td>6</td>
+      <td>Camargo Briceño, Joseph Julius</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-91</td>
+      <td>Autenticar y autorizar usuarios mediante JWT</td>
+      <td>T-03</td>
+      <td>Aislar los recursos por cuenta autenticada</td>
+      <td>Restringir el acceso a los recursos del comerciante según el usuario autenticado extraído del token (scoping por cuenta).</td>
+      <td>5</td>
+      <td>Camargo Briceño, Joseph Julius</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-93</td>
+      <td>Persistir datos mediante JPA por bounded context</td>
+      <td>T-04</td>
+      <td>Configurar JPA auditing y persistencia por BC</td>
+      <td>Habilitar JPA auditing para las entidades auditables y configurar la persistencia respetando los límites de cada bounded context.</td>
+      <td>5</td>
+      <td>Camargo Briceño, Joseph Julius</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-93</td>
+      <td>Persistir datos mediante JPA por bounded context</td>
+      <td>T-05</td>
+      <td>Configurar el perfil de producción y MySQL</td>
+      <td>Configurar el perfil <code>prod</code>, la conexión a MySQL y <code>ddl-auto=update</code> para la auto-creación de tablas de nuevos contextos.</td>
+      <td>4</td>
+      <td>Camargo Briceño, Joseph Julius</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-93</td>
+      <td>Persistir datos mediante JPA por bounded context</td>
+      <td>T-06</td>
+      <td>Implementar el Profile BC con persistencia</td>
+      <td>Implementar el dominio, los servicios y la REST API del Profile BC, con auto-creación del perfil al registrarse el usuario.</td>
+      <td>6</td>
+      <td>Camargo Briceño, Joseph Julius</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-93</td>
+      <td>Persistir datos mediante JPA por bounded context</td>
+      <td>T-07</td>
+      <td>Persistir datos de registro y avatar</td>
+      <td>Capturar el teléfono y los datos de registro en el sign-up y almacenar el avatar como <code>MEDIUMTEXT</code> para soportar imágenes base64.</td>
+      <td>5</td>
+      <td>Camargo Briceño, Joseph Julius</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-93</td>
+      <td>Persistir datos mediante JPA por bounded context</td>
+      <td>T-08</td>
+      <td>Implementar el Sales BC con persistencia JPA</td>
+      <td>Implementar el dominio de venta y caja, los servicios de aplicación y la persistencia JPA del Sales BC.</td>
+      <td>6</td>
+      <td>Flores Pinchi, José Fernando</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-93</td>
+      <td>Persistir datos mediante JPA por bounded context</td>
+      <td>T-09</td>
+      <td>Exponer la REST API de ventas y caja</td>
+      <td>Exponer los endpoints de <code>sales</code> y <code>cash-registers</code> con aislamiento de datos por cuenta autenticada.</td>
+      <td>6</td>
+      <td>Flores Pinchi, José Fernando</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-93</td>
+      <td>Persistir datos mediante JPA por bounded context</td>
+      <td>T-10</td>
+      <td>Implementar el Inventory BC: productos</td>
+      <td>Implementar los agregados de producto unitario y a granel con su CRUD REST completo.</td>
+      <td>6</td>
+      <td>Peirano Brun, José Antonio</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-93</td>
+      <td>Persistir datos mediante JPA por bounded context</td>
+      <td>T-11</td>
+      <td>Implementar el Inventory BC: lotes</td>
+      <td>Implementar los agregados de lote unitario y a granel con CRUD REST y el endpoint combinado de lotes.</td>
+      <td>6</td>
+      <td>Peirano Brun, José Antonio</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-93</td>
+      <td>Persistir datos mediante JPA por bounded context</td>
+      <td>T-12</td>
+      <td>Implementar las alertas de stock y el scoping</td>
+      <td>Implementar la read API computada de stock alerts, el borrado en cascada de lotes y el aislamiento por cuenta autenticada.</td>
+      <td>5</td>
+      <td>Peirano Brun, José Antonio</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-93</td>
+      <td>Persistir datos mediante JPA por bounded context</td>
+      <td>T-13</td>
+      <td>Implementar el Subscription BC con pagos</td>
+      <td>Implementar el Subscription BC con planes, suscripciones, pagos, periodos de facturación y precios anuales.</td>
+      <td>6</td>
+      <td>Chavez Carrasco, Lionel Abraham</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-93</td>
+      <td>Persistir datos mediante JPA por bounded context</td>
+      <td>T-14</td>
+      <td>Implementar el dashboard de suscripción</td>
+      <td>Exponer los endpoints del subscription-dashboard con límites específicos por plan y seguimiento del propietario.</td>
+      <td>5</td>
+      <td>Chavez Carrasco, Lionel Abraham</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-41</td>
+      <td>Responder consulta de producto disponible</td>
+      <td>T-15</td>
+      <td>Implementar el reply composer product-aware</td>
+      <td>Desarrollar el componedor de respuestas del chatbot que responde con datos reales del catálogo del comerciante.</td>
+      <td>6</td>
+      <td>Palma De Los Santos, Elynor Mikela</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-42</td>
+      <td>Sugerir alternativas ante producto no disponible</td>
+      <td>T-16</td>
+      <td>Implementar respuestas para producto no disponible</td>
+      <td>Implementar respuestas inteligentes cuando un producto no se encuentra o está agotado, sugiriendo alternativas.</td>
+      <td>5</td>
+      <td>Palma De Los Santos, Elynor Mikela</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-43</td>
+      <td>Confirmar pedido con el cliente</td>
+      <td>T-17</td>
+      <td>Implementar el flujo de pedido y confirmación</td>
+      <td>Implementar el flujo completo: registro de un pedido en borrador, resumen al cliente y confirmación de entrega.</td>
+      <td>6</td>
+      <td>Palma De Los Santos, Elynor Mikela</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-45</td>
+      <td>Reportar comprobante de pago digital</td>
+      <td>T-18</td>
+      <td>Recibir el comprobante de pago</td>
+      <td>Aceptar imágenes de comprobante de pago enviadas por el cliente y adjuntarlas al pedido correspondiente.</td>
+      <td>5</td>
+      <td>Palma De Los Santos, Elynor Mikela</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-46</td>
+      <td>Validar comprobante de pago desde el dashboard</td>
+      <td>T-19</td>
+      <td>Implementar la validación y notificación de pago</td>
+      <td>Implementar la aprobación o rechazo del comprobante desde el dashboard y la notificación de la decisión al cliente por el bridge.</td>
+      <td>6</td>
+      <td>Palma De Los Santos, Elynor Mikela</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-48</td>
+      <td>Confirmar pedido y descontar stock</td>
+      <td>T-20</td>
+      <td>Implementar los adaptadores ACL hacia Inventory e IAM</td>
+      <td>Implementar los adaptadores anti-corrupción hacia Inventory e IAM para resolver el catálogo y descontar el stock al confirmar el pedido.</td>
+      <td>5</td>
+      <td>Palma De Los Santos, Elynor Mikela</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-49</td>
+      <td>Registrar venta en el sistema</td>
+      <td>T-21</td>
+      <td>Registrar el pedido confirmado como venta</td>
+      <td>Registrar cada pedido confirmado como una venta en el sistema para mantener el control financiero trazable.</td>
+      <td>4</td>
+      <td>Palma De Los Santos, Elynor Mikela</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-50</td>
+      <td>Manejar stock insuficiente en pedido</td>
+      <td>T-22</td>
+      <td>Manejar el stock insuficiente en el pedido</td>
+      <td>Notificar al cliente cuando un producto no tiene stock suficiente para que ajuste su pedido antes del pago.</td>
+      <td>4</td>
+      <td>Palma De Los Santos, Elynor Mikela</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-51</td>
+      <td>Cancelar pedido por expiración de tiempo de pago</td>
+      <td>T-23</td>
+      <td>Cancelar pedidos por expiración del pago</td>
+      <td>Cancelar automáticamente el pedido cuando el cliente no reporta el comprobante en el tiempo establecido, liberando el stock.</td>
+      <td>4</td>
+      <td>Palma De Los Santos, Elynor Mikela</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-54</td>
+      <td>Gestionar ciclo de vida de pedidos mediante API</td>
+      <td>T-24</td>
+      <td>Exponer la API de conversaciones y pedidos</td>
+      <td>Exponer los endpoints REST de <code>conversations</code>, <code>chat-messages</code> y <code>chat-orders</code> para el ciclo de vida del pedido.</td>
+      <td>6</td>
+      <td>Palma De Los Santos, Elynor Mikela</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-54</td>
+      <td>Gestionar ciclo de vida de pedidos mediante API</td>
+      <td>T-25</td>
+      <td>Implementar el WhatsApp bridge multi-tenant</td>
+      <td>Implementar los endpoints del bridge de WhatsApp con estado multi-tenant: QR y estado de conexión keyed por el email del vendedor.</td>
+      <td>6</td>
+      <td>Palma De Los Santos, Elynor Mikela</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-55</td>
+      <td>Validar y registrar pagos mediante API</td>
+      <td>T-26</td>
+      <td>Exponer la API de validación de pagos</td>
+      <td>Exponer el endpoint que aprueba o rechaza el pago, actualiza el estado de la orden y dispara la actualización de inventario.</td>
+      <td>5</td>
+      <td>Palma De Los Santos, Elynor Mikela</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-92</td>
+      <td>Containerizar y desplegar la API mediante Docker y CI/CD</td>
+      <td>T-27</td>
+      <td>Crear el Dockerfile multi-stage</td>
+      <td>Crear el Dockerfile multi-stage que compila con Maven y ejecuta sobre un JRE Temurin 26 con el perfil <code>prod</code> activo.</td>
+      <td>5</td>
+      <td>Camargo Briceño, Joseph Julius</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-92</td>
+      <td>Containerizar y desplegar la API mediante Docker y CI/CD</td>
+      <td>T-28</td>
+      <td>Configurar el pipeline de CI/CD</td>
+      <td>Configurar el workflow de GitHub Actions con Workload Identity Federation, push a Artifact Registry y rollout en la VM por SSH.</td>
+      <td>6</td>
+      <td>Camargo Briceño, Joseph Julius</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-92</td>
+      <td>Containerizar y desplegar la API mediante Docker y CI/CD</td>
+      <td>T-29</td>
+      <td>Configurar el runtime en la VM y TLS</td>
+      <td>Configurar <code>docker compose</code> en la instancia de Compute Engine y el proxy inverso con TLS (Caddy) sobre el dominio del API.</td>
+      <td>5</td>
+      <td>Camargo Briceño, Joseph Julius</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-54</td>
+      <td>Gestionar ciclo de vida de pedidos mediante API</td>
+      <td>T-30</td>
+      <td>Documentar los endpoints con OpenAPI/Swagger</td>
+      <td>Anotar los controladores con OpenAPI/Swagger (operaciones, esquemas y respuestas) y exponer la documentación en Swagger UI.</td>
+      <td>5</td>
+      <td>Palma De Los Santos, Elynor Mikela / Camargo Briceño, Joseph Julius</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-93</td>
+      <td>Persistir datos mediante JPA por bounded context</td>
+      <td>T-31</td>
+      <td>Implementar el manejo global de rutas no mapeadas</td>
+      <td>Implementar el manejo global que retorna 404 con cuerpo JSON consistente para las rutas no mapeadas del API.</td>
+      <td>4</td>
+      <td>Camargo Briceño, Joseph Julius</td>
+      <td>Done</td>
+    </tr>
+  </tbody>
+</table>
+
+---
+
+#### 5.2.3.4. Development Evidence for Sprint Review
+
+Durante el Sprint 3, el equipo trabajó sobre el repositorio de los Web Services (`daop-entreprenly-web-services`). Se realizaron 53 commits (sin contar merges) y 24 Pull Requests entre el 2 y el 10 de junio de 2026, cubriendo desde el scaffolding del proyecto Spring Boot con arquitectura DDD hasta la integración multi-tenant del Chatbot y el despliegue en Google Cloud. A continuación se presenta el registro de los commits más representativos:
+
+<table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+  <thead>
+    <tr>
+      <th>Repository</th>
+      <th>Branch</th>
+      <th>Commit Id</th>
+      <th>Commit Message</th>
+      <th>Commit Message Body</th>
+      <th>Committed on (Date)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Kauflink/daop-entreprenly-web-services</td>
+      <td>develop</td>
+      <td>0003df0</td>
+      <td>chore: scaffold Spring Boot backend with DDD structure</td>
+      <td>Se inicializa el backend con Spring Boot y la estructura base por bounded context (DDD de 4 capas).</td>
+      <td>2026-06-02</td>
+    </tr>
+    <tr>
+      <td>Kauflink/daop-entreprenly-web-services</td>
+      <td>develop</td>
+      <td>d930b5b</td>
+      <td>refactor: remove learning-center example code and rebrand to Entreprenly</td>
+      <td>Se elimina el código de ejemplo del learning-center y se reorganiza el proyecto bajo el dominio de Entreprenly.</td>
+      <td>2026-06-02</td>
+    </tr>
+    <tr>
+      <td>Kauflink/daop-entreprenly-web-services</td>
+      <td>develop</td>
+      <td>fe9ca28</td>
+      <td>fix(shared): enable JPA auditing for auditable entities</td>
+      <td>Se habilita JPA auditing para registrar las fechas de creación y modificación de las entidades.</td>
+      <td>2026-06-02</td>
+    </tr>
+    <tr>
+      <td>Kauflink/daop-entreprenly-web-services</td>
+      <td>feature/iam</td>
+      <td>e24fe10</td>
+      <td>feat(iam): authenticate by email and auto-assign default role</td>
+      <td>Se implementa la autenticación por email y la asignación automática del rol por defecto al registrarse.</td>
+      <td>2026-06-02</td>
+    </tr>
+    <tr>
+      <td>Kauflink/daop-entreprenly-web-services</td>
+      <td>feature/profile</td>
+      <td>6abac8d</td>
+      <td>feat(profile): expose REST API for profiles</td>
+      <td>Se expone la REST API del Profile BC sobre el dominio y la persistencia JPA implementados.</td>
+      <td>2026-06-02</td>
+    </tr>
+    <tr>
+      <td>Kauflink/daop-entreprenly-web-services</td>
+      <td>feature/profile</td>
+      <td>bf84864</td>
+      <td>feat(profile): auto-create profile on user sign-up</td>
+      <td>Se crea automáticamente el perfil del comerciante al completarse el registro del usuario.</td>
+      <td>2026-06-02</td>
+    </tr>
+    <tr>
+      <td>Kauflink/daop-entreprenly-web-services</td>
+      <td>main</td>
+      <td>97549c5</td>
+      <td>ci: add deploy workflow for Compute Engine</td>
+      <td>Se agrega el workflow de GitHub Actions para construir la imagen y desplegarla en Compute Engine.</td>
+      <td>2026-06-02</td>
+    </tr>
+    <tr>
+      <td>Kauflink/daop-entreprenly-web-services</td>
+      <td>fix/unmapped-404</td>
+      <td>6241db0</td>
+      <td>fix(shared): return 404 for unmapped routes</td>
+      <td>Se implementa el manejo global que retorna 404 con cuerpo JSON para las rutas no mapeadas.</td>
+      <td>2026-06-03</td>
+    </tr>
+    <tr>
+      <td>Kauflink/daop-entreprenly-web-services</td>
+      <td>feature/profile-registration-fields</td>
+      <td>ea7d4e5</td>
+      <td>feat(profile): capture phone and registration details on sign-up</td>
+      <td>Se capturan el teléfono y los datos de registro al momento del sign-up.</td>
+      <td>2026-06-03</td>
+    </tr>
+    <tr>
+      <td>Kauflink/daop-entreprenly-web-services</td>
+      <td>feature/profile-avatar</td>
+      <td>c4e138e</td>
+      <td>feat(profile): store avatar as MEDIUMTEXT to allow base64 images</td>
+      <td>Se almacena el avatar como MEDIUMTEXT para soportar imágenes en base64.</td>
+      <td>2026-06-03</td>
+    </tr>
+    <tr>
+      <td>Kauflink/daop-entreprenly-web-services</td>
+      <td>feature/sales</td>
+      <td>d5dbdc7</td>
+      <td>feat(sales): add sale and cash register domain model</td>
+      <td>Se modela el dominio de venta y caja del Sales BC.</td>
+      <td>2026-06-03</td>
+    </tr>
+    <tr>
+      <td>Kauflink/daop-entreprenly-web-services</td>
+      <td>feature/sales</td>
+      <td>4d5e59d</td>
+      <td>feat(sales): expose sales and cash registers REST API</td>
+      <td>Se exponen los endpoints REST de ventas y registros de caja.</td>
+      <td>2026-06-03</td>
+    </tr>
+    <tr>
+      <td>Kauflink/daop-entreprenly-web-services</td>
+      <td>chore/prod-ddl-update</td>
+      <td>bdc558c</td>
+      <td>chore(prod): use ddl-auto=update so new contexts auto-create tables</td>
+      <td>Se configura ddl-auto=update para que los nuevos contextos creen sus tablas automáticamente.</td>
+      <td>2026-06-03</td>
+    </tr>
+    <tr>
+      <td>Kauflink/daop-entreprenly-web-services</td>
+      <td>develop</td>
+      <td>c4fc5e0</td>
+      <td>ci(docker): use official maven image to fix flaky build</td>
+      <td>Se usa la imagen oficial de Maven en el Dockerfile para evitar fallos intermitentes del build.</td>
+      <td>2026-06-04</td>
+    </tr>
+    <tr>
+      <td>Kauflink/daop-entreprenly-web-services</td>
+      <td>feature/inventory-product</td>
+      <td>9987322</td>
+      <td>feat(inventory): add unit product aggregate with CRUD REST API</td>
+      <td>Se implementa el agregado de producto unitario con su CRUD REST completo.</td>
+      <td>2026-06-04</td>
+    </tr>
+    <tr>
+      <td>Kauflink/daop-entreprenly-web-services</td>
+      <td>feature/inventory-product</td>
+      <td>76efd51</td>
+      <td>feat(inventory): add weight product aggregate with CRUD REST API</td>
+      <td>Se implementa el agregado de producto a granel con su CRUD REST completo.</td>
+      <td>2026-06-04</td>
+    </tr>
+    <tr>
+      <td>Kauflink/daop-entreprenly-web-services</td>
+      <td>feature/inventory-lot</td>
+      <td>cb375b2</td>
+      <td>feat(inventory): add unit lot aggregate with CRUD REST API</td>
+      <td>Se implementa el agregado de lote unitario con su CRUD REST.</td>
+      <td>2026-06-04</td>
+    </tr>
+    <tr>
+      <td>Kauflink/daop-entreprenly-web-services</td>
+      <td>feature/inventory-stock-alert</td>
+      <td>786696d</td>
+      <td>feat(inventory): add computed stock alerts read API</td>
+      <td>Se implementa la read API computada de alertas de stock.</td>
+      <td>2026-06-04</td>
+    </tr>
+    <tr>
+      <td>Kauflink/daop-entreprenly-web-services</td>
+      <td>feature/subscription</td>
+      <td>2e51bc4</td>
+      <td>feat: add subscription module with payments</td>
+      <td>Se implementa el Subscription BC con planes, suscripciones y pagos.</td>
+      <td>2026-06-04</td>
+    </tr>
+    <tr>
+      <td>Kauflink/daop-entreprenly-web-services</td>
+      <td>feature/chatbot</td>
+      <td>82b883d</td>
+      <td>feat(chatbot): implement chatbot bounded context backend</td>
+      <td>Se implementa la estructura base del Chatbot BC en el backend.</td>
+      <td>2026-06-04</td>
+    </tr>
+    <tr>
+      <td>Kauflink/daop-entreprenly-web-services</td>
+      <td>feature/chatbot</td>
+      <td>7ceba7e</td>
+      <td>feat(chatbot): add WhatsApp bridge relay endpoints for real pairing</td>
+      <td>Se agregan los endpoints del bridge de WhatsApp para el emparejamiento real de la cuenta.</td>
+      <td>2026-06-05</td>
+    </tr>
+    <tr>
+      <td>Kauflink/daop-entreprenly-web-services</td>
+      <td>feature/inventory</td>
+      <td>ded6815</td>
+      <td>feat(inventory): scope products, lots and stock alerts per authenticated account</td>
+      <td>Se aíslan productos, lotes y alertas por la cuenta autenticada.</td>
+      <td>2026-06-05</td>
+    </tr>
+    <tr>
+      <td>Kauflink/daop-entreprenly-web-services</td>
+      <td>feature/chatbot</td>
+      <td>16cba34</td>
+      <td>feat(chatbot): add inventory and IAM anti-corruption adapters</td>
+      <td>Se agregan los adaptadores anti-corrupción hacia Inventory e IAM.</td>
+      <td>2026-06-05</td>
+    </tr>
+    <tr>
+      <td>Kauflink/daop-entreprenly-web-services</td>
+      <td>feature/chatbot</td>
+      <td>dc81da8</td>
+      <td>feat(chatbot): answer with real catalog data in the conversation flow</td>
+      <td>El chatbot responde con datos reales del catálogo en el flujo de conversación.</td>
+      <td>2026-06-05</td>
+    </tr>
+    <tr>
+      <td>Kauflink/daop-entreprenly-web-services</td>
+      <td>develop</td>
+      <td>fc0e7cd</td>
+      <td>ci(deploy): retry VM SSH roll-out to survive key propagation races</td>
+      <td>Se reintenta el roll-out por SSH en la VM para tolerar las demoras de propagación de llaves.</td>
+      <td>2026-06-05</td>
+    </tr>
+    <tr>
+      <td>Kauflink/daop-entreprenly-web-services</td>
+      <td>feature/inventory</td>
+      <td>f614b24</td>
+      <td>fix(inventory): cascade delete lots when their product is deleted</td>
+      <td>Se eliminan en cascada los lotes al borrar su producto.</td>
+      <td>2026-06-07</td>
+    </tr>
+    <tr>
+      <td>Kauflink/daop-entreprenly-web-services</td>
+      <td>feature/sales</td>
+      <td>4a882d6</td>
+      <td>feat(sales): scope sales and cash registers per authenticated account</td>
+      <td>Se aíslan las ventas y registros de caja por la cuenta autenticada.</td>
+      <td>2026-06-08</td>
+    </tr>
+    <tr>
+      <td>Kauflink/daop-entreprenly-web-services</td>
+      <td>feature/chatbot</td>
+      <td>b7a5315</td>
+      <td>feat(chatbot): full order flow — register a draft order and confirm delivery</td>
+      <td>Se implementa el flujo completo de pedido: registro de borrador y confirmación de entrega.</td>
+      <td>2026-06-09</td>
+    </tr>
+    <tr>
+      <td>Kauflink/daop-entreprenly-web-services</td>
+      <td>feature/chatbot</td>
+      <td>cfe0960</td>
+      <td>feat(chatbot): true multi-tenant — resolve catalog from the bridge email per message</td>
+      <td>Se resuelve el catálogo por el email del bridge en cada mensaje (multi-tenant real).</td>
+      <td>2026-06-09</td>
+    </tr>
+    <tr>
+      <td>Kauflink/daop-entreprenly-web-services</td>
+      <td>feature/chatbot</td>
+      <td>0a64b17</td>
+      <td>feat(chatbot): accept payment receipt images and attach them to the order</td>
+      <td>Se aceptan imágenes de comprobante de pago y se adjuntan al pedido.</td>
+      <td>2026-06-09</td>
+    </tr>
+    <tr>
+      <td>Kauflink/daop-entreprenly-web-services</td>
+      <td>develop</td>
+      <td>3898d3f</td>
+      <td>fix(swagger): add content = @Content to all 404 ApiResponse annotations</td>
+      <td>Se corrigen las anotaciones de respuesta 404 de OpenAPI agregando content = @Content.</td>
+      <td>2026-06-09</td>
+    </tr>
+    <tr>
+      <td>Kauflink/daop-entreprenly-web-services</td>
+      <td>feature/chatbot</td>
+      <td>33f22d8</td>
+      <td>feat(chatbot): multi-tenant bridge state — QR and status keyed by seller email</td>
+      <td>Se mantiene el estado del bridge (QR y estado) indexado por el email del vendedor.</td>
+      <td>2026-06-09</td>
+    </tr>
+    <tr>
+      <td>Kauflink/daop-entreprenly-web-services</td>
+      <td>feature/subscription</td>
+      <td>6b505f6</td>
+      <td>fix: plan-specific dashboard limits and owner tracking</td>
+      <td>Se ajustan los límites del dashboard por plan y el seguimiento del propietario.</td>
+      <td>2026-06-10</td>
+    </tr>
+  </tbody>
+</table>
+
+---
+
+#### 5.2.3.5. Execution Evidence for Sprint Review
+
+Al término del Sprint 3, el equipo implementó y desplegó la primera versión de los RESTful Web Services de Entreprenly con Spring Boot. La API se encuentra disponible públicamente sobre HTTPS en **[https://daop-api.entreprenly.online](https://daop-api.entreprenly.online)** y su documentación interactiva en **[Swagger UI](https://daop-api.entreprenly.online/swagger-ui/index.html)**. Los Bounded Contexts implementados y sus capacidades clave son los siguientes:
+
+- **IAM BC:** Autenticación por email con hash BCrypt, registro de usuarios, asignación de rol por defecto y emisión/validación de tokens **JWT** que protegen los endpoints y aíslan los recursos por cuenta.
+- **Profile BC:** Gestión del perfil del comerciante (datos personales, avatar base64, preferencias de idioma/tema/moneda y notificaciones), con auto-creación del perfil al registrarse el usuario.
+- **Inventory BC:** CRUD de productos unitarios y a granel, lotes unitarios y a granel, vista combinada de lotes y alertas de stock computadas, con borrado en cascada y aislamiento por cuenta.
+- **Sales BC:** Registro de ventas y registros de caja del Punto de Venta, con aislamiento de datos por cuenta autenticada.
+- **Subscription BC:** Planes, suscripciones, pagos, periodos de facturación y dashboard de suscripción con límites específicos por plan.
+- **Chatbot BC:** Flujo completo de pedidos por WhatsApp (consulta de catálogo real, registro de pedido, recepción de comprobante de pago, validación y notificación), con un **WhatsApp bridge multi-tenant** que mantiene el QR y el estado de conexión indexados por el email del vendedor.
+
+La persistencia se realiza sobre **MySQL** mediante JPA respetando los límites de cada bounded context, y la documentación de los 77 endpoints se genera automáticamente con **OpenAPI/Swagger**.
+
+![swagger_p](./images/swagger_p.png "Documentación de la API en Swagger UI")
+
+---
+
+#### 5.2.3.6. Services Documentation Evidence for Sprint Review
+
+A diferencia del Sprint 2 —donde la Frontend Web Application consumía una Fake RESTful API servida con JSON-Server—, en el Sprint 3 se implementó el Backend real con Spring Boot y se documentó formalmente mediante **OpenAPI/Swagger**. La especificación OpenAPI está disponible en `https://daop-api.entreprenly.online/v3/api-docs` y la interfaz interactiva de exploración y prueba en `https://daop-api.entreprenly.online/swagger-ui/index.html`.
+
+La API expone **77 operaciones** distribuidas en **23 controladores REST** a través de los 7 Bounded Contexts. Todos los endpoints de negocio están protegidos con **JWT**; únicamente el sign-in, el sign-up y los endpoints del bridge de WhatsApp (autenticados con un token de bridge dedicado) quedan fuera de esa protección. A continuación se documentan los endpoints representativos por Bounded Context:
+
+<table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+  <thead>
+    <tr>
+      <th>Bounded Context</th>
+      <th>Endpoint</th>
+      <th>Verbo HTTP</th>
+      <th>Descripción</th>
+      <th>Autenticación</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>IAM / Authentication</td>
+      <td><code>/api/v1/authentication/sign-in</code></td>
+      <td>POST</td>
+      <td>Autentica al usuario por email y contraseña y retorna un token JWT.</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>IAM / Authentication</td>
+      <td><code>/api/v1/authentication/sign-up</code></td>
+      <td>POST</td>
+      <td>Registra una nueva cuenta y asigna el rol por defecto.</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>IAM</td>
+      <td><code>/api/v1/users</code></td>
+      <td>GET</td>
+      <td>Lista los usuarios registrados.</td>
+      <td>JWT</td>
+    </tr>
+    <tr>
+      <td>IAM</td>
+      <td><code>/api/v1/roles</code></td>
+      <td>GET</td>
+      <td>Lista los roles disponibles en el sistema.</td>
+      <td>JWT</td>
+    </tr>
+    <tr>
+      <td>Profile</td>
+      <td><code>/api/v1/profiles/{profileId}</code></td>
+      <td>GET / PUT</td>
+      <td>Consulta y actualiza el perfil del comerciante.</td>
+      <td>JWT</td>
+    </tr>
+    <tr>
+      <td>Profile</td>
+      <td><code>/api/v1/profiles/{profileId}/preferences</code></td>
+      <td>PUT</td>
+      <td>Actualiza idioma, tema y moneda del comerciante.</td>
+      <td>JWT</td>
+    </tr>
+    <tr>
+      <td>Profile</td>
+      <td><code>/api/v1/profiles/{profileId}/notification-settings</code></td>
+      <td>PUT</td>
+      <td>Actualiza las preferencias de notificación.</td>
+      <td>JWT</td>
+    </tr>
+    <tr>
+      <td>Inventory</td>
+      <td><code>/api/v1/inventory-unit-products</code></td>
+      <td>GET / POST</td>
+      <td>Lista y registra productos vendidos por unidad.</td>
+      <td>JWT</td>
+    </tr>
+    <tr>
+      <td>Inventory</td>
+      <td><code>/api/v1/inventory-weight-products</code></td>
+      <td>GET / POST</td>
+      <td>Lista y registra productos vendidos por kilogramo.</td>
+      <td>JWT</td>
+    </tr>
+    <tr>
+      <td>Inventory</td>
+      <td><code>/api/v1/inventory-unit-lots</code></td>
+      <td>GET / POST / PUT</td>
+      <td>Gestiona los lotes de productos unitarios.</td>
+      <td>JWT</td>
+    </tr>
+    <tr>
+      <td>Inventory</td>
+      <td><code>/api/v1/inventory-weight-lots</code></td>
+      <td>GET / POST / PUT</td>
+      <td>Gestiona los lotes de productos a granel.</td>
+      <td>JWT</td>
+    </tr>
+    <tr>
+      <td>Inventory</td>
+      <td><code>/api/v1/inventory-lots</code></td>
+      <td>GET</td>
+      <td>Retorna la vista combinada de lotes (unitarios y a granel).</td>
+      <td>JWT</td>
+    </tr>
+    <tr>
+      <td>Inventory</td>
+      <td><code>/api/v1/inventory-stock-alerts</code></td>
+      <td>GET</td>
+      <td>Retorna las alertas de stock computadas (vencido, por vencer, bajo, agotado).</td>
+      <td>JWT</td>
+    </tr>
+    <tr>
+      <td>Sales</td>
+      <td><code>/api/v1/sales</code></td>
+      <td>GET / POST</td>
+      <td>Lista y registra las ventas del Punto de Venta de la cuenta.</td>
+      <td>JWT</td>
+    </tr>
+    <tr>
+      <td>Sales</td>
+      <td><code>/api/v1/cash-registers</code></td>
+      <td>GET / PUT</td>
+      <td>Consulta y actualiza los registros de caja por día.</td>
+      <td>JWT</td>
+    </tr>
+    <tr>
+      <td>Subscription</td>
+      <td><code>/api/v1/subscription-plans</code></td>
+      <td>GET</td>
+      <td>Lista los planes de suscripción disponibles.</td>
+      <td>JWT</td>
+    </tr>
+    <tr>
+      <td>Subscription</td>
+      <td><code>/api/v1/subscriptions</code></td>
+      <td>GET / POST</td>
+      <td>Gestiona las suscripciones, renovaciones, pagos y cancelaciones.</td>
+      <td>JWT</td>
+    </tr>
+    <tr>
+      <td>Subscription</td>
+      <td><code>/api/v1/subscription-dashboard/{userId}</code></td>
+      <td>GET / PUT</td>
+      <td>Retorna y actualiza el dashboard de suscripción con límites por plan.</td>
+      <td>JWT</td>
+    </tr>
+    <tr>
+      <td>Chatbot</td>
+      <td><code>/api/v1/whatsapp-sessions</code></td>
+      <td>GET / PUT</td>
+      <td>Gestiona las sesiones de WhatsApp del comerciante.</td>
+      <td>JWT</td>
+    </tr>
+    <tr>
+      <td>Chatbot</td>
+      <td><code>/api/v1/conversations</code></td>
+      <td>GET / PUT</td>
+      <td>Lista y actualiza el estado de las conversaciones.</td>
+      <td>JWT</td>
+    </tr>
+    <tr>
+      <td>Chatbot</td>
+      <td><code>/api/v1/chat-messages</code></td>
+      <td>GET</td>
+      <td>Retorna los mensajes de una conversación.</td>
+      <td>JWT</td>
+    </tr>
+    <tr>
+      <td>Chatbot</td>
+      <td><code>/api/v1/chat-orders</code></td>
+      <td>GET / PUT</td>
+      <td>Gestiona los pedidos generados por WhatsApp y su estado.</td>
+      <td>JWT</td>
+    </tr>
+    <tr>
+      <td>Chatbot</td>
+      <td><code>/api/v1/chat-orders/receipt</code></td>
+      <td>POST</td>
+      <td>Recibe el comprobante de pago y lo adjunta al pedido.</td>
+      <td>JWT</td>
+    </tr>
+    <tr>
+      <td>Chatbot (Bridge)</td>
+      <td><code>/api/v1/chatbot/whatsapp/bridge/qr</code></td>
+      <td>POST</td>
+      <td>Recibe el QR de emparejamiento desde el bridge, keyed por email del vendedor.</td>
+      <td>Token de bridge</td>
+    </tr>
+    <tr>
+      <td>Chatbot (Bridge)</td>
+      <td><code>/api/v1/chatbot/whatsapp/bridge/status</code></td>
+      <td>POST</td>
+      <td>Actualiza el estado de conexión del bridge multi-tenant.</td>
+      <td>Token de bridge</td>
+    </tr>
+  </tbody>
+</table>
+
+**URL del repositorio de los Web Services:** https://github.com/Kauflink/daop-entreprenly-web-services
+
+![swagger_p2](./images/swagger_p2.png "Endpoints del API en Swagger UI")
+
+---
+
+#### 5.2.3.7. Software Deployment Evidence for Sprint Review
+
+Durante el Sprint 3, el equipo configuró y ejecutó el despliegue de los Web Services sobre **Google Cloud Platform** mediante contenedores Docker y un pipeline de integración y despliegue continuo con **GitHub Actions**. El proceso realizado fue el siguiente:
+
+1. **Containerización:** Se creó un `Dockerfile` multi-stage que compila la aplicación con Maven sobre un JDK Temurin 26 y la ejecuta sobre un JRE Temurin 26 ligero, con el perfil `prod` activo.
+
+![dockerfile_p](./images/dockerfile_p.png "Dockerfile multi-stage")
+
+2. **Autenticación sin claves (WIF):** El workflow de GitHub Actions se autentica a Google Cloud mediante **Workload Identity Federation**, evitando almacenar claves de cuenta de servicio en el repositorio.
+
+3. **Build y push a Artifact Registry:** En cada push a la rama `main`, el workflow construye la imagen Docker y la publica en **Google Artifact Registry**, etiquetada con el SHA del commit y como `latest`.
+
+![deploy_workflow](./images/deploy_workflow.png "Workflow de despliegue en GitHub Actions")
+
+4. **Roll-out en la VM:** El workflow se conecta por SSH a la instancia de **Compute Engine** y ejecuta `docker compose pull` y `docker compose up -d` para desplegar la nueva imagen, con reintentos para tolerar la propagación de llaves.
+
+5. **TLS y dominio:** Un proxy inverso **Caddy** gestiona el certificado TLS y expone el servicio sobre HTTPS en el dominio público **[https://daop-api.entreprenly.online](https://daop-api.entreprenly.online)**.
+
+6. **Verificación:** Se validó el despliegue accediendo a Swagger UI en `https://daop-api.entreprenly.online/swagger-ui/index.html` y comprobando que el endpoint de especificación OpenAPI (`/v3/api-docs`) responde correctamente sobre HTTPS.
+
+![backend_deploy](./images/backend_deploy.png "API desplegada sobre HTTPS")
+
+---
+
+#### 5.2.3.8. Team Collaboration Insights during Sprint
+
+Durante el Sprint 3, los cinco miembros del equipo participaron activamente en la implementación del Backend, evidenciado a través de los commits y Pull Requests registrados en el repositorio `daop-entreprenly-web-services`. El trabajo se distribuyó por Bounded Context: Joseph Julius (Juyens) lideró el IAM BC, la seguridad JWT, el Profile BC y la configuración del despliegue en Google Cloud; Elynor Mikela (elynorpalma) lideró el Chatbot BC y el WhatsApp bridge multi-tenant; José Antonio (DoomerGX) lideró el Inventory BC; José Fernando (Ferdinant12-ops) lideró el Sales BC; y Lionel Abraham (LioTG) lideró el Subscription BC.
+
+El equipo aplicó GitFlow como estrategia de control de versiones, trabajando en ramas `feature/` por Bounded Context (e.g., `feature/profile`, `feature/sales`, `feature/inventory`, `feature/chatbot`, `feature/subscription`) e integrando a `develop` y `main` mediante Pull Requests. Se realizaron un total de **24 Pull Requests** durante el Sprint. La distribución de commits (sin contar merges) por miembro fue la siguiente: Palma De Los Santos (19 commits), Camargo Briceño (16 commits), Peirano Brun (9 commits), Flores Pinchi (5 commits) y Chavez Carrasco (4 commits).
+
+![contributors_p3](./images/contributors_p3.png "Contribuidores del Sprint 3")
+
+![pull_p3](./images/pull_p3.png "Pull Requests del Sprint 3")
+
+**URL del repositorio de los Web Services:** https://github.com/Kauflink/daop-entreprenly-web-services
 
 ## 5.3. Validation Interviews
 
