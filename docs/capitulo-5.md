@@ -1819,3 +1819,302 @@ El equipo aplicó GitFlow como estrategia de control de versiones, trabajando en
 ![network_g](./images/network_g.png "network_g")
 
 **URL del repositorio del Frontend Web Application:** https://github.com/Kauflink/daop-entreprenly-frontend
+
+## 5.3. Validation Interviews
+
+En esta sección el equipo registra y explica las actividades de entrevistas de validación realizadas durante el proyecto. A diferencia de las entrevistas de elicitación presentadas en la sección 2.2 —cuyo objetivo fue descubrir los problemas y necesidades de los usuarios—, las entrevistas de validación tienen como propósito confirmar si la solución construida (Landing Page y aplicaciones) resuelve efectivamente esos problemas y resulta usable para los segmentos objetivo.
+
+Para ello se realizaron sesiones en las que usuarios reales de cada segmento interactuaron directamente con el Landing Page y con las aplicaciones de Entreprenly, ejecutando tareas concretas basadas en los User Flows definidos en la sección 4.4.4. Durante cada sesión se observó el desempeño del usuario al completar las tareas y, al finalizar, se aplicó un cuestionario de validación orientado a contrastar los dolores identificados en el needfinding con la experiencia real de uso del producto. Adicionalmente, se registraron observaciones de usabilidad siguiendo principios de evaluación heurística. Cada entrevista fue grabada en video como evidencia y se encuentra disponible en Microsoft Stream.
+
+### 5.3.1. Diseño de Entrevistas
+
+Antes de iniciar cada sesión de validación se brinda un saludo cordial y una breve presentación del entrevistador, explicando que el propósito de la sesión es evaluar la facilidad de uso y la utilidad del producto Entreprenly, y no evaluar al participante. Se aclara que la información será utilizada únicamente con fines académicos y se mantendrá en estricta confidencialidad. Como primer paso se solicita al participante su nombre completo, edad y distrito de residencia para fines de registro. Luego se le invita a interactuar libremente con el Landing Page y las aplicaciones, ejecutando las tareas propuestas y expresando en voz alta sus impresiones (técnica de *thinking aloud*), destacando que no existen respuestas correctas o incorrectas.
+
+El proceso de validación para cada segmento se compone de tres momentos: (1) la exploración del Landing Page, (2) la ejecución de tareas guiadas sobre las aplicaciones siguiendo los User Flows correspondientes, y (3) un cuestionario de validación de diez preguntas. A continuación se detallan los elementos a incluir en la sesión de validación para cada segmento objetivo.
+
+**Preguntas introductorias (ambos segmentos)**
+
+- ¿Cuál es su nombre y apellidos?
+- ¿Cuántos años tiene?
+- ¿En qué distrito vive?
+
+---
+
+**Segmento objetivo 1: Comerciantes (Dueños de Minimarkets/Mercados)**
+
+*Elementos a validar:* Landing Page y Aplicación Web (Dashboard de gestión).
+
+*User Flows a validar (sección 4.4.4):*
+
+- User Flow 1 – Gestión de inventario (agregar, editar y buscar productos).
+- User Flow 2 – Creación de lotes y gestión de alertas de vencimiento.
+- User Flow 3 – Registro de venta presencial (POS con pesaje).
+- User Flow 4 – Validación de pago de pedido del chatbot.
+- User Flow 5 – Suscripción al Plan Control.
+
+*Tareas asignadas:*
+
+1. Explorar el Landing Page e identificar qué ofrece Entreprenly y los planes disponibles.
+2. Registrar un producto nuevo, editarlo y luego buscarlo en el inventario.
+3. Crear un lote con fecha de vencimiento y revisar las alertas del dashboard de lotes.
+4. Registrar una venta presencial seleccionando un producto por peso y uno por unidad, y finalizar el cobro.
+5. Revisar un pedido del chatbot pendiente y aprobar (o rechazar) su pago.
+6. Iniciar el proceso de suscripción al Plan Control.
+
+*Preguntas de validación:*
+
+1. Después de explorar el Landing Page, ¿quedó claro qué hace Entreprenly y cómo resolvería los problemas de su negocio?
+2. Al registrar, editar y buscar productos en el módulo de inventario, ¿le resultó más sencillo y ordenado que su método actual (cuaderno, Excel o memoria)?
+3. Cuando creó un lote y visualizó las alertas de stock y vencimiento, ¿siente que esto le ayudaría a evitar pérdidas por productos vencidos o desabastecimiento no detectado?
+4. Al registrar una venta presencial con el POS, incluido el pesaje, ¿le pareció un proceso rápido y confiable para el día a día en el local?
+5. ¿La separación automática de los ingresos por efectivo y por medios digitales (Yape, Plin, POS) le daría mayor control al momento de cuadrar la caja?
+6. Al validar el pago de un pedido del chatbot desde el dashboard, ¿le resultó claro el proceso de aprobar o rechazar el pago y confirmar el pedido?
+7. ¿Considera que atender los pedidos por WhatsApp mediante el chatbot le quitaría la carga de estar pendiente del celular mientras atiende a los clientes en el local?
+8. Durante el uso de la aplicación, ¿encontró alguna pantalla, botón o paso que le resultara confuso o difícil de entender?
+9. En una escala del 1 al 5, ¿qué tan probable es que utilice Entreprenly en su negocio? ¿Por qué?
+10. ¿Qué funcionalidad agregaría, quitaría o mejoraría para que la aplicación se ajuste mejor a su forma de trabajar?
+
+---
+
+**Segmento objetivo 2: Clientes Finales**
+
+*Elementos a validar:* Landing Page y Chatbot de WhatsApp (experiencia de compra).
+
+*User Flows a validar:*
+
+- Flujo de pedido por el chatbot: consulta de producto disponible, confirmación del pedido, recepción de las instrucciones de pago, reporte del comprobante de pago digital y recepción de la confirmación/comprobante.
+
+*Tareas asignadas:*
+
+1. Explorar el Landing Page e identificar qué ofrece la tienda y por qué convendría comprar por este medio.
+2. Iniciar una conversación con el chatbot y consultar la disponibilidad de un producto.
+3. Confirmar un pedido a través del chatbot.
+4. Recibir las instrucciones de pago y reportar el comprobante de pago digital.
+5. Recibir la confirmación del pedido y su comprobante.
+
+*Preguntas de validación:*
+
+1. Después de ver el Landing Page, ¿entendió qué ofrece la tienda y por qué le convendría comprar por este medio?
+2. Al realizar un pedido por el chatbot de WhatsApp, ¿le resultó fácil y rápido encontrar el producto y completar la compra?
+3. ¿La confirmación de stock en tiempo real le dio mayor confianza de que el producto que pidió sí está disponible?
+4. Al recibir las instrucciones de pago y reportar su comprobante por el chat, ¿le pareció un proceso claro y seguro?
+5. ¿Recibir una confirmación o comprobante automático del pedido le dio mayor tranquilidad al pagar por adelantado?
+6. ¿Le resultó cómodo el medio de pago ofrecido (efectivo, Yape o Plin)?
+7. ¿Prefiere esta experiencia de compra mediante el chatbot frente a esperar que una persona le responda manualmente?
+8. Durante el pedido, ¿hubo algún mensaje o paso del chatbot que le resultara confuso o poco claro?
+9. En una escala del 1 al 5, ¿qué tan probable es que vuelva a comprar en una tienda que use este sistema? ¿Por qué?
+10. ¿Qué mejoraría de la experiencia de compra a través del chatbot?
+
+### 5.3.2. Registro de Entrevistas
+
+A continuación se registran las entrevistas de validación realizadas por segmento. Para cada entrevista se consigna el nombre y apellidos del participante, su edad, su distrito de residencia, un screenshot de un cuadro del video, el enlace al video alojado en Microsoft Stream —indicando el timing donde inicia la entrevista y su duración— y un resumen descriptivo de las principales apreciaciones del entrevistado respecto a las tareas asignadas. De acuerdo con lo planificado por el equipo, se realizaron dos entrevistas para el Segmento 1 (Comerciantes) y una entrevista para el Segmento 2 (Clientes Finales).
+
+> **Nota:** Las tarjetas se encuentran listas para incorporar la evidencia real de cada entrevista grabada por el equipo. Los campos entre corchetes `[ ]` y los screenshots son marcadores que deben reemplazarse por los datos del participante, el enlace de Microsoft Stream con su timing y duración, y el resumen correspondiente.
+
+**Segmento 1: Comerciantes (Dueños de Minimarkets/Mercados)**
+
+-   Primera entrevista:
+
+<div align="center">
+<div style="font-family: 'Segoe UI', sans-serif; max-width: 680px; margin: 24px auto; border: 1.5px solid #b0bec5; border-radius: 4px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.12);">
+
+  <!-- Encabezado -->
+  <div style="background-color: #1a6b6b; color: white; padding: 10px 16px; font-weight: 700; font-size: 1.1em; letter-spacing: 0.05em;">
+  Entrevista de Validación
+  </div>
+
+  <!-- Imagen de la captura de pantalla -->
+  <div style="background-color: #1a6b6b; padding: 12px 16px 16px;">
+    <img src="images/val_comerciante_1.png" alt="Screenshot de la entrevista de validación" style="width: 100%; border-radius: 3px; display: block;">
+  </div>
+
+  <!-- Datos en dos columnas -->
+  <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
+    <tr>
+      <td style="padding: 7px 14px; border: 1px solid #cfd8dc; width: 50%;">
+        <strong>Entrevistado(a):</strong> [Nombres y apellidos]
+      </td>
+      <td style="padding: 7px 14px; border: 1px solid #cfd8dc; width: 50%;">
+        <strong>Edad:</strong> [Edad]
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
+        <strong>Entrevistador(a):</strong> [Nombre del entrevistador]
+      </td>
+      <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
+        <strong>Distrito:</strong> [Distrito, Lima]
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
+        <strong>Inicio de la entrevista:</strong> [mm:ss]
+      </td>
+      <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
+        <strong>Duración:</strong> [mm:ss]
+      </td>
+    </tr>
+  </table>
+
+  <!-- Link -->
+  <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
+    <tr>
+      <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
+        <strong>Link de la entrevista (Microsoft Stream):</strong>
+        <a href="[URL del video en Microsoft Stream]" style="color: #1a6b6b;">[Nombre del participante]-Entrevista de Validación</a>
+      </td>
+    </tr>
+  </table>
+
+  <!-- Descripción -->
+  <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
+    <tr>
+      <td style="padding: 10px 14px; border: 1px solid #cfd8dc; line-height: 1.6;">
+        [Resumen descriptivo de las principales apreciaciones del entrevistado respecto a las tareas asignadas: claridad del Landing Page, facilidad de uso de cada User Flow ejecutado (inventario, lotes, venta presencial, validación de pago del chatbot y suscripción), en qué medida la solución resuelve sus problemas operativos, dificultades o pasos confusos detectados, probabilidad de uso y mejoras sugeridas.]
+      </td>
+    </tr>
+  </table>
+
+</div>
+
+</div>
+
+---
+
+-   Segunda entrevista:
+
+<div align="center">
+<div style="font-family: 'Segoe UI', sans-serif; max-width: 680px; margin: 24px auto; border: 1.5px solid #b0bec5; border-radius: 4px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.12);">
+
+  <!-- Encabezado -->
+  <div style="background-color: #1a6b6b; color: white; padding: 10px 16px; font-weight: 700; font-size: 1.1em; letter-spacing: 0.05em;">
+  Entrevista de Validación
+  </div>
+
+  <!-- Imagen de la captura de pantalla -->
+  <div style="background-color: #1a6b6b; padding: 12px 16px 16px;">
+    <img src="images/val_comerciante_2.png" alt="Screenshot de la entrevista de validación" style="width: 100%; border-radius: 3px; display: block;">
+  </div>
+
+  <!-- Datos en dos columnas -->
+  <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
+    <tr>
+      <td style="padding: 7px 14px; border: 1px solid #cfd8dc; width: 50%;">
+        <strong>Entrevistado(a):</strong> [Nombres y apellidos]
+      </td>
+      <td style="padding: 7px 14px; border: 1px solid #cfd8dc; width: 50%;">
+        <strong>Edad:</strong> [Edad]
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
+        <strong>Entrevistador(a):</strong> [Nombre del entrevistador]
+      </td>
+      <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
+        <strong>Distrito:</strong> [Distrito, Lima]
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
+        <strong>Inicio de la entrevista:</strong> [mm:ss]
+      </td>
+      <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
+        <strong>Duración:</strong> [mm:ss]
+      </td>
+    </tr>
+  </table>
+
+  <!-- Link -->
+  <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
+    <tr>
+      <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
+        <strong>Link de la entrevista (Microsoft Stream):</strong>
+        <a href="[URL del video en Microsoft Stream]" style="color: #1a6b6b;">[Nombre del participante]-Entrevista de Validación</a>
+      </td>
+    </tr>
+  </table>
+
+  <!-- Descripción -->
+  <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
+    <tr>
+      <td style="padding: 10px 14px; border: 1px solid #cfd8dc; line-height: 1.6;">
+        [Resumen descriptivo de las principales apreciaciones del entrevistado respecto a las tareas asignadas: claridad del Landing Page, facilidad de uso de cada User Flow ejecutado (inventario, lotes, venta presencial, validación de pago del chatbot y suscripción), en qué medida la solución resuelve sus problemas operativos, dificultades o pasos confusos detectados, probabilidad de uso y mejoras sugeridas.]
+      </td>
+    </tr>
+  </table>
+
+</div>
+
+</div>
+
+---
+
+**Segmento 2: Clientes Finales**
+
+-   Primera entrevista:
+
+<div align="center">
+<div style="font-family: 'Segoe UI', sans-serif; max-width: 680px; margin: 24px auto; border: 1.5px solid #b0bec5; border-radius: 4px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.12);">
+
+  <!-- Encabezado -->
+  <div style="background-color: #1a6b6b; color: white; padding: 10px 16px; font-weight: 700; font-size: 1.1em; letter-spacing: 0.05em;">
+  Entrevista de Validación
+  </div>
+
+  <!-- Imagen de la captura de pantalla -->
+  <div style="background-color: #1a6b6b; padding: 12px 16px 16px;">
+    <img src="images/val_cliente_1.png" alt="Screenshot de la entrevista de validación" style="width: 100%; border-radius: 3px; display: block;">
+  </div>
+
+  <!-- Datos en dos columnas -->
+  <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
+    <tr>
+      <td style="padding: 7px 14px; border: 1px solid #cfd8dc; width: 50%;">
+        <strong>Entrevistado(a):</strong> [Nombres y apellidos]
+      </td>
+      <td style="padding: 7px 14px; border: 1px solid #cfd8dc; width: 50%;">
+        <strong>Edad:</strong> [Edad]
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
+        <strong>Entrevistador(a):</strong> [Nombre del entrevistador]
+      </td>
+      <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
+        <strong>Distrito:</strong> [Distrito, Lima]
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
+        <strong>Inicio de la entrevista:</strong> [mm:ss]
+      </td>
+      <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
+        <strong>Duración:</strong> [mm:ss]
+      </td>
+    </tr>
+  </table>
+
+  <!-- Link -->
+  <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
+    <tr>
+      <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
+        <strong>Link de la entrevista (Microsoft Stream):</strong>
+        <a href="[URL del video en Microsoft Stream]" style="color: #1a6b6b;">[Nombre del participante]-Entrevista de Validación</a>
+      </td>
+    </tr>
+  </table>
+
+  <!-- Descripción -->
+  <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
+    <tr>
+      <td style="padding: 10px 14px; border: 1px solid #cfd8dc; line-height: 1.6;">
+        [Resumen descriptivo de las principales apreciaciones del entrevistado respecto a las tareas asignadas: claridad del Landing Page, facilidad y rapidez del pedido por el chatbot, confianza generada por la confirmación de stock en tiempo real, claridad del proceso de pago y comprobante, preferencia frente a la atención manual, pasos confusos detectados, probabilidad de recompra y mejoras sugeridas.]
+      </td>
+    </tr>
+  </table>
+
+</div>
+
+</div>
+
+---
