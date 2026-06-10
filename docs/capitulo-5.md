@@ -2118,3 +2118,285 @@ A continuación se registran las entrevistas de validación realizadas por segme
 </div>
 
 ---
+
+## 5.4. Evaluaciones según heurísticas
+
+Esta sección presenta la plantilla de evaluación heurística que será utilizada para analizar la calidad de uso de Entreprenly durante la etapa de validación. La evaluación se organizará en tres grupos: heurísticas de usabilidad, arquitectura de información e inclusive design. Cada criterio deberá completarse posteriormente con un puntaje del 1 al 5, evidencia observada durante las pruebas y oportunidades de mejora identificadas.
+
+> **Nota:** Los campos entre corchetes `[ ]` son marcadores de contenido y deben reemplazarse con los hallazgos reales obtenidos en las sesiones de evaluación.
+
+### 5.4.1. Heurísticas de usabilidad
+
+En esta subsección se evaluará la experiencia de uso de Entreprenly tomando como referencia las heurísticas de Nielsen. El objetivo es identificar si la plataforma comunica correctamente el estado del sistema, reduce errores, mantiene consistencia visual y permite que el usuario complete sus tareas principales sin fricción.
+
+**Visibilidad del estado del sistema - Puntaje: [ ]/5**
+
+[Describir si Entreprenly comunica oportunamente el resultado de las acciones del usuario. Considerar mensajes de confirmación, alertas, estados de carga, cambios visuales en botones, validaciones en formularios, confirmaciones de registro, inicio de sesión, suscripción, inventario, ventas, pedidos o chatbot.]
+
+**Evidencia observada:** [Completar con pantallas, módulos o flujos donde se observó esta heurística.]
+
+**Mejora sugerida:** [Completar con una recomendación concreta si aplica.]
+
+---
+
+**Relación entre el sistema y el mundo real - Puntaje: [ ]/5**
+
+[Describir si el lenguaje, los conceptos y las acciones de la interfaz son comprensibles para comerciantes y clientes finales. Considerar términos como inventario, lote, stock, caja diaria, pedido, suscripción, chatbot, método de pago y datos fiscales.]
+
+**Evidencia observada:** [Completar con ejemplos de textos, labels, botones o secciones.]
+
+**Mejora sugerida:** [Completar con una recomendación concreta si aplica.]
+
+---
+
+**Libertad y control por parte del usuario - Puntaje: [ ]/5**
+
+[Describir si el usuario puede cancelar, volver, editar, cerrar modales, corregir información o mantener su plan sin quedar atrapado en un flujo. Considerar login, registro, recuperación de contraseña, suscripción, perfil, inventario y pedidos.]
+
+**Evidencia observada:** [Completar con flujos donde el usuario conserva control.]
+
+**Mejora sugerida:** [Completar con una recomendación concreta si aplica.]
+
+---
+
+**Consistencia y estándares - Puntaje: [ ]/5**
+
+[Describir si la interfaz mantiene patrones visuales y funcionales consistentes entre la landing page, login, registro, dashboard y módulos internos. Considerar colores, botones, formularios, tarjetas, tablas, modales, navegación y nomenclatura.]
+
+**Evidencia observada:** [Completar con ejemplos de consistencia o inconsistencias detectadas.]
+
+**Mejora sugerida:** [Completar con una recomendación concreta si aplica.]
+
+---
+
+**Prevención de errores - Puntaje: [ ]/5**
+
+[Describir si el sistema ayuda a evitar errores antes de que ocurran. Considerar campos obligatorios, validación de formularios, confirmaciones antes de acciones críticas, límites de plan, selección de método de pago, datos fiscales, stock disponible y acciones sobre suscripción.]
+
+**Evidencia observada:** [Completar con ejemplos de prevención de errores.]
+
+**Mejora sugerida:** [Completar con una recomendación concreta si aplica.]
+
+---
+
+**Reconocer antes que recordar - Puntaje: [ ]/5**
+
+[Describir si la interfaz permite que el usuario identifique fácilmente qué debe hacer sin memorizar rutas o pasos. Considerar íconos, títulos, etiquetas de sección, sidebar, tarjetas resumen, botones visibles y ayudas contextuales.]
+
+**Evidencia observada:** [Completar con elementos que facilitan el reconocimiento.]
+
+**Mejora sugerida:** [Completar con una recomendación concreta si aplica.]
+
+---
+
+**Flexibilidad y eficiencia en el uso - Puntaje: [ ]/5**
+
+[Describir si Entreprenly permite que usuarios nuevos y recurrentes completen tareas de forma eficiente. Considerar accesos rápidos, navegación lateral, búsquedas, filtros, acciones principales, descarga de historial, gestión de productos, lotes, ventas, caja y suscripción.]
+
+**Evidencia observada:** [Completar con tareas o flujos evaluados.]
+
+**Mejora sugerida:** [Completar con una recomendación concreta si aplica.]
+
+---
+
+**Diseño estético y minimalista - Puntaje: [ ]/5**
+
+[Describir si la interfaz mantiene claridad visual, jerarquía adecuada y bajo ruido visual. Considerar la landing page, formularios de acceso, cards de planes, tablas comparativas, módulos del dashboard, perfil y suscripción.]
+
+**Evidencia observada:** [Completar con pantallas evaluadas.]
+
+**Mejora sugerida:** [Completar con una recomendación concreta si aplica.]
+
+---
+
+**Ayuda a los usuarios a reconocer, diagnosticar y recuperarse de los errores - Puntaje: [ ]/5**
+
+[Describir si los mensajes de error explican qué ocurrió y cómo solucionarlo. Considerar corrección de correo, recuperación de contraseña, activación de cuenta, validación de pago, formularios incompletos, límites del plan Free y errores de navegación.]
+
+**Evidencia observada:** [Completar con mensajes o estados de error observados.]
+
+**Mejora sugerida:** [Completar con una recomendación concreta si aplica.]
+
+---
+
+**Ayuda y documentación - Puntaje: [ ]/5**
+
+[Describir si el usuario cuenta con soporte, preguntas frecuentes, centro de ayuda, artículos, reportes de problema o información suficiente para resolver dudas sin asistencia directa.]
+
+**Evidencia observada:** [Completar con secciones, artículos o flujos de soporte evaluados.]
+
+**Mejora sugerida:** [Completar con una recomendación concreta si aplica.]
+
+### 5.4.2. Arquitectura de información
+
+En esta subsección se evaluará si la organización de la información de Entreprenly permite que el usuario encuentre, comprenda y utilice el contenido de forma clara. La evaluación se enfocará en la estructura de navegación, jerarquía visual, ubicación de acciones clave y coherencia entre secciones.
+
+**Is it findable? - Puntaje: [ ]/5**
+
+[Describir si los usuarios pueden encontrar rápidamente las funciones principales: inicio de sesión, registro, planes, FAQ, inventario, ventas, lotes, caja diaria, suscripción, perfil, soporte y chatbot.]
+
+**Evidencia observada:** [Completar con rutas de navegación o pantallas.]
+
+**Mejora sugerida:** [Completar con una recomendación concreta si aplica.]
+
+---
+
+**Is it accessible? - Puntaje: [ ]/5**
+
+[Describir si el contenido puede ser usado en distintos tamaños de pantalla y por usuarios con diferentes necesidades. Considerar contraste, tamaño de texto, espaciado, foco visual, labels y diseño responsivo.]
+
+**Evidencia observada:** [Completar con observaciones de desktop, tablet o móvil.]
+
+**Mejora sugerida:** [Completar con una recomendación concreta si aplica.]
+
+---
+
+**Is it clear? - Puntaje: [ ]/5**
+
+[Describir si los textos, títulos, botones y agrupaciones de contenido comunican claramente su propósito. Considerar la claridad de los módulos, formularios, modales y estados del sistema.]
+
+**Evidencia observada:** [Completar con ejemplos de claridad o confusión.]
+
+**Mejora sugerida:** [Completar con una recomendación concreta si aplica.]
+
+---
+
+**Is it communicative? - Puntaje: [ ]/5**
+
+[Describir si la interfaz comunica información relevante en el momento adecuado. Considerar estados de plan, stock, pagos, caja diaria, pedidos, confirmaciones, alertas y actividad de suscripción.]
+
+**Evidencia observada:** [Completar con mensajes o indicadores evaluados.]
+
+**Mejora sugerida:** [Completar con una recomendación concreta si aplica.]
+
+---
+
+**Is it usable? - Puntaje: [ ]/5**
+
+[Describir si los usuarios pueden completar las tareas principales sin asistencia externa. Considerar registro, verificación de email, login, recuperación de contraseña, selección de plan, agregar método de pago, completar datos fiscales, descargar historial, mantener plan, gestionar inventario y revisar pedidos.]
+
+**Evidencia observada:** [Completar con tareas realizadas durante validación.]
+
+**Mejora sugerida:** [Completar con una recomendación concreta si aplica.]
+
+---
+
+**Is it credible? - Puntaje: [ ]/5**
+
+[Describir si Entreprenly genera confianza mediante información clara, diseño profesional, datos consistentes, precios transparentes, mensajes de seguridad, identidad visual y coherencia en la propuesta de valor.]
+
+**Evidencia observada:** [Completar con elementos que refuerzan o reducen credibilidad.]
+
+**Mejora sugerida:** [Completar con una recomendación concreta si aplica.]
+
+---
+
+**Is it controllable? - Puntaje: [ ]/5**
+
+[Describir si el usuario puede controlar su experiencia: cambiar de sección, cancelar acciones, mantener el plan actual, editar perfil, corregir información, cerrar popups y volver a estados previos.]
+
+**Evidencia observada:** [Completar con flujos evaluados.]
+
+**Mejora sugerida:** [Completar con una recomendación concreta si aplica.]
+
+---
+
+**Is it valuable? - Puntaje: [ ]/5**
+
+[Describir si la plataforma aporta valor real a comerciantes y clientes finales. Considerar control de stock, reducción de errores, conciliación de caja, pedidos por WhatsApp, gestión de suscripción, soporte y claridad operativa.]
+
+**Evidencia observada:** [Completar con comentarios de usuarios o hallazgos.]
+
+**Mejora sugerida:** [Completar con una recomendación concreta si aplica.]
+
+---
+
+**Is it learnable? - Puntaje: [ ]/5**
+
+[Describir si un usuario nuevo puede entender rápidamente cómo usar la plataforma. Considerar onboarding implícito, labels claros, jerarquía de botones, navegación y patrones repetidos.]
+
+**Evidencia observada:** [Completar con observaciones de primeras tareas.]
+
+**Mejora sugerida:** [Completar con una recomendación concreta si aplica.]
+
+---
+
+**Is it delightful? - Puntaje: [ ]/5**
+
+[Describir si la experiencia resulta agradable, fluida y profesional sin añadir ruido visual. Considerar microinteracciones, claridad estética, sensación de control, confianza y satisfacción al completar tareas.]
+
+**Evidencia observada:** [Completar con comentarios o reacciones de usuarios.]
+
+**Mejora sugerida:** [Completar con una recomendación concreta si aplica.]
+
+### 5.4.3. Inclusive design
+
+En esta subsección se evaluará si Entreprenly considera diferentes contextos de uso, niveles de experiencia digital y necesidades de accesibilidad. El análisis permitirá identificar si la plataforma ofrece una experiencia comparable, clara y útil para comerciantes con distintos grados de familiaridad tecnológica y clientes finales que interactúan mediante canales simples.
+
+**Principio 1: Proporciona experiencias comparables - Puntaje: [ ]/5**
+
+[Describir si los usuarios pueden acceder a una experiencia equivalente desde los principales puntos de contacto: landing page, login, registro, dashboard, soporte y chatbot.]
+
+**Evidencia observada:** [Completar con pantallas o flujos evaluados.]
+
+**Mejora sugerida:** [Completar con una recomendación concreta si aplica.]
+
+---
+
+**Principio 2: Considera la situación del usuario - Puntaje: [ ]/5**
+
+[Describir si la interfaz responde a contextos reales de uso, como atención rápida en tienda, registro de ventas durante horas de alta demanda, revisión de stock, cierre de caja o compra por WhatsApp.]
+
+**Evidencia observada:** [Completar con escenarios de uso observados.]
+
+**Mejora sugerida:** [Completar con una recomendación concreta si aplica.]
+
+---
+
+**Principio 3: Sé consistente - Puntaje: [ ]/5**
+
+[Describir si los patrones visuales, botones, formularios, mensajes y navegación se mantienen consistentes en todos los módulos y pantallas.]
+
+**Evidencia observada:** [Completar con elementos consistentes o inconsistentes.]
+
+**Mejora sugerida:** [Completar con una recomendación concreta si aplica.]
+
+---
+
+**Principio 4: Deja al usuario mandar - Puntaje: [ ]/5**
+
+[Describir si el usuario conserva autonomía para decidir, cancelar, modificar, corregir, volver o mantener su configuración actual. Considerar especialmente los flujos de suscripción, perfil, formularios y popups.]
+
+**Evidencia observada:** [Completar con flujos donde el usuario tiene control.]
+
+**Mejora sugerida:** [Completar con una recomendación concreta si aplica.]
+
+---
+
+**Principio 5: Ofrece opciones - Puntaje: [ ]/5**
+
+[Describir si la plataforma ofrece alternativas de navegación y acción. Considerar botones principales y secundarios, acceso desde el header, CTA, sidebar, FAQ, soporte, inicio de sesión, registro y planes.]
+
+**Evidencia observada:** [Completar con opciones disponibles para el usuario.]
+
+**Mejora sugerida:** [Completar con una recomendación concreta si aplica.]
+
+---
+
+**Principio 6: Prioriza el contenido - Puntaje: [ ]/5**
+
+[Describir si el contenido más importante aparece primero y se diferencia claramente del contenido secundario. Considerar la landing page, dashboard, módulos operativos, tablas, cards, formularios y estados de suscripción.]
+
+**Evidencia observada:** [Completar con ejemplos de jerarquía visual.]
+
+**Mejora sugerida:** [Completar con una recomendación concreta si aplica.]
+
+---
+
+**Principio 7: Agrega valor - Puntaje: [ ]/5**
+
+[Describir si la experiencia aporta beneficios concretos al usuario más allá de cumplir una tarea básica. Considerar ahorro de tiempo, reducción de errores, confianza en el stock, control de caja, automatización por chatbot y claridad de suscripción.]
+
+**Evidencia observada:** [Completar con comentarios de usuarios o hallazgos de validación.]
+
+**Mejora sugerida:** [Completar con una recomendación concreta si aplica.]
