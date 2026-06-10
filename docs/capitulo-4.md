@@ -1386,8 +1386,7 @@ A continuación, se presenta el Container Diagram del sistema Entreprenly. Este 
 </p>
 
 ### 4.6.4. Software Architecture Components Diagrams
-<p align="center">Generación y Autenticación de Cuenta BC</p> <p align="center"><img src="images/structurizr-104049-AuthComponent.png" width="500"/></p>
-
+<p align="center">Generación y Autenticación de Cuenta BC</p> <p align="center"><img src="images/structurizr-104049-IamComponent.png" width="500"/></p>
 Este Bounded Context es responsable de la gestión de identidad del usuario dentro del sistema, abarcando tanto el registro como la autenticación. Para ello, integra mecanismos de acceso alternativo mediante Google OAuth, así como un sistema externo de correo para la verificación y vinculación de cuentas.
 A nivel funcional, incluye queries orientados a la lectura de datos de sesión y credenciales, y commands destinados a la creación de cuentas, actualización de información y cambio de contraseña.
 Finalmente, toda la información relacionada con autenticación es persistida en una base de datos MySQL, garantizando la consistencia y seguridad de los datos.
