@@ -3232,7 +3232,7 @@ A continuación se registran las entrevistas de validación realizadas por segme
         <strong>Inicio de la entrevista:</strong> 00:00
       </td>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
-        <strong>Duración:</strong> [completar duración del video]
+        <strong>Duración:</strong> 09:50
       </td>
     </tr>
   </table>
@@ -3251,8 +3251,8 @@ A continuación se registran las entrevistas de validación realizadas por segme
   <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
     <tr>
       <td style="padding: 10px 14px; border: 1px solid #cfd8dc; line-height: 1.6;">
-        Sebastián, cliente final de 19 años habituado a comprar con medios digitales (Yape y Plin), interactuó con el Landing Page y con el chatbot de WhatsApp de Entreprenly. Sobre el Landing Page indicó que comprendió con claridad la propuesta de valor de la tienda y el beneficio de comprar por este canal. Al realizar un pedido mediante el chatbot, destacó la facilidad y rapidez para consultar un producto y completar la compra en pocos pasos, en línea con su preferencia por las compras "en tres clics". Valoró especialmente la confirmación de stock en tiempo real, ya que su principal desconfianza con los negocios locales había sido pagar por productos que luego resultaban agotados; señaló que esta validación le devuelve seguridad.
-        En cuanto al proceso de pago, encontró claras las instrucciones y el reporte del comprobante, y consideró que recibir una confirmación automática del pedido mitiga la sensación de riesgo al pagar por adelantado. Manifestó preferir esta experiencia de compra por chatbot frente a esperar la respuesta manual de una persona. No identificó pasos confusos relevantes durante el flujo. En conjunto, expresó una alta probabilidad de volver a comprar en una tienda que utilice este sistema.
+        Sebastián, cliente final de 19 años habituado a los pagos digitales (Yape y Plin), validó el Landing Page y el flujo de compra por el chatbot de WhatsApp realizando un pedido real durante la sesión (dos Coca-Colas, con entrega en Girón Apurímac y pago reportado mediante una captura de Yape). Sobre el Landing Page, indicó que comprendió la propuesta de valor y la encontró interesante, destacando que representa una forma más rápida de comprar y que poder ver el stock disponible le resulta útil. Respecto al pedido por el chatbot, lo percibió rápido y directo, con mensajes claros y bien enfocados. Valoró especialmente la confirmación de stock en tiempo real: comentó que en otros emprendimientos suele ocurrir que paga y luego le indican que el producto está agotado, le retrasan o le cancelan el pedido, por lo que ver la cantidad disponible al momento de consultar le da confianza para comprar.
+        Sobre el pago, calificó el proceso de recibir las instrucciones y reportar el comprobante como claro, seguro, dinámico y sencillo, y señaló que recibir la confirmación automática del pedido le da tranquilidad al pagar por adelantado, pues le permite verificar que el pago fue confirmado y que no fue estafado ni perdió el tiempo. Indicó que el medio de pago ofrecido (Yape/Plin) le resulta cómodo por ser de uso generalizado. Manifestó preferir la atención por chatbot frente a la respuesta manual de una persona, por considerarla rápida y eficiente al estar todo automatizado. No identificó pasos confusos durante el flujo. Calificó con 5 sobre 5 la probabilidad de volver a comprar en una tienda que utilice este sistema, por considerarlo rápido, eficiente e intuitivo y fácil de usar para cualquier persona. Como mejora, sugirió que el mensaje de bienvenida del chatbot muestre un pequeño catálogo de los productos más solicitados o más vendidos y que, en caso de no estar disponibles, el cliente pueda escribir el producto para verificar su disponibilidad.
       </td>
     </tr>
   </table>
