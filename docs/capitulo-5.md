@@ -3242,7 +3242,7 @@ A continuación se registran las entrevistas de validación realizadas por segme
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
         <strong>Link de la entrevista:</strong>
-        <a href="https://www.youtube.com/watch?v=SIvsyxMgavU" style="color: #1a6b6b;">Sebastián Curay-Entrevista de Validación</a>
+        <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a290_upc_edu_pe/IQBA8Q70W8bCRoDGM1oUhrJdATc8nAY1ysMnwvptFJXACZk?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=wdusaa" style="color: #1a6b6b;">Sebastián Curay-Entrevista de Validación</a>
       </td>
     </tr>
   </table>
