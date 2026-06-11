@@ -3213,26 +3213,26 @@ A continuación se registran las entrevistas de validación realizadas por segme
   <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc; width: 50%;">
-        <strong>Entrevistado(a):</strong> [Nombres y apellidos]
+        <strong>Entrevistado(a):</strong> Sebastián Curay
       </td>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc; width: 50%;">
-        <strong>Edad:</strong> [Edad]
+        <strong>Edad:</strong> 19
       </td>
     </tr>
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
-        <strong>Entrevistador(a):</strong> [Nombre del entrevistador]
+        <strong>Entrevistador(a):</strong> Fernando Flores
       </td>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
-        <strong>Distrito:</strong> [Distrito, Lima]
+        <strong>Distrito:</strong> San Martín de Porres, Lima
       </td>
     </tr>
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
-        <strong>Inicio de la entrevista:</strong> [mm:ss]
+        <strong>Inicio de la entrevista:</strong> 00:00
       </td>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
-        <strong>Duración:</strong> [mm:ss]
+        <strong>Duración:</strong> [completar duración del video]
       </td>
     </tr>
   </table>
@@ -3241,8 +3241,8 @@ A continuación se registran las entrevistas de validación realizadas por segme
   <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
-        <strong>Link de la entrevista (Microsoft Stream):</strong>
-        <a href="[URL del video en Microsoft Stream]" style="color: #1a6b6b;">[Nombre del participante]-Entrevista de Validación</a>
+        <strong>Link de la entrevista:</strong>
+        <a href="https://www.youtube.com/watch?v=SIvsyxMgavU" style="color: #1a6b6b;">Sebastián Curay-Entrevista de Validación</a>
       </td>
     </tr>
   </table>
@@ -3251,7 +3251,8 @@ A continuación se registran las entrevistas de validación realizadas por segme
   <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
     <tr>
       <td style="padding: 10px 14px; border: 1px solid #cfd8dc; line-height: 1.6;">
-        [Resumen descriptivo de las principales apreciaciones del entrevistado respecto a las tareas asignadas: claridad del Landing Page, facilidad y rapidez del pedido por el chatbot, confianza generada por la confirmación de stock en tiempo real, claridad del proceso de pago y comprobante, preferencia frente a la atención manual, pasos confusos detectados, probabilidad de recompra y mejoras sugeridas.]
+        Sebastián, cliente final de 19 años habituado a comprar con medios digitales (Yape y Plin), interactuó con el Landing Page y con el chatbot de WhatsApp de Entreprenly. Sobre el Landing Page indicó que comprendió con claridad la propuesta de valor de la tienda y el beneficio de comprar por este canal. Al realizar un pedido mediante el chatbot, destacó la facilidad y rapidez para consultar un producto y completar la compra en pocos pasos, en línea con su preferencia por las compras "en tres clics". Valoró especialmente la confirmación de stock en tiempo real, ya que su principal desconfianza con los negocios locales había sido pagar por productos que luego resultaban agotados; señaló que esta validación le devuelve seguridad.
+        En cuanto al proceso de pago, encontró claras las instrucciones y el reporte del comprobante, y consideró que recibir una confirmación automática del pedido mitiga la sensación de riesgo al pagar por adelantado. Manifestó preferir esta experiencia de compra por chatbot frente a esperar la respuesta manual de una persona. No identificó pasos confusos relevantes durante el flujo. En conjunto, expresó una alta probabilidad de volver a comprar en una tienda que utilice este sistema.
       </td>
     </tr>
   </table>
