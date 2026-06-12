@@ -107,7 +107,8 @@ Para la entrega AV2, el equipo se enfocó en la implementación del backend de l
 | Peirano Brun, José Antonio | Backend del Bounded Context: Gestión de Inventario · Mejora visual y diseño responsive del Bounded Context · Revisión de errores de las User Stories (Capítulo III) · Actualización de los diagramas Structurizr y de la Evaluación Heurística |
 | Flores Pinchi, José Fernando | Backend del Bounded Context: Ventas · Mejora visual y diseño responsive del Bounded Context · Revisión de errores del Capítulo III · Entrevistas de Validación y entrevistas About the Product |
 
-> _Espacio reservado para las capturas de contribuciones del AV2 — insertar aquí las imágenes de evidencia (sugerido: `docs/images/contri5.png` y `docs/images/contri6.png`)._
+![Contri5](docs/images/contri5.png "contri5")
+![Contri6](docs/images/contri6.png "contri6")
 
 
 # Contenido
