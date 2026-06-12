@@ -41,13 +41,14 @@ Desarrollo de Aplicaciones Open Source
 | Versión  | Fecha          | Autor                 | Descripción de modificación |
 | :------: | :------------: | :-------------------: | :-------------------------: |
 | AV1      | 02 / 04 / 2026 | Todos los integrantes | Primera versión             |
-| TB1      | 12 / 05 / 2026 | Todos los integrantes | 
+| TB1      | 12 / 05 / 2026 | Todos los integrantes | Segunda versión             |
+| AV2      | 12 / 06 / 2026 | Todos los integrantes | Tercera versión             |
 
 </div>
 
 # Project Report Collaboration Insights
 
-En esta sección se presenta la evidencia de colaboración del equipo Kauflink durante el desarrollo del AV1 y TB1 del Trabajo Final. La elaboración del informe se llevó a cabo de forma distribuida a través del repositorio (`daop-entreprenly`) bajo la organización [Kauflink](https://github.com/Kauflink), donde todos los miembros del equipo participaron activamente mediante commits y revisiones a lo largo del desarrollo de cada entrega.
+En esta sección se presenta la evidencia de colaboración del equipo Kauflink durante el desarrollo del AV1, TB1 y AV2 del Trabajo Final. La elaboración del informe se llevó a cabo de forma distribuida a través del repositorio (`daop-entreprenly`) bajo la organización [Kauflink](https://github.com/Kauflink), donde todos los miembros del equipo participaron activamente mediante commits y revisiones a lo largo del desarrollo de cada entrega.
 
 ## Repositorio del Informe — `daop-entreprenly`
 
@@ -89,6 +90,25 @@ Para la entrega TB1, el equipo se enfocó en la definición técnica de los Boun
 
 ![Contri3](docs/images/contri3.png "contri3")
 ![Contri4](docs/images/contri4.png "contri4")
+
+---
+
+### **AV2: Implementación de Backend, Validación y Cierre del Proyecto**
+
+Para la entrega AV2, el equipo se enfocó en la implementación del backend de los Bounded Contexts mediante servicios RESTful, la mejora visual y el diseño responsive de las aplicaciones, la ejecución de las entrevistas de validación con usuarios del segmento objetivo y la incorporación de las correcciones finales sobre el informe. El trabajo se desarrolló bajo el flujo GitFlow, con integraciones a la rama `main` mediante Pull Requests.
+
+#### Distribución de contribuciones por integrante (AV2)
+
+| Integrante | Secciones principales del informe |
+| :--- | :--- |
+| Camargo Briceño, Joseph Julius | Backend del Bounded Context: Perfil y Configuración · Mejora visual y diseño responsive del Bounded Context · Redacción del Sprint 3 · Actualización del Landing Page |
+| Chavez Carrasco, Lionel Abraham | Backend del Bounded Context: Gestión y Proceso de Suscripción · Mejora visual y diseño responsive del Bounded Context · Redacción de la Evaluación Heurística (5.3.3) · Actualización del Landing Page |
+| Palma De Los Santos, Elynor Mikela | Backend del Bounded Context: ChatBot · Mejora visual y diseño responsive del Bounded Context · Actualización del Class Diagram y del Diagrama de Base de Datos (Capítulo IV) · Entrevistas de Validación y entrevistas About the Product |
+| Peirano Brun, José Antonio | Backend del Bounded Context: Gestión de Inventario · Mejora visual y diseño responsive del Bounded Context · Revisión de errores de las User Stories (Capítulo III) · Actualización de los diagramas Structurizr y de la Evaluación Heurística |
+| Flores Pinchi, José Fernando | Backend del Bounded Context: Ventas · Mejora visual y diseño responsive del Bounded Context · Revisión de errores del Capítulo III · Entrevistas de Validación y entrevistas About the Product |
+
+![Contri5](docs/images/contri5.png "contri5")
+![Contri6](docs/images/contri6.png "contri6")
 
 
 # Contenido
@@ -205,22 +225,27 @@ En esta sección se detallan las actividades realizadas en el trabajo final y el
       <td valign="top" width="50%">
         <strong>Camargo Briceño, Joseph Julius</strong><br>
         <em>AV1:</em> Lideró la reunión de Sprint Planning 1 vía Discord, comunicando el sprint goal, el alcance del entregable y la distribución de tareas al equipo de forma clara y estructurada. Participó en las entrevistas con usuarios del segmento objetivo, adaptando el lenguaje técnico a una audiencia no especializada.<br>
-        <em>TB1:</em> Sustentó la lógica técnica del <strong>Bounded Context de Perfil y Configuración</strong> ante el equipo. Lideró la sesión de revisión de correcciones, comunicando los ajustes necesarios en el modelo de dominio para alinearlos con el feedback del profesor de forma directa.<br><br>
+        <em>TB1:</em> Sustentó la lógica técnica del <strong>Bounded Context de Perfil y Configuración</strong> ante el equipo. Lideró la sesión de revisión de correcciones, comunicando los ajustes necesarios en el modelo de dominio para alinearlos con el feedback del profesor de forma directa.<br>
+        <em>AV2:</em> Sustentó ante el equipo la implementación del backend del <strong>Bounded Context de Perfil y Configuración</strong> mediante servicios RESTful y presentó los avances del Sprint 3. Comunicó oralmente las mejoras de interfaz y el diseño responsive aplicados, coordinando con el equipo los ajustes del Landing Page.<br><br>
         <strong>Peirano Brun, José Antonio</strong><br>
         <em>AV1:</em> Participó activamente en las sesiones de needfinding y en las reuniones de coordinación del equipo, comunicando sus observaciones y propuestas de mejora de forma oral ante sus compañeros. Colaboró en la exposición de hallazgos derivados del análisis competitivo.<br>
-        <em>TB1:</em> Expuso la arquitectura del <strong>Bounded Context de Gestión de Inventario</strong>. Sustentó las soluciones técnicas aplicadas para resolver las observaciones del profesor respecto al manejo de stock y lotes ante el equipo de desarrollo.<br><br>
+        <em>TB1:</em> Expuso la arquitectura del <strong>Bounded Context de Gestión de Inventario</strong>. Sustentó las soluciones técnicas aplicadas para resolver las observaciones del profesor respecto al manejo de stock y lotes ante el equipo de desarrollo.<br>
+        <em>AV2:</em> Expuso ante el equipo la implementación del backend del <strong>Bounded Context de Gestión de Inventario</strong> y sustentó oralmente las actualizaciones de los diagramas Structurizr y la evaluación heurística aplicada sobre el producto.<br><br>
         <strong>Palma De Los Santos, Elynor Mikela</strong><br>
         <em>AV1:</em> Participó en las sesiones de entrevistas con usuarios del segmento objetivo, formulando preguntas con claridad y adaptando el registro comunicativo según el perfil del entrevistado. Expuso sus hallazgos ante el equipo durante las reuniones de análisis.<br>
-        <em>TB1:</em> Presentó el diseño conversacional del <strong>Bounded Context de ChatBot</strong> y los cambios en el esquema de base de datos. Colaboró en la sustentación oral de las correcciones del entregable, comunicando mejoras en la experiencia de usuario basadas en el feedback docente.<br><br>
+        <em>TB1:</em> Presentó el diseño conversacional del <strong>Bounded Context de ChatBot</strong> y los cambios en el esquema de base de datos. Colaboró en la sustentación oral de las correcciones del entregable, comunicando mejoras en la experiencia de usuario basadas en el feedback docente.<br>
+        <em>AV2:</em> Presentó la implementación del backend del <strong>Bounded Context de ChatBot</strong> y condujo las entrevistas de validación con usuarios del segmento objetivo, adaptando el lenguaje técnico a una audiencia no especializada. Participó oralmente en las entrevistas About the Product.<br><br>
         <strong>Flores Pinchi, José Fernando</strong><br>
         <em>AV1:</em> Participó en la reunión de Sprint Planning 1 y en las sesiones de coordinación del equipo, comunicando sus aportes al desarrollo del Landing Page de forma comprensible ante sus compañeros. Colaboró en la discusión oral de decisiones de diseño.<br>
-        <em>TB1:</em> Sustentó la lógica de transacciones del <strong>Bounded Context de Ventas</strong> y la estructura de la presentación final del proyecto (PPT). Participó en la defensa técnica de las decisiones de diseño del equipo frente a las correcciones indicadas por el docente.<br><br>
+        <em>TB1:</em> Sustentó la lógica de transacciones del <strong>Bounded Context de Ventas</strong> y la estructura de la presentación final del proyecto (PPT). Participó en la defensa técnica de las decisiones de diseño del equipo frente a las correcciones indicadas por el docente.<br>
+        <em>AV2:</em> Sustentó la implementación del backend del <strong>Bounded Context de Ventas</strong> y lideró las entrevistas de validación con usuarios, formulando preguntas con claridad. Participó en las entrevistas About the Product comunicando la propuesta de valor del producto.<br><br>
         <strong>Chavez Carrasco, Lionel Abraham</strong><br>
         <em>AV1:</em> Propuso y sustentó oralmente ante el equipo las decisiones de diseño interactivo del Landing Page, incluyendo la implementación del switch de tema claro/oscuro y el selector de idioma. Comunicó con precisión técnica las soluciones adoptadas durante el Sprint.<br>
-        <em>TB1:</em> Explicó la lógica de pagos y estados en el <strong>Bounded Context de Gestión y Proceso de Suscripción</strong>. Sustentó las nuevas User Stories de la Landing Page ante el equipo, asegurando la comprensión técnica de los flujos de navegación actualizados.<br><br>
+        <em>TB1:</em> Explicó la lógica de pagos y estados en el <strong>Bounded Context de Gestión y Proceso de Suscripción</strong>. Sustentó las nuevas User Stories de la Landing Page ante el equipo, asegurando la comprensión técnica de los flujos de navegación actualizados.<br>
+        <em>AV2:</em> Explicó ante el equipo la implementación del backend del <strong>Bounded Context de Gestión y Proceso de Suscripción</strong> y sustentó oralmente la evaluación heurística y las actualizaciones aplicadas al Landing Page.<br><br>
       </td>
       <td valign="top" width="35%">
-        A través de las entregas AV1 y TB1, el equipo fortaleció la comunicación técnica en entornos de alta exigencia. En la AV1 se priorizó la comunicación con usuarios finales, mientras que en la TB1 se consolidó la capacidad de sustentar decisiones arquitectónicas complejas y aplicar correcciones técnicas críticas de forma estructurada ante una audiencia experta.
+        A través de las entregas AV1, TB1 y AV2, el equipo fortaleció la comunicación técnica en entornos de alta exigencia. En la AV1 se priorizó la comunicación con usuarios finales, mientras que en la TB1 se consolidó la capacidad de sustentar decisiones arquitectónicas complejas y aplicar correcciones técnicas críticas de forma estructurada ante una audiencia experta. En la AV2, la comunicación oral se centró en la sustentación de la implementación del backend de cada Bounded Context y en la conducción de las entrevistas de validación con usuarios reales del segmento objetivo.
       </td>
     </tr>
     <tr>
@@ -228,22 +253,27 @@ En esta sección se detallan las actividades realizadas en el trabajo final y el
       <td valign="top">
         <strong>Camargo Briceño, Joseph Julius</strong><br>
         <em>AV1:</em> Redactó la descripción de la startup, misión, visión y valores. Documentó las convenciones de GitFlow, Semantic Versioning y Conventional Commits. Elaboró la documentación del pipeline de CI/CD y el proceso de despliegue.<br>
-        <em>TB1:</em> Documentó las especificaciones técnicas del <strong>Bounded Context de Perfil y Configuración</strong> y redactó la sección de performance del sistema. Consolidó la redacción final de la TB1, integrando todas las correcciones solicitadas por el docente con registro formal.<br><br>
+        <em>TB1:</em> Documentó las especificaciones técnicas del <strong>Bounded Context de Perfil y Configuración</strong> y redactó la sección de performance del sistema. Consolidó la redacción final de la TB1, integrando todas las correcciones solicitadas por el docente con registro formal.<br>
+        <em>AV2:</em> Redactó la documentación del Sprint 3 y documentó la implementación del backend del <strong>Bounded Context de Perfil y Configuración</strong>. Actualizó con registro formal el contenido escrito del Landing Page.<br><br>
         <strong>Peirano Brun, José Antonio</strong><br>
         <em>AV1:</em> Contribuyó en la redacción de secciones del informe técnico (Capítulos I-III), manteniendo un registro formal académico. Colaboró en la corrección del contenido textual del Landing Page para asegurar coherencia y claridad para el usuario general.<br>
-        <em>TB1:</em> Redactó técnicamente el <strong>Bounded Context de Gestión de Inventario</strong> y documentó las revisiones y actualizaciones del repositorio. Actualizó los requerimientos funcionales en el informe basándose en las observaciones técnicas recibidas para mejorar la precisión documental.<br><br>
+        <em>TB1:</em> Redactó técnicamente el <strong>Bounded Context de Gestión de Inventario</strong> y documentó las revisiones y actualizaciones del repositorio. Actualizó los requerimientos funcionales en el informe basándose en las observaciones técnicas recibidas para mejorar la precisión documental.<br>
+        <em>AV2:</em> Documentó el backend del <strong>Bounded Context de Gestión de Inventario</strong>, realizó la revisión y corrección de las User Stories del Capítulo III y documentó la actualización de los diagramas Structurizr y de la evaluación heurística.<br><br>
         <strong>Palma De Los Santos, Elynor Mikela</strong><br>
         <em>AV1:</em> Lideró la revisión y corrección ortográfica del contenido textual del Landing Page. Participó en la redacción de User Stories y criterios de aceptación estructurados (Given-When-Then) para audiencias técnicas y no técnicas.<br>
-        <em>TB1:</em> Documentó el <strong>Bounded Context de ChatBot</strong> y actualizó los diagramas de clases, structuraizer y esquema de base de datos. Lideró la revisión editorial de las correcciones finales para asegurar el cumplimiento de los estándares académicos.<br><br>
+        <em>TB1:</em> Documentó el <strong>Bounded Context de ChatBot</strong> y actualizó los diagramas de clases, structuraizer y esquema de base de datos. Lideró la revisión editorial de las correcciones finales para asegurar el cumplimiento de los estándares académicos.<br>
+        <em>AV2:</em> Documentó el backend del <strong>Bounded Context de ChatBot</strong> y actualizó por escrito el Class Diagram y el Diagrama de Base de Datos del Capítulo IV, asegurando la precisión técnica de la documentación. Registró los hallazgos de las entrevistas de validación.<br><br>
         <strong>Flores Pinchi, José Fernando</strong><br>
         <em>AV1:</em> Colaboró en la estructura base del Landing Page, produciendo textos dirigidos a usuarios finales. Participó en la corrección de redacción y ortografía del informe técnico, contribuyendo a la coherencia del tono escrito.<br>
-        <em>TB1:</em> Redactó la documentación técnica del <strong>Bounded Context de Ventas</strong> y elaboró el contenido de la presentación (PPT) del proyecto. Participó en la redacción de las correcciones del informe técnico, traduciendo los ajustes del profesor a especificaciones escritas precisas.<br><br>
+        <em>TB1:</em> Redactó la documentación técnica del <strong>Bounded Context de Ventas</strong> y elaboró el contenido de la presentación (PPT) del proyecto. Participó en la redacción de las correcciones del informe técnico, traduciendo los ajustes del profesor a especificaciones escritas precisas.<br>
+        <em>AV2:</em> Documentó el backend del <strong>Bounded Context de Ventas</strong> y realizó la revisión y corrección de errores del Capítulo III, mejorando la precisión documental del informe. Registró por escrito las entrevistas de validación.<br><br>
         <strong>Chavez Carrasco, Lionel Abraham</strong><br>
         <em>AV1:</em> Desarrolló el contenido escrito del Landing Page, incluyendo headlines y descripciones de funcionalidades. Documentó las guías de estilo CSS, convenciones de TypeScript y decisiones de arquitectura frontend en el Capítulo IV.<br>
-        <em>TB1:</em> Redactó el <strong>Bounded Context de Gestión y Proceso de Suscripción</strong> y las nuevas User Stories de la Landing Page. Documentó la revisión del repositorio y las correcciones de diagramación, asegurando que la arquitectura técnica quedara explicada con rigor técnico.
+        <em>TB1:</em> Redactó el <strong>Bounded Context de Gestión y Proceso de Suscripción</strong> y las nuevas User Stories de la Landing Page. Documentó la revisión del repositorio y las correcciones de diagramación, asegurando que la arquitectura técnica quedara explicada con rigor técnico.<br>
+        <em>AV2:</em> Redactó la sección de Evaluación Heurística (5.3.3) y documentó el backend del <strong>Bounded Context de Gestión y Proceso de Suscripción</strong>. Actualizó el contenido escrito del Landing Page.
       </td>
       <td valign="top">
-        La comunicación escrita evolucionó hacia la documentación técnica profunda en la TB1. La redacción de los Bounded Contexts y la integración de diagramas estructurales evidencian capacidad para organizar información compleja, adaptando el lenguaje para desarrolladores y revisores académicos con precisión y coherencia.
+        La comunicación escrita evolucionó hacia la documentación técnica profunda en la TB1. La redacción de los Bounded Contexts y la integración de diagramas estructurales evidencian capacidad para organizar información compleja, adaptando el lenguaje para desarrolladores y revisores académicos con precisión y coherencia. En la AV2, la comunicación escrita se concentró en documentar la implementación del backend de cada Bounded Context y en integrar las correcciones finales del informe —User Stories, diagramas de clase y de base de datos, y la evaluación heurística— con rigor técnico.
       </td>
     </tr>
   </tbody>
