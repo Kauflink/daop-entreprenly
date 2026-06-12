@@ -41,13 +41,14 @@ Desarrollo de Aplicaciones Open Source
 | Versión  | Fecha          | Autor                 | Descripción de modificación |
 | :------: | :------------: | :-------------------: | :-------------------------: |
 | AV1      | 02 / 04 / 2026 | Todos los integrantes | Primera versión             |
-| TB1      | 12 / 05 / 2026 | Todos los integrantes | 
+| TB1      | 12 / 05 / 2026 | Todos los integrantes | Segunda versión             |
+| AV2      | 12 / 06 / 2026 | Todos los integrantes | Tercera versión             |
 
 </div>
 
 # Project Report Collaboration Insights
 
-En esta sección se presenta la evidencia de colaboración del equipo Kauflink durante el desarrollo del AV1 y TB1 del Trabajo Final. La elaboración del informe se llevó a cabo de forma distribuida a través del repositorio (`daop-entreprenly`) bajo la organización [Kauflink](https://github.com/Kauflink), donde todos los miembros del equipo participaron activamente mediante commits y revisiones a lo largo del desarrollo de cada entrega.
+En esta sección se presenta la evidencia de colaboración del equipo Kauflink durante el desarrollo del AV1, TB1 y AV2 del Trabajo Final. La elaboración del informe se llevó a cabo de forma distribuida a través del repositorio (`daop-entreprenly`) bajo la organización [Kauflink](https://github.com/Kauflink), donde todos los miembros del equipo participaron activamente mediante commits y revisiones a lo largo del desarrollo de cada entrega.
 
 ## Repositorio del Informe — `daop-entreprenly`
 
@@ -89,6 +90,24 @@ Para la entrega TB1, el equipo se enfocó en la definición técnica de los Boun
 
 ![Contri3](docs/images/contri3.png "contri3")
 ![Contri4](docs/images/contri4.png "contri4")
+
+---
+
+### **AV2: Implementación de Backend, Validación y Cierre del Proyecto**
+
+Para la entrega AV2, el equipo se enfocó en la implementación del backend de los Bounded Contexts mediante servicios RESTful, la mejora visual y el diseño responsive de las aplicaciones, la ejecución de las entrevistas de validación con usuarios del segmento objetivo y la incorporación de las correcciones finales sobre el informe. El trabajo se desarrolló bajo el flujo GitFlow, con integraciones a la rama `main` mediante Pull Requests.
+
+#### Distribución de contribuciones por integrante (AV2)
+
+| Integrante | Secciones principales del informe |
+| :--- | :--- |
+| Camargo Briceño, Joseph Julius | Backend del Bounded Context: Perfil y Configuración · Mejora visual y diseño responsive del Bounded Context · Redacción del Sprint 3 · Actualización del Landing Page |
+| Chavez Carrasco, Lionel Abraham | Backend del Bounded Context: Gestión y Proceso de Suscripción · Mejora visual y diseño responsive del Bounded Context · Redacción de la Evaluación Heurística (5.3.3) · Actualización del Landing Page |
+| Palma De Los Santos, Elynor Mikela | Backend del Bounded Context: ChatBot · Mejora visual y diseño responsive del Bounded Context · Actualización del Class Diagram y del Diagrama de Base de Datos (Capítulo IV) · Entrevistas de Validación y entrevistas About the Product |
+| Peirano Brun, José Antonio | Backend del Bounded Context: Gestión de Inventario · Mejora visual y diseño responsive del Bounded Context · Revisión de errores de las User Stories (Capítulo III) · Actualización de los diagramas Structurizr y de la Evaluación Heurística |
+| Flores Pinchi, José Fernando | Backend del Bounded Context: Ventas · Mejora visual y diseño responsive del Bounded Context · Revisión de errores del Capítulo III · Entrevistas de Validación y entrevistas About the Product |
+
+> _Espacio reservado para las capturas de contribuciones del AV2 — insertar aquí las imágenes de evidencia (sugerido: `docs/images/contri5.png` y `docs/images/contri6.png`)._
 
 
 # Contenido
