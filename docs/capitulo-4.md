@@ -1431,8 +1431,8 @@ Además, se integra con servicios externos de mensajería (WhatsApp API) y persi
 
 ### 4.7.1. Class Diagrams
 
-<p align="center">Generación y Autenticación de Cuenta BC</p>
-<p align="center"><img src="images/CLASS DIAGRAM — Generación y Autenticación de Cuenta BC.svg" width="500"/></p>
+<p align="center">IAM (Generación y Autenticación de Cuenta) BC</p>
+<p align="center"><img src="images/CLASS DIAGRAM — IAM BC.svg" width="500"/></p>
 
 <p align="center">Perfil y Configuración BC</p>
 <p align="center"><img src="images/CLASS DIAGRAM — Perfil y Configuración BC.svg" width="500"/></p>
@@ -1440,11 +1440,11 @@ Además, se integra con servicios externos de mensajería (WhatsApp API) y persi
 <p align="center">Gestión y Proceso de Suscripción BC</p>
 <p align="center"><img src="images/CLASS DIAGRAM — Gestión y Proceso de Suscripción BC.svg" width="500"/></p>
 
-<p align="center">Gestión de Inventario de Suscripción BC</p>
+<p align="center">Gestión de Inventario BC</p>
 <p align="center"><img src="images/CLASS DIAGRAM — Gestión de Inventario BC.svg" width="500"/></p>
 
 <p align="center">Ventas BC</p>
-<p align="center"><img src="images/Sales_BC-Class_Diagram__Ventas_BC.png" width="500"/></p>
+<p align="center"><img src="images/CLASS DIAGRAM — Ventas BC.svg" width="500"/></p>
 
 <p align="center">Chatbot de WhatsApp BC</p>
 <p align="center"><img src="images/CLASS DIAGRAM — Chatbot de WhatsApp BC.svg" width="500"/></p>
