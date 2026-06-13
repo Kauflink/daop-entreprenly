@@ -3685,13 +3685,13 @@ El video fue subido a **Microsoft Stream** y a **YouTube**. A continuación se i
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
         <strong>Link del video (Microsoft Stream):</strong>
-        <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a290_upc_edu_pe/IQAvYevFxmfxQJUpQey68woeARmPGiVup-4mCLUWDRTMqo0?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=5fsfAE" style="color: #1a6b6b;">Entreprenly — Video About-the-Product (Microsoft Stream)</a>
+        <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a290_upc_edu_pe/IQDfgKOGczm3Roa6mGkHpnlUASMttHELFOUS6kC67yLAjNM?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=xEBstE" style="color: #1a6b6b;">Entreprenly — Video About-the-Product (Microsoft Stream)</a>
       </td>
     </tr>
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
         <strong>Link del video (YouTube):</strong>
-        <a href="https://youtu.be/VXkY9W8ivPY" style="color: #1a6b6b;">Entreprenly — Video About-the-Product (YouTube)</a>
+        <a href="https://youtu.be/nPIHYqd0MtM" style="color: #1a6b6b;">Entreprenly — Video About-the-Product (YouTube)</a>
       </td>
     </tr>
   </table>
