@@ -3263,11 +3263,11 @@ A continuación se registran las entrevistas de validación realizadas por segme
 
 ---
 
-## 5.4. Evaluaciones según heurísticas
+### 5.3.3. Evaluaciones según heurísticas
 
 Esta sección presenta la evaluación heurística aplicada a **Entreprenly** durante la etapa de validación. La evaluación se organiza en tres grupos: heurísticas de usabilidad, arquitectura de información e inclusive design. Cada criterio incluye un puntaje del 1 al 5, la evidencia observada (referenciada por figura) y las oportunidades de mejora identificadas.
 
-### Catálogo de figuras
+#### Catálogo de figuras
 
 | Fig. | Pantalla | Archivo |
 |------|----------|---------|
@@ -3293,11 +3293,11 @@ Esta sección presenta la evaluación heurística aplicada a **Entreprenly** dur
 
 ---
 
-### 5.4.1. Heurísticas de usabilidad
+#### 5.3.3.1. Heurísticas de usabilidad
 
 En esta subsección se evalúa la experiencia de uso de Entreprenly tomando como referencia las heurísticas de Nielsen.
 
-#### Visibilidad del estado del sistema — Puntaje: 5/5
+##### Visibilidad del estado del sistema — Puntaje: 5/5
 
 Entreprenly comunica oportunamente el estado del sistema. El Panel de Inicio muestra en tiempo real el resumen del día (ventas, ingresos, pedidos y alertas), el estado del chatbot ("Activo") y el estado del inventario con etiquetas como "Vencido" y "Stock bajo". El panel de alertas de lotes notifica vencimientos y faltantes, y la vista de Suscripción refleja el plan activo y el consumo de límites mediante barras de progreso.
 
@@ -3311,7 +3311,7 @@ Entreprenly comunica oportunamente el estado del sistema. El Panel de Inicio mue
 
 ---
 
-#### Relación entre el sistema y el mundo real — Puntaje: 5/5
+##### Relación entre el sistema y el mundo real — Puntaje: 5/5
 
 El lenguaje es cercano al comerciante peruano: "Lotes", "Stock", "Caja diaria", "Boleta", "Yape/Plin", "RUC" y "Razón social". En las vistas de Lotes y de Datos de facturación se emplean términos fiscales y de inventario propios del rubro.
 
@@ -3325,7 +3325,7 @@ El lenguaje es cercano al comerciante peruano: "Lotes", "Stock", "Caja diaria", 
 
 ---
 
-#### Libertad y control por parte del usuario — Puntaje: 5/5
+##### Libertad y control por parte del usuario — Puntaje: 5/5
 
 Todos los modales tienen botón de cierre (×) y opción Cancelar; el detalle de lote ofrece "Volver"; el Perfil permite editar datos, cambiar contraseña, idioma, tema y notificaciones sin quedar atrapado. En Ventas existe "Cancelar Venta".
 
@@ -3339,7 +3339,7 @@ Todos los modales tienen botón de cierre (×) y opción Cancelar; el detalle de
 
 ---
 
-#### Consistencia y estándares — Puntaje: 5/5
+##### Consistencia y estándares — Puntaje: 5/5
 
 Se mantiene un patrón visual uniforme: sidebar naranja fija, tipografía estable, botones primarios naranjas, y tarjetas y tablas con el mismo estilo en Productos, Lotes, Ventas, Suscripción y Ayuda. La nomenclatura de navegación es consistente en todas las pantallas.
 
@@ -3353,7 +3353,7 @@ Se mantiene un patrón visual uniforme: sidebar naranja fija, tipografía establ
 
 ---
 
-#### Prevención de errores — Puntaje: 4/5
+##### Prevención de errores — Puntaje: 4/5
 
 Los formularios usan campos guía y valores por defecto. En Agregar Producto el botón Guardar permanece atenuado hasta completar lo necesario; en Agregar Lote se solicitan fecha de ingreso y vencimiento; en Datos de facturación y Método de pago se marcan formatos esperados (tarjeta, CVV, RUC).
 
@@ -3367,7 +3367,7 @@ Los formularios usan campos guía y valores por defecto. En Agregar Producto el 
 
 ---
 
-#### Reconocer antes que recordar — Puntaje: 5/5
+##### Reconocer antes que recordar — Puntaje: 5/5
 
 El dashboard ofrece "Accesos rápidos" con íconos y una sidebar siempre visible con etiquetas de texto. El usuario reconoce los módulos sin memorizar rutas; las tarjetas resumen muestran lo relevante de un vistazo.
 
@@ -3379,7 +3379,7 @@ El dashboard ofrece "Accesos rápidos" con íconos y una sidebar siempre visible
 
 ---
 
-#### Flexibilidad y eficiencia en el uso — Puntaje: 4/5
+##### Flexibilidad y eficiencia en el uso — Puntaje: 4/5
 
 Existen atajos (accesos rápidos del dashboard), buscador de lotes, descarga de historial, teclado numérico para registrar cantidad en ventas y generación automática de código QR, lo que agiliza tanto al usuario nuevo como al recurrente.
 
@@ -3393,7 +3393,7 @@ Existen atajos (accesos rápidos del dashboard), buscador de lotes, descarga de 
 
 ---
 
-#### Diseño estético y minimalista — Puntaje: 5/5
+##### Diseño estético y minimalista — Puntaje: 5/5
 
 La interfaz mantiene jerarquía clara y bajo ruido visual: uso consistente del naranja como color de acción, espacios en blanco amplios y tarjetas bien delimitadas en Suscripción y en el dashboard.
 
@@ -3405,7 +3405,7 @@ La interfaz mantiene jerarquía clara y bajo ruido visual: uso consistente del n
 
 ---
 
-#### Ayuda a los usuarios a reconocer, diagnosticar y recuperarse de los errores — Puntaje: 4/5
+##### Ayuda a los usuarios a reconocer, diagnosticar y recuperarse de los errores — Puntaje: 4/5
 
 El sistema señala errores con color y texto: en Ventas muestra "⊘ Producto no encontrado"; en Lotes marca el lote "Vencido" en rojo con la fecha. Los estados de error son reconocibles.
 
@@ -3419,7 +3419,7 @@ El sistema señala errores con color y texto: en Ventas muestra "⊘ Producto no
 
 ---
 
-#### Ayuda y documentación — Puntaje: 5/5
+##### Ayuda y documentación — Puntaje: 5/5
 
 Cuenta con un Centro de Ayuda con artículos frecuentes, categorías, buscador y datos de soporte (correo, WhatsApp, horario); artículos paso a paso; y un formulario para reportar problemas con tiempos de respuesta.
 
@@ -3435,11 +3435,11 @@ Cuenta con un Centro de Ayuda con artículos frecuentes, categorías, buscador y
 
 ---
 
-### 5.4.2. Arquitectura de información
+#### 5.3.3.2. Arquitectura de información
 
 En esta subsección se evalúa si la organización de la información permite encontrar, comprender y utilizar el contenido de forma clara.
 
-#### Is it findable? — Puntaje: 5/5
+##### Is it findable? — Puntaje: 5/5
 
 Las funciones principales se ubican en la sidebar fija y en los accesos rápidos del dashboard; el Centro de Ayuda agrupa soporte y FAQ por categorías.
 
@@ -3451,7 +3451,7 @@ Las funciones principales se ubican en la sidebar fija y en los accesos rápidos
 
 ---
 
-#### Is it accessible? — Puntaje: 4/5
+##### Is it accessible? — Puntaje: 4/5
 
 Buen contraste (texto oscuro sobre blanco, acción naranja), etiquetas visibles y opción de tema Claro/Oscuro e idioma/zona horaria configurables.
 
@@ -3463,7 +3463,7 @@ Buen contraste (texto oscuro sobre blanco, acción naranja), etiquetas visibles 
 
 ---
 
-#### Is it clear? — Puntaje: 5/5
+##### Is it clear? — Puntaje: 5/5
 
 Títulos y subtítulos describen cada sección ("Catálogo de productos disponibles", "Registra y procesa las ventas del día"); los modales incluyen título y descripción.
 
@@ -3475,7 +3475,7 @@ Títulos y subtítulos describen cada sección ("Catálogo de productos disponib
 
 ---
 
-#### Is it communicative? — Puntaje: 5/5
+##### Is it communicative? — Puntaje: 5/5
 
 La interfaz informa en el momento adecuado: estado del plan, stock, alertas de lotes y actividad de suscripción.
 
@@ -3487,7 +3487,7 @@ La interfaz informa en el momento adecuado: estado del plan, stock, alertas de l
 
 ---
 
-#### Is it usable? — Puntaje: 4/5
+##### Is it usable? — Puntaje: 4/5
 
 Las tareas principales se completan sin asistencia: alta de productos y lotes, registro de ventas, gestión de suscripción, método de pago, datos fiscales y descarga de historial.
 
@@ -3499,7 +3499,7 @@ Las tareas principales se completan sin asistencia: alta de productos y lotes, r
 
 ---
 
-#### Is it credible? — Puntaje: 5/5
+##### Is it credible? — Puntaje: 5/5
 
 Transmite confianza con precios transparentes, identidad visual coherente, datos de soporte reales y una propuesta de valor clara.
 
@@ -3511,7 +3511,7 @@ Transmite confianza con precios transparentes, identidad visual coherente, datos
 
 ---
 
-#### Is it controllable? — Puntaje: 5/5
+##### Is it controllable? — Puntaje: 5/5
 
 El usuario cambia de sección, cancela acciones, mantiene su plan, edita su perfil y vuelve a estados previos (botón Volver, ×, Cancelar).
 
@@ -3523,7 +3523,7 @@ El usuario cambia de sección, cancela acciones, mantiene su plan, edita su perf
 
 ---
 
-#### Is it valuable? — Puntaje: 5/5
+##### Is it valuable? — Puntaje: 5/5
 
 Aporta valor real: control de stock y vencimientos, conciliación de caja por método de pago, pedidos por WhatsApp vía chatbot y gestión de suscripción.
 
@@ -3535,7 +3535,7 @@ Aporta valor real: control de stock y vencimientos, conciliación de caja por m�
 
 ---
 
-#### Is it learnable? — Puntaje: 5/5
+##### Is it learnable? — Puntaje: 5/5
 
 Patrones repetidos, labels claros y guías paso a paso facilitan el aprendizaje.
 
@@ -3547,7 +3547,7 @@ Patrones repetidos, labels claros y guías paso a paso facilitan el aprendizaje.
 
 ---
 
-#### Is it delightful? — Puntaje: 4/5
+##### Is it delightful? — Puntaje: 4/5
 
 La experiencia es fluida, limpia y profesional, con estados claros y sensación de control.
 
@@ -3559,11 +3559,11 @@ La experiencia es fluida, limpia y profesional, con estados claros y sensación 
 
 ---
 
-### 5.4.3. Inclusive design
+#### 5.3.3.3. Inclusive design
 
 En esta subsección se evalúa si Entreprenly considera distintos contextos de uso, niveles de experiencia digital y necesidades de accesibilidad.
 
-#### Principio 1: Proporciona experiencias comparables — Puntaje: 5/5
+##### Principio 1: Proporciona experiencias comparables — Puntaje: 5/5
 
 Los puntos de contacto (dashboard, módulos, soporte y chatbot) ofrecen una experiencia equivalente y coherente; el chatbot habilita la compra por WhatsApp como canal alterno.
 
@@ -3575,7 +3575,7 @@ Los puntos de contacto (dashboard, módulos, soporte y chatbot) ofrecen una expe
 
 ---
 
-#### Principio 2: Considera la situación del usuario — Puntaje: 5/5
+##### Principio 2: Considera la situación del usuario — Puntaje: 5/5
 
 Responde a contextos reales de tienda: registro ágil de ventas con teclado numérico, cierre de caja por método de pago, revisión rápida de stock y alertas, y pedidos por WhatsApp en horas de demanda.
 
@@ -3587,7 +3587,7 @@ Responde a contextos reales de tienda: registro ágil de ventas con teclado num�
 
 ---
 
-#### Principio 3: Sé consistente — Puntaje: 5/5
+##### Principio 3: Sé consistente — Puntaje: 5/5
 
 Botones, formularios, mensajes y navegación se mantienen consistentes en todos los módulos.
 
@@ -3599,7 +3599,7 @@ Botones, formularios, mensajes y navegación se mantienen consistentes en todos 
 
 ---
 
-#### Principio 4: Deja al usuario mandar — Puntaje: 5/5
+##### Principio 4: Deja al usuario mandar — Puntaje: 5/5
 
 El usuario conserva autonomía: editar perfil, mantener su plan, cancelar, corregir y cerrar popups.
 
@@ -3611,7 +3611,7 @@ El usuario conserva autonomía: editar perfil, mantener su plan, cancelar, corre
 
 ---
 
-#### Principio 5: Ofrece opciones — Puntaje: 5/5
+##### Principio 5: Ofrece opciones — Puntaje: 5/5
 
 Brinda alternativas de navegación y acción: botones primarios y secundarios, sidebar, accesos rápidos, FAQ, reporte de problema y métodos de pago Efectivo / Tarjeta-Yape/Plin.
 
@@ -3625,7 +3625,7 @@ Brinda alternativas de navegación y acción: botones primarios y secundarios, s
 
 ---
 
-#### Principio 6: Prioriza el contenido — Puntaje: 5/5
+##### Principio 6: Prioriza el contenido — Puntaje: 5/5
 
 El contenido más importante aparece primero: resumen del día y alertas en el tope del dashboard; plan recomendado destacado en Suscripción.
 
@@ -3637,7 +3637,7 @@ El contenido más importante aparece primero: resumen del día y alertas en el t
 
 ---
 
-#### Principio 7: Agrega valor — Puntaje: 5/5
+##### Principio 7: Agrega valor — Puntaje: 5/5
 
 Genera beneficios concretos: ahorro de tiempo, menos errores, confianza en el stock, control de caja, automatización por chatbot y claridad de suscripción.
 
@@ -3649,10 +3649,52 @@ Genera beneficios concretos: ahorro de tiempo, menos errores, confianza en el st
 
 ---
 
-### Resumen de puntajes
+#### Resumen de puntajes
 
 | Grupo | Promedio |
 |-------|----------|
-| 5.4.1 Heurísticas de usabilidad (Nielsen) | **4.7 / 5** |
-| 5.4.2 Arquitectura de información | **4.8 / 5** |
-| 5.4.3 Inclusive design | **5.0 / 5** |
+| 5.3.3.1 Heurísticas de usabilidad (Nielsen) | **4.7 / 5** |
+| 5.3.3.2 Arquitectura de información | **4.8 / 5** |
+| 5.3.3.3 Inclusive design | **5.0 / 5** |
+
+---
+
+## 5.4. Video About-the-Product
+
+En esta sección se presenta el video **About-the-Product** de Entreprenly, una pieza de orientación promocional que resume el modelo de negocio, las características y los beneficios del producto. El video, de una duración de entre uno y tres minutos, parte de los dolores cotidianos de un negocio de barrio —el inventario llevado en cuaderno, los productos que se vencen y los pedidos de WhatsApp que no paran— para presentar a **Entreprenly como la plataforma que digitaliza el negocio de retail integrando inventario, ventas y atención por WhatsApp en un solo lugar**. A lo largo de la narración se muestran sus capacidades centrales: el control del stock en tiempo real con alertas anticipadas de vencimiento y desabastecimiento, el registro de ventas en segundos con cuadre de caja que separa automáticamente el efectivo de los medios digitales, y un chatbot que atiende los pedidos por WhatsApp de forma automática —confirmando stock y registrando la venta— de modo que el comerciante solo aprueba el pago.
+
+El video incluye escenas de interacción real con el producto (navegación por el dashboard de inventario, registro de ventas y el flujo de pedido por el chatbot) y recoge **al menos una opinión por cada segmento objetivo**. Por el **Segmento 1 (Comerciantes)** participa Stephanie, dueña de negocio, quien destaca que la plataforma reúne inventario, ventas y caja en un solo lugar de forma ordenada, frente a su método anterior basado en cuaderno y celular; resalta el ahorro de tiempo, la prevención de pérdidas gracias a las alertas de vencimiento y la rapidez al cuadrar la caja, y califica con 5/5 la probabilidad de volver a comprar en una tienda que use el sistema por considerarlo rápido, eficiente e intuitivo. Por el **Segmento 2 (Clientes Finales)** se incorpora la apreciación de Sebastián (registrada en la sección 5.3.2), quien valora la confirmación de stock en tiempo real y la atención automatizada por el chatbot de WhatsApp como un proceso claro, seguro y rápido.
+
+El video fue subido a **Microsoft Stream** y a **YouTube**. A continuación se incluye un screenshot del video con su respectivo enlace.
+
+<div align="center">
+<div style="font-family: 'Segoe UI', sans-serif; max-width: 680px; margin: 24px auto; border: 1.5px solid #b0bec5; border-radius: 4px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.12);">
+
+  <!-- Encabezado -->
+  <div style="background-color: #1a6b6b; color: white; padding: 10px 16px; font-weight: 700; font-size: 1.1em; letter-spacing: 0.05em;">
+  Video About-the-Product — Entreprenly
+  </div>
+
+  <!-- Imagen de la captura de pantalla -->
+  <div style="background-color: #1a6b6b; padding: 12px 16px 16px;">
+    <img src="images/about-the-product-video.png" alt="Screenshot del video About-the-Product de Entreprenly" style="width: 100%; border-radius: 3px; display: block;">
+  </div>
+
+  <!-- Links -->
+  <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
+    <tr>
+      <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
+        <strong>Link del video (Microsoft Stream):</strong>
+        <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a290_upc_edu_pe/IQAvYevFxmfxQJUpQey68woeARmPGiVup-4mCLUWDRTMqo0?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=5fsfAE" style="color: #1a6b6b;">Entreprenly — Video About-the-Product (Microsoft Stream)</a>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
+        <strong>Link del video (YouTube):</strong>
+        <a href="https://youtu.be/VXkY9W8ivPY" style="color: #1a6b6b;">Entreprenly — Video About-the-Product (YouTube)</a>
+      </td>
+    </tr>
+  </table>
+
+</div>
+</div>
