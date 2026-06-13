@@ -216,10 +216,11 @@ Para la entrega AV2, el equipo se enfocó en la implementación del backend de l
 - [5.3. Validation Interviews](docs/capitulo-5.md#53-validation-interviews)
   - [5.3.1. Diseño de Entrevistas](docs/capitulo-5.md#531-diseño-de-entrevistas)
   - [5.3.2. Registro de Entrevistas](docs/capitulo-5.md#532-registro-de-entrevistas)
-- [5.4. Evaluaciones según heurísticas](docs/capitulo-5.md#54-evaluaciones-según-heurísticas)
-  - [5.4.1. Heurísticas de usabilidad](docs/capitulo-5.md#541-heurísticas-de-usabilidad)
-  - [5.4.2. Arquitectura de información](docs/capitulo-5.md#542-arquitectura-de-información)
-  - [5.4.3. Inclusive design](docs/capitulo-5.md#543-inclusive-design)
+  - [5.3.3. Evaluaciones según heurísticas](docs/capitulo-5.md#533-evaluaciones-según-heurísticas)
+    - [5.3.3.1. Heurísticas de usabilidad](docs/capitulo-5.md#5331-heurísticas-de-usabilidad)
+    - [5.3.3.2. Arquitectura de información](docs/capitulo-5.md#5332-arquitectura-de-información)
+    - [5.3.3.3. Inclusive design](docs/capitulo-5.md#5333-inclusive-design)
+- [5.4. Video About-the-Product](docs/capitulo-5.md#54-video-about-the-product)
 
 ---
 
