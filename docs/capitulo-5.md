@@ -171,11 +171,11 @@ Para la gestión del código fuente y el seguimiento de modificaciones, el equip
 
 **Repositorios del Proyecto**
 
-| Producto | URL del Repositorio |
-| :--- | :--- |
-| **Landing Page** | https://github.com/Kauflink/landing-entreprenly |
-| **Web Services** | https://github.com/Kauflink/daop-entreprenly-web-services | 
-| **Frontend Web Application** | https://github.com/Kauflink/daop-entreprenly-frontend |
+| Producto                     | URL del Repositorio                                       |
+| :--------------------------- | :-------------------------------------------------------- |
+| **Landing Page**             | https://github.com/Kauflink/landing-entreprenly           |
+| **Web Services**             | https://github.com/Kauflink/daop-entreprenly-web-services |
+| **Frontend Web Application** | https://github.com/Kauflink/daop-entreprenly-frontend     |
 
 **Estrategia de Flujo de Trabajo: GitFlow**
 
@@ -244,7 +244,7 @@ Las convenciones aplicadas son las siguientes:
 
 #### CSS
 
-Para el estilo visual del Landing Page de Entreprenly, el equipo utiliza **Tailwind CSS v4** bajo un enfoque *utility-first*. La hoja de estilos final `styles.css` se genera a partir de `src/input.css` mediante la CLI de Tailwind (`tailwindcss --minify`), por lo que no se escribe CSS a mano salvo casos puntuales.
+Para el estilo visual del Landing Page de Entreprenly, el equipo utiliza **Tailwind CSS v4** bajo un enfoque _utility-first_. La hoja de estilos final `styles.css` se genera a partir de `src/input.css` mediante la CLI de Tailwind (`tailwindcss --minify`), por lo que no se escribe CSS a mano salvo casos puntuales.
 
 Las convenciones aplicadas son las siguientes:
 
@@ -314,7 +314,6 @@ Las convenciones aplicadas son las siguientes:
 - Se aplica **indentación de 4 espacios** de acuerdo con la Google Java Style Guide.
 - Los **comentarios Javadoc** se incluyen en todas las clases públicas y en los métodos cuya lógica no sea autoexplicativa.
 
-
 #### Gherkin (Acceptance Criteria)
 
 Para la redacción de los criterios de aceptación de las User Stories (detallados en el Capítulo III), el equipo adopta el estilo **Gherkin** en su variante en español (`Dado – Cuando – Entonces`). Las pruebas automatizadas del Backend se implementan con **JUnit** sobre los servicios y agregados de cada bounded context.
@@ -376,9 +375,7 @@ Los pasos para configurar y ejecutar el despliegue son los siguientes:
      "hosting": {
        "public": "dist/entreprenly/browser",
        "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
-       "rewrites": [
-         { "source": "**", "destination": "/index.html" }
-       ]
+       "rewrites": [{ "source": "**", "destination": "/index.html" }]
      }
    }
    ```
@@ -405,13 +402,13 @@ Los pasos para configurar y ejecutar el despliegue son los siguientes:
 10. Validar el despliegue realizando una solicitud de prueba a un endpoint del API desde Swagger UI o desde Postman, confirmando que el servicio responde correctamente sobre HTTPS.
 
 ## 5.2. Landing Page, Services & Applications Implementation
- 
+
 ### 5.2.1. Sprint 1
- 
+
 #### 5.2.1.1. Sprint Planning 1
- 
+
 Para este primer Sprint, el equipo estableció como objetivo principal la implementación y despliegue de la primera versión del Landing Page de Entreprenly. La reunión de planificación se llevó a cabo de manera virtual, donde se definieron las User Stories a abordar, el Sprint Goal y la distribución de responsabilidades entre los miembros del equipo.
- 
+
 <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%;">
   <tbody>
     <tr>
@@ -467,11 +464,11 @@ Para este primer Sprint, el equipo estableció como objetivo principal la implem
 </table>
 
 ---
- 
+
 #### 5.2.1.2. Aspect Leaders and Collaborators
- 
+
 En este primer Sprint, el equipo organizó su trabajo en torno a cuatro aspectos principales: la configuración inicial del repositorio y entorno de despliegue, el desarrollo de la estructura base del Landing Page, la implementación de funcionalidades interactivas (cambio de tema e idioma, animaciones y CTAs), y la revisión y corrección del contenido textual. A continuación, se presenta la matriz de liderazgo y colaboración (LACX):
- 
+
 <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%;">
   <thead>
     <tr>
@@ -528,15 +525,15 @@ En este primer Sprint, el equipo organizó su trabajo en torno a cuatro aspectos
 </table>
 
 ---
- 
+
 #### 5.2.1.3. Sprint Backlog 1
- 
+
 El objetivo principal de este Sprint fue implementar y desplegar la primera versión del Landing Page de Entreprenly, cubriendo las User Stories **US-53, US-84, US-85, US-86, US-87, US-88 y US-89** del Product Backlog. Cada User Story se descompuso en Engineering Tasks con una estimación individual entre 4 y 8 horas, gestionadas en el tablero Kanban del Sprint con las columnas **To Do, In Process, To Review y Done**.
 
 **Board público del Sprint 1 (Trello):** [https://trello.com/b/w5cZrD9x/entreprenly-sprint-1](https://trello.com/b/w5cZrD9x/entreprenly-sprint-1)
 
 A continuación se presenta el tablero del Sprint y el detalle de los Work-items asociados.
- 
+
 <img src="images/sprint1.png" width="600">
  
 <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%;">
@@ -724,11 +721,11 @@ A continuación se presenta el tablero del Sprint y el detalle de los Work-items
 </table>
 
 ---
- 
+
 #### 5.2.1.4. Development Evidence for Sprint Review
- 
+
 Durante el Sprint 1, el equipo se centró exclusivamente en el repositorio del Landing Page. Se realizaron un total de 20 commits distribuidos entre el 18 y el 20 de abril de 2026, cubriendo desde la configuración inicial del proyecto hasta correcciones de contenido y el despliegue automatizado mediante GitHub Actions. A continuación se presenta el registro de commits:
- 
+
 <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%;">
   <thead>
     <tr>
@@ -905,11 +902,11 @@ Durante el Sprint 1, el equipo se centró exclusivamente en el repositorio del L
 </table>
 
 ---
- 
+
 #### 5.2.1.5. Execution Evidence for Sprint Review
- 
+
 Al término del Sprint 1, el equipo logró implementar y desplegar satisfactoriamente la primera versión del Landing Page de Entreprenly. La página se encuentra disponible públicamente a través de GitHub Pages con dominio personalizado configurado mediante el archivo CNAME. El Landing Page incluye las siguientes secciones:
- 
+
 - **Hero:** Presentación principal del producto con headline, propuesta de valor y llamados a la acción (CTAs) diferenciados por segmento objetivo (comerciantes y clientes finales).
 - **Funcionalidades:** Descripción visual de las características principales de Entreprenly: gestión de inventario, chatbot de WhatsApp, balanza IoT y dashboard financiero.
 - **Planes:** Sección con los planes disponibles (Plan Free y Plan Control) con sus beneficios y botones de acción.
@@ -2046,7 +2043,6 @@ Para este tercer Sprint, el equipo estableció como objetivo principal la implem
   </tbody>
 </table>
 
-
 ---
 
 #### 5.2.3.2. Aspect Leaders and Collaborators
@@ -2074,7 +2070,6 @@ En el Sprint 3, el equipo organizó el trabajo asignando un Bounded Context del 
     <tr><td>Flores Pinchi, José Fernando</td><td>Ferdinant12-ops</td><td>C</td><td>C</td><td>L</td><td>C</td><td>C</td><td>C</td></tr>
   </tbody>
 </table>
-
 
 ---
 
@@ -2971,7 +2966,7 @@ Para ello se realizaron sesiones en las que usuarios reales de cada segmento int
 
 ### 5.3.1. Diseño de Entrevistas
 
-Antes de iniciar cada sesión de validación se brinda un saludo cordial y una breve presentación del entrevistador, explicando que el propósito de la sesión es evaluar la facilidad de uso y la utilidad del producto Entreprenly, y no evaluar al participante. Se aclara que la información será utilizada únicamente con fines académicos y se mantendrá en estricta confidencialidad. Como primer paso se solicita al participante su nombre completo, edad y distrito de residencia para fines de registro. Luego se le invita a interactuar libremente con el Landing Page y las aplicaciones, ejecutando las tareas propuestas y expresando en voz alta sus impresiones (técnica de *thinking aloud*), destacando que no existen respuestas correctas o incorrectas.
+Antes de iniciar cada sesión de validación se brinda un saludo cordial y una breve presentación del entrevistador, explicando que el propósito de la sesión es evaluar la facilidad de uso y la utilidad del producto Entreprenly, y no evaluar al participante. Se aclara que la información será utilizada únicamente con fines académicos y se mantendrá en estricta confidencialidad. Como primer paso se solicita al participante su nombre completo, edad y distrito de residencia para fines de registro. Luego se le invita a interactuar libremente con el Landing Page y las aplicaciones, ejecutando las tareas propuestas y expresando en voz alta sus impresiones (técnica de _thinking aloud_), destacando que no existen respuestas correctas o incorrectas.
 
 El proceso de validación para cada segmento se compone de tres momentos: (1) la exploración del Landing Page, (2) la ejecución de tareas guiadas sobre las aplicaciones siguiendo los User Flows correspondientes, y (3) un cuestionario de validación de diez preguntas. A continuación se detallan los elementos a incluir en la sesión de validación para cada segmento objetivo.
 
@@ -2985,9 +2980,9 @@ El proceso de validación para cada segmento se compone de tres momentos: (1) la
 
 **Segmento objetivo 1: Comerciantes (Dueños de Minimarkets/Mercados)**
 
-*Elementos a validar:* Landing Page y Aplicación Web (Dashboard de gestión).
+_Elementos a validar:_ Landing Page y Aplicación Web (Dashboard de gestión).
 
-*User Flows a validar (sección 4.4.4):*
+_User Flows a validar (sección 4.4.4):_
 
 - User Flow 1 – Gestión de inventario (agregar, editar y buscar productos).
 - User Flow 2 – Creación de lotes y gestión de alertas de vencimiento.
@@ -2995,7 +2990,7 @@ El proceso de validación para cada segmento se compone de tres momentos: (1) la
 - User Flow 4 – Validación de pago de pedido del chatbot.
 - User Flow 5 – Suscripción al Plan Control.
 
-*Tareas asignadas:*
+_Tareas asignadas:_
 
 1. Explorar el Landing Page e identificar qué ofrece Entreprenly y los planes disponibles.
 2. Registrar un producto nuevo, editarlo y luego buscarlo en el inventario.
@@ -3004,7 +2999,7 @@ El proceso de validación para cada segmento se compone de tres momentos: (1) la
 5. Revisar un pedido del chatbot pendiente y aprobar (o rechazar) su pago.
 6. Iniciar el proceso de suscripción al Plan Control.
 
-*Preguntas de validación:*
+_Preguntas de validación:_
 
 1. Después de explorar el Landing Page, ¿quedó claro qué hace Entreprenly y cómo resolvería los problemas de su negocio?
 2. Al registrar, editar y buscar productos en el módulo de inventario, ¿le resultó más sencillo y ordenado que su método actual (cuaderno, Excel o memoria)?
@@ -3021,13 +3016,13 @@ El proceso de validación para cada segmento se compone de tres momentos: (1) la
 
 **Segmento objetivo 2: Clientes Finales**
 
-*Elementos a validar:* Landing Page y Chatbot de WhatsApp (experiencia de compra).
+_Elementos a validar:_ Landing Page y Chatbot de WhatsApp (experiencia de compra).
 
-*User Flows a validar:*
+_User Flows a validar:_
 
 - Flujo de pedido por el chatbot: consulta de producto disponible, confirmación del pedido, recepción de las instrucciones de pago, reporte del comprobante de pago digital y recepción de la confirmación/comprobante.
 
-*Tareas asignadas:*
+_Tareas asignadas:_
 
 1. Explorar el Landing Page e identificar qué ofrece la tienda y por qué convendría comprar por este medio.
 2. Iniciar una conversación con el chatbot y consultar la disponibilidad de un producto.
@@ -3035,7 +3030,7 @@ El proceso de validación para cada segmento se compone de tres momentos: (1) la
 4. Recibir las instrucciones de pago y reportar el comprobante de pago digital.
 5. Recibir la confirmación del pedido y su comprobante.
 
-*Preguntas de validación:*
+_Preguntas de validación:_
 
 1. Después de ver el Landing Page, ¿entendió qué ofrece la tienda y por qué le convendría comprar por este medio?
 2. Al realizar un pedido por el chatbot de WhatsApp, ¿le resultó fácil y rápido encontrar el producto y completar la compra?
@@ -3050,13 +3045,11 @@ El proceso de validación para cada segmento se compone de tres momentos: (1) la
 
 ### 5.3.2. Registro de Entrevistas
 
-A continuación se registran las entrevistas de validación realizadas por segmento. Para cada entrevista se consigna el nombre y apellidos del participante, su edad, su distrito de residencia, un screenshot de un cuadro del video, el enlace al video alojado en Microsoft Stream —indicando el timing donde inicia la entrevista y su duración— y un resumen descriptivo de las principales apreciaciones del entrevistado respecto a las tareas asignadas. De acuerdo con lo planificado por el equipo, se realizaron dos entrevistas para el Segmento 1 (Comerciantes) y una entrevista para el Segmento 2 (Clientes Finales).
-
-> **Nota:** Las tarjetas se encuentran listas para incorporar la evidencia real de cada entrevista grabada por el equipo. Los campos entre corchetes `[ ]` y los screenshots son marcadores que deben reemplazarse por los datos del participante, el enlace de Microsoft Stream con su timing y duración, y el resumen correspondiente.
+A continuación se registran las entrevistas de validación realizadas por segmento. Para cada entrevista se consigna el nombre y apellidos del participante, su edad, su distrito de residencia, un screenshot de un cuadro del video, el enlace al video alojado en Youtube —indicando el timing donde inicia la entrevista y su duración— y un resumen descriptivo de las principales apreciaciones del entrevistado respecto a las tareas asignadas. De acuerdo con lo planificado por el equipo, se realizaron dos entrevistas para el Segmento 1 (Comerciantes) y una entrevista para el Segmento 2 (Clientes Finales).
 
 **Segmento 1: Comerciantes (Dueños de Minimarkets/Mercados)**
 
--   Primera entrevista:
+- Primera entrevista:
 
 <div align="center">
 <div style="font-family: 'Segoe UI', sans-serif; max-width: 680px; margin: 24px auto; border: 1.5px solid #b0bec5; border-radius: 4px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.12);">
@@ -3075,26 +3068,26 @@ A continuación se registran las entrevistas de validación realizadas por segme
   <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc; width: 50%;">
-        <strong>Entrevistado(a):</strong> [Nombres y apellidos]
+        <strong>Entrevistado(a):</strong> María Encarnación Velasquez
       </td>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc; width: 50%;">
-        <strong>Edad:</strong> [Edad]
+        <strong>Edad:</strong> 62
       </td>
     </tr>
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
-        <strong>Entrevistador(a):</strong> [Nombre del entrevistador]
+        <strong>Entrevistador(a):</strong> Lionel Chavez Carrasco
       </td>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
-        <strong>Distrito:</strong> [Distrito, Lima]
+        <strong>Distrito:</strong> San Miguel, Lima
       </td>
     </tr>
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
-        <strong>Inicio de la entrevista:</strong> [mm:ss]
+        <strong>Inicio de la entrevista:</strong> 03:20
       </td>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
-        <strong>Duración:</strong> [mm:ss]
+        <strong>Duración:</strong> 16:34
       </td>
     </tr>
   </table>
@@ -3103,8 +3096,8 @@ A continuación se registran las entrevistas de validación realizadas por segme
   <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
-        <strong>Link de la entrevista (Microsoft Stream):</strong>
-        <a href="[URL del video en Microsoft Stream]" style="color: #1a6b6b;">[Nombre del participante]-Entrevista de Validación</a>
+        <strong>Link de la entrevista:</strong>
+        <a href="https://youtu.be/-BTWuBmbNgQ" style="color: #1a6b6b;">María Encarnación-Entrevista de Validación</a>
       </td>
     </tr>
   </table>
@@ -3113,7 +3106,11 @@ A continuación se registran las entrevistas de validación realizadas por segme
   <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
     <tr>
       <td style="padding: 10px 14px; border: 1px solid #cfd8dc; line-height: 1.6;">
-        [Resumen descriptivo de las principales apreciaciones del entrevistado respecto a las tareas asignadas: claridad del Landing Page, facilidad de uso de cada User Flow ejecutado (inventario, lotes, venta presencial, validación de pago del chatbot y suscripción), en qué medida la solución resuelve sus problemas operativos, dificultades o pasos confusos detectados, probabilidad de uso y mejoras sugeridas.]
+        Durante la entrevista, María Encarnación Velázquez manifestó que el Landing Page de Entrepently le pareció claro y fácil de comprender, ya que explica de manera sencilla los beneficios de la aplicación y cómo puede ayudar a los pequeños comerciantes en la gestión de sus negocios. 
+        Respecto a los User Flows ejecutados, consideró que las funciones de inventario y gestión de lotes son intuitivas y facilitan el registro, búsqueda y control de productos. Asimismo, indicó que el proceso de venta presencial es rápido y permite llevar un mejor control de los ingresos diarios. La validación de pagos mediante el chatbot de WhatsApp le pareció una alternativa práctica para automatizar pedidos y cobros, mientras que el flujo de suscripción resultó sencillo y comprensible. 
+        La entrevistada señaló que la solución contribuye significativamente a resolver problemas operativos relacionados con el control de inventario, seguimiento de ventas y organización de productos, reduciendo la necesidad de registros manuales y disminuyendo el riesgo de errores o pérdidas.
+        No se identificaron dificultades importantes durante la interacción con la aplicación; sin embargo, sugirió incorporar funcionalidades adicionales como la generación de facturas y guías de remisión para complementar la gestión comercial.
+        Finalmente, manifestó una alta probabilidad de utilizar la aplicación en su negocio debido a los beneficios que ofrece en términos de organización, ahorro de tiempo y reducción del estrés asociado a las tareas administrativas.
       </td>
     </tr>
   </table>
@@ -3124,7 +3121,7 @@ A continuación se registran las entrevistas de validación realizadas por segme
 
 ---
 
--   Segunda entrevista:
+- Segunda entrevista:
 
 <div align="center">
 <div style="font-family: 'Segoe UI', sans-serif; max-width: 680px; margin: 24px auto; border: 1.5px solid #b0bec5; border-radius: 4px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.12);">
@@ -3194,7 +3191,7 @@ A continuación se registran las entrevistas de validación realizadas por segme
 
 **Segmento 2: Clientes Finales**
 
--   Primera entrevista:
+- Primera entrevista:
 
 <div align="center">
 <div style="font-family: 'Segoe UI', sans-serif; max-width: 680px; margin: 24px auto; border: 1.5px solid #b0bec5; border-radius: 4px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.12);">
@@ -3269,27 +3266,27 @@ Esta sección presenta la evaluación heurística aplicada a **Entreprenly** dur
 
 #### Catálogo de figuras
 
-| Fig. | Pantalla | Archivo |
-|------|----------|---------|
-| Fig. 1 | Panel de Inicio (Dashboard) | `Fig-01-panel-de-inicio.jpeg` |
-| Fig. 2 | Catálogo de Productos | `Fig-02-catalogo-de-productos.jpeg` |
-| Fig. 3 | Modal "Editar Producto" | `Fig-03-modal-editar-producto.jpeg` |
-| Fig. 4 | Modal "Agregar Nuevo Producto" | `Fig-04-modal-agregar-producto.jpeg` |
-| Fig. 5 | Lotes de Inventario (vista general) | `Fig-05-lotes-de-inventario.jpeg` |
-| Fig. 6 | Panel de Alertas de Lotes | `Fig-06-panel-alertas-de-lotes.jpeg` |
-| Fig. 7 | Modal "Agregar Nuevo Lote" | `Fig-07-modal-agregar-lote.jpeg` |
-| Fig. 8 | Detalle de Lote (lote vencido) | `Fig-08-detalle-de-lote-vencido.jpeg` |
-| Fig. 9 | Ventas – "Producto no encontrado" | `Fig-09-ventas-producto-no-encontrado.jpeg` |
-| Fig. 10 | Suscripción – Planes Free y Control | `Fig-10-suscripcion-planes.jpeg` |
+| Fig.    | Pantalla                                       | Archivo                                                 |
+| ------- | ---------------------------------------------- | ------------------------------------------------------- |
+| Fig. 1  | Panel de Inicio (Dashboard)                    | `Fig-01-panel-de-inicio.jpeg`                           |
+| Fig. 2  | Catálogo de Productos                          | `Fig-02-catalogo-de-productos.jpeg`                     |
+| Fig. 3  | Modal "Editar Producto"                        | `Fig-03-modal-editar-producto.jpeg`                     |
+| Fig. 4  | Modal "Agregar Nuevo Producto"                 | `Fig-04-modal-agregar-producto.jpeg`                    |
+| Fig. 5  | Lotes de Inventario (vista general)            | `Fig-05-lotes-de-inventario.jpeg`                       |
+| Fig. 6  | Panel de Alertas de Lotes                      | `Fig-06-panel-alertas-de-lotes.jpeg`                    |
+| Fig. 7  | Modal "Agregar Nuevo Lote"                     | `Fig-07-modal-agregar-lote.jpeg`                        |
+| Fig. 8  | Detalle de Lote (lote vencido)                 | `Fig-08-detalle-de-lote-vencido.jpeg`                   |
+| Fig. 9  | Ventas – "Producto no encontrado"              | `Fig-09-ventas-producto-no-encontrado.jpeg`             |
+| Fig. 10 | Suscripción – Planes Free y Control            | `Fig-10-suscripcion-planes.jpeg`                        |
 | Fig. 11 | Suscripción – Límites, facturación e historial | `Fig-11-suscripcion-limites-facturacion-historial.jpeg` |
-| Fig. 12 | Modal "Agregar método de pago" | `Fig-12-modal-agregar-metodo-de-pago.jpeg` |
-| Fig. 13 | Modal "Completar datos de facturación" | `Fig-13-modal-datos-de-facturacion.jpeg` |
-| Fig. 14 | Modal "Historial de suscripción" | `Fig-14-modal-historial-de-suscripcion.jpeg` |
-| Fig. 15 | Ventas – Registrar cantidad (teclado numérico) | `Fig-15-ventas-registrar-cantidad.jpeg` |
-| Fig. 16 | Centro de Ayuda | `Fig-16-centro-de-ayuda.jpeg` |
-| Fig. 17 | Formulario "Reportar un problema" | `Fig-17-reportar-un-problema.jpeg` |
-| Fig. 18 | Artículo de ayuda "¿Cómo validar un pago?" | `Fig-18-articulo-validar-un-pago.jpeg` |
-| Fig. 19 | Perfil y configuración de cuenta | `Fig-19-perfil-configuracion.jpeg` |
+| Fig. 12 | Modal "Agregar método de pago"                 | `Fig-12-modal-agregar-metodo-de-pago.jpeg`              |
+| Fig. 13 | Modal "Completar datos de facturación"         | `Fig-13-modal-datos-de-facturacion.jpeg`                |
+| Fig. 14 | Modal "Historial de suscripción"               | `Fig-14-modal-historial-de-suscripcion.jpeg`            |
+| Fig. 15 | Ventas – Registrar cantidad (teclado numérico) | `Fig-15-ventas-registrar-cantidad.jpeg`                 |
+| Fig. 16 | Centro de Ayuda                                | `Fig-16-centro-de-ayuda.jpeg`                           |
+| Fig. 17 | Formulario "Reportar un problema"              | `Fig-17-reportar-un-problema.jpeg`                      |
+| Fig. 18 | Artículo de ayuda "¿Cómo validar un pago?"     | `Fig-18-articulo-validar-un-pago.jpeg`                  |
+| Fig. 19 | Perfil y configuración de cuenta               | `Fig-19-perfil-configuracion.jpeg`                      |
 
 ---
 
@@ -3307,7 +3304,7 @@ Entreprenly comunica oportunamente el estado del sistema. El Panel de Inicio mue
 
 **Evidencia observada:** Fig. 1 (resumen y alertas del dashboard), Fig. 6 (notificaciones de lotes), Fig. 11 (uso del plan y estado de facturación).
 
-**Mejora sugerida:** Añadir un *toast* de confirmación visible tras guardar producto/lote, ya que el modal se cierra sin un mensaje persistente de éxito.
+**Mejora sugerida:** Añadir un _toast_ de confirmación visible tras guardar producto/lote, ya que el modal se cierra sin un mensaje persistente de éxito.
 
 ---
 
@@ -3363,7 +3360,7 @@ Los formularios usan campos guía y valores por defecto. En Agregar Producto el 
 
 **Evidencia observada:** Fig. 4 (Guardar atenuado), Fig. 7 (fechas obligatorias), Fig. 12 y Fig. 13 (formatos guía).
 
-**Mejora sugerida:** Validar en línea que la *Fecha de Vencimiento* sea posterior a la *Fecha de Ingreso* y advertir antes de registrar un lote ya vencido.
+**Mejora sugerida:** Validar en línea que la _Fecha de Vencimiento_ sea posterior a la _Fecha de Ingreso_ y advertir antes de registrar un lote ya vencido.
 
 ---
 
@@ -3651,11 +3648,11 @@ Genera beneficios concretos: ahorro de tiempo, menos errores, confianza en el st
 
 #### Resumen de puntajes
 
-| Grupo | Promedio |
-|-------|----------|
+| Grupo                                       | Promedio    |
+| ------------------------------------------- | ----------- |
 | 5.3.3.1 Heurísticas de usabilidad (Nielsen) | **4.7 / 5** |
-| 5.3.3.2 Arquitectura de información | **4.8 / 5** |
-| 5.3.3.3 Inclusive design | **5.0 / 5** |
+| 5.3.3.2 Arquitectura de información         | **4.8 / 5** |
+| 5.3.3.3 Inclusive design                    | **5.0 / 5** |
 
 ---
 
