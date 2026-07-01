@@ -924,36 +924,6 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
   <tbody>
     <tr>
       <td><strong>User Story</strong></td>
-      <td>95</td>
-      <td><strong>Epic ID</strong></td>
-      <td>01</td>
-    </tr>
-    <tr>
-      <td><strong>Title</strong></td>
-      <td colspan="3">Buscar lotes</td>
-    </tr>
-    <tr>
-      <td><strong>Description</strong></td>
-      <td colspan="3">Como comerciante quiero contar con un buscador en el módulo de Lotes para localizar rápidamente los lotes de un producto por su nombre o marca sin recorrer todas las tarjetas del dashboard.</td>
-    </tr>
-    <tr>
-      <td><strong>Acceptance Criteria</strong></td>
-      <td colspan="3">
-      <strong>Scenario 1: Búsqueda de lotes por nombre de producto</strong><br>
-      Dado que el usuario está en el dashboard de lotes en "/dashboard/inventory/lots", cuando ingresa el nombre de un producto en el campo de búsqueda, entonces el sistema filtra en tiempo real y muestra únicamente las tarjetas de los productos cuyo nombre coincide con el texto ingresado.<br><br>
-      <strong>Scenario 2: Búsqueda de lotes por marca</strong><br>
-      Dado que el usuario está en el dashboard de lotes, cuando ingresa la marca de un producto en el campo de búsqueda, entonces el sistema filtra y muestra las tarjetas cuyos productos coinciden con esa marca.<br><br>
-      <strong>Scenario 3: Búsqueda sin coincidencias</strong><br>
-      Dado que el usuario ingresa un término en el campo de búsqueda, cuando ningún producto coincide con el texto, entonces el sistema no muestra tarjetas hasta que se ajuste o se limpie la búsqueda.
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-<table>
-  <tbody>
-    <tr>
-      <td><strong>User Story</strong></td>
       <td>09</td>
       <td><strong>Epic ID</strong></td>
       <td>01</td>
@@ -3402,6 +3372,36 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
       Dado que existe un build de producción válido, cuando se ejecuta el despliegue a Firebase Hosting, entonces la aplicación queda publicada y accesible mediante su URL.<br><br>
       <strong>Scenario 3: Reversión ante despliegue fallido</strong><br>
       Dado que un despliegue presenta errores, cuando el equipo lo detecta, entonces Firebase Hosting permite revertir a la versión estable previamente publicada.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>User Story</strong></td>
+      <td>95</td>
+      <td><strong>Epic ID</strong></td>
+      <td>01</td>
+    </tr>
+    <tr>
+      <td><strong>Title</strong></td>
+      <td colspan="3">Buscar lotes</td>
+    </tr>
+    <tr>
+      <td><strong>Description</strong></td>
+      <td colspan="3">Como comerciante quiero contar con un buscador en el módulo de Lotes para localizar rápidamente los lotes de un producto por su nombre o marca sin recorrer todas las tarjetas del dashboard.</td>
+    </tr>
+    <tr>
+      <td><strong>Acceptance Criteria</strong></td>
+      <td colspan="3">
+      <strong>Scenario 1: Búsqueda de lotes por nombre de producto</strong><br>
+      Dado que el usuario está en el dashboard de lotes en "/dashboard/inventory/lots", cuando ingresa el nombre de un producto en el campo de búsqueda, entonces el sistema filtra en tiempo real y muestra únicamente las tarjetas de los productos cuyo nombre coincide con el texto ingresado.<br><br>
+      <strong>Scenario 2: Búsqueda de lotes por marca</strong><br>
+      Dado que el usuario está en el dashboard de lotes, cuando ingresa la marca de un producto en el campo de búsqueda, entonces el sistema filtra y muestra las tarjetas cuyos productos coinciden con esa marca.<br><br>
+      <strong>Scenario 3: Búsqueda sin coincidencias</strong><br>
+      Dado que el usuario ingresa un término en el campo de búsqueda, cuando ningún producto coincide con el texto, entonces el sistema no muestra tarjetas hasta que se ajuste o se limpie la búsqueda.
       </td>
     </tr>
   </tbody>
