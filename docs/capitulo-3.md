@@ -183,6 +183,10 @@ En esta sección se especifican las épicas y las User Stories que definen el al
       <td>US-27</td>
       <td colspan="2">Descargar historial de suscripción</td>
     </tr>
+    <tr>
+      <td>US-96</td>
+      <td colspan="2">Gestionar métodos de pago de suscripción</td>
+    </tr>
   </tbody>
 </table>
 
@@ -3402,6 +3406,34 @@ A continuación se detalla cada User Story con su épica relacionada, descripci�
       Dado que el usuario está en el dashboard de lotes, cuando ingresa la marca de un producto en el campo de búsqueda, entonces el sistema filtra y muestra las tarjetas cuyos productos coinciden con esa marca.<br><br>
       <strong>Scenario 3: Búsqueda sin coincidencias</strong><br>
       Dado que el usuario ingresa un término en el campo de búsqueda, cuando ningún producto coincide con el texto, entonces el sistema no muestra tarjetas hasta que se ajuste o se limpie la búsqueda.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>User Story</strong></td>
+      <td>96</td>
+      <td><strong>Epic ID</strong></td>
+      <td>04</td>
+    </tr>
+    <tr>
+      <td><strong>Title</strong></td>
+      <td colspan="3">Gestionar métodos de pago de suscripción</td>
+    </tr>
+    <tr>
+      <td><strong>Description</strong></td>
+      <td colspan="3">Como comerciante con acceso al panel "Suscripción", quiero visualizar mis métodos de pago registrados y seleccionar cuál será el principal para que los pagos y renovaciones del Plan Control usen el medio correcto.</td>
+    </tr>
+    <tr>
+      <td><strong>Acceptance Criteria</strong></td>
+      <td colspan="3">
+      <strong>Scenario 1: Lista de métodos de pago mostrada correctamente</strong><br>
+      Dado que el comerciante tiene uno o más métodos de pago registrados, cuando presiona "Ver métodos de pago" en la sección de facturación, entonces el sistema muestra un modal con las tarjetas disponibles, identifica el método principal y permite seleccionar otra tarjeta como principal.<br><br>
+      <strong>Scenario 2: Registro de nuevo método desde la lista</strong><br>
+      Dado que el comerciante se encuentra en el modal de métodos de pago, cuando presiona "Agregar método de pago", completa los datos requeridos y guarda los cambios, entonces el sistema registra el nuevo método, lo muestra en la lista y lo deja disponible para pagos y renovaciones.
       </td>
     </tr>
   </tbody>
