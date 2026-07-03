@@ -1320,56 +1320,56 @@ En esta sección se elaboró el diseño de los Bounded Contexts (BC) y sus conex
 A continuación, se presentan los distintos Bounded Contexts identificados a partir del Event Storming, junto con sus respectivos diagramas y BC Canvas.
 
 Generación y Autenticación de Cuenta
-<p align="center"> <img src="images/Entreprenly - Generación y Autenticación de Cuenta.jpg" width="500"/> <img src="images/Canvas BC 6.jpg" width="500"/> 
+<p align="center"> <img src="images/Entreprenly Open Source - Frame 1.jpg" width="500"/> <img src="images/Entreprenly Open Source - Generación y Autenticación de Cuenta.jpg" width="500"/> 
 
 </p>
 
 En este Bounded Context se realiza la creación de cuentas y la gestión de inicios de sesión. El flujo inicia brindando la opción de registrarse como nuevo usuario o ingresar credenciales si ya posee una cuenta. La autenticación se resuelve con credenciales propias (email y contraseña), aplicando hashing BCrypt y emitiendo un token JWT firmado. Al registrarse un usuario se publica el evento de dominio `UserSignedUpEvent`, que otros contextos consumen para inicializar su información.
 
 Perfil y Configuración
-<p align="center"> <img src="images/Entreprenly - Perfil y Configuración.jpg" width="500"/> <img src="images/Canvas BC 2.jpg" width="500"/> </p>
+<p align="center"> <img src="images/Entreprenly Open Source - Frame 3.jpg" width="500"/> <img src="images/Entreprenly Open Source - Perfil y Configuración.jpg" width="500"/> </p>
 
 En este Bounded Context se gestiona la configuración del perfil del usuario, incluyendo cambios de zona horaria, idioma, preferencias de interfaz (como modo oscuro), moneda y notificaciones. El cambio de contraseña y de email se gestiona en el contexto de Generación y Autenticación de Cuenta.
 
 Gestión y Proceso de Suscripción
-<p align="center"> <img src="images/Entreprenly - Gestión y Proceso de suscripción.jpg" width="500"/> <img src="images/Canvas BC 7.jpg" width="500"/> </p>
+<p align="center"> <img src="images/Entreprenly Open Source - Frame 6.jpg" width="500"/> <img src="images/Entreprenly Open Source - Gestión y Proceso de suscripción.jpg" width="500"/> </p>
 
 Este Bounded Context se encarga de la creación, renovación, cambio y cancelación de planes de suscripción, así como del registro de los datos de facturación del usuario. Además, realiza las validaciones necesarias y procesa el pago de la suscripción durante todo el proceso.
 
 Gestión de Inventario
-<p align="center"> <img src="images/Entreprenly - Gestión de inventario.jpg" width="500"/> <img src="images/Canvas BC 1.jpg" width="500"/> </p>
+<p align="center"> <img src="images/Entreprenly Open Source - Frame 2.jpg" width="500"/> <img src="images/Entreprenly Open Source - Gestión de inventario.jpg" width="500"/> </p>
 
 En este Bounded Context se realiza la creación y modificación de productos (por unidad y por peso). También incluye la gestión de lotes (creación, modificación y eliminación), así como funcionalidades adicionales como alertas de stock bajo, agotado y por vencer.
 
 Chatbot de WhatsApp
-<p align="center"> <img src="images/Entreprenly - Chatbot de WhatsApp.jpg" width="500"/> <img src="images/Canvas BC 5.jpg" width="500"/> </p>
+<p align="center"> <img src="images/Entreprenly Open Source - Frame 5.jpg" width="500"/> <img src="images/Entreprenly Open Source - Chatbot de WhatsApp.jpg" width="500"/> </p>
 
 Este Bounded Context permite la venta a través de un chatbot de WhatsApp. Para ello, consume el catálogo del contexto de Inventario para conocer la disponibilidad de productos, descuenta el stock al confirmar un pedido y registra la venta resultante en el contexto de Ventas.
 
 
 Ventas
-<p align="center"> <img src="images/Entreprenly - Ventas.jpg" width="500"/> <img src="images/Canvas BC 3.jpg" width="500"/> </p>
+<p align="center"> <img src="images/Entreprenly Open Source - Frame 4.jpg" width="500"/> <img src="images/Entreprenly Open Source - Ventas.jpg" width="500"/> </p>
 
 En este Bounded Context se realiza la gestión de ventas presenciales. El proceso registra los ítems vendidos según el tipo de producto (por unidad o por peso) y el método de pago con su comprobante (Yape, Plin o efectivo).
 
 Unión de Bounded Contexts
-<p align="center"> <img src="images/Entreprenly - BC union.jpg" width="500"/> </p>
+<p align="center"> <img src="images/Entreprenly Open Source - BC union.jpg" width="500"/> </p>
 
 Este diagrama muestra la integración y comunicación entre los diferentes Bounded Contexts, evidenciando las relaciones y dependencias dentro del sistema. La integración se resuelve mediante eventos de dominio (p. ej. `UserSignedUpEvent` de IAM hacia Perfil y Suscripción) y mediante Anti-Corruption Layers (ACL) entre contextos (p. ej. Chatbot consumiendo Inventario, Ventas, Suscripción e IAM).
  
 A continuación, se presentan los principales flujos de interacción del sistema, los cuales permiten visualizar la secuencia de operaciones entre los distintos Bounded Contexts en escenarios clave del negocio.
-<p align="center"> <img src="images/Entreprenly - Flujo ChatbotBC.jpg" width="500"/></p>
+<p align="center"> <img src="images/Entreprenly Open Source - Flujo Chatbot de WhatsApp.jpg" width="500"/></p>
 
-<p align="center"><img src="images/Entreprenly - Flujo Ventas.jpg" width="500"/></p>
+<p align="center"><img src="images/Entreprenly Open Source - Flujo Ventas.jpg" width="500"/></p>
 
-<p align="center"><img src="images/Entreprenly - Flujo Completo.jpg" width="500"/></p>
+<p align="center"><img src="images/Entreprenly Open Source - Flujo Completo.jpg" width="500"/></p>
 
-<p align="center"><img src="images/Entreprenly - Flujo Gestion de inventario.jpg" width="500"/></p>
+<p align="center"><img src="images/Entreprenly Open Source - Flujo Gestion de inventario.jpg" width="500"/></p>
 
 
-<p align="center"><img src="images/Entreprenly - Flujo Gestion y Proceso de suscripcion.jpg" width="500"/></p>
+<p align="center"><img src="images/Entreprenly Open Source - Flujo Gestion y Proceso de suscripcion.jpg" width="500"/></p>
 
-<p align="center"><img src="images/Entreprenly - Flujo Perfil y Configuracion.jpg" width="500"/></p>
+<p align="center"><img src="images/Entreprenly Open Source - Flujo Perfil y Configuracion.jpg" width="500"/></p>
 
 ### 4.6.2. Software Architecture Context Diagram
 A continuación, se presenta el System Context Diagram del sistema Entreprenly. En este diagrama se identifica al actor principal, denominado "Emprendedor", quien interactúa con la plataforma a través de la aplicación web, y al "Cliente WhatsApp", que se comunica con el negocio por WhatsApp. Como sistema externo se integra WhatsApp, que actúa como canal de mensajería entre el negocio y sus clientes a través de sesiones de WhatsApp Web.
