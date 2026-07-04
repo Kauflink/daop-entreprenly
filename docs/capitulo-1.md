@@ -4,9 +4,9 @@
 
 ### 1.1.1. Descripción de la Startup
 
-Kauflink es una startup tecnológica fundada por estudiantes de Ingeniería de Software, con el propósito de digitalizar la gestión operativa de pequeños y medianos negocios de retail en Latinoamérica. Nos enfocamos en emprendedores que operan minimarkets, tiendas de barrio y puestos de mercado que, pese a su relevancia económica y social, aún dependen de procesos manuales poco eficientes para administrar su día a día.
- 
-Identificamos que la mayoría de estos comerciantes no cuenta con herramientas tecnológicas accesibles y adaptadas a su realidad, lo que genera pérdidas por productos vencidos, desabastecimiento no detectado y ventas sin ningún tipo de trazabilidad. Ante esta problemática, Kauflink nace con la misión de cerrar esa brecha tecnológica, ofreciendo soluciones simples, asequibles e intuitivas que permitan a estos negocios operar con mayor control, eficiencia y rentabilidad.
+Kauflink es una startup tecnológica fundada por estudiantes de Ingeniería de Software con el propósito de digitalizar la gestión operativa de los pequeños y medianos negocios de retail en Latinoamérica. Nos enfocamos en los emprendedores que operan minimarkets, tiendas de barrio y puestos de mercado que, pese a su relevancia económica y social, aún dependen de procesos manuales poco eficientes para administrar su día a día.
+
+Hemos identificado que la mayoría de estos comerciantes no cuenta con herramientas tecnológicas accesibles y adaptadas a su realidad, lo que ocasiona pérdidas por productos vencidos, desabastecimiento que pasa inadvertido y ventas sin ningún tipo de trazabilidad. Ante esta problemática, Kauflink nace con la misión de cerrar esa brecha tecnológica mediante soluciones simples, asequibles e intuitivas que permitan a estos negocios operar con mayor control, eficiencia y rentabilidad.
  
 <table border="1" cellpadding="10" cellspacing="0" style="border-collapse: collapse; width: 100%;">
   <tr>
@@ -169,7 +169,7 @@ Identificamos que la mayoría de estos comerciantes no cuenta con herramientas t
 
 ### 1.2.1. Antecedentes y problemática
 
-El comercio minorista de proximidad —bodegas, minimarkets, puestos de mercado de carnes, frutas, verduras y abarrotes— constituye una de las redes comerciales más relevantes del Perú. Según el Observatorio PRODUCEmpresarial (2022), el número de empresas formales de comercio al por menor asciende a 392 mil, de las cuales el 94.8% registra ventas que no superan las 13 Unidades Impositivas Tributarias al mes. A pesar de su importancia económica y social, estos negocios operan mayoritariamente de forma manual y sin herramientas tecnológicas de gestión, lo que los expone a pérdidas constantes y a una operación poco eficiente. Para comprender esta problemática en profundidad, se aplicó la técnica de las 5W's y 2H's:
+El comercio minorista de proximidad constituye una de las redes comerciales más relevantes del Perú. Según el Observatorio PRODUCEmpresarial (2022), el número de empresas formales de comercio al por menor asciende a 392 mil, de las cuales el 94.8% registra ventas que no superan las 13 Unidades Impositivas Tributarias al mes. A pesar de su importancia económica y social, estos negocios operan mayoritariamente de forma manual y sin herramientas tecnológicas de gestión, lo que los expone a pérdidas constantes y a una operación poco eficiente. Para comprender esta problemática en profundidad, se aplicó la técnica de las 5W's y 2H's:
 
 **What (Qué)**
 
