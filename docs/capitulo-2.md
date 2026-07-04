@@ -23,9 +23,9 @@ El objetivo es diseñar una solución que resuelva el "caos multicanal" en peque
   </thead>
   <tbody>
     <tr>
-      <td><img src="images/entrepenly-icon-dark.png" width="200"></td>
-      <td><img src="images/Odoo.png" width="200"></td>
-      <td><img src="images/LightSpeedRetail.png" width="200"></td>
+      <td><img src="images/capitulo2/entrepenly-icon-dark.png" width="200"></td>
+      <td><img src="images/capitulo2/Odoo.png" width="200"></td>
+      <td><img src="images/capitulo2/LightSpeedRetail.png" width="200"></td>
     </tr>
   </tbody>
 </table>
@@ -276,7 +276,7 @@ Esta sección presenta el estudio cualitativo basado en entrevistas semiestructu
 
   <!-- Imagen de la captura de pantalla -->
   <div style="background-color: #1a6b6b; padding: 12px 16px 16px;">
-    <img src="images/abuelito.png" alt="Captura de entrevista" style="width: 100%; border-radius: 3px; display: block;">
+    <img src="images/capitulo2/abuelito.png" alt="Captura de entrevista" style="width: 100%; border-radius: 3px; display: block;">
   </div>
 
   <!-- Datos en dos columnas -->
@@ -312,7 +312,7 @@ Esta sección presenta el estudio cualitativo basado en entrevistas semiestructu
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
         <strong>Link de la entrevista:</strong>
-         <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a972_upc_edu_pe/IQBA6K2q8EbuRLHJ6wHhv5MRASxvnnvZYEkl1aBnA9hn3FU?e=RaD2CE&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D" style="color: #1a6b6b;">Hercilio Carrasco Herrera-Entrevista</a>
+        https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a972_upc_edu_pe/IQBA6K2q8EbuRLHJ6wHhv5MRAdAfXThRK4dopwDyqkN16uI?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=gqzS76
       </td>
     </tr>
   </table>
@@ -345,7 +345,7 @@ Esta sección presenta el estudio cualitativo basado en entrevistas semiestructu
 
   <!-- Imagen de la captura de pantalla -->
   <div style="background-color: #1a6b6b; padding: 12px 16px 16px;">
-    <img src="images/abuelita.png" alt="Captura de entrevista" style="width: 100%; border-radius: 3px; display: block;">
+    <img src="images/capitulo2/abuelita.png" alt="Captura de entrevista" style="width: 100%; border-radius: 3px; display: block;">
   </div>
 
   <!-- Datos en dos columnas -->
@@ -381,7 +381,7 @@ Esta sección presenta el estudio cualitativo basado en entrevistas semiestructu
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
         <strong>Link de la entrevista:</strong>
-         <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a972_upc_edu_pe/IQBA6K2q8EbuRLHJ6wHhv5MRASxvnnvZYEkl1aBnA9hn3FU?e=pi2r7d&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D" style="color: #1a6b6b;">María Encarnación Velázquez-Entrevista</a>
+        https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a972_upc_edu_pe/IQBA6K2q8EbuRLHJ6wHhv5MRAdAfXThRK4dopwDyqkN16uI?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=gqzS76
       </td>
     </tr>
   </table>
@@ -413,7 +413,7 @@ Esta sección presenta el estudio cualitativo basado en entrevistas semiestructu
 
   <!-- Imagen de la captura de pantalla -->
   <div style="background-color: #1a6b6b; padding: 12px 16px 16px;">
-    <img src="images/luis.png" alt="Captura de entrevista" style="width: 100%; border-radius: 3px; display: block;">
+    <img src="images/capitulo2/luis.png" alt="Captura de entrevista" style="width: 100%; border-radius: 3px; display: block;">
   </div>
 
   <!-- Datos en dos columnas -->
@@ -449,7 +449,7 @@ Esta sección presenta el estudio cualitativo basado en entrevistas semiestructu
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
         <strong>Link de la entrevista:</strong>
-       <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a972_upc_edu_pe/IQBA6K2q8EbuRLHJ6wHhv5MRASxvnnvZYEkl1aBnA9hn3FU?e=pi2r7d&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D" style="color: #1a6b6b;">Luis Vargas-Entrevista</a>
+        https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a972_upc_edu_pe/IQBA6K2q8EbuRLHJ6wHhv5MRAdAfXThRK4dopwDyqkN16uI?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=gqzS76
       </td>
     </tr>
   </table>
@@ -485,7 +485,7 @@ Esta sección presenta el estudio cualitativo basado en entrevistas semiestructu
 
   <!-- Imagen de la captura de pantalla -->
   <div style="background-color: #1a6b6b; padding: 12px 16px 16px;">
-    <img src="images/sofia_lopez.png" alt="Captura de entrevista" style="width: 100%; border-radius: 3px; display: block;">
+    <img src="images/capitulo2/sofia_lopez.png" alt="Captura de entrevista" style="width: 100%; border-radius: 3px; display: block;">
   </div>
 
   <!-- Datos en dos columnas -->
@@ -521,7 +521,7 @@ Esta sección presenta el estudio cualitativo basado en entrevistas semiestructu
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
         <strong>Link de la entrevista:</strong>
-        <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a972_upc_edu_pe/IQBA6K2q8EbuRLHJ6wHhv5MRASxvnnvZYEkl1aBnA9hn3FU?e=pi2r7d&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D" style="color: #1a6b6b;">María López-Entrevista</a>
+        https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a972_upc_edu_pe/IQBA6K2q8EbuRLHJ6wHhv5MRAdAfXThRK4dopwDyqkN16uI?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=gqzS76
       </td>
     </tr>
   </table>
@@ -553,7 +553,7 @@ Esta sección presenta el estudio cualitativo basado en entrevistas semiestructu
 
   <!-- Imagen de la captura de pantalla -->
   <div style="background-color: #1a6b6b; padding: 12px 16px 16px;">
-    <img src="images/curay.png" alt="Captura de entrevista" style="width: 100%; border-radius: 3px; display: block;">
+    <img src="images/capitulo2/curay.png" alt="Captura de entrevista" style="width: 100%; border-radius: 3px; display: block;">
   </div>
 
   <!-- Datos en dos columnas -->
@@ -589,7 +589,7 @@ Esta sección presenta el estudio cualitativo basado en entrevistas semiestructu
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
         <strong>Link de la entrevista:</strong>
-        <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a972_upc_edu_pe/IQBA6K2q8EbuRLHJ6wHhv5MRASxvnnvZYEkl1aBnA9hn3FU?e=pi2r7d&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D" style="color: #1a6b6b;">Sebastián Curay-Entrevista</a>
+        https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a972_upc_edu_pe/IQBA6K2q8EbuRLHJ6wHhv5MRAdAfXThRK4dopwDyqkN16uI?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=gqzS76
       </td>
     </tr>
   </table>
@@ -621,7 +621,7 @@ Esta sección presenta el estudio cualitativo basado en entrevistas semiestructu
 
   <!-- Imagen de la captura de pantalla -->
   <div style="background-color: #1a6b6b; padding: 12px 16px 16px;">
-    <img src="images/cat.png" alt="Captura de entrevista" style="width: 100%; border-radius: 3px; display: block;">
+    <img src="images/capitulo2/cat.png" alt="Captura de entrevista" style="width: 100%; border-radius: 3px; display: block;">
   </div>
 
   <!-- Datos en dos columnas -->
@@ -657,7 +657,7 @@ Esta sección presenta el estudio cualitativo basado en entrevistas semiestructu
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
         <strong>Link de la entrevista:</strong>
-        <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a972_upc_edu_pe/IQBA6K2q8EbuRLHJ6wHhv5MRASxvnnvZYEkl1aBnA9hn3FU?e=pi2r7d&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D" style="color: #1a6b6b;">Rosmery Villa-Entrevista</a>
+        https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a972_upc_edu_pe/IQBA6K2q8EbuRLHJ6wHhv5MRAdAfXThRK4dopwDyqkN16uI?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=gqzS76
       </td>
     </tr>
   </table>
@@ -703,7 +703,7 @@ El descuadre de stock y el desorden en caja concentran el mayor porcentaje con u
 
 
 <p align="center">
-  <img src="images/graf_metodoControl.png" alt="graf_metodoControl" width="500"/>
+  <img src="images/capitulo2/graf_metodoControl.png" alt="graf_metodoControl" width="500"/>
 </p>
 
 El 67% del segmento no cuenta con ninguna herramienta de registro estructurada y depende de la memoria o la revisión visual para controlar su inventario. Solo el 33% utiliza Excel, aunque con limitaciones reconocidas. Este dato indica que Entreprenly no compite con sistemas digitales existentes en estos perfiles, sino que se posiciona como la primera solución formal de gestión, lo que reduce la resistencia al cambio y facilita la adopción desde cero.
@@ -712,7 +712,7 @@ El 67% del segmento no cuenta con ninguna herramienta de registro estructurada y
 **Aceptación de balanza inteligente para inventario**
 
 <p align="center">
-  <img src="images/graf_aceptacionBalanza.png" alt="graf_aceptacionBalanza" width="500"/>
+  <img src="images/capitulo2/graf_aceptacionBalanza.png" alt="graf_aceptacionBalanza" width="500"/>
 </p>
 
 El 100% del segmento aceptó positivamente la propuesta de inventario automatizado por peso. El 67% lo hizo sin reservas, mientras que el 33% restante condicionó su aceptación a que el sistema sea sencillo de configurar y operar. La ausencia total de rechazo valida directamente una de las funcionalidades centrales de Entreprenly y confirma que el segmento percibe valor real en reemplazar el conteo manual por una solución basada en sensores.
@@ -721,7 +721,7 @@ El 100% del segmento aceptó positivamente la propuesta de inventario automatiza
 **Interés en automatización de pedidos por WhatsApp**
 
 <p align="center">
-  <img src="images/graf_interesAutomatizacion.png" alt="graf_interes_automatizacion" width="500"/>
+  <img src="images/capitulo2/graf_interesAutomatizacion.png" alt="graf_interes_automatizacion" width="500"/>
 </p>
 
 La totalidad del segmento mostró interés en automatizar la atención de pedidos por WhatsApp. El 67% lo valoró como una prioridad que reduciría la carga operativa del personal, mientras que el 33% restante lo consideró una mejora útil para agilizar el despacho. La unanimidad en este punto confirma que el canal conversacional es percibido como una solución real a un problema cotidiano, y no como una funcionalidad opcional o de baja relevancia para el negocio.
@@ -744,7 +744,7 @@ Los comerciantes entrevistados operan con herramientas insuficientes o inexisten
 **Medio de pago preferido**
 
 <p align="center">
-  <img src="images/graf_metodoPreferido.png" alt="graf_metodoPreferido" width="500"/>
+  <img src="images/capitulo2/graf_metodoPreferido.png" alt="graf_metodoPreferido" width="500"/>
 </p>
 
 El gráfico evidencia una clara preferencia por los medios de pago digitales: el 67% de los entrevistados utiliza billeteras digitales como Yape o Plin como medio principal, mientras que el 33% restante combina tarjeta con billetera digital. Ningún entrevistado prioriza el efectivo, lo que confirma que la conciliación de pagos electrónicos es una necesidad central para este segmento y valida el enfoque de Entreprenly en la confirmación automática de cobros digitales.
@@ -753,7 +753,7 @@ El gráfico evidencia una clara preferencia por los medios de pago digitales: el
 **Principales frustraciones al comprar en minimarkets locales**
 
 <p align="center">
-  <img src="images/graf_principalesFrustaciones.png" alt="Principales frustraciones al comprar en minimarkets locales" width="500"/>
+  <img src="images/capitulo2/graf_principalesFrustaciones.png" alt="Principales frustraciones al comprar en minimarkets locales" width="500"/>
 </p>
 
 Las principales frustraciones se concentran en la incertidumbre del stock y la demora en la atención: el 100% del segmento ha pagado alguna vez por un producto que resultó estar agotado y el 100% señaló la lentitud en la respuesta por WhatsApp como una de sus mayores molestias. Estas experiencias negativas erosionan la confianza en el negocio local y orientan el diseño de Entreprenly hacia la validación de stock en tiempo real y la confirmación inmediata de pedidos.
@@ -761,7 +761,7 @@ Las principales frustraciones se concentran en la incertidumbre del stock y la d
 **Confianza ante stock validado por sensor de peso**
 
 <p align="center">
-  <img src="images/graf_seguridadSensor.png" alt="graf_seguridadSensor" width="500"/>
+  <img src="images/capitulo2/graf_seguridadSensor.png" alt="graf_seguridadSensor" width="500"/>
 </p>
 
 El 100% del segmento afirmó que un sistema con validación de stock mediante sensor de peso les brindaría mayor seguridad al comprar desde su celular. La unanimidad confirma que la desconfianza hacia el stock informado es una barrera real de compra y que la validación física del inventario por peso es percibida como un factor decisivo de confianza, respaldando directamente una de las funcionalidades centrales de Entreprenly.
@@ -769,7 +769,7 @@ El 100% del segmento afirmó que un sistema con validación de stock mediante se
 
 **Disposición a reemplazar la compra presencial por canal digital**
 <p align="center">
-  <img src="images/graf_compraDigital.png" alt="graf_compraDigital" width="500"/>
+  <img src="images/capitulo2/graf_compraDigital.png" alt="graf_compraDigital" width="500"/>
 </p>
 
 El 67% del segmento afirmó que dejaría de ir presencialmente al mercado si pudiera realizar compras de forma ágil y segura por WhatsApp. El 33% restante estaría dispuesto a hacerlo bajo la condición de recibir confirmaciones automáticas confiables, condición que Entreprenly está diseñada para cumplir. La ausencia total de rechazo evidencia que el canal conversacional tiene un potencial real de desplazar la visita presencial para compras de rutina en este perfil de consumidor.
@@ -783,12 +783,12 @@ Los clientes finales entrevistados representan un perfil digital, exigente y con
 
 **Segmento 1: Comerciantes (Dueños de Minimarkets/Mercados)**
 <p align="center">
-  <img src="images/user_persona_Don_Lucho.png" alt="user_persona_valentina" width="500"/>
+  <img src="images/capitulo2/user_persona_Don_Lucho.png" alt="user_persona_valentina" width="500"/>
 </p>
 
 **Segmento 2: Clientes Finales**
 <p align="center">
-  <img src="images/user_persona_Andrea_Torres.png" alt="user_persona_andrea" width="500"/>
+  <img src="images/capitulo2/user_persona_Andrea_Torres.png" alt="user_persona_andrea" width="500"/>
 </p>
 
 
@@ -948,24 +948,24 @@ La principal coincidencia entre ambos segmentos es que los dos otorgan alta impo
 
 **Segmento 1: Comerciantes (Dueños de Minimarkets/Mercados)**
 <p align="center">
-  <img src="images/journey_mapin_segmento1.png" alt="user_persona_valentina" width="500"/>
+  <img src="images/capitulo2/journey_mapin_segmento1.png" alt="user_persona_valentina" width="500"/>
 </p>
 
 **Segmento 2: Clientes Finales**
 <p align="center">
-  <img src="images/journey_mapin_segmento2.png" alt="user_persona_andrea" width="500"/>
+  <img src="images/capitulo2/journey_mapin_segmento2.png" alt="user_persona_andrea" width="500"/>
 </p>
 
 ### 2.3.4. Empathy Mapping
 
 **Segmento 1: Comerciantes (Dueños de Minimarkets/Mercados)**
 <p align="center">
-  <img src="images/emp_comerciantes.png" alt="user_persona_valentina" width="500"/>
+  <img src="images/capitulo2/emp_comerciantes.png" alt="user_persona_valentina" width="500"/>
 </p>
 
 **Segmento 2: Clientes Finales**
 <p align="center">
-  <img src="images/emp_clientes.png" alt="user_persona_andrea" width="500"/>
+  <img src="images/capitulo2/emp_clientes.png" alt="user_persona_andrea" width="500"/>
 </p>
 
 
@@ -1018,7 +1018,7 @@ Se definieron los colores de cada tipo de elemento según la convención del mé
 En esta primera etapa, cada miembro propuso de forma individual los eventos de dominio relevantes para el sistema, redactándolos en tiempo pasado y representándolos con post-its de color naranja. Se buscó cubrir los flujos del comerciante y del cliente final sin filtrar ni debatir, generando el mayor volumen posible de eventos. Los eventos identificados abarcaron los procesos de registro de productos, control de inventario por peso (IoT), ventas presenciales, pedidos por WhatsApp, conciliación de caja y gestión de alertas operativas.
 
 <div align="center">
-  <img src="./images/paso1.png" alt="Paso 1" width="800">
+  <img src="./images/capitulo2/paso1.png" alt="Paso 1" width="800">
 </div>
 
 ---
@@ -1044,7 +1044,7 @@ El equipo definió y comunicó a todos los participantes el objetivo, el alcance
 Para arrancar la sesión, el facilitador colocó el primer Domain Event en el tablero como ejemplo: *Lote registrado*
 
 <div align="center">
-  <img src="./images/paso3.png" alt="Paso 3" width="800">
+  <img src="./images/capitulo2/paso3.png" alt="Paso 3" width="800">
 </div>
 
 ---
@@ -1056,7 +1056,7 @@ En esta fase, cada integrante del equipo generó de forma libre e independiente 
 La fase duró aproximadamente 20 minutos, hasta que el ritmo de generación de nuevos eventos disminuyó notablemente.
 
 <div align="center">
-  <img src="./images/paso4.svg" alt="Paso 4" width="800">
+  <img src="./images/capitulo2/paso4.svg" alt="Paso 4" width="800">
 </div>
 
 ---
@@ -1066,7 +1066,7 @@ La fase duró aproximadamente 20 minutos, hasta que el ritmo de generación de n
 Una vez generados todos los eventos, el equipo procedió a organizarlos cronológicamente de izquierda a derecha en el tablero, representando el flujo temporal de la operación del negocio. Esta etapa fue la más rica en discusión, ya que los distintos puntos de vista de los integrantes afloraron al intentar acordar el orden y la relación entre eventos.
 
 <div align="center">
-  <img src="./images/Entreprenly_Phase2.svg" alt="Entreprenly Fase 2" width="800">
+  <img src="./images/capitulo2/paso5.svg" alt="Entreprenly Fase 2" width="800">
 </div>
 
 ---
@@ -1076,18 +1076,17 @@ Una vez generados todos los eventos, el equipo procedió a organizarlos cronoló
 Con los eventos ya ordenados, el equipo identificó y colocó los Actores (personas con un rol específico) y los Sistemas externos que desencadenan o responden a los eventos del dominio.
 
 <div align="center">
-  <img src="./images/gestion_inventario.svg" alt="proceso_de_suscripcion" width="800">
+  <img src="./images/capitulo2/gestion_inventario.svg" alt="proceso_de_suscripcion" width="800">
 
+  <img src="./images/capitulo2/ventas.svg" alt="venta" width="800">
 
-  <img src="./images/ventas.svg" alt="venta" width="800">
+  <img src="./images/capitulo2/perfil_configuracion.svg" alt="gestion_de_inventario" width="800">
 
-  <img src="./images/perfil_configuracion.svg" alt="gestion_de_inventario" width="800">
+  <img src="./images/capitulo2/chatbot_whatsApp.svg" alt="perfil_configuracion" width="800">
 
-  <img src="./images/chatbot_whatsApp.svg" alt="perfil_configuracion" width="800">
+  <img src="./images/capitulo2/generación_autenticación_cuenta.svg" alt="chatbot" width="800">
 
-  <img src="./images/generación_autenticación_cuenta.svg" alt="chatbot" width="800">
-
-  <img src="./images/gestión_proceso_suscripción.svg" alt="inicion_sesion" width="800">
+  <img src="./images/capitulo2/gestión_proceso_suscripción.svg" alt="inicion_sesion" width="800">
 </div>
 
 Como resultado de la sesión, el equipo consolidó una visión compartida del dominio operativo de Entreprenly, identificando siete flujos principales: inicio de sesión, proceso de suscripción, configuración de suscripción, venta presencial, gestión de inventario, chatbot de pedidos por WhatsApp y gestión de perfil y configuración. Esta base sirvió como punto de partida para la definición del Ubiquitous Language y el posterior Design-Level Event Storming.
