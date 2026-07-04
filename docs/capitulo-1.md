@@ -4,7 +4,7 @@
 
 ### 1.1.1. Descripción de la Startup
 
-Kauflink es una startup tecnológica fundada por estudiantes de Ingeniería de Software, con el propósito de digitalizar la gestión operativa de pequeños y medianos negocios de retail en Latinoamérica. Nos enfocamos en emprendedores que operan minimarkets, tiendas de barrio y puestos de mercado —de carnes, frutas, verduras, abarrotes, entre otros— negocios que, pese a su relevancia económica y social, aún dependen de procesos manuales poco eficientes para administrar su día a día.
+Kauflink es una startup tecnológica fundada por estudiantes de Ingeniería de Software, con el propósito de digitalizar la gestión operativa de pequeños y medianos negocios de retail en Latinoamérica. Nos enfocamos en emprendedores que operan minimarkets, tiendas de barrio y puestos de mercado que, pese a su relevancia económica y social, aún dependen de procesos manuales poco eficientes para administrar su día a día.
  
 Identificamos que la mayoría de estos comerciantes no cuenta con herramientas tecnológicas accesibles y adaptadas a su realidad, lo que genera pérdidas por productos vencidos, desabastecimiento no detectado y ventas sin ningún tipo de trazabilidad. Ante esta problemática, Kauflink nace con la misión de cerrar esa brecha tecnológica, ofreciendo soluciones simples, asequibles e intuitivas que permitan a estos negocios operar con mayor control, eficiencia y rentabilidad.
  
