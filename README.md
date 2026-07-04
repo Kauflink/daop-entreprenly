@@ -177,7 +177,7 @@ Para la entrega de la TB1, el equipo se enfocó en la definición técnica de lo
 </table>
 
 ![contribuciones_tb1_p1](docs/images/readme/contribuciones_tb1_p1.png "contribuciones_tb1_p1")
-![contribuciones_tb1_p1](docs/images/readme/contribuciones_tb1_p2.png "contribuciones_tb1_p1")
+![contribuciones_tb1_p2](docs/images/readme/contribuciones_tb1_p2.png "contribuciones_tb1_p2")
 
 ### **AV2**
 
@@ -257,7 +257,7 @@ Para la entrega de la TB2 se realizaron diversos cambios en el landing page y en
 </table>
 
 ![contribuciones_tb2_p1](docs/images/readme/contribuciones_tb2_p1.png "contribuciones_tb2_p1")
-![contribuciones_tb2_p2](docs/images/readme/contribuciones_tb2_p2.png "contribuciones_tb2_p1")
+![contribuciones_tb2_p2](docs/images/readme/contribuciones_tb2_p2.png "contribuciones_tb2_p2")
 
 # Contenido
 
