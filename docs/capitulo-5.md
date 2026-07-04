@@ -3330,7 +3330,7 @@ El lenguaje es cercano al comerciante peruano: "Lotes", "Stock", "Caja diaria", 
 
 Todos los modales tienen botón de cierre (×) y opción Cancelar; el detalle de lote ofrece "Volver"; el Perfil permite editar datos, cambiar contraseña, idioma, tema y notificaciones sin quedar atrapado. En Ventas existe "Cancelar Venta".
 
-<img src="images/Fig-03-modal-editar-producto.jpeg" width="600">
+<img src="images/Fig-03-modal-editar-producto.png" width="600">
 
 <img src="images/Fig-19-perfil-configuracion.jpeg" width="600">
 
@@ -3344,7 +3344,7 @@ Todos los modales tienen botón de cierre (×) y opción Cancelar; el detalle de
 
 Se mantiene un patrón visual uniforme: sidebar naranja fija, tipografía estable, botones primarios naranjas, y tarjetas y tablas con el mismo estilo en Productos, Lotes, Ventas, Suscripción y Ayuda. La nomenclatura de navegación es consistente en todas las pantallas.
 
-<img src="images/Fig-02-catalogo-de-productos.jpeg" width="600">
+<img src="images/Fig-02-catalogo-de-productos.png" width="600">
 
 <img src="images/Fig-10-suscripcion-planes.jpeg" width="600">
 
@@ -3358,7 +3358,7 @@ Se mantiene un patrón visual uniforme: sidebar naranja fija, tipografía establ
 
 Los formularios usan campos guía y valores por defecto. En Agregar Producto el botón Guardar permanece atenuado hasta completar lo necesario; en Agregar Lote se solicitan fecha de ingreso y vencimiento; en Datos de facturación y Método de pago se marcan formatos esperados (tarjeta, CVV, RUC).
 
-<img src="images/Fig-04-modal-agregar-producto.jpeg" width="600">
+<img src="images/Fig-04-modal-agregar-producto.png" width="600">
 
 <img src="images/Fig-07-modal-agregar-lote.jpeg" width="600">
 
@@ -3384,7 +3384,7 @@ El dashboard ofrece "Accesos rápidos" con íconos y una sidebar siempre visible
 
 Existen atajos (accesos rápidos del dashboard), buscador de lotes, descarga de historial, teclado numérico para registrar cantidad en ventas y generación automática de código QR, lo que agiliza tanto al usuario nuevo como al recurrente.
 
-<img src="images/Fig-15-ventas-registrar-cantidad.jpeg" width="600">
+<img src="images/Fig-15-ventas-registrar-cantidad.png" width="600">
 
 <img src="images/Fig-14-modal-historial-de-suscripcion.jpeg" width="600">
 
@@ -3410,7 +3410,7 @@ La interfaz mantiene jerarquía clara y bajo ruido visual: uso consistente del n
 
 El sistema señala errores con color y texto: en Ventas muestra "⊘ Producto no encontrado"; en Lotes marca el lote "Vencido" en rojo con la fecha. Los estados de error son reconocibles.
 
-<img src="images/Fig-09-ventas-producto-no-encontrado.jpeg" width="600">
+<img src="images/Fig-09-ventas-producto-no-encontrado.png" width="600">
 
 <img src="images/Fig-08-detalle-de-lote-vencido.jpeg" width="600">
 
@@ -3456,7 +3456,7 @@ Las funciones principales se ubican en la sidebar fija y en los accesos rápidos
 
 Buen contraste (texto oscuro sobre blanco, acción naranja), etiquetas visibles y opción de tema Claro/Oscuro e idioma/zona horaria configurables.
 
-<img src="images/Fig-19-perfil-configuracion.jpeg" width="600">
+<img src="images/Fig-19-perfil-configuracion.png" width="600">
 
 **Evidencia observada:** Fig. 19 (preferencias de tema/idioma), formularios con labels (Fig. 4, Fig. 13).
 
@@ -3480,7 +3480,7 @@ Títulos y subtítulos describen cada sección ("Catálogo de productos disponib
 
 La interfaz informa en el momento adecuado: estado del plan, stock, alertas de lotes y actividad de suscripción.
 
-<img src="images/Fig-11-suscripcion-limites-facturacion-historial.jpeg" width="600">
+<img src="images/Fig-11-suscripcion-limites-facturacion-historial.png" width="600">
 
 **Evidencia observada:** Fig. 1 (resumen), Fig. 6 (alertas), Fig. 11 (historial/estado de facturación).
 
@@ -3504,7 +3504,7 @@ Las tareas principales se completan sin asistencia: alta de productos y lotes, r
 
 Transmite confianza con precios transparentes, identidad visual coherente, datos de soporte reales y una propuesta de valor clara.
 
-<img src="images/Fig-10-suscripcion-planes.jpeg" width="600">
+<img src="images/Fig-10-suscripcion-planes.png" width="600">
 
 **Evidencia observada:** Fig. 10 (planes y precios), Fig. 16 (soporte con correo/WhatsApp/horario).
 
@@ -3580,7 +3580,7 @@ Los puntos de contacto (dashboard, módulos, soporte y chatbot) ofrecen una expe
 
 Responde a contextos reales de tienda: registro ágil de ventas con teclado numérico, cierre de caja por método de pago, revisión rápida de stock y alertas, y pedidos por WhatsApp en horas de demanda.
 
-<img src="images/Fig-15-ventas-registrar-cantidad.jpeg" width="600">
+<img src="images/Fig-15-ventas-registrar-cantidad.png" width="600">
 
 **Evidencia observada:** Fig. 15 (registro rápido), Fig. 1 (resumen de caja), Fig. 6 (alertas operativas).
 
@@ -3592,7 +3592,7 @@ Responde a contextos reales de tienda: registro ágil de ventas con teclado num�
 
 Botones, formularios, mensajes y navegación se mantienen consistentes en todos los módulos.
 
-<img src="images/Fig-02-catalogo-de-productos.jpeg" width="600">
+<img src="images/Fig-02-catalogo-de-productos.png" width="600">
 
 **Evidencia observada:** Fig. 2, Fig. 5, Fig. 10, Fig. 16 (mismo sistema visual).
 
@@ -3604,7 +3604,7 @@ Botones, formularios, mensajes y navegación se mantienen consistentes en todos 
 
 El usuario conserva autonomía: editar perfil, mantener su plan, cancelar, corregir y cerrar popups.
 
-<img src="images/Fig-19-perfil-configuracion.jpeg" width="600">
+<img src="images/Fig-19-perfil-configuracion.png" width="600">
 
 **Evidencia observada:** Fig. 19 (perfil), Fig. 3 (editar), Fig. 13 (Cancelar), Fig. 14 (descargar/cerrar).
 
