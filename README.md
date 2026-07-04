@@ -386,9 +386,9 @@ En esta sección se detallan las actividades realizadas en el trabajo final y el
 <table>
   <thead>
     <tr>
-      <th align="left">CRITERIO ESPECÍFICO</th>
-      <th align="left">ACCIONES REALIZADAS</th>
-      <th align="left">CONCLUSIONES</th>
+      <th align="left">Criterio específico</th>
+      <th align="left">Acciones realizadas</th>
+      <th align="left">Conclusiones</th>
     </tr>
   </thead>
   <tbody>
