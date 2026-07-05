@@ -736,12 +736,12 @@ Los wireframes de la Landing Page representan la distribución base de cada secc
 
 - **Video section**
   <p align="center">
-    <img src="images/wireframe-video-section.png" alt="Mockup Hero Section" width="800"/>
+    <img src="images/capitulo4/wireframe-video-section.png" alt="Mockup Hero Section" width="800"/>
   </p>
 - **Team section**
 
   <p align="center">
-    <img src="images/wireframe-Team-section.png" alt="Mockup Problem Section" width="800"/>
+    <img src="images/capitulo4/wireframe-Team-section.png" alt="Mockup Problem Section" width="800"/>
   </p>
 - **Problem section**
 
@@ -820,12 +820,12 @@ Los mockups de la Landing Page muestran la propuesta visual aplicada sobre la es
   </p>
 - **Video section**
   <p align="center">
-    <img src="images/video-section.png" alt="Mockup Hero Section" width="800"/>
+    <img src="images/capitulo4/video-section.png" alt="Mockup Hero Section" width="800"/>
   </p>
 - **Team section**
 
   <p align="center">
-    <img src="images/Team-section.png" alt="Mockup Problem Section" width="800"/>
+    <img src="images/capitulo4/Team-section.png" alt="Mockup Problem Section" width="800"/>
   </p>
 - **Problem section**
 
