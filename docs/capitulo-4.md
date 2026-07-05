@@ -1450,11 +1450,12 @@ Persiste conversaciones, mensajes, pedidos y sesiones de WhatsApp en la base de 
 <p align="center"><img src="images/CLASS DIAGRAM — Chatbot de WhatsApp BC.svg" width="500"/></p>
 
 
-## 4.8. Database Design
+## 4.8. Database Design 
 
-El diseño de base de datos de Entreprenly está implementado sobre MySQL 8.0, bajo un único esquema denominado `entreprenly`. El modelo organiza **20 tablas** distribuidas en seis contextos funcionales alineados con los Bounded Contexts de la arquitectura DDD: IAM, Perfil, Suscripciones, Inventario, Ventas y Chatbot. La nomenclatura sigue la estrategia `SnakeCaseWithPluralizedTablePhysicalNamingStrategy` de Hibernate, la cual convierte automáticamente los nombres de entidades Java a formato `snake_case` en plural. Todas las tablas heredan tres columnas de auditoría de la superclase `AuditableAbstractPersistenceEntity`: `id` (BIGINT AUTO_INCREMENT, PK), `created_at` y `updated_at`.
 
-El esquema aplica normalización hasta la Tercera Forma Normal (3FN). Los objetos de valor anotados con `@Embedded` en JPA se materializan como columnas adicionales en la tabla del agregado raíz, eliminando tablas extra sin violar 3FN. Las colecciones anotadas con `@ElementCollection` generan tablas propias con FK hacia el padre, garantizando 1FN. Las referencias entre Bounded Contexts se implementan como referencias lógicas mediante `owner_email` o `seller_id`, sin FK cruzadas entre BCs, respetando el aislamiento de contextos DDD.
+El diseño de base de datos de Entreprenly está implementado sobre **PostgreSQL**, bajo el esquema `public`. El modelo organiza **21 tablas** distribuidas en seis contextos funcionales alineados con los Bounded Contexts de la arquitectura DDD: IAM, Perfil, Suscripciones, Inventario, Ventas y Chatbot. La nomenclatura sigue la estrategia `SnakeCaseWithPluralizedTablePhysicalNamingStrategy` de Hibernate, que convierte automáticamente los nombres de entidades Java a formato `snake_case` en plural. Todas las tablas heredan tres columnas de auditoría de la superclase `AuditableAbstractPersistenceEntity`: `id` (BIGINT, PK), `created_at` y `updated_at`.
+
+El esquema aplica normalización hasta la Tercera Forma Normal (3FN). Los objetos de valor anotados con `@Embedded` se materializan como columnas adicionales en la tabla del agregado raíz. Las colecciones anotadas con `@ElementCollection` generan tablas propias con FK hacia el padre. Las referencias entre Bounded Contexts se implementan como referencias lógicas mediante `owner_email` o `seller_id`, sin FK cruzadas entre BCs, respetando el aislamiento de contextos DDD.
 
 ### 4.8.1. Database Diagrams
 
@@ -1466,127 +1467,99 @@ El esquema aplica normalización hasta la Tercera Forma Normal (3FN). Los objeto
 
 ### 4.8.2. Organización del esquema de base de datos
 
-A continuación se describe cada tabla por Bounded Context, detallando sus columnas principales, restricciones e índices.
 
----
 
 #### BC1 — IAM (Gestión de Identidad y Acceso)
 
-Este BC gestiona la autenticación y el control de acceso de la plataforma. Comprende tres tablas.
+Gestiona la autenticación y el control de acceso. Comprende tres tablas.
 
-- **`roles`**  
-  Catálogo de roles del sistema. Almacena `name` (ENUM: `ROLE_USER`, `ROLE_ADMIN`; VARCHAR 20 en BD, UNIQUE NOT NULL) mapeado mediante `@Enumerated(EnumType.STRING)`. La restricción UNIQUE garantiza que no existan roles duplicados. La separación en tabla propia cumple 3FN, evitando la repetición del nombre del rol en cada usuario.
+- **`roles`** — Catálogo de roles del sistema. Almacena `name` (VARCHAR, UNIQUE, mapeado con `@Enumerated(EnumType.STRING)`). La tabla propia cumple 3FN evitando repetir el nombre del rol en cada usuario.
 
-- **`users`**  
-  Entidad raíz de autenticación. Almacena `email` (VARCHAR 120, UNIQUE NOT NULL) como identificador natural, y `password` (VARCHAR 120 NOT NULL) que persiste el hash BCrypt de la contraseña. El índice sobre `email` optimiza la búsqueda durante el inicio de sesión.
+- **`users`** — Entidad raíz de autenticación. Almacena `email` (VARCHAR, UNIQUE NOT NULL) como identificador natural y `password` (VARCHAR NOT NULL) con hash BCrypt.
 
-- **`user_roles`**  
-  Tabla de unión generada por la relación `@ManyToMany` entre `UserPersistenceEntity` y `RolePersistenceEntity`. Contiene dos columnas FK (`user_id` → `users.id` y `role_id` → `roles.id`) con PK compuesta. La relación N:M permite asignar múltiples roles a un mismo usuario sin violar 1FN.
+- **`user_roles`** — Tabla de unión de la relación `@ManyToMany` entre usuarios y roles. Columnas FK: `user_id` → `users.id` y `role_id` → `roles.id`, con PK compuesta.
 
-**Relaciones del BC:** `users` ←→ `roles` (N:M vía `user_roles`).
+**Relaciones:** `users` ←→ `roles` (N:M vía `user_roles`).
 
 ---
 
 #### BC2 — Profile (Perfil y Configuración)
 
-Este BC gestiona la información personal y las preferencias de configuración del comerciante. Comprende una sola tabla con objetos de valor embebidos.
+Gestiona la información personal y preferencias del comerciante. Comprende una sola tabla.
 
-- **`profiles`**  
-  Tabla central del BC. Almacena datos personales: `first_name`, `last_name`, `phone`, `avatar_url`, `role` y `plan`. La FK `user_id` (BIGINT, UNIQUE NOT NULL) referencia `users.id` con restricción UNIQUE, materializando la relación `@OneToOne` con el usuario autenticado.
+- **`profiles`** — Almacena datos personales (`first_name`, `last_name`, `phone`, `avatar_url`, `role`, `plan`) y la FK `user_id` (UNIQUE NOT NULL) hacia `users.id`. Las preferencias de configuración (`preference_language`, `preference_timezone`, `preference_theme`, `preference_currency`) y las de notificación (`notify_stock_alerts`) se almacenan como columnas directas mediante `@Embedded`, evitando tablas adicionales sin violar 3FN.
 
-  Las preferencias de configuración (`PreferencesEmbeddable`) se almacenan como columnas directas mediante `@Embedded`: `preference_language`, `preference_timezone`, `preference_theme`, `preference_currency`. De forma análoga, las preferencias de notificación (`NotificationSettingsEmbeddable`) se persisten como columnas booleanas: `notify_stock_alerts`, `notify_payment_alerts`, `notify_chatbot_messages`. Esta decisión de diseño evita dos tablas adicionales, mantiene la 3FN —sin dependencias transitivas— y simplifica las consultas de perfil a un único `SELECT`.
-
-**Relaciones del BC:** `profiles.user_id` → `users.id` (FK, OneToOne).
+**Relaciones:** `profiles.user_id` → `users.id` (OneToOne).
 
 ---
 
 #### BC3 — Subscription (Gestión de Suscripciones)
 
-Este BC gestiona el ciclo de vida de las suscripciones: catálogo de planes, suscripciones activas de usuarios y registro de pagos. Comprende cuatro tablas.
+Gestiona el ciclo de vida de suscripciones, pagos y configuración de facturación. Comprende **seis tablas**.
 
-- **`subscription_plans`**  
-  Catálogo de planes disponibles. Almacena `name` (UNIQUE), `code` (UNIQUE), `description`, `amount` (DECIMAL 10,2), `annual_amount` (DECIMAL 10,2), `currency`, `billing_period` (ENUM) y `active` (BOOLEAN). Las restricciones UNIQUE sobre `name` y `code` garantizan que no existan planes duplicados. Los campos `amount` y `annual_amount` separan el precio mensual del anual, eliminando dependencias transitivas (3FN).
+- **`subscription_plans`** — Catálogo de planes. Almacena `name` (UNIQUE), `code` (UNIQUE), `description`, `amount`, `annual_amount`, `currency`, `billing_period` y `active`.
 
-- **`subscription_plan_features`**  
-  Tabla de colección generada por `@ElementCollection` sobre la lista `features` de `SubscriptionPlanPersistenceEntity`. Almacena una fila por característica del plan con las columnas `subscription_plan_id` (FK → `subscription_plans.id`) y `feature` (VARCHAR 500). Esta separación cumple 1FN: evita almacenar una lista de características como cadena delimitada en la tabla padre.
+- **`subscription_plan_features`** — Tabla `@ElementCollection` con las características de cada plan. Columnas: `plan_id` (FK → `subscription_plans.id`) y `feature` (VARCHAR). Cumple 1FN evitando almacenar la lista como cadena delimitada.
 
-- **`subscriptions`**  
-  Registro de suscripciones activas o históricas de cada usuario. Almacena `user_id` (FK → `users.id`), `plan_id` (FK → `subscription_plans.id`), `status` (ENUM: `active`, `cancelled`, `expired`, `pending`), `started_at`, `current_period_end`, `cancelled_at`, `billing_period` y `latest_payment_id`. El campo `latest_payment_id` implementa una referencia circular controlada hacia `subscription_payments`, declarada como FK diferida para evitar errores de FK cíclica durante la inserción inicial.
+- **`subscriptions`** — Suscripciones activas o históricas. Almacena `user_id` (FK → `users.id`), `plan_id` (FK → `subscription_plans.id`), `status`, `started_at`, `current_period_end`, `cancelled_at`, `billing_period` y `latest_payment_id`.
 
-- **`subscription_payments`**  
-  Historial de pagos de suscripciones. Almacena `subscription_id` (FK → `subscriptions.id`), `user_id` (FK → `users.id`), `plan_id` (FK → `subscription_plans.id`), `amount` (DECIMAL 12,2), `currency` (VARCHAR 3), `payment_method` (VARCHAR 60), `status` (ENUM: `PENDING`, `APPROVED`, `DECLINED`, `FAILED`), `transaction_id` (VARCHAR 80), `provider_message` (VARCHAR 180), `requested_status` (VARCHAR 30), `billing_period` (VARCHAR 20), `requested_at` y `processed_at`. La separación en tabla propia cumple 2FN y 3FN: los datos de pago dependen únicamente de la PK del pago, sin depender funcionalmente de la suscripción.
+- **`subscription_payments`** — Historial de pagos. Almacena `subscription_id` (FK → `subscriptions.id`), `user_id`, `plan_id`, `amount`, `currency`, `payment_method`, `status`, `transaction_id`, `provider_message`, `requested_at` y `processed_at`.
 
-**Relaciones del BC:** `subscriptions.user_id` → `users.id`; `subscriptions.plan_id` → `subscription_plans.id`; `subscription_payments.subscription_id` → `subscriptions.id`; `subscription_plan_features.subscription_plan_id` → `subscription_plans.id`.
+- **`billing_setups`** — Configuración de facturación del comerciante (una por usuario). Almacena `user_id` (FK, UNIQUE), los campos de datos fiscales embebidos (`fiscal_business_name`, `fiscal_document_number`, `fiscal_document_type`, `fiscal_address`, `fiscal_receipt_email`) y los campos de método de pago (`payment_method_title`, `payment_method_description`, `payment_method_action_label`), junto con los booleanos `has_fiscal_data` y `has_payment_method`.
+
+- **`billing_payment_methods`** — Tabla `@ElementCollection` con los métodos de pago del comerciante. Columnas: `billing_setup_id` (FK → `billing_setups.id`), `card_brand`, `last_four`, `expiry_month`, `expiry_year`, `holder_name`, `method_id` e `is_default`.
+
+**Relaciones:** `subscriptions` → `users`, `subscription_plans`; `subscription_payments` → `subscriptions`; `subscription_plan_features` → `subscription_plans`; `billing_payment_methods` → `billing_setups`; `billing_setups.user_id` → `users.id`.
 
 ---
 
 #### BC4 — Inventory (Gestión de Inventario)
 
-Este BC gestiona el catálogo de productos y los lotes de inventario. Comprende cuatro tablas organizadas en dos jerarquías paralelas según el tipo de medida: unidad y peso.
+Gestiona el catálogo de productos y lotes de inventario en dos jerarquías paralelas según tipo de medida. Comprende cuatro tablas.
 
-- **`inventory_unit_products`**  
-  Catálogo de productos vendidos por unidad. Almacena `owner_email` (VARCHAR 255, NOT NULL, indexado) como referencia lógica al propietario —sin FK explícita hacia `users` para mantener independencia entre BCs—, `name`, `description`, `code_qr` (UNIQUE), `price` (DOUBLE), `weight_grams` (DOUBLE) y `brand`. El campo `code_qr` con restricción UNIQUE garantiza la identificación física unívoca de cada producto mediante código QR.
+- **`inventory_unit_products`** — Productos vendidos por unidad. Almacena `owner_email` (referencia lógica al propietario, sin FK explícita entre BCs), `name`, `description`, `code_qr` (UNIQUE), `price`, `weight_grams` y `brand`.
 
-- **`inventory_weight_products`**  
-  Catálogo de productos vendidos al peso. Almacena `owner_email`, `name`, `description`, `code_qr` (UNIQUE) y `price_per_kg` (DOUBLE). La separación entre `inventory_unit_products` e `inventory_weight_products` en lugar de una tabla unificada con columna discriminadora respeta 2FN: los atributos `weight_grams` y `brand` son propios de productos unitarios y no aplican a productos por peso; unificarlos generaría NULLs estructurales y dependencias parciales.
+- **`inventory_weight_products`** — Productos vendidos al peso. Almacena `owner_email`, `name`, `description`, `code_qr` (UNIQUE) y `price_per_kg`. La separación de tablas evita columnas nulas estructurales que surgirían de una tabla unificada.
 
-- **`inventory_unit_lots`**  
-  Lotes de productos unitarios. Almacena `owner_email`, `product_id` (FK → `inventory_unit_products.id`), `code_qr`, `entry_date` (DATETIME), `quantity` (INT) y `expiry_date` (DATETIME). El campo `expiry_date` permite calcular alertas de vencimiento en la capa de aplicación. El índice sobre `owner_email` optimiza las consultas filtradas por propietario.
+- **`inventory_unit_lots`** — Lotes de productos unitarios. Almacena `owner_email`, `product_id` (FK → `inventory_unit_products.id`), `code_qr`, `entry_date`, `expiry_date` y `quantity`.
 
-- **`inventory_weight_lots`**  
-  Lotes de productos por peso. Almacena `owner_email`, `product_id` (FK → `inventory_weight_products.id`), `code_qr`, `entry_date` y `quantity_kg` (DOUBLE). La sustitución de `quantity` (entero) por `quantity_kg` (decimal) refleja la naturaleza continua del stock por peso, manteniendo la semántica correcta en 2FN.
+- **`inventory_weight_lots`** — Lotes de productos por peso. Almacena `owner_email`, `product_id` (FK → `inventory_weight_products.id`), `code_qr`, `entry_date` y `quantity_kg`.
 
-**Relaciones del BC:** `inventory_unit_lots.product_id` → `inventory_unit_products.id`; `inventory_weight_lots.product_id` → `inventory_weight_products.id`. Las referencias hacia otros BCs (Ventas, Chatbot) se resuelven mediante `owner_email`, sin FK cruzadas.
+**Relaciones:** `inventory_unit_lots.product_id` → `inventory_unit_products.id`; `inventory_weight_lots.product_id` → `inventory_weight_products.id`.
 
 ---
 
 #### BC5 — Sales (Ventas Presenciales)
 
-Este BC gestiona el registro de ventas presenciales en el punto de venta y el arqueo de caja diario. Comprende tres tablas.
+Gestiona el registro de ventas en el punto de venta. Comprende dos tablas.
 
-- **`sales`**  
-  Encabezado de cada transacción de venta. Almacena `owner_email` (VARCHAR 120), `seller_id` (BIGINT, referencia lógica sin FK), `total` (DOUBLE), `payment_method` (ENUM: `CASH`, `YAPE`, `PLIN`, `CARD`), `status` (ENUM: `IN_PROGRESS`, `PAYMENT_CONFIRMED`, `COMPLETED`, `CANCELLED`), `sale_created_at` y `completed_at`.
+- **`sales`** — Encabezado de cada transacción. Almacena `owner_email`, `seller_id` (referencia lógica), `total`, `payment_method`, `status` y `sale_created_at`. El objeto de valor `PaymentReceiptEmbeddable` se almacena como columnas directas (`receipt_method`, `receipt_transaction_code`, `receipt_amount`, `receipt_confirmed_at`) mediante `@Embedded`.
 
-  El objeto de valor `PaymentReceiptEmbeddable` se almacena como columnas `@Embedded` directamente en la tabla: `receipt_method` (ENUM), `receipt_transaction_code` (VARCHAR 80), `receipt_amount` (DOUBLE) y `receipt_confirmed_at`. Esta decisión evita una tabla separada de comprobantes, reduciendo la complejidad del modelo sin violar 3FN, dado que los atributos del comprobante dependen funcionalmente de la venta. El índice compuesto sobre `(owner_email, status)` optimiza las consultas del módulo de caja.
+- **`sale_items`** — Tabla `@ElementCollection` con el detalle de cada venta. Columnas: `sale_id` (FK → `sales.id`), `product_id`, `product_name`, `quantity`, `weight_kg`, `unit_price` y `subtotal`. Los campos `product_name` y `unit_price` son snapshots históricos que preservan los valores al momento de la venta.
 
-- **`sale_items`**  
-  Tabla de colección generada por `@ElementCollection` sobre la lista `items` de `SalePersistenceEntity`. Almacena por ítem: `sale_id` (FK → `sales.id`), `product_id`, `product_name`, `quantity`, `weight_kg`, `unit_price` y `subtotal`. Los campos `product_name` y `unit_price` actúan como snapshots históricos, preservando el valor en el momento de la venta incluso si el producto es modificado o eliminado posteriormente del catálogo. Esta práctica garantiza la trazabilidad financiera sin introducir redundancia innecesaria.
-
-- **`cash_registers`**  
-  Arqueo de caja por día y propietario. Almacena `owner_email`, `register_date` (DATE), `total_cash` (DOUBLE), `total_digital` (DOUBLE) y `sale_count` (INT). La restricción UNIQUE sobre `(owner_email, register_date)` garantiza un único registro de caja por propietario por día. El índice sobre `owner_email` optimiza la carga del historial de caja del comerciante.
-
-**Relaciones del BC:** `sale_items.sale_id` → `sales.id` (FK de colección). Las referencias a inventario se realizan mediante `product_id` lógico en `sale_items` sin FK explícita, preservando la independencia entre BCs.
+**Relaciones:** `sale_items.sale_id` → `sales.id`.
 
 ---
 
 #### BC6 — Chatbot (Chatbot de WhatsApp)
 
-Este BC gestiona las sesiones de WhatsApp, las conversaciones con clientes y los pedidos digitales. Comprende cinco tablas.
+Gestiona las sesiones de WhatsApp, conversaciones con clientes y pedidos digitales. Comprende cinco tablas.
 
-- **`whatsapp_sessions`**  
-  Registro de sesiones de WhatsApp vinculadas al comerciante. Almacena `seller_id` (BIGINT, referencia lógica), `phone` (VARCHAR 30), `business_name` (VARCHAR 120), `status` (ENUM: `CONNECTED`, `DISCONNECTED`, `EXPIRED`), `connected_at` y `qr_code` (TEXT). El índice sobre `seller_id` optimiza la verificación de sesión activa durante el flujo de conexión QR.
+- **`whatsapp_sessions`** — Sesiones de WhatsApp del comerciante. Almacena `seller_id`, `phone`, `business_name`, `status`, `connected_at` y `qr_code`.
 
-- **`conversations`**  
-  Cada conversación abierta entre el chatbot y un cliente. Almacena `seller_id` (BIGINT), `client_phone` (VARCHAR 30), `client_name` (VARCHAR 120), `last_message` (VARCHAR 500), `last_message_time` (VARCHAR 20), `status` (ENUM: `ACTIVE`, `WAITING_PAYMENT`, `COMPLETED`, `CLOSED`), `conversation_created_at` y `closed_at`. El índice compuesto sobre `(seller_id, status)` optimiza la carga del panel de conversaciones del módulo chatbot. La separación entre `conversations`, `chat_messages` y `chat_orders` cumple 2FN: los datos del cliente y el estado de la conversación dependen únicamente de la conversación, no de los mensajes individuales.
+- **`conversations`** — Conversaciones entre el chatbot y un cliente. Almacena `seller_id`, `client_phone`, `client_name`, `last_message`, `last_message_time`, `status`, `conversation_created_at` y `closed_at`.
 
-- **`chat_messages`**  
-  Historial de mensajes intercambiados en cada conversación. Almacena `conversation_id` (FK → `conversations.id`), `content` (TEXT), `sender` (ENUM: `CLIENT`, `BOT`, `SYSTEM`), `type` (ENUM: `TEXT`, `IMAGE`) y `sent_at`. El tipo `TEXT` para `content` permite mensajes de longitud variable sin truncamiento. El índice sobre `conversation_id` es crítico para la carga paginada del historial.
+- **`chat_messages`** — Historial de mensajes de cada conversación. Almacena `conversation_id` (FK → `conversations.id`), `content`, `sender` (`CLIENT`, `BOT`, `SYSTEM`), `type` (`TEXT`, `IMAGE`) y `sent_at`.
 
-- **`chat_orders`**  
-  Pedidos realizados a través del chatbot. Almacena `conversation_id` (FK → `conversations.id`), `order_number` (VARCHAR 30, UNIQUE), `total` (DOUBLE), `delivery_address` (VARCHAR 300), `payment_method` (VARCHAR 40), `status` (ENUM: `PENDING`, `WAITING_PAYMENT`, `CONFIRMED`, `CANCELLED`, `BLOCKED`), `has_receipt` (BIT/BOOLEAN), `rejection_count` (INT), `order_created_at` y `receipt_image` (LONGTEXT). El campo `rejection_count` implementa la lógica de bloqueo automático por pagos rechazados repetidos directamente en la capa de datos. La restricción UNIQUE sobre `order_number` garantiza la trazabilidad unívoca de cada pedido.
+- **`chat_orders`** — Pedidos realizados por el chatbot. Almacena `conversation_id` (FK → `conversations.id`), `order_number` (UNIQUE), `total`, `delivery_address`, `payment_method`, `status`, `has_receipt`, `rejection_count`, `order_created_at` y `receipt_image`.
 
-- **`chat_order_items`**  
-  Tabla de colección generada por `@ElementCollection` sobre la lista `items` de `ChatOrderPersistenceEntity`. Almacena por ítem: `chat_order_id` (FK → `chat_orders.id`), `product_name`, `quantity` y `unit_price`. Al igual que `sale_items`, los campos `product_name` y `unit_price` son snapshots del catálogo al momento del pedido, garantizando integridad histórica independientemente de cambios posteriores en el inventario.
+- **`chat_order_items`** — Tabla `@ElementCollection` con el detalle de cada pedido. Columnas: `chat_order_id` (FK → `chat_orders.id`), `product_name`, `quantity` y `unit_price`.
 
-**Relaciones del BC:** `chat_messages.conversation_id` → `conversations.id`; `chat_orders.conversation_id` → `conversations.id`; `chat_order_items.chat_order_id` → `chat_orders.id`. La referencia al inventario se realiza mediante snapshot de nombre y precio, sin FK explícita.
+**Relaciones:** `chat_messages.conversation_id` → `conversations.id`; `chat_orders.conversation_id` → `conversations.id`; `chat_order_items.chat_order_id` → `chat_orders.id`.
 
 ---
 
 ### 4.8.3. Relaciones entre tablas
-
-Las relaciones de integridad referencial implementadas mediante FK en el esquema se organizan según su alcance:
-
-**Relaciones intra-BC con FK declaradas:**
 
 | Tabla hija | Columna FK | Tabla padre |
 |---|---|---|
@@ -1598,7 +1571,9 @@ Las relaciones de integridad referencial implementadas mediante FK en el esquema
 | `subscription_payments` | `subscription_id` | `subscriptions` |
 | `subscription_payments` | `user_id` | `users` |
 | `subscription_payments` | `plan_id` | `subscription_plans` |
-| `subscription_plan_features` | `subscription_plan_id` | `subscription_plans` |
+| `subscription_plan_features` | `plan_id` | `subscription_plans` |
+| `billing_setups` | `user_id` | `users` |
+| `billing_payment_methods` | `billing_setup_id` | `billing_setups` |
 | `inventory_unit_lots` | `product_id` | `inventory_unit_products` |
 | `inventory_weight_lots` | `product_id` | `inventory_weight_products` |
 | `sale_items` | `sale_id` | `sales` |
@@ -1606,26 +1581,11 @@ Las relaciones de integridad referencial implementadas mediante FK en el esquema
 | `chat_orders` | `conversation_id` | `conversations` |
 | `chat_order_items` | `chat_order_id` | `chat_orders` |
 
-**Referencias lógicas inter-BC (sin FK):**
+**Referencias lógicas inter-BC (sin FK):** `owner_email` en las tablas de Inventory y Sales apunta a `users.email`; `seller_id` en Chatbot apunta a `users.id`. Estas referencias se resuelven en la capa de aplicación para preservar el aislamiento entre Bounded Contexts.
 
-Las referencias entre Bounded Contexts se implementan intencionalmente sin FK para preservar el aislamiento de contextos DDD. Estas referencias se resuelven en la capa de aplicación mediante los campos `owner_email` y `seller_id`:
-
-- `inventory_unit_products.owner_email`, `inventory_weight_products.owner_email` → `users.email` (Inventory BC → IAM BC).
-- `sales.owner_email`, `sales.seller_id` → IAM BC; `sale_items.product_id` → Inventory BC.
-- `cash_registers.owner_email` → IAM BC.
-- `whatsapp_sessions.seller_id`, `conversations.seller_id` → IAM BC.
-- `chat_order_items.product_name` → Inventory BC, mediante snapshot de nombre y precio unitario.
-
----
 
 ### 4.8.4. Normalización aplicada
 
-El esquema cumple las tres primeras formas normales en su totalidad:
-
-**Primera Forma Normal (1FN):** Todos los atributos son atómicos. Las colecciones de datos que en un modelo no normalizado se almacenarían como cadenas delimitadas —`features` de planes, `items` de ventas, `items` de pedidos— se separan en tablas propias mediante `@ElementCollection` (`subscription_plan_features`, `sale_items`, `chat_order_items`). Los valores controlados se implementan mediante `ENUM` en lugar de cadenas libres, garantizando dominios acotados.
-
-**Segunda Forma Normal (2FN):** Todas las tablas utilizan claves primarias simples heredadas de `AuditableAbstractPersistenceEntity`, excepto `user_roles` cuya PK compuesta `(user_id, role_id)` garantiza que todos sus atributos dependen de toda la clave. No existen dependencias parciales. La separación entre `inventory_unit_products` e `inventory_weight_products`, y entre `inventory_unit_lots` e `inventory_weight_lots`, elimina las dependencias parciales que surgirían de una tabla unificada con columna discriminadora y atributos tipo-específicos nulos para alguno de los tipos.
-
-**Tercera Forma Normal (3FN):** No existen dependencias transitivas. Las preferencias del usuario (`preference_language`, `preference_timezone`, `preference_theme`, `preference_currency`) dependen de `profiles.id` directamente, sin pasar por otros atributos no clave. Los comprobantes de venta (`PaymentReceiptEmbeddable`) se almacenan como columnas de `sales` dado que dependen funcionalmente de la venta, sin crear una tabla intermedia innecesaria. Los datos de planes (`amount`, `annual_amount`, `features`) residen en `subscription_plans` y `subscription_plan_features`, no en `subscriptions`, eliminando la redundancia que resultaría de repetir los datos del plan en cada fila de suscripción activa.
-
-Los snapshots en `sale_items` (`product_name`, `unit_price`) y `chat_order_items` (`product_name`, `unit_price`) constituyen redundancia controlada e intencionada para garantizar la trazabilidad histórica de transacciones, un requisito contable que prevalece sobre la eliminación de redundancia en estos campos específicos. Los totales almacenados en `sales.total`, `chat_orders.total` y `cash_registers` actúan como registros contables históricos y no como valores derivados, lo cual es práctica estándar en sistemas de punto de venta.
+- **1FN:** Todos los atributos son atómicos. Las colecciones (`subscription_plan_features`, `billing_payment_methods`, `sale_items`, `chat_order_items`) se separan en tablas propias mediante `@ElementCollection`.
+- **2FN:** Todas las tablas tienen PK simple, excepto `user_roles` cuya PK compuesta garantiza que todos sus atributos dependen de la clave completa. La separación de productos y lotes en tablas por tipo (unit/weight) elimina las dependencias parciales que surgirían de columnas nulas en una tabla unificada.
+- **3FN:** No existen dependencias transitivas. Las preferencias de usuario y los datos de comprobante de pago se almacenan como `@Embedded` en su agregado raíz, dependiendo directamente de la PK sin pasos intermedios. Los snapshots de nombre y precio en `sale_items` y `chat_order_items` son redundancia controlada para garantizar trazabilidad histórica de transacciones.
