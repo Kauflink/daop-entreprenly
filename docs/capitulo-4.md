@@ -1305,7 +1305,7 @@ Los criterios de diseño que guiaron las decisiones de interacción y navegació
  
 El prototipo interactivo completo está disponible en Figma, donde puede navegarse en modo presentación para simular la experiencia real de uso.
 
-![prototipo.jpeg](./images/capitulo4/prototipo.jpeg "prototipo.jpeg")
+![prototipo.jpeg](./images/capitulo4/prototipo.png "prototipo.jpeg")
 
 *Ilustración - Web Application Prototyping: Vista general del flujo de navegación*
  
