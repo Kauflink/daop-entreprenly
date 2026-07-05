@@ -338,6 +338,39 @@ Entonces el producto se registra en el inventario y aparece en el listado con ti
 
 En esta sección se especifica, paso a paso, la configuración de despliegue definida por el equipo para cada uno de los productos digitales que conforman la solución **Entreprenly**: **Landing Page**, **Frontend Web Application** y **RESTful Web Services**. Para cada producto se documenta el camino completo desde el repositorio de código fuente hasta la publicación satisfactoria, acompañado de la evidencia visual (capturas) de cada paso.
 
+> **Nota sobre las capturas:** cada paso incluye un espacio de figura con el nombre de archivo de la captura correspondiente (`images/capitulo5/deploy-*.png`). Al final de la sección se incluye la **checklist de capturas** con la descripción exacta de lo que debe mostrar cada imagen.
+
+**Productos desplegados y URLs públicas**
+
+La siguiente tabla resume los tres productos digitales de la solución, con su plataforma de despliegue y la URL pública donde se encuentran disponibles.
+
+<table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+  <thead>
+    <tr>
+      <th>Producto</th>
+      <th>Tecnología / Plataforma de despliegue</th>
+      <th>URL pública</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Landing Page</td>
+      <td>HTML5 + Tailwind CSS / GitHub Pages</td>
+      <td><a href="https://entreprenly.online/">https://entreprenly.online/</a></td>
+    </tr>
+    <tr>
+      <td>Frontend Web Application</td>
+      <td>Angular / Firebase Hosting</td>
+      <td><a href="https://daop.entreprenly.online/">https://daop.entreprenly.online/</a></td>
+    </tr>
+    <tr>
+      <td>RESTful Web Services (API)</td>
+      <td>Spring Boot / Google Cloud Run</td>
+      <td><a href="https://daop-api.entreprenly.online/swagger-ui/index.html">https://daop-api.entreprenly.online/swagger-ui/index.html</a></td>
+    </tr>
+  </tbody>
+</table>
+
 #### Landing Page (GitHub Pages)
 
 El Landing Page está desarrollado con **HTML5**, **Tailwind CSS** y **JavaScript**, y se publica mediante **GitHub Pages** con automatización por **GitHub Actions**: cada integración a la rama `main` dispara la publicación de una nueva versión. El sitio está disponible en el dominio personalizado **[entreprenly.online](https://entreprenly.online)**.
@@ -2102,8 +2135,8 @@ Para este tercer Sprint, el equipo estableció como objetivo principal la implem
     <tr><td><strong>Sprint 2 Retrospective Summary</strong></td><td>El equipo identificó que la Fake API con JSON-Server no provee persistencia real, autenticación ni reglas de negocio del lado del servidor. Para el Sprint 3 se acordó implementar el Backend real con Spring Boot bajo arquitectura DDD, asignando un Bounded Context por miembro, incorporar autenticación con JWT y persistencia con JPA por contexto, y automatizar el despliegue en Google Cloud con Docker y CI/CD.</td></tr>
     <tr><td colspan="2"><strong>Sprint Goal &amp; User Stories</strong></td></tr>
     <tr><td><strong>Sprint 3 Goal</strong></td><td>Nuestro enfoque está en implementar y desplegar la primera versión de los RESTful Web Services de Entreprenly con Spring Boot, reemplazando la Fake API por un Backend real con autenticación JWT, persistencia JPA por bounded context y documentación OpenAPI. Creemos que entrega una plataforma multi-tenant en la que cada comerciante gestiona de forma segura su inventario, ventas, suscripción y pedidos de WhatsApp con datos persistentes. Esto se confirmará cuando la API esté desplegada en Google Cloud, protegida con JWT, documentada en Swagger UI y respondiendo sobre HTTPS en su dominio público.</td></tr>
-    <tr><td><strong>Sprint 3 Velocity</strong></td><td>55</td></tr>
-    <tr><td><strong>Sum of Story Points</strong></td><td>55</td></tr>
+    <tr><td><strong>Sprint 3 Velocity</strong></td><td>62</td></tr>
+    <tr><td><strong>Sum of Story Points</strong></td><td>62</td></tr>
   </tbody>
 </table>
 
@@ -2139,7 +2172,7 @@ En el Sprint 3, el equipo organizó el trabajo asignando un Bounded Context del 
 
 #### 5.2.3.3. Sprint Backlog 3
 
-El objetivo principal de este Sprint fue implementar los RESTful Web Services de Entreprenly. El alcance abarcó los flujos de pedido del chatbot, comprendidos en las User Stories US-41 a US-52, junto con las Technical Stories del EPIC-13. Estas últimas cubren la API de pedidos y pagos en las historias US-54 y US-55, la autenticación con JWT en la US-91, la containerización y el pipeline de CI/CD en la US-92, y la persistencia JPA por bounded context en la US-93. Cada historia se descompuso en Engineering Tasks con una estimación individual de entre 4 y 8 horas, gestionadas en el tablero Kanban del Sprint a través de las columnas **To Do, In Process, To Review y Done**.
+El objetivo principal de este Sprint fue implementar los RESTful Web Services de Entreprenly y **conectar el Frontend Web Application al backend real**, reemplazando la Fake RESTful API (JSON-Server) utilizada en el Sprint 2. El alcance abarcó los flujos de pedido del chatbot, comprendidos en las User Stories US-41 a US-52, junto con las Technical Stories del EPIC-13. Estas últimas cubren la API de pedidos y pagos en las historias US-54 y US-55, la autenticación con JWT en la US-91, la containerización y el pipeline de CI/CD en la US-92, y la persistencia JPA por bounded context en la US-93. Adicionalmente, se incorporaron las User Stories de **frontend integradas con el backend real**: el registro, inicio y cierre de sesión con autenticación JWT (US-56, US-58 y US-61) y la validación de comprobantes de pago del chatbot desde el dashboard (US-46). Cada historia se descompuso en Engineering Tasks con una estimación individual de entre 4 y 8 horas, gestionadas en el tablero Kanban del Sprint a través de las columnas **To Do, In Process, To Review y Done**.
 
 **Board público del Sprint 3 (Trello):** [https://trello.com/b/kcHoLNFO/entreprenly-sprint-3](https://trello.com/b/kcHoLNFO/entreprenly-sprint-3)
 
@@ -2442,8 +2475,8 @@ A continuación se presenta el tablero del Sprint y el detalle de los Work-items
       <td>US-92</td>
       <td>Containerizar y desplegar la API mediante Docker y CI/CD</td>
       <td>T-28</td>
-      <td>Configurar el pipeline de CI/CD</td>
-      <td>Configurar el workflow de GitHub Actions con Workload Identity Federation, push a Artifact Registry y rollout en la VM por SSH.</td>
+      <td>Configurar el build de la imagen con Cloud Build</td>
+      <td>Desplegar desde el código fuente en Google Cloud Run: Cloud Build compila la imagen a partir del <code>Dockerfile</code> y la publica en Artifact Registry.</td>
       <td>6</td>
       <td>Camargo Briceño, Joseph Julius</td>
       <td>Done</td>
@@ -2452,8 +2485,8 @@ A continuación se presenta el tablero del Sprint y el detalle de los Work-items
       <td>US-92</td>
       <td>Containerizar y desplegar la API mediante Docker y CI/CD</td>
       <td>T-29</td>
-      <td>Configurar el runtime en la VM y TLS</td>
-      <td>Configurar <code>docker compose</code> en la instancia de Compute Engine y el proxy inverso con TLS (Caddy) sobre el dominio del API.</td>
+      <td>Configurar el servicio de Cloud Run y el dominio</td>
+      <td>Configurar el servicio en Google Cloud Run (puerto 8080, conexión a Cloud SQL PostgreSQL y variables del perfil <code>prod</code>) y mapear el dominio <code>daop-api.entreprenly.online</code> con certificado TLS gestionado por Google.</td>
       <td>5</td>
       <td>Camargo Briceño, Joseph Julius</td>
       <td>Done</td>
@@ -2476,6 +2509,46 @@ A continuación se presenta el tablero del Sprint y el detalle de los Work-items
       <td>Implementar el manejo global que retorna 404 con cuerpo JSON consistente para las rutas no mapeadas del API.</td>
       <td>4</td>
       <td>Camargo Briceño, Joseph Julius</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-56</td>
+      <td>Registrar cuenta con email</td>
+      <td>T-32</td>
+      <td>Integrar el registro del frontend con el IAM real</td>
+      <td>Conectar el formulario de registro de Angular al endpoint real <code>POST /authentication/sign-up</code>, reemplazando la Fake API por el IAM del backend.</td>
+      <td>4</td>
+      <td>Camargo Briceño, Joseph Julius</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-58</td>
+      <td>Iniciar sesión con credenciales</td>
+      <td>T-33</td>
+      <td>Integrar el login del frontend con JWT real</td>
+      <td>Conectar el login de Angular al endpoint <code>POST /authentication/sign-in</code>, almacenar el token JWT y adjuntarlo automáticamente en el interceptor HTTP de las solicitudes protegidas.</td>
+      <td>5</td>
+      <td>Camargo Briceño, Joseph Julius</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-61</td>
+      <td>Cerrar sesión</td>
+      <td>T-34</td>
+      <td>Implementar el cierre de sesión en el frontend</td>
+      <td>Limpiar el token JWT del almacenamiento local, restablecer el estado de autenticación y redirigir al usuario a la pantalla de login.</td>
+      <td>4</td>
+      <td>Camargo Briceño, Joseph Julius</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US-46</td>
+      <td>Validar comprobante de pago desde el dashboard</td>
+      <td>T-35</td>
+      <td>Implementar la UI de validación de pago en el dashboard</td>
+      <td>Construir la vista de pedidos con las acciones de aprobar y rechazar el comprobante, consumiendo el endpoint real de validación de pagos y mostrando el resultado al comerciante.</td>
+      <td>5</td>
+      <td>Palma De Los Santos, Elynor Mikela</td>
       <td>Done</td>
     </tr>
   </tbody>
@@ -2988,25 +3061,23 @@ La API expone **77 operaciones** distribuidas en **23 controladores REST** a tra
 
 #### 5.2.3.7. Software Deployment Evidence for Sprint Review
 
-Durante el Sprint 3, el equipo configuró y ejecutó el despliegue de los Web Services sobre **Google Cloud Platform** mediante contenedores Docker y un pipeline de integración y despliegue continuo con **GitHub Actions**. El proceso realizado fue el siguiente:
+Durante el Sprint 3, el equipo configuró y ejecutó el despliegue de los Web Services sobre **Google Cloud Run**, con la imagen del contenedor construida por **Cloud Build** a partir del código fuente y publicada en **Artifact Registry**. El proceso realizado fue el siguiente:
 
 1. **Containerización:** Se creó un `Dockerfile` multi-stage que compila la aplicación con Maven sobre un JDK Temurin 26 y la ejecuta sobre un JRE Temurin 26 ligero, con el perfil `prod` activo.
 
 ![dockerfile_p](./images/capitulo5/dockerfile_p.png "Dockerfile multi-stage")
 
-2. **Autenticación sin claves (WIF):** El workflow de GitHub Actions se autentica a Google Cloud mediante **Workload Identity Federation**, evitando almacenar claves de cuenta de servicio en el repositorio.
+2. **Habilitación de servicios y base de datos:** Se habilitaron las APIs de **Cloud Run**, **Cloud Build**, **Artifact Registry** y **Cloud SQL Admin**, y se provisionó una instancia de **Cloud SQL para PostgreSQL** que aloja la base de datos de producción.
 
-3. **Build y push a Artifact Registry:** En cada push a la rama `main`, el workflow construye la imagen Docker y la publica en **Google Artifact Registry**, etiquetada con el SHA del commit y como `latest`.
+3. **Build y publicación de la imagen:** Al desplegar desde el código fuente en Cloud Run, **Cloud Build** compila la imagen a partir del `Dockerfile` y la publica automáticamente en **Google Artifact Registry**.
 
-![deploy_workflow](./images/capitulo5/deploy_workflow.png "Workflow de despliegue en GitHub Actions")
+4. **Configuración del servicio:** Se desplegó el servicio `daop-entreprenly-web-services` en la región `us-east1` con puerto de contenedor `8080`, conexión a la instancia de Cloud SQL PostgreSQL, las variables de entorno del perfil `prod` (incluyendo `SPRING_PROFILES_ACTIVE`, credenciales de base de datos, `JWT_SECRET` y `CLOUD_SQL_CONNECTION_NAME`), acceso sin autenticación, 1 vCPU, 1 GiB de memoria y un máximo de 3 instancias.
 
-4. **Roll-out en la VM:** El workflow se conecta por SSH a la instancia de **Compute Engine** y ejecuta `docker compose pull` y `docker compose up -d` para desplegar la nueva imagen, con reintentos para tolerar la propagación de llaves.
-
-5. **TLS y dominio:** Un proxy inverso **Caddy** gestiona el certificado TLS y expone el servicio sobre HTTPS en el dominio público **[https://daop-api.entreprenly.online](https://daop-api.entreprenly.online)**.
+5. **TLS y dominio:** Se mapeó el dominio personalizado **[https://daop-api.entreprenly.online](https://daop-api.entreprenly.online)** al servicio de Cloud Run, con certificado TLS gestionado automáticamente por Google.
 
 6. **Verificación:** Se validó el despliegue accediendo a Swagger UI en `https://daop-api.entreprenly.online/swagger-ui/index.html` y comprobando que el endpoint de especificación OpenAPI (`/v3/api-docs`) responde correctamente sobre HTTPS.
 
-![backend_deploy](./images/capitulo5/backend_deploy.png "API desplegada sobre HTTPS")
+![backend_deploy](./images/capitulo5/backend.png "API desplegada sobre HTTPS")
 
 ---
 
@@ -3161,7 +3232,7 @@ A continuación se registran las entrevistas de validación realizadas por segme
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
         <strong>Link de la entrevista:</strong>
-        <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202416151_upc_edu_pe/IQDLOgZZQciGT4vb_yjShsLTAS0Hr5RXYveIiQsCDk62_3g?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=Ykle0r" style="color: #1a6b6b;">María Encarnación-Entrevista de Validación</a>
+        https://upcedupe-my.sharepoint.com/:v:/g/personal/u202416151_upc_edu_pe/IQDLOgZZQciGT4vb_yjShsLTAS0Hr5RXYveIiQsCDk62_3g?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=Ykle0r
       </td>
     </tr>
   </table>
@@ -3233,7 +3304,7 @@ A continuación se registran las entrevistas de validación realizadas por segme
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
         <strong>Link de la entrevista:</strong>
-        <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202416151_upc_edu_pe/IQDfZ1lUJuh6QIJJfAiZtDGhAfoa0SvaRV9JKz7SKHOnDxQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=f7pYfS" style="color: #1a6b6b;">Hercilio Carrasco-Entrevista de Validación</a>
+        https://upcedupe-my.sharepoint.com/:v:/g/personal/u202416151_upc_edu_pe/IQDfZ1lUJuh6QIJJfAiZtDGhAfoa0SvaRV9JKz7SKHOnDxQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=f7pYfS
       </td>
     </tr>
   </table>
@@ -3307,7 +3378,7 @@ A continuación se registran las entrevistas de validación realizadas por segme
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
         <strong>Link de la entrevista:</strong>
-        <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a290_upc_edu_pe/IQBA8Q70W8bCRoDGM1oUhrJdATc8nAY1ysMnwvptFJXACZk?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=wdusaa" style="color: #1a6b6b;">Sebastián Curay-Entrevista de Validación</a>
+        https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a290_upc_edu_pe/IQBA8Q70W8bCRoDGM1oUhrJdATc8nAY1ysMnwvptFJXACZk?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=wdusaa
       </td>
     </tr>
   </table>
