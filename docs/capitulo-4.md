@@ -1446,6 +1446,8 @@ Persiste conversaciones, mensajes, pedidos y sesiones de WhatsApp en la base de 
 ## 4.7. Software Object-Oriented Design
 
 ### 4.7.1. Class Diagrams
+<p align="center">Kernel BC</p>
+<p align="center"><img src="images/capitulo4/CLASS DIAGRAM — KERNEL BC.svg" width="500"/></p>
 
 <p align="center">IAM (Generación y Autenticación de Cuenta) BC</p>
 <p align="center"><img src="images/capitulo4/CLASS DIAGRAM — IAM BC.svg" width="500"/></p>
