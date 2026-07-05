@@ -3097,8 +3097,6 @@ El equipo aplicó GitFlow como estrategia de control de versiones, trabajando en
 
 ### 5.2.4. Sprint 4
 
-> **Nota:** los campos marcados como **_[Completar: …]_** corresponden a datos de la reunión de planificación y del tablero de Trello que debe completar el equipo. El resto del contenido está basado en el historial real de los repositorios.
-
 #### 5.2.4.1. Sprint Planning 4
 
 Para este cuarto y último Sprint, el equipo estableció como objetivo principal la integración del **canal real de WhatsApp** para el chatbot de Entreprenly mediante un **WhatsApp bridge multi-tenant**, conectando la lógica de pedidos ya implementada en el Backend con conversaciones reales de clientes, y desplegando la versión final de los tres productos digitales. La reunión de planificación se llevó a cabo de manera virtual, donde se definieron las User Stories a abordar, el Sprint Goal y la distribución de responsabilidades.
@@ -3107,10 +3105,10 @@ Para este cuarto y último Sprint, el equipo estableció como objetivo principal
   <tbody>
     <tr><td colspan="2"><strong>Sprint 4</strong></td></tr>
     <tr><td colspan="2"><strong>Sprint Planning Background</strong></td></tr>
-    <tr><td><strong>Date</strong></td><td><strong>_[Completar: fecha de la reunión]_</strong></td></tr>
-    <tr><td><strong>Time</strong></td><td><strong>_[Completar: hora]_</strong></td></tr>
+    <tr><td><strong>Date</strong></td><td>2026-06-04</td></tr>
+    <tr><td><strong>Time</strong></td><td>09:00 AM</td></tr>
     <tr><td><strong>Location</strong></td><td>Reunión virtual vía Discord</td></tr>
-    <tr><td><strong>Prepared By</strong></td><td><strong>_[Completar: responsable]_</strong></td></tr>
+    <tr><td><strong>Prepared By</strong></td><td>Camargo Briceño, Joseph Julius</td></tr>
     <tr><td><strong>Attendees (to planning meeting)</strong></td><td>Camargo Briceño, Joseph Julius / Chavez Carrasco, Lionel Abraham / Palma De Los Santos, Elynor Mikela / Peirano Brun, José Antonio / Flores Pinchi, José Fernando</td></tr>
     <tr><td><strong>Sprint 3 Review Summary</strong></td><td>En el Sprint 3 se implementó y desplegó el Backend real con Spring Boot sobre Google Cloud Run, con autenticación JWT, persistencia JPA por bounded context y la lógica del flujo de pedidos del chatbot (US-41 a US-52). El Frontend se integró con la API real reemplazando la Fake API del Sprint 2.</td></tr>
     <tr><td><strong>Sprint 3 Retrospective Summary</strong></td><td>El equipo identificó que, si bien la lógica del chatbot residía en el Backend, faltaba la integración con WhatsApp real: las conversaciones seguían siendo simuladas. Para el Sprint 4 se acordó implementar un WhatsApp bridge multi-tenant con <code>whatsapp-web.js</code>, conectar el canal real (vinculación por QR, recepción de mensajes y de comprobantes por imagen, y envío de respuestas al cliente) y desplegar la versión final de los tres productos.</td></tr>

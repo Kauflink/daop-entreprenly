@@ -695,7 +695,7 @@ Se realizaron 6 entrevistas semiestructuradas distribuidas en dos segmentos obje
 **Problemas operativos identificados**
 
 <p align="center">
-  <img src="images/graf_problemasOperativos.png" alt="graf_problemasOperativos" width="500"/>
+  <img src="images/capitulo2/graf_problemasOperativos.png" alt="graf_problemasOperativos" width="500"/>
 </p>
 
 El descuadre de stock y el desorden en caja concentran el mayor porcentaje con un 100% cada uno, lo que los posiciona como los problemas más críticos y compartidos por la totalidad del segmento. La mezcla de medios de pago sin registro y la atención manual de WhatsApp, presentes en el 67% de los casos, complementan un panorama donde la falta de control operativo afecta tanto el inventario como la conciliación financiera y la atención al cliente.
