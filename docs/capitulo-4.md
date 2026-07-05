@@ -734,6 +734,15 @@ Los wireframes de la Landing Page representan la distribución base de cada secc
     <img src="images/capitulo4/wireframe-hero-section.png" alt="Wireframe Hero Section" width="800"/>
   </p>
 
+- **Video section**
+  <p align="center">
+    <img src="images/capitulo4/wireframe-video-section.png" alt="Mockup Hero Section" width="800"/>
+  </p>
+- **Team section**
+
+  <p align="center">
+    <img src="images/capitulo4/wireframe-Team-section.png" alt="Mockup Problem Section" width="800"/>
+  </p>
 - **Problem section**
 
   <p align="center">
@@ -809,15 +818,22 @@ Los mockups de la Landing Page muestran la propuesta visual aplicada sobre la es
   <p align="center">
     <img src="images/capitulo4/mockup-hero-section.png" alt="Mockup Hero Section" width="800"/>
   </p>
+- **Video section**
+  <p align="center">
+    <img src="images/capitulo4/video-section.png" alt="Mockup Hero Section" width="800"/>
+  </p>
+- **Team section**
 
+  <p align="center">
+    <img src="images/capitulo4/Team-section.png" alt="Mockup Problem Section" width="800"/>
+  </p>
 - **Problem section**
 
   <p align="center">
     <img src="images/capitulo4/mockup-problem-section.png" alt="Mockup Problem Section" width="800"/>
   </p>
-
 - **Main features section**
-
+ 
   <p align="center">
     <img src="images/capitulo4/mockup-main-features-section.png" alt="Mockup Main Features Section" width="800"/>
   </p>
@@ -1289,7 +1305,7 @@ Los criterios de diseño que guiaron las decisiones de interacción y navegació
  
 El prototipo interactivo completo está disponible en Figma, donde puede navegarse en modo presentación para simular la experiencia real de uso.
 
-![prototipo.jpeg](./images/capitulo4/prototipo.jpeg "prototipo.jpeg")
+![prototipo.jpeg](./images/capitulo4/prototipo.png "prototipo.jpeg")
 
 *Ilustración - Web Application Prototyping: Vista general del flujo de navegación*
  
@@ -1309,7 +1325,7 @@ El prototipo cubre los siguientes flujos principales de interacción, representa
  
 El video de demostración del prototipo, donde se explican en detalle los flujos principales y las decisiones de diseño más relevantes, está disponible en Microsoft Stream en el siguiente enlace:
  
-**Enlace al video del prototipo:** **https://youtu.be/T2icL1vz_9Q**
+**Enlace al video del prototipo:** **https://youtu.be/hzcwRnjQyK4**
 
 
 ## 4.6. Domain-Driven Software Architecture
