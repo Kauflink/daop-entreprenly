@@ -336,70 +336,134 @@ Entonces el producto se registra en el inventario y aparece en el listado con ti
 
 ### 5.1.4. Software Deployment Configuration
 
-En esta sección se especifica la configuración de despliegue definida por el equipo de Kauflink para cada uno de los productos digitales que conforman la solución **Entreprenly**: Landing Page, Frontend Web Application y RESTful Web Services. El objetivo es establecer, desde el inicio del ciclo de vida, los pasos y herramientas necesarias para lograr el despliegue o publicación satisfactoria de cada producto a partir de los repositorios de código fuente.
+En esta sección se especifica, paso a paso, la configuración de despliegue definida por el equipo para cada uno de los productos digitales que conforman la solución **Entreprenly**: **Landing Page**, **Frontend Web Application** y **RESTful Web Services**. Para cada producto se documenta el camino completo desde el repositorio de código fuente hasta la publicación satisfactoria, acompañado de la evidencia visual (capturas) de cada paso.
 
-#### Landing Page
+#### Landing Page (GitHub Pages)
 
-El Landing Page de Entreprenly está desarrollado con HTML5, **Tailwind CSS** y JavaScript, y se despliega mediante **GitHub Pages**, aprovechando el soporte nativo de esta plataforma para sitios web estáticos. La automatización del proceso de despliegue se realiza a través de **GitHub Actions**, de modo que cada integración a la rama `main` desencadena automáticamente la publicación de la nueva versión. El sitio se encuentra disponible en el dominio personalizado **[entreprenly.online](https://entreprenly.online)**.
+El Landing Page está desarrollado con **HTML5**, **Tailwind CSS** y **JavaScript**, y se publica mediante **GitHub Pages** con automatización por **GitHub Actions**: cada integración a la rama `main` dispara la publicación de una nueva versión. El sitio está disponible en el dominio personalizado **[entreprenly.online](https://entreprenly.online)**.
 
-Los pasos para configurar y ejecutar el despliegue son los siguientes:
+**Paso 1.** Asegurar que el repositorio `Kauflink/landing-entreprenly` esté **público** en GitHub y siga GitFlow (ramas `main` y `develop`).
 
-1. Asegurarse de que el repositorio del Landing Page (`Kauflink/landing-entreprenly`) esté público en GitHub.
-2. En la configuración del repositorio, ingresar a **Settings > Pages** y seleccionar **GitHub Actions** como fuente de publicación (Build and deployment > Source).
-3. Configurar el dominio personalizado ingresando `entreprenly.online` en el campo **Custom domain** y habilitando **Enforce HTTPS**.
-4. En el proveedor de DNS del dominio, crear los registros `A` que apunten a las IPs de los servidores de GitHub Pages, de acuerdo con la documentación oficial de GitHub.
-5. En el repositorio, crear el archivo `.github/workflows/deploy.yml` con el workflow de GitHub Actions, que se ejecuta ante cada push sobre la rama `main`. El workflow realiza el checkout del repositorio, la configuración de **Node.js 20**, la instalación de dependencias (`npm install`), la compilación de estilos con Tailwind (`npm run build`), la subida del artefacto con `actions/upload-pages-artifact` y la publicación con la acción oficial `actions/deploy-pages`.
-6. Verificar que el archivo `CNAME` con el valor `entreprenly.online` esté presente en la raíz del repositorio para que GitHub Pages respete el dominio personalizado entre despliegues.
-7. Validar el despliegue accediendo a `https://entreprenly.online` y confirmando que la versión publicada corresponde con el último commit integrado en `main`.
+<p align="center"><img src="images/capitulo5/deploy-landing-01.png" width="700" alt="Repositorio del Landing en GitHub"></p>
 
-#### Frontend Web Application
+**Paso 2.** En el repositorio ir a **Settings > Pages** y, en **Build and deployment > Source**, seleccionar **GitHub Actions**.
 
-El Frontend Web Application de Entreprenly está desarrollado con **Angular** y se despliega mediante **Firebase Hosting**, bajo el proyecto `daop-entreprenly`. La aplicación está disponible en la URL por defecto de Firebase **[https://daop-entreprenly.web.app](https://daop-entreprenly.web.app)** y en el dominio personalizado **[https://daop.entreprenly.online](https://daop.entreprenly.online)**. Firebase Hosting fue elegido sobre GitHub Pages por tres razones concretas: soporta el enrutamiento del lado del cliente (SPA routing) de Angular de forma nativa sin configuraciones adicionales, permite asociar subdominios personalizados sin conflictos con el dominio principal ya utilizado por el Landing Page en GitHub Pages, y se integra de forma directa con GitHub Actions para automatizar el ciclo de build y despliegue.
+<p align="center"><img src="images/capitulo5/deploy-landing-02.png" width="700" alt="Settings > Pages con Source = GitHub Actions"></p>
 
-Los pasos para configurar y ejecutar el despliegue son los siguientes:
+**Paso 3.** Agregar el archivo `CNAME` con el valor `entreprenly.online` en la raíz del repositorio y, en **Settings > Pages > Custom domain**, registrar `entreprenly.online` habilitando **Enforce HTTPS**.
 
-1. Crear el proyecto **`daop-entreprenly`** en **Firebase Console** ([console.firebase.google.com](https://console.firebase.google.com)) e ingresar a la sección **Hosting** para activar el servicio.
-2. En el entorno local, instalar Firebase CLI:
-   ```bash
-   npm install -g firebase-tools
-   firebase login
-   ```
-3. Dentro del repositorio del Frontend (`Kauflink/daop-entreprenly-frontend`), inicializar Firebase Hosting:
-   ```bash
-   firebase init hosting
-   ```
-   Durante la inicialización, seleccionar el proyecto `daop-entreprenly`, indicar `dist/entreprenly/browser` como directorio público (output del build de producción de Angular), confirmar que la aplicación es una SPA respondiendo `Yes` a la opción de reescritura de rutas al `index.html`, y no sobrescribir el `index.html` existente. El archivo `.firebaserc` queda configurado con el proyecto por defecto `daop-entreprenly`.
-4. Verificar que el archivo `firebase.json` generado incluya la regla de reescritura para SPA routing:
-   ```json
-   {
-     "hosting": {
-       "public": "dist/entreprenly/browser",
-       "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
-       "rewrites": [{ "source": "**", "destination": "/index.html" }]
-     }
-   }
-   ```
-5. En Firebase Console, ingresar a **Hosting > Add custom domain** y registrar el subdominio `daop.entreprenly.online`. Firebase proporciona los registros DNS necesarios (tipo `A` o `TXT`) que deben configurarse en el proveedor del dominio, y emite automáticamente el certificado TLS.
-6. En el repositorio, configurar el **GitHub Secret** `FIREBASE_SERVICE_ACCOUNT_DAOP_ENTREPRENLY` con las credenciales de la cuenta de servicio de Firebase, necesarias para autenticar el despliegue desde GitHub Actions.
-7. Crear el archivo `.github/workflows/firebase-hosting.yml` con el workflow de GitHub Actions. El workflow se ejecuta ante cada push en la rama `main` y realiza los siguientes pasos: checkout del repositorio, configuración de **Node.js 22** con caché de npm, instalación de dependencias con `npm ci`, generación del build con `npm run build` y despliegue en Firebase Hosting usando la acción oficial `FirebaseExtended/action-hosting-deploy@v0` con `channelId: live`.
-8. Validar el despliegue accediendo a `https://daop.entreprenly.online` y verificando que la navegación entre vistas de Angular funciona correctamente sin errores 404 al refrescar el navegador.
+<p align="center"><img src="images/capitulo5/deploy-landing-03.png" width="700" alt="Dominio personalizado en GitHub Pages"></p>
 
-#### RESTful Web Services
+**Paso 4.** En el proveedor de DNS del dominio, crear los registros `A` apuntando a las IPs de GitHub Pages (`185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`).
 
-El Backend de Entreprenly está desarrollado con **Spring Boot** y se despliega de forma **containerizada con Docker** sobre una instancia de **Google Compute Engine (VM)** en **Google Cloud Platform (GCP)**, accesible a través del subdominio **[daop-api.entreprenly.online](https://daop-api.entreprenly.online)**. La automatización del despliegue se gestiona mediante **GitHub Actions**, que se autentica a GCP sin claves mediante **Workload Identity Federation (WIF)**, construye y publica la imagen Docker en **Artifact Registry** y la actualiza en la VM mediante `docker compose`.
+<p align="center"><img src="images/capitulo5/deploy-landing-04.png" width="700" alt="Registros DNS del dominio"></p>
 
-Los pasos para configurar y ejecutar el despliegue son los siguientes:
+**Paso 5.** Crear el workflow `.github/workflows/deploy.yml`, que ante cada push a `main` ejecuta: checkout, configuración de **Node.js 20**, `npm install`, compilación de estilos con Tailwind (`npm run build`), subida del artefacto con `actions/upload-pages-artifact` y publicación con `actions/deploy-pages`.
 
-1. En la consola de GCP, crear una instancia de **Compute Engine** con sistema operativo Ubuntu, **Docker** y **Docker Compose** instalados, y una dirección IP externa estática asignada. En la VM, definir el directorio `/opt/entreprenly` con un archivo `docker-compose.yml` que referencia la imagen publicada en Artifact Registry y las variables de entorno del perfil de producción.
-2. Crear un repositorio en **Artifact Registry** para alojar la imagen Docker del backend.
-3. Definir el **`Dockerfile`** multi-stage en el repositorio de Web Services: la primera etapa compila la aplicación con **Maven** sobre un JDK **Eclipse Temurin 26**; la segunda etapa ejecuta el `.jar` sobre un JRE **Temurin 26** ligero, con el perfil `prod` activo y exponiendo el puerto `8092`.
-4. Configurar **Workload Identity Federation** en GCP (un Workload Identity Pool y Provider para GitHub Actions) y una cuenta de servicio de despliegue con permisos sobre Artifact Registry y Compute Engine. En el repositorio, registrar las siguientes **GitHub Variables**: `GCP_PROJECT_ID`, `GCP_WIF_PROVIDER`, `GCP_DEPLOY_SA`, `GCP_REGION`, `GCP_ZONE`, `GCE_INSTANCE` y `AR_IMAGE`.
-5. En el proveedor de DNS del dominio, crear un registro `A` que apunte `daop-api.entreprenly.online` a la IP externa estática de la instancia.
-6. Configurar **Caddy** como proxy inverso en la VM, que obtiene y renueva automáticamente el certificado TLS de Let's Encrypt para `daop-api.entreprenly.online` y redirige el tráfico HTTPS al contenedor de Spring Boot en el puerto `8092`.
-7. Definir las variables de entorno del perfil `prod` requeridas por el contenedor: `DATABASE_URL`, `DATABASE_PORT`, `DATABASE_NAME`, `DATABASE_USER`, `DATABASE_PASSWORD` (apuntando a la base de datos MySQL en `db.entreprenly.online`), `JWT_SECRET`, `PORT` y `SPRING_PROFILES_ACTIVE=prod`.
-8. Crear el archivo `.github/workflows/deploy.yml` con el workflow de GitHub Actions. El workflow se ejecuta ante cada push en la rama `main` y realiza los siguientes pasos: checkout del repositorio, autenticación a GCP mediante WIF (`google-github-actions/auth@v2`), configuración de `gcloud`, construcción de la imagen (`docker build`) etiquetada con el SHA del commit y `latest`, publicación en Artifact Registry (`docker push`) y roll-out en la VM por SSH ejecutando `docker compose pull && docker compose up -d`, con reintentos para tolerar la propagación de llaves.
-9. Documentar los endpoints del API desplegado mediante **Swagger UI**, accesible en la ruta `https://daop-api.entreprenly.online/swagger-ui/index.html` (especificación OpenAPI en `/v3/api-docs`), y registrar la URL base del API en el entorno del Frontend Web Application para su integración.
-10. Validar el despliegue realizando una solicitud de prueba a un endpoint del API desde Swagger UI o desde Postman, confirmando que el servicio responde correctamente sobre HTTPS.
+<p align="center"><img src="images/capitulo5/deploy-landing-05.png" width="700" alt="Workflow de GitHub Actions del Landing"></p>
+
+**Paso 6.** Verificar en la pestaña **Actions** que la ejecución del workflow finalizó correctamente (estado verde).
+
+<p align="center"><img src="images/capitulo5/deploy-landing-06.png" width="700" alt="Ejecución exitosa del workflow"></p>
+
+**Paso 7.** Validar el despliegue accediendo a `https://entreprenly.online` y confirmando que la versión publicada corresponde al último commit de `main`.
+
+<p align="center"><img src="images/capitulo5/deploy-landing-07.png" width="700" alt="Landing Page publicado"></p>
+
+#### Frontend Web Application (Firebase Hosting)
+
+El Frontend está desarrollado con **Angular** y se despliega en **Firebase Hosting** bajo el proyecto `daop-entreprenly`, con automatización por **GitHub Actions**. Está disponible en **[https://daop-entreprenly.web.app](https://daop-entreprenly.web.app)** y en el dominio personalizado **[https://daop.entreprenly.online](https://daop.entreprenly.online)**. Firebase Hosting se eligió por su soporte nativo del enrutamiento SPA de Angular, la posibilidad de asociar subdominios personalizados sin conflicto con el dominio del Landing, y su integración directa con GitHub Actions.
+
+**Paso 1.** Crear el proyecto **`daop-entreprenly`** en **Firebase Console** ([console.firebase.google.com](https://console.firebase.google.com)) y activar el servicio **Hosting**.
+
+<p align="center"><img src="images/capitulo5/deploy-frontend-01.png" width="700" alt="Proyecto Firebase con Hosting activado"></p>
+
+**Paso 2.** En el entorno local, instalar Firebase CLI e iniciar sesión:
+```bash
+npm install -g firebase-tools
+firebase login
+```
+
+<p align="center"><img src="images/capitulo5/deploy-frontend-02-1.png" width="700" alt="Firebase CLI instalado y login"></p>
+
+<p align="center"><img src="images/capitulo5/deploy-frontend-02-2.png" width="700" alt="Firebase CLI instalado y login"></p>
+
+**Paso 3.** En el repositorio `Kauflink/daop-entreprenly-frontend`, inicializar Hosting con `firebase init hosting`: seleccionar el proyecto `daop-entreprenly`, indicar `dist/entreprenly/browser` como directorio público (salida del build de producción de Angular), responder **Yes** a la reescritura de rutas al `index.html` (SPA) y **no** sobrescribir el `index.html`. Esto genera `.firebaserc` con el proyecto por defecto.
+
+<p align="center"><img src="images/capitulo5/deploy-frontend-03.png" width="700" alt="firebase init hosting"></p>
+
+**Paso 4.** Verificar que `firebase.json` incluya la regla de reescritura para el SPA routing:
+```json
+{
+  "hosting": {
+    "public": "dist/entreprenly/browser",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [{ "source": "**", "destination": "/index.html" }]
+  }
+}
+```
+
+<p align="center"><img src="images/capitulo5/deploy-frontend-04.png" width="700" alt="firebase.json con rewrites"></p>
+
+**Paso 5.** En **Firebase Console > Hosting > Add custom domain**, registrar el subdominio `daop.entreprenly.online`, crear en el proveedor de DNS los registros que indica Firebase (tipo `A` o `TXT`) y esperar la emisión automática del certificado TLS.
+
+<p align="center"><img src="images/capitulo5/deploy-frontend-05.png" width="700" alt="Dominio personalizado en Firebase Hosting"></p>
+
+**Paso 6.** En el repositorio, registrar el **GitHub Secret** `FIREBASE_SERVICE_ACCOUNT_DAOP_ENTREPRENLY` con las credenciales de la cuenta de servicio de Firebase para autenticar el despliegue desde GitHub Actions.
+
+<p align="center"><img src="images/capitulo5/deploy-frontend-06.png" width="700" alt="GitHub Secret de Firebase"></p>
+
+**Paso 7.** Crear el workflow `.github/workflows/firebase-hosting.yml`, que ante cada push a `main` ejecuta: checkout, **Node.js 22** 
+
+<p align="center"><img src="images/capitulo5/deploy-frontend-07.png" width="700" alt="Workflow de Firebase Hosting"></p>
+
+**Paso 8.** Verificar la ejecución del workflow en **Actions** (estado verde) y validar accediendo a `https://daop.entreprenly.online`, comprobando que la navegación entre vistas de Angular funciona sin errores 404 al refrescar.
+
+<p align="center"><img src="images/capitulo5/deploy-frontend-08.png" width="700" alt="Frontend desplegado en Firebase"></p>
+
+#### RESTful Web Services (Google Cloud Run)
+
+El Backend está desarrollado con **Spring Boot** y se empaqueta con un **`Dockerfile`** multi-stage. Se despliega en **Google Cloud Run** (servicio `daop-entreprenly-web-services`, región `us-east1`), donde el contenedor se construye a partir del código fuente mediante **Cloud Build** y la imagen queda publicada en **Artifact Registry**. La base de datos es **Cloud SQL para PostgreSQL** y el servicio se expone en el dominio personalizado **[daop-api.entreprenly.online](https://daop-api.entreprenly.online)**. El despliegue se realiza de forma manual desde la **consola web de Cloud Run**.
+
+**Paso 1.** En **Google Cloud Console**, seleccionar (o crear) el proyecto y habilitar las APIs necesarias: **Cloud Run Admin**, **Cloud Build**, **Artifact Registry** y **Cloud SQL Admin**.
+
+<p align="center"><img src="images/capitulo5/deploy-backend-01.png" width="700" alt="APIs habilitadas en GCP"></p>
+
+**Paso 2.** Provisionar la instancia de **Cloud SQL (PostgreSQL)** que aloja la base de datos de producción y anotar su **connection name** (`proyecto:us-east1:instancia`), requerido más adelante por la variable `CLOUD_SQL_CONNECTION_NAME`.
+
+<p align="center"><img src="images/capitulo5/deploy-backend-02.png" width="700" alt="Instancia Cloud SQL PostgreSQL"></p>
+
+**Paso 3.** Confirmar que el repositorio `Kauflink/daop-entreprenly-web-services` contiene el **`Dockerfile`** multi-stage: la primera etapa compila con **Maven** sobre **Eclipse Temurin 26** (JDK) y la segunda ejecuta el `.jar` sobre un JRE **Temurin 26**, con el perfil `prod` activo. La aplicación escucha en el puerto definido por la variable `PORT` (`server.port=${PORT:8092}`).
+
+<p align="center"><img src="images/capitulo5/deploy-backend-03.png" width="700" alt="Dockerfile del backend"></p>
+
+**Paso 4.** En **Cloud Run > Deploy container > Service**, elegir la opción de desplegar **desde el código fuente / repositorio** (build con Cloud Build usando el `Dockerfile`). Conectar el repositorio de GitHub `daop-entreprenly-web-services` y seleccionar la rama `main`.
+
+<p align="center"><img src="images/capitulo5/deploy-backend-04.png" width="700" alt="Origen del despliegue en Cloud Run"></p>
+
+**Paso 5.** Definir la configuración del servicio: nombre `daop-entreprenly-web-services`, región `us-east1`, **Authentication = Allow unauthenticated invocations**, **container port = 8080** (Cloud Run inyecta `PORT=8080`, por lo que la app escucha ahí), **CPU = 1**, **Memory = 1 GiB**, **Max instances = 3** y **Startup CPU boost** activado.
+
+<p align="center"><img src="images/capitulo5/deploy-backend-05.png" width="700" alt="Configuración del servicio Cloud Run"></p>
+
+**Paso 6.** En la pestaña **Containers > Cloud SQL connections** (o **Connections**), agregar la conexión a la instancia de Cloud SQL creada en el Paso 2.
+
+<p align="center"><img src="images/capitulo5/deploy-backend-06.png" width="700" alt="Conexión Cloud SQL en Cloud Run"></p>
+
+**Paso 7.** En **Variables & Secrets**, definir las variables de entorno del perfil `prod`: `SPRING_PROFILES_ACTIVE=prod`, `DATABASE_USER`, `DATABASE_PASSWORD`, `JWT_SECRET`, `CLOUD_SQL_CONNECTION_NAME`, `WHATSAPP_ENABLED`, `WHATSAPP_BRIDGE_TOKEN`, `WHATSAPP_BRIDGE_BASE_URL` y `WHATSAPP_BRIDGE_SEND_URL`. *(Recomendado: gestionar los valores sensibles —contraseña, JWT y token del bridge— mediante **Secret Manager** en lugar de texto plano.)*
+
+<p align="center"><img src="images/capitulo5/deploy-backend-07.png" width="700" alt="Variables de entorno en Cloud Run"></p>
+
+**Paso 8.** Presionar **Deploy** y esperar a que Cloud Build construya la imagen (publicada en Artifact Registry) y la nueva revisión reciba el **100 % del tráfico**. Cloud Run asigna una URL `*.run.app`.
+
+<p align="center"><img src="images/capitulo5/deploy-backend-08.png" width="700" alt="Revisión desplegada en Cloud Run"></p>
+
+**Paso 9.** En **Cloud Run > Manage Custom Domains > Add mapping**, mapear `daop-api.entreprenly.online` al servicio, crear en el DNS los registros indicados y esperar la emisión automática del certificado TLS. Registrar la URL base `https://daop-api.entreprenly.online/api/v1` en el `environment` de producción del frontend.
+
+<p align="center"><img src="images/capitulo5/deploy-backend-09.png" width="700" alt="Dominio personalizado del backend"></p>
+
+**Paso 10.** Validar el despliegue accediendo a la documentación **Swagger UI** en `https://daop-api.entreprenly.online/swagger-ui/index.html` (OpenAPI en `/v3/api-docs`) y realizando una petición de prueba desde Swagger o Postman, confirmando la respuesta correcta sobre HTTPS.
+
+<p align="center"><img src="images/capitulo5/deploy-backend-10.png" width="700" alt="Swagger UI del backend desplegado"></p>
 
 ## 5.2. Landing Page, Services & Applications Implementation
 
