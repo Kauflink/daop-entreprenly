@@ -1481,7 +1481,7 @@ Gestiona la autenticación y el control de acceso. Comprende tres tablas.
 
 **Relaciones:** `users` ←→ `roles` (N:M vía `user_roles`).
 
----
+
 
 #### BC2 — Profile (Perfil y Configuración)
 
@@ -1491,7 +1491,7 @@ Gestiona la información personal y preferencias del comerciante. Comprende una 
 
 **Relaciones:** `profiles.user_id` → `users.id` (OneToOne).
 
----
+
 
 #### BC3 — Subscription (Gestión de Suscripciones)
 
@@ -1511,7 +1511,7 @@ Gestiona el ciclo de vida de suscripciones, pagos y configuración de facturaci�
 
 **Relaciones:** `subscriptions` → `users`, `subscription_plans`; `subscription_payments` → `subscriptions`; `subscription_plan_features` → `subscription_plans`; `billing_payment_methods` → `billing_setups`; `billing_setups.user_id` → `users.id`.
 
----
+
 
 #### BC4 — Inventory (Gestión de Inventario)
 
@@ -1527,7 +1527,6 @@ Gestiona el catálogo de productos y lotes de inventario en dos jerarquías para
 
 **Relaciones:** `inventory_unit_lots.product_id` → `inventory_unit_products.id`; `inventory_weight_lots.product_id` → `inventory_weight_products.id`.
 
----
 
 #### BC5 — Sales (Ventas Presenciales)
 
@@ -1539,7 +1538,7 @@ Gestiona el registro de ventas en el punto de venta. Comprende dos tablas.
 
 **Relaciones:** `sale_items.sale_id` → `sales.id`.
 
----
+
 
 #### BC6 — Chatbot (Chatbot de WhatsApp)
 
@@ -1557,7 +1556,7 @@ Gestiona las sesiones de WhatsApp, conversaciones con clientes y pedidos digital
 
 **Relaciones:** `chat_messages.conversation_id` → `conversations.id`; `chat_orders.conversation_id` → `conversations.id`; `chat_order_items.chat_order_id` → `chat_orders.id`.
 
----
+
 
 ### 4.8.3. Relaciones entre tablas
 
