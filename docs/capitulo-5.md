@@ -998,6 +998,8 @@ Durante el Sprint 1, el equipo se centró exclusivamente en el repositorio del L
   </tbody>
 </table>
 
+<img src="images/capitulo5/landing_evi.png" width="800">
+
 ---
 
 #### 5.2.1.5. Execution Evidence for Sprint Review
@@ -1833,6 +1835,8 @@ Durante el Sprint 2, el equipo trabajó exclusivamente sobre el repositorio del 
     </tr>
   </tbody>
 </table>
+
+<img src="images/capitulo5/frontend_evi.png" width="800">
 
 ---
 
@@ -2839,6 +2843,8 @@ Durante el Sprint 3, el equipo trabajó sobre el repositorio de los Web Services
   </tbody>
 </table>
 
+<img src="images/capitulo5/backend_evi.png" width="800">
+
 ---
 
 #### 5.2.3.5. Execution Evidence for Sprint Review
@@ -3296,6 +3302,8 @@ Durante el Sprint 4, el equipo trabajó principalmente sobre el repositorio del 
 </table>
 
 **URL del repositorio del WhatsApp Bridge:** https://github.com/Kauflink/daop-entreprenly-whatsapp-bridge
+
+<img src="images/capitulo5/bridge_evi.png" width="800">
 
 ---
 
