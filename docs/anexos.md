@@ -62,3 +62,6 @@ En esta sección se listan, como anexos independientes, todos los enlaces de los
 
 ### Anexo Q — Video: About-the-Product (Cap. 5.4)
 🔗 [https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a290_upc_edu_pe/IQDfgKOGczm3Roa6mGkHpnlUASMttHELFOUS6kC67yLAjNM](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a290_upc_edu_pe/IQDfgKOGczm3Roa6mGkHpnlUASMttHELFOUS6kC67yLAjNM?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=xEBstE)
+
+### Anexo R — Video: About-the-Team (TB2)
+🔗 [https://youtu.be/nKPs_WnLaX4](https://youtu.be/nKPs_WnLaX4)
