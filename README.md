@@ -93,7 +93,7 @@ Entreprenly
 
 # Project Report Collaboration Insights
 
-En esta sección se presenta la evidencia de colaboración del equipo Kauflink durante el desarrollo del AV1, TB1, AV2 y TB2. La elaboración del informe se llevó a cabo de forma distribuida a través del repositorio **daop-entreprenly** bajo la organización [Kauflink](https://github.com/Kauflink), donde todos los miembros del equipo participaron activamente mediante commits y revisiones a lo largo del desarrollo de cada entrega.
+En esta sección se presenta la evidencia de colaboración del equipo Kauflink durante el desarrollo del AV1, TB1, AV2 y TB2. La elaboración del informe se llevó a cabo de forma distribuida a través del repositorio **daop-entreprenly** bajo la organización https://github.com/Kauflink, donde todos los miembros del equipo participaron activamente mediante commits y revisiones a lo largo del desarrollo de cada entrega.
 
 ## Repositorio del Informe
 

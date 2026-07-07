@@ -20,7 +20,7 @@ En esta sección se detallan las herramientas, frameworks y plataformas utilizad
     <tr>
       <td><strong>Trello</strong></td>
       <td>Herramienta de soporte a agile development utilizada para la gestión del Product Backlog y de los Sprint Backlogs. Cada Sprint se organiza en un tablero Kanban con las columnas <em>To Do</em>, <em>In Process</em>, <em>To Review</em> y <em>Done</em>, configurado como board público para su revisión.</td>
-      <td><a href="https://trello.com/">https://trello.com/</a></td>
+      <td>https://trello.com/</td>
     </tr>
   </tbody>
 </table>
@@ -39,7 +39,7 @@ En esta sección se detallan las herramientas, frameworks y plataformas utilizad
     <tr>
       <td><strong>UXPressia</strong></td>
       <td>Utilizado para la gestión de requerimientos, específicamente para la creación de User Personas, Empathy Maps e Impact Maps.</td>
-      <td><a href="https://uxpressia.com/">https://uxpressia.com/</a></td>
+      <td>https://uxpressia.com/</td>
     </tr>
   </tbody>
 </table>
@@ -58,12 +58,12 @@ En esta sección se detallan las herramientas, frameworks y plataformas utilizad
     <tr>
       <td><strong>Figma</strong></td>
       <td>Herramienta de diseño UX/UI para la elaboración de Wireframes, Mock-ups y Prototipos interactivos.</td>
-      <td><a href="https://www.figma.com/">https://www.figma.com/</a></td>
+      <td>https://www.figma.com/</td>
     </tr>
     <tr>
       <td><strong>Miro</strong></td>
       <td>Plataforma de colaboración visual empleada en las sesiones de EventStorming (Big Picture y Design-Level) para el modelado del dominio.</td>
-      <td><a href="https://miro.com/">https://miro.com/</a></td>
+      <td>https://miro.com/</td>
     </tr>
   </tbody>
 </table>
@@ -82,37 +82,37 @@ En esta sección se detallan las herramientas, frameworks y plataformas utilizad
     <tr>
       <td><strong>Structurizr</strong></td>
       <td>Herramienta para el diseño y documentación de la arquitectura de software siguiendo el modelo C4 (Context, Container, Component, Code).</td>
-      <td><a href="https://structurizr.com/">https://structurizr.com/</a></td>
+      <td>https://structurizr.com/</td>
     </tr>
     <tr>
       <td><strong>MySQL Workbench</strong></td>
       <td>Utilizado para el diseño de base de datos, permitiendo la creación de diagramas entidad-relación y la gestión de la persistencia de datos.</td>
-      <td><a href="https://www.mysql.com/products/workbench/">https://www.mysql.com/products/workbench/</a></td>
+      <td>https://www.mysql.com/products/workbench/</td>
     </tr>
     <tr>
       <td><strong>Visual Studio Code</strong></td>
       <td>Entorno de desarrollo (IDE) principal para la implementación de la Landing Page y la aplicación Frontend.</td>
-      <td><a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a></td>
+      <td>https://code.visualstudio.com/</td>
     </tr>
     <tr>
       <td><strong>GitHub Desktop</strong></td>
       <td>Cliente de Git utilizado para facilitar el Source Code Management y la implementación del flujo de trabajo GitFlow en el equipo.</td>
-      <td><a href="https://desktop.github.com/">https://desktop.github.com/</a></td>
+      <td>https://desktop.github.com/</td>
     </tr>
     <tr>
       <td><strong>Spring Boot / Java</strong></td>
       <td>Framework y lenguaje principal para el desarrollo de los RESTful Web Services que conforman el Backend de la aplicación.</td>
-      <td><a href="https://spring.io/projects/spring-boot">https://spring.io/projects/spring-boot</a></td>
+      <td>https://spring.io/projects/spring-boot</td>
     </tr>
     <tr>
       <td><strong>Angular / TypeScript</strong></td>
       <td>Framework y lenguaje utilizados para la construcción de la Frontend Web Application de la plataforma.</td>
-      <td><a href="https://angular.io/">https://angular.io/</a></td>
+      <td>https://angular.io/</td>
     </tr>
     <tr>
       <td><strong>Node.js</strong></td>
       <td>Entorno de ejecución JavaScript requerido para ejecutar Angular CLI y las herramientas de build y gestión de dependencias del Frontend.</td>
-      <td><a href="https://nodejs.org/">https://nodejs.org/</a></td>
+      <td>https://nodejs.org/</td>
     </tr>
   </tbody>
 </table>
@@ -131,12 +131,12 @@ En esta sección se detallan las herramientas, frameworks y plataformas utilizad
     <tr>
       <td><strong>Swagger / OpenAPI</strong></td>
       <td>Empleado para la documentación técnica de los endpoints del RESTful API, permitiendo su exploración y prueba interactiva.</td>
-      <td><a href="https://swagger.io/">https://swagger.io/</a></td>
+      <td>https://swagger.io/</td>
     </tr>
     <tr>
       <td><strong>Markdown</strong></td>
       <td>Lenguaje de marcado utilizado para la elaboración y mantenimiento de la documentación general del proyecto alojada en GitHub.</td>
-      <td><a href="https://www.markdownguide.org/">https://www.markdownguide.org/</a></td>
+      <td>https://www.markdownguide.org/</td>
     </tr>
   </tbody>
 </table>
@@ -155,12 +155,12 @@ En esta sección se detallan las herramientas, frameworks y plataformas utilizad
     <tr>
       <td><strong>Google Cloud Platform</strong></td>
       <td>Proveedor de infraestructura cloud utilizado para el despliegue y hospedaje de los servicios Backend y aplicaciones en producción.</td>
-      <td><a href="https://cloud.google.com/">https://cloud.google.com/</a></td>
+      <td>https://cloud.google.com/</td>
     </tr>
     <tr>
       <td><strong>GitHub Pages</strong></td>
       <td>Servicio de hosting estático utilizado para el despliegue continuo de la Landing Page del producto.</td>
-      <td><a href="https://pages.github.com/">https://pages.github.com/</a></td>
+      <td>https://pages.github.com/</td>
     </tr>
   </tbody>
 </table>
@@ -356,24 +356,24 @@ La siguiente tabla resume los tres productos digitales de la solución, con su p
     <tr>
       <td>Landing Page</td>
       <td>HTML5 + Tailwind CSS / GitHub Pages</td>
-      <td><a href="https://entreprenly.online/">https://entreprenly.online/</a></td>
+      <td>https://entreprenly.online/</td>
     </tr>
     <tr>
       <td>Frontend Web Application</td>
       <td>Angular / Firebase Hosting</td>
-      <td><a href="https://daop.entreprenly.online/">https://daop.entreprenly.online/</a></td>
+      <td>https://daop.entreprenly.online/</td>
     </tr>
     <tr>
       <td>RESTful Web Services (API)</td>
       <td>Spring Boot / Google Cloud Run</td>
-      <td><a href="https://daop-api.entreprenly.online/swagger-ui/index.html">https://daop-api.entreprenly.online/swagger-ui/index.html</a></td>
+      <td>https://daop-api.entreprenly.online/swagger-ui/index.html</td>
     </tr>
   </tbody>
 </table>
 
 #### Landing Page (GitHub Pages)
 
-El Landing Page está desarrollado con **HTML5**, **Tailwind CSS** y **JavaScript**, y se publica mediante **GitHub Pages** con automatización por **GitHub Actions**: cada integración a la rama `main` dispara la publicación de una nueva versión. El sitio está disponible en el dominio personalizado **[entreprenly.online](https://entreprenly.online)**.
+El Landing Page está desarrollado con **HTML5**, **Tailwind CSS** y **JavaScript**, y se publica mediante **GitHub Pages** con automatización por **GitHub Actions**: cada integración a la rama `main` dispara la publicación de una nueva versión. El sitio está disponible en el dominio personalizado **https://entreprenly.online**.
 
 **Paso 1.** Asegurar que el repositorio `Kauflink/landing-entreprenly` esté **público** en GitHub y siga GitFlow (ramas `main` y `develop`).
 
@@ -405,9 +405,9 @@ El Landing Page está desarrollado con **HTML5**, **Tailwind CSS** y **JavaScrip
 
 #### Frontend Web Application (Firebase Hosting)
 
-El Frontend está desarrollado con **Angular** y se despliega en **Firebase Hosting** bajo el proyecto `daop-entreprenly`, con automatización por **GitHub Actions**. Está disponible en **[https://daop-entreprenly.web.app](https://daop-entreprenly.web.app)** y en el dominio personalizado **[https://daop.entreprenly.online](https://daop.entreprenly.online)**. Firebase Hosting se eligió por su soporte nativo del enrutamiento SPA de Angular, la posibilidad de asociar subdominios personalizados sin conflicto con el dominio del Landing, y su integración directa con GitHub Actions.
+El Frontend está desarrollado con **Angular** y se despliega en **Firebase Hosting** bajo el proyecto `daop-entreprenly`, con automatización por **GitHub Actions**. Está disponible en **https://daop-entreprenly.web.app** y en el dominio personalizado **https://daop.entreprenly.online**. Firebase Hosting se eligió por su soporte nativo del enrutamiento SPA de Angular, la posibilidad de asociar subdominios personalizados sin conflicto con el dominio del Landing, y su integración directa con GitHub Actions.
 
-**Paso 1.** Crear el proyecto **`daop-entreprenly`** en **Firebase Console** ([console.firebase.google.com](https://console.firebase.google.com)) y activar el servicio **Hosting**.
+**Paso 1.** Crear el proyecto **`daop-entreprenly`** en **Firebase Console** (https://console.firebase.google.com) y activar el servicio **Hosting**.
 
 <p align="center"><img src="images/capitulo5/deploy-frontend-01.png" width="700" alt="Proyecto Firebase con Hosting activado"></p>
 
@@ -456,7 +456,7 @@ firebase login
 
 #### RESTful Web Services (Google Cloud Run)
 
-El Backend está desarrollado con **Spring Boot** y se empaqueta con un **`Dockerfile`** multi-stage. Se despliega en **Google Cloud Run** (servicio `daop-entreprenly-web-services`, región `us-east1`), donde el contenedor se construye a partir del código fuente mediante **Cloud Build** y la imagen queda publicada en **Artifact Registry**. La base de datos es **Cloud SQL para PostgreSQL** y el servicio se expone en el dominio personalizado **[daop-api.entreprenly.online](https://daop-api.entreprenly.online)**. El despliegue se realiza de forma manual desde la **consola web de Cloud Run**.
+El Backend está desarrollado con **Spring Boot** y se empaqueta con un **`Dockerfile`** multi-stage. Se despliega en **Google Cloud Run** (servicio `daop-entreprenly-web-services`, región `us-east1`), donde el contenedor se construye a partir del código fuente mediante **Cloud Build** y la imagen queda publicada en **Artifact Registry**. La base de datos es **Cloud SQL para PostgreSQL** y el servicio se expone en el dominio personalizado **https://daop-api.entreprenly.online**. El despliegue se realiza de forma manual desde la **consola web de Cloud Run**.
 
 **Paso 1.** En **Google Cloud Console**, seleccionar (o crear) el proyecto y habilitar las APIs necesarias: **Cloud Run Admin**, **Cloud Build**, **Artifact Registry** y **Cloud SQL Admin**.
 
@@ -627,7 +627,7 @@ En este primer Sprint, el equipo organizó su trabajo en torno a cuatro aspectos
 
 El objetivo principal de este Sprint fue implementar y desplegar la primera versión del Landing Page de Entreprenly, cubriendo las User Stories **US-53, US-84, US-85, US-86, US-87, US-88 y US-89** del Product Backlog. Cada User Story se descompuso en Engineering Tasks con una estimación individual entre 4 y 8 horas, gestionadas en el tablero Kanban del Sprint con las columnas **To Do, In Process, To Review y Done**.
 
-**Board público del Sprint 1 (Trello):** [https://trello.com/b/w5cZrD9x/entreprenly-sprint-1](https://trello.com/b/w5cZrD9x/entreprenly-sprint-1)
+**Board público del Sprint 1 (Trello):** https://trello.com/b/w5cZrD9x/entreprenly-sprint-1
 
 A continuación se presenta el tablero del Sprint y el detalle de los Work-items asociados.
 
@@ -1098,7 +1098,7 @@ Para este segundo Sprint, el equipo estableció como objetivo principal la imple
     </tr>
     <tr>
       <td><strong>Sprint 1 Review Summary</strong></td>
-      <td>En el Sprint 1 se implementó y desplegó exitosamente la primera versión del Landing Page de Entreprenly. La página se encuentra disponible en <a href="https://entreprenly.online">entreprenly.online</a> con dominio personalizado y despliegue continuo mediante GitHub Actions. Se cubrieron todas las secciones planificadas: Hero, Funcionalidades, Planes, FAQ y Footer, con soporte de tema claro/oscuro e idioma Español/Inglés.</td>
+      <td>En el Sprint 1 se implementó y desplegó exitosamente la primera versión del Landing Page de Entreprenly. La página se encuentra disponible en https://entreprenly.online con dominio personalizado y despliegue continuo mediante GitHub Actions. Se cubrieron todas las secciones planificadas: Hero, Funcionalidades, Planes, FAQ y Footer, con soporte de tema claro/oscuro e idioma Español/Inglés.</td>
     </tr>
     <tr>
       <td><strong>Sprint 1 Retrospective Summary</strong></td>
@@ -1195,7 +1195,7 @@ En el Sprint 2, el equipo organizó el trabajo asignando un Bounded Context prin
 
 El objetivo principal de este Sprint fue implementar la Frontend Web Application de Entreprenly en Angular, cubriendo los Bounded Contexts de Inventory, Sales, Chatbot, Subscription y Profile, junto con las vistas de Home, Help y la navegación. Cada User Story se descompuso en Engineering Tasks con una estimación individual entre 4 y 8 horas, gestionadas en el tablero Kanban del Sprint con las columnas **To Do, In Process, To Review y Done**.
 
-**Board público del Sprint 2 (Trello):** [https://trello.com/b/X5XRlVOZ/entreprenly-sprint-2](https://trello.com/b/X5XRlVOZ/entreprenly-sprint-2)
+**Board público del Sprint 2 (Trello):** https://trello.com/b/X5XRlVOZ/entreprenly-sprint-2
 
 A continuación se presenta el tablero del Sprint y el detalle de los Work-items asociados.
 
@@ -2135,7 +2135,7 @@ Para este tercer Sprint, el equipo estableció como objetivo principal la implem
     <tr><td><strong>Location</strong></td><td>Reunión virtual vía Discord</td></tr>
     <tr><td><strong>Prepared By</strong></td><td>Camargo Briceño, Joseph Julius</td></tr>
     <tr><td><strong>Attendees (to planning meeting)</strong></td><td>Camargo Briceño, Joseph Julius / Chavez Carrasco, Lionel Abraham / Palma De Los Santos, Elynor Mikela / Peirano Brun, José Antonio / Flores Pinchi, José Fernando</td></tr>
-    <tr><td><strong>Sprint 2 Review Summary</strong></td><td>En el Sprint 2 se implementó y desplegó el Frontend Web Application en Angular sobre Firebase Hosting (<a href="https://daop.entreprenly.online">daop.entreprenly.online</a>), cubriendo los Bounded Contexts de Sales, Chatbot, Inventory, Subscription y Profile, junto con las vistas de Home y Help. La aplicación consumió una Fake RESTful API servida con JSON-Server.</td></tr>
+    <tr><td><strong>Sprint 2 Review Summary</strong></td><td>En el Sprint 2 se implementó y desplegó el Frontend Web Application en Angular sobre Firebase Hosting (https://daop.entreprenly.online), cubriendo los Bounded Contexts de Sales, Chatbot, Inventory, Subscription y Profile, junto con las vistas de Home y Help. La aplicación consumió una Fake RESTful API servida con JSON-Server.</td></tr>
     <tr><td><strong>Sprint 2 Retrospective Summary</strong></td><td>El equipo identificó que la Fake API con JSON-Server no provee persistencia real, autenticación ni reglas de negocio del lado del servidor. Para el Sprint 3 se acordó implementar el Backend real con Spring Boot bajo arquitectura DDD, asignando un Bounded Context por miembro, incorporar autenticación con JWT y persistencia con JPA por contexto, y automatizar el despliegue en Google Cloud con Docker y CI/CD.</td></tr>
     <tr><td colspan="2"><strong>Sprint Goal &amp; User Stories</strong></td></tr>
     <tr><td><strong>Sprint 3 Goal</strong></td><td>Nuestro enfoque está en implementar y desplegar la primera versión de los RESTful Web Services de Entreprenly con Spring Boot, reemplazando la Fake API por un Backend real con autenticación JWT, persistencia JPA por bounded context y documentación OpenAPI. Creemos que entrega una plataforma multi-tenant en la que cada comerciante gestiona de forma segura su inventario, ventas, suscripción y pedidos de WhatsApp con datos persistentes. Esto se confirmará cuando la API esté desplegada en Google Cloud, protegida con JWT, documentada en Swagger UI y respondiendo sobre HTTPS en su dominio público.</td></tr>
@@ -2178,7 +2178,7 @@ En el Sprint 3, el equipo organizó el trabajo asignando un Bounded Context del 
 
 El objetivo principal de este Sprint fue implementar los RESTful Web Services de Entreprenly y **conectar el Frontend Web Application al backend real**, reemplazando la Fake RESTful API (JSON-Server) utilizada en el Sprint 2. El alcance abarcó los flujos de pedido del chatbot, comprendidos en las User Stories US-41 a US-52, junto con las Technical Stories del EPIC-13. Estas últimas cubren la API de pedidos y pagos en las historias US-54 y US-55, la autenticación con JWT en la US-91, la containerización y el pipeline de CI/CD en la US-92, y la persistencia JPA por bounded context en la US-93. Adicionalmente, se incorporaron las User Stories de **frontend integradas con el backend real**: el registro, inicio y cierre de sesión con autenticación JWT (US-56, US-58 y US-61) y la validación de comprobantes de pago del chatbot desde el dashboard (US-46). Cada historia se descompuso en Engineering Tasks con una estimación individual de entre 4 y 8 horas, gestionadas en el tablero Kanban del Sprint a través de las columnas **To Do, In Process, To Review y Done**.
 
-**Board público del Sprint 3 (Trello):** [https://trello.com/b/kcHoLNFO/entreprenly-sprint-3](https://trello.com/b/kcHoLNFO/entreprenly-sprint-3)
+**Board público del Sprint 3 (Trello):** https://trello.com/b/kcHoLNFO/entreprenly-sprint-3
 
 A continuación se presenta el tablero del Sprint y el detalle de los Work-items asociados.
 
@@ -2849,7 +2849,7 @@ Durante el Sprint 3, el equipo trabajó sobre el repositorio de los Web Services
 
 #### 5.2.3.5. Execution Evidence for Sprint Review
 
-Al término del Sprint 3, el equipo implementó y desplegó la primera versión de los RESTful Web Services de Entreprenly con Spring Boot. La API se encuentra disponible públicamente sobre HTTPS en **[https://daop-api.entreprenly.online](https://daop-api.entreprenly.online)** y su documentación interactiva en **[Swagger UI](https://daop-api.entreprenly.online/swagger-ui/index.html)**. Los Bounded Contexts implementados y sus capacidades clave son los siguientes:
+Al término del Sprint 3, el equipo implementó y desplegó la primera versión de los RESTful Web Services de Entreprenly con Spring Boot. La API se encuentra disponible públicamente sobre HTTPS en **https://daop-api.entreprenly.online** y su documentación interactiva en **https://daop-api.entreprenly.online/swagger-ui/index.html**. Los Bounded Contexts implementados y sus capacidades clave son los siguientes:
 
 - **IAM BC:** Autenticación por email con hash BCrypt, registro de usuarios, asignación de rol por defecto y emisión/validación de tokens **JWT** que protegen los endpoints y aíslan los recursos por cuenta.
 - **Profile BC:** Gestión del perfil del comerciante (datos personales, avatar base64, preferencias de idioma/tema/moneda y notificaciones), con auto-creación del perfil al registrarse el usuario.
@@ -3079,7 +3079,7 @@ Durante el Sprint 3, el equipo configuró y ejecutó el despliegue de los Web Se
 
 4. **Configuración del servicio:** Se desplegó el servicio `daop-entreprenly-web-services` en la región `us-east1` con puerto de contenedor `8080`, conexión a la instancia de Cloud SQL PostgreSQL, las variables de entorno del perfil `prod` (incluyendo `SPRING_PROFILES_ACTIVE`, credenciales de base de datos, `JWT_SECRET` y `CLOUD_SQL_CONNECTION_NAME`), acceso sin autenticación, 1 vCPU, 1 GiB de memoria y un máximo de 3 instancias.
 
-5. **TLS y dominio:** Se mapeó el dominio personalizado **[https://daop-api.entreprenly.online](https://daop-api.entreprenly.online)** al servicio de Cloud Run, con certificado TLS gestionado automáticamente por Google.
+5. **TLS y dominio:** Se mapeó el dominio personalizado **https://daop-api.entreprenly.online** al servicio de Cloud Run, con certificado TLS gestionado automáticamente por Google.
 
 6. **Verificación:** Se validó el despliegue accediendo a Swagger UI en `https://daop-api.entreprenly.online/swagger-ui/index.html` y comprobando que el endpoint de especificación OpenAPI (`/v3/api-docs`) responde correctamente sobre HTTPS.
 
@@ -4119,13 +4119,13 @@ El video fue subido a **Microsoft Stream** y a **YouTube**. A continuación se i
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
         <strong>Link del video (Microsoft Stream):</strong>
-        <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a290_upc_edu_pe/IQDfgKOGczm3Roa6mGkHpnlUASMttHELFOUS6kC67yLAjNM?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=xEBstE" style="color: #1a6b6b;">Entreprenly — Video About-the-Product (Microsoft Stream)</a>
+        https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a290_upc_edu_pe/IQDfgKOGczm3Roa6mGkHpnlUASMttHELFOUS6kC67yLAjNM?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=xEBstE
       </td>
     </tr>
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
         <strong>Link del video (YouTube):</strong>
-        <a href="https://youtu.be/nPIHYqd0MtM" style="color: #1a6b6b;">Entreprenly — Video About-the-Product (YouTube)</a>
+        https://youtu.be/nPIHYqd0MtM
       </td>
     </tr>
   </table>

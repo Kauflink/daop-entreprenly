@@ -17,7 +17,7 @@ El video fue subido a **YouTube**. A continuación se incluye su respectivo enla
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
         <strong>Link del video (YouTube):</strong>
-        <a href="https://youtu.be/nKPs_WnLaX4" style="color: #1a6b6b;">Entreprenly — Video About-the-Team (YouTube)</a>
+        https://youtu.be/nKPs_WnLaX4
       </td>
     </tr>
   </table>
