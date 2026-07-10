@@ -338,8 +338,6 @@ Entonces el producto se registra en el inventario y aparece en el listado con ti
 
 En esta sección se especifica, paso a paso, la configuración de despliegue definida por el equipo para cada uno de los productos digitales que conforman la solución **Entreprenly**: **Landing Page**, **Frontend Web Application** y **RESTful Web Services**. Para cada producto se documenta el camino completo desde el repositorio de código fuente hasta la publicación satisfactoria, acompañado de la evidencia visual (capturas) de cada paso.
 
-> **Nota sobre las capturas:** cada paso incluye un espacio de figura con el nombre de archivo de la captura correspondiente (`images/capitulo5/deploy-*.png`). Al final de la sección se incluye la **checklist de capturas** con la descripción exacta de lo que debe mostrar cada imagen.
-
 **Productos desplegados y URLs públicas**
 
 La siguiente tabla resume los tres productos digitales de la solución, con su plataforma de despliegue y la URL pública donde se encuentran disponibles.
